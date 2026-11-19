@@ -316,9 +316,13 @@ Info: WA 0821-8903-3044.
 ```
 Berendam di bawah langit terbuka. 🛁🌴
 
-VIP Superior Bungalow: rumah kayu A-frame dengan loteng,
-teras pribadi yang teduh, dan kamar mandi semi-outdoor
-dengan bathtub di bawah atap kaca. Pohon kelapa tepat di atas kepala.
+VIP Superior Bungalow, kelas tertinggi di SunaRi:
+✔️ Bathtub dengan air panas di bawah atap kaca
+✔️ King bed, TV, dan mini bar/kulkas
+✔️ Teras kayu pribadi yang teduh
+✔️ Sudah termasuk sarapan
+
+Pohon kelapa tepat di atas kepala saat kamu berendam.
 
 Geser untuk melihat ke dalam.
 Info & reservasi: WA 0821-8903-3044.

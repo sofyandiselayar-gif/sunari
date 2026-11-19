@@ -21,10 +21,10 @@ Semua isi hanya memuat fasilitas yang sudah dikonfirmasi. **Harga kamar tidak di
 | Bahasa staf | Indonesia (tambahkan bahasa lain jika ada) |
 
 **Fasilitas umum (centang di OTA):**
-Wi-Fi gratis · Restoran · Akses langsung ke pantai · Taman · Antar-jemput bandara (berbayar) · Antar-jemput pelabuhan (berbayar) · Sewa kayak · Ramah keluarga/anak · Parkir *(centang jika ada)* · Resepsionis *(isi jam operasional)*
+Wi-Fi gratis · Sarapan termasuk · Restoran · Akses langsung ke pantai · Taman · Antar-jemput bandara (berbayar) · Antar-jemput pelabuhan (berbayar) · Sewa kayak · Ramah keluarga/anak · Parkir *(centang jika ada)* · Resepsionis *(isi jam operasional)*
 
 **Fasilitas kamar (centang sesuai tipe, lihat bagian C):**
-AC · Teras pribadi · Kamar mandi dalam · Shower · Toilet duduk · Perlengkapan kopi/teh · Air mineral · TV *(Superior, VIP Superior)* · Kulkas mini *(VIP Superior)* · Bathtub *(VIP Superior)* · Extra bed tersedia
+Sarapan · AC · Wi-Fi · Teras pribadi · Kamar mandi · Shower · Toilet duduk · Perlengkapan mandi · Handuk · Kopi/teh & pemanas air · Meja kerja/rias · Tirai blackout · Bantal & selimut tambahan · Setrika (atas permintaan) · Extra bed (berbayar) · TV *(Superior, VIP Superior)* · Mini bar/kulkas, bathtub & air panas *(VIP Superior saja)*
 
 ---
 
@@ -35,7 +35,7 @@ AC · Teras pribadi · Kamar mandi dalam · Shower · Toilet duduk · Perlengkap
 
 SunaRi adalah resort tepi pantai di Pantai Sunari, pesisir barat Kepulauan Selayar, Sulawesi Selatan. Setiap sore, matahari terbenam tepat di depan pantai kami, di atas laut yang tenang.
 
-Kami memiliki lima tipe bungalow kayu dengan teras pribadi, mulai dari rumah panggung di bibir pantai, bungalow A-frame dengan kamar mandi semi-outdoor, hingga bungalow dua lantai untuk keluarga hingga 8 orang. Semua kamar dilengkapi AC dan Wi-Fi.
+Kami memiliki lima tipe bungalow kayu dengan teras pribadi, mulai dari rumah panggung di bibir pantai, bungalow A-frame dengan kamar mandi semi-outdoor, hingga bungalow dua lantai untuk keluarga hingga 8 orang. Semua kamar dilengkapi AC dan Wi-Fi, dan sudah termasuk sarapan.
 
 Pantai kami landai dan aman untuk anak-anak. Sore hari, tamu dapat menyewa kayak untuk mendayung saat senja. Bajoy Beach Resto menyajikan ikan bakar dan seafood setiap hari pukul 07.00–21.00, dan Senja Dinner dapat dipesan sehari sebelumnya.
 
@@ -46,7 +46,7 @@ Kami juga menyediakan antar-jemput dari Bandara H. Aroeppala maupun pelabuhan (b
 
 SunaRi is a beachfront resort on Sunari Beach, on the west coast of the Selayar Islands, South Sulawesi, Indonesia. Every evening the sun sets right in front of our beach, over calm open sea.
 
-Choose from five types of wooden bungalows, each with a private terrace: a stilt house right on the shoreline, A-frame bungalows with semi-outdoor bathrooms, and a two-storey family bungalow for up to 8 guests. All rooms have air conditioning and free Wi-Fi.
+Choose from five types of wooden bungalows, each with a private terrace: a stilt house right on the shoreline, A-frame bungalows with semi-outdoor bathrooms, and a two-storey family bungalow for up to 8 guests. All rooms have air conditioning and free Wi-Fi, and include breakfast.
 
 The beach is shallow and safe for children. In the late afternoon, guests can rent a kayak and paddle into the sunset. Bajoy Beach Resto serves grilled fish and seafood daily from 7 am to 9 pm, and a Sunset Dinner can be booked one day in advance.
 
@@ -92,13 +92,13 @@ Paid transfers are available from H. Aroeppala Airport and the ferry port. The r
 ---
 
 ### 4. VIP Superior Bungalow
-**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed) · **Tempat tidur:** 1 double/queen *(sesuaikan)* · **Pemandangan:** taman tropis
+**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed, berbayar) · **Tempat tidur:** 1 king bed · **Pemandangan:** laut atau taman (sesuai unit) · **Kelas tertinggi** · **Termasuk sarapan**
 
-**ID:** Bungalow A-frame beratap rumbia dengan loteng, jendela segitiga yang membiarkan cahaya pagi masuk, dan teras kayu pribadi yang teduh. Keistimewaannya adalah kamar mandi semi-outdoor beratap kaca dengan **bathtub** dan rain shower, sehingga Anda bisa berendam dengan pohon kelapa tepat di atas kepala. Dilengkapi AC, TV, kulkas mini, perlengkapan kopi/teh, wastafel kayu, dan toilet duduk.
+**ID:** Kelas tertinggi di SunaRi. Bungalow A-frame beratap rumbia dengan loteng, jendela segitiga yang membiarkan cahaya pagi masuk, dan teras kayu pribadi yang teduh dengan kursi santai. Keistimewaannya adalah kamar mandi semi-outdoor beratap kaca dengan **bathtub, rain shower, dan air panas**, satu-satunya tipe kamar kami dengan air panas, sehingga Anda bisa berendam air hangat dengan pohon kelapa tepat di atas kepala. Kamar dilengkapi king bed, TV, mini bar/kulkas, AC, Wi-Fi, set kopi/teh dengan pemanas air, meja kerja/rias, tirai blackout, serta bantal dan selimut tambahan. Perlengkapan mandi lengkap dan handuk bersih untuk setiap tamu. Sudah termasuk sarapan. Layanan setrika tersedia atas permintaan.
 
-**EN:** A thatched A-frame bungalow with a loft, a triangular window that lets in the morning light, and a shady private wooden terrace. Its signature feature is a glass-roofed semi-outdoor bathroom with a **bathtub** and rain shower, so you can soak with coconut palms right above you. Comes with air conditioning, TV, mini fridge, coffee/tea facilities, wooden vanity and western toilet.
+**EN:** Our highest room category. A thatched A-frame bungalow with a loft, a triangular window that lets in the morning light, and a shady private wooden terrace with lounge chairs. Its signature feature is a glass-roofed semi-outdoor bathroom with a **bathtub, rain shower and hot water**, the only room type with hot water, so you can enjoy a warm soak with coconut palms right above you. The room has a king bed, TV, minibar/fridge, air conditioning, Wi-Fi, coffee/tea set with kettle, work/vanity desk, blackout curtains, and extra pillows and blankets. Full toiletries and fresh towels for every guest. Breakfast is included. Ironing available on request.
 
-**Fasilitas:** AC · Wi-Fi · TV · Kulkas mini · Loteng · Teras pribadi · Bathtub · Rain shower · Kamar mandi semi-outdoor · Kopi/teh · Toilet duduk · Extra bed
+**Fasilitas:** Sarapan · King bed · TV · Mini bar/kulkas · AC · Wi-Fi · Loteng · Bathtub · Air panas & dingin · Rain shower · Kamar mandi semi-outdoor · Toilet duduk · Perlengkapan mandi · Handuk · Kopi/teh & pemanas air (kettle) · Meja kerja/rias · Tirai blackout · Bantal & selimut tambahan · Setrika (atas permintaan) · Teras/balkon pribadi · Kursi santai · Pemandangan laut atau taman · Extra bed (maks. 1, berbayar)
 
 ---
 
@@ -120,16 +120,16 @@ Paid transfers are available from H. Aroeppala Airport and the ferry port. The r
 **Kategori tambahan:** Bungalow Hotel · Restaurant *(atau daftarkan Bajoy Beach Resto sebagai profil terpisah)*
 **Jam operasional:** Buka 24 jam (resort). Untuk resto: 07.00–21.00.
 **Nomor telepon:** +62 821-8903-3044
-**Atribut yang dicentang:** Wi-Fi gratis · Restoran · Ramah anak · Antar-jemput bandara · Akses pantai · AC
+**Atribut yang dicentang:** Wi-Fi gratis · Sarapan termasuk · Restoran · Ramah anak · Antar-jemput bandara · Akses pantai · AC
 
 **Deskripsi bisnis (Bahasa Indonesia, maks. 750 karakter):**
 ```
-SunaRi Beach Resort Selayar, tempat senja pulang. Resort tepi pantai di Pantai Sunari, pesisir barat Kepulauan Selayar, dengan matahari terbenam tepat di depan pantai setiap sore. Tersedia lima tipe bungalow kayu dengan teras pribadi, AC, dan Wi-Fi: dari rumah panggung di bibir pantai, bungalow A-frame dengan kamar mandi semi-outdoor dan bathtub, hingga bungalow keluarga untuk 8 orang. Pantai landai dan aman untuk anak, sewa kayak saat senja, serta Bajoy Beach Resto dengan ikan bakar dan seafood (07.00–21.00). Senja Dinner bisa dipesan H-1. Antar-jemput dari bandara dan pelabuhan tersedia. Check-in 14.00, check-out 12.00. Reservasi via WhatsApp 0821-8903-3044.
+SunaRi Beach Resort Selayar, tempat senja pulang. Resort tepi pantai di Pantai Sunari, pesisir barat Kepulauan Selayar, dengan matahari terbenam tepat di depan pantai setiap sore. Tersedia lima tipe bungalow kayu dengan teras pribadi, AC, Wi-Fi, dan sarapan: dari rumah panggung di bibir pantai, bungalow A-frame dengan kamar mandi semi-outdoor, bathtub dan air panas, hingga bungalow keluarga untuk 8 orang. Pantai landai dan aman untuk anak, sewa kayak saat senja, serta Bajoy Beach Resto dengan ikan bakar dan seafood (07.00–21.00). Senja Dinner bisa dipesan H-1. Antar-jemput dari bandara dan pelabuhan tersedia. Check-in 14.00, check-out 12.00. Reservasi via WhatsApp 0821-8903-3044.
 ```
 
 **Business description (English, max. 750 characters):**
 ```
-SunaRi Beach Resort Selayar, where every day ends beautifully. A beachfront resort on Sunari Beach, on the west coast of the Selayar Islands, South Sulawesi, with the sun setting right in front of the beach every evening. Five types of wooden bungalows with private terraces, air conditioning and Wi-Fi: a stilt house on the shoreline, A-frame bungalows with semi-outdoor bathrooms and bathtub, and a family bungalow for up to 8 guests. Shallow, child-friendly beach, sunset kayak rental, and Bajoy Beach Resto serving grilled fish and seafood (7 am–9 pm). Sunset Dinner on request one day ahead. Airport and port transfers available. Check-in 2 pm, check-out 12 pm. WhatsApp +62 821-8903-3044.
+SunaRi Beach Resort Selayar, where every day ends beautifully. A beachfront resort on Sunari Beach, on the west coast of the Selayar Islands, South Sulawesi, with the sun setting right in front of the beach every evening. Five types of wooden bungalows with private terraces, air conditioning, Wi-Fi and breakfast: a stilt house on the shoreline, A-frame bungalows with semi-outdoor bathrooms, bathtub and hot water, and a family bungalow for up to 8 guests. Shallow, child-friendly beach, sunset kayak rental, and Bajoy Beach Resto serving grilled fish and seafood (7 am–9 pm). Sunset Dinner on request one day ahead. Airport and port transfers available. Check-in 2 pm, check-out 12 pm. WhatsApp +62 821-8903-3044.
 ```
 
 **Postingan Google pertama (Update):**
@@ -160,10 +160,8 @@ Tombol: **Hubungi** (nomor WA).
 | Pembatalan, deposit, hewan peliharaan, merokok | *Isi sesuai kebijakan resort* |
 
 ## F. Yang perlu dicek sebelum dipublikasikan
-- [ ] Ukuran tempat tidur VIP Superior (Superior: king bed ✅)
 - [ ] Luas kamar (m²) untuk setiap tipe, sering diminta OTA
-- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk VIP Superior? (sudah dikonfirmasi: Family Superior, Standard, VIP Standard, Superior)
 - [ ] VIP Standard: berapa unit yang menghadap laut/senja dan berapa yang menghadap taman?
-- [ ] Air panas, parkir, jam resepsionis
+- [ ] Parkir, jam resepsionis
 - [ ] Kebijakan pembatalan dan deposit
 - [ ] Jarak ke Bandara H. Aroeppala & ke kota Benteng (km / menit)

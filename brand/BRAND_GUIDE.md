@@ -200,9 +200,12 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
   meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout.
   Kamar mandi dalam bernuansa bambu & lantai batu alam. Teras pribadi luas dengan kursi santai, pemandangan laut & taman.
   Kata kunci promosi: *pagi menghadap laut Selayar*.
-- **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: bungalow A-frame beratap rumbia
-  dengan loteng, teras kayu pribadi, jendela segitiga, AC, TV, kulkas mini, perlengkapan kopi/teh, serta kamar mandi
-  semi-outdoor beratap kaca dengan **bathtub** & rain shower. Kata kunci promosi: *berendam di bawah langit terbuka*.
+- **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: **kelas tertinggi** di antara semua tipe bungalow.
+  A-frame beratap rumbia dengan loteng dan jendela segitiga. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).**
+  **King bed**, **TV**, **mini bar/kulkas**, termasuk **sarapan**, AC, Wi-Fi, set kopi/teh + pemanas air, meja kerja/rias, setrika atas permintaan,
+  perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout. Kamar mandi semi-outdoor beratap kaca dengan **bathtub**, rain shower,
+  dan **air panas & dingin** (*satu-satunya tipe dengan air panas*: jangan sebut air panas untuk tipe lain).
+  Teras kayu pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *berendam di bawah langit terbuka*.
 - **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: **tipe bungalow terbesar**, kayu dua lantai di tengah taman.
   **Kapasitas 6 orang, maksimal 8 dengan 2 extra bed (berbayar).** Lantai 1 untuk 2–3 orang (tempat tidur besar), lantai 2 untuk 4–5 orang (empat kasur).
   **Toilet & kamar mandi di kedua lantai.** Termasuk **sarapan**. AC, Wi-Fi di kamar, set kopi/teh dengan pemanas air, meja kerja/rias,
