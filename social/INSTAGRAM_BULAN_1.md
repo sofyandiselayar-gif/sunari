@@ -22,15 +22,15 @@
 🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
 🥥 Kelapa muda setiap sore
-📩 Reservasi via WhatsApp ⬇️
+📩 WA 0813-4150-4973 ⬇️
 ```
 
 **Opsi B: Informatif**
 ```
 Resort tepi pantai menghadap senja 🌅
-📍 Kepulauan Selayar, Sulawesi Selatan
+📍 Pantai Tile-Tile, Bontosikuyu, Selayar
 🌊 Gerbang ke Taka Bonerate
-Booking langsung ⬇️
+📩 WA 0813-4150-4973 ⬇️
 ```
 
 **Opsi C: Bilingual (untuk tamu asing)**
@@ -38,12 +38,26 @@ Booking langsung ⬇️
 🌅 Tempat senja pulang
 Where every day ends beautifully
 📍 Selayar, South Sulawesi
-Book via WhatsApp ⬇️
+WhatsApp +62 813-4150-4973 ⬇️
 ```
 
-**Tautan bio:** `wa.me/[62xxxxxxxxxx]?text=Halo%20SunaRi%2C%20saya%20ingin%20reservasi`
-Jika ingin beberapa tautan, gunakan Linktree / halaman link dengan urutan:
-WhatsApp Reservasi → Lokasi (Google Maps) → Cara ke Selayar → Paket & Harga.
+**Tautan bio (WhatsApp Bli Eka, langsung berisi pesan reservasi):**
+`https://wa.me/6281341504973?text=Halo%20SunaRi%2C%20saya%20ingin%20reservasi`
+
+Jika memakai Linktree / halaman link, urutannya:
+1. **Reservasi WhatsApp: Bli Eka**: `https://wa.me/6281341504973?text=Halo%20SunaRi%2C%20saya%20ingin%20reservasi`
+2. **Reservasi WhatsApp: Sofyan**: `https://wa.me/6282189033044?text=Halo%20SunaRi%2C%20saya%20ingin%20reservasi`
+3. **Lokasi (Google Maps)**: `https://maps.app.goo.gl/iUWWHNCT7Vyu4i537`
+4. Cara ke Selayar → Paket & Harga
+
+**Tombol kontak profil** (aktifkan di akun Bisnis Instagram): WhatsApp `+62 813-4150-4973`, alamat sesuai bagian Kontak di bawah.
+
+### Kontak & alamat (untuk caption, highlight, dan Google Business)
+- **WhatsApp:** +62 813-4150-4973 (Bli Eka) · +62 821-8903-3044 (Sofyan)
+- **Alamat:** Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya,
+  Kec. Bontosikuyu, Kab. Kepulauan Selayar, Sulawesi Selatan
+- **Google Maps:** https://maps.app.goo.gl/iUWWHNCT7Vyu4i537
+- **Tag lokasi Instagram:** buat/pilih lokasi "SunaRi Beach Resort Selayar" agar tamu bisa ikut menandai.
 
 ### Highlight story
 | Highlight | Isi |
@@ -159,7 +173,11 @@ Ada dua pilihan dari Makassar:
 1️⃣ Pesawat langsung ke Bandara H. Aroeppala, Selayar
 2️⃣ Jalur darat ke Pelabuhan Bira (Bulukumba), lanjut kapal feri ke Pamatata
 
-Detail jadwal ada di slide. Tim kami juga siap bantu atur penjemputan.
+Dari Benteng (ibu kota Selayar), SunaRi ada di KM 14 jalan poros Benteng–Appatana,
+Dusun Tile-Tile Utara, Desa Patikarya. 📍 Lokasi lengkap di highlight "Cara ke Sini".
+
+Detail jadwal ada di slide. Tim kami juga siap bantu atur penjemputan:
+WA 0813-4150-4973 (Bli Eka) / 0821-8903-3044 (Sofyan).
 Simpan postingan ini untuk liburanmu nanti!
 
 #KepulauanSelayar #WisataSulsel #Selayar #SunaRiSelayar #ExploreSulawesi
@@ -213,7 +231,7 @@ Dari jalan setapak sampai ke shower di bawah langit terbuka. 🚿🌿
 Superior Bungalow: rumah kayu kecil yang membuatmu lupa jam,
 sampai matahari mulai turun dan waktunya ke pantai. 🌅
 
-Mulai dari Rp [harga]/malam. Info lengkap via WhatsApp di bio.
+Mulai dari Rp [harga]/malam. Info lengkap: WA 0813-4150-4973.
 
 #SunaRiSelayar #RoomTour #BeachResort #Selayar
 ```
@@ -353,7 +371,7 @@ Staycation Senja: 2 malam, 2 kali senja. 🌅
 ✔️ Kelapa muda setiap sore
 
 Mulai dari Rp [harga]. Hemat [x]% untuk pemesanan bulan ini.
-Reservasi via WhatsApp, link di bio.
+Reservasi: WA 0813-4150-4973, link di bio.
 
 #SunaRiSelayar #PromoResort #Selayar #StaycationSulsel
 ```
@@ -407,7 +425,7 @@ Standard Bungalow: rumah kayu yang sejuk dan bersih,
 dengan teras pribadi yang luas dan langsung menghadap laut.
 Pagi minum kopi sambil melihat ombak, sore tinggal jalan ke pantai untuk menunggu senja. 🌅
 
-Mulai dari Rp [harga]/malam. Info via WhatsApp di bio.
+Mulai dari Rp [harga]/malam. Info: WA 0813-4150-4973.
 
 #SunaRiSelayar #RoomTour #Selayar #LiburanHemat #BeachResort
 ```
@@ -458,7 +476,8 @@ Terima kasih sudah menemani bulan pertama kami. 💛
 Senja di Selayar tetap datang setiap hari,
 dan kursimu di tepi pantai sudah kami siapkan.
 
-📩 Reservasi via WhatsApp, link di bio.
+📩 Reservasi: WA 0813-4150-4973 (Bli Eka) / 0821-8903-3044 (Sofyan)
+📍 Pantai Tile-Tile, Bontosikuyu, Selayar
 Sampai jumpa di tempat senja pulang. 🌅
 
 #SunaRiSelayar #Selayar #SenjaHariIni #PesonaSelayar #WisataSulsel
@@ -474,7 +493,8 @@ Sampai jumpa di tempat senja pulang. 🌅
 - **Repost** setiap tag dari tamu, lalu simpan ke highlight 💬 Ulasan.
 
 ## 5. Data yang Perlu Diisi
-- [ ] Username Instagram final & nomor WhatsApp
+- [x] Nomor WhatsApp & alamat
+- [ ] Username Instagram final
 - [ ] Nama dan harga tiap tipe kamar, kapasitas Family Cottage
 - [ ] Jam check-in/out, biaya penjemputan
 - [ ] Persetujuan program Sunset Guarantee & diskon peluncuran

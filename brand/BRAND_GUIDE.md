@@ -220,7 +220,17 @@ Folder `social/`:
 | 4. Materi foto | Sesi foto golden hour profesional | |
 | 5. Pre-launch & opening | Kampanye "365 Senja", influencer | |
 
-## 9. Yang Perlu Dikonfirmasi
-- Lokasi pantai pasti di Selayar
-- Tipe & harga kamar, nomor WhatsApp, akun Instagram resmi
+## 9. Informasi Resort
+
+| | |
+|---|---|
+| **Alamat** | Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kecamatan Bontosikuyu, Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia |
+| **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
+| **WhatsApp reservasi** | +62 813-4150-4973 (Bli Eka) · +62 821-8903-3044 (Sofyan) |
+| **Link WA langsung** | `https://wa.me/6281341504973` · `https://wa.me/6282189033044` |
+
+Penulisan di materi desain: **WA 0813-4150-4973** sebagai nomor utama. Cantumkan kedua nomor di caption dan materi cetak bila ruang cukup.
+
+## 10. Yang Perlu Dikonfirmasi
+- Harga kamar, kapasitas tamu, akun Instagram resmi
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain
