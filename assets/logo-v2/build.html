@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box} body{background:transparent;padding:40px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.sub{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.42em}
+/* tagline lockup */
+.tg{width:1400px;padding:60px;text-align:center;flex:none}
+.tg img{width:1200px;display:block;margin:0 auto}
+.tg .rule{width:140px;height:2px;margin:50px auto 0;opacity:.55}
+.tg .sub{font-size:36px;margin-top:44px;padding-left:.42em}
+/* badge */
+.bd{width:1200px;height:1200px;border-radius:50%;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.bd .r1{position:absolute;inset:30px;border-radius:50%;border:5px solid}
+.bd .r2{position:absolute;inset:58px;border-radius:50%;border:2px solid;opacity:.6}
+.bd img{width:880px;margin-top:-30px}
+.bd .sub{font-size:30px;margin-top:40px;padding-left:.42em}
+/* profile pics */
+.pp{width:1080px;height:1080px;flex:none;display:flex;align-items:center;justify-content:center}
+.pp>div{flex:none}
+/* sheet */
+#sheet{width:2200px;background:#FBF4EC;padding:90px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:50px;font-family:Montserrat,sans-serif;color:#5A3E31}
+#sheet h1{grid-column:1/-1;font-family:'Playfair Display',serif;font-weight:400;font-size:84px} #sheet h1 i{color:#A67C64}
+#sheet .cell{overflow:hidden;border-radius:6px;display:flex;align-items:center;justify-content:center;height:760px;position:relative}
+#sheet .cell>*{flex:none} #sheet .cap{position:absolute;left:30px;bottom:24px;font-size:22px;letter-spacing:.3em;text-transform:uppercase;opacity:.8}
+#sheet .wide{grid-column:1/-1}
+</style></head><body><div id="out"></div>
+<script>
+const L={d:'../logo-sunari-driftwood.png',c:'../logo-sunari-cream.png'}, C={d:'#A67C64',c:'#FBF4EC'};
+const tg=(id,k)=>`<div class="tg" ${id?`id="${id}"`:''} style="color:${C[k]}"><img src="${L[k]}"><div class="rule" style="background:${C[k]}"></div><div class="sub">Tempat senja pulang</div></div>`;
+const bd=(id,k,bg)=>`<div class="bd" ${id?`id="${id}"`:''} style="color:${C[k]};${bg?`background:${bg}`:''}"><div class="r1"></div><div class="r2"></div><img src="${L[k]}"><div class="sub">Pantai Sunari · Selayar</div></div>`;
+document.getElementById('out').outerHTML =
+ tg('tagline-driftwood','d')+tg('tagline-cream','c')+bd('badge-driftwood','d')+bd('badge-cream','c')+
+ `<div class="pp" id="pp-logo-a" style="background:#FBF4EC"><div style="transform:scale(.8)">${bd('','d')}</div></div>`+
+ `<div class="pp" id="pp-logo-b" style="background:#A67C64"><div style="transform:scale(.8)">${bd('','c')}</div></div>`+
+ `<div id="sheet"><h1>SunaRi <i>Logo</i></h1>
+  <div class="cell wide" style="background:#FBF4EC;border:1px solid #e6d9c8"><img src="${L.d}" style="width:1500px"><span class="cap">Logo asli · utama</span></div>
+  <div class="cell" style="background:#A67C64"><div style="transform:scale(.62)">${tg('','c')}</div><span class="cap" style="color:#FBF4EC">Dengan tagline</span></div>
+  <div class="cell" style="background:#E6C89B"><div style="transform:scale(.55)">${bd('','d').replace(/#A67C64/,'#5A3E31').replace('${L.d}','')}</div><span class="cap">Badge</span></div>
+  <div class="cell" style="background:#5A3E31"><div style="transform:scale(.55)">${bd('','c')}</div><span class="cap" style="color:#FBF4EC">Badge · latar gelap</span></div>
+  <div class="cell" style="background:#FBF4EC;border:1px solid #e6d9c8"><div style="transform:scale(.62)">${tg('','d')}</div><span class="cap">Dengan tagline · terang</span></div>
+ </div>`;
+</script></body></html>

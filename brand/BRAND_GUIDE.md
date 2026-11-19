@@ -66,6 +66,10 @@ File di folder `assets/`:
 | `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, putih, langit senja bagian atas yang terang |
 | `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Cadangan untuk foto yang sangat gelap |
 | `mark-sunari-driftwood.svg` / `mark-sunari-cream.svg` | Driftwood / Shell Cream | **Simbol brand** (matahari di atas horizon dalam lingkaran): avatar Instagram, ikon, kartu kunci, signage, watermark kecil |
+| `logo-v2/logo-sunari-tagline-*.png` | Driftwood / Shell Cream | Logo asli + garis + tagline "TEMPAT SENJA PULANG" (sampul, poster, kartu) |
+| `logo-v2/logo-sunari-badge-*.png` | Driftwood / Shell Cream | Logo asli dalam lingkaran ganda + "PANTAI SUNARI · SELAYAR" (stiker, stempel, signage, merchandise) |
+| `logo-v2/pp-logo-a.png` / `pp-logo-b.png` | Krem / Driftwood | Foto profil Instagram versi logo asli (badge) |
+| `logo-v2/logo-sheet.png` | | Lembar presentasi semua versi logo |
 | `original/logo-sunari-original.jpg` | Warna lama | **Arsip saja**, tidak dipakai lagi |
 
 **Aturan**
