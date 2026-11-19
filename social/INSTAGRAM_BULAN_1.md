@@ -69,7 +69,7 @@ Jika memakai Linktree / halaman link, urutannya:
 | 💬 Ulasan | Testimoni tamu |
 | 📩 Booking | Cara reservasi, FAQ |
 
-Warna cover highlight: latar **Forest Teal** dengan ikon garis **Light Beige**, atau latar **Light Beige** dengan ikon **Forest Teal**. Jangan dicampur.
+Warna cover highlight: latar **Shell Cream** `#FBF4EC` dengan ikon garis **Driftwood** `#A67C64`, atau latar **Sandy Shore** `#E6C89B` dengan ikon **Driftwood Deep** `#5A3E31`. Pilih satu gaya untuk semua highlight.
 
 ---
 
@@ -391,7 +391,7 @@ Senja hari ini: [jam] WITA.
 ```
 
 **Hari 24 · Carousel · Info (FAQ)**
-*Visual:* tanya-jawab di slide berlatar Light Beige.
+*Visual:* tanya-jawab di slide berlatar Shell Cream.
 ```
 Pertanyaan yang paling sering kami terima 💬
 

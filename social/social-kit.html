@@ -7,10 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --teal:#0E4937; --beige:#FBE9D1; --orange:#FF5D00; --lime:#72BF00;
-    --teal-deep:#0A3A2C;
-  }
+  :root{--ink:#5A3E31;--cream:#FBF4EC;--pink:#F7A7A1;--coral:#FF8A5C;--gold:#FDB15D;--ocean:#7BA7B6;--sand:#E6C89B;--drift:#A67C64}
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#d9d4cc;font-family:Montserrat,sans-serif;padding:40px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
   .tpl{position:relative;overflow:hidden;flex:none}
@@ -22,68 +19,68 @@
 
   /* ---------- shared sunset scene ---------- */
   .scene{position:absolute;left:0;right:0;top:0;overflow:hidden;
-    background:linear-gradient(180deg,#FBE9D1 0%,#FFD3A8 45%,#FF9A57 78%,#FF7A2B 100%)}
+    background:linear-gradient(180deg,#FBF4EC 0%,#F7A7A1 48%,#FF8A5C 100%)}
   .scene .sun{position:absolute;left:50%;border-radius:50%;transform:translateX(-50%);
-    background:radial-gradient(circle at 50% 40%,#FF8A3D 0%,var(--orange) 70%)}
-  .scene .sea{position:absolute;left:0;right:0;bottom:0;background:var(--teal)}
-  .scene .glint{position:absolute;left:50%;transform:translateX(-50%);height:6px;border-radius:6px;background:var(--orange);opacity:.85}
+    background:radial-gradient(circle at 50% 45%,#FFEBCF 0%,var(--gold) 68%)}
+  .scene .sea{position:absolute;left:0;right:0;bottom:0;background:var(--ocean)}
+  .scene .glint{position:absolute;left:50%;transform:translateX(-50%);height:6px;border-radius:6px;background:var(--cream);opacity:.85}
 
   /* ---------- 1. feed-senja ---------- */
-  #feed-senja{background:var(--teal);color:var(--beige)}
+  #feed-senja{background:var(--ink);color:var(--cream)}
   #feed-senja .scene{height:860px}
   #feed-senja .sun{width:420px;height:420px;bottom:150px}
   #feed-senja .sea{height:190px}
   #feed-senja .info{position:absolute;left:80px;right:80px;top:900px}
-  #feed-senja .kicker{color:var(--lime)}
+  #feed-senja .kicker{color:var(--gold)}
   #feed-senja .time{font-weight:900;font-size:210px;line-height:1;letter-spacing:-.02em;margin-top:14px}
   #feed-senja .time small{font-size:56px;font-weight:600;letter-spacing:.08em;margin-left:18px}
-  #feed-senja .tag{color:var(--orange);font-size:64px;margin-top:6px}
+  #feed-senja .tag{color:var(--coral);font-size:64px;margin-top:6px}
   #feed-senja .logo{position:absolute;left:60px;top:50px;width:480px}
   #feed-senja .date{font-weight:600;font-size:28px;letter-spacing:.14em;opacity:.75;margin-top:34px}
 
   /* ---------- 2. feed-promo ---------- */
-  #feed-promo{background:var(--beige);color:var(--teal)}
+  #feed-promo{background:var(--cream);color:var(--ink)}
   #feed-promo .logo{position:absolute;left:70px;top:60px;width:470px}
   #feed-promo .badge{position:absolute;right:80px;top:110px;width:300px;height:300px;border-radius:50%;
-    background:var(--orange);color:var(--beige);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+    background:var(--coral);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
   #feed-promo .badge b{font-size:120px;font-weight:900;line-height:.9}
   #feed-promo .badge span{font-size:28px;font-weight:800;letter-spacing:.2em;margin-top:8px}
   #feed-promo .body{position:absolute;left:80px;right:80px;top:470px}
-  #feed-promo .kicker{color:var(--orange)}
+  #feed-promo .kicker{color:var(--drift)}
   #feed-promo h1{font-weight:900;font-size:124px;line-height:.95;text-transform:uppercase;margin-top:20px;letter-spacing:-.01em}
-  #feed-promo .script{color:var(--orange);font-size:66px;margin-top:10px}
+  #feed-promo .script{color:var(--drift);font-size:66px;margin-top:10px}
   #feed-promo ul{list-style:none;margin-top:40px;font-weight:600;font-size:36px;line-height:1.7}
-  #feed-promo li::before{content:"";display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--lime);margin-right:22px;vertical-align:middle}
-  #feed-promo .cta{position:absolute;left:0;right:0;bottom:0;height:170px;background:var(--teal);color:var(--beige);
+  #feed-promo li::before{content:"";display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--gold);margin-right:22px;vertical-align:middle}
+  #feed-promo .cta{position:absolute;left:0;right:0;bottom:0;height:170px;background:var(--ink);color:var(--cream);
     display:flex;align-items:center;justify-content:space-between;padding:0 80px}
-  #feed-promo .cta .btn{background:var(--orange);color:var(--beige);font-weight:800;font-size:32px;padding:26px 40px;border-radius:14px;letter-spacing:.04em}
+  #feed-promo .cta .btn{background:var(--coral);color:var(--ink);font-weight:800;font-size:32px;padding:26px 40px;border-radius:14px;letter-spacing:.04em}
   #feed-promo .cta .price{font-weight:600;font-size:28px;line-height:1.3}
   #feed-promo .cta .price b{display:block;font-weight:900;font-size:46px}
 
   /* ---------- 3. feed-quote ---------- */
-  #feed-quote{background:var(--teal);color:var(--beige)}
+  #feed-quote{background:var(--ink);color:var(--cream)}
   #feed-quote .wrap{position:absolute;left:100px;right:100px;top:250px}
   #feed-quote .sunline{display:flex;align-items:center;gap:26px}
-  #feed-quote .dot{width:70px;height:70px;border-radius:50%;background:var(--orange)}
-  #feed-quote .line{flex:1;height:4px;background:var(--lime);border-radius:4px}
+  #feed-quote .dot{width:70px;height:70px;border-radius:50%;background:var(--coral)}
+  #feed-quote .line{flex:1;height:4px;background:var(--gold);border-radius:4px}
   #feed-quote blockquote{font-weight:800;font-size:96px;line-height:1.08;margin-top:70px;letter-spacing:-.01em}
-  #feed-quote blockquote em{font-style:normal;color:var(--orange)}
-  #feed-quote .script{font-size:64px;color:var(--lime);margin-top:44px}
+  #feed-quote blockquote em{font-style:normal;color:var(--coral)}
+  #feed-quote .script{font-size:64px;color:var(--gold);margin-top:44px}
   #feed-quote .logo{position:absolute;left:50%;transform:translateX(-50%);bottom:70px;width:520px}
 
   /* ---------- 4. story-senja ---------- */
-  #story-senja{background:var(--teal);color:var(--beige)}
+  #story-senja{background:var(--ink);color:var(--cream)}
   #story-senja .scene{height:1180px}
   #story-senja .sun{width:520px;height:520px;bottom:170px}
   #story-senja .sea{height:220px}
   #story-senja .logo-top{position:absolute;left:50%;transform:translateX(-50%);top:120px;width:640px;z-index:2}
   #story-senja .info{position:absolute;left:0;right:0;top:1220px;text-align:center}
-  #story-senja .kicker{color:var(--lime);font-size:34px}
+  #story-senja .kicker{color:var(--gold);font-size:34px}
   #story-senja .time{font-weight:900;font-size:250px;line-height:1;margin-top:10px}
   #story-senja .time small{display:block;font-size:52px;font-weight:600;letter-spacing:.3em;margin-top:6px}
-  #story-senja .script{color:var(--orange);font-size:74px;margin-top:30px}
+  #story-senja .script{color:var(--coral);font-size:74px;margin-top:30px}
   #story-senja .sticker{position:absolute;left:50%;transform:translateX(-50%);bottom:110px;
-    border:3px dashed rgba(251,233,209,.45);border-radius:24px;padding:26px 50px;font-weight:600;font-size:28px;letter-spacing:.12em;opacity:.8;white-space:nowrap}
+    border:3px dashed rgba(251,244,236,.45);border-radius:24px;padding:26px 50px;font-weight:600;font-size:28px;letter-spacing:.12em;opacity:.8;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -98,7 +95,7 @@
       <div class="glint" style="top:104px;width:120px;opacity:.4"></div>
     </div>
   </div>
-  <img class="logo" src="../assets/logo-sunari-transparent.png" alt="">
+  <img class="logo" src="../assets/logo-sunari-driftwood.png" alt="">
   <div class="info">
     <div class="kicker">#SenjaHariIni</div>
     <div class="time">17.57<small>WITA</small></div>
@@ -110,7 +107,7 @@
 <!-- 2. Promo -->
 <div class="tpl feed" id="feed-promo">
   <svg class="frond" data-frond data-op=".18" style="right:-260px;bottom:120px;width:900px;transform:rotate(-160deg)"></svg>
-  <img class="logo" src="../assets/logo-sunari-transparent.png" alt="">
+  <img class="logo" src="../assets/logo-sunari-driftwood.png" alt="">
   <div class="badge"><b>2</b><span>MALAM</span></div>
   <div class="body">
     <div class="kicker">Paket Akhir Pekan</div>
@@ -136,7 +133,7 @@
     <blockquote>Setiap hari di Selayar <em>berakhir dengan indah.</em></blockquote>
     <div class="script">Where every day ends beautifully</div>
   </div>
-  <img class="logo" src="../assets/logo-sunari-light.png" alt="">
+  <img class="logo" src="../assets/logo-sunari-cream.png" alt="">
 </div>
 
 <!-- 4. Story -->
@@ -149,7 +146,7 @@
       <div class="glint" style="top:124px;width:140px;opacity:.4"></div>
     </div>
   </div>
-  <img class="logo-top" src="../assets/logo-sunari-transparent.png" alt="">
+  <img class="logo-top" src="../assets/logo-sunari-driftwood.png" alt="">
   <div class="info">
     <div class="kicker">Senja hari ini</div>
     <div class="time">17.57<small>WITA</small></div>
@@ -174,7 +171,7 @@ document.querySelectorAll('svg[data-frond]').forEach(svg => {
     }
   }
   const [x0,y0] = P(0), [x1,y1] = P(1), [xm,ym] = P(.5);
-  svg.innerHTML = `<g fill="none" stroke="#72BF00" stroke-linecap="round" opacity="${op}">
+  svg.innerHTML = `<g fill="none" stroke="#A67C64" stroke-linecap="round" opacity="${op}">
     <path d="${d}" stroke-width="7"/>
     <path d="M${x0},${y0} Q${xm},${ym-40} ${x1},${y1}" stroke-width="6"/></g>`;
 });

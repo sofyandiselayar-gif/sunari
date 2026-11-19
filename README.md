@@ -6,13 +6,14 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 |---|---|
 | `brand/BRAND_GUIDE.md` | Panduan brand: cerita, positioning, warna, tipografi, tone, strategi media sosial |
 | `brand/palette-reference.jpg` | Referensi palet warna |
-| `assets/` | Logo asli, versi transparan (latar terang), dan versi terang (latar gelap) |
+| `assets/` | Logo satu warna: Driftwood (utama) & Shell Cream (latar gelap); logo lama di `assets/original/` |
 | `social/INSTAGRAM_BULAN_1.md` | Bio Instagram, highlight, dan 30 caption bulan pertama |
 | `social/` | Template Instagram (feed, story, carousel room tour Superior / Standard / VIP Standard) beserta sumber HTML-nya |
 | `assets/photos/` | Foto asli kamar |
 
 ## Palet
-`#0E4937` Forest Teal · `#FBE9D1` Light Beige · `#FF5D00` Vivid Orange · `#72BF00` Lime Green
+*Sunset Beach*: `#F7A7A1` Sunset Pink · `#FF8A5C` Coral Glow · `#FDB15D` Golden Hour · `#7BA7B6` Ocean Breeze · `#E6C89B` Sandy Shore · `#A67C64` Driftwood
+Pendukung: `#FBF4EC` Shell Cream · `#5A3E31` Driftwood Deep. Logo satu warna: Driftwood (latar terang) / Shell Cream (latar gelap).
 
 ## Membuat ulang template media sosial
 Edit teks (jam senja, teks, dll.) di `social/social-kit.html`, lalu jalankan:

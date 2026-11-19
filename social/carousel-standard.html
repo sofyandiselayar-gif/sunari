@@ -6,44 +6,44 @@
 <title>Standard Bungalow Carousel</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
 <style>
-  :root{--teal:#0E4937;--beige:#FBE9D1;--orange:#FF5D00;--lime:#72BF00}
+  :root{--ink:#5A3E31;--cream:#FBF4EC;--pink:#F7A7A1;--coral:#FF8A5C;--gold:#FDB15D;--ocean:#7BA7B6;--sand:#E6C89B;--drift:#A67C64}
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#d9d4cc;font-family:Montserrat,sans-serif;padding:40px;display:flex;flex-wrap:wrap;gap:40px}
-  .tpl{position:relative;width:1080px;height:1350px;overflow:hidden;flex:none;background:var(--teal);color:var(--beige)}
+  .tpl{position:relative;width:1080px;height:1350px;overflow:hidden;flex:none;background:var(--ink);color:var(--cream)}
   .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .script{font-family:'Kaushan Script',cursive}
   .kicker{font-weight:800;letter-spacing:.32em;text-transform:uppercase;font-size:28px}
   .num{position:absolute;top:56px;right:60px;font-weight:800;font-size:26px;letter-spacing:.2em;
-       background:rgba(14,73,55,.82);padding:12px 22px;border-radius:40px}
+       background:rgba(90,62,49,.82);padding:12px 22px;border-radius:40px}
   /* cover */
-  #st-1 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,73,55,0) 55%,rgba(14,73,55,.9) 74%,var(--teal) 100%)}
+  #st-1 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(90,62,49,0) 55%,rgba(90,62,49,.9) 74%,var(--ink) 100%)}
   #st-1 .txt{position:absolute;left:80px;right:80px;bottom:200px}
-  #st-1 .kicker{color:var(--beige);display:inline-block;background:rgba(14,73,55,.88);padding:10px 18px;border-radius:10px}
+  #st-1 .kicker{color:var(--cream);display:inline-block;background:rgba(90,62,49,.88);padding:10px 18px;border-radius:10px}
   #st-1 h1{font-weight:900;font-size:128px;line-height:.92;text-transform:uppercase;margin-top:16px}
-  #st-1 .script{color:var(--orange);font-size:62px;margin-top:14px}
-  #st-1 .logo{position:absolute;left:50px;top:44px;width:400px;background:rgba(14,73,55,.88);border-radius:22px;padding:10px 18px}
+  #st-1 .script{color:var(--coral);font-size:62px;margin-top:14px}
+  #st-1 .logo{position:absolute;left:50px;top:44px;width:400px;background:rgba(90,62,49,.88);border-radius:22px;padding:10px 18px}
   #st-1 .swipe{position:absolute;right:80px;bottom:80px;font-weight:700;font-size:28px;letter-spacing:.14em}
   /* photo slides */
   .photo-slide .photo{height:1030px}
-  .photo-slide .band{position:absolute;left:0;right:0;bottom:0;height:320px;background:var(--teal);padding:56px 80px}
-  .photo-slide .band::before{content:"";position:absolute;left:80px;top:0;width:120px;height:8px;background:var(--orange)}
+  .photo-slide .band{position:absolute;left:0;right:0;bottom:0;height:320px;background:var(--ink);padding:56px 80px}
+  .photo-slide .band::before{content:"";position:absolute;left:80px;top:0;width:120px;height:8px;background:var(--coral)}
   .photo-slide h2{font-weight:900;font-size:66px;line-height:1.02;text-transform:uppercase}
   .photo-slide p{font-weight:500;font-size:32px;line-height:1.45;margin-top:18px;opacity:.9}
   /* split slide */
   #st-5 .a{position:absolute;left:0;top:0;width:1080px;height:515px;object-fit:cover}
   #st-5 .b{position:absolute;left:0;top:525px;width:1080px;height:505px;object-fit:cover}
   /* CTA */
-  #st-5{background:var(--beige);color:var(--teal)}
+  #st-5{background:var(--cream);color:var(--ink)}
   #st-5 .logo{position:absolute;left:70px;top:60px;width:470px}
   #st-5 .body{position:absolute;left:80px;right:80px;top:380px}
-  #st-5 .kicker{color:var(--orange)}
+  #st-5 .kicker{color:var(--drift)}
   #st-5 h2{font-weight:900;font-size:96px;line-height:.95;text-transform:uppercase;margin-top:16px}
   #st-5 ul{list-style:none;margin-top:44px;font-weight:600;font-size:34px;line-height:1.75}
-  #st-5 li::before{content:"";display:inline-block;width:16px;height:16px;border-radius:50%;background:var(--lime);margin-right:22px;vertical-align:middle}
-  #st-5 .cta{position:absolute;left:0;right:0;bottom:0;height:170px;background:var(--teal);color:var(--beige);display:flex;align-items:center;justify-content:space-between;padding:0 80px}
+  #st-5 li::before{content:"";display:inline-block;width:16px;height:16px;border-radius:50%;background:var(--gold);margin-right:22px;vertical-align:middle}
+  #st-5 .cta{position:absolute;left:0;right:0;bottom:0;height:170px;background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:space-between;padding:0 80px}
   #st-5 .price{font-weight:600;font-size:28px;line-height:1.3;white-space:nowrap}
   #st-5 .price b{display:block;font-weight:900;font-size:44px}
-  #st-5 .btn{white-space:nowrap;background:var(--orange);font-weight:800;font-size:32px;padding:26px 40px;border-radius:14px}
+  #st-5 .btn{white-space:nowrap;background:var(--coral);color:var(--ink);font-weight:800;font-size:32px;padding:26px 40px;border-radius:14px}
 </style>
 </head>
 <body>
@@ -56,7 +56,7 @@
     <div class="script">Pagi menghadap laut Selayar</div>
   </div>
   <div class="swipe">GESER →</div>
-  <img class="logo" src="../assets/logo-sunari-light.png" alt="">
+  <img class="logo" src="../assets/logo-sunari-cream.png" alt="">
 </div>
 <div class="tpl photo-slide" id="st-2">
   <img class="photo" src="../assets/photos/standard-bungalow/03-kamar-depan.jpg" style="object-position:50% 60%" alt="">
@@ -77,7 +77,7 @@
 </div>
 
 <div class="tpl" id="st-5">
-  <img class="logo" src="../assets/logo-sunari-transparent.png" alt="">
+  <img class="logo" src="../assets/logo-sunari-driftwood.png" alt="">
   <div class="body">
     <div class="kicker">Standard Bungalow</div>
     <h2>Yang kamu<br>dapatkan</h2>

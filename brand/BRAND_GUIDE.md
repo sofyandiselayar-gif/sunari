@@ -58,49 +58,68 @@ di pasir, minum kelapa muda, dan menunggu matahari tenggelam.
 ## 4. Identitas Visual
 
 ### 4.1 Logo
+Logo SunaRi dipakai dalam **satu warna saja** (monokrom), mengikuti palet *Sunset Beach*.
 File di folder `assets/`:
 
-| File | Pemakaian |
-|---|---|
-| `logo-sunari.jpg` | Logo asli (latar putih) |
-| `logo-sunari-transparent.png` | Latar terang: Light Beige, putih, foto cerah |
-| `logo-sunari-light.png` | Latar gelap: Forest Teal, foto senja. Teks hitam diganti beige agar terbaca |
+| File | Warna | Pemakaian |
+|---|---|---|
+| `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, Sandy Shore, langit senja yang terang, putih |
+| `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Latar gelap: Driftwood Deep, foto (dengan bayangan/kotak gelap di belakang logo) |
+| `original/logo-sunari-original.jpg` | Warna lama | **Arsip saja**, tidak dipakai lagi |
 
 **Aturan**
+- Hanya pakai satu warna per logo: Driftwood **atau** Shell Cream. Jangan mewarnai bagian logo dengan warna berbeda.
 - Ruang aman: kosongkan area minimal setinggi huruf "S" di sekeliling logo.
 - Ukuran minimum: lebar 200px di digital. Di bawah itu teks "Beach Resort Selayar" sulit dibaca.
-- **Jangan** taruh logo versi asli (teks hitam) di atas Forest Teal atau foto gelap.
-- **Jangan** taruh logo di atas Lime Green karena daun kelapanya akan "hilang".
+- Di atas foto yang ramai, letakkan logo krem di atas kotak Driftwood Deep semi-transparan.
+- Jangan taruh logo Driftwood di atas Coral Glow, Golden Hour, atau Sunset Pink karena kontrasnya terlalu rendah.
 - Jangan memutar, merenggangkan, atau memberi efek bayangan.
-- Untuk avatar/foto profil, potong menjadi **"SunaRi" + ujung daun** saja di atas latar
-  Light Beige (dibuat terpisah oleh desainer).
+- Untuk avatar/foto profil, potong menjadi **"SunaRi" + ujung daun** berwarna Driftwood di atas latar
+  Shell Cream (dibuat terpisah oleh desainer).
 
-### 4.2 Palet Warna
+### 4.2 Palet Warna: *Sunset Beach*
+Referensi: `brand/palette-reference.jpg`.
+
+**Palet utama**
 
 | Nama | HEX | RGB | Peran |
 |---|---|---|---|
-| **Forest Teal** | `#0E4937` | 14, 73, 55 | Warna utama: latar gelap, teks judul |
-| **Light Beige** | `#FBE9D1` | 251, 233, 209 | Latar terang, teks di atas teal (nuansa pasir) |
-| **Vivid Orange** | `#FF5D00` | 255, 93, 0 | Aksen: senja, CTA, promo |
-| **Lime Green** | `#72BF00` | 114, 191, 0 | Aksen segar: ikon, garis, sorotan kecil |
+| **Sunset Pink** | `#F7A7A1` | 247, 167, 161 | Langit senja, gradasi, latar lembut |
+| **Coral Glow** | `#FF8A5C` | 255, 138, 92 | **Aksen utama:** tombol CTA, lingkaran matahari, garis aksen |
+| **Golden Hour** | `#FDB15D` | 253, 177, 93 | Matahari, sorotan, judul kecil di atas latar gelap |
+| **Ocean Breeze** | `#7BA7B6` | 123, 167, 182 | Laut, ikon, elemen pendukung |
+| **Sandy Shore** | `#E6C89B` | 230, 200, 155 | Latar hangat, kartu, blok informasi |
+| **Driftwood** | `#A67C64` | 166, 124, 100 | **Warna logo**, judul kecil di atas latar terang, motif daun |
 
-**Proporsi (aturan 60–25–10–5)**
-- 60% Light Beige **atau** Forest Teal (latar)
-- 25% Forest Teal / Light Beige (teks & blok kontras)
-- 10% Vivid Orange (aksen utama)
-- 5% Lime Green (aksen kecil)
+**Warna pendukung** (turunan palet, untuk keterbacaan teks)
 
-**Kombinasi yang aman dibaca**
-
-| Teks | Latar | Status |
+| Nama | HEX | Peran |
 |---|---|---|
-| Forest Teal | Light Beige | ✅ Sangat baik, untuk semua ukuran teks |
-| Light Beige | Forest Teal | ✅ Sangat baik, untuk semua ukuran teks |
-| Light Beige | Vivid Orange | ⚠️ Hanya untuk judul besar dan tombol |
-| Vivid Orange | Forest Teal | ⚠️ Hanya untuk judul besar dan angka |
-| Lime Green | Forest Teal | ⚠️ Hanya untuk judul besar dan ikon |
-| Lime Green / Orange | Light Beige | ❌ Hindari untuk teks |
-| Orange ↔ Lime berdampingan | | ❌ Hindari. Kedua warna bertabrakan dan terlihat murahan |
+| **Shell Cream** | `#FBF4EC` | Latar terang utama (warna kertas pada referensi) |
+| **Driftwood Deep** | `#5A3E31` | Teks utama & latar gelap. Versi gelap Driftwood, karena palet utama tidak punya warna yang cukup gelap untuk teks |
+
+**Gradasi khas** *(langit senja)*: `linear-gradient(180deg, #FBF4EC 0%, #F7A7A1 48%, #FF8A5C 100%)`
+
+**Proporsi**
+- 55% Shell Cream / Sandy Shore (latar)
+- 25% Driftwood Deep (teks & blok gelap)
+- 10% Coral Glow (aksen utama)
+- 10% Golden Hour, Sunset Pink, Ocean Breeze, Driftwood (aksen pendukung)
+
+**Kombinasi yang aman dibaca** (sudah dicek rasio kontrasnya)
+
+| Teks | Latar | Kontras | Status |
+|---|---|---|---|
+| Driftwood Deep | Shell Cream | 8,9 : 1 | ✅ Semua ukuran teks |
+| Shell Cream | Driftwood Deep | 8,9 : 1 | ✅ Semua ukuran teks |
+| Driftwood Deep | Sandy Shore | 6,0 : 1 | ✅ Semua ukuran teks |
+| Golden Hour | Driftwood Deep | 5,4 : 1 | ✅ Semua ukuran teks |
+| Driftwood Deep | Sunset Pink / Golden Hour | 5,1 / 5,4 : 1 | ✅ Semua ukuran teks |
+| Coral Glow | Driftwood Deep | 4,2 : 1 | ⚠️ Judul, angka, teks besar |
+| Driftwood Deep | Coral Glow | 4,2 : 1 | ⚠️ Teks tombol (tebal) |
+| Driftwood | Shell Cream | 3,4 : 1 | ⚠️ Hanya judul kecil kapital & teks besar |
+| Coral / Pink / Gold / Ocean | Shell Cream | ≤ 2,4 : 1 | ❌ Jangan untuk teks; pakai sebagai bentuk/dekorasi |
+| Putih / krem | Coral Glow | 2,1 : 1 | ❌ Tombol coral selalu memakai teks Driftwood Deep |
 
 ### 4.3 Tipografi
 Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font pendamping harus **bersih dan tegas**:
@@ -119,9 +138,10 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 - Hindari: filter biru dingin, flash, tumpukan sampah atau kabel di frame.
 
 ### 4.5 Elemen Grafis
-- **Motif daun kelapa** (diambil dari logo) di sudut desain, dipakai dengan opacity rendah.
-- **Lingkaran matahari** Vivid Orange untuk menyorot jam senja atau angka penting.
-- Sudut membulat kecil (8–16px). Garis tipis Lime sebagai pemisah.
+- **Motif daun kelapa** (diambil dari logo) berwarna Driftwood di sudut desain, dengan opacity rendah.
+- **Lingkaran matahari** Coral Glow / Golden Hour untuk menyorot jam senja atau angka penting.
+- **Laut** selalu Ocean Breeze, **langit** memakai gradasi khas.
+- Sudut membulat kecil (8–16px). Garis tipis Golden Hour atau Coral Glow sebagai pemisah.
 
 ---
 
