@@ -201,7 +201,7 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 
 **Pengalaman**
 - **Sunset Ritual**: 30 menit sebelum senja, tamu disuguhi kelapa muda di tepi pantai.
-- **Senja Dinner**: ikan bakar & seafood lokal di atas pasir.
+- **Senja Dinner** ✅ *(tersedia)*: makan malam di tepi pantai saat senja. Detail menu perlu dikonfirmasi.
 - **Taka Bonerate Trip**: snorkeling/diving, kembali sebelum senja.
 - **Sunset Boat**: naik perahu nelayan saat golden hour.
 - **Senja Journal**: buku kecil di kamar untuk menulis cerita senja.
@@ -274,7 +274,7 @@ Folder `social/`:
 |---|---|
 | **Alamat** | Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kecamatan Bontosikuyu, Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia |
 | **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
-| **Fasilitas umum** | Restoran (terkonfirmasi) |
+| **Fasilitas umum** | Restoran, Senja Dinner (makan malam di tepi pantai saat senja), terkonfirmasi |
 | **WhatsApp reservasi** | +62 821-8903-3044 (Sofyan) |
 | **Link WA langsung** | `https://wa.me/6282189033044` |
 
