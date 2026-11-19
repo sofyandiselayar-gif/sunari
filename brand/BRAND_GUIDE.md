@@ -63,7 +63,7 @@ File di folder `assets/`:
 
 | File | Warna | Pemakaian |
 |---|---|---|
-| `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, Sandy Shore, langit senja yang terang, putih |
+| `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, putih, langit senja bagian atas yang terang |
 | `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Latar gelap: Driftwood Deep, foto (dengan bayangan/kotak gelap di belakang logo) |
 | `original/logo-sunari-original.jpg` | Warna lama | **Arsip saja**, tidak dipakai lagi |
 
@@ -72,7 +72,7 @@ File di folder `assets/`:
 - Ruang aman: kosongkan area minimal setinggi huruf "S" di sekeliling logo.
 - Ukuran minimum: lebar 200px di digital. Di bawah itu teks "Beach Resort Selayar" sulit dibaca.
 - Di atas foto yang ramai, letakkan logo krem di atas kotak Driftwood Deep semi-transparan.
-- Jangan taruh logo Driftwood di atas Coral Glow, Golden Hour, atau Sunset Pink karena kontrasnya terlalu rendah.
+- Jangan taruh logo Driftwood di atas Sandy Shore, Coral Glow, Golden Hour, atau Sunset Pink karena kontrasnya terlalu rendah.
 - Jangan memutar, merenggangkan, atau memberi efek bayangan.
 - Untuk avatar/foto profil, potong menjadi **"SunaRi" + ujung daun** berwarna Driftwood di atas latar
   Shell Cream (dibuat terpisah oleh desainer).
