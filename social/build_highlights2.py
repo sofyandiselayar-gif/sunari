@@ -40,6 +40,9 @@ ICONS.append(("07c-ramadhan-1448", "Ramadhan 1448H", ramadhan("1448 H")))
 ICONS.append(("07d-layangan", "Layangan", f'''<g {S}><path d="M104 30 L146 74 L104 128 L62 74 Z"/><line x1="104" y1="30" x2="104" y2="128"/><line x1="62" y1="74" x2="146" y2="74"/>
    <path d="M104 128 q-10 12 0 22 t0 22 t-6 14"/></g>
    <g fill="{D}"><path d="M94 144 l-12 -6 l2 12 Z"/><path d="M112 162 l12 -6 l-2 12 Z"/></g>'''))
+ICONS.append(("07e-qna", "Q&A", f'''<g {S}><path d="M40 60 h84 a12 12 0 0 1 12 12 v38 a12 12 0 0 1 -12 12 h-44 l-22 18 v-18 h-18 a12 12 0 0 1 -12 -12 v-38 a12 12 0 0 1 12 -12 Z"/>
+   <path d="M112 132 v12 a10 10 0 0 0 10 10 h22 l18 14 v-14 h4 a10 10 0 0 0 10 -10 v-30 a10 10 0 0 0 -10 -10 h-20"/></g>
+   <text x="82" y="106" text-anchor="middle" font-family="Playfair Display" font-size="44" fill="{D}">Q</text><text x="150" y="146" text-anchor="middle" font-family="Playfair Display" font-size="34" fill="{D}">A</text>'''))
 for i, (m, name) in enumerate([("APR","Sunset April"),("MEI","Sunset Mei"),("JUN","Sunset Juni"),("JUL","Sunset Juli"),
                                 ("AGU","Sunset Agustus"),("SEP","Sunset Sept"),("OKT","Sunset Oktober"),("NOV","Sunset November"),("DES","Sunset Desember")], 9):
     ICONS.append((f"{i:02d}-sunset-{m.lower()}", name, month(m)))
