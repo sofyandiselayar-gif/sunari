@@ -3,7 +3,7 @@
 const { chromium } = require('playwright');
 const path = require('path');
 const files = process.argv.slice(2).length ? process.argv.slice(2)
-  : ['social-kit.html', 'carousel-superior.html'];
+  : ['social-kit.html', 'carousel-superior.html', 'carousel-standard.html'];
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 2400, height: 2200 } });

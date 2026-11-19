@@ -398,17 +398,18 @@ Pesan minimal [H-1] via WhatsApp.
 #SenjaDinner #SunaRiSelayar #Selayar #RomanticDinner
 ```
 
-**Hari 26 · Reels · Kamar**
-*Visual:* Family Cottage, anak-anak berlari ke pantai.
+**Hari 26 · Carousel (siap: `social/carousel/st-1…5.png`) · Kamar**
+*Visual:* room tour Standard Bungalow, 5 slide (teras view laut, kamar, kamar mandi bambu, fasilitas).
 ```
-Liburan keluarga yang ditutup dengan tawa di tepi pantai. 👨‍👩‍👧‍👦🌴
+Liburan ke Selayar tidak harus mahal. 🌊
 
-Family Cottage kami muat hingga [x] orang,
-hanya beberapa langkah dari pasir.
+Standard Bungalow: rumah kayu yang sejuk dan bersih,
+dengan teras luas yang langsung menghadap laut.
+Pagi minum kopi sambil melihat ombak, sore tinggal jalan ke pantai untuk menunggu senja. 🌅
 
-Info dan harga via WhatsApp di bio.
+Mulai dari Rp [harga]/malam. Info via WhatsApp di bio.
 
-#SunaRiSelayar #LiburanKeluarga #Selayar #FamilyTrip
+#SunaRiSelayar #RoomTour #Selayar #LiburanHemat #BeachResort
 ```
 
 **Hari 27 · Feed · Senja**

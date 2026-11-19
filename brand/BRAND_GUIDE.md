@@ -152,7 +152,9 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 - **Superior Bungalow** *(foto asli: `assets/photos/superior-bungalow/`)*: bungalow kayu beratap A-frame
   dengan loteng, teras kayu pribadi, kamar mandi semi-outdoor dengan taman & rain shower, AC, TV,
   perlengkapan kopi/teh. Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
-- Tipe kamar lain: [menunggu data]
+- **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi,
+  AC, tempat tidur double, kamar mandi dalam bernuansa bambu & lantai batu alam, teras luas menghadap laut.
+  Kata kunci promosi: *pagi menghadap laut Selayar*, pilihan hemat.
 
 **Pengalaman**
 - **Sunset Ritual**: 30 menit sebelum senja, tamu disuguhi kelapa muda di tepi pantai.
@@ -193,6 +195,7 @@ Folder `social/`:
 - `feed-quote.png`: kutipan/tagline (1080×1350)
 - `story-senja.png`: story jam senja (1080×1920)
 - `carousel/sb-1…6.png`: carousel room tour Superior Bungalow (sumber: `carousel-superior.html`)
+- `carousel/st-1…5.png`: carousel room tour Standard Bungalow (sumber: `carousel-standard.html`)
 - `social-kit.html`: sumber template. Ubah teks lalu jalankan `social/render.js` untuk membuat ulang PNG.
 
 **Hashtag inti:** `#SunaRiSelayar` `#SenjaHariIni` `#Selayar` `#PesonaSelayar` `#TakaBonerate` `#WonderfulIndonesia`
