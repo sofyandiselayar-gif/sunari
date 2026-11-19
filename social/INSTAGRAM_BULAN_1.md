@@ -296,7 +296,9 @@ Mendayung pelan, menuju matahari yang turun. 🛶🌅
 Air di Pantai Sunari tenang dan landai,
 pas untuk naik kayak sendiri atau berdua sambil menunggu senja.
 
-Sewa kayak single & double tersedia di pantai.
+Sewa kayak di pantai:
+🛶 Single Rp 50.000
+🛶 Double Rp 100.000
 Info: WA 0821-8903-3044.
 
 #SunaRiSelayar #KayakSaatSenja #PantaiSunari #Selayar #SunsetLovers
@@ -408,7 +410,7 @@ Pertanyaan yang paling sering kami terima 💬
 • Jam check-in/check-out? Check-in 14.00, check-out 12.00 WITA.
 • Ada Wi-Fi? Ada.
 • Aman untuk anak? Ya, pantainya landai dan aman untuk anak-anak.
-• Ada kegiatan di pantai? Ada sewa kayak single & double.
+• Ada kegiatan di pantai? Ada sewa kayak: single Rp 50.000, double Rp 100.000.
 • Ada antar-jemput dari bandara/pelabuhan? Ada, dengan biaya tambahan.
 • Ada restoran? Ada. Senja Dinner ikan bakar & seafood bisa dipesan H-1.
 • Cocok untuk keluarga? Ada Family Superior Bungalow untuk 6 orang (maks. 8 dengan extra bed).

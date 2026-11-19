@@ -212,7 +212,7 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 *Hanya layanan yang benar-benar tersedia. Jangan promosikan layanan di luar daftar ini.*
 - **Bajoy Beach Resto** ✅: ikan bakar & seafood. Buka 07.00–21.00 WITA. Tamu tidak menginap boleh berkunjung sampai 19.00.
 - **Wi-Fi** ✅ di area resort.
-- **Sewa kayak** ✅: single Rp 50.000, double Rp 100.000. *Harga hanya untuk informasi internal & jawaban WhatsApp; di media sosial cukup tulis "sewa kayak tersedia".*
+- **Sewa kayak** ✅: single Rp 50.000, double Rp 100.000. Harga ini **boleh** dicantumkan di media sosial.
 - **Senja Dinner** ✅: makan malam saat senja di restoran. Menu: ikan bakar & seafood. Pemesanan H-1 via WhatsApp.
 - **Antar-jemput bandara & pelabuhan** ✅: dengan biaya tambahan, dipesan via WhatsApp.
 
@@ -299,8 +299,9 @@ Folder `social/`:
 
 Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 
-**Kebijakan harga:** jangan mencantumkan harga atau persentase diskon di media sosial maupun materi desain.
-Arahkan calon tamu untuk menanyakan harga dan ketersediaan via WhatsApp.
+**Kebijakan harga:**
+- **Harga kamar dan paket menginap:** jangan dicantumkan (termasuk persentase diskon). Arahkan ke WhatsApp.
+- **Harga sewa kayak:** boleh dicantumkan (single Rp 50.000, double Rp 100.000).
 
 ## 10. Yang Perlu Dikonfirmasi
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain
