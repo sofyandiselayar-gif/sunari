@@ -197,6 +197,10 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 - **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: bungalow A-frame beratap rumbia
   dengan loteng, teras kayu pribadi, jendela segitiga, AC, TV, kulkas mini, perlengkapan kopi/teh, serta kamar mandi
   semi-outdoor beratap kaca dengan **bathtub** & rain shower. Kata kunci promosi: *berendam di bawah langit terbuka*.
+- **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: bungalow kayu dua lantai di tengah
+  taman, dengan jembatan kayu dan payung kuning di depannya. Teras luas dengan sofa kayu. Lantai bawah: kamar dengan tempat tidur besar,
+  AC, kopi & teh. Lantai atas: ruang luas di bawah atap kayu tinggi dengan **empat kasur**, AC, dan meja. Kamar mandi dalam
+  dengan shower, toilet duduk, dan wastafel terpisah. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.
 - **VIP Standard Bungalow** *(foto asli: `assets/photos/vip-standard-bungalow/`)*: rumah panggung beratap rumbia
   tepat di bibir pantai, teras pribadi menghadap laut dengan meja & kursi, AC, tempat tidur double, lampu dinding,
   perlengkapan kopi/teh, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
@@ -243,6 +247,7 @@ Folder `social/`:
 - `carousel/sb-1…6.png`: carousel room tour Superior Bungalow
 - `carousel/st-1…5.png`: carousel room tour Standard Bungalow
 - `carousel/vs-1…6.png`: carousel room tour VIP Superior Bungalow
+- `carousel/fs-1…6.png`: carousel room tour Family Superior Bungalow
 - `carousel/vp-1…6.png`: carousel room tour VIP Standard Bungalow
 - `camp-1…3.png`: tile kampanye (foto penuh + judul serif bertumpuk)
 - `feed-values.png`: tile nilai brand dengan 4 ikon
