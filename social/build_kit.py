@@ -367,6 +367,67 @@ parts.append(f'''<div class="tpl facts" id="faq-{NF}">
   {foot("SunaRi · Selayar", f"{NF:02d} — {NF:02d}")}
 </div>''')
 
+
+# ---- 12 carousels following the feed preview (covers reuse feed tiles; slides 2..n here)
+FEED12 = [
+ ("p01", "Lebih dari Menginap", "camp-1", [
+   ("senja/05-tamu-di-meja.jpg","50% 55%","Duduk, diam, menikmati","Tidak perlu rencana. Cukup meja kayu, angin laut, dan langit yang pelan-pelan berubah warna."),
+   ("resto/04-resto-malam-pohon-kelapa.jpg","50% 70%","Makan malam di bawah pohon kelapa","Ikan bakar &amp; seafood di Bajoy Beach Resto. Senja Dinner bisa dipesan H-1."),
+   ("malam/03-resort-malam-a-frame.jpg","50% 60%","Lalu malam datang","Lampu-lampu bungalow menyala di antara pohon kelapa.")],
+   ("Lebih dari menginap", ["5 tipe bungalow dengan teras pribadi","Sarapan, AC &amp; Wi-Fi di semua kamar","Senja tepat di depan Pantai Sunari"])),
+ ("p02", "#SenjaHariIni", "feed-senja", [
+   ("senja/13-tamu-bertopi-story.jpg","50% 45%","Langit yang selalu berbeda","Tidak ada senja yang sama dua kali di Pantai Sunari."),
+   ("senja/07-payung-kursi-pantai.jpg","50% 60%","Kursi di tepi pantai","Tempat terbaik menunggu matahari turun."),
+   ("senja/06-di-bawah-daun.jpg","50% 55%","Di bawah daun kelapa","Bingkai alami untuk foto senjamu.")],
+   ("Tips menikmati senja", ["Datang 30 menit sebelum matahari terbenam","Ikuti jam senja harian di story kami","Simpan postingan ini untuk liburanmu"])),
+ ("p04", "Malam di SunaRi", "camp-4", [
+   ("malam/02-bangunan-utama-malam.jpg","50% 60%","Hangat di antara pohon kelapa","Bangunan kayu dan jembatan kecil yang menyala setiap malam."),
+   ("malam/07-jalan-setapak-gazebo.jpg","50% 60%","Jalan setapak berlampu","Dari bungalow ke gazebo, ditemani suara ombak."),
+   ("malam/09-lilin-di-meja.jpg","50% 70%","Malam yang pelan","Tidak ada yang terburu-buru di Selayar.")],
+   ("Malam di SunaRi", ["Bajoy Beach Resto buka sampai 21.00 WITA","Senja Dinner, pesan H-1","Bungalow kayu dengan teras pribadi"])),
+ ("p06", "Setiap hari berakhir indah", "feed-quote", [
+   ("senja/10-kayak-pantulan.jpg","50% 60%","Matahari yang menari","SunaRi: sun dan nari. Matahari yang menari turun ke laut Selayar."),
+   ("senja/16-perahu-nelayan.jpg","50% 60%","Perahu pulang ke darat","Saat langit oranye, nelayan pun pulang."),
+   ("senja/18-kayak-berdua-pelampung.jpg","50% 60%","Tempat senja pulang","Dan setiap senja, kamu juga pulang ke sini.")],
+   ("Tempat senja pulang", ["Resort tepi Pantai Sunari","Kepulauan Selayar, Sulawesi Selatan","Where every day ends beautifully"])),
+ ("p07", "Pantai Sepi", "camp-3", [
+   ("senja/19-pantai-di-bawah-daun.jpg","50% 60%","Pantai yang masih sepi","Pasir, laut tenang, dan langit luas, tanpa keramaian."),
+   ("aktivitas/03-ayunan-senja.jpg","50% 45%","Ayunan raksasa saat senja","Spot foto favorit di tepi Pantai Sunari."),
+   ("senja/20-payung-lampu-gantung.jpg","50% 65%","Pantai landai &amp; aman","Air tenang, cocok untuk anak-anak dan keluarga.")],
+   ("Pantai Sunari", ["Pantai landai &amp; aman untuk anak","Senja tepat di depan pantai","Sewa kayak · single Rp 50.000 · double Rp 100.000"])),
+ ("p08", "Sewa Kayak", "feed-kayak", [
+   ("aktivitas/01-kayak-sore.jpg","50% 55%","Mendayung menjelang senja","Waktu terbaik: 1 jam sebelum matahari terbenam."),
+   ("senja/09-kayak-pasangan.jpg","50% 60%","Sendiri atau berdua","Pilih kayak single atau double."),
+   ("senja/17-kayak-berdua.jpg","50% 60%","Air tenang &amp; landai","Pantai Sunari aman untuk pemula.")],
+   ("Sewa kayak", ["Single · Rp 50.000","Double · Rp 100.000","Tersedia di Pantai Sunari"])),
+ ("p10", "Menginap. Menjelajah. Melambat. Pulang.", "camp-2", [
+   ("vip-superior-bungalow/01-eksterior-a-frame.jpg","40% 50%","Menginap.","Bungalow kayu dengan teras pribadi, sarapan, AC &amp; Wi-Fi."),
+   ("senja/11-kayak-dan-pulau.jpg","50% 60%","Menjelajah.","Kayak di Pantai Sunari, laut tenang, pulau di kejauhan."),
+   ("taman/01-meja-di-taman.jpg","50% 35%","Melambat.","Duduk di taman di bawah pohon palem dan bunga bougainvillea."),
+   ("senja/12-kayak-matahari-merah-story.jpg","50% 55%","Pulang.","Dan setiap sore, senja menunggumu di tepi pantai.")],
+   ("Mulai liburanmu", ["5 tipe bungalow untuk 2–8 orang","Antar-jemput bandara &amp; pelabuhan","Senja tepat di depan pantai"])),
+ ("p11", "Staycation Senja", "feed-promo", [
+   ("superior-bungalow/02-eksterior-depan.jpg","50% 30%","Superior Bungalow","Rumah kayu A-frame dengan king bed, TV &amp; kamar mandi semi-outdoor."),
+   ("resto/05-makan-malam-taman.jpg","50% 60%","Senja Dinner","Ikan bakar &amp; seafood saat matahari terbenam."),
+   ("superior-bungalow/03-teras.jpg","50% 50%","Teras pribadi","Tempat menunggu senja, dua sore berturut-turut.")],
+   ("Staycation Senja", ["Superior Bungalow kayu A-frame","Senja Dinner untuk dua orang","Info paket &amp; harga via WhatsApp"])),
+]
+for pre, name, cover, slides, (endt, endl) in FEED12:
+    n = len(slides) + 2
+    for i, (img, pos, h, t) in enumerate(slides, start=2):
+        parts.append(f"""<div class="tpl" id="{pre}-{i}">
+  <img class="ph" src="../assets/photos/{img}" style="object-position:{pos}" alt="">
+  <div class="txt"><div class="caps">{name}</div><h2>{h}</h2><p>{t}</p></div>
+  {foot("SunaRi · Selayar", f"{i:02d} — {n:02d}")}
+</div>""")
+    li = "".join(f"<li>{x}</li>" for x in endl)
+    parts.append(f"""<div class="tpl facts" id="{pre}-{n}">
+  <img class="mark" src="{MARK}" alt="">
+  <div class="head center"><div class="caps">{name}</div><h2>{endt.split(' ',1)[0]} <span class="it">{endt.split(' ',1)[1] if ' ' in endt else ''}</span></h2></div>
+  <ul>{li}</ul>
+  <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
+  {foot("SunaRi · Selayar", f"{n:02d} — {n:02d}")}
+</div>""")
 # carousels
 for r in ROOMS:
     n = len(r["slides"]) + 2
