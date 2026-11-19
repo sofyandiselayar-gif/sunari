@@ -201,7 +201,7 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 
 **Pengalaman**
 - **Sunset Ritual**: 30 menit sebelum senja, tamu disuguhi kelapa muda di tepi pantai.
-- **Senja Dinner** ✅ *(tersedia)*: makan malam di tepi pantai saat senja. Detail menu perlu dikonfirmasi.
+- **Senja Dinner** ✅ *(tersedia)*: makan malam di tepi pantai saat senja. Menu: ikan bakar & seafood. Pemesanan H-1 via WhatsApp.
 - **Taka Bonerate Trip**: snorkeling/diving, kembali sebelum senja.
 - **Sunset Boat**: naik perahu nelayan saat golden hour.
 - **Senja Journal**: buku kecil di kamar untuk menulis cerita senja.

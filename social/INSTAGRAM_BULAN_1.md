@@ -411,10 +411,10 @@ Ada pertanyaan lain? Tanya di komentar atau DM.
 Makan malam dengan pemandangan yang terus berubah warna. 🍽️🌅
 
 Senja Dinner di SunaRi: meja di atas pasir,
-seafood segar dari nelayan Selayar, dan langit sebagai dekorasinya.
+ikan bakar dan seafood segar, dengan langit senja sebagai dekorasinya.
 
 Cocok untuk anniversary, lamaran, atau sekadar merayakan hari biasa.
-Pesan minimal [H-1] via WhatsApp.
+Pesan H-1 via WhatsApp 0821-8903-3044.
 
 #SenjaDinner #SunaRiSelayar #Selayar #RomanticDinner
 ```
