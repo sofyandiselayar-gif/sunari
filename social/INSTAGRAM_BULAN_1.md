@@ -218,10 +218,13 @@ Tag orang yang ingin kamu ajak ke sini.
 ```
 Satu rumah, dua lantai, semua bersama. 👨‍👩‍👧‍👦🌴
 
-Family Superior Bungalow muat untuk 6 orang,
-bahkan sampai 8 orang dengan tambahan 2 extra bed.
-Kamar utama di lantai bawah, empat kasur di lantai atas,
-dan teras pribadi yang luas untuk berkumpul sebelum senja. 🌅
+Family Superior Bungalow adalah tipe bungalow terbesar kami:
+✔️ Untuk 6 orang, maksimal 8 dengan 2 extra bed
+✔️ Lantai 1 untuk 2–3 orang, lantai 2 untuk 4–5 orang
+✔️ Kamar mandi di kedua lantai, jadi tidak perlu antre
+✔️ Sudah termasuk sarapan
+
+Teras pribadinya pas untuk berkumpul sebelum senja. 🌅
 
 Geser untuk melihat ke dalam.
 Info & reservasi: WA 0821-8903-3044.

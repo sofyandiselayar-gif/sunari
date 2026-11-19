@@ -103,13 +103,13 @@ Paid transfers are available from H. Aroeppala Airport and the ferry port. The r
 ---
 
 ### 5. Family Superior Bungalow
-**Kapasitas:** 6 orang (maks. 8 dengan 2 extra bed) · **Tempat tidur:** lantai bawah 1 tempat tidur besar, lantai atas 4 kasur · **Pemandangan:** taman tropis
+**Kapasitas:** 6 orang (maks. 8 dengan 2 extra bed, berbayar) · **Tempat tidur:** lantai 1 tempat tidur besar (2–3 orang), lantai 2 empat kasur (4–5 orang) · **Pemandangan:** laut atau taman · **Termasuk sarapan**
 
-**ID:** Satu rumah, dua lantai, semua bersama. Bungalow kayu dua lantai di tengah taman tropis, dengan jembatan kayu di depannya dan teras pribadi yang luas dengan sofa kayu untuk berkumpul sebelum senja. Lantai bawah memiliki kamar utama dengan tempat tidur besar, AC, dan perlengkapan kopi/teh. Lantai atas adalah ruang luas di bawah atap kayu tinggi dengan empat kasur dan AC, cocok untuk anak-anak. Kamar mandi dalam dengan shower, toilet duduk, dan area wastafel terpisah.
+**ID:** Satu rumah, dua lantai, semua bersama. Family Superior adalah tipe bungalow terbesar di SunaRi, ideal untuk keluarga besar. Lantai 1 untuk 2–3 orang dengan tempat tidur besar, dan lantai 2 untuk 4–5 orang dengan empat kasur di bawah atap kayu yang tinggi. Toilet dan kamar mandi tersedia di kedua lantai, lengkap dengan perlengkapan mandi dan handuk bersih untuk setiap tamu. Sudah termasuk sarapan. Dilengkapi AC, Wi-Fi di kamar, set kopi/teh dengan pemanas air, meja kerja/rias, tirai blackout, serta bantal dan selimut tambahan. Teras pribadi dengan kursi santai menghadap laut atau taman, pas untuk berkumpul sebelum senja. Layanan setrika tersedia atas permintaan.
 
-**EN:** One house, two floors, everyone together. A two-storey wooden bungalow set in a tropical garden, reached by a small wooden bridge, with a large private terrace and wooden sofa for gathering before sunset. Downstairs is the main bedroom with a large bed, air conditioning and coffee/tea facilities. Upstairs is a spacious room under a high timber roof with four mattresses and air conditioning, ideal for children. En-suite bathroom with shower, western toilet and a separate washbasin area.
+**EN:** One house, two floors, everyone together. The Family Superior is SunaRi's largest bungalow, ideal for big families. The ground floor sleeps 2–3 guests in a large bed, and the upper floor sleeps 4–5 guests on four mattresses under a high timber roof. Each floor has its own toilet and bathroom, with full toiletries and fresh towels for every guest. Breakfast is included. Also features air conditioning, in-room Wi-Fi, coffee/tea set with kettle, work/vanity desk, blackout curtains, and extra pillows and blankets. The private terrace with lounge chairs looks out to the sea or garden, perfect for gathering before sunset. Ironing available on request.
 
-**Fasilitas:** AC (2 lantai) · Wi-Fi · Teras pribadi · 2 lantai · Kopi/teh · Kamar mandi dalam · Shower · Toilet duduk · Wastafel terpisah · Extra bed · Cocok untuk keluarga
+**Fasilitas:** Sarapan · AC · Wi-Fi · 2 lantai · 2 kamar mandi (lantai 1 & 2) · Perlengkapan mandi (sabun, sampo, sikat gigi) · Handuk · Kopi/teh & pemanas air (kettle) · Meja kerja/rias · Tirai blackout · Bantal & selimut tambahan · Setrika (atas permintaan) · Teras/balkon pribadi · Kursi santai · Pemandangan laut/taman · Extra bed (maks. 2, berbayar) · Cocok untuk keluarga
 
 ---
 
@@ -162,6 +162,7 @@ Tombol: **Hubungi** (nomor WA).
 ## F. Yang perlu dicek sebelum dipublikasikan
 - [ ] Ukuran tempat tidur Superior & VIP Superior (double/queen/king)
 - [ ] Luas kamar (m²) untuk setiap tipe, sering diminta OTA
-- [ ] Fasilitas yang belum terlihat di foto: handuk, perlengkapan mandi, air panas, parkir, jam resepsionis
+- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk 4 tipe kamar lainnya? (saat ini hanya dicantumkan di Family Superior)
+- [ ] Air panas, parkir, jam resepsionis
 - [ ] Kebijakan pembatalan dan deposit
 - [ ] Jarak ke Bandara H. Aroeppala & ke kota Benteng (km / menit)

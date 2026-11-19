@@ -199,10 +199,11 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 - **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: bungalow A-frame beratap rumbia
   dengan loteng, teras kayu pribadi, jendela segitiga, AC, TV, kulkas mini, perlengkapan kopi/teh, serta kamar mandi
   semi-outdoor beratap kaca dengan **bathtub** & rain shower. Kata kunci promosi: *berendam di bawah langit terbuka*.
-- **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: bungalow kayu dua lantai di tengah
-  taman, dengan jembatan kayu dan payung kuning di depannya. **Kapasitas 6 orang, maksimal 8 dengan 2 extra bed.** Teras pribadi luas dengan sofa kayu. Lantai bawah: kamar dengan tempat tidur besar,
-  AC, kopi & teh. Lantai atas: ruang luas di bawah atap kayu tinggi dengan **empat kasur**, AC, dan meja. Kamar mandi dalam
-  dengan shower, toilet duduk, dan wastafel terpisah. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.
+- **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: **tipe bungalow terbesar**, kayu dua lantai di tengah taman.
+  **Kapasitas 6 orang, maksimal 8 dengan 2 extra bed (berbayar).** Lantai 1 untuk 2–3 orang (tempat tidur besar), lantai 2 untuk 4–5 orang (empat kasur).
+  **Toilet & kamar mandi di kedua lantai.** Termasuk **sarapan**. AC, Wi-Fi di kamar, set kopi/teh dengan pemanas air, meja kerja/rias,
+  setrika atas permintaan, perlengkapan mandi lengkap, handuk untuk setiap tamu, bantal & selimut tambahan, tirai blackout.
+  Teras/balkon pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.
 - **VIP Standard Bungalow** *(foto asli: `assets/photos/vip-standard-bungalow/`)*: rumah panggung beratap rumbia
   tepat di bibir pantai, teras pribadi menghadap laut dengan meja & kursi, AC, tempat tidur double, lampu dinding,
   perlengkapan kopi/teh, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
