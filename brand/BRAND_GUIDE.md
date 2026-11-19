@@ -65,6 +65,7 @@ File di folder `assets/`:
 |---|---|---|
 | `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, putih, langit senja bagian atas yang terang |
 | `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Cadangan untuk foto yang sangat gelap |
+| `mark-sunari-driftwood.svg` / `mark-sunari-cream.svg` | Driftwood / Shell Cream | **Simbol brand** (matahari di atas horizon dalam lingkaran): avatar Instagram, ikon, kartu kunci, signage, watermark kecil |
 | `original/logo-sunari-original.jpg` | Warna lama | **Arsip saja**, tidak dipakai lagi |
 
 **Aturan**
@@ -127,8 +128,8 @@ Gaya: **minimalis & elegan**. Logo memakai huruf kuas, jadi font pendampingnya k
 
 | Fungsi | Font (gratis, Google Fonts) | Aturan |
 |---|---|---|
-| Judul, angka jam senja, nomor WA | **Cormorant Garamond** Medium 500 | Huruf kapital-kecil biasa (bukan semua kapital). Angka memakai *lining numerals* |
-| Aksen (1–4 kata) | **Cormorant Garamond** *Italic* 400, warna Driftwood | Contoh: *Senja*, *dapatkan*, *Tempat senja pulang* |
+| Judul, angka jam senja, nomor WA | **Playfair Display** Regular 400 | Huruf kapital-kecil biasa (bukan semua kapital). Angka memakai *lining numerals* |
+| Aksen (1–4 kata) | **Playfair Display** *Italic* 400, warna Driftwood | Contoh: *Senja*, *dapatkan*, *Tempat senja pulang* |
 | Label kecil / kicker | **Montserrat** Medium 500, KAPITAL, spasi huruf lebar (0,4em), warna Driftwood | 18–22px. Contoh: ROOM TOUR, INFO & RESERVASI |
 | Teks isi | **Montserrat** Regular 400, 28–30px | Maksimal 2 baris per slide |
 
@@ -142,6 +143,16 @@ Ukuran minimum di desain 1080px: teks isi 28px, label 18px (agar tetap terbaca d
 - Hindari: filter biru dingin, flash, tumpukan sampah atau kabel di frame.
 
 ### 4.5 Elemen Grafis & Prinsip Layout
+Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Penerapannya untuk SunaRi ada di
+**`brand/brand-board.png`**: hero, logo & variasi, palet, tipografi, mosaik foto, elemen kunci, kartu tamu, tile media sosial, signage, dan tampilan pemesanan di HP.
+
+**Ikon nilai brand** (garis tipis dalam lingkaran): Tepi Pantai · Menghadap Senja · Alami & Lokal · Tenang & Pelan.
+
+**Dua jenis layout foto**
+- **Foto penuh + judul serif bertumpuk** di kiri atas (tile kampanye, cover carousel). Contoh: *Lebih dari / Menginap. / Sebuah Rasa.*
+  Teks krem dengan bayangan gelap tipis dari atas agar terbaca.
+- **Foto berbingkai** dengan margin 72px (slide isi carousel).
+
 - **Ruang kosong adalah bagian desain.** Margin tepi 72px, jangan isi setiap sudut.
 - **Foto berbingkai**: foto diletakkan dengan margin 72px di atas latar Shell Cream, tanpa sudut membulat, tanpa bayangan.
 - **Garis rambut** 1px Driftwood (opacity 45%) sebagai pemisah dan daftar fasilitas.
@@ -229,6 +240,8 @@ Folder `social/`:
 - `carousel/sb-1…6.png`: carousel room tour Superior Bungalow
 - `carousel/st-1…5.png`: carousel room tour Standard Bungalow
 - `carousel/vp-1…6.png`: carousel room tour VIP Standard Bungalow
+- `camp-1…3.png`: tile kampanye (foto penuh + judul serif bertumpuk)
+- `feed-values.png`: tile nilai brand dengan 4 ikon
 - `grid-preview.png`: mockup tampilan profil & grid Instagram
 - Sumber semua template: `build_kit.py` (ubah teks di bagian CONTENT), lalu jalankan
   `python3 social/build_kit.py && node social/render.js` untuk membuat ulang semua PNG.

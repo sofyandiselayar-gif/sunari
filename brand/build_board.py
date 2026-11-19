@@ -1,0 +1,154 @@
+"""Generate brand-board.html (SunaRi brand identity board). Render with: node brand/render_board.js"""
+import pathlib
+HERE = pathlib.Path(__file__).parent
+P = "../assets/photos/"
+WA = "0821-8903-3044"
+ICONS = {
+ "wave": '<path d="M8 30 q8 -7 16 0 t16 0 t16 0"/><path d="M8 42 q8 -7 16 0 t16 0 t16 0"/>',
+ "sun":  '<path d="M16 38 a16 16 0 0 1 32 0"/><line x1="8" y1="38" x2="56" y2="38"/><line x1="32" y1="12" x2="32" y2="16"/><line x1="14" y1="20" x2="17" y2="23"/><line x1="50" y1="20" x2="47" y2="23"/><line x1="20" y1="46" x2="44" y2="46"/>',
+ "leaf": '<path d="M16 48 C16 26 30 14 50 14 C50 34 38 48 16 48 Z"/><path d="M16 48 L40 24"/>',
+ "moon": '<path d="M40 14 a18 18 0 1 0 10 30 a14 14 0 1 1 -10 -30 Z"/>',
+}
+def icon(k, c, s=40):
+    return f'<svg viewBox="0 0 64 64" width="{s}" height="{s}" fill="none" stroke="{c}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">{ICONS[k]}</svg>'
+VALUES = [("wave","Tepi<br>Pantai"),("sun","Menghadap<br>Senja"),("leaf","Alami &amp;<br>Lokal"),("moon","Tenang &amp;<br>Pelan")]
+PALETTE = [("Sunset Pink","#F7A7A1"),("Coral Glow","#FF8A5C"),("Golden Hour","#FDB15D"),("Ocean Breeze","#7BA7B6"),
+           ("Sandy Shore","#E6C89B"),("Driftwood","#A67C64"),("Shell Cream","#FBF4EC"),("Driftwood Deep","#5A3E31")]
+
+vals = "".join(f'<div class="v"><div class="ring">{icon(k,"#FBF4EC",38)}</div><div class="lab">{l}</div></div>' for k,l in VALUES)
+pal = "".join(f'<div class="sw"><div class="c" style="background:{h}"></div><div class="n">{n}</div><div class="h">{h}</div></div>' for n,h in PALETTE)
+
+html = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>SunaRi Brand Board</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{{--ink:#5A3E31;--cream:#FBF4EC;--sand:#E6C89B;--drift:#A67C64;--coral:#FF8A5C;--gold:#FDB15D;--ocean:#7BA7B6}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif;color:var(--ink);font-variant-numeric:lining-nums}}
+#board{{width:1440px;background:#efe6da;display:grid;gap:8px;padding:8px}}
+.row{{display:grid;gap:8px}}
+.p{{position:relative;overflow:hidden;background:var(--cream)}}
+.p>img.f{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
+.lab{{font-weight:600;font-size:12px;letter-spacing:.24em;text-transform:uppercase}}
+.tag{{position:absolute;left:18px;top:16px;z-index:3;font-weight:600;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}}
+.tag.l{{color:var(--cream);text-shadow:0 1px 8px rgba(0,0,0,.4)}}
+.pf{{font-family:'Playfair Display',serif;font-weight:400}}
+.it{{font-family:'Playfair Display',serif;font-style:italic}}
+.veil{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,26,20,.72) 0%,rgba(40,26,20,.35) 45%,rgba(40,26,20,0) 70%)}}
+.vt{{position:absolute;left:0;right:0;top:0;height:55%;background:linear-gradient(180deg,rgba(40,26,20,.6),rgba(40,26,20,0))}}
+/* hero */
+.hero{{height:760px}}
+.hero .in{{position:absolute;left:72px;top:70px;z-index:2;color:var(--cream)}}
+.hero .vals{{display:flex;gap:34px;margin-top:70px}}
+.v{{text-align:center;width:110px}} .v .ring{{width:78px;height:78px;border:1.4px solid var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto}}
+.v .lab{{margin-top:14px;font-size:11px;line-height:1.6;color:var(--cream)}}
+.hero .side{{position:absolute;right:56px;top:70px;z-index:2;color:var(--cream);font-weight:500;font-size:15px;letter-spacing:.32em;line-height:2.1;text-transform:uppercase;text-align:right;text-shadow:0 1px 10px rgba(0,0,0,.45)}}
+/* identity */
+.id{{grid-template-columns:300px 360px 1fr 230px;height:330px}}
+.id .p{{padding:52px 24px 24px}}
+.vars{{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;height:210px}}
+.vars div{{display:flex;align-items:center;justify-content:center}}
+.pal{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 10px;margin-top:6px}}
+.sw{{text-align:center}} .sw .c{{width:62px;height:62px;border-radius:50%;margin:0 auto;border:1px solid rgba(90,62,49,.15)}}
+.sw .n{{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:8px}} .sw .h{{font-size:10px;opacity:.7;margin-top:2px}}
+.ty .aa{{font-size:64px;line-height:1}} .ty .tc{{font-size:11px;margin-top:6px;opacity:.8}}
+/* mosaic */
+.mos{{grid-template-columns:1.25fr .8fr .95fr;height:560px}}
+.col{{display:grid;grid-rows:1fr 1fr;gap:8px;grid-template-rows:1fr 1fr}}
+.say{{position:absolute;left:30px;top:44px;z-index:2;color:var(--cream);font-size:44px;line-height:1.12;text-shadow:0 2px 16px rgba(0,0,0,.35)}}
+.cap{{position:absolute;right:20px;top:18px;z-index:2;color:var(--cream);font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;text-align:right;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.5)}}
+/* elements + stationery + amenities-ish */
+.el{{grid-template-columns:1.15fr 1fr;height:400px}}
+.keys{{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;position:absolute;inset:44px 14px 14px}}
+.keys>div{{position:relative;overflow:hidden;background:var(--sand)}}
+.keys img.f{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
+.keys .lab{{position:absolute;left:10px;bottom:10px;color:var(--cream);font-size:10px;line-height:1.6;text-shadow:0 1px 6px rgba(0,0,0,.6);z-index:2}}
+.stat{{background:var(--sand)}}
+.card{{position:absolute;box-shadow:0 18px 30px rgba(90,62,49,.18)}}
+/* bottom */
+.bot{{grid-template-columns:1.6fr .5fr .55fr;height:500px}}
+.tiles{{position:absolute;left:14px;right:14px;top:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}}
+.tiles img{{width:100%;height:auto;display:block;border:1px solid rgba(166,124,100,.3)}}
+.sign{{position:absolute;left:50%;transform:translateX(-50%);top:62px;width:210px;height:400px;background:var(--cream);border-radius:105px 105px 6px 6px;box-shadow:0 18px 30px rgba(90,62,49,.2);text-align:center;padding-top:40px}}
+.sign .r{{font-family:'Playfair Display',serif;font-size:17px;display:flex;justify-content:space-between;padding:10px 26px;border-top:1px solid rgba(166,124,100,.35)}}
+.phone{{position:absolute;left:50%;transform:translateX(-50%);top:58px;width:220px;height:420px;border-radius:30px;background:#1f1a17;padding:9px}}
+.phone .s{{width:100%;height:100%;border-radius:22px;background:var(--cream);overflow:hidden;position:relative}}
+</style></head><body><div id="board">
+
+<div class="p hero"><img class="f" src="{P}vip-standard-bungalow/02-teras-view-pantai.jpg" style="object-position:50% 62%" alt=""><div class="veil"></div>
+  <div class="in">
+    <img src="../assets/logo-sunari-cream.png" style="width:470px;display:block;margin-left:-16px" alt="">
+    <div class="pf" style="font-size:52px;line-height:1.15;margin-top:30px">Tempat senja<br><span class="it">pulang.</span></div>
+    <div class="vals">{vals}</div>
+  </div>
+  <div class="side">Pantai<br>Senja<br>Tenang<br>Pulang</div>
+</div>
+
+<div class="row id">
+  <div class="p"><div class="tag">Logo Utama</div><img src="../assets/logo-sunari-driftwood.png" style="width:250px;display:block;margin:34px auto 0" alt=""></div>
+  <div class="p"><div class="tag">Variasi Logo</div>
+    <div class="vars">
+      <div style="background:var(--cream);border:1px solid rgba(166,124,100,.3)"><img src="../assets/mark-sunari-driftwood.svg" style="width:72px" alt=""></div>
+      <div style="background:var(--drift)"><img src="../assets/mark-sunari-cream.svg" style="width:72px" alt=""></div>
+      <div style="background:var(--sand);flex-direction:column"><div class="pf" style="font-size:26px">SunaRi</div><div class="lab" style="font-size:7px;margin-top:6px">Beach Resort</div></div>
+    </div></div>
+  <div class="p"><div class="tag">Palet Warna · Sunset Beach</div><div class="pal">{pal}</div></div>
+  <div class="p ty"><div class="tag">Tipografi</div>
+    <div class="pf aa" style="margin-top:10px">Aa</div><div class="tc">Playfair Display<br>(Judul)</div>
+    <div class="aa" style="margin-top:20px;font-weight:500">Aa</div><div class="tc">Montserrat<br>(Teks)</div></div>
+</div>
+
+<div class="row mos">
+  <div class="p"><img class="f" src="{P}vip-standard-bungalow/07-kamar-samping.jpg" alt="">
+    <div style="position:absolute;right:30px;top:40px;width:210px;text-align:center;z-index:2"><img src="../assets/mark-sunari-cream.svg" style="width:70px;filter:drop-shadow(0 1px 6px rgba(0,0,0,.4))" alt=""></div></div>
+  <div class="p"><img class="f" src="{P}superior-bungalow/03-teras.jpg" alt=""><div class="vt"></div>
+    <div class="say pf">Lebih dari<br>Menginap.<br><span class="it">Sebuah Rasa.</span></div></div>
+  <div class="col">
+    <div class="p"><img class="f" src="{P}vip-standard-bungalow/04-teras-view-laut.jpg" alt=""><div class="cap">Pantai sepi.<br>Senja hangat.</div></div>
+    <div class="p"><img class="f" src="{P}standard-bungalow/01-teras-view-laut.jpg" style="object-position:50% 70%" alt=""><div class="cap">Pagi pelan.<br>Laut tenang.</div></div>
+  </div>
+</div>
+
+<div class="row el">
+  <div class="p"><div class="tag">Elemen Kunci Brand</div><div class="keys">
+    <div style="display:flex;align-items:center;justify-content:center"><img src="../assets/mark-sunari-driftwood.svg" style="width:110px" alt=""><div class="lab" style="color:var(--ink);text-shadow:none">Motif<br>Matahari</div></div>
+    <div><img class="f" src="{P}standard-bungalow/04-kamar-mandi-bambu.jpg" style="object-position:30% 30%" alt=""><div class="lab">Tekstur<br>Alami</div></div>
+    <div><img class="f" src="{P}superior-bungalow/04-kamar-loteng.jpg" alt=""><div class="lab">Arsitektur<br>A-Frame</div></div>
+    <div><img class="f" src="{P}vip-standard-bungalow/01-eksterior-rumah-panggung.jpg" style="object-position:40% 50%" alt=""><div class="lab">Rumah<br>Panggung</div></div>
+  </div></div>
+  <div class="p stat"><div class="tag">Alat Tulis &amp; Pengalaman Tamu</div>
+    <div class="card" style="left:40px;top:80px;width:280px;height:200px;background:var(--cream);transform:rotate(-4deg);padding:30px;text-align:center">
+      <div class="it" style="font-size:40px;color:var(--drift)">Selamat Datang</div>
+      <img src="../assets/mark-sunari-driftwood.svg" style="width:46px;margin-top:22px" alt="">
+      <div class="lab" style="font-size:9px;margin-top:8px">SunaRi Beach Resort</div></div>
+    <div class="card" style="left:340px;top:110px;width:150px;height:230px;background:var(--drift);border-radius:10px;text-align:center;padding-top:44px;color:var(--cream)">
+      <img src="../assets/mark-sunari-cream.svg" style="width:56px" alt="">
+      <div class="pf" style="font-size:20px;margin-top:14px">SunaRi</div><div class="lab" style="font-size:8px;margin-top:40px">Kunci Kamar</div></div>
+    <div class="card" style="left:510px;top:70px;width:100px;height:200px;background:var(--coral);border-radius:8px 8px 50px 50px;transform:rotate(7deg);text-align:center;padding-top:24px">
+      <div style="width:16px;height:16px;border-radius:50%;background:var(--sand);margin:0 auto"></div>
+      <img src="../assets/mark-sunari-cream.svg" style="width:50px;margin-top:40px" alt=""></div>
+    <div class="lab" style="position:absolute;left:40px;bottom:22px;font-size:10px;opacity:.75">Kartu sambutan · Kartu kunci · Label pintu</div>
+  </div>
+</div>
+
+<div class="row bot">
+  <div class="p"><div class="tag">Tile Kampanye Media Sosial</div><div class="tiles">
+    <img src="../social/camp-1.png" alt=""><img src="../social/camp-3.png" alt=""><img src="../social/feed-senja.png" alt=""></div>
+    <div class="lab" style="position:absolute;left:14px;bottom:18px;font-size:10px;opacity:.75">Feed 4:5 · foto penuh + judul serif · teks minimal</div></div>
+  <div class="p" style="background:var(--sand)"><div class="tag">Signage &amp; Penunjuk Arah</div>
+    <div class="sign"><img src="../assets/mark-sunari-driftwood.svg" style="width:60px" alt="">
+      <div class="pf" style="font-size:30px;margin:8px 0 22px">SunaRi</div>
+      <div class="r">Resepsionis <span>→</span></div><div class="r">Restoran <span>→</span></div><div class="r">Bungalow <span>→</span></div><div class="r" style="border-bottom:1px solid rgba(166,124,100,.35)">Pantai <span>→</span></div></div></div>
+  <div class="p"><div class="tag">Pemesanan di HP</div>
+    <div class="phone"><div class="s">
+      <img src="{P}vip-standard-bungalow/04-teras-view-laut.jpg" style="width:100%;height:165px;object-fit:cover;display:block" alt="">
+      <div style="padding:14px 16px"><img src="../assets/logo-sunari-driftwood.png" style="width:110px" alt="">
+        <div class="pf" style="font-size:19px;line-height:1.25;margin-top:6px">VIP Standard Bungalow</div>
+        <div class="it" style="font-size:12px;color:var(--drift);margin-top:4px">Turun tangga, langsung pasir</div>
+        <div style="margin-top:16px;background:var(--coral);color:var(--ink);font-weight:600;font-size:11px;letter-spacing:.14em;text-align:center;padding:11px 0;border-radius:6px">PESAN VIA WHATSAPP</div>
+        <div style="font-size:10px;text-align:center;margin-top:8px;opacity:.75">{WA}</div></div>
+    </div></div></div>
+</div>
+
+</div></body></html>'''
+(HERE / "brand-board.html").write_text(html)
+print("wrote brand-board.html")

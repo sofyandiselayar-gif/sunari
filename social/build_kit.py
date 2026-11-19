@@ -1,5 +1,6 @@
-"""Generate kit.html (all Instagram templates, minimalist-elegant style).
-Edit the CONTENT section below, then run:  python3 social/build_kit.py && node social/render.js
+"""Generate kit.html (all Instagram templates) and grid.html (profile preview).
+Style: minimalist-elegant brand board look (Playfair Display + Montserrat, Sunset Beach palette).
+Edit the CONTENT section, then run:  python3 social/build_kit.py && node social/render.js
 """
 import html, pathlib
 HERE = pathlib.Path(__file__).parent
@@ -16,74 +17,105 @@ ROOMS = [
                ("10-kamar-mandi-taman.jpg","50% 60%","Kamar mandi semi-outdoor","Mandi di bawah rain shower, ditemani taman hijau dan langit terbuka.")],
        facts=["Bungalow kayu A-frame dengan loteng","Teras pribadi dengan kursi santai","Kamar mandi semi-outdoor, rain shower","AC, TV, perlengkapan kopi & teh","Beberapa langkah ke pantai"]),
   dict(prefix="st", name="Standard Bungalow", photos="standard-bungalow",
-       tagline="Pagi menghadap laut Selayar", cover="01-teras-view-laut.jpg", cover_pos="50% 55%",
+       tagline="Pagi menghadap laut Selayar", cover="01-teras-view-laut.jpg", cover_pos="50% 60%",
        slides=[("03-kamar-depan.jpg","50% 60%","Hangatnya rumah kayu","Dinding kayu, atap tinggi, dan seprai segar. Sederhana, bersih, dan nyaman."),
                ("02-kamar-sudut.jpg","50% 55%","Sejuk sepanjang hari","Kamar ber-AC dengan jendela atas yang membiarkan cahaya alami masuk."),
                ("04-kamar-mandi-bambu.jpg","50% 50%","Kamar mandi nuansa bambu","Dinding anyaman bambu dan lantai batu alam, dengan shower dan toilet duduk.")],
        facts=["Bungalow kayu untuk dua orang","Teras pribadi luas menghadap laut","AC & tempat tidur double","Kamar mandi dalam, shower & toilet duduk"]),
   dict(prefix="vp", name="VIP Standard Bungalow", photos="vip-standard-bungalow",
-       tagline="Turun tangga, langsung pasir", cover="02-teras-view-pantai.jpg", cover_pos="50% 55%",
+       tagline="Turun tangga, langsung pasir", cover="02-teras-view-pantai.jpg", cover_pos="50% 60%",
        slides=[("01-eksterior-rumah-panggung.jpg","50% 45%","Rumah panggung beratap rumbia","Berdiri di tepi pantai, dinaungi pohon kelapa, dengan atap lengkung tradisional."),
                ("04-teras-view-laut.jpg","60% 50%","Teras pribadi menghadap senja","Perahu nelayan lewat di kejauhan, dan matahari terbenam tepat di depan mata."),
                ("07-kamar-samping.jpg","50% 50%","Kamar yang hangat","Kayu dari lantai sampai atap, lampu dinding temaram, dan kasur besar yang empuk."),
                ("10-kamar-mandi-shower.jpg","50% 40%","Kamar mandi dalam","Area wastafel dan gantungan baju, lalu kamar mandi luas dengan shower.")],
        facts=["Rumah panggung tepat di bibir pantai","Teras pribadi menghadap laut & senja","AC, tempat tidur double, lampu dinding","Perlengkapan kopi/teh & air mineral","Kamar mandi dalam, shower & toilet duduk"]),
 ]
+# Campaign tiles: full-bleed photo + stacked serif phrase (lines), position of text: "top" or "bottom"
+CAMPAIGN = [
+  dict(id="camp-1", photo="vip-standard-bungalow/02-teras-view-pantai.jpg", pos="50% 70%", lines=["Lebih dari", "Menginap.", "<i>Sebuah Rasa.</i>"], where="top"),
+  dict(id="camp-2", photo="superior-bungalow/03-teras.jpg", pos="50% 60%", lines=["Menginap.", "Menjelajah.", "Melambat.", "<i>Pulang.</i>"], where="top"),
+  dict(id="camp-3", photo="vip-standard-bungalow/04-teras-view-laut.jpg", pos="70% 50%", lines=["Pantai Sepi.", "Senja Hangat.", "<i>Hati Tenang.</i>"], where="top"),
+]
+VALUES = [("wave","Tepi Pantai"),("sun","Menghadap Senja"),("leaf","Alami & Lokal"),("moon","Tenang & Pelan")]
 PROMO = dict(kicker="Paket Akhir Pekan", title="Staycation", title_it="Senja", sub="Dua malam, dua kali senja",
              items=["Superior Bungalow kayu A-frame","Senja Dinner ikan bakar untuk dua orang","Kelapa muda setiap sore"])
 QUOTE = dict(text="Setiap hari di Selayar<br>berakhir dengan <em>indah.</em>", en="Where every day ends beautifully")
+# Feed order shown in grid-preview.png (newest first)
+GRID = ["camp-1","feed-senja","carousel/sb-1","feed-values","carousel/vp-1","feed-quote","camp-3","feed-promo","carousel/st-1"]
 # ---------------------------------------------------------------- END CONTENT
 
 e = html.escape
 LOGO = "../assets/logo-sunari-driftwood.png"
+LOGO_C = "../assets/logo-sunari-cream.png"
+MARK = "../assets/mark-sunari-driftwood.svg"
+ICONS = {
+ "wave": '<path d="M8 30 q8 -7 16 0 t16 0 t16 0"/><path d="M8 42 q8 -7 16 0 t16 0 t16 0"/>',
+ "sun":  '<path d="M16 38 a16 16 0 0 1 32 0"/><line x1="8" y1="38" x2="56" y2="38"/><line x1="32" y1="12" x2="32" y2="16"/><line x1="14" y1="20" x2="17" y2="23"/><line x1="50" y1="20" x2="47" y2="23"/><line x1="20" y1="46" x2="44" y2="46"/>',
+ "leaf": '<path d="M16 48 C16 26 30 14 50 14 C50 34 38 48 16 48 Z"/><path d="M16 48 L40 24"/>',
+ "moon": '<path d="M40 14 a18 18 0 1 0 10 30 a14 14 0 1 1 -10 -30 Z"/>',
+}
+def icon(k, color="currentColor", size=64):
+    return f'<svg viewBox="0 0 64 64" width="{size}" height="{size}" fill="none" stroke="{color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{ICONS[k]}</svg>'
+
 CSS = """
 :root{--ink:#5A3E31;--cream:#FBF4EC;--sand:#E6C89B;--drift:#A67C64;--coral:#FF8A5C;--gold:#FDB15D;--pink:#F7A7A1;--ocean:#7BA7B6}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#ddd6cc;font-family:Montserrat,sans-serif;padding:40px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
 .tpl{position:relative;width:1080px;height:1350px;overflow:hidden;flex:none;background:var(--cream);color:var(--ink);font-variant-numeric:lining-nums}
 .tpl.story{height:1920px}
-.serif{font-family:'Cormorant Garamond',serif;font-weight:500}
-.it{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;color:var(--drift)}
-.caps{font-weight:500;font-size:22px;letter-spacing:.42em;text-transform:uppercase;color:var(--drift)}
+.pf{font-family:'Playfair Display',serif;font-weight:400}
+.it{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;color:var(--drift)}
+.caps{font-weight:500;font-size:22px;letter-spacing:.38em;text-transform:uppercase;color:var(--drift)}
 .center{text-align:center}
 .hair{height:1px;background:var(--drift);opacity:.45}
 .foot{position:absolute;left:72px;right:72px;bottom:54px;display:flex;justify-content:space-between;align-items:center}
-.foot .caps{font-size:18px;letter-spacing:.36em}
-.logo{display:block}
+.foot .caps{font-size:18px;letter-spacing:.34em}
 .dot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--coral)}
-/* photo slides */
+/* full-bleed photo tiles */
+.bleed{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.veil-top{position:absolute;left:0;right:0;top:0;height:62%;background:linear-gradient(180deg,rgba(40,26,20,.62),rgba(40,26,20,0))}
+.veil-bot{position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(0deg,rgba(40,26,20,.5),rgba(40,26,20,0))}
+.on-photo{color:var(--cream)} .on-photo .caps{color:var(--cream);opacity:.9} .on-photo .it{color:var(--cream)}
+.stack{position:absolute;left:84px;top:96px;font-family:'Playfair Display',serif;font-size:96px;line-height:1.08;color:var(--cream);text-shadow:0 2px 24px rgba(30,18,12,.45)}
+.stack i{font-style:italic}
+/* framed photo slides */
 .ph{position:absolute;left:72px;top:72px;width:936px;height:830px;object-fit:cover}
 .txt{position:absolute;left:72px;right:72px;top:950px}
-.txt h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:66px;line-height:1.05;margin-top:16px}
-.txt p{font-size:28px;line-height:1.6;margin-top:16px;max-width:860px;opacity:.85}
-/* cover */
-.cover .logo{position:absolute;left:50%;transform:translateX(-50%);top:40px;width:240px}
-.cover .ph{top:190px;height:800px}
-.cover .txt{top:1030px}
-.cover h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:92px;line-height:1;margin-top:14px}
-.cover .it{font-size:38px;margin-top:10px}
+.txt h2{font-family:'Playfair Display',serif;font-weight:400;font-size:58px;line-height:1.1;margin-top:16px}
+.txt p{font-size:28px;line-height:1.6;margin-top:16px;max-width:880px;opacity:.85}
+/* cover (full-bleed) */
+.cover .head{position:absolute;left:84px;right:84px;top:96px;text-shadow:0 2px 20px rgba(30,18,12,.45)}
+.cover h1{font-family:'Playfair Display',serif;font-weight:400;font-size:88px;line-height:1.02;margin-top:18px}
+.cover .it{font-size:40px;margin-top:16px}
+.cover .logo{position:absolute;right:72px;bottom:44px;width:250px}
 /* facts / CTA */
-.facts .logo{position:absolute;left:50%;transform:translateX(-50%);top:90px;width:260px}
-.facts .head{position:absolute;left:72px;right:72px;top:300px}
-.facts h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:82px;line-height:1;margin-top:18px}
-.facts ul{position:absolute;left:150px;right:150px;top:470px;list-style:none;border-top:1px solid rgba(166,124,100,.4)}
+.facts .mark{position:absolute;left:50%;transform:translateX(-50%);top:90px;width:120px}
+.facts .head{position:absolute;left:72px;right:72px;top:270px}
+.facts h2{font-family:'Playfair Display',serif;font-weight:400;font-size:70px;line-height:1.05;margin-top:18px}
+.facts ul{position:absolute;left:150px;right:150px;top:450px;list-style:none;border-top:1px solid rgba(166,124,100,.4)}
 .facts li{font-size:30px;line-height:1.3;padding:25px 0;border-bottom:1px solid rgba(166,124,100,.4);text-align:center}
 .cta{position:absolute;left:72px;right:72px;bottom:150px;text-align:center}
-.cta .wa{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:58px;margin-top:14px}
-.cta .wa span{color:var(--drift);font-style:italic;font-weight:400}
+.cta .wa{font-family:'Playfair Display',serif;font-size:52px;margin-top:14px}
+.cta .wa span{color:var(--drift);font-style:italic}
 /* senja */
-.sun-wrap{position:absolute;left:0;right:0;height:200px;overflow:hidden}
+.sun-wrap{position:absolute;left:0;right:0;overflow:hidden}
 .sun{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;background:linear-gradient(180deg,var(--gold),var(--coral))}
 .horizon{position:absolute;left:180px;right:180px;height:1px;background:var(--drift);opacity:.6}
 .refl{position:absolute;left:50%;transform:translateX(-50%);height:2px;border-radius:2px;background:var(--ocean)}
-.time{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1;letter-spacing:-.01em;font-variant-numeric:lining-nums}
+.time{font-family:'Playfair Display',serif;font-weight:400;line-height:1}
+/* values */
+.vals{position:absolute;left:72px;right:72px;top:640px;display:grid;grid-template-columns:repeat(2,1fr);gap:70px 40px}
+.val{text-align:center;color:var(--drift)}
+.val .ring{width:150px;height:150px;border:1.5px solid var(--drift);border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.val .caps{margin-top:26px;font-size:20px}
 """
-FONTS = '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">'
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">'
 
-def foot(left, right):
-    return f'<div class="foot"><span class="caps">{left}</span><span class="caps">{right}</span></div>'
+def foot(left, right, photo=False):
+    c = ' style="color:var(--cream);opacity:.9"' if photo else ''
+    return f'<div class="foot"><span class="caps"{c}>{left}</span><span class="caps"{c}>{right}</span></div>'
 
-def sun_block(top, d, story=False):
+def sun_block(top, d):
     h = d//2
     s = f'<div class="sun-wrap" style="top:{top}px;height:{h}px"><div class="sun" style="width:{d}px;height:{d}px;top:0"></div></div>'
     s += f'<div class="horizon" style="top:{top+h}px"></div>'
@@ -92,52 +124,73 @@ def sun_block(top, d, story=False):
     return s
 
 parts = []
-# 1. #SenjaHariIni
+# campaign tiles
+for c in CAMPAIGN:
+    lines = "<br>".join(c["lines"])
+    parts.append(f'''<div class="tpl" id="{c["id"]}">
+  <img class="bleed" src="../assets/photos/{c["photo"]}" style="object-position:{c["pos"]}" alt="">
+  <div class="veil-top"></div><div class="veil-bot"></div>
+  <div class="stack">{lines}</div>
+  <img src="{LOGO_C}" style="position:absolute;right:66px;bottom:44px;width:250px" alt="">
+  <div class="foot" style="right:auto"><span class="caps" style="color:var(--cream);opacity:.9">SunaRi · Selayar</span></div>
+</div>''')
+# values tile
+vals = "".join(f'<div class="val"><div class="ring">{icon(k,"#A67C64",72)}</div><div class="caps">{e(l)}</div></div>' for k,l in VALUES)
+parts.append(f'''<div class="tpl" id="feed-values">
+  <img src="{MARK}" style="position:absolute;left:50%;transform:translateX(-50%);top:110px;width:130px" alt="">
+  <div class="center" style="position:absolute;left:72px;right:72px;top:300px">
+    <div class="caps">SunaRi Beach Resort</div>
+    <div class="pf" style="font-size:72px;line-height:1.1;margin-top:20px">Tempat senja <span class="it">pulang.</span></div>
+  </div>
+  <div class="hair" style="position:absolute;left:470px;width:140px;top:560px"></div>
+  <div class="vals">{vals}</div>
+  {foot("SunaRi · Selayar","Kepulauan Selayar")}
+</div>''')
+# #SenjaHariIni
 parts.append(f'''<div class="tpl" id="feed-senja">
   <div class="caps center" style="position:absolute;left:0;right:0;top:120px">#SenjaHariIni</div>
   {sun_block(250, 330)}
   <div class="center" style="position:absolute;left:0;right:0;top:530px">
-    <div class="time" style="font-size:210px">{SENJA["time"]}</div>
+    <div class="time" style="font-size:190px">{SENJA["time"]}</div>
     <div class="caps" style="margin-top:22px">W I T A</div>
-    <div class="it" style="font-size:50px;margin-top:40px">Tempat senja pulang</div>
+    <div class="it" style="font-size:46px;margin-top:40px">Tempat senja pulang</div>
     <div class="hair" style="width:80px;margin:44px auto 0"></div>
     <div class="caps" style="margin-top:34px;font-size:20px">{e(SENJA["date"])} · {e(SENJA["place"])}</div>
   </div>
-  <img class="logo" src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:70px;width:230px" alt="">
+  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:70px;width:240px" alt="">
 </div>''')
-# 2. promo
+# promo
 items = "".join(f"<li>{e(i)}</li>" for i in PROMO["items"])
 parts.append(f'''<div class="tpl facts" id="feed-promo">
-  <img class="logo" src="{LOGO}" alt="">
-  <div class="head center"><span class="dot"></span>
-    <div class="caps" style="margin-top:22px">{e(PROMO["kicker"])}</div>
-    <h2 style="font-size:104px">{e(PROMO["title"])} <span class="it" style="font-size:104px">{e(PROMO["title_it"])}</span></h2>
-    <div class="it" style="font-size:38px;margin-top:14px">{e(PROMO["sub"])}</div>
+  <img class="mark" src="{MARK}" alt="">
+  <div class="head center"><div class="caps">{e(PROMO["kicker"])}</div>
+    <h2 style="font-size:92px">{e(PROMO["title"])} <span class="it">{e(PROMO["title_it"])}</span></h2>
+    <div class="it" style="font-size:36px;margin-top:14px">{e(PROMO["sub"])}</div>
   </div>
-  <ul style="top:600px">{items}</ul>
+  <ul style="top:580px">{items}</ul>
   <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
   {foot("SunaRi · Selayar","Beach Resort")}
 </div>''')
-# 3. quote
-parts.append(f'''<div class="tpl" id="feed-quote">
-  <div style="position:absolute;inset:48px;border:1px solid rgba(166,124,100,.45)"></div>
-  <div class="center" style="position:absolute;left:110px;right:110px;top:380px">
-    <span class="dot"></span>
-    <div class="serif" style="font-size:84px;line-height:1.12;margin-top:56px">{QUOTE["text"].replace("<em>","<em class='it' style='font-size:84px'>")}</div>
-    <div class="hair" style="width:80px;margin:56px auto 0"></div>
-    <div class="caps" style="margin-top:36px">{e(QUOTE["en"])}</div>
+# quote
+parts.append(f'''<div class="tpl" id="feed-quote" style="background:var(--sand)">
+  <div style="position:absolute;inset:48px;border:1px solid rgba(90,62,49,.35)"></div>
+  <div class="center" style="position:absolute;left:110px;right:110px;top:360px">
+    <img src="{MARK}" style="width:110px" alt="">
+    <div class="pf" style="font-size:72px;line-height:1.18;margin-top:50px">{QUOTE["text"].replace("<em>","<em class='it' style='color:var(--ink)'>")}</div>
+    <div class="hair" style="width:80px;margin:56px auto 0;background:var(--ink);opacity:.4"></div>
+    <div class="caps" style="margin-top:36px;color:var(--ink)">{e(QUOTE["en"])}</div>
   </div>
-  <img class="logo" src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:110px;width:250px" alt="">
+  <div class="caps center" style="position:absolute;left:0;right:0;bottom:110px;color:var(--ink);font-size:18px">SunaRi Beach Resort · Selayar</div>
 </div>''')
-# 4. story
+# story
 parts.append(f'''<div class="tpl story" id="story-senja">
-  <img class="logo" src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:150px;width:300px" alt="">
+  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:150px;width:300px" alt="">
   <div class="caps center" style="position:absolute;left:0;right:0;top:470px;font-size:28px">Senja hari ini</div>
   {sun_block(590, 420)}
   <div class="center" style="position:absolute;left:0;right:0;top:960px">
-    <div class="time" style="font-size:280px">{SENJA["time"]}</div>
+    <div class="time" style="font-size:250px">{SENJA["time"]}</div>
     <div class="caps" style="margin-top:26px;font-size:28px">W I T A</div>
-    <div class="it" style="font-size:58px;margin-top:46px">Sampai jumpa di tepi pantai</div>
+    <div class="it" style="font-size:54px;margin-top:46px">Sampai jumpa di tepi pantai</div>
   </div>
   <div class="caps center" style="position:absolute;left:50%;transform:translateX(-50%);bottom:200px;border:1px dashed rgba(166,124,100,.6);padding:28px 56px;font-size:20px;white-space:nowrap">Tempel stiker / link di sini</div>
 </div>''')
@@ -145,11 +198,12 @@ parts.append(f'''<div class="tpl story" id="story-senja">
 for r in ROOMS:
     n = len(r["slides"]) + 2
     p = f'../assets/photos/{r["photos"]}/'
-    parts.append(f'''<div class="tpl cover" id="{r["prefix"]}-1">
-  <img class="logo" src="{LOGO}" alt="">
-  <img class="ph" src="{p}{r["cover"]}" style="object-position:{r["cover_pos"]}" alt="">
-  <div class="txt"><div class="caps">Room Tour</div><h1>{e(r["name"])}</h1><div class="it">{e(r["tagline"])}</div></div>
-  {foot("SunaRi · Selayar","Geser &nbsp;→")}
+    parts.append(f'''<div class="tpl cover on-photo" id="{r["prefix"]}-1">
+  <img class="bleed" src="{p}{r["cover"]}" style="object-position:{r["cover_pos"]}" alt="">
+  <div class="veil-top"></div><div class="veil-bot"></div>
+  <div class="head"><div class="caps">Room Tour</div><h1>{e(r["name"])}</h1><div class="it">{e(r["tagline"])}</div></div>
+  <img class="logo" src="{LOGO_C}" alt="">
+  <div class="foot" style="right:auto"><span class="caps" style="color:var(--cream);opacity:.9">Geser &nbsp;→</span></div>
 </div>''')
     for i,(img,pos,h,t) in enumerate(r["slides"], start=2):
         parts.append(f'''<div class="tpl" id="{r["prefix"]}-{i}">
@@ -159,31 +213,29 @@ for r in ROOMS:
 </div>''')
     facts = "".join(f"<li>{e(f)}</li>" for f in r["facts"])
     parts.append(f'''<div class="tpl facts" id="{r["prefix"]}-{n}">
-  <img class="logo" src="{LOGO}" alt="">
-  <div class="head center"><div class="caps">{e(r["name"])}</div><h2>Yang kamu <span class="it" style="font-size:82px">dapatkan</span></h2></div>
+  <img class="mark" src="{MARK}" alt="">
+  <div class="head center"><div class="caps">{e(r["name"])}</div><h2>Yang kamu <span class="it">dapatkan</span></h2></div>
   <ul>{facts}</ul>
   <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
   {foot("SunaRi · Selayar", f"{n:02d} — {n:02d}")}
 </div>''')
 
-out = f'<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SunaRi Instagram Kit</title>{FONTS}<style>{CSS}</style></head><body>\n' + "\n".join(parts) + "\n</body></html>\n"
-(HERE / "kit.html").write_text(out)
+head = f'<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SunaRi Instagram Kit</title>{FONTS}<style>{CSS}</style></head><body>\n'
+(HERE / "kit.html").write_text(head + "\n".join(parts) + "\n</body></html>\n")
 
-GRID = ["carousel/vp-1","feed-senja","carousel/sb-1","feed-quote","carousel/vp-3","feed-promo","carousel/st-1","carousel/sb-6","carousel/sb-3"]
 tiles = "".join(f'<img src="{g}.png" alt="">' for g in GRID)
 grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>SunaRi Grid Preview</title>{FONTS}<style>
 *{{box-sizing:border-box;margin:0;padding:0}} body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif}}
 #grid-preview{{width:1080px;background:#fff;color:#262626;padding:56px 0 0}}
 .prof{{display:flex;gap:56px;align-items:center;padding:0 56px 44px}}
 .av{{width:200px;height:200px;border-radius:50%;background:#FBF4EC;border:2px solid #E6C89B;display:flex;align-items:center;justify-content:center;flex:none}}
-.av img{{width:170px}}
+.av img{{width:130px}}
 .user{{font-size:34px;font-weight:600}} .name{{font-size:26px;font-weight:600;margin-top:18px}}
-.bio{{font-size:25px;line-height:1.5;margin-top:6px;white-space:pre-line}}
-.bio a{{color:#00376b;font-weight:500}}
+.bio{{font-size:25px;line-height:1.5;margin-top:6px;white-space:pre-line}} .bio a{{color:#00376b;font-weight:500}}
 .tabs{{border-top:1px solid #dbdbdb;height:70px}}
 .g{{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}} .g img{{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}}
 </style></head><body><div id="grid-preview">
-<div class="prof"><div class="av"><img src="../assets/logo-sunari-driftwood.png" alt=""></div>
+<div class="prof"><div class="av"><img src="../assets/mark-sunari-driftwood.svg" alt=""></div>
 <div><div class="user">sunari.selayar</div><div class="name">SunaRi Beach Resort Selayar</div>
 <div class="bio">🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
@@ -192,4 +244,4 @@ grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Sun
 <a>wa.me/6282189033044</a></div></div></div>
 <div class="tabs"></div><div class="g">{tiles}</div></div></body></html>'''
 (HERE / "grid.html").write_text(grid)
-print("wrote", HERE / "kit.html", len(parts), "templates")
+print("wrote kit.html (%d templates) and grid.html" % len(parts))
