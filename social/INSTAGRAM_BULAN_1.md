@@ -123,8 +123,8 @@ Simpan akun ini supaya tidak ketinggalan.
 Room tour: Superior Bungalow. 🌴
 
 Rumah kayu beratap A-frame di antara pohon kelapa,
-lengkap dengan loteng, teras pribadi,
-dan kamar mandi semi-outdoor yang dikelilingi taman.
+lengkap dengan loteng, king bed, TV, teras pribadi,
+dan kamar mandi semi-outdoor yang dikelilingi taman. Sudah termasuk sarapan.
 
 Geser sampai akhir untuk melihat fasilitasnya,
 lalu ceritakan di komentar: bagian mana yang paling kamu suka?

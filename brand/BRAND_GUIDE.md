@@ -190,9 +190,11 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 ## 6. Produk & Pengalaman Signature (usulan)
 
 **Tipe kamar**
-- **Superior Bungalow** *(foto asli: `assets/photos/superior-bungalow/`)*: bungalow kayu beratap A-frame
-  dengan loteng, teras kayu pribadi, kamar mandi semi-outdoor dengan taman & rain shower, AC, TV,
-  perlengkapan kopi/teh. Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
+- **Superior Bungalow** *(foto asli: `assets/photos/superior-bungalow/`)*: bungalow kayu beratap A-frame dengan loteng,
+  **lebih luas dari Standard & VIP Standard**. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **King bed**, **TV**, termasuk **sarapan**,
+  AC, Wi-Fi, set kopi/teh + pemanas air, meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan,
+  tirai blackout. Kamar mandi semi-outdoor dengan taman & rain shower. Teras kayu pribadi dengan kursi santai, pemandangan laut atau taman.
+  Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
 - **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi.
   **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **Queen bed**, termasuk **sarapan**, AC, Wi-Fi, set kopi/teh + pemanas air,
   meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout.

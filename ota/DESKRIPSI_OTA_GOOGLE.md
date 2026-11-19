@@ -81,13 +81,13 @@ Paid transfers are available from H. Aroeppala Airport and the ferry port. The r
 ---
 
 ### 3. Superior Bungalow
-**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed) · **Tempat tidur:** 1 double/queen *(sesuaikan)* · **Pemandangan:** taman tropis
+**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed, berbayar) · **Tempat tidur:** 1 king bed · **Pemandangan:** laut atau taman (sesuai unit) · **Lebih luas dari Standard & VIP Standard** · **Termasuk sarapan**
 
-**ID:** Bungalow kayu beratap A-frame di antara pohon kelapa, dengan loteng di bawah langit-langit kayu yang menjulang. Teras kayu pribadi dengan kursi santai cocok untuk kopi pagi dan obrolan sore. Keistimewaannya adalah kamar mandi semi-outdoor dengan rain shower, dikelilingi taman hijau dan langit terbuka. Dilengkapi AC, TV, dan perlengkapan kopi/teh.
+**ID:** Bungalow kayu beratap A-frame di antara pohon kelapa, dengan loteng di bawah langit-langit kayu yang menjulang. Kamarnya lebih luas dibanding Standard dan VIP Standard Bungalow, dilengkapi king bed, TV, AC, Wi-Fi, set kopi/teh dengan pemanas air, meja kerja/rias, tirai blackout, serta bantal dan selimut tambahan. Keistimewaannya adalah kamar mandi semi-outdoor dengan rain shower, dikelilingi taman hijau dan langit terbuka, lengkap dengan perlengkapan mandi dan handuk bersih untuk setiap tamu. Teras kayu pribadi dengan kursi santai menghadap laut atau taman. Sudah termasuk sarapan. Layanan setrika tersedia atas permintaan.
 
-**EN:** A wooden A-frame bungalow nestled among coconut palms, with a loft under the soaring timber ceiling. The private wooden terrace with lounge chairs is perfect for morning coffee and evening chats. The highlight is a semi-outdoor bathroom with rain shower, surrounded by a tropical garden and open sky. Air conditioning, TV and coffee/tea facilities included.
+**EN:** A wooden A-frame bungalow nestled among coconut palms, with a loft under the soaring timber ceiling. More spacious than the Standard and VIP Standard Bungalows, it comes with a king bed, TV, air conditioning, Wi-Fi, coffee/tea set with kettle, work/vanity desk, blackout curtains, and extra pillows and blankets. The highlight is a semi-outdoor bathroom with rain shower, surrounded by a tropical garden and open sky, with full toiletries and fresh towels for every guest. The private wooden terrace with lounge chairs looks out to the sea or garden. Breakfast is included. Ironing available on request.
 
-**Fasilitas:** AC · Wi-Fi · TV · Loteng · Teras pribadi · Kamar mandi semi-outdoor · Rain shower · Kopi/teh · Toilet duduk · Extra bed
+**Fasilitas:** Sarapan · King bed · TV · AC · Wi-Fi · Loteng · Kopi/teh & pemanas air (kettle) · Meja kerja/rias · Tirai blackout · Bantal & selimut tambahan · Setrika (atas permintaan) · Kamar mandi semi-outdoor · Rain shower · Toilet duduk · Perlengkapan mandi · Handuk · Teras/balkon pribadi · Kursi santai · Pemandangan laut atau taman · Extra bed (maks. 1, berbayar)
 
 ---
 
@@ -160,9 +160,9 @@ Tombol: **Hubungi** (nomor WA).
 | Pembatalan, deposit, hewan peliharaan, merokok | *Isi sesuai kebijakan resort* |
 
 ## F. Yang perlu dicek sebelum dipublikasikan
-- [ ] Ukuran tempat tidur Superior & VIP Superior (double/queen/king)
+- [ ] Ukuran tempat tidur VIP Superior (Superior: king bed ✅)
 - [ ] Luas kamar (m²) untuk setiap tipe, sering diminta OTA
-- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk Superior dan VIP Superior? (sudah dikonfirmasi: Family Superior, Standard, VIP Standard)
+- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk VIP Superior? (sudah dikonfirmasi: Family Superior, Standard, VIP Standard, Superior)
 - [ ] VIP Standard: berapa unit yang menghadap laut/senja dan berapa yang menghadap taman?
 - [ ] Air panas, parkir, jam resepsionis
 - [ ] Kebijakan pembatalan dan deposit
