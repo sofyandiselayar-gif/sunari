@@ -246,7 +246,7 @@ Info & reservasi: WA 0821-8903-3044.
 ```
 
 **Hari 12 · Feed · Pesona Selayar (Kuliner)**
-*Visual:* ikan bakar dengan sambal dan nasi di meja Bajoy Beach Resto (foto pendukung: `senja/20-payung-lampu-gantung.jpg`).
+*Visual:* carousel `resto/01-tamu-makan-siang.jpg` (minta izin tamu) → `resto/02-bakar-cumi-ayam.jpg` → `resto/03-resto-malam.jpg`.
 ```
 Ikan bakar, sambal, dan nasi hangat. 🐟🔥
 Rasa sederhana yang paling pas dinikmati setelah seharian di pantai.
@@ -525,5 +525,5 @@ Sampai jumpa di tempat senja pulang. 🌅
 - [x] Nomor WhatsApp & alamat
 - [x] Username, kapasitas kamar, jam check-in/out, Wi-Fi, data resto
 - [x] Foto senja (`assets/photos/senja/`)
-- [ ] Foto makanan Bajoy Beach Resto (Hari 12)
+- [x] Foto makanan Bajoy Beach Resto (`assets/photos/resto/`)
 - [ ] Nama & izin foto tim (Hari 15), izin repost tamu (Hari 21)

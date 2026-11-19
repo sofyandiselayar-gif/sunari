@@ -45,11 +45,10 @@ const GROUPS = {
   await b.close();
   // extras
   const ex = path.join(OUT, '08_Brand');
-  fs.mkdirSync(path.join(ex, 'Logo'), { recursive: true }); fs.mkdirSync(path.join(ex, 'Foto_Senja'), { recursive: true });
+  fs.mkdirSync(path.join(ex, 'Logo'), { recursive: true }); 
   for (const f of ['logo-sunari-driftwood.png','logo-sunari-cream.png','mark-sunari-driftwood.svg','mark-sunari-cream.svg'])
     fs.copyFileSync(path.join(ROOT, 'assets', f), path.join(ex, 'Logo', f));
-  for (const f of fs.readdirSync(path.join(ROOT, 'assets/photos/senja')))
-    fs.copyFileSync(path.join(ROOT, 'assets/photos/senja', f), path.join(ex, 'Foto_Senja', f));
+  fs.cpSync(path.join(ROOT, 'assets/photos'), path.join(ex, 'Foto'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'brand/brand-board.png'), path.join(ex, 'brand-board.png'));
   fs.copyFileSync(path.join(ROOT, 'brand/BRAND_GUIDE.md'), path.join(ex, 'BRAND_GUIDE.md'));
   fs.copyFileSync(path.join(ROOT, 'social/INSTAGRAM_BULAN_1.md'), path.join(OUT, 'CAPTION_30_HARI.md'));

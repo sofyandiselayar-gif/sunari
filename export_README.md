@@ -6,7 +6,7 @@
 | `PNG/` | Semua desain, siap upload ke Instagram | Langsung posting |
 | `PDF/` | Satu PDF per desain, teks masih bisa diedit | Cetak / arsip / edit satuan di Canva |
 | `CANVA_Import/` | Satu PDF berisi beberapa halaman per kelompok (1 carousel = 1 file) | **Edit di Canva** |
-| `08_Brand/` | Logo, simbol, 20 foto senja, brand board, brand guide | Bahan desain tambahan |
+| `08_Brand/` | Logo, simbol, semua foto asli (lihat `Foto/KATALOG_FOTO.md`), brand board, brand guide | Bahan desain tambahan |
 | `09_Highlight_Cover/` | 8 cover highlight (1080 × 1920) + pratinjau | Sampul highlight Instagram |
 | `DESKRIPSI_OTA_GOOGLE.md` | Deskripsi properti & kamar (ID/EN) untuk Traveloka, Booking.com, Agoda, Google | Copy-paste ke OTA |
 | `CAPTION_REELS_TIKTOK.md` | Template caption Reels & TikTok per jenis konten | Copy-paste saat posting video |
