@@ -149,6 +149,22 @@ for c in CAMPAIGN:
   <img src="{LOGO_C}" style="position:absolute;right:66px;bottom:44px;width:250px" alt="">
   <div class="foot" style="right:auto"><span class="caps" style="color:var(--cream);opacity:.9">SunaRi · Selayar</span></div>
 </div>''')
+# kayak tile (prices allowed)
+parts.append(f'''<div class="tpl on-photo" id="feed-kayak">
+  <img class="bleed" src="../assets/photos/senja/03-kayak-matahari-merah.jpg" style="object-position:50% 40%" alt="">
+  <div class="veil-top"></div>
+  <div class="veil-bot" style="height:46%;background:linear-gradient(0deg,rgba(40,26,20,.78),rgba(40,26,20,0))"></div>
+  <div class="stack" style="top:330px">Mendayung<br>menuju <i>senja.</i></div>
+  <div style="position:absolute;left:84px;right:84px;bottom:150px;color:var(--cream)">
+    <div class="caps" style="color:var(--cream)">Sewa Kayak · Pantai Sunari</div>
+    <div style="display:flex;gap:70px;margin-top:22px;font-family:'Playfair Display',serif;font-size:50px">
+      <div>Single <span style="color:var(--gold)">Rp 50.000</span></div>
+      <div>Double <span style="color:var(--gold)">Rp 100.000</span></div>
+    </div>
+  </div>
+  <img src="{LOGO_C}" style="position:absolute;right:66px;bottom:44px;width:230px" alt="">
+  <div class="foot" style="right:auto"><span class="caps" style="color:var(--cream);opacity:.9">WA {WA}</span></div>
+</div>''')
 # values tile
 vals = "".join(f'<div class="val"><div class="ring">{icon(k,"#A67C64",72)}</div><div class="caps">{e(l)}</div></div>' for k,l in VALUES)
 parts.append(f'''<div class="tpl" id="feed-values">
