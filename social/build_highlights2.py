@@ -37,6 +37,9 @@ def ramadhan(year):
    <text x="100" y="170" text-anchor="middle" font-family="Playfair Display" font-size="42" letter-spacing="3" fill="{D}" style="font-variant-numeric:lining-nums">{year}</text>'''
 ICONS.append(("07b-ramadhan-1447", "Ramadhan 1447H", ramadhan("1447 H")))
 ICONS.append(("07c-ramadhan-1448", "Ramadhan 1448H", ramadhan("1448 H")))
+ICONS.append(("07d-layangan", "Layangan", f'''<g {S}><path d="M104 30 L146 74 L104 128 L62 74 Z"/><line x1="104" y1="30" x2="104" y2="128"/><line x1="62" y1="74" x2="146" y2="74"/>
+   <path d="M104 128 q-10 12 0 22 t0 22 t-6 14"/></g>
+   <g fill="{D}"><path d="M94 144 l-12 -6 l2 12 Z"/><path d="M112 162 l12 -6 l-2 12 Z"/></g>'''))
 for i, (m, name) in enumerate([("APR","Sunset April"),("MEI","Sunset Mei"),("JUN","Sunset Juni"),("JUL","Sunset Juli"),
                                 ("AGU","Sunset Agustus"),("SEP","Sunset Sept"),("OKT","Sunset Oktober"),("NOV","Sunset November"),("DES","Sunset Desember")], 9):
     ICONS.append((f"{i:02d}-sunset-{m.lower()}", name, month(m)))

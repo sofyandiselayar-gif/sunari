@@ -15,6 +15,7 @@ Pratinjau: `social/highlights-v2/preview-highlights.png`.
 | 6 | Gusung Island | `hl2-03-gusung` | Foto/video trip ke Gusung |
 | 7 | Bahuluang | `hl2-04-bahuluang` | Foto/video trip ke Pulau Bahuluang |
 | 8 | Ramadhan | `hl2-07-ramadhan` | Konten bulan Ramadhan (buka puasa, suasana, promo Ramadhan) |
+| 7a | Layangan | `hl2-07d-layangan` | Foto/video layangan di Pantai Sunari |
 | 8a | Ramadhan 1447H | `hl2-07b-ramadhan-1447` | Arsip Ramadhan 1447 H (sekitar Februari–Maret 2026) |
 | 8b | Ramadhan 1448H | `hl2-07c-ramadhan-1448` | Ramadhan 1448 H (sekitar Februari 2027, menunggu penetapan resmi) |
 | 9–17 | Sunset April … Sunset Desember | `hl2-09-sunset-apr` … `hl2-17-sunset-des` | Story #SenjaHariIni bulan tersebut |
