@@ -9,7 +9,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `assets/` | Logo satu warna: Driftwood (utama) & Shell Cream (latar gelap); logo lama di `assets/original/` |
 | `social/INSTAGRAM_BULAN_1.md` | Bio Instagram, highlight, dan 30 caption bulan pertama |
 | `social/` | Template Instagram (feed, story, carousel room tour Superior / VIP Superior / Family Superior / Standard / VIP Standard) beserta sumber HTML-nya |
-| `assets/photos/` | Foto asli kamar |
+| `assets/photos/` | Foto asli kamar (5 tipe) dan 20 foto senja |
 
 ## Palet
 *Sunset Beach*: `#F7A7A1` Sunset Pink · `#FF8A5C` Coral Glow · `#FDB15D` Golden Hour · `#7BA7B6` Ocean Breeze · `#E6C89B` Sandy Shore · `#A67C64` Driftwood

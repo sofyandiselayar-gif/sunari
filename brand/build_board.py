@@ -74,7 +74,7 @@ body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif;color:va
 .phone .s{{width:100%;height:100%;border-radius:22px;background:var(--cream);overflow:hidden;position:relative}}
 </style></head><body><div id="board">
 
-<div class="p hero"><img class="f" src="{P}vip-standard-bungalow/02-teras-view-pantai.jpg" style="object-position:50% 62%" alt=""><div class="veil"></div>
+<div class="p hero"><img class="f" src="{P}senja/20-payung-lampu-gantung.jpg" style="object-position:50% 64%" alt=""><div class="veil"></div>
   <div class="in">
     <img src="../assets/logo-sunari-cream.png" style="width:470px;display:block;margin-left:-16px" alt="">
     <div class="pf" style="font-size:52px;line-height:1.15;margin-top:30px">Tempat senja<br><span class="it">pulang.</span></div>
@@ -103,7 +103,7 @@ body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif;color:va
   <div class="p"><img class="f" src="{P}superior-bungalow/03-teras.jpg" alt=""><div class="vt"></div>
     <div class="say pf">Lebih dari<br>Menginap.<br><span class="it">Sebuah Rasa.</span></div></div>
   <div class="col">
-    <div class="p"><img class="f" src="{P}vip-standard-bungalow/04-teras-view-laut.jpg" alt=""><div class="cap">Pantai sepi.<br>Senja hangat.</div></div>
+    <div class="p"><img class="f" src="{P}senja/17-kayak-berdua.jpg" style="object-position:50% 60%" alt=""><div class="cap">Pantai sepi.<br>Senja hangat.</div></div>
     <div class="p"><img class="f" src="{P}standard-bungalow/01-teras-view-laut.jpg" style="object-position:50% 70%" alt=""><div class="cap">Pagi pelan.<br>Laut tenang.</div></div>
   </div>
 </div>

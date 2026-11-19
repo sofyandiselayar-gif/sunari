@@ -136,6 +136,8 @@ Gaya: **minimalis & elegan**. Logo memakai huruf kuas, jadi font pendampingnya k
 Ukuran minimum di desain 1080px: teks isi 28px, label 18px (agar tetap terbaca di layar HP).
 
 ### 4.4 Gaya Foto & Video
+Foto senja asli: `assets/photos/senja/` (20 foto). Jangan pakai foto 01–02 tanpa dipotong, karena ada cap tanggal di bagian bawah.
+
 - Ambil saat **golden hour** (±60 menit sebelum matahari terbenam) dan siang cerah (laut toska).
 - Warna hangat, tidak oversaturated. Pantai putih, laut jernih, siluet daun kelapa.
 - Tampilkan orang yang benar-benar santai, bukan berpose kaku.
@@ -208,7 +210,8 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 
 **Pengalaman**
 *Hanya layanan yang benar-benar tersedia. Jangan promosikan layanan di luar daftar ini.*
-- **Restoran** ✅: ikan bakar & seafood.
+- **Bajoy Beach Resto** ✅: ikan bakar & seafood. Buka 07.00–21.00 WITA. Tamu tidak menginap boleh berkunjung sampai 19.00.
+- **Wi-Fi** ✅ di area resort.
 - **Senja Dinner** ✅: makan malam saat senja di restoran. Menu: ikan bakar & seafood. Pemesanan H-1 via WhatsApp.
 - **Antar-jemput bandara & pelabuhan** ✅: dengan biaya tambahan, dipesan via WhatsApp.
 
@@ -283,7 +286,11 @@ Folder `social/`:
 |---|---|
 | **Alamat** | Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kecamatan Bontosikuyu, Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia |
 | **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
-| **Fasilitas umum** | Restoran, Senja Dinner (pesan H-1), antar-jemput bandara/pelabuhan (berbayar) |
+| **Instagram** | @sunaribeachresortselayar |
+| **Check-in / check-out** | 14.00 / 12.00 WITA |
+| **Fasilitas umum** | Bajoy Beach Resto (07.00–21.00; non-tamu s.d. 19.00), Senja Dinner (pesan H-1), Wi-Fi, antar-jemput bandara/pelabuhan (berbayar) |
+| **Pantai** | Landai dan aman untuk anak-anak |
+| **Kapasitas kamar** | Standard, VIP Standard, Superior, VIP Superior: 2 orang (maks. 3 dengan 1 extra bed) · Family Superior: 6 orang (maks. 8 dengan 2 extra bed) |
 | **WhatsApp reservasi** | +62 821-8903-3044 (Sofyan) |
 | **Link WA langsung** | `https://wa.me/6282189033044` |
 
@@ -293,5 +300,5 @@ Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 Arahkan calon tamu untuk menanyakan harga dan ketersediaan via WhatsApp.
 
 ## 10. Yang Perlu Dikonfirmasi
-- Kapasitas tamu, akun Instagram resmi
+- Status kayak di pantai (fasilitas resort atau bukan) sebelum dipromosikan
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain

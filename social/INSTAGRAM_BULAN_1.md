@@ -7,8 +7,7 @@
 
 ## 1. Profil
 
-**Username (usulan, cek ketersediaan):**
-`@sunari.selayar` · `@sunariselayar` · `@sunaribeachresort`
+**Username:** `@sunaribeachresortselayar`
 
 **Nama profil** (muncul di pencarian, maks. 30 karakter):
 `SunaRi Beach Resort Selayar`
@@ -142,7 +141,7 @@ dan justru itu yang membuatnya istimewa.
 ```
 
 **Hari 5 · Reels · Senja**
-*Visual:* POV duduk di pasir, kaki menyentuh air, matahari turun.
+*Visual:* `senja/19-pantai-di-bawah-daun.jpg` atau video dari titik yang sama.
 ```
 POV: jam [jam] WITA, kaki di pasir, langit mulai oranye. 🌅
 
@@ -240,19 +239,20 @@ Info & reservasi: WA 0821-8903-3044.
 ```
 
 **Hari 12 · Feed · Pesona Selayar (Kuliner)**
-*Visual:* ikan bakar dengan sambal dan nasi di meja restoran SunaRi.
+*Visual:* ikan bakar dengan sambal dan nasi di meja Bajoy Beach Resto (foto pendukung: `senja/20-payung-lampu-gantung.jpg`).
 ```
 Ikan bakar, sambal, dan nasi hangat. 🐟🔥
 Rasa sederhana yang paling pas dinikmati setelah seharian di pantai.
 
-Restoran SunaRi menyajikan ikan bakar dan seafood setiap hari.
+Bajoy Beach Resto di SunaRi buka setiap hari pukul 07.00–21.00 WITA,
+menyajikan ikan bakar dan seafood. Tamu yang tidak menginap juga boleh mampir (sampai pukul 19.00).
 Mau makan malam saat senja? Pesan Senja Dinner H-1 via WhatsApp 0821-8903-3044.
 
 #KulinerSelayar #SunaRiSelayar #Selayar #SeafoodLovers
 ```
 
 **Hari 13 · Reels · Senja**
-*Visual:* siluet daun kelapa bergoyang dengan latar matahari terbenam (selaras dengan logo).
+*Visual:* `senja/14-daun-matahari-story.jpg` / `senja/06-di-bawah-daun.jpg`.
 ```
 Daun kelapa ini ada di logo kami karena alasan sederhana:
 dialah yang setiap sore membingkai senja di SunaRi. 🌴🌅
@@ -263,7 +263,7 @@ Senja hari ini: [jam] WITA.
 ```
 
 **Hari 14 · Feed · Interaksi**
-*Visual:* foto pantai dengan dua kursi kosong.
+*Visual:* `senja/08-meja-di-bawah-pohon.jpg`.
 ```
 Dua kursi, satu senja. 🌅
 
@@ -364,7 +364,7 @@ Senja hari ini: [jam] WITA.
 "[kutipan singkat dari tamu]" (@[akun tamu]) 💬
 
 Terima kasih sudah menitipkan senjamu di sini.
-Punya foto atau video di SunaRi? Tag @[akun] dan pakai #SunaRiSelayar,
+Punya foto atau video di SunaRi? Tag @sunaribeachresortselayar dan pakai #SunaRiSelayar,
 kami akan repost favorit setiap minggu.
 
 #SunaRiSelayar #CeritaTamu #Selayar #SenjaHariIni
@@ -402,7 +402,9 @@ Senja hari ini: [jam] WITA.
 ```
 Pertanyaan yang paling sering kami terima 💬
 
-• Jam check-in/check-out? [14.00 / 12.00 WITA]
+• Jam check-in/check-out? Check-in 14.00, check-out 12.00 WITA.
+• Ada Wi-Fi? Ada.
+• Aman untuk anak? Ya, pantainya landai dan aman untuk anak-anak.
 • Ada antar-jemput dari bandara/pelabuhan? Ada, dengan biaya tambahan.
 • Ada restoran? Ada. Senja Dinner ikan bakar & seafood bisa dipesan H-1.
 • Cocok untuk keluarga? Ada Family Superior Bungalow untuk 6 orang (maks. 8 dengan extra bed).
@@ -413,7 +415,7 @@ Ada pertanyaan lain? Tanya di komentar atau DM.
 ```
 
 **Hari 25 · Feed · Pengalaman**
-*Visual:* meja makan di restoran SunaRi dengan langit senja di latar belakang.
+*Visual:* `senja/08-meja-di-bawah-pohon.jpg` (meja kayu menghadap senja).
 ```
 Makan malam dengan pemandangan yang terus berubah warna. 🍽️🌅
 
@@ -468,7 +470,7 @@ Info & pemesanan: WA 0821-8903-3044.
 ### PENUTUP BULAN
 
 **Hari 29 · Carousel · Rekap**
-*Visual:* 10 foto senja terbaik selama bulan ini.
+*Visual:* 10 foto dari `assets/photos/senja/` (mis. 03, 04, 07, 09, 11, 15, 16, 17, 19, 20).
 ```
 Satu bulan, [jumlah] senja. 🌅
 
@@ -504,8 +506,7 @@ Sampai jumpa di tempat senja pulang. 🌅
 
 ## 5. Data yang Perlu Diisi
 - [x] Nomor WhatsApp & alamat
-- [ ] Username Instagram final
-- [ ] Kapasitas tamu Superior, VIP Superior, Standard, VIP Standard
-- [ ] Jam check-in/out (Hari 24)
-- [ ] Foto restoran & Senja Dinner (Hari 12, 25)
+- [x] Username, kapasitas kamar, jam check-in/out, Wi-Fi, data resto
+- [x] Foto senja (`assets/photos/senja/`)
+- [ ] Foto makanan Bajoy Beach Resto (Hari 12)
 - [ ] Nama & izin foto tim (Hari 15), izin repost tamu (Hari 21)

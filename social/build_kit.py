@@ -5,7 +5,8 @@ Edit the CONTENT section, then run:  python3 social/build_kit.py && node social/
 import html, pathlib
 HERE = pathlib.Path(__file__).parent
 WA = "0821-8903-3044"
-SENJA = dict(time="17.57", date="Kamis, 19 November 2026", place="Pantai Tile-Tile")
+SENJA = dict(time="17.57", date="Kamis, 19 November 2026", place="Pantai Tile-Tile",
+             photo="senja/19-pantai-di-bawah-daun.jpg", story_photo="senja/12-kayak-matahari-merah-story.jpg")
 
 # ---------------------------------------------------------------- CONTENT
 ROOMS = [
@@ -15,47 +16,47 @@ ROOMS = [
                ("04-kamar-loteng.jpg","50% 50%","Atap A-frame & loteng","Langit-langit kayu menjulang dengan loteng di atasnya. Lapang, sejuk, dan hangat."),
                ("05-kamar-tempat-tidur.jpg","50% 50%","Tidur nyenyak, bangun santai","Kasur besar, pintu kaca ke teras, dan cahaya pagi yang masuk pelan-pelan."),
                ("10-kamar-mandi-taman.jpg","50% 60%","Kamar mandi semi-outdoor","Mandi di bawah rain shower, ditemani taman hijau dan langit terbuka.")],
-       facts=["Bungalow kayu A-frame dengan loteng","Teras pribadi dengan kursi santai","Kamar mandi semi-outdoor, rain shower","AC, TV, perlengkapan kopi & teh","Beberapa langkah ke pantai"]),
+       facts=["Untuk 2 orang, maks. 3 dengan extra bed","Bungalow kayu A-frame dengan loteng","Teras pribadi dengan kursi santai","Kamar mandi semi-outdoor, rain shower","AC, TV, perlengkapan kopi & teh","Wi-Fi & beberapa langkah ke pantai"]),
   dict(prefix="st", name="Standard Bungalow", photos="standard-bungalow",
        tagline="Pagi menghadap laut Selayar", cover="01-teras-view-laut.jpg", cover_pos="50% 60%",
        slides=[("03-kamar-depan.jpg","50% 60%","Hangatnya rumah kayu","Dinding kayu, atap tinggi, dan seprai segar. Sederhana, bersih, dan nyaman."),
                ("02-kamar-sudut.jpg","50% 55%","Sejuk sepanjang hari","Kamar ber-AC dengan jendela atas yang membiarkan cahaya alami masuk."),
                ("04-kamar-mandi-bambu.jpg","50% 50%","Kamar mandi nuansa bambu","Dinding anyaman bambu dan lantai batu alam, dengan shower dan toilet duduk.")],
-       facts=["Bungalow kayu untuk dua orang","Teras pribadi luas menghadap laut","AC & tempat tidur double","Kamar mandi dalam, shower & toilet duduk"]),
+       facts=["Untuk 2 orang, maks. 3 dengan extra bed","Teras pribadi luas menghadap laut","AC, Wi-Fi & tempat tidur double","Kamar mandi dalam, shower & toilet duduk"]),
   dict(prefix="vs", name="VIP Superior Bungalow", photos="vip-superior-bungalow",
        tagline="Berendam di bawah langit terbuka", cover="01-eksterior-a-frame.jpg", cover_pos="40% 50%",
        slides=[("02-teras.jpg","50% 60%","Teras kayu yang teduh","Dua kursi, satu meja, dan rimbun tanaman tropis. Tempat pas untuk kopi sore."),
                ("04-kamar-tempat-tidur.jpg","50% 55%","Atap A-frame yang lapang","Langit-langit tinggi dengan jendela segitiga yang membiarkan cahaya pagi masuk."),
                ("05-kamar-dari-loteng.jpg","50% 50%","Lihat dari loteng","Pintu kaca terbuka langsung ke teras dan taman."),
                ("06-bathtub-semi-outdoor.jpg","50% 55%","Bathtub semi-outdoor","Berendam atau mandi rain shower di bawah atap kaca, dengan pohon kelapa di atas kepala.")],
-       facts=["Bungalow A-frame dengan loteng","Teras kayu pribadi","Bathtub & rain shower semi-outdoor, atap kaca","AC, TV, kulkas mini, kopi & teh","Wastafel kayu & toilet duduk"]),
+       facts=["Untuk 2 orang, maks. 3 dengan extra bed","Bungalow A-frame dengan loteng","Teras kayu pribadi","Bathtub & rain shower semi-outdoor","AC, TV, Wi-Fi, kulkas mini, kopi & teh"]),
   dict(prefix="fs", name="Family Superior Bungalow", photos="family-superior-bungalow",
        tagline="Satu rumah, dua lantai, semua bersama", cover="01-eksterior-taman.jpg", cover_pos="55% 50%",
        slides=[("03-teras-sofa.jpg","50% 55%","Teras pribadi untuk berkumpul","Sofa kayu yang lega di antara pohon kelapa. Tempat ngobrol sambil menunggu senja."),
                ("06-kamar-bawah-sudut.jpg","50% 50%","Kamar utama di lantai bawah","Tempat tidur besar, sandaran kayu, dan meja kopi & teh di sudut kamar."),
                ("09-lantai-atas-4-kasur.jpg","50% 50%","Lantai atas untuk anak-anak","Ruang luas di bawah atap kayu tinggi, dengan empat kasur berjajar."),
                ("12-kamar-mandi-shower.jpg","50% 50%","Kamar mandi yang lapang","Shower, toilet duduk, dan area wastafel terpisah.")],
-       facts=["Untuk 6 orang, maks. 8 dengan 2 extra bed","Bungalow dua lantai di tengah taman","Kamar bawah + lantai atas dengan empat kasur","Teras pribadi luas dengan sofa kayu","AC, kopi & teh, kamar mandi dalam"]),
+       facts=["Untuk 6 orang, maks. 8 dengan 2 extra bed","Bungalow dua lantai di tengah taman","Kamar bawah + lantai atas dengan empat kasur","Teras pribadi luas dengan sofa kayu","AC, Wi-Fi, kopi & teh, kamar mandi dalam"]),
   dict(prefix="vp", name="VIP Standard Bungalow", photos="vip-standard-bungalow",
        tagline="Turun tangga, langsung pasir", cover="02-teras-view-pantai.jpg", cover_pos="50% 60%",
        slides=[("01-eksterior-rumah-panggung.jpg","50% 45%","Rumah panggung beratap rumbia","Berdiri di tepi pantai, dinaungi pohon kelapa, dengan atap lengkung tradisional."),
                ("04-teras-view-laut.jpg","60% 50%","Teras pribadi menghadap senja","Perahu nelayan lewat di kejauhan, dan matahari terbenam tepat di depan mata."),
                ("07-kamar-samping.jpg","50% 50%","Kamar yang hangat","Kayu dari lantai sampai atap, lampu dinding temaram, dan kasur besar yang empuk."),
                ("10-kamar-mandi-shower.jpg","50% 40%","Kamar mandi dalam","Area wastafel dan gantungan baju, lalu kamar mandi luas dengan shower.")],
-       facts=["Rumah panggung tepat di bibir pantai","Teras pribadi menghadap laut & senja","AC, tempat tidur double, lampu dinding","Perlengkapan kopi/teh & air mineral","Kamar mandi dalam, shower & toilet duduk"]),
+       facts=["Untuk 2 orang, maks. 3 dengan extra bed","Rumah panggung tepat di bibir pantai","Teras pribadi menghadap laut & senja","AC, Wi-Fi, tempat tidur double","Kopi/teh, air mineral, kamar mandi dalam"]),
 ]
 # Campaign tiles: full-bleed photo + stacked serif phrase (lines), position of text: "top" or "bottom"
 CAMPAIGN = [
-  dict(id="camp-1", photo="vip-standard-bungalow/02-teras-view-pantai.jpg", pos="50% 70%", lines=["Lebih dari", "Menginap.", "<i>Sebuah Rasa.</i>"], where="top"),
-  dict(id="camp-2", photo="superior-bungalow/03-teras.jpg", pos="50% 60%", lines=["Menginap.", "Menjelajah.", "Melambat.", "<i>Pulang.</i>"], where="top"),
-  dict(id="camp-3", photo="vip-standard-bungalow/04-teras-view-laut.jpg", pos="70% 50%", lines=["Pantai Sepi.", "Senja Hangat.", "<i>Hati Tenang.</i>"], where="top"),
+  dict(id="camp-1", photo="senja/08-meja-di-bawah-pohon.jpg", pos="50% 60%", lines=["Lebih dari", "Menginap.", "<i>Sebuah Rasa.</i>"], where="top"),
+  dict(id="camp-2", photo="senja/15-dua-kayak-oranye.jpg", pos="50% 70%", lines=["Menginap.", "Menjelajah.", "Melambat.", "<i>Pulang.</i>"], where="top"),
+  dict(id="camp-3", photo="senja/04-pasangan-tripod.jpg", pos="50% 70%", lines=["Pantai Sepi.", "Senja Hangat.", "<i>Hati Tenang.</i>"], where="top"),
 ]
 VALUES = [("wave","Tepi Pantai"),("sun","Menghadap Senja"),("leaf","Alami & Lokal"),("moon","Tenang & Pelan")]
 PROMO = dict(kicker="Paket Akhir Pekan", title="Staycation", title_it="Senja", sub="Dua malam, dua kali senja",
              items=["Superior Bungalow kayu A-frame","Senja Dinner ikan bakar & seafood untuk dua orang","Teras pribadi untuk menunggu senja"])
 QUOTE = dict(text="Setiap hari di Selayar<br>berakhir dengan <em>indah.</em>", en="Where every day ends beautifully")
 # Feed order shown in grid-preview.png (newest first)
-GRID = ["camp-1","feed-senja","carousel/vs-1","feed-values","carousel/vp-1","feed-quote","carousel/vs-5","feed-promo","carousel/fs-1"]
+GRID = ["camp-1","feed-senja","carousel/vs-1","camp-3","carousel/vp-1","feed-quote","camp-2","feed-promo","carousel/fs-1"]
 # ---------------------------------------------------------------- END CONTENT
 
 e = html.escape
@@ -160,18 +161,16 @@ parts.append(f'''<div class="tpl" id="feed-values">
   <div class="vals">{vals}</div>
   {foot("SunaRi · Selayar","Kepulauan Selayar")}
 </div>''')
-# #SenjaHariIni
+# #SenjaHariIni (real photo, framed)
 parts.append(f'''<div class="tpl" id="feed-senja">
-  <div class="caps center" style="position:absolute;left:0;right:0;top:120px">#SenjaHariIni</div>
-  {sun_block(250, 330)}
-  <div class="center" style="position:absolute;left:0;right:0;top:530px">
-    <div class="time" style="font-size:190px">{SENJA["time"]}</div>
-    <div class="caps" style="margin-top:22px">W I T A</div>
-    <div class="it" style="font-size:46px;margin-top:40px">Tempat senja pulang</div>
-    <div class="hair" style="width:80px;margin:44px auto 0"></div>
-    <div class="caps" style="margin-top:34px;font-size:20px">{e(SENJA["date"])} · {e(SENJA["place"])}</div>
+  <img class="ph" src="../assets/photos/{SENJA["photo"]}" style="height:820px;object-position:50% 62%" alt="">
+  <div style="position:absolute;left:72px;right:72px;top:940px;display:flex;justify-content:space-between;align-items:flex-end">
+    <div><div class="caps">#SenjaHariIni</div>
+      <div class="time" style="font-size:150px;margin-top:10px">{SENJA["time"]}<span class="caps" style="font-size:24px;margin-left:18px">WITA</span></div></div>
+    <img src="{MARK}" style="width:110px;margin-bottom:20px" alt="">
   </div>
-  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:70px;width:240px" alt="">
+  <div class="hair" style="position:absolute;left:72px;right:72px;top:1190px"></div>
+  {foot(e(SENJA["date"]), e(SENJA["place"]))}
 </div>''')
 # promo
 items = "".join(f"<li>{e(i)}</li>" for i in PROMO["items"])
@@ -196,17 +195,17 @@ parts.append(f'''<div class="tpl" id="feed-quote" style="background:var(--sand)"
   </div>
   <div class="caps center" style="position:absolute;left:0;right:0;bottom:110px;color:var(--ink);font-size:18px">SunaRi Beach Resort · Selayar</div>
 </div>''')
-# story
-parts.append(f'''<div class="tpl story" id="story-senja">
-  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:150px;width:300px" alt="">
-  <div class="caps center" style="position:absolute;left:0;right:0;top:470px;font-size:28px">Senja hari ini</div>
-  {sun_block(590, 420)}
-  <div class="center" style="position:absolute;left:0;right:0;top:960px">
-    <div class="time" style="font-size:250px">{SENJA["time"]}</div>
-    <div class="caps" style="margin-top:26px;font-size:28px">W I T A</div>
-    <div class="it" style="font-size:54px;margin-top:46px">Sampai jumpa di tepi pantai</div>
+# story (real photo, full-bleed)
+parts.append(f'''<div class="tpl story on-photo" id="story-senja">
+  <img class="bleed" src="../assets/photos/{SENJA["story_photo"]}" alt="">
+  <div class="veil-top" style="height:45%"></div><div class="veil-bot"></div>
+  <img src="{LOGO_C}" style="position:absolute;left:50%;transform:translateX(-50%);top:110px;width:300px" alt="">
+  <div class="center" style="position:absolute;left:0;right:0;top:330px;text-shadow:0 2px 20px rgba(30,18,12,.45)">
+    <div class="caps" style="font-size:26px;color:var(--cream)">Senja hari ini</div>
+    <div class="time" style="font-size:190px;margin-top:10px;color:var(--cream)">{SENJA["time"]}</div>
+    <div class="caps" style="font-size:26px;color:var(--cream)">W I T A</div>
   </div>
-  <div class="caps center" style="position:absolute;left:50%;transform:translateX(-50%);bottom:200px;border:1px dashed rgba(166,124,100,.6);padding:28px 56px;font-size:20px;white-space:nowrap">Tempel stiker / link di sini</div>
+  <div class="caps center" style="position:absolute;left:50%;transform:translateX(-50%);bottom:200px;border:1px dashed rgba(251,244,236,.7);padding:28px 56px;font-size:20px;white-space:nowrap;color:var(--cream)">Tempel stiker / link di sini</div>
 </div>''')
 # carousels
 for r in ROOMS:
@@ -250,7 +249,7 @@ grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Sun
 .g{{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}} .g img{{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}}
 </style></head><body><div id="grid-preview">
 <div class="prof"><div class="av"><img src="../assets/mark-sunari-driftwood.svg" alt=""></div>
-<div><div class="user">sunari.selayar</div><div class="name">SunaRi Beach Resort Selayar</div>
+<div><div class="user">sunaribeachresortselayar</div><div class="name">SunaRi Beach Resort Selayar</div>
 <div class="bio">🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
 🍽️ Senja Dinner ikan bakar & seafood
