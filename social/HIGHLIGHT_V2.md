@@ -15,6 +15,8 @@ Pratinjau: `social/highlights-v2/preview-highlights.png`.
 | 6 | Gusung Island | `hl2-03-gusung` | Foto/video trip ke Gusung |
 | 7 | Bahuluang | `hl2-04-bahuluang` | Foto/video trip ke Pulau Bahuluang |
 | 8 | Ramadhan | `hl2-07-ramadhan` | Konten bulan Ramadhan (buka puasa, suasana, promo Ramadhan) |
+| 8a | Ramadhan 1447H | `hl2-07b-ramadhan-1447` | Arsip Ramadhan 1447 H (sekitar Februari–Maret 2026) |
+| 8b | Ramadhan 1448H | `hl2-07c-ramadhan-1448` | Ramadhan 1448 H (sekitar Februari 2027, menunggu penetapan resmi) |
 | 9–17 | Sunset April … Sunset Desember | `hl2-09-sunset-apr` … `hl2-17-sunset-des` | Story #SenjaHariIni bulan tersebut |
 
 **Nama 9 highlight sunset:** Sunset April · Sunset Mei · Sunset Juni · Sunset Juli · Sunset Agustus · **Sunset Sept** · Sunset Oktober · Sunset November · Sunset Desember
@@ -31,6 +33,10 @@ Instagram mengurutkan highlight berdasarkan **yang terakhir diperbarui**, jadi t
 - Saat ganti bulan, buat highlight baru dengan cover bulan berikutnya.
 - Highlight lama tetap menjadi **arsip senja sepanjang tahun**, bukti bahwa senja di Pantai Sunari bisa dinikmati setiap bulan.
 - Bulan Januari–Maret belum ada di daftar. Cover bisa dibuat dengan gaya yang sama bila diperlukan.
+
+## Highlight Ramadhan per tahun
+Pakai **satu highlight per tahun Hijriah** ("Ramadhan 1447H", "Ramadhan 1448H"; 14 karakter) supaya arsip tiap tahun terpisah,
+atau satu highlight "Ramadhan" tanpa tahun jika ingin digabung. Cover tanpa tahun: `hl2-07-ramadhan`.
 
 ## Perlu dikonfirmasi sebelum diisi
 - **Gusung Island & Bahuluang:** apakah SunaRi menjual trip ke sana (harga, durasi, kapal)? Atau highlight ini hanya inspirasi destinasi? Isinya harus sesuai.
