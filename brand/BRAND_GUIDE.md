@@ -75,8 +75,8 @@ File di folder `assets/`:
 - Di atas foto atau latar Sandy Shore, letakkan logo Driftwood di atas **kotak Shell Cream** semi-transparan (sudut membulat).
 - Jangan taruh logo Driftwood di atas Sandy Shore, Coral Glow, Golden Hour, atau Sunset Pink karena kontrasnya terlalu rendah.
 - Jangan memutar, merenggangkan, atau memberi efek bayangan.
-- Untuk avatar/foto profil, potong menjadi **"SunaRi" + ujung daun** berwarna Driftwood di atas latar
-  Shell Cream (dibuat terpisah oleh desainer).
+- **Foto profil Instagram:** `social/profile/pp-c.png` (simbol krem di atas Driftwood). Alternatif: `pp-a.png` (simbol Driftwood di atas krem).
+  Logo lengkap (`pp-b.png`) tidak disarankan untuk avatar karena teksnya tidak terbaca di ukuran kecil.
 
 ### 4.2 Palet Warna: *Sunset Beach*
 Referensi: `brand/palette-reference.jpg`.
