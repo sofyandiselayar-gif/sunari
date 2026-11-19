@@ -58,17 +58,21 @@ Jika memakai Linktree / halaman link, urutannya:
 - **Tag lokasi Instagram:** buat/pilih lokasi "SunaRi Beach Resort Selayar" agar tamu bisa ikut menandai.
 
 ### Highlight story
-| Highlight | Isi |
-|---|---|
-| 🌅 Senja | Kumpulan #SenjaHariIni |
-| 🛏️ Kamar | Room tour tiap tipe kamar |
-| 🍽️ Kuliner | Menu, Senja Dinner |
-| 🌊 Selayar | Pantai, Taka Bonerate, kuliner lokal |
-| ✈️ Cara ke Sini | Rute pesawat & kapal |
-| 💬 Ulasan | Testimoni tamu |
-| 📩 Booking | Cara reservasi, FAQ |
+Cover siap pakai: `social/highlights/hl-1…8.png` (1080 × 1920, latar Shell Cream, ikon Driftwood satu warna).
+Urutan dari kiri ke kanan:
 
-Warna cover highlight: latar **Shell Cream** `#FBF4EC` dengan ikon garis **Driftwood** `#A67C64`, atau latar **Sandy Shore** `#E6C89B` dengan ikon **Driftwood Deep** `#5A3E31`. Pilih satu gaya untuk semua highlight.
+| No | Nama highlight | Cover | Isi |
+|---|---|---|---|
+| 1 | SunaRi | Simbol SunaRi | Tentang resort, lokasi Pantai Sunari, Wi-Fi, check-in 14.00 / check-out 12.00 |
+| 2 | Senja | Matahari terbenam | Kumpulan #SenjaHariIni |
+| 3 | Kamar | Atap A-frame | Room tour 5 tipe bungalow + kapasitas (tanpa harga) |
+| 4 | Resto | Piring & sendok garpu | Bajoy Beach Resto (07.00–21.00), Senja Dinner (pesan H-1) |
+| 5 | Kayak | Kayak & dayung | Sewa kayak: single Rp 50.000, double Rp 100.000 |
+| 6 | Lokasi | Pin peta | Rute ke Selayar, antar-jemput bandara/pelabuhan, link Google Maps |
+| 7 | Ulasan | Bintang | Testimoni dan repost tamu |
+| 8 | Booking | Kalender | Cara reservasi via WA 0821-8903-3044, FAQ |
+
+**Cara memasang cover:** buka highlight → *Edit Sorotan* → *Edit Sampul* → pilih file PNG dari galeri, lalu pastikan ikon tepat di tengah lingkaran.
 
 ---
 
