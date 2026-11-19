@@ -158,7 +158,7 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 - **VIP Standard Bungalow** *(foto asli: `assets/photos/vip-standard-bungalow/`)*: rumah panggung beratap rumbia
   tepat di bibir pantai, teras pribadi menghadap laut dengan meja & kursi, AC, tempat tidur double, lampu dinding,
   perlengkapan kopi/teh, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
-  Kata kunci promosi: *turun tangga, langsung pasir*. Unit terdekat dengan laut, paling cocok untuk konten senja.
+  Kata kunci promosi: *turun tangga, langsung pasir*. Unit terdekat dengan laut; terasnya menghadap langsung ke arah matahari terbenam, jadi paling cocok untuk konten senja.
 
 **Pengalaman**
 - **Sunset Ritual**: 30 menit sebelum senja, tamu disuguhi kelapa muda di tepi pantai.

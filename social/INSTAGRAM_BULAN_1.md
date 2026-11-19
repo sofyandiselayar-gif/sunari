@@ -315,7 +315,7 @@ Turun tangga, langsung pasir. 🌊
 VIP Standard Bungalow adalah rumah panggung beratap rumbia
 yang berdiri tepat di bibir pantai Tile-Tile.
 Dari teras pribadinya, kamu bisa melihat perahu nelayan lewat
-dan menunggu senja tanpa perlu ke mana-mana. 🌅
+dan menyaksikan matahari terbenam tepat di depan teras. 🌅
 
 Geser untuk melihat ke dalam.
 Info & reservasi: WA 0821-8903-3044.
