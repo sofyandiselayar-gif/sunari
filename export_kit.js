@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
 const path = require('path'), fs = require('fs'), { execSync } = require('child_process');
 const ROOT = __dirname, OUT = path.join(ROOT, 'export', 'SunaRi_Konten_Instagram');
 const GROUPS = {
-  '01_Feed': ['feed-senja','feed-kayak','camp-1','camp-2','camp-3','feed-values','feed-promo','feed-quote'],
+  '01_Feed': ['feed-senja','feed-kayak','camp-1','camp-2','camp-3','camp-4','camp-5','feed-values','feed-promo','feed-quote'],
   '02_Story': ['story-senja'],
   '10_Story_10_Hari': ['sd-01','sd-02','sd-03','sd-04','sd-05','sd-06','sd-07','sd-08','sd-09','sd-10'],
   '03_Carousel_Superior': ['sb-1','sb-2','sb-3','sb-4','sb-5','sb-6'],

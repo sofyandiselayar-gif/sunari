@@ -267,7 +267,7 @@ Folder `social/`:
 - `carousel/vs-1…6.png`: carousel room tour VIP Superior Bungalow
 - `carousel/fs-1…6.png`: carousel room tour Family Superior Bungalow
 - `carousel/vp-1…6.png`: carousel room tour VIP Standard Bungalow
-- `camp-1…3.png`: tile kampanye (foto penuh + judul serif bertumpuk)
+- `camp-1…5.png`: tile kampanye (foto penuh + judul serif bertumpuk)
 - `feed-values.png`: tile nilai brand dengan 4 ikon
 - `grid-preview.png`: mockup tampilan profil & grid Instagram
 - Sumber semua template: `build_kit.py` (ubah teks di bagian CONTENT), lalu jalankan

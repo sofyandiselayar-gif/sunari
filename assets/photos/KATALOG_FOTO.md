@@ -51,3 +51,15 @@ Semua foto asli, sudah diputar sesuai orientasi dan diperkecil ke maks. 2400 px 
 | `desa/06-bersama-warga.jpg` | Foto bersama keluarga warga | 👤 ❓ | |
 
 ❓ **Desa:** apakah SunaRi menawarkan **tur desa / island hopping**? Kalau ya, ini bisa jadi paket baru. Kalau tidak, foto tetap bisa dipakai untuk konten "Pesona Selayar" tanpa menyebut layanan.
+
+## Malam: `malam/`
+| File | Isi | Status | Cocok untuk |
+|---|---|---|---|
+| `01-makan-malam-bersama.jpg` | Tamu & tim makan malam di bawah payung, lampu gantung | 👤 | Cerita tamu, Senja Dinner (dengan izin) |
+| `02-bangunan-utama-malam.jpg` | Bangunan utama & jembatan berlampu di antara pohon kelapa | ✅ | OTA/Google (eksterior malam), story |
+| `03-resort-malam-a-frame.jpg` | Deretan A-frame & bangunan utama menyala | ✅ | Cover OTA, brand board |
+| `04-bangunan-utama-awan.jpg` | Bangunan utama dengan langit berawan | ✅ | Story, Reels transisi senja → malam |
+| `05-a-frame-malam.jpg` | Satu bungalow A-frame berlampu di taman | ✅ | **Dipakai: tile `camp-4`**; room tour Superior/VIP Superior |
+| `06-taman-malam-bougainvillea.jpg` | Taman malam, bunga di depan | ✅ | Story |
+| `07-jalan-setapak-gazebo.jpg` / `08-…-2.jpg` | Jalan batu menuju gazebo berlampu | ✅ | Reels POV "jalan ke makan malam" |
+| `09-lilin-di-meja.jpg` | Lilin di meja kayu, resort di latar | ✅ | **Dipakai: tile `camp-5`** |

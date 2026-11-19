@@ -50,6 +50,8 @@ CAMPAIGN = [
   dict(id="camp-1", photo="senja/08-meja-di-bawah-pohon.jpg", pos="50% 60%", lines=["Lebih dari", "Menginap.", "<i>Sebuah Rasa.</i>"], where="top"),
   dict(id="camp-2", photo="senja/15-dua-kayak-oranye.jpg", pos="50% 70%", lines=["Menginap.", "Menjelajah.", "Melambat.", "<i>Pulang.</i>"], where="top"),
   dict(id="camp-3", photo="senja/04-pasangan-tripod.jpg", pos="50% 70%", lines=["Pantai Sepi.", "Senja Hangat.", "<i>Hati Tenang.</i>"], where="top"),
+  dict(id="camp-4", photo="malam/05-a-frame-malam.jpg", pos="50% 60%", lines=["Saat senja usai,", "lampu-lampu", "<i>menyala.</i>"], where="top"),
+  dict(id="camp-5", photo="malam/09-lilin-di-meja.jpg", pos="50% 70%", lines=["Malam yang", "pelan di", "<i>Selayar.</i>"], where="top"),
 ]
 VALUES = [("wave","Tepi Pantai"),("sun","Menghadap Senja"),("leaf","Alami & Lokal"),("moon","Tenang & Pelan")]
 PROMO = dict(kicker="Paket Akhir Pekan", title="Staycation", title_it="Senja", sub="Dua malam, dua kali senja",
