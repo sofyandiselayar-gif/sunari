@@ -59,13 +59,13 @@ Paid transfers are available from H. Aroeppala Airport and the ferry port. The r
 > Format setiap kamar: **nama**, kapasitas, deskripsi Indonesia, deskripsi Inggris, dan daftar fasilitas untuk dicentang di OTA.
 
 ### 1. VIP Standard Bungalow
-**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed) · **Tempat tidur:** 1 double · **Pemandangan:** laut & matahari terbenam · **Lokasi:** tepi pantai
+**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed, berbayar) · **Tempat tidur:** 1 king bed · **Pemandangan:** laut atau taman (sesuai unit) · **Lebih luas dari Standard** · **Termasuk sarapan**
 
-**ID:** Rumah panggung beratap rumbia yang berdiri tepat di bibir Pantai Sunari. Dari teras pribadinya yang menghadap laut, Anda bisa melihat perahu nelayan lewat dan menyaksikan matahari terbenam tepat di depan mata. Kamar bernuansa kayu dengan lampu dinding temaram, tempat tidur double, AC, perlengkapan kopi/teh, dan air mineral. Dilengkapi area wastafel dengan gantungan baju serta kamar mandi dalam dengan shower dan toilet duduk. Turun tangga, langsung pasir.
+**ID:** Rumah panggung beratap rumbia di tepi Pantai Sunari, dengan kamar yang lebih luas dibanding Standard Bungalow. Dari teras pribadi dengan kursi santai, nikmati pemandangan laut atau taman, dan di unit tepi pantai, matahari terbenam tepat di depan mata. Kamar bernuansa kayu dengan lampu dinding temaram, king bed, tirai blackout, serta bantal dan selimut tambahan. Dilengkapi AC, Wi-Fi, set kopi/teh dengan pemanas air, meja kerja/rias, serta area wastafel dengan gantungan baju. Kamar mandi dalam dengan shower, toilet duduk, perlengkapan mandi lengkap, dan handuk bersih untuk setiap tamu. Sudah termasuk sarapan. Layanan setrika tersedia atas permintaan.
 
-**EN:** A thatched-roof stilt house standing right on the shoreline of Sunari Beach. From the private sea-facing terrace, watch fishing boats pass by and the sun set directly in front of you. The wooden room features soft wall lights, a double bed, air conditioning, coffee/tea facilities and drinking water, plus a vanity area with clothes rack and an en-suite bathroom with shower and western toilet. Step down the stairs and you are on the sand.
+**EN:** A thatched-roof stilt house by Sunari Beach, with more space than the Standard Bungalow. From the private terrace with lounge chairs, enjoy sea or garden views, and in the beachfront units, the sunset right in front of you. The wooden room features soft wall lights, a king bed, blackout curtains, and extra pillows and blankets. Also includes air conditioning, Wi-Fi, coffee/tea set with kettle, work/vanity desk and a washbasin area with clothes rack. En-suite bathroom with shower, western toilet, full toiletries and fresh towels for every guest. Breakfast is included. Ironing available on request.
 
-**Fasilitas:** AC · Wi-Fi · Teras pribadi menghadap laut · Pemandangan matahari terbenam · Akses langsung ke pantai · Kopi/teh · Air mineral · Kamar mandi dalam · Shower · Toilet duduk · Extra bed
+**Fasilitas:** Sarapan · King bed · AC · Wi-Fi · Kopi/teh & pemanas air (kettle) · Meja kerja/rias · Tirai blackout · Bantal & selimut tambahan · Setrika (atas permintaan) · Kamar mandi dalam · Shower · Toilet duduk · Perlengkapan mandi · Handuk · Teras/balkon pribadi · Kursi santai · Pemandangan laut atau taman · Extra bed (maks. 1, berbayar)
 
 ---
 
@@ -162,7 +162,8 @@ Tombol: **Hubungi** (nomor WA).
 ## F. Yang perlu dicek sebelum dipublikasikan
 - [ ] Ukuran tempat tidur Superior & VIP Superior (double/queen/king)
 - [ ] Luas kamar (m²) untuk setiap tipe, sering diminta OTA
-- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk VIP Standard, Superior, dan VIP Superior? (sudah dikonfirmasi: Family Superior & Standard)
+- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk Superior dan VIP Superior? (sudah dikonfirmasi: Family Superior, Standard, VIP Standard)
+- [ ] VIP Standard: berapa unit yang menghadap laut/senja dan berapa yang menghadap taman?
 - [ ] Air panas, parkir, jam resepsionis
 - [ ] Kebijakan pembatalan dan deposit
 - [ ] Jarak ke Bandara H. Aroeppala & ke kota Benteng (km / menit)

@@ -332,7 +332,7 @@ Info & reservasi: WA 0821-8903-3044.
 Turun tangga, langsung pasir. 🌊
 
 VIP Standard Bungalow adalah rumah panggung beratap rumbia
-yang berdiri tepat di bibir Pantai Sunari.
+di tepi Pantai Sunari, dengan king bed dan sudah termasuk sarapan.
 Dari teras pribadinya, kamu bisa melihat perahu nelayan lewat
 dan menyaksikan matahari terbenam tepat di depan teras. 🌅
 

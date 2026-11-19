@@ -207,8 +207,10 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
   setrika atas permintaan, perlengkapan mandi lengkap, handuk untuk setiap tamu, bantal & selimut tambahan, tirai blackout.
   Teras/balkon pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.
 - **VIP Standard Bungalow** *(foto asli: `assets/photos/vip-standard-bungalow/`)*: rumah panggung beratap rumbia
-  tepat di bibir pantai, teras pribadi menghadap laut dengan meja & kursi, AC, tempat tidur double, lampu dinding,
-  perlengkapan kopi/teh, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
+  di tepi pantai, **lebih luas dari Standard**. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **King bed**, termasuk **sarapan**,
+  AC, Wi-Fi, set kopi/teh + pemanas air, meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan,
+  tirai blackout, lampu dinding, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
+  Teras pribadi dengan kursi santai, pilihan pemandangan laut atau taman.
   Kata kunci promosi: *turun tangga, langsung pasir*. Unit terdekat dengan laut; terasnya menghadap langsung ke arah matahari terbenam, jadi paling cocok untuk konten senja.
 
 **Pengalaman**

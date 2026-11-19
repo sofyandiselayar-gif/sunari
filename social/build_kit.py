@@ -41,9 +41,9 @@ ROOMS = [
        tagline="Turun tangga, langsung pasir", cover="02-teras-view-pantai.jpg", cover_pos="50% 60%",
        slides=[("01-eksterior-rumah-panggung.jpg","50% 45%","Rumah panggung beratap rumbia","Berdiri di tepi pantai, dinaungi pohon kelapa, dengan atap lengkung tradisional."),
                ("04-teras-view-laut.jpg","60% 50%","Teras pribadi menghadap senja","Perahu nelayan lewat di kejauhan, dan matahari terbenam tepat di depan mata."),
-               ("07-kamar-samping.jpg","50% 50%","Kamar yang hangat","Kayu dari lantai sampai atap, lampu dinding temaram, dan kasur besar yang empuk."),
-               ("10-kamar-mandi-shower.jpg","50% 40%","Kamar mandi dalam","Area wastafel dan gantungan baju, lalu kamar mandi luas dengan shower.")],
-       facts=["Untuk 2 orang, maks. 3 dengan extra bed","Rumah panggung tepat di bibir pantai","Teras pribadi menghadap laut & senja","AC, Wi-Fi, tempat tidur double","Kopi/teh, air mineral, kamar mandi dalam"]),
+               ("07-kamar-samping.jpg","50% 50%","King bed, kamar lebih luas","Kayu dari lantai sampai atap, lampu dinding temaram, dan tirai blackout."),
+               ("10-kamar-mandi-shower.jpg","50% 40%","Kamar mandi dalam","Kamar mandi luas dengan shower, perlengkapan mandi, dan handuk bersih.")],
+       facts=["Untuk 2 orang, maks. 3 dengan extra bed","Termasuk sarapan","King bed, lebih luas dari Standard","Rumah panggung di tepi pantai","AC, Wi-Fi, kopi/teh & pemanas air","Perlengkapan mandi & handuk"]),
 ]
 # Campaign tiles: full-bleed photo + stacked serif phrase (lines), position of text: "top" or "bottom"
 CAMPAIGN = [
