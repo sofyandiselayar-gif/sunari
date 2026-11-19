@@ -253,6 +253,120 @@ for sid, day, t, photo, pos, kicker, head, body, sticker in STORIES:
     <span class="caps" style="font-size:20px;color:var(--cream)">Senja {t} WITA</span>
   </div>
 </div>""")
+# ---- Highlight story content (1080x1920) + FAQ carousel (1080x1350)
+P_ = "../assets/photos/"
+def hs(sid, group, photo, pos, title, body, extra=""):
+    """Highlight story: framed photo top, text below. Keeps clear of IG top/bottom UI (~250px)."""
+    ph = f'<img src="{P_}{photo}" style="position:absolute;left:72px;top:250px;width:936px;height:860px;object-fit:cover;object-position:{pos}" alt="">' if photo else ""
+    top = 1170 if photo else 470
+    tsize = 70 if photo else 96
+    return f"""<div class="tpl story" id="{sid}">
+  <div style="position:absolute;left:72px;right:72px;top:150px;display:flex;align-items:center;gap:20px">
+    <img src="{MARK}" style="width:62px" alt=""><span class="caps" style="font-size:22px">{group}</span></div>
+  {ph}
+  <div style="position:absolute;left:72px;right:72px;top:{top}px">
+    <div class="pf" style="font-size:{tsize}px;line-height:1.1">{title}</div>
+    <div style="font-size:31px;line-height:1.6;margin-top:24px">{body}</div>
+    {extra}
+  </div>
+  <div style="position:absolute;left:72px;right:72px;bottom:230px;display:flex;justify-content:space-between">
+    <span class="caps" style="font-size:19px">SunaRi · Selayar</span><span class="caps" style="font-size:19px">WA {WA}</span></div>
+</div>"""
+def lst(items, size=31, pad=16):
+    li = "".join(f'<div style="padding:{pad}px 0;border-bottom:1px solid rgba(166,124,100,.4)">{x}</div>' for x in items)
+    return f'<div style="margin-top:26px;font-size:{size}px;line-height:1.35;border-top:1px solid rgba(166,124,100,.4)">{li}</div>'
+def steps(items):
+    out = ""
+    for n, (h, t) in enumerate(items, 1):
+        out += f'''<div style="display:flex;gap:34px;margin-top:70px;align-items:flex-start">
+  <div class="pf" style="flex:none;width:100px;height:100px;border-radius:50%;border:1.5px solid var(--drift);display:flex;align-items:center;justify-content:center;font-size:48px;color:var(--drift)">{n}</div>
+  <div><div class="pf" style="font-size:56px">{h}</div><div style="font-size:35px;line-height:1.5;margin-top:10px;opacity:.85">{t}</div></div></div>'''
+    return out
+
+HS = [
+ # SunaRi
+ hs("hs-sunari-1","SunaRi","malam/03-resort-malam-a-frame.jpg","50% 60%","Selamat datang di<br>tempat senja <i class='it'>pulang.</i>",
+    "Resort tepi Pantai Sunari, Kepulauan Selayar. Setiap sore, matahari terbenam tepat di depan pantai kami."),
+ hs("hs-sunari-2","SunaRi","senja/19-pantai-di-bawah-daun.jpg","50% 60%","Info <i class='it'>penting</i>",
+    "", lst(["Check-in 14.00 · Check-out 12.00 WITA","Sarapan termasuk di semua kamar","AC &amp; Wi-Fi di semua kamar","Pantai landai &amp; aman untuk anak"])),
+ hs("hs-sunari-3","SunaRi",None,"","Fasilitas <i class='it'>kami</i>","",
+    lst(["5 tipe bungalow dengan teras pribadi","Bajoy Beach Resto · 07.00–21.00 WITA","Senja Dinner · pesan H-1","Sewa kayak · single Rp 50.000 · double Rp 100.000","Antar-jemput bandara &amp; pelabuhan (berbayar)","Wi-Fi · sarapan · pantai landai"], 38, 30)),
+ # Senja
+ hs("hs-senja-1","Senja","senja/17-kayak-berdua.jpg","50% 60%","Senja di <i class='it'>Pantai Sunari</i>",
+    "Matahari terbenam sekitar pukul 17.50–18.00 WITA. Ikuti #SenjaHariIni setiap sore di story kami."),
+ # Kamar
+ hs("hs-kamar-1","Kamar","vip-superior-bungalow/06-bathtub-semi-outdoor.jpg","50% 55%","VIP Superior <i class='it'>Bungalow</i>",
+    "Kelas tertinggi kami.", lst(["2 orang · maks. 3 dengan extra bed","King bed · TV · mini bar/kulkas","Bathtub &amp; air panas, satu-satunya tipe dengan air panas"],29)),
+ hs("hs-kamar-2","Kamar","superior-bungalow/02-eksterior-depan.jpg","50% 30%","Superior <i class='it'>Bungalow</i>",
+    "Rumah kayu A-frame di antara pohon kelapa.", lst(["2 orang · maks. 3 dengan extra bed","King bed · TV · lebih luas dari Standard","Kamar mandi semi-outdoor, rain shower"],29)),
+ hs("hs-kamar-3","Kamar","family-superior-bungalow/01-eksterior-taman.jpg","55% 50%","Family Superior <i class='it'>Bungalow</i>",
+    "Tipe terbesar, ideal untuk keluarga.", lst(["6 orang · maks. 8 dengan 2 extra bed","2 lantai · kamar mandi di kedua lantai","Teras pribadi dengan kursi santai"],29)),
+ hs("hs-kamar-4","Kamar","vip-standard-bungalow/02-teras-view-pantai.jpg","50% 60%","VIP Standard <i class='it'>Bungalow</i>",
+    "Rumah panggung di tepi pantai.", lst(["2 orang · maks. 3 dengan extra bed","King bed · lebih luas dari Standard","Teras pribadi menghadap laut"],29)),
+ hs("hs-kamar-5","Kamar","standard-bungalow/01-teras-view-laut.jpg","50% 60%","Standard <i class='it'>Bungalow</i>",
+    "Pagi menghadap laut Selayar.", lst(["2 orang · maks. 3 dengan extra bed","Queen bed · AC · Wi-Fi","Teras pribadi luas menghadap laut"],29)),
+ # Resto
+ hs("hs-resto-1","Resto","resto/03-resto-malam.jpg","50% 60%","Bajoy Beach <i class='it'>Resto</i>",
+    "Ikan bakar &amp; seafood setiap hari.", lst(["Buka 07.00–21.00 WITA","Tamu tidak menginap: sampai 19.00 WITA","Sarapan tamu resort disajikan di sini"],29)),
+ hs("hs-resto-2","Resto","resto/05-makan-malam-taman.jpg","50% 60%","Senja <i class='it'>Dinner</i>",
+    "Makan malam ikan bakar &amp; seafood saat matahari terbenam. Pesan paling lambat H-1 via WhatsApp."),
+ # Kayak
+ hs("hs-kayak-1","Kayak","aktivitas/01-kayak-sore.jpg","50% 55%","Sewa <i class='it'>kayak</i>",
+    "Air Pantai Sunari tenang dan landai, paling seru menjelang senja.",
+    '<div style="display:flex;gap:60px;margin-top:34px"><div><div class="caps" style="font-size:20px">Single</div><div class="pf" style="font-size:60px;margin-top:6px">Rp 50.000</div></div><div><div class="caps" style="font-size:20px">Double</div><div class="pf" style="font-size:60px;margin-top:6px">Rp 100.000</div></div></div>'),
+ # Lokasi
+ hs("hs-lokasi-1","Lokasi","malam/02-bangunan-utama-malam.jpg","50% 60%","Lokasi <i class='it'>kami</i>",
+    "Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kec. Bontosikuyu, Kepulauan Selayar.",
+    '<div class="caps" style="margin-top:30px;font-size:20px">Ketuk stiker lokasi / link Google Maps</div>'),
+ hs("hs-lokasi-2","Lokasi",None,"","Cara ke <i class='it'>Selayar</i>","Dari Makassar, ada dua pilihan:",
+    steps([("Pesawat","ke Bandara H. Aroeppala, Selayar"),("Darat + feri","ke Pelabuhan Bira (Bulukumba), lanjut feri ke Pamatata"),("Antar-jemput","dari bandara/pelabuhan ke SunaRi (biaya tambahan, pesan via WA)")])),
+ # Ulasan
+ hs("hs-ulasan-1","Ulasan","senja/04-pasangan-tripod.jpg","50% 70%","Bagikan <i class='it'>ceritamu</i>",
+    "Menginap di SunaRi? Tag <b>@sunaribeachresortselayar</b> dan pakai <b>#SunaRiSelayar</b>. Kami repost favorit setiap minggu."),
+ # Booking
+ hs("hs-booking-1","Booking",None,"","Cara <i class='it'>reservasi</i>","",
+    steps([("Kirim data","tanggal check-in &amp; check-out, jumlah tamu, tipe kamar"),("Terima penawaran","kami kirim harga &amp; ketersediaan terbaru"),("Bayar &amp; konfirmasi","kirim bukti transfer, booking terkonfirmasi")])
+    + f'<div style="margin-top:110px;text-align:center"><div class="caps">WhatsApp</div><div class="pf" style="font-size:76px;margin-top:10px">{WA}</div></div>'),
+ hs("hs-booking-2","Booking",None,"","Pertanyaan <i class='it'>umum</i>","",
+    lst(["Check-in 14.00 · Check-out 12.00 WITA","Sarapan termasuk di semua kamar","Air panas &amp; bathtub: VIP Superior","Extra bed tersedia (biaya tambahan)","Antar-jemput bandara/pelabuhan (berbayar)","Pantai landai &amp; aman untuk anak"],38,30)),
+]
+parts.extend(HS)
+
+# FAQ carousel
+FAQ = [("Jam check-in &amp; check-out?","Check-in mulai 14.00 WITA, check-out paling lambat 12.00 WITA."),
+       ("Sudah termasuk sarapan?","Ya, sarapan termasuk di semua tipe kamar."),
+       ("Ada Wi-Fi &amp; AC?","Ada, di semua kamar."),
+       ("Kamar mana yang ada air panas?","VIP Superior Bungalow, dengan bathtub di kamar mandi semi-outdoor beratap kaca."),
+       ("Cocok untuk keluarga?","Family Superior untuk 6 orang (maks. 8), 2 lantai, kamar mandi di kedua lantai. Pantainya landai &amp; aman untuk anak."),
+       ("Bisa tambah extra bed?","Bisa, dengan biaya tambahan: 1 untuk tipe lain, 2 untuk Family Superior."),
+       ("Ada antar-jemput?","Ada, dari Bandara H. Aroeppala &amp; pelabuhan, dengan biaya tambahan."),
+       ("Tamu luar boleh ke resto?","Boleh. Bajoy Beach Resto buka 07.00–21.00, tamu tidak menginap sampai 19.00 WITA.")]
+NF = len(FAQ)//2 + 2
+parts.append(f'''<div class="tpl cover on-photo" id="faq-1">
+  <img class="bleed" src="{P_}senja/08-meja-di-bawah-pohon.jpg" style="object-position:50% 60%" alt="">
+  <div class="veil-top"></div><div class="veil-bot"></div>
+  <div class="head"><div class="caps">Ditanya Kakak</div><h1>Pertanyaan yang<br>sering <i>ditanya.</i></h1><div class="it">Semua jawaban ada di sini</div></div>
+  <img class="logo" src="{LOGO_C}" alt="">
+  <div class="foot" style="right:auto"><span class="caps" style="color:var(--cream);opacity:.9">Geser &nbsp;→</span></div>
+</div>''')
+for k in range(0, len(FAQ), 2):
+    i = k//2 + 2
+    qa = "".join(f'''<div style="padding:70px 0;border-bottom:1px solid rgba(166,124,100,.4)">
+      <div class="caps" style="font-size:21px">Tanya</div><div class="pf" style="font-size:66px;line-height:1.1;margin-top:16px">{q}</div>
+      <div style="font-size:36px;line-height:1.55;margin-top:24px;opacity:.88">{a}</div></div>''' for q, a in FAQ[k:k+2])
+    parts.append(f'''<div class="tpl" id="faq-{i}">
+  <img src="{MARK}" style="position:absolute;left:72px;top:80px;width:90px" alt="">
+  <div style="position:absolute;left:72px;right:72px;top:250px;border-top:1px solid rgba(166,124,100,.4)">{qa}</div>
+  {foot("SunaRi · Selayar", f"{i:02d} — {NF:02d}")}
+</div>''')
+parts.append(f'''<div class="tpl facts" id="faq-{NF}">
+  <img class="mark" src="{MARK}" alt="">
+  <div class="head center"><div class="caps">Masih ada pertanyaan?</div><h2>Tanya <span class="it">langsung</span> saja</h2></div>
+  <ul><li>Harga &amp; ketersediaan kamar</li><li>Senja Dinner (pesan H-1)</li><li>Sewa kayak · Rp 50.000 / Rp 100.000</li><li>Antar-jemput bandara &amp; pelabuhan</li></ul>
+  <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
+  {foot("SunaRi · Selayar", f"{NF:02d} — {NF:02d}")}
+</div>''')
+
 # carousels
 for r in ROOMS:
     n = len(r["slides"]) + 2

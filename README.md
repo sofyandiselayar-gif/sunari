@@ -9,6 +9,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `assets/` | Logo satu warna: Driftwood (utama) & Shell Cream (latar gelap); logo lama di `assets/original/` |
 | `whatsapp/TEMPLATE_WHATSAPP_BUSINESS.md` | Profil, pesan otomatis, 17 balasan cepat, label & katalog WhatsApp Business |
 | `ota/DESKRIPSI_OTA_GOOGLE.md` | Deskripsi properti & 5 tipe kamar (ID/EN) untuk OTA dan Google Business Profile |
+| `social/ISI_HIGHLIGHT.md` | Isi 8 highlight (17 story di `social/highlight-stories/`) + carousel FAQ |
 | `social/STORY_10_HARI.md` | Rencana story 10 hari + desain `social/stories/` |
 | `social/TIKTOK_REELS.md` | Template caption Reels & TikTok (hook, shot, caption, hashtag) |
 | `social/INSTAGRAM_BULAN_1.md` | Bio Instagram, highlight, dan 30 caption bulan pertama |

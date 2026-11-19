@@ -413,22 +413,18 @@ Senja hari ini: [jam] WITA.
 #SenjaHariIni #SunaRiSelayar #SunsetLovers #Selayar
 ```
 
-**Hari 24 · Carousel · Info (FAQ)**
-*Visual:* tanya-jawab di slide berlatar Shell Cream.
+**Hari 24 · Carousel (siap: `social/carousel/faq-1…6.png`) · Info (FAQ)**
+*Visual:* carousel FAQ 6 slide.
 ```
-Pertanyaan yang paling sering kami terima 💬
+Pertanyaan yang paling sering Kakak tanyakan, kami jawab di sini 💬
 
-• Jam check-in/check-out? Check-in 14.00, check-out 12.00 WITA.
-• Ada Wi-Fi? Ada.
-• Aman untuk anak? Ya, pantainya landai dan aman untuk anak-anak.
-• Ada kegiatan di pantai? Ada sewa kayak: single Rp 50.000, double Rp 100.000.
-• Ada antar-jemput dari bandara/pelabuhan? Ada, dengan biaya tambahan.
-• Ada restoran? Ada. Senja Dinner ikan bakar & seafood bisa dipesan H-1.
-• Cocok untuk keluarga? Ada Family Superior Bungalow untuk 6 orang (maks. 8 dengan extra bed).
+Geser sampai akhir: check-in & check-out, sarapan, Wi-Fi, kamar dengan air panas,
+kamar keluarga, extra bed, antar-jemput, dan resto.
 
-Ada pertanyaan lain? Tanya di komentar atau DM.
+Masih ada pertanyaan? Tulis di komentar atau chat WA 0821-8903-3044.
+Simpan postingan ini supaya mudah dicari lagi 📌
 
-#SunaRiSelayar #Selayar #InfoWisata
+#SunaRiSelayar #Selayar #InfoWisata #PenginapanSelayar
 ```
 
 **Hari 25 · Feed · Pengalaman**
