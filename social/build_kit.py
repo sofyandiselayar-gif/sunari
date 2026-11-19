@@ -22,6 +22,13 @@ ROOMS = [
                ("02-kamar-sudut.jpg","50% 55%","Sejuk sepanjang hari","Kamar ber-AC dengan jendela atas yang membiarkan cahaya alami masuk."),
                ("04-kamar-mandi-bambu.jpg","50% 50%","Kamar mandi nuansa bambu","Dinding anyaman bambu dan lantai batu alam, dengan shower dan toilet duduk.")],
        facts=["Bungalow kayu untuk dua orang","Teras pribadi luas menghadap laut","AC & tempat tidur double","Kamar mandi dalam, shower & toilet duduk"]),
+  dict(prefix="vs", name="VIP Superior Bungalow", photos="vip-superior-bungalow",
+       tagline="Berendam di bawah langit terbuka", cover="01-eksterior-a-frame.jpg", cover_pos="40% 50%",
+       slides=[("02-teras.jpg","50% 60%","Teras kayu yang teduh","Dua kursi, satu meja, dan rimbun tanaman tropis. Tempat pas untuk kopi sore."),
+               ("04-kamar-tempat-tidur.jpg","50% 55%","Atap A-frame yang lapang","Langit-langit tinggi dengan jendela segitiga yang membiarkan cahaya pagi masuk."),
+               ("05-kamar-dari-loteng.jpg","50% 50%","Lihat dari loteng","Pintu kaca terbuka langsung ke teras dan taman."),
+               ("06-bathtub-semi-outdoor.jpg","50% 55%","Bathtub semi-outdoor","Berendam atau mandi rain shower di bawah atap kaca, dengan pohon kelapa di atas kepala.")],
+       facts=["Bungalow A-frame dengan loteng","Teras kayu pribadi","Bathtub & rain shower semi-outdoor, atap kaca","AC, TV, kulkas mini, kopi & teh","Wastafel kayu & toilet duduk"]),
   dict(prefix="vp", name="VIP Standard Bungalow", photos="vip-standard-bungalow",
        tagline="Turun tangga, langsung pasir", cover="02-teras-view-pantai.jpg", cover_pos="50% 60%",
        slides=[("01-eksterior-rumah-panggung.jpg","50% 45%","Rumah panggung beratap rumbia","Berdiri di tepi pantai, dinaungi pohon kelapa, dengan atap lengkung tradisional."),
@@ -41,7 +48,7 @@ PROMO = dict(kicker="Paket Akhir Pekan", title="Staycation", title_it="Senja", s
              items=["Superior Bungalow kayu A-frame","Senja Dinner ikan bakar untuk dua orang","Kelapa muda setiap sore"])
 QUOTE = dict(text="Setiap hari di Selayar<br>berakhir dengan <em>indah.</em>", en="Where every day ends beautifully")
 # Feed order shown in grid-preview.png (newest first)
-GRID = ["camp-1","feed-senja","carousel/sb-1","feed-values","carousel/vp-1","feed-quote","camp-3","feed-promo","carousel/st-1"]
+GRID = ["camp-1","feed-senja","carousel/vs-1","feed-values","carousel/vp-1","feed-quote","carousel/vs-5","feed-promo","carousel/sb-1"]
 # ---------------------------------------------------------------- END CONTENT
 
 e = html.escape

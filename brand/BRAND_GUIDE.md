@@ -194,6 +194,9 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 - **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi,
   AC, tempat tidur double, kamar mandi dalam bernuansa bambu & lantai batu alam, teras pribadi yang luas menghadap laut.
   Kata kunci promosi: *pagi menghadap laut Selayar*, pilihan hemat.
+- **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: bungalow A-frame beratap rumbia
+  dengan loteng, teras kayu pribadi, jendela segitiga, AC, TV, kulkas mini, perlengkapan kopi/teh, serta kamar mandi
+  semi-outdoor beratap kaca dengan **bathtub** & rain shower. Kata kunci promosi: *berendam di bawah langit terbuka*.
 - **VIP Standard Bungalow** *(foto asli: `assets/photos/vip-standard-bungalow/`)*: rumah panggung beratap rumbia
   tepat di bibir pantai, teras pribadi menghadap laut dengan meja & kursi, AC, tempat tidur double, lampu dinding,
   perlengkapan kopi/teh, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
@@ -239,6 +242,7 @@ Folder `social/`:
 - `story-senja.png`: story jam senja (1080×1920)
 - `carousel/sb-1…6.png`: carousel room tour Superior Bungalow
 - `carousel/st-1…5.png`: carousel room tour Standard Bungalow
+- `carousel/vs-1…6.png`: carousel room tour VIP Superior Bungalow
 - `carousel/vp-1…6.png`: carousel room tour VIP Standard Bungalow
 - `camp-1…3.png`: tile kampanye (foto penuh + judul serif bertumpuk)
 - `feed-values.png`: tile nilai brand dengan 4 ikon
