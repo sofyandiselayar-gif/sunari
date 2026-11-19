@@ -8,7 +8,8 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `brand/palette-reference.jpg` | Referensi palet warna |
 | `assets/` | Logo asli, versi transparan (latar terang), dan versi terang (latar gelap) |
 | `social/INSTAGRAM_BULAN_1.md` | Bio Instagram, highlight, dan 30 caption bulan pertama |
-| `social/` | Template Instagram (feed 1080×1350, story 1080×1920) beserta sumber HTML-nya |
+| `social/` | Template Instagram (feed, story, carousel room tour) beserta sumber HTML-nya |
+| `assets/photos/` | Foto asli kamar |
 
 ## Palet
 `#0E4937` Forest Teal · `#FBE9D1` Light Beige · `#FF5D00` Vivid Orange · `#72BF00` Lime Green

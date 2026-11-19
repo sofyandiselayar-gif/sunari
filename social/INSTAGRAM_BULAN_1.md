@@ -101,17 +101,19 @@ Simpan akun ini supaya tidak ketinggalan.
 #SenjaHariIni #SunaRiSelayar #Selayar #SunsetLovers
 ```
 
-**Hari 3 · Carousel · Kamar & Fasilitas**
-*Visual:* 5 slide: tampak depan resort, kamar, balkon, pantai, kursi santai.
+**Hari 3 · Carousel (siap: `social/carousel/sb-1…6.png`) · Kamar & Fasilitas**
+*Visual:* room tour Superior Bungalow, 6 slide (cover, teras, atap & loteng, tempat tidur, kamar mandi, fasilitas).
 ```
-Geser untuk melihat rumah barumu selama di Selayar. 🌴
+Room tour: Superior Bungalow. 🌴
 
-Semua kamar kami dirancang menghadap ke barat,
-supaya senja bisa kamu nikmati tanpa beranjak dari balkon.
+Rumah kayu beratap A-frame di antara pohon kelapa,
+lengkap dengan loteng, teras pribadi,
+dan kamar mandi semi-outdoor yang dikelilingi taman.
 
-Tipe kamar mana favoritmu? Tulis di kolom komentar.
+Geser sampai akhir untuk melihat fasilitasnya,
+lalu ceritakan di komentar: bagian mana yang paling kamu suka?
 
-#SunaRiSelayar #BeachResort #Selayar #ResortIndonesia
+#SunaRiSelayar #RoomTour #BeachResort #Selayar #ResortIndonesia
 ```
 
 **Hari 4 · Feed · Pesona Selayar**
@@ -204,13 +206,12 @@ Gratis untuk semua tamu yang menginap.
 ```
 
 **Hari 11 · Reels · Kamar**
-*Visual:* room tour Sunset Villa, dari pintu sampai ke balkon dengan view laut.
+*Visual:* video berjalan dari jalan setapak, naik tangga, masuk bungalow, menengadah ke atap A-frame, lalu ke kamar mandi semi-outdoor (urutan seperti foto 02 → 03 → 04 → 10).
 ```
-Room tour: Sunset Villa. 🛏️
+Dari jalan setapak sampai ke shower di bawah langit terbuka. 🚿🌿
 
-Bangun dengan suara ombak.
-Tidur siang dengan angin laut.
-Lalu menikmati senja dari balkon sendiri.
+Superior Bungalow: rumah kayu kecil yang membuatmu lupa jam,
+sampai matahari mulai turun dan waktunya ke pantai. 🌅
 
 Mulai dari Rp [harga]/malam. Info lengkap via WhatsApp di bio.
 
@@ -347,7 +348,7 @@ kami akan repost favorit setiap minggu.
 ```
 Staycation Senja: 2 malam, 2 kali senja. 🌅
 
-✔️ Sunset Villa menghadap laut
+✔️ Superior Bungalow kayu A-frame dengan teras pribadi
 ✔️ Senja Dinner ikan bakar untuk 2 orang
 ✔️ Kelapa muda setiap sore
 

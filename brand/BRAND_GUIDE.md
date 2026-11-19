@@ -148,7 +148,11 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 
 ## 6. Produk & Pengalaman Signature (usulan)
 
-**Tipe kamar:** Beach Bungalow · Sunset Villa · Family Cottage
+**Tipe kamar**
+- **Superior Bungalow** *(foto asli: `assets/photos/superior-bungalow/`)*: bungalow kayu beratap A-frame
+  dengan loteng, teras kayu pribadi, kamar mandi semi-outdoor dengan taman & rain shower, AC, TV,
+  perlengkapan kopi/teh. Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
+- Tipe kamar lain: [menunggu data]
 
 **Pengalaman**
 - **Sunset Ritual**: 30 menit sebelum senja, tamu disuguhi kelapa muda di tepi pantai.
@@ -188,6 +192,7 @@ Folder `social/`:
 - `feed-promo.png`: postingan promo/paket (1080×1350)
 - `feed-quote.png`: kutipan/tagline (1080×1350)
 - `story-senja.png`: story jam senja (1080×1920)
+- `carousel/sb-1…6.png`: carousel room tour Superior Bungalow (sumber: `carousel-superior.html`)
 - `social-kit.html`: sumber template. Ubah teks lalu jalankan `social/render.js` untuk membuat ulang PNG.
 
 **Hashtag inti:** `#SunaRiSelayar` `#SenjaHariIni` `#Selayar` `#PesonaSelayar` `#TakaBonerate` `#WonderfulIndonesia`
