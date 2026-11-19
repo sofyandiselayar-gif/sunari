@@ -307,16 +307,20 @@ Bisa dipesan saat check-in atau via WhatsApp.
 #SunaRiSelayar #SunsetBoat #Selayar #PesonaSelayar
 ```
 
-**Hari 18 · Feed · Kamar & Fasilitas**
-*Visual:* close-up detail: anyaman, kayu, linen, Senja Journal di atas kasur.
+**Hari 18 · Carousel (siap: `social/carousel/vp-1…6.png`) · Kamar & Fasilitas**
+*Visual:* room tour VIP Standard Bungalow, 6 slide (view pantai dari dalam, rumah panggung, teras, kamar, kamar mandi, fasilitas).
 ```
-Di setiap kamar kami ada buku kecil bernama Senja Journal. 📖
+Turun tangga, langsung pasir. 🌊
 
-Tuliskan cerita senjamu di sana: dengan siapa, apa yang kamu rasakan,
-atau sekadar jam matahari terbenam hari itu.
-Bukunya boleh kamu bawa pulang.
+VIP Standard Bungalow adalah rumah panggung beratap rumbia
+yang berdiri tepat di bibir pantai Tile-Tile.
+Dari teras pribadinya, kamu bisa melihat perahu nelayan lewat
+dan menunggu senja tanpa perlu ke mana-mana. 🌅
 
-#SunaRiSelayar #SenjaJournal #Selayar #BeachResort
+Geser untuk melihat ke dalam.
+Info & reservasi: WA 0821-8903-3044.
+
+#SunaRiSelayar #RoomTour #BeachfrontBungalow #Selayar #PesonaSelayar
 ```
 
 **Hari 19 · Carousel · Pesona Selayar**
