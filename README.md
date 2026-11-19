@@ -21,6 +21,6 @@ node social/render.js
 ```
 
 ## Kontak
-- WhatsApp: +62 813-4150-4973 (Bli Eka) · +62 821-8903-3044 (Sofyan)
+- WhatsApp: +62 821-8903-3044 (Sofyan)
 - Alamat: Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kec. Bontosikuyu, Kab. Kepulauan Selayar, Sulawesi Selatan
 - Google Maps: https://maps.app.goo.gl/iUWWHNCT7Vyu4i537

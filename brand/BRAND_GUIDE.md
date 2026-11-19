@@ -226,10 +226,10 @@ Folder `social/`:
 |---|---|
 | **Alamat** | Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kecamatan Bontosikuyu, Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia |
 | **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
-| **WhatsApp reservasi** | +62 813-4150-4973 (Bli Eka) · +62 821-8903-3044 (Sofyan) |
-| **Link WA langsung** | `https://wa.me/6281341504973` · `https://wa.me/6282189033044` |
+| **WhatsApp reservasi** | +62 821-8903-3044 (Sofyan) |
+| **Link WA langsung** | `https://wa.me/6282189033044` |
 
-Penulisan di materi desain: **WA 0813-4150-4973** sebagai nomor utama. Cantumkan kedua nomor di caption dan materi cetak bila ruang cukup.
+Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 
 ## 10. Yang Perlu Dikonfirmasi
 - Harga kamar, kapasitas tamu, akun Instagram resmi
