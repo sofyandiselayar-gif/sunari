@@ -307,7 +307,7 @@ HS = [
     "Pagi menghadap laut Selayar.", lst(["2 orang · maks. 3 dengan extra bed","Queen bed · AC · Wi-Fi","Teras pribadi luas menghadap laut"],29)),
  # Resto
  hs("hs-resto-1","Resto","resto/03-resto-malam.jpg","50% 60%","Bajoy Beach <i class='it'>Resto</i>",
-    "Ikan bakar &amp; seafood setiap hari.", lst(["Buka 07.00–21.00 WITA","Tamu tidak menginap: sampai 19.00 WITA","Sarapan tamu resort disajikan di sini"],29)),
+    "Ikan bakar &amp; seafood setiap hari.", lst(["Buka 07.00–21.00 WITA","Tamu tidak menginap: sampai 19.00 WITA","Senja Dinner tersedia (pesan H-1)"],29)),
  hs("hs-resto-2","Resto","resto/05-makan-malam-taman.jpg","50% 60%","Senja <i class='it'>Dinner</i>",
     "Makan malam ikan bakar &amp; seafood saat matahari terbenam. Pesan paling lambat H-1 via WhatsApp."),
  # Kayak
