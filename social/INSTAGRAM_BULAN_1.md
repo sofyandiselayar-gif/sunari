@@ -446,8 +446,8 @@ Pesan H-1 via WhatsApp 0821-8903-3044.
 ```
 Liburan ke Selayar tidak harus mahal. 🌊
 
-Standard Bungalow: rumah kayu yang sejuk dan bersih,
-dengan teras pribadi yang luas dan langsung menghadap laut.
+Standard Bungalow: rumah kayu yang sejuk dan bersih, dengan queen bed,
+teras pribadi yang luas menghadap laut, dan sudah termasuk sarapan.
 Pagi minum kopi sambil melihat ombak, sore tinggal jalan ke pantai untuk menunggu senja. 🌅
 
 Info & reservasi: WA 0821-8903-3044.

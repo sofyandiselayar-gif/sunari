@@ -70,13 +70,13 @@ Paid transfers are available from H. Aroeppala Airport and the ferry port. The r
 ---
 
 ### 2. Standard Bungalow
-**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed) · **Tempat tidur:** 1 double · **Pemandangan:** laut
+**Kapasitas:** 2 dewasa (maks. 3 dengan 1 extra bed, berbayar) · **Tempat tidur:** 1 queen bed · **Pemandangan:** laut & taman · **Termasuk sarapan**
 
-**ID:** Bungalow kayu yang sejuk dan bersih dengan atap tinggi dan teras pribadi yang luas menghadap laut. Nikmati kopi pagi sambil melihat ombak, lalu berjalan ke pantai untuk menunggu senja. Kamar dilengkapi AC dan tempat tidur double. Kamar mandi dalam bernuansa bambu dengan lantai batu alam, shower, dan toilet duduk. Pilihan tepat untuk menikmati Selayar dengan santai.
+**ID:** Bungalow kayu yang sejuk dan bersih dengan atap tinggi dan teras pribadi yang luas menghadap laut. Nikmati kopi pagi sambil melihat ombak dari kursi santai, lalu berjalan ke pantai untuk menunggu senja. Kamar dilengkapi queen bed, AC, Wi-Fi, set kopi/teh dengan pemanas air, meja kerja/rias, tirai blackout, serta bantal dan selimut tambahan. Kamar mandi dalam bernuansa bambu dengan lantai batu alam, shower, toilet duduk, perlengkapan mandi, dan handuk. Sudah termasuk sarapan. Layanan setrika tersedia atas permintaan.
 
-**EN:** A cool, clean wooden bungalow with a high ceiling and a spacious private terrace facing the sea. Enjoy morning coffee with an ocean view, then stroll to the beach for sunset. The room has air conditioning and a double bed, and an en-suite bathroom with bamboo walls, natural stone floor, shower and western toilet. An easy, relaxed way to enjoy Selayar.
+**EN:** A cool, clean wooden bungalow with a high ceiling and a spacious private terrace facing the sea. Enjoy morning coffee with an ocean view from your lounge chair, then stroll to the beach for sunset. The room features a queen bed, air conditioning, Wi-Fi, coffee/tea set with kettle, work/vanity desk, blackout curtains, and extra pillows and blankets. The en-suite bathroom has bamboo walls, natural stone floor, shower, western toilet, toiletries and towels. Breakfast is included. Ironing available on request.
 
-**Fasilitas:** AC · Wi-Fi · Teras pribadi menghadap laut · Kamar mandi dalam · Shower · Toilet duduk · Extra bed
+**Fasilitas:** Sarapan · Queen bed · AC · Wi-Fi · Kopi/teh & pemanas air (kettle) · Meja kerja/rias · Tirai blackout · Bantal & selimut tambahan · Setrika (atas permintaan) · Kamar mandi dalam · Shower · Toilet duduk · Perlengkapan mandi · Handuk · Teras/balkon pribadi · Kursi santai · Pemandangan laut & taman · Extra bed (maks. 1, berbayar)
 
 ---
 
@@ -162,7 +162,7 @@ Tombol: **Hubungi** (nomor WA).
 ## F. Yang perlu dicek sebelum dipublikasikan
 - [ ] Ukuran tempat tidur Superior & VIP Superior (double/queen/king)
 - [ ] Luas kamar (m²) untuk setiap tipe, sering diminta OTA
-- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk 4 tipe kamar lainnya? (saat ini hanya dicantumkan di Family Superior)
+- [ ] Apakah **sarapan, perlengkapan mandi, handuk, setrika, tirai blackout** juga berlaku untuk VIP Standard, Superior, dan VIP Superior? (sudah dikonfirmasi: Family Superior & Standard)
 - [ ] Air panas, parkir, jam resepsionis
 - [ ] Kebijakan pembatalan dan deposit
 - [ ] Jarak ke Bandara H. Aroeppala & ke kota Benteng (km / menit)

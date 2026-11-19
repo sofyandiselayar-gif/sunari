@@ -193,9 +193,11 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 - **Superior Bungalow** *(foto asli: `assets/photos/superior-bungalow/`)*: bungalow kayu beratap A-frame
   dengan loteng, teras kayu pribadi, kamar mandi semi-outdoor dengan taman & rain shower, AC, TV,
   perlengkapan kopi/teh. Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
-- **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi,
-  AC, tempat tidur double, kamar mandi dalam bernuansa bambu & lantai batu alam, teras pribadi yang luas menghadap laut.
-  Kata kunci promosi: *pagi menghadap laut Selayar*, pilihan hemat.
+- **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi.
+  **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **Queen bed**, termasuk **sarapan**, AC, Wi-Fi, set kopi/teh + pemanas air,
+  meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout.
+  Kamar mandi dalam bernuansa bambu & lantai batu alam. Teras pribadi luas dengan kursi santai, pemandangan laut & taman.
+  Kata kunci promosi: *pagi menghadap laut Selayar*.
 - **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: bungalow A-frame beratap rumbia
   dengan loteng, teras kayu pribadi, jendela segitiga, AC, TV, kulkas mini, perlengkapan kopi/teh, serta kamar mandi
   semi-outdoor beratap kaca dengan **bathtub** & rain shower. Kata kunci promosi: *berendam di bawah langit terbuka*.
