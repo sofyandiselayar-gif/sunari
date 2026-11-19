@@ -47,7 +47,7 @@ WhatsApp +62 821-8903-3044 ⬇️
 Jika memakai Linktree / halaman link, urutannya:
 1. **Reservasi WhatsApp: Sofyan**: `https://wa.me/6282189033044?text=Halo%20SunaRi%2C%20saya%20ingin%20reservasi`
 2. **Lokasi (Google Maps)**: `https://maps.app.goo.gl/iUWWHNCT7Vyu4i537`
-3. Cara ke Selayar → Paket & Harga
+3. Cara ke Selayar → Paket & Fasilitas
 
 **Tombol kontak profil** (aktifkan di akun Bisnis Instagram): WhatsApp `+62 821-8903-3044`, alamat sesuai bagian Kontak di bawah.
 
@@ -67,7 +67,7 @@ Jika memakai Linktree / halaman link, urutannya:
 | 🌊 Selayar | Pantai, Taka Bonerate, kuliner lokal |
 | ✈️ Cara ke Sini | Rute pesawat & kapal |
 | 💬 Ulasan | Testimoni tamu |
-| 📩 Booking | Harga, cara reservasi, FAQ |
+| 📩 Booking | Cara reservasi, FAQ |
 
 Warna cover highlight: latar **Forest Teal** dengan ikon garis **Light Beige**, atau latar **Light Beige** dengan ikon **Forest Teal**. Jangan dicampur.
 
@@ -230,7 +230,7 @@ Dari jalan setapak sampai ke shower di bawah langit terbuka. 🚿🌿
 Superior Bungalow: rumah kayu kecil yang membuatmu lupa jam,
 sampai matahari mulai turun dan waktunya ke pantai. 🌅
 
-Mulai dari Rp [harga]/malam. Info lengkap: WA 0821-8903-3044.
+Info & reservasi: WA 0821-8903-3044.
 
 #SunaRiSelayar #RoomTour #BeachResort #Selayar
 ```
@@ -369,7 +369,7 @@ Staycation Senja: 2 malam, 2 kali senja. 🌅
 ✔️ Senja Dinner ikan bakar untuk 2 orang
 ✔️ Kelapa muda setiap sore
 
-Mulai dari Rp [harga]. Hemat [x]% untuk pemesanan bulan ini.
+Info paket & ketersediaan kamar via WhatsApp.
 Reservasi: WA 0821-8903-3044, link di bio.
 
 #SunaRiSelayar #PromoResort #Selayar #StaycationSulsel
@@ -424,7 +424,7 @@ Standard Bungalow: rumah kayu yang sejuk dan bersih,
 dengan teras pribadi yang luas dan langsung menghadap laut.
 Pagi minum kopi sambil melihat ombak, sore tinggal jalan ke pantai untuk menunggu senja. 🌅
 
-Mulai dari Rp [harga]/malam. Info: WA 0821-8903-3044.
+Info & reservasi: WA 0821-8903-3044.
 
 #SunaRiSelayar #RoomTour #Selayar #LiburanHemat #BeachResort
 ```
@@ -494,7 +494,7 @@ Sampai jumpa di tempat senja pulang. 🌅
 ## 5. Data yang Perlu Diisi
 - [x] Nomor WhatsApp & alamat
 - [ ] Username Instagram final
-- [ ] Nama dan harga tiap tipe kamar, kapasitas Family Cottage
+- [ ] Kapasitas tamu tiap tipe kamar
 - [ ] Jam check-in/out, biaya penjemputan
-- [ ] Persetujuan program Sunset Guarantee & diskon peluncuran
+- [ ] Persetujuan program Sunset Guarantee
 - [ ] Nama & izin foto tim (Hari 15), izin repost tamu (Hari 21)

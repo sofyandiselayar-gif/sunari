@@ -15,7 +15,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 `#0E4937` Forest Teal · `#FBE9D1` Light Beige · `#FF5D00` Vivid Orange · `#72BF00` Lime Green
 
 ## Membuat ulang template media sosial
-Edit teks (jam senja, harga, dll.) di `social/social-kit.html`, lalu jalankan:
+Edit teks (jam senja, teks, dll.) di `social/social-kit.html`, lalu jalankan:
 ```
 node social/render.js
 ```

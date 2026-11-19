@@ -81,7 +81,7 @@ File di folder `assets/`:
 |---|---|---|---|
 | **Forest Teal** | `#0E4937` | 14, 73, 55 | Warna utama: latar gelap, teks judul |
 | **Light Beige** | `#FBE9D1` | 251, 233, 209 | Latar terang, teks di atas teal (nuansa pasir) |
-| **Vivid Orange** | `#FF5D00` | 255, 93, 0 | Aksen: senja, CTA, harga, promo |
+| **Vivid Orange** | `#FF5D00` | 255, 93, 0 | Aksen: senja, CTA, promo |
 | **Lime Green** | `#72BF00` | 114, 191, 0 | Aksen segar: ikon, garis, sorotan kecil |
 
 **Proporsi (aturan 60–25–10–5)**
@@ -120,7 +120,7 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 
 ### 4.5 Elemen Grafis
 - **Motif daun kelapa** (diambil dari logo) di sudut desain, dipakai dengan opacity rendah.
-- **Lingkaran matahari** Vivid Orange untuk menyorot jam senja atau harga.
+- **Lingkaran matahari** Vivid Orange untuk menyorot jam senja atau angka penting.
 - Sudut membulat kecil (8–16px). Garis tipis Lime sebagai pemisah.
 
 ---
@@ -175,7 +175,7 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 | **Kamar & Fasilitas** | 20% | Room tour, detail interior |
 | **Pesona Selayar** | 20% | Taka Bonerate, kuliner, budaya, cara ke Selayar |
 | **Cerita Tamu** | 15% | Repost tamu, testimoni |
-| **Promo & Info** | 15% | Paket, harga, event |
+| **Promo & Info** | 15% | Paket, fasilitas, event |
 
 ### Kalender mingguan (contoh)
 | Hari | Feed | Story |
@@ -231,6 +231,9 @@ Folder `social/`:
 
 Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 
+**Kebijakan harga:** jangan mencantumkan harga atau persentase diskon di media sosial maupun materi desain.
+Arahkan calon tamu untuk menanyakan harga dan ketersediaan via WhatsApp.
+
 ## 10. Yang Perlu Dikonfirmasi
-- Harga kamar, kapasitas tamu, akun Instagram resmi
+- Kapasitas tamu, akun Instagram resmi
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain
