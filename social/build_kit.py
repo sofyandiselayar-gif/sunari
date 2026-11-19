@@ -58,7 +58,7 @@ PROMO = dict(kicker="Paket Akhir Pekan", title="Staycation", title_it="Senja", s
              items=["Superior Bungalow kayu A-frame","Senja Dinner ikan bakar & seafood untuk dua orang","Teras pribadi untuk menunggu senja"])
 QUOTE = dict(text="Setiap hari di Selayar<br>berakhir dengan <em>indah.</em>", en="Where every day ends beautifully")
 # Feed order shown in grid-preview.png (newest first)
-GRID = ["camp-1","feed-senja","carousel/vs-1","camp-3","carousel/vp-1","feed-quote","camp-2","feed-promo","carousel/fs-1"]
+GRID = ["camp-1","feed-senja","carousel/vs-1","camp-4","carousel/vp-1","feed-quote","camp-3","feed-kayak","carousel/fs-1","camp-2","feed-promo","carousel/sb-1"]
 # ---------------------------------------------------------------- END CONTENT
 
 e = html.escape
@@ -396,25 +396,37 @@ for r in ROOMS:
 head = f'<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SunaRi Instagram Kit</title>{FONTS}<style>{CSS}</style></head><body>\n'
 (HERE / "kit.html").write_text(head + "\n".join(parts) + "\n</body></html>\n")
 
-tiles = "".join(f'<img src="{g}.png" alt="">' for g in GRID)
-grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>SunaRi Grid Preview</title>{FONTS}<style>
-*{{box-sizing:border-box;margin:0;padding:0}} body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif}}
-#grid-preview{{width:1080px;background:#fff;color:#262626;padding:56px 0 0}}
-.prof{{display:flex;gap:56px;align-items:center;padding:0 56px 44px}}
-.av{{width:200px;height:200px;border-radius:50%;background:#FBF4EC;border:2px solid #E6C89B;display:flex;align-items:center;justify-content:center;flex:none}}
-.av img{{width:130px}}
-.user{{font-size:34px;font-weight:600}} .name{{font-size:26px;font-weight:600;margin-top:18px}}
-.bio{{font-size:25px;line-height:1.5;margin-top:6px;white-space:pre-line}} .bio a{{color:#00376b;font-weight:500}}
-.tabs{{border-top:1px solid #dbdbdb;height:70px}}
-.g{{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}} .g img{{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}}
+tiles = "".join(f'<div class="t"><img src="{g}.png" alt=""></div>' for g in GRID)
+HL = [("hl2-02-reservasi","Reservasi Kamar"),("hl2-07f-promo","Promo"),("hl2-07e-qna","Q&amp;A"),("hl2-06-ayunan","Ayunan Raksasa"),("hl2-08-kayak","Kano / Kayak")]
+hls = "".join(f'<div class="h"><div class="hc"><img src="highlights-v2/{f}.png" alt=""></div><span>{n}</span></div>' for f, n in HL)
+grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>SunaRi Feed Preview</title>{FONTS}<style>
+*{{box-sizing:border-box;margin:0;padding:0}} body{{background:#ddd6cc;padding:40px;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif}}
+#grid-preview{{width:1080px;background:#fff;color:#000}}
+.bar{{height:110px;display:flex;align-items:center;padding:0 40px;font-size:38px;font-weight:700;border-bottom:1px solid #efefef}}
+.top{{display:flex;align-items:center;gap:60px;padding:44px 40px 0}}
+.av{{width:220px;height:220px;border-radius:50%;overflow:hidden;flex:none;border:1px solid #dbdbdb}} .av img{{width:100%;height:100%;display:block}}
+.nm{{font-size:34px;font-weight:600}} .cat{{font-size:28px;color:#737373;margin-top:6px}}
+.bio{{padding:28px 40px 0;font-size:29px;line-height:1.45;white-space:pre-line}} .bio a{{color:#00376b;font-weight:600}}
+.btns{{display:flex;gap:14px;padding:30px 40px 0}} .btns div{{flex:1;background:#efefef;border-radius:16px;text-align:center;font-size:28px;font-weight:600;padding:20px 0}}
+.btns .pri{{background:#0095f6;color:#fff}}
+.hls{{display:flex;gap:34px;padding:40px 40px 34px;overflow:hidden}} .h{{width:160px;text-align:center;flex:none}}
+.hc{{width:150px;height:150px;border-radius:50%;border:2px solid #dbdbdb;padding:6px;margin:0 auto}} .hc img{{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}}
+.h span{{display:block;font-size:24px;margin-top:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.tabs{{display:flex;border-top:1px solid #dbdbdb}} .tabs div{{flex:1;height:90px;display:flex;align-items:center;justify-content:center}}
+.tabs .on{{border-top:2px solid #000;margin-top:-1px}} .tabs i{{width:40px;height:40px;border:3px solid #000;border-radius:4px;display:block;background:repeating-linear-gradient(90deg,transparent 0 9px,#000 9px 12px)}}
+.g{{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}} .t{{aspect-ratio:3/4;overflow:hidden}} .t img{{width:100%;height:100%;object-fit:cover;display:block}}
 </style></head><body><div id="grid-preview">
-<div class="prof"><div class="av"><img src="../assets/mark-sunari-driftwood.svg" alt=""></div>
-<div><div class="user">sunaribeachresortselayar</div><div class="name">SunaRi Beach Resort Selayar</div>
+<div class="bar">sunaribeachresortselayar</div>
+<div class="top"><div class="av"><img src="profile/pp-c.png" alt=""></div>
+<div><div class="nm">SunaRi Beach Resort Selayar</div><div class="cat">Resort</div></div></div>
 <div class="bio">🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
-🍽️ Senja Dinner ikan bakar & seafood
+🍽️ Senja Dinner ikan bakar &amp; seafood
 📩 WA {WA} ⬇️
-<a>wa.me/6282189033044</a></div></div></div>
-<div class="tabs"></div><div class="g">{tiles}</div></div></body></html>'''
+<a>wa.me/6282189033044</a></div>
+<div class="btns"><div class="pri">Ikuti</div><div>Kirim pesan</div><div>WhatsApp</div></div>
+<div class="hls">{hls}</div>
+<div class="tabs"><div class="on"><i></i></div><div></div><div></div></div>
+<div class="g">{tiles}</div></div></body></html>'''
 (HERE / "grid.html").write_text(grid)
 print("wrote kit.html (%d templates) and grid.html" % len(parts))
