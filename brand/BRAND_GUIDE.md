@@ -153,7 +153,7 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
   dengan loteng, teras kayu pribadi, kamar mandi semi-outdoor dengan taman & rain shower, AC, TV,
   perlengkapan kopi/teh. Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
 - **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi,
-  AC, tempat tidur double, kamar mandi dalam bernuansa bambu & lantai batu alam, teras luas menghadap laut.
+  AC, tempat tidur double, kamar mandi dalam bernuansa bambu & lantai batu alam, teras pribadi yang luas menghadap laut.
   Kata kunci promosi: *pagi menghadap laut Selayar*, pilihan hemat.
 
 **Pengalaman**

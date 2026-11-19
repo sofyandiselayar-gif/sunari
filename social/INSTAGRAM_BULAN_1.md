@@ -404,7 +404,7 @@ Pesan minimal [H-1] via WhatsApp.
 Liburan ke Selayar tidak harus mahal. 🌊
 
 Standard Bungalow: rumah kayu yang sejuk dan bersih,
-dengan teras luas yang langsung menghadap laut.
+dengan teras pribadi yang luas dan langsung menghadap laut.
 Pagi minum kopi sambil melihat ombak, sore tinggal jalan ke pantai untuk menunggu senja. 🌅
 
 Mulai dari Rp [harga]/malam. Info via WhatsApp di bio.
