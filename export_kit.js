@@ -1,4 +1,5 @@
 // Build the full deliverable package: PNG + PDF (editable text) + Canva-ready multi-page PDFs + ZIP.
+// No compression anywhere: original PNGs, full-resolution photos in PDFs, ZIP in store mode.
 // Usage: python3 social/build_kit.py && node social/render.js && node brand/render_board.js && node export_kit.js
 const { chromium } = require('playwright');
 const path = require('path'), fs = require('fs'), { execSync } = require('child_process');
@@ -14,20 +15,9 @@ const GROUPS = {
 };
 (async () => {
   fs.rmSync(path.join(ROOT, 'export'), { recursive: true, force: true });
-  // web-size copies of photos (1600px) so PDFs stay small
-  execSync(`python3 - <<'PY'
-from PIL import Image, ImageOps
-import pathlib
-src=pathlib.Path('${ROOT}/assets/photos'); dst=pathlib.Path('${ROOT}/export/_web/photos')
-for f in src.rglob('*.jpg'):
-    o=dst/f.relative_to(src); o.parent.mkdir(parents=True,exist_ok=True)
-    im=ImageOps.exif_transpose(Image.open(f)).convert('RGB'); im.thumbnail((1600,1600)); im.save(o,quality=84)
-PY`);
-  const kit = fs.readFileSync(path.join(ROOT, 'social', 'kit.html'), 'utf8').split('../assets/photos/').join('../export/_web/photos/');
-  fs.writeFileSync(path.join(ROOT, 'social', 'kit_export.html'), kit);
   const b = await chromium.launch();
   const page = await b.newPage({ viewport: { width: 1200, height: 2000 } });
-  await page.goto('file://' + path.join(ROOT, 'social', 'kit_export.html'));
+  await page.goto('file://' + path.join(ROOT, 'social', 'kit.html'));
   await page.waitForLoadState('networkidle');
   await page.evaluate(() => document.fonts.ready);
   const show = async (ids, h) => page.evaluate(([ids, h]) => {
@@ -39,7 +29,7 @@ PY`);
     for (const d of ['PNG', 'PDF']) fs.mkdirSync(path.join(OUT, d, g), { recursive: true });
     for (const id of ids) {
       const src = /^(sb|st|vp|vs|fs)-/.test(id) ? `social/carousel/${id}.png` : `social/${id}.png`;
-      execSync(`python3 -c "from PIL import Image;Image.open('${path.join(ROOT, src)}').convert('RGB').save('${path.join(OUT, 'PNG', g, id + '.png')}',optimize=True)"`);
+      fs.copyFileSync(path.join(ROOT, src), path.join(OUT, 'PNG', g, `${id}.png`));
       const h = id.startsWith('story') ? 1920 : 1350;
       await show([id], h);
       await page.pdf({ path: path.join(OUT, 'PDF', g, `${id}.pdf`), width: '1080px', height: h + 'px', printBackground: true, pageRanges: '1' });
@@ -64,8 +54,6 @@ PY`);
   fs.copyFileSync(path.join(ROOT, 'social/INSTAGRAM_BULAN_1.md'), path.join(OUT, 'CAPTION_30_HARI.md'));
   fs.copyFileSync(path.join(ROOT, 'social/grid-preview.png'), path.join(OUT, 'preview-feed-instagram.png'));
   fs.copyFileSync(path.join(ROOT, 'export_README.md'), path.join(OUT, 'BACA_DULU.md'));
-  fs.unlinkSync(path.join(ROOT, 'social', 'kit_export.html'));
-  fs.rmSync(path.join(ROOT, 'export', '_web'), { recursive: true, force: true });
-  execSync('cd export && zip -qr SunaRi_Konten_Instagram.zip SunaRi_Konten_Instagram');
+    execSync('cd export && zip -0 -qr SunaRi_Konten_Instagram.zip SunaRi_Konten_Instagram');
   console.log('zip ready');
 })();
