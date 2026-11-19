@@ -16,9 +16,10 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 Pendukung: `#FBF4EC` Shell Cream · `#5A3E31` Driftwood Deep. Pita & bar memakai Sandy Shore, teks Driftwood Deep. Logo satu warna: Driftwood.
 
 ## Membuat ulang template media sosial
-Edit teks (jam senja, teks, dll.) di `social/social-kit.html`, lalu jalankan:
+Gaya desain: minimalis & elegan (Cormorant Garamond + Montserrat, latar Shell Cream, foto berbingkai).
+Edit teks (jam senja, kamar, dll.) di bagian CONTENT `social/build_kit.py`, lalu jalankan:
 ```
-node social/render.js
+python3 social/build_kit.py && node social/render.js
 ```
 
 ## Kontak

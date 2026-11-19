@@ -1,21 +1,22 @@
-// Render every .tpl element in a template file to PNG (file name = element id).
-// Usage: node social/render.js [file.html ...]   (default: all template files)
+// Render every .tpl in kit.html to PNG. Room-tour slides (sb-/st-/vp-) go to carousel/.
+// Usage: python3 social/build_kit.py && node social/render.js
 const { chromium } = require('playwright');
 const path = require('path');
-const files = process.argv.slice(2).length ? process.argv.slice(2)
-  : ['social-kit.html', 'carousel-superior.html', 'carousel-standard.html', 'carousel-vip.html'];
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 2400, height: 2200 } });
-  for (const f of files) {
-    const outDir = path.join(__dirname, f.startsWith('carousel') ? 'carousel' : '.');
-    await page.goto('file://' + path.join(__dirname, path.basename(f)));
-    await page.evaluate(() => document.fonts.ready);
-    await page.waitForLoadState('networkidle');
-    for (const id of await page.$$eval('.tpl', els => els.map(e => e.id))) {
-      await page.locator('#' + id).screenshot({ path: path.join(outDir, id + '.png') });
-      console.log('saved', path.relative(__dirname, path.join(outDir, id + '.png')));
-    }
+  await page.goto('file://' + path.join(__dirname, 'kit.html'));
+  await page.waitForLoadState('networkidle');
+  await page.evaluate(() => document.fonts.ready);
+  for (const id of await page.$$eval('.tpl', els => els.map(e => e.id))) {
+    const dir = /^(sb|st|vp)-/.test(id) ? path.join(__dirname, 'carousel') : __dirname;
+    await page.locator('#' + id).screenshot({ path: path.join(dir, id + '.png') });
+    console.log('saved', path.relative(__dirname, path.join(dir, id + '.png')));
   }
+  await page.goto('file://' + path.join(__dirname, 'grid.html'));
+  await page.waitForLoadState('networkidle');
+  await page.evaluate(() => document.fonts.ready);
+  await page.locator('#grid-preview').screenshot({ path: path.join(__dirname, 'grid-preview.png') });
+  console.log('saved grid-preview.png');
   await browser.close();
 })();

@@ -123,13 +123,16 @@ Referensi: `brand/palette-reference.jpg`.
 | Putih / krem | Coral Glow | 2,1 : 1 | ❌ Tombol coral selalu memakai teks Driftwood Deep |
 
 ### 4.3 Tipografi
-Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font pendamping harus **bersih dan tegas**:
+Gaya: **minimalis & elegan**. Logo memakai huruf kuas, jadi font pendampingnya klasik dan tipis agar tidak bersaing.
 
-| Fungsi | Font (gratis, Google Fonts) | Catatan |
+| Fungsi | Font (gratis, Google Fonts) | Aturan |
 |---|---|---|
-| Judul / headline | **Montserrat ExtraBold** | Kapital, mirip gaya palet referensi |
-| Teks isi / caption | **Montserrat Medium** atau **Poppins** | |
-| Aksen (1–3 kata saja) | **Kaushan Script** | Selaras dengan logo. Jangan untuk kalimat panjang |
+| Judul, angka jam senja, nomor WA | **Cormorant Garamond** Medium 500 | Huruf kapital-kecil biasa (bukan semua kapital). Angka memakai *lining numerals* |
+| Aksen (1–4 kata) | **Cormorant Garamond** *Italic* 400, warna Driftwood | Contoh: *Senja*, *dapatkan*, *Tempat senja pulang* |
+| Label kecil / kicker | **Montserrat** Medium 500, KAPITAL, spasi huruf lebar (0,4em), warna Driftwood | 18–22px. Contoh: ROOM TOUR, INFO & RESERVASI |
+| Teks isi | **Montserrat** Regular 400, 28–30px | Maksimal 2 baris per slide |
+
+Ukuran minimum di desain 1080px: teks isi 28px, label 18px (agar tetap terbaca di layar HP).
 
 ### 4.4 Gaya Foto & Video
 - Ambil saat **golden hour** (±60 menit sebelum matahari terbenam) dan siang cerah (laut toska).
@@ -138,11 +141,15 @@ Logo memakai huruf **tulisan tangan/kuas**. Agar logo tetap menonjol, font penda
 - Rekam detail lokal: kelapa muda, perahu nelayan, ikan bakar, anak-anak bermain di pantai.
 - Hindari: filter biru dingin, flash, tumpukan sampah atau kabel di frame.
 
-### 4.5 Elemen Grafis
-- **Motif daun kelapa** (diambil dari logo) berwarna Driftwood di sudut desain, dengan opacity rendah.
-- **Lingkaran matahari** Coral Glow / Golden Hour untuk menyorot jam senja atau angka penting.
-- **Laut** selalu Ocean Breeze, **langit** memakai gradasi khas.
-- Sudut membulat kecil (8–16px). Garis tipis Golden Hour atau Coral Glow sebagai pemisah.
+### 4.5 Elemen Grafis & Prinsip Layout
+- **Ruang kosong adalah bagian desain.** Margin tepi 72px, jangan isi setiap sudut.
+- **Foto berbingkai**: foto diletakkan dengan margin 72px di atas latar Shell Cream, tanpa sudut membulat, tanpa bayangan.
+- **Garis rambut** 1px Driftwood (opacity 45%) sebagai pemisah dan daftar fasilitas.
+- **Satu aksen per desain**: titik/lingkaran matahari Coral Glow → Golden Hour. Jangan memakai lebih dari satu warna cerah dalam satu slide.
+- **Ilustrasi senja**: setengah lingkaran matahari di atas garis horizon, tiga garis pantulan Ocean Breeze.
+- **Footer** konsisten di setiap slide: "SUNARI · SELAYAR" di kiri, nomor slide (02 — 06) atau "GESER →" di kanan.
+- Logo Driftwood kecil (lebar 230–300px) di tengah atas atau tengah bawah.
+- Hindari: blok warna besar, teks tebal kapital besar, bayangan, efek glow, lebih dari dua font.
 
 ---
 
@@ -219,10 +226,12 @@ Folder `social/`:
 - `feed-promo.png`: postingan promo/paket (1080×1350)
 - `feed-quote.png`: kutipan/tagline (1080×1350)
 - `story-senja.png`: story jam senja (1080×1920)
-- `carousel/sb-1…6.png`: carousel room tour Superior Bungalow (sumber: `carousel-superior.html`)
-- `carousel/st-1…5.png`: carousel room tour Standard Bungalow (sumber: `carousel-standard.html`)
-- `carousel/vp-1…6.png`: carousel room tour VIP Standard Bungalow (sumber: `carousel-vip.html`)
-- `social-kit.html`: sumber template. Ubah teks lalu jalankan `social/render.js` untuk membuat ulang PNG.
+- `carousel/sb-1…6.png`: carousel room tour Superior Bungalow
+- `carousel/st-1…5.png`: carousel room tour Standard Bungalow
+- `carousel/vp-1…6.png`: carousel room tour VIP Standard Bungalow
+- `grid-preview.png`: mockup tampilan profil & grid Instagram
+- Sumber semua template: `build_kit.py` (ubah teks di bagian CONTENT), lalu jalankan
+  `python3 social/build_kit.py && node social/render.js` untuk membuat ulang semua PNG.
 
 **Hashtag inti:** `#SunaRiSelayar` `#SenjaHariIni` `#Selayar` `#PesonaSelayar` `#TakaBonerate` `#WonderfulIndonesia`
 
