@@ -43,6 +43,9 @@ ICONS.append(("07d-layangan", "Layangan", f'''<g {S}><path d="M104 30 L146 74 L1
 ICONS.append(("07e-qna", "Q&A", f'''<g {S}><path d="M40 60 h84 a12 12 0 0 1 12 12 v38 a12 12 0 0 1 -12 12 h-44 l-22 18 v-18 h-18 a12 12 0 0 1 -12 -12 v-38 a12 12 0 0 1 12 -12 Z"/>
    <path d="M112 132 v12 a10 10 0 0 0 10 10 h22 l18 14 v-14 h4 a10 10 0 0 0 10 -10 v-30 a10 10 0 0 0 -10 -10 h-20"/></g>
    <text x="82" y="106" text-anchor="middle" font-family="Playfair Display" font-size="44" fill="{D}">Q</text><text x="150" y="146" text-anchor="middle" font-family="Playfair Display" font-size="34" fill="{D}">A</text>'''))
+ICONS.append(("07f-promo", "Promo", f'''<g {S}><path d="M104 40 H156 a8 8 0 0 1 8 8 V100 L96 168 a10 10 0 0 1 -14 0 L36 122 a10 10 0 0 1 0 -14 Z"/>
+   <circle cx="136" cy="68" r="9"/></g>
+   <path d="M96 84 l7 15 l16 2 l-12 11 l3 16 l-14 -8 l-14 8 l3 -16 l-12 -11 l16 -2 Z" fill="{D}"/>'''))
 for i, (m, name) in enumerate([("APR","Sunset April"),("MEI","Sunset Mei"),("JUN","Sunset Juni"),("JUL","Sunset Juli"),
                                 ("AGU","Sunset Agustus"),("SEP","Sunset Sept"),("OKT","Sunset Oktober"),("NOV","Sunset November"),("DES","Sunset Desember")], 9):
     ICONS.append((f"{i:02d}-sunset-{m.lower()}", name, month(m)))

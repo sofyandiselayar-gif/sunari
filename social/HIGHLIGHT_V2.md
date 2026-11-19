@@ -15,6 +15,7 @@ Pratinjau: `social/highlights-v2/preview-highlights.png`.
 | 6 | Gusung Island | `hl2-03-gusung` | Foto/video trip ke Gusung |
 | 7 | Bahuluang | `hl2-04-bahuluang` | Foto/video trip ke Pulau Bahuluang |
 | 8 | Ramadhan | `hl2-07-ramadhan` | Konten bulan Ramadhan (buka puasa, suasana, promo Ramadhan) |
+| 1b | Promo | `hl2-07f-promo` | Paket (Staycation Senja), template `feed-promo`, promo musiman. **Tanpa harga kamar & tanpa persen diskon**; harga kayak boleh |
 | 1a | Q&A | `hl2-07e-qna` | `hs-booking-2`, story jawaban dari stiker Pertanyaan, carousel FAQ (`faq-1…6`) dibagikan ke story |
 | 7a | Layangan | `hl2-07d-layangan` | Foto/video layangan di Pantai Sunari |
 | 8a | Ramadhan 1447H | `hl2-07b-ramadhan-1447` | Arsip Ramadhan 1447 H (sekitar Februari–Maret 2026) |
