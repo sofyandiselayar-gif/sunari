@@ -52,7 +52,7 @@ CAMPAIGN = [
 ]
 VALUES = [("wave","Tepi Pantai"),("sun","Menghadap Senja"),("leaf","Alami & Lokal"),("moon","Tenang & Pelan")]
 PROMO = dict(kicker="Paket Akhir Pekan", title="Staycation", title_it="Senja", sub="Dua malam, dua kali senja",
-             items=["Superior Bungalow kayu A-frame","Senja Dinner ikan bakar untuk dua orang","Kelapa muda setiap sore"])
+             items=["Superior Bungalow kayu A-frame","Senja Dinner ikan bakar & seafood untuk dua orang","Teras pribadi untuk menunggu senja"])
 QUOTE = dict(text="Setiap hari di Selayar<br>berakhir dengan <em>indah.</em>", en="Where every day ends beautifully")
 # Feed order shown in grid-preview.png (newest first)
 GRID = ["camp-1","feed-senja","carousel/vs-1","feed-values","carousel/vp-1","feed-quote","carousel/vs-5","feed-promo","carousel/fs-1"]
@@ -253,7 +253,7 @@ grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Sun
 <div><div class="user">sunari.selayar</div><div class="name">SunaRi Beach Resort Selayar</div>
 <div class="bio">🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
-🥥 Kelapa muda setiap sore
+🍽️ Senja Dinner ikan bakar & seafood
 📩 WA {WA} ⬇️
 <a>wa.me/6282189033044</a></div></div></div>
 <div class="tabs"></div><div class="g">{tiles}</div></div></body></html>'''

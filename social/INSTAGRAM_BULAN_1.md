@@ -21,7 +21,7 @@
 ```
 🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
-🥥 Kelapa muda setiap sore
+🍽️ Senja Dinner ikan bakar & seafood
 📩 WA 0821-8903-3044 ⬇️
 ```
 
@@ -29,7 +29,7 @@
 ```
 Resort tepi pantai menghadap senja 🌅
 📍 Pantai Tile-Tile, Bontosikuyu, Selayar
-🌊 Gerbang ke Taka Bonerate
+🚐 Antar-jemput bandara & pelabuhan
 📩 WA 0821-8903-3044 ⬇️
 ```
 
@@ -142,9 +142,9 @@ dan justru itu yang membuatnya istimewa.
 ```
 
 **Hari 5 · Reels · Senja**
-*Visual:* POV duduk di pasir, tangan memegang kelapa muda, matahari turun.
+*Visual:* POV duduk di pasir, kaki menyentuh air, matahari turun.
 ```
-POV: jam [jam] WITA, kelapa muda di tangan, kaki di pasir. 🥥
+POV: jam [jam] WITA, kaki di pasir, langit mulai oranye. 🌅
 
 Tidak ada notifikasi yang lebih penting dari ini.
 
@@ -175,7 +175,8 @@ Ada dua pilihan dari Makassar:
 Dari Benteng (ibu kota Selayar), SunaRi ada di KM 14 jalan poros Benteng–Appatana,
 Dusun Tile-Tile Utara, Desa Patikarya. 📍 Lokasi lengkap di highlight "Cara ke Sini".
 
-Detail jadwal ada di slide. Tim kami juga siap bantu atur penjemputan:
+Detail jadwal ada di slide.
+Kami juga menyediakan antar-jemput dari bandara atau pelabuhan (biaya tambahan):
 WA 0821-8903-3044 (Sofyan).
 Simpan postingan ini untuk liburanmu nanti!
 
@@ -191,7 +192,8 @@ Simpan postingan ini untuk liburanmu nanti!
 Siang di bawah laut, sore di bawah senja. 🐠🌅
 
 Taka Bonerate, salah satu atol terbesar di dunia,
-ada di Kepulauan Selayar. Dari SunaRi, kami bisa bantu atur perjalananmu ke sana.
+ada di Kepulauan Selayar.
+Siang menjelajah lautnya, sore kembali ke SunaRi untuk menunggu senja.
 
 #TakaBonerate #Selayar #DiveIndonesia #PesonaSelayar #SunaRiSelayar
 ```
@@ -208,18 +210,20 @@ Tag orang yang ingin kamu ajak ke sini.
 #SenjaHariIni #SunaRiSelayar #Selayar #SunsetLovers
 ```
 
-**Hari 10 · Carousel · Pengalaman**
-*Visual:* tahapan Sunset Ritual: lonceng/tanda, kelapa muda, tamu berkumpul, matahari terbenam.
+**Hari 10 · Carousel (siap: `social/carousel/fs-1…6.png`) · Kamar (Keluarga)**
+*Visual:* room tour Family Superior Bungalow, 6 slide.
 ```
-Ritual kecil kami setiap sore: Sunset Ritual. 🥥
+Satu rumah, dua lantai, semua bersama. 👨‍👩‍👧‍👦🌴
 
-30 menit sebelum matahari terbenam,
-kami menyajikan kelapa muda untuk semua tamu di tepi pantai.
-Tanpa jadwal yang ketat, tanpa terburu-buru. Hanya duduk dan menunggu.
+Family Superior Bungalow muat untuk 6 orang,
+bahkan sampai 8 orang dengan tambahan 2 extra bed.
+Kamar utama di lantai bawah, empat kasur di lantai atas,
+dan teras pribadi yang luas untuk berkumpul sebelum senja. 🌅
 
-Gratis untuk semua tamu yang menginap.
+Geser untuk melihat ke dalam.
+Info & reservasi: WA 0821-8903-3044.
 
-#SunaRiSelayar #SenjaHariIni #Selayar #ResortIndonesia
+#SunaRiSelayar #LiburanKeluarga #FamilyTrip #Selayar #RoomTour
 ```
 
 **Hari 11 · Reels · Kamar**
@@ -236,13 +240,13 @@ Info & reservasi: WA 0821-8903-3044.
 ```
 
 **Hari 12 · Feed · Pesona Selayar (Kuliner)**
-*Visual:* ikan bakar segar dengan sambal dan nasi di meja kayu tepi pantai.
+*Visual:* ikan bakar dengan sambal dan nasi di meja restoran SunaRi.
 ```
-Ikan pagi tadi masih berenang di laut Selayar.
-Malam ini sudah jadi ikan bakar di mejamu. 🐟🔥
+Ikan bakar, sambal, dan nasi hangat. 🐟🔥
+Rasa sederhana yang paling pas dinikmati setelah seharian di pantai.
 
-Kami bekerja sama dengan nelayan lokal,
-jadi yang kamu santap selalu segar dan ikut menghidupi warga sekitar.
+Restoran SunaRi menyajikan ikan bakar dan seafood setiap hari.
+Mau makan malam saat senja? Pesan Senja Dinner H-1 via WhatsApp 0821-8903-3044.
 
 #KulinerSelayar #SunaRiSelayar #Selayar #SeafoodLovers
 ```
@@ -295,16 +299,19 @@ Di sini, kamu punya waktu untuk itu.
 #SenjaHariIni #SunaRiSelayar #SlowTravel #Selayar
 ```
 
-**Hari 17 · Reels · Pengalaman**
-*Visual:* perahu nelayan berlayar saat golden hour, tamu duduk di haluan.
+**Hari 17 · Carousel (siap: `social/carousel/vs-1…6.png`) · Kamar**
+*Visual:* room tour VIP Superior Bungalow, 6 slide (bathtub di bawah atap kaca sebagai sorotan).
 ```
-Sunset Boat: berlayar dengan perahu nelayan
-saat langit Selayar berubah oranye. ⛵🌅
+Berendam di bawah langit terbuka. 🛁🌴
 
-Durasi ± 1,5 jam, termasuk minuman hangat.
-Bisa dipesan saat check-in atau via WhatsApp.
+VIP Superior Bungalow: rumah kayu A-frame dengan loteng,
+teras pribadi yang teduh, dan kamar mandi semi-outdoor
+dengan bathtub di bawah atap kaca. Pohon kelapa tepat di atas kepala.
 
-#SunaRiSelayar #SunsetBoat #Selayar #PesonaSelayar
+Geser untuk melihat ke dalam.
+Info & reservasi: WA 0821-8903-3044.
+
+#SunaRiSelayar #RoomTour #Selayar #BathtubWithAView #ResortIndonesia
 ```
 
 **Hari 18 · Carousel (siap: `social/carousel/vp-1…6.png`) · Kamar & Fasilitas**
@@ -369,9 +376,9 @@ kami akan repost favorit setiap minggu.
 ```
 Staycation Senja: 2 malam, 2 kali senja. 🌅
 
-✔️ Superior Bungalow kayu A-frame dengan teras pribadi
-✔️ Senja Dinner ikan bakar untuk 2 orang
-✔️ Kelapa muda setiap sore
+✔️ Superior Bungalow kayu A-frame
+✔️ Senja Dinner ikan bakar & seafood untuk 2 orang
+✔️ Teras pribadi untuk menunggu senja
 
 Info paket & ketersediaan kamar via WhatsApp.
 Reservasi: WA 0821-8903-3044, link di bio.
@@ -396,9 +403,9 @@ Senja hari ini: [jam] WITA.
 Pertanyaan yang paling sering kami terima 💬
 
 • Jam check-in/check-out? [14.00 / 12.00 WITA]
-• Ada penjemputan dari bandara/pelabuhan? [Ya, dengan biaya tambahan]
-• Ramah anak? [Ya, pantai kami landai]
-• Bisa bantu atur trip ke Taka Bonerate? Bisa!
+• Ada antar-jemput dari bandara/pelabuhan? Ada, dengan biaya tambahan.
+• Ada restoran? Ada. Senja Dinner ikan bakar & seafood bisa dipesan H-1.
+• Cocok untuk keluarga? Ada Family Superior Bungalow untuk 6 orang (maks. 8 dengan extra bed).
 
 Ada pertanyaan lain? Tanya di komentar atau DM.
 
@@ -406,11 +413,11 @@ Ada pertanyaan lain? Tanya di komentar atau DM.
 ```
 
 **Hari 25 · Feed · Pengalaman**
-*Visual:* meja makan di atas pasir dengan lentera saat senja.
+*Visual:* meja makan di restoran SunaRi dengan langit senja di latar belakang.
 ```
 Makan malam dengan pemandangan yang terus berubah warna. 🍽️🌅
 
-Senja Dinner di SunaRi: meja di atas pasir,
+Senja Dinner di SunaRi:
 ikan bakar dan seafood segar, dengan langit senja sebagai dekorasinya.
 
 Cocok untuk anniversary, lamaran, atau sekadar merayakan hari biasa.
@@ -444,19 +451,19 @@ Semoga kamu juga bisa menutup hari ini dengan tenang.
 #SenjaHariIni #SunaRiSelayar #Selayar
 ```
 
-**Hari 28 · Feed · Promo (Sunset Guarantee)**
+**Hari 28 · Carousel · Info (Antar-jemput)**
+*Visual:* 3 slide: bandara/pelabuhan → perjalanan menyusuri jalan poros Benteng–Appatana → tiba di SunaRi.
 ```
-Kami percaya diri dengan senja di Selayar.
-Karena itu, kami membuat Sunset Guarantee. 🌅
+Dari bandara atau pelabuhan, langsung ke tepi pantai. 🚐🌴
 
-Jika selama menginap kamu tidak sempat melihat matahari terbenam karena mendung,
-kamu mendapat voucher Senja Dinner untuk kunjungan berikutnya.
+Tidak perlu repot mencari transportasi di Selayar.
+SunaRi menyediakan antar-jemput dari Bandara H. Aroeppala
+maupun pelabuhan, dengan biaya tambahan.
 
-*Syarat & ketentuan berlaku. Tanya via WhatsApp.
+Info & pemesanan: WA 0821-8903-3044.
 
-#SunaRiSelayar #SunsetGuarantee #Selayar #SenjaHariIni
+#SunaRiSelayar #Selayar #InfoWisata #KepulauanSelayar
 ```
-> ⚠️ Posting hanya jika program ini sudah disetujui manajemen.
 
 ### PENUTUP BULAN
 
@@ -498,7 +505,7 @@ Sampai jumpa di tempat senja pulang. 🌅
 ## 5. Data yang Perlu Diisi
 - [x] Nomor WhatsApp & alamat
 - [ ] Username Instagram final
-- [ ] Kapasitas tamu tiap tipe kamar
-- [ ] Jam check-in/out, biaya penjemputan
-- [ ] Persetujuan program Sunset Guarantee
+- [ ] Kapasitas tamu Superior, VIP Superior, Standard, VIP Standard
+- [ ] Jam check-in/out (Hari 24)
+- [ ] Foto restoran & Senja Dinner (Hari 12, 25)
 - [ ] Nama & izin foto tim (Hari 15), izin repost tamu (Hari 21)

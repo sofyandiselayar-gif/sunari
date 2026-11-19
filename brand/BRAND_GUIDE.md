@@ -39,7 +39,7 @@ pengalaman, dengan suasana tropis yang hangat, segar, dan apa adanya.
 **Nilai inti:** Tenang · Hangat · Segar & Tropis · Lokal · Lestari
 
 **Kepribadian:** ceria tapi santai. Bayangkan teman asli pulau yang mengajak Anda duduk
-di pasir, minum kelapa muda, dan menunggu matahari tenggelam.
+di pasir, minum kopi, dan menunggu matahari tenggelam.
 
 ---
 
@@ -49,7 +49,7 @@ di pasir, minum kelapa muda, dan menunggu matahari tenggelam.
 |---|---|---|
 | Pasangan & honeymoon | Romantis, privat | "Senja untuk berdua." |
 | Keluarga | Aman, pantai landai, aktivitas | "Liburan yang ditutup tawa di tepi pantai." |
-| Penyelam & pencinta laut | Akses Taka Bonerate, snorkeling | "Siang di bawah laut, sore di bawah senja." |
+| Penyelam & pencinta laut | Dekat Taka Bonerate, snorkeling | "Siang di bawah laut, sore di bawah senja." |
 | Wisatawan lokal Sulsel (Makassar, dll.) | Escape akhir pekan | "Selayar lebih dekat dari yang kamu kira." |
 | Slow traveler / remote worker | Tenang, menginap lama | "Kerja secukupnya, senja sepenuhnya." |
 
@@ -139,7 +139,7 @@ Ukuran minimum di desain 1080px: teks isi 28px, label 18px (agar tetap terbaca d
 - Ambil saat **golden hour** (±60 menit sebelum matahari terbenam) dan siang cerah (laut toska).
 - Warna hangat, tidak oversaturated. Pantai putih, laut jernih, siluet daun kelapa.
 - Tampilkan orang yang benar-benar santai, bukan berpose kaku.
-- Rekam detail lokal: kelapa muda, perahu nelayan, ikan bakar, anak-anak bermain di pantai.
+- Rekam detail lokal: perahu nelayan di laut, ikan bakar, taman, anak-anak bermain di pantai.
 - Hindari: filter biru dingin, flash, tumpukan sampah atau kabel di frame.
 
 ### 4.5 Elemen Grafis & Prinsip Layout
@@ -175,11 +175,11 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 
 - Bahasa utama: **Indonesia**. Tambahkan 1 baris bahasa Inggris untuk wisatawan asing bila perlu.
 - Sapaan: "kamu" di media sosial, "Anda" di dokumen resmi dan email reservasi.
-- Emoji secukupnya: 🌅 🌴 🥥 🌊 (maksimal 3 per caption).
+- Emoji secukupnya: 🌅 🌴 🌊 🍽️ (maksimal 3 per caption).
 
 **Contoh caption**
 > 🌅 Senja hari ini di SunaRi: **18.12 WITA**.
-> Kursi di tepi pantai sudah menunggu, kelapa mudanya juga. 🥥
+> Teras sudah menunggu, langitnya sebentar lagi oranye. 🌴
 > *Where every day ends beautifully.*
 > #SunaRiSelayar #SenjaHariIni #Selayar
 
@@ -207,11 +207,13 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
   Kata kunci promosi: *turun tangga, langsung pasir*. Unit terdekat dengan laut; terasnya menghadap langsung ke arah matahari terbenam, jadi paling cocok untuk konten senja.
 
 **Pengalaman**
-- **Sunset Ritual**: 30 menit sebelum senja, tamu disuguhi kelapa muda di tepi pantai.
-- **Senja Dinner** ✅ *(tersedia)*: makan malam di tepi pantai saat senja. Menu: ikan bakar & seafood. Pemesanan H-1 via WhatsApp.
-- **Taka Bonerate Trip**: snorkeling/diving, kembali sebelum senja.
-- **Sunset Boat**: naik perahu nelayan saat golden hour.
-- **Senja Journal**: buku kecil di kamar untuk menulis cerita senja.
+*Hanya layanan yang benar-benar tersedia. Jangan promosikan layanan di luar daftar ini.*
+- **Restoran** ✅: ikan bakar & seafood.
+- **Senja Dinner** ✅: makan malam saat senja di restoran. Menu: ikan bakar & seafood. Pemesanan H-1 via WhatsApp.
+- **Antar-jemput bandara & pelabuhan** ✅: dengan biaya tambahan, dipesan via WhatsApp.
+
+*Tidak tersedia (jangan dipakai di materi): kelapa muda gratis/Sunset Ritual, Sunset Boat, paket trip Taka Bonerate,
+Senja Journal, Sunset Guarantee, klaim kerja sama nelayan.*
 
 ---
 
@@ -261,8 +263,6 @@ Folder `social/`:
 
 ### Ide kampanye peluncuran
 - **"365 Senja Selayar"**: satu video senja 15 detik setiap hari selama setahun.
-- **"Sunset Guarantee"**: jika mendung saat senja selama menginap, tamu mendapat voucher
-  Senja Dinner untuk kunjungan berikutnya.
 - **Kolaborasi** dengan kreator travel Makassar/Sulsel dan operator selam Taka Bonerate.
 
 ---
@@ -283,7 +283,7 @@ Folder `social/`:
 |---|---|
 | **Alamat** | Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kecamatan Bontosikuyu, Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia |
 | **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
-| **Fasilitas umum** | Restoran, Senja Dinner (makan malam di tepi pantai saat senja), terkonfirmasi |
+| **Fasilitas umum** | Restoran, Senja Dinner (pesan H-1), antar-jemput bandara/pelabuhan (berbayar) |
 | **WhatsApp reservasi** | +62 821-8903-3044 (Sofyan) |
 | **Link WA langsung** | `https://wa.me/6282189033044` |
 
