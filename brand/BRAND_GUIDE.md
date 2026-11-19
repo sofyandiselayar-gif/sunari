@@ -64,14 +64,14 @@ File di folder `assets/`:
 | File | Warna | Pemakaian |
 |---|---|---|
 | `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, putih, langit senja bagian atas yang terang |
-| `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Latar gelap: Driftwood Deep, foto (dengan bayangan/kotak gelap di belakang logo) |
+| `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Cadangan untuk foto yang sangat gelap |
 | `original/logo-sunari-original.jpg` | Warna lama | **Arsip saja**, tidak dipakai lagi |
 
 **Aturan**
 - Hanya pakai satu warna per logo: Driftwood **atau** Shell Cream. Jangan mewarnai bagian logo dengan warna berbeda.
 - Ruang aman: kosongkan area minimal setinggi huruf "S" di sekeliling logo.
 - Ukuran minimum: lebar 200px di digital. Di bawah itu teks "Beach Resort Selayar" sulit dibaca.
-- Di atas foto yang ramai, letakkan logo krem di atas kotak Driftwood Deep semi-transparan.
+- Di atas foto atau latar Sandy Shore, letakkan logo Driftwood di atas **kotak Shell Cream** semi-transparan (sudut membulat).
 - Jangan taruh logo Driftwood di atas Sandy Shore, Coral Glow, Golden Hour, atau Sunset Pink karena kontrasnya terlalu rendah.
 - Jangan memutar, merenggangkan, atau memberi efek bayangan.
 - Untuk avatar/foto profil, potong menjadi **"SunaRi" + ujung daun** berwarna Driftwood di atas latar
@@ -96,15 +96,16 @@ Referensi: `brand/palette-reference.jpg`.
 | Nama | HEX | Peran |
 |---|---|---|
 | **Shell Cream** | `#FBF4EC` | Latar terang utama (warna kertas pada referensi) |
-| **Driftwood Deep** | `#5A3E31` | Teks utama & latar gelap. Versi gelap Driftwood, karena palet utama tidak punya warna yang cukup gelap untuk teks |
+| **Driftwood Deep** | `#5A3E31` | **Khusus teks** (judul & isi). Versi gelap Driftwood, karena palet utama tidak punya warna yang cukup gelap untuk teks. Tidak dipakai sebagai latar/pita |
 
 **Gradasi khas** *(langit senja)*: `linear-gradient(180deg, #FBF4EC 0%, #F7A7A1 48%, #FF8A5C 100%)`
 
 **Proporsi**
-- 55% Shell Cream / Sandy Shore (latar)
-- 25% Driftwood Deep (teks & blok gelap)
-- 10% Coral Glow (aksen utama)
+- 50% Shell Cream (latar terang)
+- 30% **Sandy Shore** (pita teks di bawah foto, bar CTA, latar kutipan, area info)
+- 10% Coral Glow (aksen utama: tombol, matahari, garis aksen)
 - 10% Golden Hour, Sunset Pink, Ocean Breeze, Driftwood (aksen pendukung)
+- Teks selalu Driftwood Deep. Tidak ada pita/blok berwarna cokelat gelap.
 
 **Kombinasi yang aman dibaca** (sudah dicek rasio kontrasnya)
 

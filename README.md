@@ -13,7 +13,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 
 ## Palet
 *Sunset Beach*: `#F7A7A1` Sunset Pink · `#FF8A5C` Coral Glow · `#FDB15D` Golden Hour · `#7BA7B6` Ocean Breeze · `#E6C89B` Sandy Shore · `#A67C64` Driftwood
-Pendukung: `#FBF4EC` Shell Cream · `#5A3E31` Driftwood Deep. Logo satu warna: Driftwood (latar terang) / Shell Cream (latar gelap).
+Pendukung: `#FBF4EC` Shell Cream · `#5A3E31` Driftwood Deep. Pita & bar memakai Sandy Shore, teks Driftwood Deep. Logo satu warna: Driftwood.
 
 ## Membuat ulang template media sosial
 Edit teks (jam senja, teks, dll.) di `social/social-kit.html`, lalu jalankan:
