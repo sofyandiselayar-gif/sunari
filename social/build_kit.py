@@ -221,8 +221,36 @@ parts.append(f'''<div class="tpl story on-photo" id="story-senja">
     <div class="time" style="font-size:190px;margin-top:10px;color:var(--cream)">{SENJA["time"]}</div>
     <div class="caps" style="font-size:26px;color:var(--cream)">W I T A</div>
   </div>
-  <div class="caps center" style="position:absolute;left:50%;transform:translateX(-50%);bottom:200px;border:1px dashed rgba(251,244,236,.7);padding:28px 56px;font-size:20px;white-space:nowrap;color:var(--cream)">Tempel stiker / link di sini</div>
 </div>''')
+# ---- 10-day story plan (20–29 Nov 2026)
+STORIES = [
+  ("sd-01","Jumat, 20 Nov","17.57","senja/13-tamu-bertopi-story.jpg","50% 50%","Senja hari ini","Kursi sudah<br>menunggu.","Matahari terbenam pukul 17.57 WITA di Pantai Sunari.","Stiker: Hitung mundur 17.57"),
+  ("sd-02","Sabtu, 21 Nov","17.57","senja/19-pantai-di-bawah-daun.jpg","50% 60%","Pilih satu","Tim <i>pantai</i><br>atau tim gunung?","Akhir pekan ini, kamu mau ke mana?","Stiker: Polling Pantai / Gunung"),
+  ("sd-03","Minggu, 22 Nov","17.58","vip-superior-bungalow/06-bathtub-semi-outdoor.jpg","50% 50%","Tebak kamarnya","Berendam di<br>bawah <i>atap kaca.</i>","Satu-satunya kamar kami dengan bathtub & air panas.","Stiker: Kuis 4 pilihan kamar"),
+  ("sd-04","Senin, 23 Nov","17.58","senja/15-dua-kayak-oranye.jpg","50% 60%","Sewa kayak","Mendayung<br>menuju <i>senja.</i>","Single Rp 50.000 · Double Rp 100.000","Stiker: Tautan WhatsApp"),
+  ("sd-05","Selasa, 24 Nov","17.58","senja/20-payung-lampu-gantung.jpg","50% 60%","Bajoy Beach Resto","Ikan bakar &amp;<br><i>langit oranye.</i>","Buka 07.00–21.00 WITA. Tamu luar s.d. 19.00.","Stiker: Lokasi SunaRi"),
+  ("sd-06","Rabu, 25 Nov","17.59","senja/08-meja-di-bawah-pohon.jpg","50% 55%","Tanya kami","Mau tahu apa<br>tentang <i>SunaRi?</i>","Kamar, sarapan, antar-jemput, kayak. Tanya saja.","Stiker: Kotak pertanyaan"),
+  ("sd-07","Kamis, 26 Nov","17.59","family-superior-bungalow/01-eksterior-taman.jpg","55% 50%","Family Superior","Satu rumah,<br><i>semua bersama.</i>","Untuk 6 orang (maks. 8) · 2 lantai · termasuk sarapan","Stiker: Slider emoji keluarga"),
+  ("sd-08","Jumat, 27 Nov","18.00","senja/16-perahu-nelayan.jpg","50% 60%","Antar-jemput","Dari bandara,<br>langsung ke <i>pantai.</i>","Antar-jemput bandara &amp; pelabuhan (biaya tambahan).","Stiker: Tautan WhatsApp"),
+  ("sd-09","Sabtu, 28 Nov","18.00","senja/05-tamu-di-meja.jpg","50% 55%","Senja Dinner","Makan malam<br>saat <i>senja.</i>","Ikan bakar &amp; seafood. Pesan H-1 via WhatsApp.","Stiker: Tautan WhatsApp"),
+  ("sd-10","Minggu, 29 Nov","18.00","senja/18-kayak-berdua-pelampung.jpg","50% 60%","Sampai jumpa","Setiap hari<br>berakhir <i>indah.</i>","Senja hari ini 18.00 WITA. Kapan kamu ke sini?","Stiker: Hitung mundur / Polling"),
+]
+for sid, day, t, photo, pos, kicker, head, body, sticker in STORIES:
+    parts.append(f"""<div class="tpl story on-photo" id="{sid}">
+  <img class="bleed" src="../assets/photos/{photo}" style="object-position:{pos}" alt="">
+  <div class="veil-top" style="height:{'62%;background:linear-gradient(180deg,rgba(40,26,20,.82),rgba(40,26,20,.55) 55%,rgba(40,26,20,0))' if sid in ('sd-03','sd-07') else '52%'}"></div>
+  <div class="veil-bot" style="height:40%;background:linear-gradient(0deg,rgba(40,26,20,.72),rgba(40,26,20,0))"></div>
+  <img src="{LOGO_C}" style="position:absolute;left:50%;transform:translateX(-50%);top:120px;width:260px" alt="">
+  <div style="position:absolute;left:90px;right:90px;top:360px;text-shadow:0 2px 20px rgba(30,18,12,.45)">
+    <div class="caps" style="font-size:24px;color:var(--cream)">{kicker}</div>
+    <div class="pf" style="font-size:104px;line-height:1.06;margin-top:22px;color:var(--cream)">{head}</div>
+    <div style="font-size:32px;line-height:1.5;margin-top:30px;color:var(--cream);max-width:820px">{body}</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:150px;display:flex;justify-content:space-between;color:var(--cream)">
+    <span class="caps" style="font-size:20px;color:var(--cream)">{day}</span>
+    <span class="caps" style="font-size:20px;color:var(--cream)">Senja {t} WITA</span>
+  </div>
+</div>""")
 # carousels
 for r in ROOMS:
     n = len(r["slides"]) + 2

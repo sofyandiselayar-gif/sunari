@@ -10,6 +10,7 @@
 | `09_Highlight_Cover/` | 8 cover highlight (1080 × 1920) + pratinjau | Sampul highlight Instagram |
 | `DESKRIPSI_OTA_GOOGLE.md` | Deskripsi properti & kamar (ID/EN) untuk Traveloka, Booking.com, Agoda, Google | Copy-paste ke OTA |
 | `CAPTION_REELS_TIKTOK.md` | Template caption Reels & TikTok per jenis konten | Copy-paste saat posting video |
+| `RENCANA_STORY_10_HARI.md` | Jadwal story 20–29 Nov + isi stiker (desain di `PNG/10_Story_10_Hari`) | Panduan posting story |
 | `CAPTION_30_HARI.md` | Bio + 30 caption bulan pertama | Copy-paste saat posting |
 | `preview-feed-instagram.png` | Contoh tampilan profil | Referensi urutan posting |
 

@@ -9,7 +9,7 @@ const path = require('path');
   await page.waitForLoadState('networkidle');
   await page.evaluate(() => document.fonts.ready);
   for (const id of await page.$$eval('.tpl', els => els.map(e => e.id))) {
-    const dir = /^(sb|st|vp|vs|fs)-/.test(id) ? path.join(__dirname, 'carousel') : __dirname;
+    const dir = /^(sb|st|vp|vs|fs)-/.test(id) ? path.join(__dirname, 'carousel') : /^sd-/.test(id) ? path.join(__dirname, 'stories') : __dirname;
     await page.locator('#' + id).screenshot({ path: path.join(dir, id + '.png') });
     console.log('saved', path.relative(__dirname, path.join(dir, id + '.png')));
   }
