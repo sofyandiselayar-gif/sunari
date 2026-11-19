@@ -5,7 +5,7 @@ Edit the CONTENT section, then run:  python3 social/build_kit.py && node social/
 import html, pathlib
 HERE = pathlib.Path(__file__).parent
 WA = "0821-8903-3044"
-SENJA = dict(time="17.57", date="Kamis, 19 November 2026", place="Pantai Tile-Tile",
+SENJA = dict(time="17.57", date="Kamis, 19 November 2026", place="Pantai Sunari",
              photo="senja/19-pantai-di-bawah-daun.jpg", story_photo="senja/12-kayak-matahari-merah-story.jpg")
 
 # ---------------------------------------------------------------- CONTENT

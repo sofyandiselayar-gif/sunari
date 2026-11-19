@@ -27,7 +27,7 @@
 **Opsi B: Informatif**
 ```
 Resort tepi pantai menghadap senja 🌅
-📍 Pantai Tile-Tile, Bontosikuyu, Selayar
+📍 Pantai Sunari, Bontosikuyu, Selayar
 🚐 Antar-jemput bandara & pelabuhan
 📩 WA 0821-8903-3044 ⬇️
 ```
@@ -288,15 +288,18 @@ Geser untuk berkenalan dengan [nama], [nama], dan [nama].
 #SunaRiSelayar #Selayar #BehindTheScenes #OrangSelayar
 ```
 
-**Hari 16 · Feed · Senja**
+**Hari 16 · Reels · Pengalaman (Kayak)**
+*Visual:* `senja/09-kayak-pasangan.jpg`, `senja/18-kayak-berdua-pelampung.jpg`, `senja/03-kayak-matahari-merah.jpg`; video mendayung menuju matahari.
 ```
-Hari ini matahari terbenam pukul [jam] WITA,
-satu menit lebih [cepat/lambat] dari kemarin. 🌅
+Mendayung pelan, menuju matahari yang turun. 🛶🌅
 
-Hal kecil seperti ini baru terasa kalau kamu sempat memperhatikan.
-Di sini, kamu punya waktu untuk itu.
+Air di Pantai Sunari tenang dan landai,
+pas untuk naik kayak sendiri atau berdua sambil menunggu senja.
 
-#SenjaHariIni #SunaRiSelayar #SlowTravel #Selayar
+Sewa kayak single & double tersedia di pantai.
+Info: WA 0821-8903-3044.
+
+#SunaRiSelayar #KayakSaatSenja #PantaiSunari #Selayar #SunsetLovers
 ```
 
 **Hari 17 · Carousel (siap: `social/carousel/vs-1…6.png`) · Kamar**
@@ -320,7 +323,7 @@ Info & reservasi: WA 0821-8903-3044.
 Turun tangga, langsung pasir. 🌊
 
 VIP Standard Bungalow adalah rumah panggung beratap rumbia
-yang berdiri tepat di bibir pantai Tile-Tile.
+yang berdiri tepat di bibir Pantai Sunari.
 Dari teras pribadinya, kamu bisa melihat perahu nelayan lewat
 dan menyaksikan matahari terbenam tepat di depan teras. 🌅
 
@@ -405,6 +408,7 @@ Pertanyaan yang paling sering kami terima 💬
 • Jam check-in/check-out? Check-in 14.00, check-out 12.00 WITA.
 • Ada Wi-Fi? Ada.
 • Aman untuk anak? Ya, pantainya landai dan aman untuk anak-anak.
+• Ada kegiatan di pantai? Ada sewa kayak single & double.
 • Ada antar-jemput dari bandara/pelabuhan? Ada, dengan biaya tambahan.
 • Ada restoran? Ada. Senja Dinner ikan bakar & seafood bisa dipesan H-1.
 • Cocok untuk keluarga? Ada Family Superior Bungalow untuk 6 orang (maks. 8 dengan extra bed).
@@ -489,7 +493,7 @@ Senja di Selayar tetap datang setiap hari,
 dan kursimu di tepi pantai sudah kami siapkan.
 
 📩 Reservasi: WA 0821-8903-3044 (Sofyan)
-📍 Pantai Tile-Tile, Bontosikuyu, Selayar
+📍 Pantai Sunari, Bontosikuyu, Selayar
 Sampai jumpa di tempat senja pulang. 🌅
 
 #SunaRiSelayar #Selayar #SenjaHariIni #PesonaSelayar #WisataSulsel

@@ -212,8 +212,11 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 *Hanya layanan yang benar-benar tersedia. Jangan promosikan layanan di luar daftar ini.*
 - **Bajoy Beach Resto** ✅: ikan bakar & seafood. Buka 07.00–21.00 WITA. Tamu tidak menginap boleh berkunjung sampai 19.00.
 - **Wi-Fi** ✅ di area resort.
+- **Sewa kayak** ✅: single Rp 50.000, double Rp 100.000. *Harga hanya untuk informasi internal & jawaban WhatsApp; di media sosial cukup tulis "sewa kayak tersedia".*
 - **Senja Dinner** ✅: makan malam saat senja di restoran. Menu: ikan bakar & seafood. Pemesanan H-1 via WhatsApp.
 - **Antar-jemput bandara & pelabuhan** ✅: dengan biaya tambahan, dipesan via WhatsApp.
+
+*Penulisan nama pantai: selalu "Pantai Sunari".*
 
 *Tidak tersedia (jangan dipakai di materi): kelapa muda gratis/Sunset Ritual, Sunset Boat, paket trip Taka Bonerate,
 Senja Journal, Sunset Guarantee, klaim kerja sama nelayan.*
@@ -289,7 +292,7 @@ Folder `social/`:
 | **Instagram** | @sunaribeachresortselayar |
 | **Check-in / check-out** | 14.00 / 12.00 WITA |
 | **Fasilitas umum** | Bajoy Beach Resto (07.00–21.00; non-tamu s.d. 19.00), Senja Dinner (pesan H-1), Wi-Fi, antar-jemput bandara/pelabuhan (berbayar) |
-| **Pantai** | Landai dan aman untuk anak-anak |
+| **Pantai** | **Pantai Sunari**: landai dan aman untuk anak-anak (alamat resmi tetap Dusun Tile-Tile Utara) |
 | **Kapasitas kamar** | Standard, VIP Standard, Superior, VIP Superior: 2 orang (maks. 3 dengan 1 extra bed) · Family Superior: 6 orang (maks. 8 dengan 2 extra bed) |
 | **WhatsApp reservasi** | +62 821-8903-3044 (Sofyan) |
 | **Link WA langsung** | `https://wa.me/6282189033044` |
@@ -300,5 +303,4 @@ Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 Arahkan calon tamu untuk menanyakan harga dan ketersediaan via WhatsApp.
 
 ## 10. Yang Perlu Dikonfirmasi
-- Status kayak di pantai (fasilitas resort atau bukan) sebelum dipromosikan
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain
