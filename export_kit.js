@@ -52,6 +52,7 @@ const GROUPS = {
   fs.copyFileSync(path.join(ROOT, 'brand/brand-board.png'), path.join(ex, 'brand-board.png'));
   fs.copyFileSync(path.join(ROOT, 'brand/BRAND_GUIDE.md'), path.join(ex, 'BRAND_GUIDE.md'));
   fs.copyFileSync(path.join(ROOT, 'social/INSTAGRAM_BULAN_1.md'), path.join(OUT, 'CAPTION_30_HARI.md'));
+  fs.copyFileSync(path.join(ROOT, 'ota/DESKRIPSI_OTA_GOOGLE.md'), path.join(OUT, 'DESKRIPSI_OTA_GOOGLE.md'));
   fs.copyFileSync(path.join(ROOT, 'social/grid-preview.png'), path.join(OUT, 'preview-feed-instagram.png'));
   const hl = path.join(OUT, '09_Highlight_Cover'); fs.mkdirSync(hl, { recursive: true });
   for (const f of fs.readdirSync(path.join(ROOT, 'social/highlights'))) fs.copyFileSync(path.join(ROOT, 'social/highlights', f), path.join(hl, f));
