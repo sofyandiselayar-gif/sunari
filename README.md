@@ -7,6 +7,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `brand/BRAND_GUIDE.md` | Panduan brand: cerita, positioning, warna, tipografi, tone, strategi media sosial |
 | `brand/palette-reference.jpg` | Referensi palet warna |
 | `assets/` | Logo asli, versi transparan (latar terang), dan versi terang (latar gelap) |
+| `social/INSTAGRAM_BULAN_1.md` | Bio Instagram, highlight, dan 30 caption bulan pertama |
 | `social/` | Template Instagram (feed 1080×1350, story 1080×1920) beserta sumber HTML-nya |
 
 ## Palet
