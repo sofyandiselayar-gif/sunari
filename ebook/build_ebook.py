@@ -80,8 +80,8 @@ def ul(items, cls=""): return f'<ul class="l {cls}">' + "".join(f"<li>{x}</li>" 
 def img(path, h, pos="50% 50%", extra=""): return f'<img class="img" src="{ph(path)}" style="height:{h}px;object-position:{pos};{extra}" alt="">'
 
 # =============================================================== COVER
-add(f'''<img src="{ph("senja/29-dua-kursi-menghadap-senja.jpg")}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%" alt="">
-<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,14,.55) 0%,rgba(30,20,14,.05) 26%,rgba(30,20,14,.08) 50%,rgba(30,20,14,.85) 100%)"></div>
+add(f'''<img src="{I}cover__pohon-senja.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%" alt="">
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 55%,rgba(0,0,0,.62) 100%)"></div>
 <img src="../assets/logo-sunari-color-dark.png" style="position:absolute;left:50%;transform:translateX(-50%);top:64px;width:270px" alt="">
 <div style="position:absolute;left:64px;right:64px;bottom:96px;color:#FBF4EC;text-align:center">
   <div style="font-size:11px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:#FDB15D">Panduan Lengkap Tamu · Edisi 2026</div>
