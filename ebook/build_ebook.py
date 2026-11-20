@@ -59,6 +59,8 @@ ul.l.cols{columns:2;column-gap:22px} ul.l.cols3{columns:3;column-gap:18px} ul.l 
 .toc .dots{flex:1;border-bottom:1px dotted rgba(138,95,72,.5);transform:translateY(-4px)}
 .toc .pg{font-family:'Playfair Display',serif;font-size:15px}
 .menu-col h3{margin-top:14px} .menu-col table{font-size:11px} .menu-col td{padding:5px 4px}
+.cover > div{text-shadow:0 2px 14px rgba(0,0,0,.65),0 1px 3px rgba(0,0,0,.5)}
+.cover > img[src*='logo']{filter:drop-shadow(0 2px 10px rgba(0,0,0,.45))}
 @page{size:210mm 297mm;margin:0} @media print{body{background:none}.page{margin:0}}
 """
 SUN = '''<svg viewBox="0 0 200 200" width="{w}" height="{w}" style="display:block;{st}"><defs><linearGradient id="sg{u}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDB15D"/><stop offset="1" stop-color="#FF8A5C"/></linearGradient>
@@ -81,7 +83,6 @@ def img(path, h, pos="50% 50%", extra=""): return f'<img class="img" src="{ph(pa
 
 # =============================================================== COVER
 add(f'''<img src="{I}cover__kayak-senja.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%" alt="">
-<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 55%,rgba(0,0,0,.62) 100%)"></div>
 <img src="../assets/logo-sunari-color-dark.png" style="position:absolute;left:50%;transform:translateX(-50%);top:64px;width:270px" alt="">
 <div style="position:absolute;left:64px;right:64px;bottom:96px;color:#FBF4EC;text-align:center">
   <div style="font-size:11px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:#FDB15D">Panduan Lengkap Tamu · Edisi 2026</div>
@@ -344,12 +345,11 @@ add(f'''{head("08", "Reservasi", "Cara <i>reservasi</i>", "Cukup 3 langkah lewat
 </div>''', toc=("Reservasi & FAQ", "3 langkah reservasi & tanya-jawab"))
 
 # =============================================================== BACK COVER
-add(f'''<img src="{ph("senja/28-matahari-di-bawah-daun.jpg")}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%" alt="">
-<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,14,.35),rgba(30,20,14,.78))"></div>
-<div style="position:absolute;left:70px;right:70px;top:50%;transform:translateY(-50%);text-align:center;color:#FBF4EC">
-  <img src="../assets/logo-sunari-color-dark.png" style="width:300px" alt="">
+add(f'''<img src="{I}cover__belakang-senja.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%" alt="">
+<img src="../assets/logo-sunari-color-dark.png" style="position:absolute;left:50%;transform:translateX(-50%);top:70px;width:270px" alt="">
+<div style="position:absolute;left:70px;right:70px;bottom:60px;text-align:center;color:#FBF4EC">
   <div style="font-family:'Playfair Display',serif;font-size:42px;line-height:1.15;margin-top:26px">Sampai jumpa<br>di <i style="color:#FDB15D">Pantai Sunari.</i></div>
-  <div style="margin-top:34px;padding:22px 26px;border-radius:20px;background:rgba(251,244,236,.95);color:#45301F;text-align:left;font-size:12.5px;line-height:1.7">
+  <div style="margin-top:34px;padding:22px 26px;border-radius:20px;background:rgba(251,244,236,.95);color:#45301F;text-align:left;font-size:12.5px;line-height:1.7;text-shadow:none">
     <div class="caps">Reservasi &amp; informasi</div>
     <div style="font-family:'Playfair Display',serif;font-size:26px;margin-top:4px">WhatsApp {WA}</div>
     <div>Instagram <b>{IG}</b></div>
