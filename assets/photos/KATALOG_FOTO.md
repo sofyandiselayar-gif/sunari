@@ -53,15 +53,15 @@ Tambahan 20 Nov 2026:
 | `aktivitas/05-ayunan-raksasa-senja.jpg` | Siluet tamu di ayunan raksasa, matahari di cakrawala (foto baru) | ✅ | Highlight "Ayunan Raksasa", Reels (gratis) |
 | `aktivitas/04-perahu-wisata.jpg` | Perahu wisata "Selayar Traveling" | 👤 ❓ | Perahu milik operator lain; jangan diklaim sebagai layanan SunaRi tanpa konfirmasi kerja sama |
 
-## Tur Pulau Gusung: `gusung/` (6 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Gusung: `gusung/` (6 foto milik SunaRi, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-tamu-dan-anak-lokal-pantai` | Tamu bersama anak-anak lokal di pantai pasir putih | 👤 **ada anak-anak**: wajib izin orang tua | Konten "warga & tamu" (setelah izin) |
 | `02-makan-siang-lunchbox` | Pasangan makan siang lunchbox di meja kayu, Gua Balojaha | 👤 | Bukti "lunchbox termasuk" (dengan izin) |
 | `03-tamu-di-atap-kapal` | Tamu di atap kapal, kru menyiapkan kapal | 👤 ⚠️ kapal bertuliskan "Selayar Traveling" (operator lain) | Hanya jika kapal ini memang mitra resmi SunaRi |
-| `04-udara-teluk-dan-terumbu` | Foto udara teluk, pantai putih & terumbu karang | ⚠️ resolusi kecil (821 px) ❓ sumber | Story saja; pastikan foto milik sendiri |
-| `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) ❓ sumber | Story saja; pastikan sumbernya |
-| `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) ❓ sumber | Story saja; pastikan sumbernya |
+| `04-udara-teluk-dan-terumbu` | Foto udara teluk, pantai putih & terumbu karang | ⚠️ resolusi kecil (821 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
+| `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
+| `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
 ## Tur Pulau Bahuluang: `bahuluang/` (17 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |

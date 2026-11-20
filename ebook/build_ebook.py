@@ -12,53 +12,54 @@ def rp(v): return "Rp " + f"{v:,}".replace(",", ".")
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">'
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#d9d2c8;font-family:Montserrat,sans-serif;color:#45301F;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+body{background:#d9d2c8;font-family:Montserrat,sans-serif;color:#3B2819;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
 .page{width:794px;height:1123px;background:#FBF4EC;position:relative;overflow:hidden;margin:20px auto;padding:58px 60px 86px;page-break-after:always}
 .run{position:absolute;left:60px;right:60px;bottom:34px;display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid rgba(138,95,72,.35);
-  font-size:9px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#8A5F48}
+  font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#8A5F48}
 .run b{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:0;color:#45301F;font-weight:500}
-.sec{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#8A5F48;display:flex;align-items:center;gap:12px}
+.sec{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#7A5039;display:flex;align-items:center;gap:12px}
 .sec .n{color:#E07A4B}
 .sec::after{content:"";flex:1;height:1px;background:rgba(138,95,72,.35)}
 h1{font-family:'Playfair Display',serif;font-weight:500;font-size:40px;line-height:1.1;margin-top:12px}
-h1 i,h2 i,h3 i{color:#A67C64;font-style:italic}
-h2{font-family:'Playfair Display',serif;font-weight:500;font-size:24px;line-height:1.2;margin-top:22px}
-h3{font-family:'Playfair Display',serif;font-weight:500;font-size:18px;line-height:1.25}
-.lead{font-size:13.5px;line-height:1.65;margin-top:12px;color:rgba(69,48,31,.88)}
-p.t{font-size:12px;line-height:1.65;margin-top:8px;color:rgba(69,48,31,.88)}
-.caps{font-size:9.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#8A5F48}
+h1 i,h2 i,h3 i{color:#9A6A4F;font-style:italic}
+h2{font-family:'Playfair Display',serif;font-weight:500;font-size:25px;line-height:1.2;margin-top:22px}
+h3{font-family:'Playfair Display',serif;font-weight:500;font-size:19px;line-height:1.25}
+.lead{font-size:15px;line-height:1.6;margin-top:12px;color:#3B2819}
+p.t{font-size:13.5px;line-height:1.6;margin-top:8px;color:#3B2819}
+.caps{font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#7A5039}
 .img{width:100%;object-fit:cover;border-radius:16px;display:block}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chip{font-size:10.5px;font-weight:600;padding:6px 12px;border-radius:20px;background:rgba(230,200,155,.32);color:#45301F}
+.chip{font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;background:rgba(230,200,155,.32);color:#45301F}
 .chip b{color:#E07A4B;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:11.5px;margin-top:10px}
-th{font-size:8.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#8A5F48;text-align:left;padding:7px 6px;border-bottom:1px solid rgba(138,95,72,.55)}
-td{padding:7px 6px;border-bottom:1px solid rgba(138,95,72,.2);vertical-align:top;line-height:1.4}
-td.r,th.r{text-align:right;white-space:nowrap} td.b{font-weight:600} td.hi{font-weight:700;color:#C0592C} td.t{white-space:nowrap;font-weight:700;color:#8A5F48;width:92px}
-ul.l{list-style:none;font-size:11.5px;line-height:1.5;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+th{font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A5039;text-align:left;padding:7px 6px;border-bottom:1px solid rgba(138,95,72,.55)}
+td{padding:6.5px 6px;border-bottom:1px solid rgba(138,95,72,.25);vertical-align:top;line-height:1.4}
+td.r,th.r{text-align:right;white-space:nowrap} td.b{font-weight:600} td.hi{font-weight:700;color:#C0592C} td.t{white-space:nowrap;font-weight:700;color:#7A5039;width:104px}
+ul.l{list-style:none;font-size:13px;line-height:1.45;margin-top:6px}
 ul.l li{padding:2.5px 0 2.5px 16px;position:relative}
 ul.l li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:#E07A4B}
 ul.l.no li::before{background:none;content:"–";top:2px;color:#8A5F48;font-weight:700}
 ul.l.cols{columns:2;column-gap:22px} ul.l.cols3{columns:3;column-gap:18px} ul.l li{break-inside:avoid}
 .card{border-radius:16px;background:#FFFDF9;padding:16px 18px;box-shadow:0 1px 0 rgba(255,255,255,.8),0 6px 18px rgba(90,62,49,.07)}
-.note{border-left:3px solid #FDB15D;padding:8px 14px;font-size:11.5px;line-height:1.55;margin-top:12px;background:rgba(253,177,93,.08);border-radius:0 10px 10px 0}
+.note{border-left:3px solid #FDB15D;padding:9px 14px;font-size:13px;line-height:1.55;margin-top:12px;background:rgba(253,177,93,.08);border-radius:0 10px 10px 0}
 .note b{color:#45301F}
-.kv{display:grid;grid-template-columns:150px 1fr;font-size:12px;line-height:1.5}
+.kv{display:grid;grid-template-columns:160px 1fr;font-size:13.5px;line-height:1.5}
 .kv div{padding:9px 0;border-bottom:1px solid rgba(138,95,72,.2)}
-.kv div:nth-child(odd){font-weight:700;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#8A5F48;padding-top:11px}
+.kv div:nth-child(odd){font-weight:700;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#7A5039;padding-top:11px}
 .num{display:inline-flex;width:24px;height:24px;border-radius:50%;color:#fff;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;flex:none}
-.step{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(138,95,72,.2);font-size:11.5px;line-height:1.45}
+.step{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(138,95,72,.25);font-size:12.5px;line-height:1.45}
 .step:last-child{border-bottom:none}
 .step .d{margin-left:auto;font-weight:700;color:#C0592C;white-space:nowrap;padding-left:10px}
 .toc a{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid rgba(138,95,72,.22);text-decoration:none;color:#45301F}
 .toc .no{font-size:10px;font-weight:700;letter-spacing:.2em;color:#E07A4B;width:30px}
 .toc .ti{font-family:'Playfair Display',serif;font-size:17px}
-.toc .ds{font-size:10.5px;color:rgba(69,48,31,.7);margin-left:8px}
+.toc .ds{font-size:12px;color:#5A3E31;margin-left:8px}
 .toc .dots{flex:1;border-bottom:1px dotted rgba(138,95,72,.5);transform:translateY(-4px)}
 .toc .pg{font-family:'Playfair Display',serif;font-size:15px}
-.menu-col h3{margin-top:14px} .menu-col table{font-size:11px} .menu-col td{padding:5px 4px}
+.tp td{padding:4.5px 6px} .tp h2{margin-top:12px !important} .tp ul.l li{padding:1.5px 0 1.5px 16px} .tp .lead{margin-top:6px}
+.menu-col h3{margin-top:14px} .menu-col table{font-size:12.5px} .menu-col td{padding:5px 4px}
 .cover > div{text-shadow:0 2px 14px rgba(0,0,0,.65),0 1px 3px rgba(0,0,0,.5)}
 .cover > img[src*='logo']{filter:drop-shadow(0 2px 10px rgba(0,0,0,.45))}
 @page{size:210mm 297mm;margin:0} @media print{body{background:none}.page{margin:0}}
@@ -235,22 +236,22 @@ add(f'''{head("06", "Tur pulau", "Jelajah pulau <i>dari SunaRi</i>", "Pulau-pula
   ("Tur Eksotis Pulau Bahuluang", "Privat · mobil + kapal", "1 hari (07.00–16.00)", rp(652500) + " /orang*"),
   ("Tur Eksotis Polassi &amp; Tambolongan", "Privat · mobil + kapal", "1 hari (07.00–16.30)", rp(847500) + " /orang*"),
   ("Open Trip Jelajah Pulau Selayar", "Gabungan · min. 8 orang", "2 hari", rp(3000000) + " /orang")], right_from=3, hi_last=True)}
-<p class="t" style="font-size:10.5px">*Harga per orang untuk rombongan 8 orang tanpa pemandu. Harga lengkap per jumlah tamu ada di halaman berikutnya.</p>
+<p class="t" style="font-size:12px">*Harga per orang untuk rombongan 8 orang tanpa pemandu. Harga lengkap per jumlah tamu ada di halaman berikutnya.</p>
 <div class="note"><b>Sebelum berangkat:</b> sarapan di SunaRi tersedia mulai 07.00. Jadwal dapat disesuaikan oleh kapten &amp; pemandu mengikuti cuaca, kondisi laut dan pasang-surut.</div>
 <div class="grid3" style="margin-top:16px">{img("bahuluang/11-berjalan-ke-laut-dan-kapal.jpg", 190, "50% 50%")}{img("bahuluang/03-masuk-gua-lipang.jpg", 190, "50% 50%")}{img("bahuluang/05-kapal-menuju-pulau.jpg", 190, "50% 60%")}</div>''',
     toc=("Tur pulau", "Gusung, Bahuluang, Polassi & Tambolongan, Open Trip"))
 
 def tour(title, sub, hl, rows, prices, incl, excl, car=False, photos=None):
-    gl = lambda n: f"{n} orang" + (f" ({'1 mobil' if n <= 4 else '2 mobil'})" if car else "")
-    add(f'''{head("06", "Tur pulau", title, sub)}
+    gl = lambda n: f"{n} orang"
+    add(f'''<div class="tp">{head("06", "Tur pulau", title, sub)}
 <div class="chips">{"".join(f'<span class="chip">{k} <b>{v}</b></span>' for k, v in hl)}</div>
 <h2 style="font-size:18px;margin-top:14px">Jadwal <i>tur</i></h2>
 <table>{"".join(f'<tr><td class="t">{t}</td><td>{a}</td></tr>' for t, a in rows)}</table>
 <div class="grid2" style="margin-top:6px;gap:22px;align-items:start">
   <div><h2 style="font-size:18px;margin-top:10px">Harga <i>per orang</i></h2>
-    {tbl(["Jumlah", "Tanpa pemandu", "Dgn pemandu"], [(gl(n), rp(x), rp(y)) for n, x, y in prices], hi_last=True)}</div>
+    {tbl(["Jumlah", "Tanpa pemandu", "Dgn pemandu"], [(gl(n), rp(x), rp(y)) for n, x, y in prices], hi_last=True)}{'<p class="t" style="font-size:12px;margin-top:6px">Armada: 1–4 orang 1 mobil · 5–8 orang 2 mobil.</p>' if car else ''}</div>
   <div><h2 style="font-size:18px;margin-top:10px">Termasuk</h2>{ul(incl)}<h2 style="font-size:18px;margin-top:10px">Tidak termasuk</h2>{ul(excl, "no")}</div>
-</div>''' + ((f'<div class="grid3" style="margin-top:14px">{"".join(img(a, 150, b) for a, b in photos)}</div>' if len(photos) > 1 else f'<div style="margin-top:14px">{img(photos[0][0], 190, photos[0][1])}</div>') if photos else ""))
+</div>''' + ((f'<div class="grid3" style="margin-top:12px">{"".join(img(a, 140, b) for a, b in photos)}</div>' if len(photos) > 1 else f'<div style="margin-top:12px">{img(photos[0][0], 150, photos[0][1])}</div>') if photos else "") + "</div>")
 
 EX = ["Pengeluaran pribadi &amp; belanja", "Dokumentasi foto/video tambahan"]
 tour('Tur Eksotis <i>Pulau Gusung</i>', "Tur privat satu hari: hopping pulau &amp; snorkeling, langsung dengan kapal dari SunaRi.",
@@ -260,7 +261,8 @@ tour('Tur Eksotis <i>Pulau Gusung</i>', "Tur privat satu hari: hopping pulau &am
       ("12.30–13.30", "<b>Snorkeling Jekneia:</b> taman karang bawah laut."), ("13.30–14.30", "Waktu bebas &amp; berenang (opsional: kayak)."), ("15.00", "Kembali ke SunaRi. Tur selesai.")],
      [(1,990000,1740000),(2,615000,990000),(3,490000,740000),(4,427500,615000),(5,390000,540000),(6,365000,490000),(7,347143,454286),(8,333750,427500)],
      ["Sewa kapal privat", "Alat snorkeling + pelampung", "Lunchbox + air mineral", "Tiket masuk destinasi", "Kapten &amp; kru berpengalaman", "Pemandu lokal (paket dgn pemandu)"],
-     EX + ["Sewa kano/kayak opsional", "Tip kapten/kru/pemandu (sukarela)"])
+     EX + ["Sewa kano/kayak opsional", "Tip kapten/kru/pemandu (sukarela)"],
+     photos=[("gusung/04-udara-teluk-dan-terumbu.jpg", "50% 50%"), ("gusung/05-udara-pantai-dan-kapal.jpg", "50% 60%"), ("gusung/06-udara-dua-pantai.jpg", "50% 60%")])
 tour('Tur Eksotis <i>Pulau Bahuluang</i>', "Jelajah pulau lewat jalur darat ke Desa Turungan, lalu kapal privat.",
      [("Snorkeling", "Makam Karang"), ("Pantai", "Pasir Timbul &amp; Pantai Bahuluang"), ("Gua", "Gua Lipang")],
      [("07.00–08.00", "Sarapan di SunaRi &amp; persiapan."), ("08.00–09.00", "Mobil privat ke Desa Turungan."), ("09.00–10.00", "Bertemu kapten, menyeberang ke Pulau Bahuluang."),
@@ -298,16 +300,16 @@ add(f'''{head("07", "Rute &amp; akses", "Tiga jalan <i>menuju SunaRi</i>", "Dari
   <div class="card"><div class="caps" style="display:flex;gap:8px;align-items:center"><span class="num" style="background:#E8674A">1</span>Udara · tercepat</div>
     <div class="step"><span>Makassar (Sultan Hasanuddin) → Bandara H. Aroeppala</span><span class="d">±45 mnt</span></div>
     <div class="step"><span>Bandara → SunaRi (mobil)</span><span class="d">±10–15 mnt</span></div>
-    <p class="t" style="font-size:10.5px">Cek jadwal maskapai H-7.</p></div>
+    <p class="t" style="font-size:12px">Cek jadwal maskapai H-7.</p></div>
   <div class="card"><div class="caps" style="display:flex;gap:8px;align-items:center"><span class="num" style="background:#2B8289">2</span>Darat &amp; feri</div>
     <div class="step"><span>Terminal Malengkeri → Pelabuhan Bira</span><span class="d">±4–5 jam</span></div>
     <div class="step"><span>Feri Bira → Pamatata (ASDP)</span><span class="d">±2 jam</span></div>
     <div class="step"><span>Pamatata → SunaRi</span><span class="d">±1–1,5 jam</span></div>
-    <p class="t" style="font-size:10.5px">Penyeberangan pagi &amp; siang.</p></div>
+    <p class="t" style="font-size:12px">Penyeberangan pagi &amp; siang.</p></div>
   <div class="card"><div class="caps" style="display:flex;gap:8px;align-items:center"><span class="num" style="background:#D8932D">3</span>Kapal langsung</div>
     <div class="step"><span>KM Dharma Kartika III: Makassar → Benteng</span><span class="d">±10–11 jam</span></div>
     <div class="step"><span>Benteng → SunaRi (mobil)</span><span class="d">±20–30 mnt</span></div>
-    <p class="t" style="font-size:10.5px">Berangkat malam, tiba pagi. Tidak setiap hari.</p></div>
+    <p class="t" style="font-size:12px">Berangkat malam, tiba pagi. Tidak setiap hari.</p></div>
 </div>''', toc=("Rute & akses", "Peta, 3 rute & tarif antar-jemput"))
 
 LOCAL = [("Bandara H. Aroeppala ↔ SunaRi", 150000, 300000), ("Pelabuhan Benteng ↔ SunaRi", 200000, 400000), ("Pelabuhan Pamatata ↔ SunaRi", 400000, 800000)]
@@ -318,9 +320,9 @@ add(f'''{head("07", "Rute &amp; akses", "Antar-jemput <i>&amp; transfer</i>", "K
 {tbl(["Rute", "1–4 tamu (1 mobil)", "5–8 tamu (2 mobil)"], [(r, rp(a), rp(b)) for r, a, b in LOCAL])}
 <h2 style="font-size:18px;margin-top:18px">Transfer Makassar ↔ SunaRi <i>(total per rombongan)</i></h2>
 <div class="grid2" style="gap:22px;align-items:start">
-  <div><div class="caps" style="margin-top:6px">Opsi A · Mobil privat penuh</div><p class="t" style="font-size:10.5px">Mobil privat langsung termasuk penyeberangan feri. Paling nyaman.</p>
+  <div><div class="caps" style="margin-top:6px">Opsi A · Mobil privat penuh</div><p class="t" style="font-size:12px">Mobil privat langsung termasuk penyeberangan feri. Paling nyaman.</p>
     {tbl(["Tamu", "Armada", "Total"], [(f"{n} tamu", "1 mobil" if n <= 4 else "2 mobil", rp(v)) for n, v in zip(range(1, 9), A)], right_from=2, hi_last=True)}</div>
-  <div><div class="caps" style="margin-top:6px">Opsi B · Bus premium + shuttle</div><p class="t" style="font-size:10.5px">Bus sleeper/eksekutif Makassar–Pamatata + shuttle privat. Lebih hemat.</p>
+  <div><div class="caps" style="margin-top:6px">Opsi B · Bus premium + shuttle</div><p class="t" style="font-size:12px">Bus sleeper/eksekutif Makassar–Pamatata + shuttle privat. Lebih hemat.</p>
     {tbl(["Tamu", "Layanan", "Total"], [(f"{n} tamu", "1 mobil + bus" if n <= 4 else "2 mobil + bus", rp(v)) for n, v in zip(range(1, 9), B)], right_from=2, hi_last=True)}</div>
 </div>
 <div class="note"><b>Ketentuan:</b> 1 mobil maks. 4 tamu + 4 koper sedang. Tiket feri &amp; bus dihitung per orang sesuai tarif resmi operator. Konfirmasi jadwal kedatangan &amp; data penumpang paling lambat H-1 via WhatsApp {WA}.</div>''')
