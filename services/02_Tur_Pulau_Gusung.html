@@ -1,0 +1,63 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#ddd;font-family:Montserrat,sans-serif;color:#45301F;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+.page{width:794px;height:1123px;background:#FBF4EC;position:relative;overflow:hidden;margin:20px auto;padding:44px 56px 84px;page-break-after:always}
+.page>*{position:relative;z-index:1}
+.page>.paper,.page>.grain{position:absolute;inset:0;z-index:0;pointer-events:none}
+.paper{background:radial-gradient(ellipse at 50% 22%,rgba(255,255,255,.6),rgba(255,255,255,0) 62%),radial-gradient(ellipse at 50% 118%,rgba(90,62,49,.10),rgba(90,62,49,0) 60%)}
+.grain{opacity:.5}
+/* embossed frames: double (outer raised + inner pressed) */
+.page>.frame{position:absolute;inset:20px;z-index:0;pointer-events:none;box-shadow:inset 1px 1px 0 rgba(90,62,49,.25),inset -1px -1px 0 rgba(255,255,255,.95),1px 1px 0 rgba(255,255,255,.9),-1px -1px 0 rgba(90,62,49,.14)}
+.page>.frame2{position:absolute;inset:28px;z-index:0;pointer-events:none;box-shadow:inset 1px 1px 0 rgba(90,62,49,.18),inset -1px -1px 0 rgba(255,255,255,.9)}
+/* letterpress text: crisp white highlight below, soft shade – no blur on body copy so it stays sharp */
+.page{text-shadow:0 1px 0 rgba(255,255,255,.85)}
+.hd h1,h2,.card h4,.ft .wa,.price .v{text-shadow:0 1px 0 rgba(255,255,255,1),0 -1px 0 rgba(90,62,49,.18),1px 2px 2.5px rgba(90,62,49,.28)}
+.it{font-style:italic;color:#8A5F48}
+.hd h1 .it,h2 .it,.card h4 .it{background:linear-gradient(180deg,#E9B97A 0%,#B9783A 48%,#7E5222 72%,#D9A462 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:none;filter:drop-shadow(0 1px 0 rgba(255,255,255,.9)) drop-shadow(.6px 1.3px 1px rgba(90,62,49,.35));padding-right:.08em}
+.caps{font-weight:600;text-transform:uppercase;letter-spacing:.24em;color:#8A5F48}
+.hd{text-align:center} .hd img{width:190px;display:block;margin:0 auto;filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.95)) drop-shadow(1px 2px 2px rgba(60,40,30,.32))}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0 8px}
+.rule i{width:90px;height:2px;display:block;border-top:1px solid rgba(138,95,72,.5);border-bottom:1px solid rgba(255,255,255,.95)}
+.rule svg{filter:drop-shadow(0 1px 0 rgba(255,255,255,.9)) drop-shadow(1px 1.5px 1.5px rgba(90,62,49,.3))}
+.hd h1{font-family:'Playfair Display',serif;font-weight:500;font-size:38px;line-height:1.12;margin-top:6px;color:#45301F}
+.hd p{font-size:13px;margin-top:8px}
+.chips{display:flex;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.chip{font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;box-shadow:inset 1px 1px 2px rgba(90,62,49,.22),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
+.chip b{color:#E07A4B}
+h2{font-family:'Playfair Display',serif;font-weight:500;font-size:24px;display:flex;align-items:center;gap:12px;margin:24px 0 10px;color:#45301F}
+h2::after{content:"";flex:1;height:2px;border-top:1px solid rgba(138,95,72,.45);border-bottom:1px solid rgba(255,255,255,.95)}
+h2 .n{font-family:Montserrat;font-weight:700;font-size:11px;letter-spacing:.18em;color:#C0592C;text-shadow:0 1px 0 rgba(255,255,255,.9)}
+.sub{font-size:12px;margin:-2px 0 8px}
+table{width:100%;border-collapse:collapse;font-size:13px} .big table{font-size:14.5px} .big td{padding:10px 6px} .cols table{font-size:13.5px} .cols td{padding:9.5px 6px} .itn table{font-size:13.5px} .itn td{padding:9px 6px}
+th{font-weight:700;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A5F48;text-align:left;padding:8px 6px;border-bottom:1px solid rgba(138,95,72,.55);box-shadow:0 1px 0 rgba(255,255,255,.9)}
+td{padding:8px 6px;border-bottom:1px solid rgba(138,95,72,.22);vertical-align:top;line-height:1.4}
+tr:last-child td{border-bottom:1px solid rgba(138,95,72,.4)}
+td.r,th.r{text-align:right} td.b{font-weight:600} td.hi{font-weight:700;color:#A84A24}
+td.t{white-space:nowrap;font-weight:700;width:104px;color:#8A5F48}
+.cols{display:flex;gap:26px} .cols>div{flex:1;min-width:0}
+.card{padding:12px 15px;border-radius:4px;background:transparent;box-shadow:inset 1px 1px 2px rgba(90,62,49,.24),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
+.card h4{font-family:'Playfair Display',serif;font-weight:500;font-size:18px;line-height:1.25;color:#45301F}
+.card p{font-size:12.5px;margin-top:5px;line-height:1.5}
+ul.l{list-style:none;font-size:13.5px;line-height:1.5}
+ul.l li{padding:3.5px 0 3.5px 20px;position:relative}
+ul.l.ok li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FDB15D,#E07A4B 70%);box-shadow:0 1px 0 rgba(255,255,255,.9),.5px 1px 1px rgba(90,62,49,.35)}
+ul.l.no li::before{content:"–";position:absolute;left:2px;top:3px;color:#8A5F48;font-weight:700}
+ul.l.dot li::before{content:"";position:absolute;left:3px;top:11px;width:6px;height:6px;border-radius:50%;background:#8A5F48;box-shadow:0 1px 0 rgba(255,255,255,.9)}
+.note{font-size:11px;margin-top:8px;line-height:1.5}
+.terms{font-size:12px;line-height:1.5} .terms b{display:block;font-weight:700;margin-top:9px}
+.price{text-align:center;padding:14px 8px} .price .v{font-family:'Playfair Display',serif;font-weight:500;font-size:23px;margin-top:4px}
+.ft{position:absolute;left:56px;right:56px;bottom:36px;display:flex;justify-content:space-between;align-items:flex-end;padding-top:10px}
+.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;border-top:1px solid rgba(138,95,72,.45);border-bottom:1px solid rgba(255,255,255,.95)}
+.ft .wa{font-family:'Playfair Display',serif;font-weight:500;font-size:19px} .ft .wa span{font-style:italic;color:#8A5F48}
+.ft .r{text-align:right;font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A5F48;line-height:1.7}
+.compact h2{margin:18px 0 8px} .compact .terms{font-size:13px} .compact .hd img{width:160px}
+@page{size:210mm 297mm;margin:0} @media print{body{background:none}.page{margin:0}}
+</style></head><body><div class="page "><div class="frame"></div><div class="frame2"></div><div class="hd"><img src="../assets/logo-sunari-color.png"><div class="rule"><i></i><svg viewBox="0 0 200 200" width="22" height="22"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDB15D"/><stop offset="1" stop-color="#FF8A5C"/></linearGradient>
+<mask id="sm"><rect width="200" height="200" fill="white"/><rect y="112" width="200" height="5"/><rect y="126" width="200" height="7"/><rect y="142" width="200" height="9"/><rect y="160" width="200" height="11"/><rect y="180" width="200" height="13"/></mask></defs>
+<circle cx="100" cy="100" r="96" fill="url(#sg)" mask="url(#sm)"/></svg><i></i></div>
+  <div class="caps" style="font-size:10.5px">SunaRi Beach Resort Selayar · Tur Privat</div><h1>Tur Eksotis <span class="it">Pulau Gusung</span></h1><p>Tur privat satu hari: hopping pulau &amp; snorkeling</p></div><h2><span class="n">01</span>Destinasi &amp; <span class="it">sorotan utama</span></h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div class="card"><div class="caps" style="font-size:9.5px">Spot snorkeling 01</div><h4 style="margin-top:4px">Liang Kareta · taman karang &amp; biota laut</h4></div><div class="card"><div class="caps" style="font-size:9.5px">Jelajah pantai</div><h4 style="margin-top:4px">Pantai Liang Kareta &amp; Pantai Bone Malea</h4></div><div class="card"><div class="caps" style="font-size:9.5px">Gua &amp; pantai</div><h4 style="margin-top:4px">Balojaha · gua laut eksotis &amp; spot foto</h4></div><div class="card"><div class="caps" style="font-size:9.5px">Spot snorkeling 02</div><h4 style="margin-top:4px">Jekneia · spot bawah laut terbaik</h4></div></div><h2><span class="n">02</span>Jadwal tur <span class="it">(satu hari penuh)</span></h2><div class="itn"><table><tr><th>Waktu (WITA)</th><th>Kegiatan &amp; program</th></tr><tr><td class="t">07.00 – 08.00</td><td>Persiapan &amp; sarapan di SunaRi Beach Resort.</td></tr><tr><td class="t">08.00 – 08.30</td><td>Berangkat dari SunaRi Beach Resort dengan kapal sewa privat.</td></tr><tr><td class="t">08.30 – 09.30</td><td><b>Spot snorkeling 01 (Liang Kareta):</b> menjelajahi terumbu karang yang indah dan biota laut.</td></tr><tr><td class="t">09.30 – 10.30</td><td>Mengunjungi Pantai Liang Kareta lalu lanjut ke Pantai Bone Malea.</td></tr><tr><td class="t">10.30 – 11.30</td><td><b>Pantai &amp; Gua Balojaha:</b> menjelajahi gua laut, sesi foto dan berenang.</td></tr><tr><td class="t">11.30 – 12.30</td><td>Istirahat makan siang (lunchbox eksklusif disajikan di lokasi).</td></tr><tr><td class="t">12.30 – 13.30</td><td><b>Spot snorkeling 02 (Jekneia):</b> menjelajahi taman karang bawah laut Jekneia.</td></tr><tr><td class="t">13.30 – 14.30</td><td>Waktu bebas, berenang dan aktivitas air (opsional: kayak).</td></tr><tr><td class="t">15.00</td><td>Perjalanan pulang dan tiba kembali di SunaRi Beach Resort. Tur selesai.</td></tr></table></div><div class="ft"><div><div class="caps" style="font-size:9px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> +62 821-8903-3044</div></div>
+  <div class="r">SunaRi Beach Resort Selayar<br>Kepulauan Selayar, Sulawesi Selatan · 1/2</div></div></div><div class="page "><div class="frame"></div><div class="frame2"></div><div style="height:10px"></div><h2 style="margin-top:0"><span class="n">03</span>Pilihan paket &amp; <span class="it">harga per orang</span></h2><div class="big"><table><tr><th class="">Jumlah tamu</th><th class="r">Tanpa pemandu (ekonomi)</th><th class="r">Dengan pemandu lokal</th></tr><tr><td class="b">1 Orang</td><td class="r">Rp 990.000 /orang</td><td class="r hi">Rp 1.740.000 /orang</td></tr><tr><td class="b">2 Orang</td><td class="r">Rp 615.000 /orang</td><td class="r hi">Rp 990.000 /orang</td></tr><tr><td class="b">3 Orang</td><td class="r">Rp 490.000 /orang</td><td class="r hi">Rp 740.000 /orang</td></tr><tr><td class="b">4 Orang</td><td class="r">Rp 427.500 /orang</td><td class="r hi">Rp 615.000 /orang</td></tr><tr><td class="b">5 Orang</td><td class="r">Rp 390.000 /orang</td><td class="r hi">Rp 540.000 /orang</td></tr><tr><td class="b">6 Orang</td><td class="r">Rp 365.000 /orang</td><td class="r hi">Rp 490.000 /orang</td></tr><tr><td class="b">7 Orang</td><td class="r">Rp 347.143 /orang</td><td class="r hi">Rp 454.286 /orang</td></tr><tr><td class="b">8 Orang</td><td class="r">Rp 333.750 /orang</td><td class="r hi">Rp 427.500 /orang</td></tr></table></div><div class="cols" style="margin-top:6px"><div><h2><span class="n">04</span>Paket <span class="it">termasuk</span></h2><ul class="l ok"><li>Sewa kapal privat</li><li>Perlengkapan snorkeling lengkap + pelampung</li><li>Lunchbox + air mineral</li><li>Tiket masuk semua destinasi</li><li>Kapten kapal &amp; kru berpengalaman</li><li>Pemandu lokal (untuk paket dengan pemandu)</li></ul></div>
+      <div><h2><span class="n">05</span>Tidak <span class="it">termasuk</span></h2><ul class="l no"><li>Pengeluaran pribadi &amp; belanja</li><li>Dokumentasi foto / video tambahan</li><li>Olahraga air opsional (sewa kano / kayak)</li><li>Tip untuk kapten / kru / pemandu (sukarela)</li></ul></div></div>
+      <div class="card" style="margin-top:22px;text-align:center"><h4>Sebelum berangkat</h4><p>Sarapan di SunaRi Beach Resort tersedia mulai pukul 07.00 sebelum keberangkatan. Jadwal dapat disesuaikan oleh kapten &amp; pemandu mengikuti cuaca, kondisi laut dan pasang-surut.</p></div><div class="ft"><div><div class="caps" style="font-size:9px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> +62 821-8903-3044</div></div>
+  <div class="r">SunaRi Beach Resort Selayar<br>Kepulauan Selayar, Sulawesi Selatan · 2/2</div></div></div></body></html>
