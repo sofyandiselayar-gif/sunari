@@ -1,50 +1,63 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#ddd;font-family:Montserrat,sans-serif;color:#5A3E31;font-variant-numeric:lining-nums}
-.page{width:794px;height:1123px;background:#FBF4EC;position:relative;overflow:hidden;margin:20px auto;padding:46px 56px 80px;page-break-after:always}
-.frame{position:absolute;inset:20px;border:1px solid rgba(166,124,100,.4);pointer-events:none}
-.pf{font-family:'Playfair Display',serif;font-weight:400} .it{font-style:italic;color:#A67C64}
-.caps{font-weight:600;text-transform:uppercase;letter-spacing:.3em;color:#A67C64}
-.hd{text-align:center} .hd img{width:200px;display:block;margin:0 auto}
-.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px 0 8px}
-.rule i{width:90px;height:1px;background:#A67C64;opacity:.5;display:block}
-.hd h1{font-family:'Playfair Display',serif;font-weight:400;font-size:36px;line-height:1.1;margin-top:6px}
-.hd p{font-size:11px;margin-top:8px;opacity:.85}
+body{background:#ddd;font-family:Montserrat,sans-serif;color:#45301F;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+.page{width:794px;height:1123px;background:#F6ECDF;position:relative;overflow:hidden;margin:20px auto;padding:44px 56px 84px;page-break-after:always}
+.page>*{position:relative;z-index:1}
+.page>.paper,.page>.grain{position:absolute;inset:0;z-index:0;pointer-events:none}
+.paper{background:radial-gradient(ellipse at 50% 22%,rgba(255,255,255,.6),rgba(255,255,255,0) 62%),radial-gradient(ellipse at 50% 118%,rgba(90,62,49,.10),rgba(90,62,49,0) 60%)}
+.grain{opacity:.5}
+/* embossed frames: double (outer raised + inner pressed) */
+.page>.frame{position:absolute;inset:20px;z-index:0;pointer-events:none;box-shadow:inset 1px 1px 0 rgba(90,62,49,.25),inset -1px -1px 0 rgba(255,255,255,.95),1px 1px 0 rgba(255,255,255,.9),-1px -1px 0 rgba(90,62,49,.14)}
+.page>.frame2{position:absolute;inset:28px;z-index:0;pointer-events:none;box-shadow:inset 1px 1px 0 rgba(90,62,49,.18),inset -1px -1px 0 rgba(255,255,255,.9)}
+/* letterpress text: crisp white highlight below, soft shade – no blur on body copy so it stays sharp */
+.page{text-shadow:0 1px 0 rgba(255,255,255,.85)}
+.hd h1,h2,.card h4,.ft .wa,.price .v{text-shadow:0 1px 0 rgba(255,255,255,1),0 -1px 0 rgba(90,62,49,.18),1px 2px 2.5px rgba(90,62,49,.28)}
+.it{font-style:italic;color:#8A5F48}
+.hd h1 .it,h2 .it,.card h4 .it{background:linear-gradient(180deg,#E9B97A 0%,#B9783A 48%,#7E5222 72%,#D9A462 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:none;filter:drop-shadow(0 1px 0 rgba(255,255,255,.9)) drop-shadow(.6px 1.3px 1px rgba(90,62,49,.35));padding-right:.08em}
+.caps{font-weight:600;text-transform:uppercase;letter-spacing:.24em;color:#8A5F48}
+.hd{text-align:center} .hd img{width:190px;display:block;margin:0 auto;filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.95)) drop-shadow(1px 2px 2px rgba(60,40,30,.32))}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0 8px}
+.rule i{width:90px;height:2px;display:block;border-top:1px solid rgba(138,95,72,.5);border-bottom:1px solid rgba(255,255,255,.95)}
+.rule svg{filter:drop-shadow(0 1px 0 rgba(255,255,255,.9)) drop-shadow(1px 1.5px 1.5px rgba(90,62,49,.3))}
+.hd h1{font-family:'Playfair Display',serif;font-weight:500;font-size:38px;line-height:1.12;margin-top:6px;color:#45301F}
+.hd p{font-size:13px;margin-top:8px}
 .chips{display:flex;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap}
-.chip{font-size:9.5px;border:1px solid rgba(166,124,100,.5);padding:5px 12px;border-radius:20px}
-.chip b{color:#FF8A5C}
-h2{font-family:'Playfair Display',serif;font-weight:400;font-size:23px;display:flex;align-items:center;gap:12px;margin:26px 0 10px}
-h2::after{content:"";flex:1;height:1px;background:#A67C64;opacity:.45}
-h2 .n{font-family:Montserrat;font-weight:600;font-size:10px;letter-spacing:.2em;color:#FF8A5C}
-.sub{font-size:10.5px;opacity:.8;margin:-2px 0 8px}
-table{width:100%;border-collapse:collapse;font-size:12px}
-th{font-weight:600;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:#A67C64;text-align:left;padding:7px 6px;border-bottom:1px solid rgba(166,124,100,.6)}
-td{padding:8.5px 6px;border-bottom:1px solid rgba(166,124,100,.25);vertical-align:top}
-td.r,th.r{text-align:right} td.b{font-weight:600} td.hi{font-weight:600;color:#C8643A}
-td.t{white-space:nowrap;font-weight:600;width:92px}
-.cols{display:flex;gap:26px} .cols>div{flex:1}
-.card{border:1px solid rgba(166,124,100,.45);padding:12px 14px}
-.card h4{font-family:'Playfair Display',serif;font-weight:400;font-size:17px}
-.card p{font-size:9.8px;opacity:.85;margin-top:4px;line-height:1.5}
-ul.l{list-style:none;font-size:11.8px;line-height:1.55}
-ul.l li{padding:3px 0 3px 18px;position:relative}
-ul.l.ok li::before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:#FF8A5C}
-ul.l.no li::before{content:"–";position:absolute;left:2px;top:2px;color:#A67C64;font-weight:600}
-ul.l.dot li::before{content:"";position:absolute;left:3px;top:10px;width:5px;height:5px;border-radius:50%;background:#A67C64}
-.note{font-size:9.5px;opacity:.75;margin-top:8px;line-height:1.5}
-.terms{font-size:10.8px;line-height:1.5} .terms b{display:block;font-weight:600;margin-top:8px}
-.price{text-align:center;padding:14px 10px} .price .v{font-family:'Playfair Display',serif;font-size:24px;margin-top:4px}
-.ft{position:absolute;left:56px;right:56px;bottom:34px;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(166,124,100,.4);padding-top:10px}
-.ft .wa{font-family:'Playfair Display',serif;font-size:17px} .ft .wa span{font-style:italic;color:#A67C64}
-.ft .r{text-align:right;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:#A67C64;line-height:1.7}
-.tight table{font-size:10.4px} .tight td{padding:5.5px 6px} .tight h2{font-size:20px;margin:16px 0 6px}
-.tight ul.l{font-size:10.2px;line-height:1.45} .tight .hd img{width:170px} .tight .hd h1{font-size:32px} .tight .card p{font-size:9.4px}
+.chip{font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;box-shadow:inset 1px 1px 2px rgba(90,62,49,.22),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
+.chip b{color:#E07A4B}
+h2{font-family:'Playfair Display',serif;font-weight:500;font-size:24px;display:flex;align-items:center;gap:12px;margin:24px 0 10px;color:#45301F}
+h2::after{content:"";flex:1;height:2px;border-top:1px solid rgba(138,95,72,.45);border-bottom:1px solid rgba(255,255,255,.95)}
+h2 .n{font-family:Montserrat;font-weight:700;font-size:11px;letter-spacing:.18em;color:#C0592C;text-shadow:0 1px 0 rgba(255,255,255,.9)}
+.sub{font-size:12px;margin:-2px 0 8px}
+table{width:100%;border-collapse:collapse;font-size:13px} .big table{font-size:14.5px} .big td{padding:10px 6px} .cols table{font-size:13.5px} .cols td{padding:9.5px 6px} .itn table{font-size:13.5px} .itn td{padding:9px 6px}
+th{font-weight:700;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A5F48;text-align:left;padding:8px 6px;border-bottom:1px solid rgba(138,95,72,.55);box-shadow:0 1px 0 rgba(255,255,255,.9)}
+td{padding:8px 6px;border-bottom:1px solid rgba(138,95,72,.22);vertical-align:top;line-height:1.4}
+tr:last-child td{border-bottom:1px solid rgba(138,95,72,.4)}
+td.r,th.r{text-align:right} td.b{font-weight:600} td.hi{font-weight:700;color:#A84A24}
+td.t{white-space:nowrap;font-weight:700;width:104px;color:#8A5F48}
+.cols{display:flex;gap:26px} .cols>div{flex:1;min-width:0}
+.card{padding:12px 15px;border-radius:4px;background:rgba(255,255,255,.22);box-shadow:inset 1px 1px 2px rgba(90,62,49,.24),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
+.card h4{font-family:'Playfair Display',serif;font-weight:500;font-size:18px;line-height:1.25;color:#45301F}
+.card p{font-size:12.5px;margin-top:5px;line-height:1.5}
+ul.l{list-style:none;font-size:13.5px;line-height:1.5}
+ul.l li{padding:3.5px 0 3.5px 20px;position:relative}
+ul.l.ok li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FDB15D,#E07A4B 70%);box-shadow:0 1px 0 rgba(255,255,255,.9),.5px 1px 1px rgba(90,62,49,.35)}
+ul.l.no li::before{content:"–";position:absolute;left:2px;top:3px;color:#8A5F48;font-weight:700}
+ul.l.dot li::before{content:"";position:absolute;left:3px;top:11px;width:6px;height:6px;border-radius:50%;background:#8A5F48;box-shadow:0 1px 0 rgba(255,255,255,.9)}
+.note{font-size:11px;margin-top:8px;line-height:1.5}
+.terms{font-size:12px;line-height:1.5} .terms b{display:block;font-weight:700;margin-top:9px}
+.price{text-align:center;padding:14px 8px} .price .v{font-family:'Playfair Display',serif;font-weight:500;font-size:23px;margin-top:4px}
+.ft{position:absolute;left:56px;right:56px;bottom:36px;display:flex;justify-content:space-between;align-items:flex-end;padding-top:10px}
+.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;border-top:1px solid rgba(138,95,72,.45);border-bottom:1px solid rgba(255,255,255,.95)}
+.ft .wa{font-family:'Playfair Display',serif;font-weight:500;font-size:19px} .ft .wa span{font-style:italic;color:#8A5F48}
+.ft .r{text-align:right;font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A5F48;line-height:1.7}
+.compact h2{margin:18px 0 8px} .compact .terms{font-size:13px} .compact .hd img{width:160px}
 @page{size:210mm 297mm;margin:0} @media print{body{background:none}.page{margin:0}}
-</style></head><body><div class="page "><div class="frame"></div><div class="hd"><img src="../assets/logo-sunari-color.png"><div class="rule"><i></i><svg viewBox="0 0 200 200" width="22" height="22"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDB15D"/><stop offset="1" stop-color="#FF8A5C"/></linearGradient>
+</style></head><body><div class="page "><div class="paper"></div><svg class="grain" width="100%" height="100%"><filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .08 0"/></filter><rect width="100%" height="100%" filter="url(#gr)"/></svg><div class="frame"></div><div class="frame2"></div><div class="hd"><img src="../assets/logo-sunari-color.png"><div class="rule"><i></i><svg viewBox="0 0 200 200" width="22" height="22"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDB15D"/><stop offset="1" stop-color="#FF8A5C"/></linearGradient>
 <mask id="sm"><rect width="200" height="200" fill="white"/><rect y="112" width="200" height="5"/><rect y="126" width="200" height="7"/><rect y="142" width="200" height="9"/><rect y="160" width="200" height="11"/><rect y="180" width="200" height="13"/></mask></defs>
 <circle cx="100" cy="100" r="96" fill="url(#sg)" mask="url(#sm)"/></svg><i></i></div>
-  <div class="caps" style="font-size:9.5px">SunaRi Beach Resort Selayar · Private Tour</div><h1>Exotic <span class="it">Polassi &amp; Tambolongan</span> Trip</h1><p>Nane Hill trekking, island hopping &amp; snorkeling</p></div><h2><span class="n">01</span>Key destinations &amp; <span class="it">highlights</span></h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div class="card"><div class="caps" style="font-size:8px">Polassi Island</div><h4 style="margin-top:4px">Nane Hill trekking &amp; Nane Hill Beach</h4></div><div class="card"><div class="caps" style="font-size:8px">Meeting &amp; transit point</div><h4 style="margin-top:4px">Turungan Village</h4></div><div class="card"><div class="caps" style="font-size:8px">Tambolongan Island</div><h4 style="margin-top:4px">Snorkeling spot &amp; beach</h4></div><div class="card"><div class="caps" style="font-size:8px">Iconic highlight</div><h4 style="margin-top:4px">Tambolongan Sandbar</h4></div></div><h2><span class="n">02</span>Tour itinerary <span class="it">(full day)</span></h2><table><tr><th>Time (WITA)</th><th>Activities &amp; program</th></tr><tr><td class="t">07.00 – 08.00</td><td>Breakfast at SunaRi Beach Resort &amp; tour preparation.</td></tr><tr><td class="t">08.00 – 09.00</td><td>Overland transfer from SunaRi Beach Resort to Turungan Village by private car.</td></tr><tr><td class="t">09.00 – 10.30</td><td>Arrival at Turungan Village &amp; boat crossing to Polassi Island.</td></tr><tr><td class="t">10.30 – 11.45</td><td><b>Nane Hill trekking (±15 mins):</b> panoramic ocean views, sightseeing &amp; photos.</td></tr><tr><td class="t">11.45 – 13.00</td><td>Head to Nane Hill Beach, enjoy lunch (lunchbox) and rest.</td></tr><tr><td class="t">13.00 – 14.00</td><td><b>Tambolongan Beach &amp; snorkeling spot:</b> coral reef exploration &amp; swimming.</td></tr><tr><td class="t">14.00 – 15.00</td><td>Visit <b>Tambolongan Sandbar</b> &amp; free time to relax.</td></tr><tr><td class="t">15.00 – 16.30</td><td>Return journey and arrival back at SunaRi Beach Resort. Tour ends.</td></tr></table><div class="ft"><div><div class="caps" style="font-size:8px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> +62 821-8903-3044</div></div>
-  <div class="r">SunaRi Beach Resort Selayar<br>Kepulauan Selayar, Sulawesi Selatan · 1/2</div></div></div><div class="page "><div class="frame"></div><div style="height:10px"></div><h2 style="margin-top:0"><span class="n">03</span>Package options &amp; <span class="it">pricing per person</span></h2><table><tr><th class="">Number of guests</th><th class="r">Without guide (economy)</th><th class="r">With local tour guide</th></tr><tr><td class="b">1 Person (1 Car)</td><td class="r">IDR 4,147,500 /pax</td><td class="r hi">IDR 5,047,500 /pax</td></tr><tr><td class="b">2 Persons (1 Car)</td><td class="r">IDR 2,197,500 /pax</td><td class="r hi">IDR 2,647,500 /pax</td></tr><tr><td class="b">3 Persons (1 Car)</td><td class="r">IDR 1,547,500 /pax</td><td class="r hi">IDR 1,847,500 /pax</td></tr><tr><td class="b">4 Persons (1 Car)</td><td class="r">IDR 1,222,500 /pax</td><td class="r hi">IDR 1,447,500 /pax</td></tr><tr><td class="b">5 Persons (2 Cars)</td><td class="r">IDR 1,207,500 /pax</td><td class="r hi">IDR 1,387,500 /pax</td></tr><tr><td class="b">6 Persons (2 Cars)</td><td class="r">IDR 1,047,500 /pax</td><td class="r hi">IDR 1,197,500 /pax</td></tr><tr><td class="b">7 Persons (2 Cars)</td><td class="r">IDR 933,214 /pax</td><td class="r hi">IDR 1,061,786 /pax</td></tr><tr><td class="b">8 Persons (2 Cars)</td><td class="r">IDR 847,500 /pax</td><td class="r hi">IDR 960,000 /pax</td></tr></table><div class="cols" style="margin-top:6px"><div><h2><span class="n">04</span>Package <span class="it">inclusions</span></h2><ul class="l ok"><li>Private car transport (Resort ⇄ Turungan Village)</li><li>Private boat charter</li><li>Full snorkeling gear set + life jacket</li><li>Lunchbox + mineral water</li><li>Entrance tickets to Nane Hill &amp; all attractions</li><li>Driver &amp; fuel</li><li>Local tour guide (with-guide option)</li></ul></div>
+  <div class="caps" style="font-size:10.5px">SunaRi Beach Resort Selayar · Private Tour</div><h1>Exotic <span class="it">Polassi &amp; Tambolongan</span> Trip</h1><p>Nane Hill trekking, island hopping &amp; snorkeling</p></div><h2><span class="n">01</span>Key destinations &amp; <span class="it">highlights</span></h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div class="card"><div class="caps" style="font-size:9.5px">Polassi Island</div><h4 style="margin-top:4px">Nane Hill trekking &amp; Nane Hill Beach</h4></div><div class="card"><div class="caps" style="font-size:9.5px">Meeting &amp; transit point</div><h4 style="margin-top:4px">Turungan Village</h4></div><div class="card"><div class="caps" style="font-size:9.5px">Tambolongan Island</div><h4 style="margin-top:4px">Snorkeling spot &amp; beach</h4></div><div class="card"><div class="caps" style="font-size:9.5px">Iconic highlight</div><h4 style="margin-top:4px">Tambolongan Sandbar</h4></div></div><h2><span class="n">02</span>Tour itinerary <span class="it">(full day)</span></h2><div class="itn"><table><tr><th>Time (WITA)</th><th>Activities &amp; program</th></tr><tr><td class="t">07.00 – 08.00</td><td>Breakfast at SunaRi Beach Resort &amp; tour preparation.</td></tr><tr><td class="t">08.00 – 09.00</td><td>Overland transfer from SunaRi Beach Resort to Turungan Village by private car.</td></tr><tr><td class="t">09.00 – 10.30</td><td>Arrival at Turungan Village &amp; boat crossing to Polassi Island.</td></tr><tr><td class="t">10.30 – 11.45</td><td><b>Nane Hill trekking (±15 mins):</b> panoramic ocean views, sightseeing &amp; photos.</td></tr><tr><td class="t">11.45 – 13.00</td><td>Head to Nane Hill Beach, enjoy lunch (lunchbox) and rest.</td></tr><tr><td class="t">13.00 – 14.00</td><td><b>Tambolongan Beach &amp; snorkeling spot:</b> coral reef exploration &amp; swimming.</td></tr><tr><td class="t">14.00 – 15.00</td><td>Visit <b>Tambolongan Sandbar</b> &amp; free time to relax.</td></tr><tr><td class="t">15.00 – 16.30</td><td>Return journey and arrival back at SunaRi Beach Resort. Tour ends.</td></tr></table></div><div class="ft"><div><div class="caps" style="font-size:9px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> +62 821-8903-3044</div></div>
+  <div class="r">SunaRi Beach Resort Selayar<br>Kepulauan Selayar, Sulawesi Selatan · 1/2</div></div></div><div class="page "><div class="paper"></div><svg class="grain" width="100%" height="100%"><filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .08 0"/></filter><rect width="100%" height="100%" filter="url(#gr)"/></svg><div class="frame"></div><div class="frame2"></div><div style="height:10px"></div><h2 style="margin-top:0"><span class="n">03</span>Package options &amp; <span class="it">pricing per person</span></h2><div class="big"><table><tr><th class="">Number of guests</th><th class="r">Without guide (economy)</th><th class="r">With local tour guide</th></tr><tr><td class="b">1 Person (1 Car)</td><td class="r">IDR 4,147,500 /pax</td><td class="r hi">IDR 5,047,500 /pax</td></tr><tr><td class="b">2 Persons (1 Car)</td><td class="r">IDR 2,197,500 /pax</td><td class="r hi">IDR 2,647,500 /pax</td></tr><tr><td class="b">3 Persons (1 Car)</td><td class="r">IDR 1,547,500 /pax</td><td class="r hi">IDR 1,847,500 /pax</td></tr><tr><td class="b">4 Persons (1 Car)</td><td class="r">IDR 1,222,500 /pax</td><td class="r hi">IDR 1,447,500 /pax</td></tr><tr><td class="b">5 Persons (2 Cars)</td><td class="r">IDR 1,207,500 /pax</td><td class="r hi">IDR 1,387,500 /pax</td></tr><tr><td class="b">6 Persons (2 Cars)</td><td class="r">IDR 1,047,500 /pax</td><td class="r hi">IDR 1,197,500 /pax</td></tr><tr><td class="b">7 Persons (2 Cars)</td><td class="r">IDR 933,214 /pax</td><td class="r hi">IDR 1,061,786 /pax</td></tr><tr><td class="b">8 Persons (2 Cars)</td><td class="r">IDR 847,500 /pax</td><td class="r hi">IDR 960,000 /pax</td></tr></table></div><div class="cols" style="margin-top:6px"><div><h2><span class="n">04</span>Package <span class="it">inclusions</span></h2><ul class="l ok"><li>Private car transport (Resort ⇄ Turungan Village)</li><li>Private boat charter</li><li>Full snorkeling gear set + life jacket</li><li>Lunchbox + mineral water</li><li>Entrance tickets to Nane Hill &amp; all attractions</li><li>Driver &amp; fuel</li><li>Local tour guide (with-guide option)</li></ul></div>
       <div><h2><span class="n">05</span>Package <span class="it">exclusions</span></h2><ul class="l no"><li>Personal expenses &amp; shopping</li><li>Additional photo / video documentation</li><li>Optional extra activities</li><li>Tipping for driver / captain / guide (discretionary)</li></ul></div></div>
-      <div class="card" style="margin-top:22px;text-align:center"><h4>Before you go</h4><p>Breakfast at SunaRi Beach Resort is served from 07.00 before departure. Itineraries may be adjusted by the captain &amp; guide for weather, sea and tide conditions.</p></div><div class="ft"><div><div class="caps" style="font-size:8px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> +62 821-8903-3044</div></div>
+      <div class="card" style="margin-top:22px;text-align:center"><h4>Before you go</h4><p>Breakfast at SunaRi Beach Resort is served from 07.00 before departure. Itineraries may be adjusted by the captain &amp; guide for weather, sea and tide conditions.</p></div><div class="ft"><div><div class="caps" style="font-size:9px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> +62 821-8903-3044</div></div>
   <div class="r">SunaRi Beach Resort Selayar<br>Kepulauan Selayar, Sulawesi Selatan · 2/2</div></div></div></body></html>

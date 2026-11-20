@@ -11,7 +11,7 @@ const { chromium } = require('playwright'); const path = require('path'); const 
     for (let i = 0; i < pages.length; i++) await pages[i].screenshot({ path: path.join(__dirname, 'png', `${key}_p${i + 1}.png`) });
     const over = await p.$$eval('.page', ps => ps.map(pg => {
       const ft = pg.querySelector('.ft').getBoundingClientRect().top; let m = 0;
-      pg.querySelectorAll(':scope > *:not(.ft):not(.frame), :scope > *:not(.ft):not(.frame) *').forEach(e => { const r = e.getBoundingClientRect(); if (r.height && r.bottom > m) m = r.bottom; });
+      pg.querySelectorAll(':scope > *:not(.ft):not(.frame):not(.frame2):not(.paper):not(.grain), :scope > *:not(.ft):not(.frame):not(.frame2):not(.paper):not(.grain) *').forEach(e => { const r = e.getBoundingClientRect(); if (r.height && r.bottom > m) m = r.bottom; });
       return Math.round(m - ft); }));
     console.log(key, 'pages', pages.length, 'overlap px', over.join(','));
     await p.pdf({ path: path.join(__dirname, `SunaRi_${key}.pdf`), width: '210mm', height: '297mm', printBackground: true });
