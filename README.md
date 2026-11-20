@@ -12,6 +12,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `resto/MENU_BAJOY.md` | Menu & jam buka Bajoy Beach Resto + desain menu A4 dan story |
 | `social/SLOW_LIVING.md` | Seri "Jeda" (storytelling & slow living): carousel 8 slide, 6 post "Catatan Jeda", 3 story interaktif, 2 skrip Reels & caption (`social/slow-living/`) |
 | `assets/maps/` | 7 peta rute Makassar → SunaRi (Indonesia, Sulawesi, 3 rute, rute 1–3, Pulau Selayar), format story 1080×1920 |
+| `social/STORY_RUTE.md` | Story "Rute ke SunaRi": 7 story di atas peta (Indonesia → Sulawesi → 3 rute → Pulau Selayar) (`social/story-rute/`) |
 | `location-carousel/` | Proyek HTML/CSS carousel 5 slide "Location & Rute Akses" (1080×1350) + export Playwright retina ke `output/` |
 | `social/STORY_BOOKING.md` | Story "Cara Reservasi": 6 story alur pemesanan 3 langkah + tautan WhatsApp siap pakai untuk stiker (`social/story-booking/`) |
 | `social/STORY_QNA.md` | Story Q&A "Tanya SunaRi": 16 pertanyaan tamu sebelum menginap + sampul, penutup & template stiker (`social/story-qna/`) |
