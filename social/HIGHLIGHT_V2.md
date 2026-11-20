@@ -1,4 +1,4 @@
-# SunaRi: Highlight Instagram (Set 2, 17 highlight)
+# SunaRi: Highlight Instagram (Set 2 + tambahan Promo, Q&A, Layangan, Find Us)
 
 Cover: `social/highlights-v2/hl2-*.png` (1080 × 1920, latar Shell Cream, ikon Driftwood satu warna).
 Pratinjau: `social/highlights-v2/preview-highlights.png`.
@@ -17,6 +17,7 @@ Pratinjau: `social/highlights-v2/preview-highlights.png`.
 | 8 | Ramadhan | `hl2-07-ramadhan` | Konten bulan Ramadhan (buka puasa, suasana, promo Ramadhan) |
 | 1b | Promo | `hl2-07f-promo` | Paket (Staycation Senja), template `feed-promo`, promo musiman. **Tanpa harga kamar & tanpa persen diskon**; harga kayak boleh |
 | 1a | Q&A | `hl2-07e-qna` | `hs-booking-2`, story jawaban dari stiker Pertanyaan, carousel FAQ (`faq-1…6`) dibagikan ke story |
+| 1c | Find Us | `hl2-07g-find-us` | Story `rute-01…07` (Rute ke SunaRi) + carousel feed "Location & Rute Akses" dibagikan ke story + stiker lokasi/Google Maps |
 | 7a | Layangan | `hl2-07d-layangan` | Foto/video layangan di Pantai Sunari |
 | 8a | Ramadhan 1447H | `hl2-07b-ramadhan-1447` | Arsip Ramadhan 1447 H (sekitar Februari–Maret 2026) |
 | 8b | Ramadhan 1448H | `hl2-07c-ramadhan-1448` | Ramadhan 1448 H (sekitar Februari 2027, menunggu penetapan resmi) |
@@ -26,7 +27,7 @@ Pratinjau: `social/highlights-v2/preview-highlights.png`.
 *(Sunset September = 16 karakter, jadi disingkat "Sunset Sept".)* Pulau Bahuluang ditulis **"Bahuluang"** karena "Bahuluang Island" 16 karakter.
 
 ## Urutan di profil (kiri → kanan)
-Reservasi Kamar · Ayunan Raksasa · Kano / Kayak · Gusung Island · Bahuluang · Event · Tamu · Ramadhan · Sunset Desember → … → Sunset April
+Reservasi Kamar · Find Us · Ayunan Raksasa · Kano / Kayak · Gusung Island · Bahuluang · Event · Tamu · Ramadhan · Sunset Desember → … → Sunset April
 
 Calon tamu biasanya hanya melihat 4–5 highlight pertama. Karena itu Reservasi dan aktivitas unggulan diletakkan di depan, sedangkan arsip sunset bulanan di belakang (bulan terbaru lebih dulu).
 Instagram mengurutkan highlight berdasarkan **yang terakhir diperbarui**, jadi tambahkan story dari highlight paling belakang ke paling depan.
