@@ -38,19 +38,27 @@ def hours(dark=False, size=1.0):
   <div style="flex:1;border:1px solid rgba(166,124,100,.55);padding:{int(12*size)}px {int(16*size)}px">
     <div class="caps" style="font-size:{8.5*size:.1f}px">Tamu tidak menginap</div><div class="pf" style="font-size:{22*size:.0f}px;margin-top:4px">07.00 – 19.00</div></div></div>'''
 
-def header(h, logo_w, title, sub, photo_pos="50% 55%"):
-    return f'''<div style="position:absolute;left:0;right:0;top:0;height:{h}px;overflow:hidden">
-  <img src="../assets/photos/aktivitas/03-ayunan-senja.jpg" style="width:100%;height:100%;object-fit:cover;object-position:{photo_pos}">
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,20,.55),rgba(40,26,20,.15) 45%,rgba(40,26,20,.7))"></div>
-  <img src="../assets/logo-sunari-color-dark.png" style="position:absolute;left:50%;transform:translateX(-50%);top:{int(h*0.08)}px;width:{logo_w}px">
-  <div style="position:absolute;left:0;right:0;bottom:{int(h*0.1)}px;text-align:center;color:#FBF4EC">{title}{sub}</div></div>'''
+def sun(size):
+    gaps = "".join(f'<rect x="0" y="{y}" width="200" height="{h}" fill="black"/>' for y, h in [(112,5),(126,7),(142,9),(160,11),(180,13)])
+    return f'''<svg viewBox="0 0 200 200" width="{size}" height="{size}"><defs><linearGradient id="sg{size}" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#FDB15D"/><stop offset="1" stop-color="#FF8A5C"/></linearGradient><mask id="sm{size}"><rect width="200" height="200" fill="white"/>{gaps}</mask></defs>
+  <circle cx="100" cy="100" r="96" fill="url(#sg{size})" mask="url(#sm{size})"/></svg>'''
+
+def header(h, logo_w, title, sub, photo_pos=None):
+    """Text-only header in SunaRi style: color logo, serif title, hairline, small sun accent."""
+    return f'''<div style="position:absolute;left:0;right:0;top:0;height:{h}px;text-align:center">
+  <img src="../assets/logo-sunari-color.png" style="display:block;margin:{int(h*0.1)}px auto 0;width:{logo_w}px">
+  <div style="display:flex;align-items:center;justify-content:center;gap:{int(h*0.05)}px;margin-top:{int(h*0.04)}px">
+    <div style="width:{int(h*0.32)}px;height:1px;background:#A67C64;opacity:.5"></div>{sun(int(h*0.09))}<div style="width:{int(h*0.32)}px;height:1px;background:#A67C64;opacity:.5"></div></div>
+  <div style="margin-top:{int(h*0.035)}px">{title}{sub}</div></div>'''
 
 # ---- A4 (794 x 1123 css px)
 left = section("Makanan", MENU["Makanan"]) + section("Snack", MENU["Snack"]) + section("Soft Drink", MENU["Soft Drink"])
 right = section("Drinks", MENU["Drinks"]) + section("Juice", MENU["Juice"])
 a4 = f'''<div class="pg" id="menu-a4" style="width:794px;height:1123px;--h:23px;--f:12.2px;--rp:2.6px;--secgap:16px">
-  {header(300, 230, '<div class="pf" style="font-size:54px;line-height:1">Bajoy Beach <span style="font-style:italic">Resto</span></div>',
-          '<div class="caps" style="font-size:10px;color:#FBF4EC;margin-top:12px">Resto &amp; Bar · SunaRi Beach Resort</div>')}
+  {header(300, 230, '<div class="pf" style="font-size:50px;line-height:1">Bajoy Beach <span class="it">Resto</span></div>',
+          '<div class="caps" style="font-size:10px;margin-top:12px">Resto &amp; Bar · SunaRi Beach Resort</div>')}
+  <div style="position:absolute;inset:22px;border:1px solid rgba(166,124,100,.45);pointer-events:none"></div>
   <div style="position:absolute;left:56px;right:56px;top:326px;display:flex;gap:46px">
     <div style="flex:1">{left}</div><div style="flex:1">{right}</div></div>
   <div style="position:absolute;left:56px;right:56px;bottom:62px">{hours()}</div>
@@ -62,8 +70,8 @@ a4 = f'''<div class="pg" id="menu-a4" style="width:794px;height:1123px;--h:23px;
 def story(id_, kicker, cols):
     body = "".join(cols)
     return f'''<div class="pg" id="{id_}" style="width:1080px;height:1920px;--h:44px;--f:26px;--rp:6px;--secgap:34px">
-  {header(520, 310, '<div class="pf" style="font-size:84px;line-height:1">Bajoy Beach <span style="font-style:italic">Resto</span></div>',
-          f'<div class="caps" style="font-size:18px;color:#FBF4EC;margin-top:16px">{kicker}</div>', "50% 50%")}
+  {header(520, 310, '<div class="pf" style="font-size:80px;line-height:1">Bajoy Beach <span class="it">Resto</span></div>',
+          f'<div class="caps" style="font-size:18px;margin-top:16px">{kicker}</div>', "50% 50%")}
   <div style="position:absolute;left:90px;right:90px;top:570px">{body}</div>
   <div style="position:absolute;left:90px;right:90px;bottom:300px">{hours(size=1.5)}</div>
   <div style="position:absolute;left:90px;right:90px;bottom:256px;text-align:center;font-size:16px;letter-spacing:.24em;text-transform:uppercase;color:#A67C64">Harga dalam ribu rupiah · WA {WA}</div>
