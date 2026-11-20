@@ -14,12 +14,18 @@ location-carousel/
 ```
 
 ## Desain
+Palet tema SunaRi "Sunset Beach":
+
 | Token | Nilai | Dipakai untuk |
 |---|---|---|
-| `--bg` | `#F9F8F6` Warm Off-White | latar slide |
-| `--ink` | `#0D0D0D` Deep Charcoal | teks utama |
-| `--green` | `#008A27` Tropical Emerald | label, ikon, timeline, aksen judul italic |
-| `--coral` | `#EB3D2A` Tropical Coral | penanda "Tercepat"/"Scenic Route", panah rute, tombol CTA, "Geser →" |
+| `--bg` | `#FBF4EC` Shell Cream | latar slide |
+| `--ink` | `#45301F` Driftwood Deep | teks utama |
+| `--accent` | `#8A5F48` Driftwood | label, ikon, timeline |
+| `--accent-it` | `#A67C64` Driftwood | aksen judul italic |
+| `--sun` | `#E07A4B` Coral Glow | penanda "Tercepat"/"Scenic Route", panah rute, "Geser →" |
+| `--sun-grad` | `#FDB15D` → `#FF8A5C` Golden Hour → Coral Glow | tombol CTA, titik penanda |
+| `--accent-soft` | Sandy Shore (transparan) | latar label estimasi waktu |
+| peta | `#7BA7B6` Ocean Breeze | garis laut di slide sampul |
 
 - **Font:** Playfair Display untuk judul, Plus Jakarta Sans untuk isi, jadwal, dan label.
 - **Ikon:** pesawat, mobil, kapal feri, jam, pin lokasi, chat, kalender, dan bookmark. Semuanya garis tipis 1.5px dengan `vector-effect: non-scaling-stroke`, sehingga ketebalan garis tetap meskipun ukuran ikon berbeda.
