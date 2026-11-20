@@ -59,6 +59,8 @@ ul.l.cols{columns:2;column-gap:22px} ul.l.cols3{columns:3;column-gap:18px} ul.l 
 .toc .dots{flex:1;border-bottom:1px dotted rgba(138,95,72,.5);transform:translateY(-4px)}
 .toc .pg{font-family:'Playfair Display',serif;font-size:15px}
 .tp td{padding:4.5px 6px} .tp h2{margin-top:12px !important} .tp ul.l li{padding:1.5px 0 1.5px 16px} .tp .lead{margin-top:6px}
+a.lnk{color:#C0592C;font-weight:700;text-decoration:none;border-bottom:1px solid rgba(192,89,44,.4)}
+.vcard .pr{font-family:'Playfair Display',serif;font-size:24px;color:#C0592C;margin-top:6px}
 .menu-col h3{margin-top:14px} .menu-col table{font-size:12.5px} .menu-col td{padding:5px 4px}
 .cover > div{text-shadow:0 2px 14px rgba(0,0,0,.65),0 1px 3px rgba(0,0,0,.5)}
 .cover > img[src*='logo']{filter:drop-shadow(0 2px 10px rgba(0,0,0,.45))}
@@ -118,37 +120,39 @@ add(f'''{head("02", "Info penting", "Informasi <i>sekilas</i>", "Simpan halaman 
   <div>Alamat</div><div>Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kec. Bontosikuyu, Kab. Kepulauan Selayar, Sulawesi Selatan</div>
   <div>Pantai</div><div><b>Pantai Sunari</b>, pesisir barat Pulau Selayar. Landai &amp; aman untuk anak-anak</div>
   <div>Check-in / out</div><div>Check-in mulai <b>14.00 WITA</b> · Check-out paling lambat <b>12.00 WITA</b></div>
+  <div>Harga kamar</div><div>Mulai <b>Rp 900.000 /malam</b>, sudah termasuk sarapan. Daftar lengkap di Bab 03</div>
   <div>Sudah termasuk</div><div>Sarapan untuk semua tipe kamar · AC · Wi-Fi · teras pribadi</div>
   <div>Restoran</div><div><b>Bajoy Beach Resto</b>: 07.00–21.00 WITA (tamu menginap) · 07.00–19.00 WITA (tamu tidak menginap)</div>
   <div>Senja Dinner</div><div>Ikan bakar &amp; seafood saat matahari terbenam, <b>pesan paling lambat H-1</b></div>
   <div>Matahari terbenam</div><div>Tepat di depan Pantai Sunari, sekitar <b>17.50–18.00 WITA</b>, paling cantik April–Desember</div>
   <div>Dari bandara</div><div>Bandara H. Aroeppala → SunaRi ±10–15 menit dengan mobil</div>
-  <div>Antar-jemput</div><div>Tersedia (berbayar): bandara, Pelabuhan Benteng &amp; Pamatata, hingga dari Makassar. Lihat Bab 07</div>
+  <div>Antar-jemput</div><div>Tersedia (berbayar): bandara, Pelabuhan Benteng &amp; Pamatata, hingga dari Makassar. Lihat Bab 08</div>
   <div>Reservasi</div><div>WhatsApp <b>{WA}</b> · Instagram <b>{IG}</b></div>
   <div>Google Maps</div><div>maps.app.goo.gl/iUWWHNCT7Vyu4i537</div>
 </div>
-<div class="note"><b>Harga kamar</b> tidak dicantumkan di panduan ini karena menyesuaikan tanggal &amp; ketersediaan. Admin kami akan mengirim penawaran terbaru lewat WhatsApp.</div>''', toc=("Informasi sekilas", "Alamat, jam, kontak & hal penting"))
+<div class="note"><b>Ketersediaan kamar</b> menyesuaikan tanggal. Hubungi admin kami lewat WhatsApp untuk cek kamar kosong &amp; konfirmasi harga terbaru.</div>''', toc=("Informasi sekilas", "Alamat, jam, kontak & hal penting"))
 
 # =============================================================== 3 KAMAR OVERVIEW
 ROOMS = [
- ("Standard Bungalow", "2 orang (maks. 3)", "Queen", "Teras luas menghadap laut, kamar mandi bambu"),
- ("VIP Standard Bungalow", "2 orang (maks. 3)", "King", "Rumah panggung di tepi pantai, teras ke arah senja"),
- ("Superior Bungalow", "2 orang (maks. 3)", "King", "A-frame berloteng, TV, kamar mandi semi-outdoor"),
- ("VIP Superior Bungalow", "2 orang (maks. 3)", "King", "Kelas tertinggi: bathtub, air panas, TV, mini bar"),
- ("Family Superior Bungalow", "6 orang (maks. 8)", "Besar + 4 kasur", "2 lantai, kamar mandi di kedua lantai"),
+ ("Standard Bungalow", "2 orang (maks. 3)", "Queen", "Teras luas menghadap laut, kamar mandi bambu", 900000),
+ ("VIP Standard Bungalow", "2 orang (maks. 3)", "King", "Rumah panggung di tepi pantai, teras ke arah senja", 1000000),
+ ("Superior Bungalow", "2 orang (maks. 3)", "King", "A-frame berloteng, TV, kamar mandi semi-outdoor", 1500000),
+ ("VIP Superior Bungalow", "2 orang (maks. 3)", "King", "Kelas tertinggi: bathtub, air panas, TV, mini bar", 2500000),
+ ("Family Superior Bungalow", "6 orang (maks. 8)", "Besar + 4 kasur", "2 lantai, kamar mandi di kedua lantai", 2500000),
 ]
 add(f'''{head("03", "Kamar", "Lima tipe <i>bungalow</i>", "Setiap bungalow terbuat dari kayu dengan teras pribadi. Semua tipe sudah termasuk sarapan, AC dan Wi-Fi.")}
-{tbl(["Tipe kamar", "Kapasitas", "Tempat tidur", "Keistimewaan"], [(a, b, c, d) for a, b, c, d in ROOMS], right_from=9)}
+{tbl(["Tipe kamar", "Kapasitas", "Tempat tidur", "Keistimewaan", "Harga / malam"], [(a, b, c, d, rp(e)) for a, b, c, d, e in ROOMS], right_from=4, hi_last=True)}
+<p class="t" style="font-size:12px;margin-top:6px">Harga per kamar per malam, sudah termasuk sarapan. Extra bed dikenakan biaya tambahan.</p>
 <h2>Fasilitas di <i>semua kamar</i></h2>
 {ul(["Sarapan", "AC", "Wi-Fi", "Teras pribadi dengan kursi santai", "Kopi/teh &amp; pemanas air (kettle)", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Kamar mandi dalam, toilet duduk", "Perlengkapan mandi &amp; handuk", "Setrika (atas permintaan)", "Extra bed (berbayar)"], "cols3")}
 <div class="grid3" style="margin-top:18px">{img("vip-standard-bungalow/02-teras-view-pantai.jpg", 170)}{img("superior-bungalow/02-eksterior-depan.jpg", 170, "50% 35%")}{img("family-superior-bungalow/01-eksterior-taman.jpg", 170)}</div>
 <div class="note"><b>Extra bed:</b> 1 extra bed untuk Standard, VIP Standard, Superior &amp; VIP Superior (maks. 3 orang). 2 extra bed untuk Family Superior (maks. 8 orang). Biaya extra bed dikonfirmasi admin saat reservasi.</div>''',
     toc=("Kamar", "Perbandingan 5 tipe bungalow"))
 
-def room(no, name, sub, spec, desc, fac, photos):
+def room(no, name, sub, spec, desc, fac, photos, price=0):
     big, s1, s2 = photos
     add(f'''{head(no, "Kamar", name)}
-<div class="chips">{"".join(f'<span class="chip">{k} <b>{v}</b></span>' for k, v in spec)}</div>
+<div class="chips"><span class="chip" style="background:#FDE3CF">Harga <b>{rp(price)} /malam</b></span>{"".join(f'<span class="chip">{k} <b>{v}</b></span>' for k, v in spec)}</div>
 <div style="margin-top:14px">{img(big[0], 300, big[1])}</div>
 <div class="grid2" style="margin-top:12px">{img(s1[0], 175, s1[1])}{img(s2[0], 175, s2[1])}</div>
 <p class="lead" style="margin-top:16px"><i style="font-family:'Playfair Display',serif;font-size:16px;color:#A67C64">{sub}</i></p>
@@ -160,27 +164,27 @@ room("03 · a", "Standard <i>Bungalow</i>", "Pagi menghadap laut Selayar.",
      [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "Queen"), ("Pemandangan", "Laut &amp; taman")],
      "Bungalow kayu yang sejuk dan bersih dengan atap tinggi dan teras pribadi yang luas menghadap laut. Nikmati kopi pagi sambil melihat ombak dari kursi santai, lalu berjalan ke pantai untuk menunggu senja. Kamar mandi dalam bernuansa bambu dengan lantai batu alam.",
      ["Sarapan", "Queen bed", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Shower", "Toilet duduk", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
-     [("standard-bungalow/01-teras-view-laut.jpg", "50% 60%"), ("standard-bungalow/03-kamar-depan.jpg", "50% 50%"), ("standard-bungalow/04-kamar-mandi-bambu.jpg", "50% 50%")])
+     [("standard-bungalow/01-teras-view-laut.jpg", "50% 60%"), ("standard-bungalow/03-kamar-depan.jpg", "50% 50%"), ("standard-bungalow/04-kamar-mandi-bambu.jpg", "50% 50%")], price=900000)
 room("03 · b", "VIP Standard <i>Bungalow</i>", "Rumah panggung di bibir Pantai Sunari.",
      [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "King"), ("Pemandangan", "Laut atau taman")],
      "Rumah panggung beratap rumbia di tepi Pantai Sunari, dengan kamar yang lebih luas dibanding Standard Bungalow. Teras pribadi menghadap ke arah matahari terbenam. Pada unit tepi pantai, senja tepat di depan mata. Kamar bernuansa kayu dengan lampu dinding temaram dan area wastafel dengan gantungan baju.",
      ["Sarapan", "King bed", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Shower", "Toilet duduk", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
-     [("vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%"), ("vip-standard-bungalow/01-eksterior-rumah-panggung.jpg", "50% 50%"), ("vip-standard-bungalow/06-kamar-depan.jpg", "50% 50%")])
+     [("vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%"), ("vip-standard-bungalow/01-eksterior-rumah-panggung.jpg", "50% 50%"), ("vip-standard-bungalow/06-kamar-depan.jpg", "50% 50%")], price=1000000)
 room("03 · c", "Superior <i>Bungalow</i>", "Rumah kayu A-frame di antara pohon kelapa.",
      [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "King"), ("Ekstra", "TV · loteng")],
      "Bungalow kayu beratap A-frame dengan loteng di bawah langit-langit kayu yang menjulang, lebih luas dibanding Standard dan VIP Standard. Keistimewaannya adalah kamar mandi semi-outdoor dengan rain shower, dikelilingi taman hijau dan langit terbuka. Teras kayu pribadi menghadap laut atau taman.",
      ["Sarapan", "King bed", "TV", "Loteng", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Kamar mandi semi-outdoor", "Rain shower", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
-     [("superior-bungalow/02-eksterior-depan.jpg", "50% 35%"), ("superior-bungalow/05-kamar-tempat-tidur.jpg", "50% 50%"), ("superior-bungalow/10-kamar-mandi-taman.jpg", "50% 50%")])
+     [("superior-bungalow/02-eksterior-depan.jpg", "50% 35%"), ("superior-bungalow/05-kamar-tempat-tidur.jpg", "50% 50%"), ("superior-bungalow/10-kamar-mandi-taman.jpg", "50% 50%")], price=1500000)
 room("03 · d", "VIP Superior <i>Bungalow</i>", "Kelas tertinggi di SunaRi.",
      [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "King"), ("Ekstra", "Bathtub · air panas")],
      "Bungalow A-frame beratap rumbia dengan loteng dan jendela segitiga yang membiarkan cahaya pagi masuk. Kamar mandi semi-outdoor beratap kaca dengan <b>bathtub, rain shower dan air panas</b>, satu-satunya tipe kamar dengan air panas, untuk berendam air hangat dengan pohon kelapa tepat di atas kepala.",
      ["Sarapan", "King bed", "TV", "Mini bar/kulkas", "Bathtub", "Air panas &amp; dingin", "Rain shower", "Loteng", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Tirai blackout", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Extra bed (maks. 1)"],
-     [("vip-superior-bungalow/01-eksterior-a-frame.jpg", "50% 45%"), ("vip-superior-bungalow/04-kamar-tempat-tidur.jpg", "50% 50%"), ("vip-superior-bungalow/06-bathtub-semi-outdoor.jpg", "50% 55%")])
+     [("vip-superior-bungalow/01-eksterior-a-frame.jpg", "50% 45%"), ("vip-superior-bungalow/04-kamar-tempat-tidur.jpg", "50% 50%"), ("vip-superior-bungalow/06-bathtub-semi-outdoor.jpg", "50% 55%")], price=2500000)
 room("03 · e", "Family Superior <i>Bungalow</i>", "Satu rumah, dua lantai, semua bersama.",
      [("Kapasitas", "6 orang (maks. 8)"), ("Lantai 1", "2–3 orang"), ("Lantai 2", "4–5 orang")],
      "Tipe bungalow terbesar di SunaRi, ideal untuk keluarga besar. Lantai 1 untuk 2–3 orang dengan tempat tidur besar, lantai 2 untuk 4–5 orang dengan empat kasur di bawah atap kayu yang tinggi. Toilet dan kamar mandi tersedia di kedua lantai. Teras pribadi dengan kursi santai, pas untuk berkumpul sebelum senja.",
      ["Sarapan", "2 lantai", "Kamar mandi di kedua lantai", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 2)"],
-     [("family-superior-bungalow/01-eksterior-taman.jpg", "55% 50%"), ("family-superior-bungalow/05-kamar-bawah-depan.jpg", "50% 50%"), ("family-superior-bungalow/09-lantai-atas-4-kasur.jpg", "50% 50%")])
+     [("family-superior-bungalow/01-eksterior-taman.jpg", "55% 50%"), ("family-superior-bungalow/05-kamar-bawah-depan.jpg", "50% 50%"), ("family-superior-bungalow/09-lantai-atas-4-kasur.jpg", "50% 50%")], price=2500000)
 
 # =============================================================== 4 RESTO
 MENU = {
@@ -225,10 +229,52 @@ add(f'''{head("05", "Aktivitas", "Aktivitas di <i>Pantai Sunari</i>", "Tidak per
     <p class="t">Matahari terbenam tepat di depan pantai, sekitar 17.50–18.00 WITA. Paling cantik April–Desember.</p></div>
   <div class="card">{img("pantai/04-kursi-santai-bawah-pohon.jpg", 150, "50% 55%")}<h3 style="margin-top:12px">Bersantai &amp; <i>bermain air</i></h3>
     <p class="t">Pantai landai dan aman untuk anak-anak. Kursi santai di bawah pohon ketapang dengan Pulau Gusung di seberang.</p></div>
-</div>''', toc=("Aktivitas", "Kayak, ayunan raksasa, senja & pantai"))
+</div>''', toc=("Aktivitas", "Kayak, ayunan raksasa, snorkeling, senja & pantai"))
+add(f'''{head("05", "Aktivitas", "Sewa alat <i>snorkeling</i>", "Nikmati keindahan bawah laut Selayar dengan alat snorkeling berkualitas, bersih, dan terawat.")}
+<div class="grid2" style="margin-top:16px;align-items:start">
+  <div>{img("bahuluang/14-snorkeling-makam-karang.jpg", 250)}</div>
+  <div class="card"><div class="caps">Spesifikasi alat</div>
+    <table style="margin-top:6px"><tr><td class="b">Snorkel</td><td>TUSA Hyperdry Snorkel</td></tr><tr><td class="b">Masker</td><td>TUSA Splash</td></tr><tr><td class="b">Fins</td><td>Cowfish / Alba</td></tr><tr><td class="b">Pelampung</td><td>Life jacket</td></tr></table></div>
+</div>
+<div class="grid2" style="margin-top:6px;gap:22px;align-items:start">
+  <div><h2 style="font-size:20px">Paket <i>sewa</i></h2>
+    {tbl(["Paket", "Harga"], [("Paket lengkap<br><span style='font-weight:400;font-size:12px'>Snorkel + masker + fins + life jacket</span>", rp(50000) + " /set /hari"), ("Paket tanpa life jacket<br><span style='font-weight:400;font-size:12px'>Snorkel + masker + fins</span>", rp(40000) + " /set /hari")], hi_last=True)}</div>
+  <div><h2 style="font-size:20px">Sewa <i>satuan</i></h2>
+    {tbl(["Alat", "Harga"], [("Snorkel", rp(15000) + " /hari"), ("Masker", rp(15000) + " /hari"), ("Fins", rp(15000) + " /hari"), ("Life jacket", rp(15000) + " /hari")], hi_last=True)}</div>
+</div>
+<h2 style="font-size:20px">Syarat &amp; <i>ketentuan</i></h2>
+{ul(["Pembayaran dilakukan di awal sebelum alat digunakan.", "Kerusakan atau kehilangan alat menjadi tanggung jawab penyewa dan dikenakan biaya penggantian.", "Life jacket wajib digunakan bagi tamu yang belum mahir berenang.", "Sewa mengikuti ketersediaan stok alat di lokasi."])}
+<div class="note">Alat snorkeling <b>sudah termasuk</b> dalam semua paket tur pulau (Bab 07). Pesan lewat katalog WhatsApp: <a class="lnk" href="https://wa.me/p/28508148958779838/6282189033044">wa.me/p/28508148958779838</a></div>''')
+
+# =============================================================== 6 ACARA / VENUE
+VENUES = [("Wantilan", 2500000, "60–80 orang", "Area utama yang tenang dan tertata, ideal untuk dinner semi formal, meeting, maupun presentasi."),
+          ("Beach Club", 2000000, "40–60 orang", "Suasana santai di tepi pantai, ideal untuk lunch atau dinner santai, perayaan ulang tahun, dan acara sejenis."),
+          ("Lapangan &amp; Panggung", 2000000, "100 orang", "Ruang terbuka yang luas, ideal untuk games, gathering, dan berbagai acara outdoor.")]
+add(f'''{head("06", "Acara", "Sewa tempat <i>untuk acara</i>", "Meeting, gathering kantor, perayaan, hingga dinner semi formal di tepi Pantai Sunari.")}
+<div class="grid3" style="margin-top:16px">{img("malam/02-bangunan-utama-malam.jpg", 165)}{img("taman/01-meja-di-taman.jpg", 165)}{img("malam/07-jalan-setapak-gazebo.jpg", 165)}</div>
+<h2>Pilihan <i>venue</i></h2>
+<p class="t" style="margin-top:2px">Waktu pemakaian <b>08.00–17.00 WITA</b></p>
+<div class="grid3" style="margin-top:10px;align-items:stretch">
+  {"".join(f'<div class="card vcard"><div class="caps">Kapasitas {c}</div><h3 style="margin-top:6px">{n}</h3><div class="pr">{rp(p)}</div><p class="t">{d}</p></div>' for n, p, c, d in VENUES)}
+</div>
+<p class="t" style="font-style:italic">Ketiga area dapat disewa sekaligus dalam satu acara, dengan harga sesuai tarif masing-masing.</p>
+<h2 style="font-size:20px">Fasilitas <i>termasuk</i></h2>
+{ul(["Venue, meja &amp; kursi", "Proyektor, LCD &amp; speaker", "Listrik", "Kebersihan area"], "cols")}''', toc=("Acara & venue", "Sewa tempat, fasilitas & ketentuan"))
+add(f'''{head("06", "Acara", "Ketentuan <i>acara</i>")}
+<div class="grid2" style="margin-top:14px;gap:16px;align-items:stretch">
+  <div class="card"><h3>Konsumsi</h3>{ul(["Tamu dipersilakan membawa makanan &amp; peralatan makan sendiri", "Makanan wajib dalam kondisi <b>siap saji</b>"])}</div>
+  <div class="card"><h3>Sewa peralatan makan</h3>{ul(["Mulai <b>Rp 1.500.000</b>, sudah termasuk service", "Piring saji, piring makan, sendok, garpu &amp; perlengkapan lain", "Harga menyesuaikan jumlah tamu"])}</div>
+  <div class="card"><h3>Dekorasi</h3>{ul(["Diperbolehkan, termasuk dari vendor luar", "Pembersihan setelah acara dapat dilakukan oleh pihak tamu"])}</div>
+  <div class="card"><h3>Penambahan waktu</h3>{ul(["Melewati pukul 17.00 dikenakan biaya <b>Rp 500.000</b>, atau sesuai kesepakatan"])}</div>
+  <div class="card"><h3>Sound system</h3>{ul(["Penggunaan maksimal hingga <b>pukul 22.00</b>, demi kenyamanan tamu yang menginap"])}</div>
+  <div class="card"><h3>Akomodasi</h3>{ul(["Peserta acara memperoleh <b>harga corporate</b> untuk kamar", "Tanpa minimum jumlah pemesanan"])}</div>
+</div>
+<h2 style="font-size:20px">Booking &amp; <i>pembayaran</i></h2>
+{ul(["Pemesanan minimal <b>3 hari sebelum acara</b>", "<b>DP 50%</b> saat booking", "Pelunasan setelah acara selesai", "Reschedule dapat dilakukan dalam <b>6 bulan</b>; dana <b>tidak dapat dikembalikan</b>"], "cols")}
+<div class="note">Kami dengan senang hati menyesuaikan paket sesuai kebutuhan acara Anda. Hubungi WhatsApp <b>{WA}</b> atau lihat katalog: <a class="lnk" href="https://wa.me/p/28083493487968437/6282189033044">wa.me/p/28083493487968437</a></div>''')
 
 # =============================================================== 6 TUR
-add(f'''{head("06", "Tur pulau", "Jelajah pulau <i>dari SunaRi</i>", "Pulau-pulau eksotis Selayar bisa dijelajahi langsung dari resort. Semua tur privat sudah termasuk kapal, alat snorkeling, lunchbox &amp; tiket masuk.")}
+add(f'''{head("07", "Tur pulau", "Jelajah pulau <i>dari SunaRi</i>", "Pulau-pulau eksotis Selayar bisa dijelajahi langsung dari resort. Semua tur privat sudah termasuk kapal, alat snorkeling, lunchbox &amp; tiket masuk.")}
 <div class="grid2" style="margin-top:16px">{img("pantai/03-pulau-di-seberang.jpg", 210, "50% 60%")}{img("bahuluang/10-air-dangkal-toska.jpg", 210, "50% 50%")}</div>
 <p class="t" style="margin-top:8px;font-style:italic">Kiri: Pulau Gusung, terlihat langsung dari Pantai Sunari. Kanan: air toska Pulau Bahuluang.</p>
 {tbl(["Paket", "Jenis", "Durasi", "Mulai dari"], [
@@ -243,7 +289,7 @@ add(f'''{head("06", "Tur pulau", "Jelajah pulau <i>dari SunaRi</i>", "Pulau-pula
 
 def tour(title, sub, hl, rows, prices, incl, excl, car=False, photos=None):
     gl = lambda n: f"{n} orang"
-    add(f'''<div class="tp">{head("06", "Tur pulau", title, sub)}
+    add(f'''<div class="tp">{head("07", "Tur pulau", title, sub)}
 <div class="chips">{"".join(f'<span class="chip">{k} <b>{v}</b></span>' for k, v in hl)}</div>
 <h2 style="font-size:18px;margin-top:14px">Jadwal <i>tur</i></h2>
 <table>{"".join(f'<tr><td class="t">{t}</td><td>{a}</td></tr>' for t, a in rows)}</table>
@@ -282,7 +328,7 @@ tour('Tur Eksotis <i>Polassi &amp; Tambolongan</i>', "Trekking Bukit Nane, hoppi
      EX + ["Aktivitas tambahan opsional", "Tip sopir/kapten/pemandu (sukarela)"], car=True,
      photos=[("polassi-tambolongan/07-punggung-bukit-nane-dan-teluk.jpg", "50% 55%")])
 
-add(f'''{head("06", "Tur pulau", "Open Trip <i>Jelajah Pulau Selayar</i>", "Wisata bahari 2 hari bersama peserta lain: temukan surga tersembunyi Sulawesi Selatan.")}
+add(f'''{head("07", "Tur pulau", "Open Trip <i>Jelajah Pulau Selayar</i>", "Wisata bahari 2 hari bersama peserta lain: temukan surga tersembunyi Sulawesi Selatan.")}
 <div class="chips"><span class="chip">Harga <b>{rp(3000000)} /orang</b></span><span class="chip">Durasi <b>2 hari</b></span><span class="chip">Kuota min. <b>8 orang</b></span><span class="chip">Titik temu <b>penjemputan area/pelabuhan Selayar</b></span></div>
 <div class="grid2" style="margin-top:12px;gap:22px;align-items:start">
   <div><h2 style="font-size:18px;margin-top:6px">Hari 1 · <i>Pulau Gusung</i></h2>{ul(["Penjemputan, briefing keselamatan &amp; pembagian alat snorkeling", "Pantai Balojaha: pasir putih &amp; air toska", "Pantai Liang Tarrusu: tebing kapur ikonik", "Pantai Bone Malea: makan siang lunchbox", "Pantai Liang Kareta: berenang &amp; snorkeling", "Kembali ke pelabuhan / resort"])}
@@ -294,7 +340,7 @@ add(f'''{head("06", "Tur pulau", "Open Trip <i>Jelajah Pulau Selayar</i>", "Wisa
 <div class="note"><b>Ketentuan:</b> minimal 8 orang per keberangkatan (jika tidak terpenuhi: penyesuaian harga, jadwal ulang atau refund penuh sesuai kesepakatan). Rute dapat berubah karena cuaca/gelombang. Sinyal di pulau terluar terbatas. Bukit Nane butuh kebugaran sedang.</div>''')
 
 # =============================================================== 7 RUTE
-add(f'''{head("07", "Rute &amp; akses", "Tiga jalan <i>menuju SunaRi</i>", "Dari Makassar, Selayar bisa dicapai lewat udara, darat + feri, atau kapal langsung.")}
+add(f'''{head("08", "Rute &amp; akses", "Tiga jalan <i>menuju SunaRi</i>", "Dari Makassar, Selayar bisa dicapai lewat udara, darat + feri, atau kapal langsung.")}
 <img class="img" src="{I}map__03_tiga_rute.jpg" style="height:330px;margin-top:14px;object-position:50% 50%" alt="Peta 3 rute">
 <div class="grid3" style="margin-top:14px;align-items:start">
   <div class="card"><div class="caps" style="display:flex;gap:8px;align-items:center"><span class="num" style="background:#E8674A">1</span>Udara · tercepat</div>
@@ -315,7 +361,7 @@ add(f'''{head("07", "Rute &amp; akses", "Tiga jalan <i>menuju SunaRi</i>", "Dari
 LOCAL = [("Bandara H. Aroeppala ↔ SunaRi", 150000, 300000), ("Pelabuhan Benteng ↔ SunaRi", 200000, 400000), ("Pelabuhan Pamatata ↔ SunaRi", 400000, 800000)]
 A = [1950000, 2000000, 2050000, 2100000, 4050000, 4100000, 4150000, 4200000]
 B = [1100000, 1550000, 2000000, 2450000, 3550000, 4000000, 4450000, 4900000]
-add(f'''{head("07", "Rute &amp; akses", "Antar-jemput <i>&amp; transfer</i>", "Kendaraan privat khusus rombongan Anda, sudah termasuk sopir, BBM &amp; parkir.")}
+add(f'''{head("08", "Rute &amp; akses", "Antar-jemput <i>&amp; transfer</i>", "Kendaraan privat khusus rombongan Anda, sudah termasuk sopir, BBM &amp; parkir.")}
 <h2 style="font-size:18px;margin-top:14px">Shuttle lokal Selayar <i>(sekali jalan)</i></h2>
 {tbl(["Rute", "1–4 tamu (1 mobil)", "5–8 tamu (2 mobil)"], [(r, rp(a), rp(b)) for r, a, b in LOCAL])}
 <h2 style="font-size:18px;margin-top:18px">Transfer Makassar ↔ SunaRi <i>(total per rombongan)</i></h2>
@@ -335,8 +381,8 @@ FAQ = [("Jam check-in &amp; check-out?", "Check-in mulai 14.00 WITA, check-out p
        ("Aman untuk anak-anak?", "Pantai Sunari landai &amp; aman untuk anak."),
        ("Tamu luar boleh ke resto?", "Boleh, Bajoy Beach Resto buka 07.00–19.00 untuk tamu tidak menginap."),
        ("Ayunan raksasa berbayar?", "Tidak, ayunan raksasa gratis."),
-       ("Bisa dijemput di bandara?", "Bisa, berbayar. Lihat tarif di Bab 07.")]
-add(f'''{head("08", "Reservasi", "Cara <i>reservasi</i>", "Cukup 3 langkah lewat WhatsApp, tanpa aplikasi lain.")}
+       ("Bisa dijemput di bandara?", "Bisa, berbayar. Lihat tarif di Bab 08.")]
+add(f'''{head("09", "Reservasi", "Cara <i>reservasi</i>", "Cukup 3 langkah lewat WhatsApp, tanpa aplikasi lain.")}
 <div class="grid3" style="margin-top:16px;align-items:stretch">
   {"".join(f'<div class="card"><span class="num" style="width:34px;height:34px;font-size:18px;background:linear-gradient(180deg,#FDB15D,#FF8A5C)">{i}</span><h3 style="margin-top:10px">{h}</h3><p class="t">{t}</p></div>' for i, (h, t) in enumerate([("Chat admin", f"Hubungi WhatsApp <b>{WA}</b>."), ("Kirim data", "Tanggal check-in &amp; check-out, jumlah tamu (dewasa &amp; anak), tipe kamar, perlu antar-jemput atau tidak."), ("Bayar &amp; selesai", "Admin kirim harga &amp; ketersediaan → transfer &amp; kirim bukti → booking terkonfirmasi.")], 1))}
 </div>

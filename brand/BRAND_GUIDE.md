@@ -320,6 +320,9 @@ Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 **Kebijakan harga:**
 - **Harga kamar dan paket menginap:** jangan dicantumkan (termasuk persentase diskon). Arahkan ke WhatsApp.
 - **Harga sewa kayak:** boleh dicantumkan (single Rp 50.000, double Rp 100.000).
+- **Harga kamar per malam (termasuk sarapan)** — hanya untuk e-book, dokumen & balasan WhatsApp, **bukan** untuk konten media sosial: Standard Rp 900.000 · VIP Standard Rp 1.000.000 · Superior Rp 1.500.000 · VIP Superior Rp 2.500.000 · Family Superior Rp 2.500.000.
+- **Sewa alat snorkeling:** paket lengkap Rp 50.000/set/hari · tanpa life jacket Rp 40.000 · satuan Rp 15.000/hari. Katalog WA: https://wa.me/p/28508148958779838/6282189033044
+- **Sewa venue (08.00–17.00):** Wantilan Rp 2.500.000 (60–80 org) · Beach Club Rp 2.000.000 (40–60 org) · Lapangan & Panggung Rp 2.000.000 (100 org). Katalog WA: https://wa.me/p/28083493487968437/6282189033044
 
 ## 10. Yang Perlu Dikonfirmasi
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain
