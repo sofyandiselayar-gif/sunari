@@ -1,0 +1,108 @@
+"""Story "Cara Reservasi" SunaRi (1080x1920).
+Run: python3 social/build_booking.py && node social/render_booking.js  -> social/story-booking/*.png"""
+import pathlib, urllib.parse
+H = pathlib.Path(__file__).parent
+WA = "0821-8903-3044"
+IG = "@sunaribeachresortselayar"
+LOGO = "../assets/logo-sunari-color.png"
+LOGO_D = "../assets/logo-sunari-color-dark.png"
+P = "../assets/photos/"
+MSG = ("Halo SunaRi, saya mau reservasi kamar.\n"
+       "Check-in: \nCheck-out: \nJumlah tamu: ... dewasa, ... anak\nTipe kamar: \nAntar-jemput: ya / tidak")
+LINK = "https://wa.me/6282189033044?text=" + urllib.parse.quote(MSG)
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">'
+CSS = """
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#bbb;font-family:Montserrat,sans-serif;color:#45301F}
+.s{width:1080px;height:1920px;background:#FBF4EC;position:relative;overflow:hidden;margin:30px auto}
+.top{position:absolute;left:72px;right:72px;top:118px;display:flex;align-items:center}
+.top img{width:230px}
+.caps{font-weight:600;text-transform:uppercase;letter-spacing:.24em;color:#8A5F48}
+.top .caps{margin-left:auto;font-size:22px}
+.pf{font-family:'Playfair Display',serif;font-weight:500}
+.it{font-style:italic;color:#A67C64}
+.emb{text-shadow:0 1.5px 0 #fff,1px 2.5px 3px rgba(90,62,49,.2)}
+.body{position:absolute;left:72px;right:72px;top:300px;bottom:330px;display:flex;flex-direction:column;justify-content:center}
+.step{display:flex;align-items:center;gap:30px}
+.num{flex:none;width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:84px;color:#fff;background:linear-gradient(180deg,#FDB15D,#FF8A5C);box-shadow:0 3px 0 #fff,0 8px 20px rgba(224,122,75,.3)}
+.h{font-family:'Playfair Display',serif;font-weight:500;font-size:88px;line-height:1.08}
+.lead{font-size:42px;line-height:1.5;margin-top:34px}
+.card{background:#FFFDF9;border-radius:36px;padding:44px 50px;margin-top:44px;box-shadow:0 16px 40px rgba(90,62,49,.12),0 2px 6px rgba(90,62,49,.08)}
+.row{display:flex;gap:22px;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(138,95,72,.25);font-size:39px;line-height:1.3}
+.row:last-child{border-bottom:none}
+.row b{font-weight:600;min-width:270px}
+.row span{color:#8A5F48}
+.sticker{margin-top:56px;height:230px;border-radius:36px;border:3px dashed rgba(224,122,75,.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:rgba(253,177,93,.08)}
+.sticker .a{font-size:46px;color:#E07A4B}
+.sticker .c{font-weight:700;font-size:22px;letter-spacing:.22em;text-transform:uppercase;color:#C0592C}
+.ft{position:absolute;left:72px;right:72px;bottom:240px;display:flex;justify-content:space-between;font-size:20px;padding-top:22px;border-top:1px solid rgba(138,95,72,.4)}
+.dots{display:flex;gap:12px;justify-content:center;position:absolute;left:0;right:0;top:275px}
+.dots i{width:44px;height:6px;border-radius:3px;background:rgba(138,95,72,.25)} .dots i.on{background:#FF8A5C}
+"""
+STICKER = '<div class="sticker"><div class="a">↓ ketuk di sini ↓</div><div class="c">Tempel stiker tautan WhatsApp</div></div>'
+N = 6
+S = []
+def shell(i, inner, foot_right=None):
+    dots = "".join(f'<i class="{"on" if k == i else ""}"></i>' for k in range(1, N + 1))
+    S.append(f'''<div class="s" id="booking-{i:02d}"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Cara reservasi</span></div>
+  <div class="dots">{dots}</div><div class="body">{inner}</div>
+  <div class="ft"><span class="caps">WA {WA}</span><span class="caps">{foot_right or IG}</span></div></div>''')
+
+# 01 cover (photo)
+S.append(f'''<div class="s" id="booking-01"><img src="{P}pantai/04-kursi-santai-bawah-pohon.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%" alt="">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,14,.5) 0%,rgba(30,20,14,.05) 28%,rgba(30,20,14,.1) 45%,rgba(30,20,14,.82) 100%)"></div>
+  <img src="{LOGO_D}" style="position:absolute;left:50%;transform:translateX(-50%);top:150px;width:330px" alt="">
+  <div style="position:absolute;left:72px;right:72px;bottom:290px;text-align:center;color:#FBF4EC">
+    <div style="font-weight:600;font-size:24px;letter-spacing:.26em;text-transform:uppercase;color:#FDB15D">How to book</div>
+    <div class="pf" style="font-size:118px;line-height:1.02;margin-top:22px;text-shadow:0 4px 20px rgba(0,0,0,.35)">Cara <i style="color:#FDB15D">Reservasi</i></div>
+    <div style="font-size:40px;line-height:1.45;margin-top:28px">Cukup <b>3 langkah</b> lewat WhatsApp.<br>Tidak perlu aplikasi lain.</div>
+    <div style="display:flex;justify-content:center;gap:26px;margin-top:46px">{"".join(f'<div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(180deg,#FDB15D,#FF8A5C);display:flex;align-items:center;justify-content:center;font-family:Playfair Display,serif;font-size:52px">{k}</div>' for k in (1, 2, 3))}</div>
+    <div style="font-weight:600;font-size:22px;letter-spacing:.24em;text-transform:uppercase;margin-top:44px;opacity:.9">Ketuk untuk lanjut →</div></div></div>''')
+
+# 02 step 1
+shell(2, f'''<div class="step"><div class="num">1</div><div class="h emb">Chat admin<br><span class="it">di WhatsApp</span></div></div>
+  <div class="lead">Ketuk stiker di bawah. Chat langsung terbuka, <b>pesannya sudah terisi</b>, tinggal dilengkapi.</div>
+  {STICKER}
+  <div class="card" style="text-align:center;margin-top:44px"><div class="caps" style="font-size:22px">WhatsApp resmi SunaRi</div><div class="pf" style="font-size:80px;margin-top:8px">{WA}</div></div>''')
+
+# 03 step 2
+shell(3, '''<div class="step"><div class="num">2</div><div class="h emb">Kirim<br><span class="it">data menginap</span></div></div>
+  <div class="card">
+    <div class="row"><b>Check-in</b><span>tanggal datang</span></div>
+    <div class="row"><b>Check-out</b><span>tanggal pulang</span></div>
+    <div class="row"><b>Jumlah tamu</b><span>dewasa &amp; anak</span></div>
+    <div class="row"><b>Tipe kamar</b><span>lihat slide berikut</span></div>
+    <div class="row"><b>Antar-jemput</b><span>ya / tidak</span></div></div>
+  <div class="lead" style="font-size:34px">Mau sekalian <b>Senja Dinner</b> atau <b>tur pulau</b>? Tulis juga di chat yang sama.</div>''')
+
+# 04 room types
+shell(4, '''<div class="h emb" style="font-size:70px">Pilih <span class="it">tipe kamar</span></div>
+  <div class="card" style="margin-top:36px">
+    <div class="row"><b>Standard</b><span>2 orang · queen bed</span></div>
+    <div class="row"><b>VIP Standard</b><span>2 orang · king · teras ke arah senja</span></div>
+    <div class="row"><b>Superior</b><span>2 orang · king · TV</span></div>
+    <div class="row"><b>VIP Superior</b><span>2 orang · bathtub &amp; air panas</span></div>
+    <div class="row"><b>Family Superior</b><span>6 orang · 2 lantai</span></div></div>
+  <div class="lead" style="font-size:34px">Semua kamar: <b>sarapan</b>, AC, Wi-Fi &amp; teras pribadi. Extra bed tersedia (berbayar).</div>''')
+
+# 05 step 3
+shell(5, '''<div class="step"><div class="num">3</div><div class="h emb">Bayar &amp;<br><span class="it">selesai</span></div></div>
+  <div class="card">
+    <div class="row"><b>a.</b><span style="color:#45301F">Admin kirim <b>harga &amp; ketersediaan</b> kamar</span></div>
+    <div class="row"><b>b.</b><span style="color:#45301F">Transfer pembayaran, lalu <b>kirim bukti transfer</b> di chat</span></div>
+    <div class="row"><b>c.</b><span style="color:#45301F">Booking <b>terkonfirmasi</b>. Sampai jumpa di Pantai Sunari!</span></div></div>
+  <div class="lead" style="font-size:34px;text-align:center;margin-top:44px">Check-in <b>14.00</b> · Check-out <b>12.00</b> WITA</div>''')
+S[-1] = S[-1].replace('<b>a.</b>', '<b style="min-width:60px">a.</b>').replace('<b>b.</b>', '<b style="min-width:60px">b.</b>').replace('<b>c.</b>', '<b style="min-width:60px">c.</b>')
+
+# 06 CTA
+shell(6, f'''<div style="text-align:center"><div class="caps" style="font-size:24px">Siap menginap?</div>
+  <div class="pf emb" style="font-size:104px;line-height:1.05;margin-top:24px">Chat kami<br><span class="it">sekarang</span></div>
+  <div class="lead">Admin bantu dari pilih kamar sampai antar-jemput.</div></div>
+  {STICKER}
+  <div class="card" style="text-align:center"><div class="caps" style="font-size:22px">WhatsApp</div><div class="pf" style="font-size:84px;margin-top:8px">{WA}</div>
+  <div style="font-size:28px;margin-top:10px;color:#8A5F48">Simpan nomor ini agar mudah dihubungi</div></div>''', "Pantai Sunari · Selayar")
+
+S.sort(key=lambda h: h.split('id="')[1][:10])
+(H / "booking.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(S)}</body></html>')
+(H / "booking_link.txt").write_text(LINK + "\n")
+print(len(S), "story"); print(LINK)

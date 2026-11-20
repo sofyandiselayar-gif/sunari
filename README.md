@@ -11,6 +11,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `ota/DESKRIPSI_OTA_GOOGLE.md` | Deskripsi properti & 5 tipe kamar (ID/EN) untuk OTA dan Google Business Profile |
 | `resto/MENU_BAJOY.md` | Menu & jam buka Bajoy Beach Resto + desain menu A4 dan story |
 | `social/SLOW_LIVING.md` | Seri "Jeda" (storytelling & slow living): carousel 8 slide, 6 post "Catatan Jeda", 3 story interaktif, 2 skrip Reels & caption (`social/slow-living/`) |
+| `social/STORY_BOOKING.md` | Story "Cara Reservasi": 6 story alur pemesanan 3 langkah + tautan WhatsApp siap pakai untuk stiker (`social/story-booking/`) |
 | `social/STORY_QNA.md` | Story Q&A "Tanya SunaRi": 16 pertanyaan tamu sebelum menginap + sampul, penutup & template stiker (`social/story-qna/`) |
 | `services/` | Dokumen tarif Transfer & Shuttle + paket tur (Gusung, Bahuluang, Polassi & Tambolongan, Open Trip) — PDF A4 & PNG gaya SunaRi, versi English dan Bahasa Indonesia |
 | `merch/PANDUAN_MERCHANDISE.md` | Desain souvenir: artwork siap cetak (`merch/artwork/`) & mockup produk (`merch/mockup/`) |
