@@ -29,7 +29,7 @@ Tambahan 20 Nov 2026:
 |---|---|---|---|
 | `pantai/01-nelayan-pagi.jpg` | Nelayan di perahu biru, laut tenang pagi hari | ✂️ (watermark kanan bawah) | Konten "pagi di Pantai Sunari", story |
 | `pantai/02-perahu-nelayan-biru.jpg` | Perahu nelayan biru melintas, daun ketapang di atas | ✅ | Konten pagi, kontras biru vs. senja di grid |
-| `pantai/03-pulau-di-seberang.jpg` | Laut biru & pulau di seberang, bingkai daun | ✅ | Story/feed siang. Nama pulau belum disebut, perlu konfirmasi |
+| `pantai/03-pulau-di-seberang.jpg` | Laut biru & **Pulau Gusung** di seberang, bingkai daun | ✅ | Story/feed siang, promosi tur Pulau Gusung ("terlihat dari Pantai Sunari") |
 | `pantai/04-kursi-santai-bawah-pohon.jpg` | Kursi santai kayu ganda di bawah pohon ketapang, laut biru, pelampung & kayak | ✅ | OTA/Google (area pantai), Q&A "aman untuk anak", konten bersantai |
 | `pantai/05-kursi-santai-dan-kayak.jpg` | Kursi santai yang sama & kayak di pasir, format 9:16 | ✂️ (cap "25 Okt 2026 15.07") | Story sewa kayak, Q&A aktivitas |
 | `taman/01-meja-di-taman.jpg` | Meja kayu di bawah palem, bunga bougainvillea | ✂️ | Konten taman / tempat santai |
@@ -49,8 +49,8 @@ Tambahan 20 Nov 2026:
 |---|---|---|---|
 | `aktivitas/01-kayak-sore.jpg` | Kayak single saat golden hour | ✅ | Konten sewa kayak |
 | `aktivitas/02-kayak-snorkeling.jpg` | Kayak kuning + tamu snorkeling | 👤 ❓ | Apakah **sewa alat snorkeling** tersedia? |
-| `aktivitas/03-ayunan-senja.jpg` | Ayunan tinggi di pantai saat senja | ✅ ❓ | Sangat kuat untuk Reels. Apakah **ayunan** fasilitas resort (gratis/berbayar)? |
-| `aktivitas/05-ayunan-raksasa-senja.jpg` | Siluet tamu di ayunan raksasa, matahari di cakrawala (foto baru) | ✅ ❓ | Highlight "Ayunan Raksasa", Reels. Masih perlu info: gratis/berbayar |
+| `aktivitas/03-ayunan-senja.jpg` | Ayunan tinggi di pantai saat senja | ✅ | Sangat kuat untuk Reels. Ayunan raksasa milik resort, **gratis** |
+| `aktivitas/05-ayunan-raksasa-senja.jpg` | Siluet tamu di ayunan raksasa, matahari di cakrawala (foto baru) | ✅ | Highlight "Ayunan Raksasa", Reels (gratis) |
 | `aktivitas/04-perahu-wisata.jpg` | Perahu wisata "Selayar Traveling" | 👤 ❓ | Perahu milik operator lain; jangan diklaim sebagai layanan SunaRi tanpa konfirmasi kerja sama |
 
 ## Acara

@@ -119,12 +119,12 @@ qa("Ada layanan antar-jemput?",
    + lst(["Bandara H. Aroeppala ↔ SunaRi", "Pelabuhan Benteng ↔ SunaRi", "Pelabuhan Pamatata ↔ SunaRi", "Transfer dari Makassar (mobil privat atau bus + shuttle)"], one=True)
    + '<p>Daftar tarif lengkap kami kirim lewat WhatsApp. Konfirmasi jadwal paling lambat <b>H-1</b>.</p>')
 qa("Ada aktivitas apa saja?",
-   lst([("Sewa kayak single", "Rp 50.000"), ("Sewa kayak double", "Rp 100.000"), ("Ayunan raksasa", "di tepi pantai"), ("Tur pulau &amp; snorkeling", "info via WA")]),
+   lst([("Sewa kayak single", "Rp 50.000"), ("Sewa kayak double", "Rp 100.000"), ("Ayunan raksasa", "gratis"), ("Tur pulau &amp; snorkeling", "info via WA")]),
    "aktivitas/03-ayunan-senja.jpg", "50% 55%")
 qa("Bisa ikut tur ke pulau-pulau sekitar?",
    '<div class="main emb">Bisa, berangkat <span class="it">dari SunaRi</span>.</div>'
    + lst([("Pulau Gusung", "tur privat"), ("Pulau Bahuluang", "tur privat"), ("Polassi &amp; Tambolongan", "tur privat"), ("Jelajah Selayar", "open trip 2 hari")])
-   + '<p>Sudah termasuk kapal, alat snorkeling &amp; lunchbox. Detail paket kami kirim lewat WhatsApp.</p>')
+   + '<p><b>Pulau Gusung</b> terlihat langsung dari Pantai Sunari. Sudah termasuk kapal, alat snorkeling &amp; lunchbox. Detail paket kami kirim lewat WhatsApp.</p>')
 qa("Berapa harga kamar &amp; cara pesannya?",
    '<p style="margin-top:0">Harga &amp; ketersediaan kami kirim <b>langsung lewat WhatsApp</b>, sesuai tanggal &amp; tipe kamar.</p>'
    + steps([("Kirim data", "tanggal check-in &amp; check-out, jumlah tamu, tipe kamar"), ("Terima penawaran", "harga &amp; ketersediaan terbaru"), ("Bayar &amp; konfirmasi", "kirim bukti transfer, booking terkonfirmasi")]))

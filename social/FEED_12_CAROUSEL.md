@@ -22,5 +22,5 @@ Sumber desain: bagian `FEED12` dan `ROOMS` di `social/build_kit.py`. Susun ulang
 
 ⚠️ Perlu dicek:
 - **11 Staycation Senja:** paket ini masih contoh. Pastikan isi paketnya disetujui sebelum diposting.
-- **07 Pantai Sepi:** slide ayunan raksasa menyebutnya "spot foto". Sesuaikan jika ayunan berbayar.
+- **07 Pantai Sepi:** slide ayunan raksasa: "spot foto favorit … gratis" (dikonfirmasi gratis).
 - Slide 01 dari no. 01, 04, 06, 07, 08, 10 adalah tile feed tanpa tulisan "Geser →"; di Instagram ikon carousel tetap muncul otomatis.

@@ -392,7 +392,7 @@ FEED12 = [
    ("Tempat senja pulang", ["Resort tepi Pantai Sunari","Kepulauan Selayar, Sulawesi Selatan","Where every day ends beautifully"])),
  ("p07", "Pantai Sepi", "camp-3", [
    ("senja/19-pantai-di-bawah-daun.jpg","50% 60%","Pantai yang masih sepi","Pasir, laut tenang, dan langit luas, tanpa keramaian."),
-   ("aktivitas/03-ayunan-senja.jpg","50% 45%","Ayunan raksasa saat senja","Spot foto favorit di tepi Pantai Sunari."),
+   ("aktivitas/03-ayunan-senja.jpg","50% 45%","Ayunan raksasa saat senja","Spot foto favorit di tepi Pantai Sunari, gratis."),
    ("senja/20-payung-lampu-gantung.jpg","50% 65%","Pantai landai &amp; aman","Air tenang, cocok untuk anak-anak dan keluarga.")],
    ("Pantai Sunari", ["Pantai landai &amp; aman untuk anak","Senja tepat di depan pantai","Sewa kayak · single Rp 50.000 · double Rp 100.000"])),
  ("p08", "Sewa Kayak", "feed-kayak", [

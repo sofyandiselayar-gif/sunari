@@ -43,6 +43,6 @@ atau satu highlight "Ramadhan" tanpa tahun jika ingin digabung. Cover tanpa tahu
 
 ## Perlu dikonfirmasi sebelum diisi
 - **Gusung Island & Bahuluang:** apakah SunaRi menjual trip ke sana (harga, durasi, kapal)? Atau highlight ini hanya inspirasi destinasi? Isinya harus sesuai.
-- **Ayunan raksasa:** gratis untuk tamu atau berbayar? Boleh untuk pengunjung luar?
+- **Ayunan raksasa:** ✅ gratis (dikonfirmasi). Masih terbuka: boleh untuk pengunjung luar?
 - **Event:** apakah resort menerima sewa venue untuk acara/gathering?
 - **Highlight lama** (`social/highlights/`, 8 cover): SunaRi, Kamar, Booking, Senja, Resto, Kayak, Lokasi, Ulasan. Pilih mana yang tetap dipakai agar tidak dobel (misalnya Kayak vs Kano / Kayak, Booking vs Reservasi Kamar).

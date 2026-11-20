@@ -18,8 +18,8 @@ Untuk membuat ulang: `python3 social/build_qna.py && node social/render_qna.js`.
 | `qna-10` | Bisa makan malam saat senja? | Senja Dinner, pesan H-1 |
 | `qna-11` | Cara ke Selayar? | Pesawat ke H. Aroeppala, atau darat + feri Bira–Pamatata |
 | `qna-12` | Ada antar-jemput? | Ada, berbayar. Tarif lengkap via WA |
-| `qna-13` | Aktivitas apa saja? | Kayak Rp 50.000 / Rp 100.000, ayunan raksasa, tur pulau & snorkeling |
-| `qna-14` | Bisa ikut tur pulau? | Gusung, Bahuluang, Polassi & Tambolongan (privat), open trip 2 hari |
+| `qna-13` | Aktivitas apa saja? | Kayak Rp 50.000 / Rp 100.000, ayunan raksasa (gratis), tur pulau & snorkeling |
+| `qna-14` | Bisa ikut tur pulau? | Gusung (terlihat dari Pantai Sunari), Bahuluang, Polassi & Tambolongan (privat), open trip 2 hari |
 | `qna-15` | Harga kamar & cara pesan? | Harga via WhatsApp (tidak dicantumkan), 3 langkah reservasi |
 | `qna-16` | Di mana lokasinya? | Alamat lengkap. Tempel stiker lokasi / link Google Maps |
 | `qna-17-penutup` | Penutup: "Tanya langsung saja" | WA 0821-8903-3044 |

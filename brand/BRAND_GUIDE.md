@@ -308,7 +308,7 @@ Folder `social/`:
 | **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
 | **Instagram** | @sunaribeachresortselayar |
 | **Check-in / check-out** | 14.00 / 12.00 WITA |
-| **Fasilitas umum** | Bajoy Beach Resto (07.00–21.00; non-tamu s.d. 19.00), Senja Dinner (pesan H-1), Wi-Fi, antar-jemput bandara/pelabuhan (berbayar) |
+| **Fasilitas umum** | Bajoy Beach Resto (07.00–21.00; non-tamu s.d. 19.00), Senja Dinner (pesan H-1), Wi-Fi, antar-jemput bandara/pelabuhan (berbayar), ayunan raksasa (gratis), sewa kayak, tur pulau (Gusung, terlihat dari Pantai Sunari, Bahuluang, Polassi & Tambolongan, open trip) |
 | **Pantai** | **Pantai Sunari**: landai dan aman untuk anak-anak (alamat resmi tetap Dusun Tile-Tile Utara) |
 | **Kapasitas kamar** | Standard, VIP Standard, Superior, VIP Superior: 2 orang (maks. 3 dengan 1 extra bed) · Family Superior: 6 orang (maks. 8 dengan 2 extra bed) |
 | **WhatsApp reservasi** | +62 821-8903-3044 (Sofyan) |
