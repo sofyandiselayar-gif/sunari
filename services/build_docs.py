@@ -7,7 +7,7 @@ FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:i
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#ddd;font-family:Montserrat,sans-serif;color:#45301F;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
-.page{width:794px;height:1123px;background:#F6ECDF;position:relative;overflow:hidden;margin:20px auto;padding:44px 56px 84px;page-break-after:always}
+.page{width:794px;height:1123px;background:#FBF4EC;position:relative;overflow:hidden;margin:20px auto;padding:44px 56px 84px;page-break-after:always}
 .page>*{position:relative;z-index:1}
 .page>.paper,.page>.grain{position:absolute;inset:0;z-index:0;pointer-events:none}
 .paper{background:radial-gradient(ellipse at 50% 22%,rgba(255,255,255,.6),rgba(255,255,255,0) 62%),radial-gradient(ellipse at 50% 118%,rgba(90,62,49,.10),rgba(90,62,49,0) 60%)}
@@ -42,7 +42,7 @@ tr:last-child td{border-bottom:1px solid rgba(138,95,72,.4)}
 td.r,th.r{text-align:right} td.b{font-weight:600} td.hi{font-weight:700;color:#A84A24}
 td.t{white-space:nowrap;font-weight:700;width:104px;color:#8A5F48}
 .cols{display:flex;gap:26px} .cols>div{flex:1;min-width:0}
-.card{padding:12px 15px;border-radius:4px;background:rgba(255,255,255,.22);box-shadow:inset 1px 1px 2px rgba(90,62,49,.24),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
+.card{padding:12px 15px;border-radius:4px;background:transparent;box-shadow:inset 1px 1px 2px rgba(90,62,49,.24),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
 .card h4{font-family:'Playfair Display',serif;font-weight:500;font-size:18px;line-height:1.25;color:#45301F}
 .card p{font-size:12.5px;margin-top:5px;line-height:1.5}
 ul.l{list-style:none;font-size:13.5px;line-height:1.5}
@@ -72,7 +72,7 @@ def footer(n, total):
     return f'''<div class="ft"><div><div class="caps" style="font-size:9px">Informasi &amp; reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
   <div class="r">SunaRi Beach Resort Selayar<br>Kepulauan Selayar, Sulawesi Selatan · {n}/{total}</div></div>'''
 def page(inner, n, total, cls=''):
-    return f'<div class="page {cls}"><div class="paper"></div>{GRAIN}<div class="frame"></div><div class="frame2"></div>{inner}{footer(n, total)}</div>'
+    return f'<div class="page {cls}"><div class="frame"></div><div class="frame2"></div>{inner}{footer(n, total)}</div>'
 def table(head, rows, right_from=1, hi_last=False):
     th = "".join(f'<th class="{"r" if i >= right_from else ""}">{h}</th>' for i, h in enumerate(head))
     tr = ""
