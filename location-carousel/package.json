@@ -1,0 +1,12 @@
+{
+  "name": "sunari-location-carousel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Instagram carousel 'Location & Rute Akses' for SunaRi Beach Resort Selayar (5 slides, 1080x1350).",
+  "scripts": {
+    "export": "node export.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

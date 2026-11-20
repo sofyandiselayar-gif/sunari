@@ -1,0 +1,157 @@
+/* SunaRi Beach Resort Selayar: Carousel "Location & Rute Akses"
+   Canvas: 1080 x 1350 px (4:5) per slide. */
+
+:root {
+  --bg: #F9F8F6;          /* Warm Off-White   */
+  --ink: #0D0D0D;         /* Deep Charcoal    */
+  --green: #008A27;       /* Tropical Emerald */
+  --coral: #EB3D2A;       /* Tropical Coral   */
+  --muted: rgba(13, 13, 13, .62);
+  --line: rgba(13, 13, 13, .12);
+  --green-soft: rgba(0, 138, 39, .07);
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #DAD7D2; }
+body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; font-variant-numeric: lining-nums; }
+
+/* ---------- Slide frame ---------- */
+.slide {
+  position: relative;
+  width: 1080px; height: 1350px;
+  margin: 40px auto;
+  background: var(--bg);
+  overflow: hidden;
+  padding: 72px 96px 0;
+}
+
+.topbar { display: flex; align-items: center; justify-content: space-between; height: 104px; }
+.topbar .logo { height: 104px; width: auto; display: block; }
+.page-no { font-size: 17px; font-weight: 600; letter-spacing: .28em; color: var(--muted); }
+.page-no b { color: var(--ink); font-weight: 700; }
+
+.footer {
+  position: absolute; left: 96px; right: 96px; bottom: 64px;
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 24px; border-top: 1px solid var(--line);
+  font-size: 17px; font-weight: 500; letter-spacing: .04em; color: var(--muted);
+}
+
+/* ---------- Typography ---------- */
+.eyebrow { font-size: 18px; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; color: var(--green); }
+.title { font-family: var(--serif); font-weight: 500; font-size: 74px; line-height: 1.08; letter-spacing: -.01em; margin-top: 22px; }
+.title em { font-style: italic; color: var(--green); }
+.lede { font-size: 28px; line-height: 1.55; color: var(--muted); margin-top: 22px; max-width: 800px; }
+
+.pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 16px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--coral); border: 1.5px solid var(--coral); border-radius: 999px; padding: 9px 18px 9px 16px;
+}
+.pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--coral); }
+.head-row { display: flex; align-items: center; justify-content: space-between; margin-top: 56px; }
+
+/* ---------- Icons (stroke 1.5px) ---------- */
+.ico { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.ico path, .ico circle, .ico polyline, .ico line { vector-effect: non-scaling-stroke; }
+.ico.sm { width: 24px; height: 24px; }
+
+/* ---------- Vertical timeline ---------- */
+.timeline { position: relative; margin-top: 64px; }
+.step { position: relative; display: grid; grid-template-columns: 96px 1fr; column-gap: 36px; padding-bottom: 48px; }
+.step:last-child { padding-bottom: 0; }
+.step::before {               /* connector line */
+  content: ""; position: absolute; left: 47px; top: 96px; bottom: 0;
+  border-left: 1.5px dashed rgba(0, 138, 39, .45);
+}
+.step:last-child::before { display: none; }
+.node {
+  width: 96px; height: 96px; border-radius: 50%;
+  border: 1.5px solid var(--green); background: var(--bg);
+  display: flex; align-items: center; justify-content: center; color: var(--green);
+}
+.node .ico { width: 40px; height: 40px; }
+.step-no { font-size: 16px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--green); padding-top: 6px; }
+.route { margin-top: 8px; font-size: 30px; line-height: 1.35; font-weight: 600; }
+.route .to { display: flex; align-items: baseline; gap: 14px; margin-top: 4px; }
+.route .to span.arrow { color: var(--coral); font-weight: 500; }
+.route small { display: block; font-size: 22px; font-weight: 500; color: var(--muted); margin-top: 2px; }
+.eta {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 14px;
+  font-size: 22px; font-weight: 600; color: var(--ink);
+  background: var(--green-soft); border-radius: 999px; padding: 10px 20px 10px 14px;
+}
+.eta .ico { color: var(--green); }
+
+/* ---------- Notes & cards ---------- */
+.note {
+  display: flex; gap: 20px; align-items: flex-start;
+  margin-top: 56px; padding: 28px 32px;
+  border: 1.5px solid var(--line); border-radius: 22px;
+  font-size: 23px; line-height: 1.5; color: var(--muted);
+}
+.note .ico { color: var(--coral); flex: none; margin-top: 2px; }
+.note b { color: var(--ink); font-weight: 600; }
+
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 44px; }
+.card {
+  border: 1.5px solid var(--line); border-radius: 28px; padding: 36px 34px 30px;
+  background: #FFFFFF; display: flex; flex-direction: column;
+}
+.card .icons { display: flex; gap: 12px; color: var(--green); }
+.card .icons span {
+  width: 72px; height: 72px; border-radius: 50%; border: 1.5px solid var(--green);
+  display: flex; align-items: center; justify-content: center;
+}
+.card .label { font-size: 15px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--coral); margin-top: 28px; }
+.card h3 { font-family: var(--serif); font-weight: 500; font-size: 38px; line-height: 1.18; margin-top: 12px; }
+.card ul { list-style: none; margin-top: 22px; border-top: 1px solid var(--line); }
+.card li { display: flex; gap: 14px; align-items: flex-start; font-size: 22px; line-height: 1.45; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.card li:last-child { border-bottom: none; }
+.card li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-top: 12px; }
+
+/* ---------- Cover ---------- */
+.cover .title { font-size: 92px; line-height: 1.04; margin-top: 30px; }
+.cover .lede { font-size: 30px; margin-top: 30px; max-width: 760px; }
+.map { position: absolute; left: 0; right: 0; bottom: 150px; height: 470px; }
+.swipe {
+  position: absolute; right: 96px; bottom: 64px;
+  display: flex; align-items: center; gap: 14px;
+  font-size: 18px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--coral);
+}
+.swipe::before { content: ""; width: 64px; height: 1.5px; background: var(--coral); }
+.cover .footer { right: 380px; border-top: none; padding-top: 0; }
+
+/* ---------- CTA ---------- */
+.address {
+  display: flex; gap: 24px; align-items: flex-start; margin-top: 64px;
+  padding: 36px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.address .pin {
+  flex: none; width: 80px; height: 80px; border-radius: 50%; border: 1.5px solid var(--green);
+  display: flex; align-items: center; justify-content: center; color: var(--green);
+}
+.address .k { font-size: 15px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--green); }
+.address .v { font-family: var(--serif); font-size: 40px; line-height: 1.22; margin-top: 8px; }
+.address .s { font-size: 21px; color: var(--muted); margin-top: 8px; }
+
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; }
+.summary div { padding: 0 24px; border-left: 1px solid var(--line); }
+.summary div:first-child { padding-left: 0; border-left: none; }
+.summary .k { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--green); }
+.summary .v { font-size: 24px; font-weight: 600; margin-top: 12px; line-height: 1.35; }
+
+.cta {
+  display: flex; align-items: center; justify-content: center; gap: 18px;
+  margin-top: 64px; padding: 34px 40px; border-radius: 999px;
+  background: var(--coral); color: #FFFFFF;
+  font-size: 27px; font-weight: 700; letter-spacing: .01em;
+  box-shadow: 0 18px 40px rgba(235, 61, 42, .22);
+}
+.cta .ico { width: 36px; height: 36px; }
+.cta-sub { text-align: center; margin-top: 22px; font-size: 22px; color: var(--muted); }
+.cta-sub b { color: var(--ink); font-weight: 700; letter-spacing: .02em; }
+.save { display: inline-flex; align-items: center; gap: 10px; }
+.save .ico { color: var(--green); }
