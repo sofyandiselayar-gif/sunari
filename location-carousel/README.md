@@ -1,16 +1,16 @@
 # Carousel "Location & Rute Akses": SunaRi Beach Resort Selayar
 
-Proyek ini berisi 5 slide Instagram ukuran 1080×1350 px (rasio 4:5) dalam HTML/CSS murni.
+Proyek ini berisi 6 slide Instagram ukuran 1080×1350 px (rasio 4:5) dalam HTML/CSS murni.
 
 ## Struktur
 ```
 location-carousel/
-├── index.html        # 5 slide (#slide-1 … #slide-5) + sprite ikon SVG (stroke 1.5px)
+├── index.html        # 6 slide (#slide-1 … #slide-5) + sprite ikon SVG (stroke 1.5px)
 ├── styles.css        # token warna, tipografi, timeline, kartu, CTA
 ├── assets/logo-sunari.png
 ├── export.js         # render otomatis ke PNG retina (Playwright)
 ├── package.json
-└── output/           # carousel-slide-1.png … carousel-slide-5.png (2160×2700 px)
+└── output/           # carousel-slide-1.png … carousel-slide-6.png (2160×2700 px)
 ```
 
 ## Desain
