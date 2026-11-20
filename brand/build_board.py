@@ -76,7 +76,7 @@ body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif;color:va
 
 <div class="p hero"><img class="f" src="{P}senja/20-payung-lampu-gantung.jpg" style="object-position:50% 64%" alt=""><div class="veil"></div>
   <div class="in">
-    <img src="../assets/logo-sunari-cream.png" style="width:470px;display:block;margin-left:-16px" alt="">
+    <img src="../assets/logo-sunari-color-dark.png" style="width:470px;display:block;margin-left:-16px" alt="">
     <div class="pf" style="font-size:52px;line-height:1.15;margin-top:30px">Tempat senja<br><span class="it">pulang.</span></div>
     <div class="vals">{vals}</div>
   </div>
@@ -84,7 +84,7 @@ body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif;color:va
 </div>
 
 <div class="row id">
-  <div class="p"><div class="tag">Logo Utama</div><img src="../assets/logo-sunari-driftwood.png" style="width:250px;display:block;margin:34px auto 0" alt=""></div>
+  <div class="p"><div class="tag">Logo Utama</div><img src="../assets/logo-sunari-color.png" style="width:250px;display:block;margin:34px auto 0" alt=""></div>
   <div class="p"><div class="tag">Variasi Logo</div>
     <div class="vars">
       <div style="background:var(--cream);border:1px solid rgba(166,124,100,.3)"><img src="../assets/mark-sunari-driftwood.svg" style="width:72px" alt=""></div>
@@ -141,7 +141,7 @@ body{{background:#ddd6cc;padding:40px;font-family:Montserrat,sans-serif;color:va
   <div class="p"><div class="tag">Pemesanan di HP</div>
     <div class="phone"><div class="s">
       <img src="{P}vip-standard-bungalow/04-teras-view-laut.jpg" style="width:100%;height:165px;object-fit:cover;display:block" alt="">
-      <div style="padding:14px 16px"><img src="../assets/logo-sunari-driftwood.png" style="width:110px" alt="">
+      <div style="padding:14px 16px"><img src="../assets/logo-sunari-color.png" style="width:110px" alt="">
         <div class="pf" style="font-size:19px;line-height:1.25;margin-top:6px">VIP Standard Bungalow</div>
         <div class="it" style="font-size:12px;color:var(--drift);margin-top:4px">Turun tangga, langsung pasir</div>
         <div style="margin-top:16px;background:var(--coral);color:var(--ink);font-weight:600;font-size:11px;letter-spacing:.14em;text-align:center;padding:11px 0;border-radius:6px">PESAN VIA WHATSAPP</div>

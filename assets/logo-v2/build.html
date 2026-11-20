@@ -25,7 +25,7 @@
 #sheet .wide{grid-column:1/-1}
 </style></head><body><div id="out"></div>
 <script>
-const L={d:'../logo-sunari-driftwood.png',c:'../logo-sunari-cream.png'}, C={d:'#A67C64',c:'#FBF4EC'};
+const L={d:'../logo-sunari-color.png',c:'../logo-sunari-color-dark.png'}, C={d:'#A67C64',c:'#FBF4EC'};
 const tg=(id,k)=>`<div class="tg" ${id?`id="${id}"`:''} style="color:${C[k]}"><img src="${L[k]}"><div class="rule" style="background:${C[k]}"></div><div class="sub">Tempat senja pulang</div></div>`;
 const bd=(id,k,bg)=>`<div class="bd" ${id?`id="${id}"`:''} style="color:${C[k]};${bg?`background:${bg}`:''}"><div class="r1"></div><div class="r2"></div><img src="${L[k]}"><div class="sub">Pantai Sunari · Selayar</div></div>`;
 document.getElementById('out').outerHTML =

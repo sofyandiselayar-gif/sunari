@@ -62,8 +62,8 @@ GRID = ["camp-1","feed-senja","carousel/vs-1","camp-4","carousel/vp-1","feed-quo
 # ---------------------------------------------------------------- END CONTENT
 
 e = html.escape
-LOGO = "../assets/logo-sunari-driftwood.png"
-LOGO_C = "../assets/logo-sunari-cream.png"
+LOGO = "../assets/logo-sunari-color.png"        # full-color logo (light backgrounds)
+LOGO_C = "../assets/logo-sunari-color-dark.png" # full-color logo (photos / dark backgrounds)
 MARK = "../assets/mark-sunari-driftwood.svg"
 ICONS = {
  "wave": '<path d="M8 30 q8 -7 16 0 t16 0 t16 0"/><path d="M8 42 q8 -7 16 0 t16 0 t16 0"/>',
@@ -106,7 +106,7 @@ body{background:#ddd6cc;font-family:Montserrat,sans-serif;padding:40px;display:f
 .cover .it{font-size:40px;margin-top:16px}
 .cover .logo{position:absolute;right:72px;bottom:44px;width:250px}
 /* facts / CTA */
-.facts .mark{position:absolute;left:50%;transform:translateX(-50%);top:90px;width:120px}
+.facts .mark{position:absolute;left:50%;transform:translateX(-50%);top:56px;width:380px}
 .facts .head{position:absolute;left:72px;right:72px;top:270px}
 .facts h2{font-family:'Playfair Display',serif;font-weight:400;font-size:70px;line-height:1.05;margin-top:18px}
 .facts ul{position:absolute;left:150px;right:150px;top:450px;list-style:none;border-top:1px solid rgba(166,124,100,.4)}
@@ -170,8 +170,8 @@ parts.append(f'''<div class="tpl on-photo" id="feed-kayak">
 # values tile
 vals = "".join(f'<div class="val"><div class="ring">{icon(k,"#A67C64",72)}</div><div class="caps">{e(l)}</div></div>' for k,l in VALUES)
 parts.append(f'''<div class="tpl" id="feed-values">
-  <img src="{MARK}" style="position:absolute;left:50%;transform:translateX(-50%);top:110px;width:130px" alt="">
-  <div class="center" style="position:absolute;left:72px;right:72px;top:300px">
+  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:70px;width:440px" alt="">
+  <div class="center" style="position:absolute;left:72px;right:72px;top:330px">
     <div class="caps">SunaRi Beach Resort</div>
     <div class="pf" style="font-size:72px;line-height:1.1;margin-top:20px">Tempat senja <span class="it">pulang.</span></div>
   </div>
@@ -185,7 +185,7 @@ parts.append(f'''<div class="tpl" id="feed-senja">
   <div style="position:absolute;left:72px;right:72px;top:940px;display:flex;justify-content:space-between;align-items:flex-end">
     <div><div class="caps">#SenjaHariIni</div>
       <div class="time" style="font-size:150px;margin-top:10px">{SENJA["time"]}<span class="caps" style="font-size:24px;margin-left:18px">WITA</span></div></div>
-    <img src="{MARK}" style="width:110px;margin-bottom:20px" alt="">
+    <img src="{LOGO}" style="width:300px;margin-bottom:24px" alt="">
   </div>
   <div class="hair" style="position:absolute;left:72px;right:72px;top:1190px"></div>
   {foot(e(SENJA["date"]), e(SENJA["place"]))}
@@ -193,7 +193,7 @@ parts.append(f'''<div class="tpl" id="feed-senja">
 # promo
 items = "".join(f"<li>{e(i)}</li>" for i in PROMO["items"])
 parts.append(f'''<div class="tpl facts" id="feed-promo">
-  <img class="mark" src="{MARK}" alt="">
+  <img class="mark" src="{LOGO}" alt="">
   <div class="head center"><div class="caps">{e(PROMO["kicker"])}</div>
     <h2 style="font-size:92px">{e(PROMO["title"])} <span class="it">{e(PROMO["title_it"])}</span></h2>
     <div class="it" style="font-size:36px;margin-top:14px">{e(PROMO["sub"])}</div>
@@ -206,7 +206,7 @@ parts.append(f'''<div class="tpl facts" id="feed-promo">
 parts.append(f'''<div class="tpl" id="feed-quote" style="background:var(--sand)">
   <div style="position:absolute;inset:48px;border:1px solid rgba(90,62,49,.35)"></div>
   <div class="center" style="position:absolute;left:110px;right:110px;top:360px">
-    <img src="{MARK}" style="width:110px" alt="">
+    <img src="{LOGO}" style="width:420px" alt="">
     <div class="pf" style="font-size:72px;line-height:1.18;margin-top:50px">{QUOTE["text"].replace("<em>","<em class='it' style='color:var(--ink)'>")}</div>
     <div class="hair" style="width:80px;margin:56px auto 0;background:var(--ink);opacity:.4"></div>
     <div class="caps" style="margin-top:36px;color:var(--ink)">{e(QUOTE["en"])}</div>
@@ -261,8 +261,8 @@ def hs(sid, group, photo, pos, title, body, extra=""):
     top = 1170 if photo else 470
     tsize = 70 if photo else 96
     return f"""<div class="tpl story" id="{sid}">
-  <div style="position:absolute;left:72px;right:72px;top:150px;display:flex;align-items:center;gap:20px">
-    <img src="{MARK}" style="width:62px" alt=""><span class="caps" style="font-size:22px">{group}</span></div>
+  <div style="position:absolute;left:72px;right:72px;top:118px;display:flex;align-items:center;gap:20px">
+    <img src="{LOGO}" style="width:210px" alt=""><span class="caps" style="font-size:22px;margin-left:auto">{group}</span></div>
   {ph}
   <div style="position:absolute;left:72px;right:72px;top:{top}px">
     <div class="pf" style="font-size:{tsize}px;line-height:1.1">{title}</div>
@@ -355,12 +355,12 @@ for k in range(0, len(FAQ), 2):
       <div class="caps" style="font-size:21px">Tanya</div><div class="pf" style="font-size:66px;line-height:1.1;margin-top:16px">{q}</div>
       <div style="font-size:36px;line-height:1.55;margin-top:24px;opacity:.88">{a}</div></div>''' for q, a in FAQ[k:k+2])
     parts.append(f'''<div class="tpl" id="faq-{i}">
-  <img src="{MARK}" style="position:absolute;left:72px;top:80px;width:90px" alt="">
+  <img src="{LOGO}" style="position:absolute;left:62px;top:56px;width:280px" alt="">
   <div style="position:absolute;left:72px;right:72px;top:250px;border-top:1px solid rgba(166,124,100,.4)">{qa}</div>
   {foot("SunaRi · Selayar", f"{i:02d} — {NF:02d}")}
 </div>''')
 parts.append(f'''<div class="tpl facts" id="faq-{NF}">
-  <img class="mark" src="{MARK}" alt="">
+  <img class="mark" src="{LOGO}" alt="">
   <div class="head center"><div class="caps">Masih ada pertanyaan?</div><h2>Tanya <span class="it">langsung</span> saja</h2></div>
   <ul><li>Harga &amp; ketersediaan kamar</li><li>Senja Dinner (pesan H-1)</li><li>Sewa kayak · Rp 50.000 / Rp 100.000</li><li>Antar-jemput bandara &amp; pelabuhan</li></ul>
   <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
@@ -422,7 +422,7 @@ for pre, name, cover, slides, (endt, endl) in FEED12:
 </div>""")
     li = "".join(f"<li>{x}</li>" for x in endl)
     parts.append(f"""<div class="tpl facts" id="{pre}-{n}">
-  <img class="mark" src="{MARK}" alt="">
+  <img class="mark" src="{LOGO}" alt="">
   <div class="head center"><div class="caps">{name}</div><h2>{endt.split(' ',1)[0]} <span class="it">{endt.split(' ',1)[1] if ' ' in endt else ''}</span></h2></div>
   <ul>{li}</ul>
   <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
@@ -447,7 +447,7 @@ for r in ROOMS:
 </div>''')
     facts = "".join(f"<li>{e(f)}</li>" for f in r["facts"])
     parts.append(f'''<div class="tpl facts" id="{r["prefix"]}-{n}">
-  <img class="mark" src="{MARK}" alt="">
+  <img class="mark" src="{LOGO}" alt="">
   <div class="head center"><div class="caps">{e(r["name"])}</div><h2>Yang kamu <span class="it">dapatkan</span></h2></div>
   <ul>{facts}</ul>
   <div class="cta"><div class="caps">Info &amp; Reservasi</div><div class="wa"><span>WhatsApp</span> {WA}</div></div>
@@ -478,7 +478,7 @@ grid = f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Sun
 .g{{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}} .t{{aspect-ratio:3/4;overflow:hidden}} .t img{{width:100%;height:100%;object-fit:cover;display:block}}
 </style></head><body><div id="grid-preview">
 <div class="bar">sunaribeachresortselayar</div>
-<div class="top"><div class="av"><img src="profile/pp-c.png" alt=""></div>
+<div class="top"><div class="av"><img src="profile/pp-e.png" alt=""></div>
 <div><div class="nm">SunaRi Beach Resort Selayar</div><div class="cat">Resort</div></div></div>
 <div class="bio">🌅 Tempat senja pulang
 🌴 Resort tepi pantai di Kepulauan Selayar
