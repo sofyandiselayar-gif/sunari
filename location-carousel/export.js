@@ -1,5 +1,5 @@
 /**
- * Export the 5 "Location & Rute Akses" slides to PNG.
+ * Export the 7 "Location & Rute Akses" slides to PNG.
  * Output: ./output/carousel-slide-1.png … carousel-slide-7.png
  * Each slide is 1080x1350 CSS px rendered at deviceScaleFactor 2 (2160x2700 px, retina).
  *
@@ -33,18 +33,16 @@ const SLIDES = 7;
     if (Math.round(box.width) !== 1080 || Math.round(box.height) !== 1350) {
       throw new Error(`slide-${i} is ${box.width}x${box.height}, expected 1080x1350`);
     }
-    // Layout check: content must keep ≥ 24 px clear of the footer.
-    const gap = await slide.evaluate(s => {
-      const ft = s.querySelector('.footer').getBoundingClientRect().top;
-      let bottom = 0;
-      s.querySelectorAll(':scope > *:not(.footer):not(.swipe):not(.map), :scope > *:not(.footer):not(.swipe):not(.map) *')
-        .forEach(e => { const r = e.getBoundingClientRect(); if (r.height) bottom = Math.max(bottom, r.bottom); });
-      return Math.round(ft - bottom);
+    // Layout check: the info card must sit fully inside the slide; report where it starts
+    // (map labels live above it, so a low card top means the map stays readable).
+    const card = await slide.evaluate(s => {
+      const r = s.getBoundingClientRect(), c = s.querySelector('.card').getBoundingClientRect();
+      return { top: Math.round(c.top - r.top), bottom: Math.round(r.bottom - c.bottom) };
     });
-    if (gap < 24) console.warn(`⚠ slide-${i}: content is only ${gap}px above the footer`);
+    if (card.top < 0 || card.bottom < 0) throw new Error(`slide-${i}: card overflows the slide`);
     const file = path.join(OUT, `carousel-slide-${i}.png`);
     await slide.screenshot({ path: file });
-    console.log("✔", path.relative(ROOT, file), `(space above footer: ${gap}px)`);
+    console.log("✔", path.relative(ROOT, file), `(card starts at y=${card.top}px)`);
   }
 
   await browser.close();
