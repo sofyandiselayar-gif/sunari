@@ -305,6 +305,7 @@ Folder `social/`:
 | | |
 |---|---|
 | **Alamat** | Jl. Poros Benteng – Appatana KM 14, Dusun Tile-Tile Utara, Desa Patikarya, Kecamatan Bontosikuyu, Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia |
+| **Akses** | Bandara H. Aroeppala → SunaRi ±10–15 menit (mobil) · Feri Bira–Pamatata · KM Dharma Kartika III Makassar–Benteng (tidak setiap hari) |
 | **Google Maps** | https://maps.app.goo.gl/iUWWHNCT7Vyu4i537 |
 | **Instagram** | @sunaribeachresortselayar |
 | **Check-in / check-out** | 14.00 / 12.00 WITA |
