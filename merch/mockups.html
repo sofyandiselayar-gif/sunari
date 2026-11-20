@@ -1,72 +1,668 @@
-<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@500;600&display=swap" rel="stylesheet"><style>
-*{margin:0;padding:0;box-sizing:border-box} body{background:#ddd;padding:40px;display:flex;flex-wrap:wrap;gap:40px;font-family:Montserrat,sans-serif}
-.mk{position:relative;width:1200px;height:1200px;overflow:hidden;flex:none}
-.lab{position:absolute;left:60px;bottom:44px;color:#5A3E31} .lab .t{font-family:'Playfair Display',serif;font-size:46px} .lab .s{font-size:20px;letter-spacing:.06em;margin-top:8px;opacity:.75}
-.pf{font-family:'Playfair Display',serif} .cp{font-weight:600;letter-spacing:.3em;text-transform:uppercase}
-#sheet{width:2420px;background:#FBF4EC;padding:60px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px} #sheet img{width:100%;display:block}
-#sheet h1{grid-column:1/-1;font-family:'Playfair Display',serif;font-weight:400;font-size:80px;color:#5A3E31;margin-bottom:20px} #sheet h1 i{color:#A67C64}
-</style></head><body><div class="mk" id="M01-kaos-krem-depan" style="background:#EFE6DA"><svg viewBox="0 0 1000 1100" width="900" height="990" style="position:absolute;left:150px;top:110px">
-  <path d="M330 60 Q500 130 670 60 L880 150 L985 390 L845 450 L800 360 L800 1040 Q500 1068 200 1040 L200 360 L155 450 L15 390 L120 150 Z" fill="#F3EADF" stroke="rgba(0,0,0,.12)" stroke-width="3"/><path d="M330 60 Q500 175 670 60" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="10"/>
-  <path d="M200 360 L200 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/><path d="M800 360 L800 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/></svg>
-  <img src="artwork/../../assets/logo-sunari-driftwood.png" style="position:absolute;left:610px;top:330px;width:230px;mix-blend-mode:multiply">
-  <div class="lab"><div class="t">Kaos krem · depan</div><div class="s">Logo asli di dada kiri · sablon 1 warna Driftwood</div></div></div><div class="mk" id="M02-kaos-krem-belakang" style="background:#EFE6DA"><svg viewBox="0 0 1000 1100" width="900" height="990" style="position:absolute;left:150px;top:110px">
-  <path d="M330 60 Q500 130 670 60 L880 150 L985 390 L845 450 L800 360 L800 1040 Q500 1068 200 1040 L200 360 L155 450 L15 390 L120 150 Z" fill="#F3EADF" stroke="rgba(0,0,0,.12)" stroke-width="3"/><path d="M330 60 Q500 175 670 60" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="10"/>
-  <path d="M200 360 L200 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/><path d="M800 360 L800 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/></svg>
-  <img src="artwork/A1-back-print-light.png" style="position:absolute;left:390px;top:250px;width:420px;mix-blend-mode:multiply">
-  <div class="lab"><div class="t">Kaos krem · belakang</div><div class="s">Back print A1 · 25 × 31 cm</div></div></div><div class="mk" id="M03-kaos-cokelat-depan" style="background:#EFE6DA"><svg viewBox="0 0 1000 1100" width="900" height="990" style="position:absolute;left:150px;top:110px">
-  <path d="M330 60 Q500 130 670 60 L880 150 L985 390 L845 450 L800 360 L800 1040 Q500 1068 200 1040 L200 360 L155 450 L15 390 L120 150 Z" fill="#5A3E31" stroke="rgba(0,0,0,.25)" stroke-width="3"/><path d="M330 60 Q500 175 670 60" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="10"/>
-  <path d="M200 360 L200 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/><path d="M800 360 L800 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/></svg>
-  <img src="artwork/A2-typography-dark.png" style="position:absolute;left:380px;top:290px;width:440px;mix-blend-mode:normal">
-  <div class="lab"><div class="t">Kaos cokelat tua · depan</div><div class="s">Tipografi A2 versi terang</div></div></div><div class="mk" id="M04-kaos-putih-kayak" style="background:#EFE6DA"><svg viewBox="0 0 1000 1100" width="900" height="990" style="position:absolute;left:150px;top:110px">
-  <path d="M330 60 Q500 130 670 60 L880 150 L985 390 L845 450 L800 360 L800 1040 Q500 1068 200 1040 L200 360 L155 450 L15 390 L120 150 Z" fill="#FFFFFF" stroke="rgba(0,0,0,.12)" stroke-width="3"/><path d="M330 60 Q500 175 670 60" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="10"/>
-  <path d="M200 360 L200 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/><path d="M800 360 L800 1040" stroke="rgba(0,0,0,.05)" stroke-width="30"/></svg>
-  <img src="artwork/A4-kayak-light.png" style="position:absolute;left:385px;top:300px;width:430px;mix-blend-mode:multiply">
-  <div class="lab"><div class="t">Kaos putih · depan</div><div class="s">Desain kayak A4</div></div></div><div class="mk" id="M05-tote-bag" style="background:#EFE6DA">
-  <svg viewBox="0 0 1200 1200" width="1200" height="1200" style="position:absolute;left:0;top:0">
-   <path d="M430 330 Q430 120 600 120 Q770 120 770 330" fill="none" stroke="#D9C7A8" stroke-width="34"/>
-   <path d="M300 320 H900 L930 1080 H270 Z" fill="#E9DCC4" stroke="rgba(0,0,0,.1)" stroke-width="3"/></svg>
-  <img src="artwork/A2-typography-light.png" style="position:absolute;left:350px;top:470px;width:500px;mix-blend-mode:multiply">
-  <div class="lab"><div class="t">Tote bag kanvas</div><div class="s">Tipografi A2 · sablon 2 warna</div></div></div><div class="mk" id="M06-topi" style="background:#EFE6DA">
-  <svg viewBox="0 0 1200 1200" width="1200" height="1200" style="position:absolute;left:0;top:0">
-   <path d="M260 700 Q260 330 600 330 Q940 330 940 700 Z" fill="#A67C64"/><path d="M600 330 V700" stroke="rgba(0,0,0,.15)" stroke-width="4"/>
-   <path d="M420 365 Q480 520 470 700" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="4"/><path d="M780 365 Q720 520 730 700" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="4"/>
-   <path d="M200 700 Q600 640 1000 700 Q980 820 600 830 Q220 820 200 700 Z" fill="#8F6A55"/><circle cx="600" cy="335" r="16" fill="#8F6A55"/></svg>
-  <img src="../assets/mark-sunari-cream.svg" style="position:absolute;left:510px;top:460px;width:180px">
-  <div class="lab"><div class="t">Topi</div><div class="s">Simbol bordir krem di atas topi Driftwood</div></div></div><div class="mk" id="M07-mug" style="background:#EFE6DA">
-  <svg viewBox="0 0 1200 1200" width="1200" height="1200" style="position:absolute;left:0;top:0">
-   <path d="M820 470 Q990 470 990 640 Q990 810 820 810" fill="none" stroke="#F4EFE8" stroke-width="56"/>
-   <path d="M820 470 Q990 470 990 640 Q990 810 820 810" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="56"/>
-   <rect x="300" y="330" width="540" height="620" rx="40" fill="#FBF8F3" stroke="rgba(0,0,0,.08)" stroke-width="3"/>
-   <ellipse cx="570" cy="335" rx="270" ry="34" fill="#EFE8DE"/></svg>
-  <img src="artwork/A7-sun-stripes.png" style="position:absolute;left:445px;top:450px;width:250px">
-  <div class="pf" style="position:absolute;left:300px;width:540px;top:735px;text-align:center;font-size:76px;color:#5A3E31">SunaRi</div>
-  <div class="cp" style="position:absolute;left:300px;width:540px;top:840px;text-align:center;font-size:18px;color:#A67C64">Pantai Sunari · Selayar</div>
-  <div class="lab"><div class="t">Mug keramik</div><div class="s">Matahari bergaris A7 + nama</div></div></div><div class="mk" id="M08-tumbler" style="background:#EFE6DA">
-  <svg viewBox="0 0 1200 1200" width="1200" height="1200" style="position:absolute;left:0;top:0">
-   <rect x="470" y="200" width="260" height="70" rx="16" fill="#5A3E31"/>
-   <path d="M440 270 H760 L730 1060 Q600 1080 470 1060 Z" fill="#F3EADF" stroke="rgba(0,0,0,.08)" stroke-width="3"/>
-   <path d="M480 270 L500 1060" stroke="rgba(255,255,255,.6)" stroke-width="16"/></svg>
-  <img src="artwork/A4-kayak-light.png" style="position:absolute;left:465px;top:520px;width:270px;mix-blend-mode:multiply">
-  <div class="lab"><div class="t">Tumbler</div><div class="s">Desain kayak A4</div></div></div><div class="mk" id="M09-gantungan-kunci" style="background:#EFE6DA">
-  <svg viewBox="0 0 1200 1200" width="1200" height="1200" style="position:absolute;left:0;top:0">
-   <circle cx="600" cy="230" r="60" fill="none" stroke="#B9B3AA" stroke-width="16"/><rect x="585" y="280" width="30" height="80" rx="8" fill="#B9B3AA"/>
-   <circle cx="600" cy="680" r="330" fill="rgba(255,255,255,.55)" stroke="rgba(0,0,0,.08)" stroke-width="3"/><circle cx="600" cy="365" r="16" fill="#EFE6DA" stroke="#B9B3AA" stroke-width="5"/></svg>
-  <img src="artwork/A3-sticker-round.png" style="position:absolute;left:300px;top:380px;width:600px">
-  <div class="lab"><div class="t">Gantungan kunci akrilik</div><div class="s">Stiker bulat A3 · Ø 5 cm</div></div></div><div class="mk" id="M10-stiker" style="background:#EFE6DA">
-  <div style="position:absolute;left:170px;top:140px;width:860px;height:900px;background:#FFFFFF;box-shadow:0 20px 40px rgba(90,62,49,.15)"></div>
-  <img src="artwork/A3-sticker-round.png" style="position:absolute;left:220px;top:190px;width:420px">
-  <img src="artwork/A7-sun-stripes.png" style="position:absolute;left:700px;top:230px;width:260px">
-  <img src="../assets/mark-sunari-driftwood.svg" style="position:absolute;left:700px;top:560px;width:260px">
-  <img src="artwork/A4-kayak-light.png" style="position:absolute;left:210px;top:660px;width:440px">
-  <div class="lab"><div class="t">Lembar stiker</div><div class="s">A3 · A7 · simbol · kayak</div></div></div><div class="mk" id="M11-kartu-pos" style="background:#EFE6DA">
-  <div style="position:absolute;left:150px;top:300px;width:900px;height:600px;overflow:hidden;box-shadow:0 20px 40px rgba(90,62,49,.2);transform:rotate(-3deg)">
-   <img src="../assets/photos/senja/17-kayak-berdua.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%">
-   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,20,.45),rgba(40,26,20,0) 50%)"></div>
-   <img src="../assets/logo-sunari-cream.png" style="position:absolute;left:40px;top:34px;width:340px">
-   <div class="cp" style="position:absolute;left:46px;bottom:30px;font-size:16px;color:#FBF4EC">Greetings from Pantai Sunari · Selayar</div></div>
-  <div class="lab"><div class="t">Kartu pos</div><div class="s">Foto senja + logo krem · 15 × 10 cm</div></div></div><div class="mk" id="M12-pin" style="background:#EFE6DA">
-  <div style="position:absolute;left:400px;top:300px;width:400px;height:400px;border-radius:50%;background:#FBF4EC;border:22px solid #C9A46A;box-shadow:0 18px 30px rgba(90,62,49,.25),inset 0 0 0 4px rgba(0,0,0,.05)"></div>
-  <img src="artwork/A6-mark-pin.png" style="position:absolute;left:445px;top:345px;width:310px">
-  <div class="lab"><div class="t">Pin enamel</div><div class="s">Simbol · Ø 3 cm · enamel krem & emas</div></div></div><div class="mk" id="M13-bandana" style="background:#EFE6DA">
-  <div style="position:absolute;left:200px;top:180px;width:800px;height:800px;transform:rotate(45deg) scale(.86);background:url(artwork/A5-pattern-tile.png) 0 0/260px 260px;box-shadow:0 20px 40px rgba(90,62,49,.18)"></div>
-  <div class="lab"><div class="t">Bandana / sarung pantai</div><div class="s">Pola A5 · bisa diulang tanpa sambungan</div></div></div><div id="sheet"><h1>SunaRi <i>Souvenir</i></h1><img src="mockup/M01-kaos-krem-depan.png"><img src="mockup/M02-kaos-krem-belakang.png"><img src="mockup/M03-kaos-cokelat-depan.png"><img src="mockup/M04-kaos-putih-kayak.png"><img src="mockup/M05-tote-bag.png"><img src="mockup/M06-topi.png"><img src="mockup/M07-mug.png"><img src="mockup/M08-tumbler.png"><img src="mockup/M09-gantungan-kunci.png"><img src="mockup/M10-stiker.png"><img src="mockup/M11-kartu-pos.png"><img src="mockup/M12-pin.png"><img src="mockup/M13-bandana.png"></div></body></html>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box} body{background:#ddd;font-family:Montserrat,sans-serif;color:#5A3E31;font-variant-numeric:lining-nums}
+.mk{position:relative;width:1600px;height:1600px;overflow:hidden;margin:20px}
+.mk .lab{position:absolute;left:80px;bottom:60px} .mk .lab .t{font-family:'Playfair Display',serif;font-size:58px}
+.mk .lab .s{font-size:20px;letter-spacing:.32em;text-transform:uppercase;margin-top:12px;color:#A67C64}
+.mk .code{position:absolute;right:80px;bottom:66px;font-size:20px;letter-spacing:.3em;color:#A67C64}
+.pg{width:1123px;height:794px;background:#FBF4EC;position:relative;overflow:hidden;page-break-after:always;margin:20px auto}
+.pf{font-family:'Playfair Display',serif;font-weight:400} .it{font-style:italic;color:#A67C64}
+.caps{font-weight:600;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:#A67C64}
+.foot{position:absolute;left:56px;right:56px;bottom:26px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#A67C64}
+table{border-collapse:collapse;width:100%} td{padding:9px 0;border-bottom:1px solid rgba(166,124,100,.35);font-size:11.5px;vertical-align:top}
+td:first-child{width:34%;font-weight:600;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#A67C64;padding-top:11px}
+.sum td{padding:4px 0!important;font-size:9.5px!important}
+@media print{body{background:none}.pg{margin:0}.mk{display:none}}
+@page{size:297mm 210mm;margin:0}
+</style></head><body><div class="mk" id="K01-kaos-krem-depan" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bk1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="560" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bk1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ck1"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath>
+  <path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z" fill="#F4ECE1" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ck1)"><rect width="1600" height="1600" fill="url(#sxk1)"/>
+    <g filter="url(#bk1)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/><path d="M596 510 C632 750 620 990 608 1230 M992 486 C1028 726 1016 990 1028 1230" stroke="#fff" stroke-opacity=".14" stroke-width="70" fill="none"/></g><rect width="1600" height="1600" filter="url(#nk1)"/></g><path d="M560 234 C632 330 968 330 1040 234 C968 263 632 263 560 234 Z" fill="#000" fill-opacity=".22"/><path d="M560 234 C632 330 968 330 1040 234" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="24"/><path d="M229 558 L392 630 M1371 558 L1208 630 M435 1360 C560 1391 1040 1391 1165 1360" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="4" stroke-dasharray="0"/></svg><img src="../assets/logo-sunari-driftwood.png" style="position:absolute;left:880px;top:450px;width:250px;mix-blend-mode:multiply;"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0;pointer-events:none;opacity:.4"><defs>
+  <filter id="bk1o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k1o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk1o"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk1o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk1o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk1o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk1o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk1o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ock1"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath><g clip-path="url(#ock1)"><g filter="url(#bk1o)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/></g></g></svg>
+  <div class="lab"><div class="t">Kaos Krem · Depan</div><div class="s">Kaos</div></div><div class="code">K01</div></div><div class="mk" id="K02-kaos-krem-belakang" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bk2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="560" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bk2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ck2"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath>
+  <path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z" fill="#F4ECE1" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ck2)"><rect width="1600" height="1600" fill="url(#sxk2)"/>
+    <g filter="url(#bk2)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/><path d="M596 510 C632 750 620 990 608 1230 M992 486 C1028 726 1016 990 1028 1230" stroke="#fff" stroke-opacity=".14" stroke-width="70" fill="none"/></g><rect width="1600" height="1600" filter="url(#nk2)"/></g><path d="M560 234 C632 270 968 270 1040 234" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="22"/><path d="M229 558 L392 630 M1371 558 L1208 630 M435 1360 C560 1391 1040 1391 1165 1360" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="4" stroke-dasharray="0"/></svg><img src="artwork/A1-back-print-light.png" style="position:absolute;left:545px;top:380px;width:510px;mix-blend-mode:multiply;"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0;pointer-events:none;opacity:.4"><defs>
+  <filter id="bk2o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k2o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk2o"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk2o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk2o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk2o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk2o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk2o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ock2"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath><g clip-path="url(#ock2)"><g filter="url(#bk2o)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/></g></g></svg>
+  <div class="lab"><div class="t">Kaos Krem · Belakang</div><div class="s">Kaos</div></div><div class="code">K02</div></div><div class="mk" id="K03-kaos-cokelat-badge" style="background:#E9DFD2"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bk3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk3"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="560" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bk3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk3"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ck3"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath>
+  <path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z" fill="#5A3E31" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ck3)"><rect width="1600" height="1600" fill="url(#sxk3)"/>
+    <g filter="url(#bk3)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/><path d="M596 510 C632 750 620 990 608 1230 M992 486 C1028 726 1016 990 1028 1230" stroke="#fff" stroke-opacity=".14" stroke-width="70" fill="none"/></g><rect width="1600" height="1600" filter="url(#nk3)"/></g><path d="M560 234 C632 330 968 330 1040 234 C968 263 632 263 560 234 Z" fill="#000" fill-opacity=".22"/><path d="M560 234 C632 330 968 330 1040 234" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="24"/><path d="M229 558 L392 630 M1371 558 L1208 630 M435 1360 C560 1391 1040 1391 1165 1360" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="4" stroke-dasharray="0"/></svg><img src="artwork/A8-vintage-badge-dark.png" style="position:absolute;left:610px;top:470px;width:380px;mix-blend-mode:normal;"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0;pointer-events:none;opacity:.4"><defs>
+  <filter id="bk3o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k3o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk3o"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk3o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk3o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk3o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk3o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk3o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ock3"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath><g clip-path="url(#ock3)"><g filter="url(#bk3o)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/></g></g></svg>
+  <div class="lab"><div class="t">Kaos Cokelat Tua · Badge</div><div class="s">Kaos</div></div><div class="code">K03</div></div><div class="mk" id="K04-kaos-putih-greetings" style="background:#EDE4D8"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bk4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk4"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk4" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk4" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="560" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bk4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk4"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk4" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk4" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ck4"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath>
+  <path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z" fill="#FFFFFF" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ck4)"><rect width="1600" height="1600" fill="url(#sxk4)"/>
+    <g filter="url(#bk4)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/><path d="M596 510 C632 750 620 990 608 1230 M992 486 C1028 726 1016 990 1028 1230" stroke="#fff" stroke-opacity=".14" stroke-width="70" fill="none"/></g><rect width="1600" height="1600" filter="url(#nk4)"/></g><path d="M560 234 C632 330 968 330 1040 234 C968 263 632 263 560 234 Z" fill="#000" fill-opacity=".22"/><path d="M560 234 C632 330 968 330 1040 234" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="24"/><path d="M229 558 L392 630 M1371 558 L1208 630 M435 1360 C560 1391 1040 1391 1165 1360" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="4" stroke-dasharray="0"/></svg><img src="artwork/A10-greetings-selayar.png" style="position:absolute;left:560px;top:470px;width:480px;mix-blend-mode:multiply;"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0;pointer-events:none;opacity:.4"><defs>
+  <filter id="bk4o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k4o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk4o"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk4o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk4o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk4o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk4o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk4o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ock4"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath><g clip-path="url(#ock4)"><g filter="url(#bk4o)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/></g></g></svg>
+  <div class="lab"><div class="t">Kaos Putih · Greetings</div><div class="s">Kaos</div></div><div class="code">K04</div></div><div class="mk" id="K05-kaos-pasir-kayak" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bk5" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k5" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk5"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk5" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk5" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="560" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bk5" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k5" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk5"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk5" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk5" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ck5"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath>
+  <path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z" fill="#E6C89B" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ck5)"><rect width="1600" height="1600" fill="url(#sxk5)"/>
+    <g filter="url(#bk5)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/><path d="M596 510 C632 750 620 990 608 1230 M992 486 C1028 726 1016 990 1028 1230" stroke="#fff" stroke-opacity=".14" stroke-width="70" fill="none"/></g><rect width="1600" height="1600" filter="url(#nk5)"/></g><path d="M560 234 C632 330 968 330 1040 234 C968 263 632 263 560 234 Z" fill="#000" fill-opacity=".22"/><path d="M560 234 C632 330 968 330 1040 234" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="24"/><path d="M229 558 L392 630 M1371 558 L1208 630 M435 1360 C560 1391 1040 1391 1165 1360" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="4" stroke-dasharray="0"/></svg><img src="artwork/A4-kayak-light.png" style="position:absolute;left:590px;top:470px;width:420px;mix-blend-mode:multiply;"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0;pointer-events:none;opacity:.4"><defs>
+  <filter id="bk5o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2k5o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nk5o"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxk5o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyk5o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syk5o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtk5o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdk5o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ock5"><path d="M560 234 C632 265 728 284 800 284 C872 284 968 265 1040 234 L1234 308 C1286 332 1334 432 1386 584 L1222 659 C1203 620 1182 588 1162 565 L1170 1388 C1040 1424 560 1424 430 1388 L438 565 C418 588 397 620 378 659 L214 584 C266 432 314 332 366 308 Z"/></clipPath><g clip-path="url(#ock5)"><g filter="url(#bk5o)"><path d="M446 582 C514 666 502 798 486 918 M1154 582 C1086 666 1098 798 1114 918 M704 1182 C746 1266 728 1338 740 1410 M920 1230 C944 1302 932 1362 944 1410" stroke="#000" stroke-opacity=".06" stroke-width="56" fill="none"/></g></g></svg>
+  <div class="lab"><div class="t">Kaos Pasir · Kayak</div><div class="s">Kaos</div></div><div class="code">K05</div></div><div class="mk" id="K06-hoodie" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bh1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2h1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nh1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxh1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyh1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syh1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mth1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdh1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="600" ry="42" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bh1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2h1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nh1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxh1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyh1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syh1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mth1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdh1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ch1"><path d="M560 306 C632 330 968 330 1040 306 L1220 378 C1280 414 1316 546 1340 870 L1370 1326 L1256 1344 L1208 930 L1174 654 L1174 1350 L1184 1410 L416 1410 L426 1350 L426 654 L392 930 L344 1344 L230 1326 L260 870 C284 546 320 414 380 378 Z"/></clipPath>
+  <path d="M560 306 C632 330 968 330 1040 306 L1220 378 C1280 414 1316 546 1340 870 L1370 1326 L1256 1344 L1208 930 L1174 654 L1174 1350 L1184 1410 L416 1410 L426 1350 L426 654 L392 930 L344 1344 L230 1326 L260 870 C284 546 320 414 380 378 Z" fill="#A67C64" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ch1)"><rect width="1600" height="1600" fill="url(#sxh1)"/>
+    <g filter="url(#bh1)"><path d="M428 666 C488 774 476 918 458 1062 M1172 666 C1112 774 1124 918 1142 1062 M296 930 C320 1062 314 1182 320 1302 M1304 930 C1280 1062 1286 1182 1280 1302" stroke="#000" stroke-opacity=".07" stroke-width="56" fill="none"/></g><rect width="1600" height="1600" filter="url(#nh1)"/></g><path d="M582 316 C560 162 1040 162 1018 316 C944 368 656 368 582 316 Z" fill="#A67C64"/><path d="M582 316 C560 162 1040 162 1018 316 C944 368 656 368 582 316 Z" fill="#000" fill-opacity=".08"/><path d="M646 323 C658 227 942 227 954 323 C896 385 704 385 646 323 Z" fill="#000" fill-opacity=".35"/><path d="M584 1062 L1016 1062 L1071 1290 L529 1290 Z" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="5"/><path d="M416 1350 L1184 1350 L1184 1410 L416 1410 Z M230 1302 L344 1320 L342 1344 L228 1326 Z M1370 1302 L1256 1320 L1258 1344 L1372 1326 Z" fill="#000" fill-opacity=".10"/><path d="M740 360 L723 630 M860 360 L877 630" stroke="#FBF4EC" stroke-width="9" stroke-linecap="round"/><rect x="716" y="628" width="14" height="30" rx="4" fill="#C9A46A"/><rect x="868" y="628" width="14" height="30" rx="4" fill="#C9A46A"/></svg><img src="artwork/A11-chest-mini-dark.png" style="position:absolute;left:870px;top:560px;width:230px;mix-blend-mode:normal;"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0;pointer-events:none;opacity:.4"><defs>
+  <filter id="bh1o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2h1o" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nh1o"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxh1o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyh1o" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syh1o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mth1o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdh1o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="och1"><path d="M560 306 C632 330 968 330 1040 306 L1220 378 C1280 414 1316 546 1340 870 L1370 1326 L1256 1344 L1208 930 L1174 654 L1174 1350 L1184 1410 L416 1410 L426 1350 L426 654 L392 930 L344 1344 L230 1326 L260 870 C284 546 320 414 380 378 Z"/></clipPath><g clip-path="url(#och1)"><g filter="url(#bh1o)"><path d="M428 666 C488 774 476 918 458 1062 M1172 666 C1112 774 1124 918 1142 1062" stroke="#000" stroke-opacity=".10" stroke-width="26" fill="none"/></g></g></svg>
+  <div class="lab"><div class="t">Hoodie Driftwood</div><div class="s">Kaos</div></div><div class="code">K06</div></div><div class="mk" id="T01-topi-baseball" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bc1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2c1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nc1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxc1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyc1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtc1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdc1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1270" rx="480" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bc1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2c1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nc1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxc1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyc1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtc1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdc1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cc1"><path d="M330 980 C330 680 470 560 640 560 C830 560 950 680 950 980 Z"/></clipPath>
+  <path d="M330 980 C330 680 470 560 640 560 C830 560 950 680 950 980 Z" fill="#A67C64" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cc1)"><rect width="1600" height="1600" fill="url(#sxc1)"/>
+    <g filter="url(#bc1)"><path d="M420 700 C460 800 450 900 440 980" stroke="#000" stroke-opacity=".14" stroke-width="30" fill="none"/></g><rect width="1600" height="1600" filter="url(#nc1)"/></g><path d="M640 560 C620 690 615 830 625 980 M640 560 C750 650 810 800 830 980 M640 560 C520 650 460 800 440 980" stroke="#000" stroke-opacity=".16" stroke-width="5" fill="none"/><circle cx="640" cy="565" r="20" fill="#8F6A55"/><circle cx="520" cy="700" r="7" fill="#000" opacity=".25"/><circle cx="790" cy="700" r="7" fill="#000" opacity=".25"/><path d="M290 980 C430 930 930 930 1060 985 C1140 1060 1080 1160 820 1170 C540 1170 330 1120 290 980 Z" fill="#8C6650"/><path d="M290 980 C430 930 930 930 1060 985" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="6"/><path d="M320 1010 C470 965 920 965 1040 1015" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3" stroke-dasharray="10 8"/></svg><img src="../assets/mark-sunari-cream.svg" style="position:absolute;left:548px;top:700px;width:190px;mix-blend-mode:normal;transform:skewY(-2deg)">
+  <div class="lab"><div class="t">Topi Baseball</div><div class="s">Aksesoris</div></div><div class="code">T01</div></div><div class="mk" id="T02-bucket-hat" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bc2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2c2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nc2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxc2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyc2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtc2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdc2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1220" rx="520" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bc2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2c2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nc2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxc2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyc2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtc2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdc2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cc2"><path d="M560 620 C560 500 640 470 800 470 C960 470 1040 500 1040 620 L1080 900 L520 900 Z"/></clipPath>
+  <path d="M560 620 C560 500 640 470 800 470 C960 470 1040 500 1040 620 L1080 900 L520 900 Z" fill="#F4ECE1" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cc2)"><rect width="1600" height="1600" fill="url(#cyc2)"/>
+    <g filter="url(#bc2)"></g><rect width="1600" height="1600" filter="url(#nc2)"/></g><defs>
+  <filter id="bc3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2c3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nc3"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxc3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyc3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syc3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtc3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdc3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cc3"><path d="M330 900 C450 850 1150 850 1270 900 L1360 1060 C1150 1140 450 1140 240 1060 Z"/></clipPath>
+  <path d="M330 900 C450 850 1150 850 1270 900 L1360 1060 C1150 1140 450 1140 240 1060 Z" fill="#EDE2D3" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cc3)"><rect width="1600" height="1600" fill="url(#syc3)"/>
+    <g filter="url(#bc3)"></g><rect width="1600" height="1600" filter="url(#nc3)"/></g><path d="M560 620 C640 600 960 600 1040 620" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="5"/><path d="M520 900 C640 880 960 880 1080 900" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="8"/><path d="M290 1000 C500 1070 1100 1070 1310 1000" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="3" stroke-dasharray="10 8"/></svg><img src="../assets/mark-sunari-driftwood.svg" style="position:absolute;left:735px;top:650px;width:130px;mix-blend-mode:multiply;">
+  <div class="lab"><div class="t">Bucket Hat</div><div class="s">Aksesoris</div></div><div class="code">T02</div></div><div class="mk" id="B01-tote-bag" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bb1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nb1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxb1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyb1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syb1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1470" rx="520" ry="36" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><path d="M600 520 C600 220 1000 220 1000 520" fill="none" stroke="#D3BE9C" stroke-width="40"/><path d="M640 520 C640 280 960 280 960 520" fill="none" stroke="#000" stroke-opacity=".08" stroke-width="40"/><defs>
+  <filter id="bb1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nb1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxb1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyb1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syb1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cb1"><path d="M380 500 H1220 L1260 1430 H340 Z"/></clipPath>
+  <path d="M380 500 H1220 L1260 1430 H340 Z" fill="#E9DCC4" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cb1)"><rect width="1600" height="1600" fill="url(#sxb1)"/>
+    <g filter="url(#bb1)"><path d="M560 600 C600 900 580 1200 600 1420 M1050 600 C1020 900 1040 1200 1020 1420" stroke="#000" stroke-opacity=".08" stroke-width="40" fill="none"/></g><rect width="1600" height="1600" filter="url(#nb1)"/></g><path d="M380 540 H1220" stroke="#000" stroke-opacity=".12" stroke-width="4" stroke-dasharray="12 8"/><rect x="590" y="500" width="40" height="80" fill="#D3BE9C"/><rect x="970" y="500" width="40" height="80" fill="#D3BE9C"/></svg><img src="artwork/A10-greetings-selayar.png" style="position:absolute;left:470px;top:820px;width:660px;mix-blend-mode:multiply;">
+  <div class="lab"><div class="t">Tote Bag Kanvas</div><div class="s">Tas</div></div><div class="code">B01</div></div><div class="mk" id="B02-pouch" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bp1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2p1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="np1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxp1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyp1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syp1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1150" rx="470" ry="30" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bp1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2p1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="np1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxp1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyp1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syp1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cp1"><path d="M360 560 Q360 520 400 520 H1200 Q1240 520 1240 560 L1260 1100 Q1260 1130 1230 1130 H370 Q340 1130 340 1100 Z"/></clipPath>
+  <path d="M360 560 Q360 520 400 520 H1200 Q1240 520 1240 560 L1260 1100 Q1260 1130 1230 1130 H370 Q340 1130 340 1100 Z" fill="#5A3E31" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cp1)"><rect width="1600" height="1600" fill="url(#syp1)"/>
+    <g filter="url(#bp1)"></g><rect width="1600" height="1600" filter="url(#np1)"/></g><rect x="370" y="560" width="860" height="22" fill="#3E2A20"/><path d="M380 571 H1220" stroke="#C9A46A" stroke-width="6" stroke-dasharray="6 6"/><rect x="1180" y="548" width="34" height="70" rx="8" fill="url(#mtp1)"/></svg><img src="artwork/A8-vintage-badge-dark.png" style="position:absolute;left:640px;top:660px;width:320px;mix-blend-mode:normal;">
+  <div class="lab"><div class="t">Pouch Serbaguna</div><div class="s">Tas</div></div><div class="code">B02</div></div><div class="mk" id="D01-mug-keramik" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bm1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2m1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nm1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxm1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cym1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sym1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtm1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdm1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="760" cy="1190" rx="420" ry="34" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><path d="M1050 600 C1250 600 1250 980 1050 980" fill="none" stroke="#F7F2EA" stroke-width="64"/><path d="M1050 600 C1250 600 1250 980 1050 980" fill="none" stroke="#000" stroke-opacity=".10" stroke-width="64"/><defs>
+  <filter id="bm1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2m1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nm1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxm1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cym1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sym1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtm1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdm1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cm1"><path d="M430 470 H1090 V1110 Q1090 1170 1030 1170 H490 Q430 1170 430 1110 Z"/></clipPath>
+  <path d="M430 470 H1090 V1110 Q1090 1170 1030 1170 H490 Q430 1170 430 1110 Z" fill="#FBF8F3" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cm1)"><rect width="1600" height="1600" fill="url(#cym1)"/>
+    <g filter="url(#bm1)"></g></g><ellipse cx="760" cy="470" rx="330" ry="44" fill="#EFE8DE"/><ellipse cx="760" cy="476" rx="300" ry="34" fill="#5A3E31" opacity=".85"/></svg><img src="artwork/A2-typography-light.png" style="position:absolute;left:540px;top:620px;width:440px;mix-blend-mode:multiply;">
+  <div class="lab"><div class="t">Mug Keramik</div><div class="s">Drinkware</div></div><div class="code">D01</div></div><div class="mk" id="D02-mug-enamel" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bm2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2m2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nm2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxm2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cym2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sym2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtm2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdm2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="760" cy="1150" rx="380" ry="30" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><path d="M1020 640 C1200 640 1200 940 1020 940" fill="none" stroke="#5A3E31" stroke-width="22"/><defs>
+  <filter id="bm2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2m2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nm2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxm2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cym2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sym2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtm2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdm2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cm2"><path d="M470 560 H1050 V1080 Q1050 1120 1010 1120 H510 Q470 1120 470 1080 Z"/></clipPath>
+  <path d="M470 560 H1050 V1080 Q1050 1120 1010 1120 H510 Q470 1120 470 1080 Z" fill="#FBF8F3" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cm2)"><rect width="1600" height="1600" fill="url(#cym2)"/>
+    <g filter="url(#bm2)"></g></g><ellipse cx="760" cy="560" rx="290" ry="38" fill="#5A3E31"/><ellipse cx="760" cy="562" rx="276" ry="30" fill="#E8E2D8"/><path d="M470 1080 Q470 1120 510 1120 H1010 Q1050 1120 1050 1080" fill="none" stroke="#5A3E31" stroke-width="12"/></svg><img src="artwork/A4-kayak-light.png" style="position:absolute;left:590px;top:700px;width:340px;mix-blend-mode:multiply;">
+  <div class="lab"><div class="t">Mug Enamel (Camping)</div><div class="s">Drinkware</div></div><div class="code">D02</div></div><div class="mk" id="D03-tumbler" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bt1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2t1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nt1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxt1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyt1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syt1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtt1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdt1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1420" rx="260" ry="26" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><defs>
+  <filter id="bt1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2t1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nt1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxt1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyt1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syt1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtt1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdt1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ct1"><path d="M640 340 H960 V420 H640 Z"/></clipPath>
+  <path d="M640 340 H960 V420 H640 Z" fill="#3E2A20" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ct1)"><rect width="1600" height="1600" fill="url(#cyt1)"/>
+    <g filter="url(#bt1)"></g></g><defs>
+  <filter id="bt2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2t2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nt2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxt2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyt2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syt2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtt2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdt2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="ct2"><path d="M610 420 H990 L950 1390 Q800 1420 650 1390 Z"/></clipPath>
+  <path d="M610 420 H990 L950 1390 Q800 1420 650 1390 Z" fill="#A67C64" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#ct2)"><rect width="1600" height="1600" fill="url(#cyt2)"/>
+    <g filter="url(#bt2)"></g></g><rect x="610" y="420" width="380" height="14" fill="#000" opacity=".15"/></svg><img src="artwork/A8-vintage-badge-dark.png" style="position:absolute;left:660px;top:760px;width:280px;mix-blend-mode:normal;">
+  <div class="lab"><div class="t">Tumbler Stainless</div><div class="s">Drinkware</div></div><div class="code">D03</div></div><div class="mk" id="X01-handuk-pantai" style="background:#EDE4D8"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bx1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2x1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nx1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxx1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyx1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syx1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtx1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdx1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1250" rx="680" ry="40" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><g stroke="#E6C89B" stroke-width="5"><line x1="180" y1="1180" x2="180" y2="1230"/><line x1="202" y1="1180" x2="202" y2="1230"/><line x1="224" y1="1180" x2="224" y2="1230"/><line x1="246" y1="1180" x2="246" y2="1230"/><line x1="268" y1="1180" x2="268" y2="1230"/><line x1="290" y1="1180" x2="290" y2="1230"/><line x1="312" y1="1180" x2="312" y2="1230"/><line x1="334" y1="1180" x2="334" y2="1230"/><line x1="356" y1="1180" x2="356" y2="1230"/><line x1="378" y1="1180" x2="378" y2="1230"/><line x1="400" y1="1180" x2="400" y2="1230"/><line x1="422" y1="1180" x2="422" y2="1230"/><line x1="444" y1="1180" x2="444" y2="1230"/><line x1="466" y1="1180" x2="466" y2="1230"/><line x1="488" y1="1180" x2="488" y2="1230"/><line x1="510" y1="1180" x2="510" y2="1230"/><line x1="532" y1="1180" x2="532" y2="1230"/><line x1="554" y1="1180" x2="554" y2="1230"/><line x1="576" y1="1180" x2="576" y2="1230"/><line x1="598" y1="1180" x2="598" y2="1230"/><line x1="620" y1="1180" x2="620" y2="1230"/><line x1="642" y1="1180" x2="642" y2="1230"/><line x1="664" y1="1180" x2="664" y2="1230"/><line x1="686" y1="1180" x2="686" y2="1230"/><line x1="708" y1="1180" x2="708" y2="1230"/><line x1="730" y1="1180" x2="730" y2="1230"/><line x1="752" y1="1180" x2="752" y2="1230"/><line x1="774" y1="1180" x2="774" y2="1230"/><line x1="796" y1="1180" x2="796" y2="1230"/><line x1="818" y1="1180" x2="818" y2="1230"/><line x1="840" y1="1180" x2="840" y2="1230"/><line x1="862" y1="1180" x2="862" y2="1230"/><line x1="884" y1="1180" x2="884" y2="1230"/><line x1="906" y1="1180" x2="906" y2="1230"/><line x1="928" y1="1180" x2="928" y2="1230"/><line x1="950" y1="1180" x2="950" y2="1230"/><line x1="972" y1="1180" x2="972" y2="1230"/><line x1="994" y1="1180" x2="994" y2="1230"/><line x1="1016" y1="1180" x2="1016" y2="1230"/><line x1="1038" y1="1180" x2="1038" y2="1230"/><line x1="1060" y1="1180" x2="1060" y2="1230"/><line x1="1082" y1="1180" x2="1082" y2="1230"/><line x1="1104" y1="1180" x2="1104" y2="1230"/><line x1="1126" y1="1180" x2="1126" y2="1230"/><line x1="1148" y1="1180" x2="1148" y2="1230"/><line x1="1170" y1="1180" x2="1170" y2="1230"/><line x1="1192" y1="1180" x2="1192" y2="1230"/><line x1="1214" y1="1180" x2="1214" y2="1230"/><line x1="1236" y1="1180" x2="1236" y2="1230"/><line x1="1258" y1="1180" x2="1258" y2="1230"/><line x1="1280" y1="1180" x2="1280" y2="1230"/><line x1="1302" y1="1180" x2="1302" y2="1230"/><line x1="1324" y1="1180" x2="1324" y2="1230"/><line x1="1346" y1="1180" x2="1346" y2="1230"/><line x1="1368" y1="1180" x2="1368" y2="1230"/><line x1="1390" y1="1180" x2="1390" y2="1230"/><line x1="1412" y1="1180" x2="1412" y2="1230"/></g></svg><div style="position:absolute;left:160px;top:420px;width:1280px;height:760px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.05)"><img src="artwork/A9-sunset-landscape.png" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.08),rgba(255,255,255,.06) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.1))"></div></div>
+  <div class="lab"><div class="t">Handuk Pantai</div><div class="s">Tekstil</div></div><div class="code">X01</div></div><div class="mk" id="X02-sarung-pantai" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bx2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2x2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nx2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxx2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyx2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syx2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtx2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdx2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1300" rx="560" ry="36" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/></svg><div style="position:absolute;left:330px;top:330px;width:940px;height:940px;transform:rotate(45deg) scale(.78);background:url(artwork/A5-pattern-tile.png) 0 0/300px 300px;box-shadow:0 30px 50px rgba(90,62,49,.18)"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(0,0,0,0) 40%,rgba(0,0,0,.12))"></div><div style="position:absolute;inset:18px;border:6px solid #A67C64;opacity:.7"></div></div>
+  <div class="lab"><div class="t">Sarung Pantai / Bandana</div><div class="s">Tekstil</div></div><div class="code">X02</div></div><div class="mk" id="A01-gantungan-akrilik" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="ba1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2a1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="na1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxa1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cya1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sya1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mta1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wda1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1320" rx="330" ry="26" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><circle cx="800" cy="300" r="78" fill="none" stroke="url(#mta1)" stroke-width="18"/><g fill="url(#mta1)"><rect x="788" y="380" width="24" height="20" rx="9"/><rect x="788" y="406" width="24" height="20" rx="9"/><rect x="788" y="432" width="24" height="20" rx="9"/><rect x="788" y="458" width="24" height="20" rx="9"/><rect x="788" y="484" width="24" height="20" rx="9"/></g><circle cx="800" cy="860" r="420" fill="#fff" fill-opacity=".45" stroke="#fff" stroke-opacity=".8" stroke-width="6"/><circle cx="800" cy="480" r="22" fill="#EFE6DA" stroke="#C9C1B5" stroke-width="5"/></svg><img src="artwork/A3-sticker-round.png" style="position:absolute;left:420px;top:500px;width:760px;mix-blend-mode:normal;"><div style="position:absolute;left:480px;top:520px;width:260px;height:420px;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,.55),rgba(255,255,255,0));transform:rotate(-30deg)"></div>
+  <div class="lab"><div class="t">Gantungan Kunci Akrilik</div><div class="s">Aksesoris</div></div><div class="code">A01</div></div><div class="mk" id="A02-gantungan-kayu" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="ba2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2a2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="na2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxa2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cya2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sya2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mta2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wda2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1250" rx="300" ry="24" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><circle cx="800" cy="330" r="70" fill="none" stroke="url(#mta2)" stroke-width="16"/><rect x="560" y="440" width="480" height="780" rx="70" fill="url(#wda2)"/><path d="M570 480 C700 460 900 500 1030 476" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 535 C700 515 900 555 1030 531" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 590 C700 570 900 610 1030 586" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 645 C700 625 900 665 1030 641" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 700 C700 680 900 720 1030 696" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 755 C700 735 900 775 1030 751" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 810 C700 790 900 830 1030 806" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 865 C700 845 900 885 1030 861" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 920 C700 900 900 940 1030 916" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 975 C700 955 900 995 1030 971" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 1030 C700 1010 900 1050 1030 1026" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 1085 C700 1065 900 1105 1030 1081" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><path d="M570 1140 C700 1120 900 1160 1030 1136" stroke="#8E6440" stroke-opacity=".25" stroke-width="3" fill="none"/><circle cx="800" cy="520" r="26" fill="#EFE6DA" stroke="#8E6440" stroke-opacity=".5" stroke-width="4"/></svg><img src="../assets/mark-sunari-driftwood.svg" style="position:absolute;left:650px;top:650px;width:300px;mix-blend-mode:multiply;filter:brightness(.55) contrast(1.3);opacity:.85"><div style="position:absolute;left:560px;top:990px;width:480px;text-align:center;font-family:Playfair Display,serif;font-size:76px;color:#4A3022;opacity:.8;mix-blend-mode:multiply">SunaRi</div>
+  <div class="lab"><div class="t">Gantungan Kunci Kayu</div><div class="s">Aksesoris</div></div><div class="code">A02</div></div><div class="mk" id="A03-pin-enamel" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bpn" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2pn" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="npn"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxpn" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cypn" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sypn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtpn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdpn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1330" rx="380" ry="28" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><rect x="500" y="260" width="600" height="1040" rx="20" fill="#C8A27A"/><rect x="500" y="260" width="600" height="1040" rx="20" fill="url(#sypn)"/><circle cx="800" cy="330" r="22" fill="#EFE6DA"/><circle cx="800" cy="720" r="230" fill="url(#mtpn)"/><circle cx="800" cy="720" r="196" fill="#FBF4EC"/></svg><img src="artwork/A6-mark-pin.png" style="position:absolute;left:620px;top:540px;width:360px;mix-blend-mode:normal;"><div style="position:absolute;left:640px;top:600px;width:150px;height:240px;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(255,255,255,0));transform:rotate(-35deg)"></div><div style="position:absolute;left:500px;top:1020px;width:600px;text-align:center"><div style="font-family:Playfair Display,serif;font-size:62px;color:#4A3022">SunaRi</div><div style="font-family:Montserrat;font-weight:600;font-size:18px;letter-spacing:.4em;color:#5A3E31;margin-top:14px">PANTAI SUNARI · SELAYAR</div></div>
+  <div class="lab"><div class="t">Pin Enamel + Kartu</div><div class="s">Aksesoris</div></div><div class="code">A03</div></div><div class="mk" id="A04-magnet-kulkas" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="ba4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2a4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="na4"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxa4" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cya4" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sya4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mta4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wda4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1180" rx="520" ry="30" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/></svg><div style="position:absolute;left:300px;top:420px;width:1000px;height:760px;border-radius:40px;overflow:hidden;box-shadow:0 26px 44px rgba(90,62,49,.25);transform:rotate(-4deg)"><img src="artwork/A9-sunset-landscape.png" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.35),rgba(255,255,255,0) 35%)"></div></div>
+  <div class="lab"><div class="t">Magnet Kulkas</div><div class="s">Aksesoris</div></div><div class="code">A04</div></div><div class="mk" id="A05-tatakan-gelas" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="ba5" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2a5" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="na5"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxa5" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cya5" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sya5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mta5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wda5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="620" cy="1150" rx="330" ry="26" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><ellipse cx="1030" cy="1060" rx="330" ry="26" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><circle cx="620" cy="830" r="320" fill="url(#wda5)"/><circle cx="620" cy="830" r="40" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="74" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="108" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="142" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="176" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="210" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="244" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="278" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="620" cy="830" r="312" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/><circle cx="1030" cy="740" r="320" fill="#FBF4EC"/><circle cx="1030" cy="740" r="320" fill="url(#sya5)"/></svg><img src="../assets/mark-sunari-driftwood.svg" style="position:absolute;left:450px;top:660px;width:340px;mix-blend-mode:multiply;filter:brightness(.5) contrast(1.4);opacity:.8"><img src="artwork/A8-vintage-badge-light.png" style="position:absolute;left:760px;top:470px;width:540px;mix-blend-mode:multiply;">
+  <div class="lab"><div class="t">Tatakan Gelas (set 2)</div><div class="s">Aksesoris</div></div><div class="code">A05</div></div><div class="mk" id="S01-buku-catatan" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bn1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2n1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nn1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxn1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyn1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syn1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtn1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdn1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1430" rx="470" ry="30" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><rect x="460" y="230" width="700" height="1000" rx="18" fill="#FBF4EC" transform="rotate(4 810 730)"/><defs>
+  <filter id="bn1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2n1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nn1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxn1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyn1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syn1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtn1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdn1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cn1"><path d="M440 210 H1140 Q1158 210 1158 228 V1192 Q1158 1210 1140 1210 H440 Z"/></clipPath>
+  <path d="M440 210 H1140 Q1158 210 1158 228 V1192 Q1158 1210 1140 1210 H440 Z" fill="#C8A27A" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cn1)"><rect width="1600" height="1600" fill="url(#syn1)"/>
+    <g filter="url(#bn1)"></g><rect width="1600" height="1600" filter="url(#nn1)"/></g><rect x="440" y="210" width="40" height="1000" fill="#000" opacity=".12"/><rect x="1060" y="210" width="30" height="1000" fill="#5A3E31"/></svg><img src="artwork/A2-typography-light.png" style="position:absolute;left:560px;top:440px;width:500px;mix-blend-mode:multiply;filter:brightness(.7)">
+  <div class="lab"><div class="t">Buku Catatan A5</div><div class="s">Alat tulis</div></div><div class="code">S01</div></div><div class="mk" id="S02-kartu-pos" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bs2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2s2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="ns2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxs2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cys2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sys2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mts2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wds2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1250" rx="600" ry="34" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/></svg><div style="position:absolute;left:180px;top:420px;width:820px;height:550px;box-shadow:0 20px 40px rgba(90,62,49,.22);transform:rotate(-9deg);background:#FBF4EC;padding:0"><img src="artwork/A10-greetings-selayar.png" style="width:86%;margin:70px 7% 0"></div><div style="position:absolute;left:600px;top:560px;width:820px;height:550px;box-shadow:0 20px 40px rgba(90,62,49,.22);transform:rotate(6deg);overflow:hidden"><img src="artwork/A9-sunset-landscape.png" style="width:100%;height:100%;object-fit:cover"></div><div style="position:absolute;left:330px;top:720px;width:820px;height:550px;box-shadow:0 26px 50px rgba(90,62,49,.28);transform:rotate(-2deg);overflow:hidden"><img src="../assets/photos/senja/17-kayak-berdua.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,20,.45),rgba(40,26,20,0) 45%)"></div><img src="../assets/logo-sunari-cream.png" style="position:absolute;left:36px;top:30px;width:300px"></div>
+  <div class="lab"><div class="t">Set Kartu Pos (3)</div><div class="s">Alat tulis</div></div><div class="code">S02</div></div><div class="mk" id="S03-stiker" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bs3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2s3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="ns3"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxs3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cys3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="sys3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mts3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wds3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1440" rx="470" ry="30" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><rect x="330" y="200" width="940" height="1220" rx="10" fill="#FFFFFF"/></svg><img src="artwork/A3-sticker-round.png" style="position:absolute;left:380px;top:250px;width:440px;mix-blend-mode:normal;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(0 6px 10px rgba(90,62,49,.25))"><img src="artwork/A8-vintage-badge-light.png" style="position:absolute;left:850px;top:250px;width:380px;mix-blend-mode:normal;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(0 6px 10px rgba(90,62,49,.25))"><img src="artwork/A7-sun-stripes.png" style="position:absolute;left:880px;top:690px;width:300px;mix-blend-mode:normal;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(0 6px 10px rgba(90,62,49,.25))"><img src="../assets/mark-sunari-driftwood.svg" style="position:absolute;left:420px;top:740px;width:300px;mix-blend-mode:normal;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(0 6px 10px rgba(90,62,49,.25))"><img src="artwork/A4-kayak-light.png" style="position:absolute;left:380px;top:1060px;width:460px;mix-blend-mode:normal;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(0 6px 10px rgba(90,62,49,.25))"><img src="artwork/A11-chest-mini-light.png" style="position:absolute;left:860px;top:1120px;width:380px;mix-blend-mode:normal;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(0 6px 10px rgba(90,62,49,.25))">
+  <div class="lab"><div class="t">Lembar Stiker Die-cut</div><div class="s">Alat tulis</div></div><div class="code">S03</div></div><div class="mk" id="P01-paper-bag" style="background:#EFE6DA"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bq1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2q1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nq1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxq1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyq1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syq1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtq1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdq1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1450" rx="500" ry="34" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><path d="M640 470 C640 260 960 260 960 470" fill="none" stroke="#5A3E31" stroke-width="14"/><defs>
+  <filter id="bq1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2q1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="nq1"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxq1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyq1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syq1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtq1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdq1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><clipPath id="cq1"><path d="M400 460 H1200 L1230 1420 H370 Z"/></clipPath>
+  <path d="M400 460 H1200 L1230 1420 H370 Z" fill="#C8A27A" stroke="rgba(0,0,0,.10)" stroke-width="2"/>
+  <g clip-path="url(#cq1)"><rect width="1600" height="1600" fill="url(#sxq1)"/>
+    <g filter="url(#bq1)"></g><rect width="1600" height="1600" filter="url(#nq1)"/></g><path d="M400 460 L470 520 H1130 L1200 460" fill="#000" fill-opacity=".10"/><circle cx="640" cy="500" r="10" fill="#3E2A20"/><circle cx="960" cy="500" r="10" fill="#3E2A20"/></svg><img src="../assets/logo-sunari-driftwood.png" style="position:absolute;left:500px;top:760px;width:600px;mix-blend-mode:multiply;filter:brightness(.55)"><div style="position:absolute;left:400px;top:1150px;width:800px;text-align:center;font-family:Montserrat;font-weight:600;font-size:22px;letter-spacing:.42em;color:#4A3022;opacity:.85">TEMPAT SENJA PULANG</div>
+  <div class="lab"><div class="t">Paper Bag Oleh-oleh</div><div class="s">Kemasan</div></div><div class="code">P01</div></div><div class="mk" id="P02-hang-tag" style="background:#F1E8DC"><svg viewBox="0 0 1600 1600" width="1600" height="1600" style="position:absolute;left:0;top:0"><defs>
+  <filter id="bp2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="b2p2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="np2"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .07 0"/></filter>
+  <linearGradient id="sxp2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".16"/><stop offset=".22" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="cyp2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+  <linearGradient id="syp2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="mtp2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E3B5"/><stop offset=".45" stop-color="#C9A46A"/><stop offset="1" stop-color="#8E6B3A"/></linearGradient>
+  <linearGradient id="wdp2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8B48A"/><stop offset="1" stop-color="#B98B5E"/></linearGradient>
+</defs><ellipse cx="800" cy="1300" rx="520" ry="30" fill="#5A3E31" opacity="0.22" style="filter:blur(18px)"/><path d="M700 140 C640 300 560 330 580 420" fill="none" stroke="#5A3E31" stroke-width="4"/><path d="M900 140 C960 300 1040 330 1020 420" fill="none" stroke="#5A3E31" stroke-width="4"/></svg><img src="artwork/A12-hangtag-front.png" style="position:absolute;left:330px;top:380px;width:420px;transform:rotate(-6deg);filter:drop-shadow(0 16px 24px rgba(90,62,49,.25))"><img src="artwork/A12-hangtag-back.png" style="position:absolute;left:850px;top:380px;width:420px;transform:rotate(5deg);filter:drop-shadow(0 16px 24px rgba(90,62,49,.25))">
+  <div class="lab"><div class="t">Hang Tag & Label</div><div class="s">Kemasan</div></div><div class="code">P02</div></div></body></html>

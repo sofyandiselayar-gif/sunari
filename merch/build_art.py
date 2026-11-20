@@ -2,7 +2,7 @@
 Run: python3 merch/build_art.py && node merch/render.js"""
 import pathlib
 H = pathlib.Path(__file__).parent
-FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">'
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">'
 GOLD, CORAL, DRIFT, DEEP, CREAM = "#FDB15D", "#FF8A5C", "#A67C64", "#5A3E31", "#FBF4EC"
 LOGO = {"d": "../assets/logo-sunari-driftwood.png", "c": "../assets/logo-sunari-cream.png"}
 
@@ -84,6 +84,96 @@ ARTS = [back_print("A1-back-print-light", "d"), back_print("A1-back-print-dark",
         pattern("A5-pattern-tile"),
         f'<div class="art" id="A6-mark-pin" style="width:600px;height:600px">{mark(DRIFT, 600)}</div>',
         f'<div class="art" id="A7-sun-stripes" style="width:600px;height:600px">{sun("ss", 600)}</div>']
+
+import math
+DEEP_ = DEEP
+def palm(x, y, s, col, flip=False, lean=40):
+    """Palm-tree silhouette rooted at (x,y)."""
+    tx, ty = lean, -300
+    out = f'<g transform="translate({x},{y}) scale({-s if flip else s},{s})" fill="{col}" stroke="none">'
+    out += f'<path d="M-9 0 C 2 -100, {tx*0.5-6} -200, {tx-6} {ty} L {tx+6} {ty} C {tx*0.5+8} -200, 14 -100, 9 0 Z"/>'
+    for a, L in [(-168,170),(-132,190),(-95,150),(-58,190),(-22,175),(12,150),(-112,120),(-75,125)]:
+        r = math.radians(a)
+        ex, ey = tx + L*math.cos(r), ty + L*math.sin(r) + L*0.45
+        mx, my = (tx+ex)/2, (ty+ey)/2
+        nx, ny = -(ey-ty), (ex-tx); n = math.hypot(nx, ny) or 1; nx, ny = nx/n, ny/n
+        w = L*0.16
+        c1 = (mx + nx*w, my + ny*w - L*0.18); c2 = (mx - nx*w*0.4, my - ny*w*0.4 - L*0.10)
+        out += f'<path d="M{tx} {ty} Q{c1[0]:.1f} {c1[1]:.1f} {ex:.1f} {ey:.1f} Q{c2[0]:.1f} {c2[1]:.1f} {tx} {ty} Z"/>'
+    out += f'<circle cx="{tx-4}" cy="{ty+8}" r="9"/><circle cx="{tx+8}" cy="{ty+12}" r="8"/></g>'
+    return out
+
+def vintage_badge(id_, k):
+    ink = DEEP if k == "d" else CREAM
+    return f'''<div class="art" id="{id_}" style="width:1000px;height:1000px">
+  <svg viewBox="0 0 1000 1000" width="1000" height="1000">
+    <defs><path id="t{id_}" d="M500 500 m-372 0 a372 372 0 1 1 744 0"/><path id="b{id_}" d="M128 500 a372 372 0 0 0 744 0"/>
+      <linearGradient id="sky{id_}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{GOLD}"/><stop offset="1" stop-color="{CORAL}"/></linearGradient>
+      <clipPath id="c{id_}"><circle cx="500" cy="500" r="292"/></clipPath>
+      <mask id="m{id_}"><rect width="1000" height="1000" fill="white"/>{"".join(f'<rect x="0" y="{560+i*26}" width="1000" height="{6+i*2}" fill="black"/>' for i in range(6))}</mask></defs>
+    <circle cx="500" cy="500" r="478" fill="none" stroke="{ink}" stroke-width="12"/>
+    <circle cx="500" cy="500" r="452" fill="none" stroke="{ink}" stroke-width="3"/>
+    <circle cx="500" cy="500" r="300" fill="none" stroke="{ink}" stroke-width="6"/>
+    <g clip-path="url(#c{id_})">
+      <circle cx="500" cy="560" r="190" fill="url(#sky{id_})" mask="url(#m{id_})"/>
+      {"".join(f'<rect x="200" y="{720+i*30}" width="600" height="7" rx="3" fill="{ink}" opacity="{0.85-i*0.15}"/>' for i in range(4))}
+      {palm(300, 760, 0.95, ink, lean=55)}{palm(700, 760, 0.8, ink, flip=True, lean=45)}
+    </g>
+    <text font-family="Montserrat" font-weight="600" font-size="50" letter-spacing="10" fill="{ink}"><textPath href="#t{id_}" startOffset="50%" text-anchor="middle">SUNARI BEACH RESORT</textPath></text>
+    <text font-family="Montserrat" font-weight="600" font-size="40" letter-spacing="12" fill="{ink}" dy="36"><textPath href="#b{id_}" startOffset="50%" text-anchor="middle">KEPULAUAN SELAYAR</textPath></text>
+    <g fill="{CORAL}"><path d="M142 500 l12 -12 l12 12 l-12 12 Z"/><path d="M834 500 l12 -12 l12 12 l-12 12 Z"/></g>
+  </svg></div>'''
+
+def landscape(id_, text=True):
+    h = 1150 if text else 1000
+    band = f'''<div style="position:absolute;left:0;right:0;top:1000px;height:150px;background:{CREAM};display:flex;align-items:center;justify-content:space-between;padding:0 60px">
+      <span class="pf" style="font-size:64px;color:{DEEP}">SunaRi</span><span class="caps" style="font-size:24px;letter-spacing:.38em;color:{DRIFT}">Pantai Sunari · Selayar</span></div>''' if text else ""
+    refl = "".join(f'<rect x="{700-w/2}" y="{690+i*34}" width="{w}" height="10" rx="5" fill="{GOLD}" opacity="{0.9-i*0.12}"/>' for i, w in enumerate([300,240,190,140,100,60]))
+    return f'''<div class="art" id="{id_}" style="width:1400px;height:{h}px;position:relative">
+  <svg viewBox="0 0 1400 1000" width="1400" height="1000">
+    <defs><linearGradient id="s{id_}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CREAM}"/><stop offset=".45" stop-color="#F7A7A1"/><stop offset="1" stop-color="{CORAL}"/></linearGradient>
+      <linearGradient id="u{id_}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE3B8"/><stop offset="1" stop-color="{GOLD}"/></linearGradient>
+      <linearGradient id="w{id_}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7BA7B6"/><stop offset="1" stop-color="#3F6676"/></linearGradient></defs>
+    <rect width="1400" height="660" fill="url(#s{id_})"/>
+    <circle cx="700" cy="660" r="190" fill="url(#u{id_})"/>
+    <path d="M0 610 Q200 585 360 612 Q420 600 470 620 L0 640 Z" fill="#B98577" opacity=".7"/>
+    <rect y="655" width="1400" height="345" fill="url(#w{id_})"/>
+    {refl}
+    <path d="M0 1000 L0 900 Q300 860 700 905 Q1050 940 1400 880 L1400 1000 Z" fill="{DEEP}"/>
+    {palm(150, 960, 1.7, DEEP, lean=90)}{palm(320, 950, 1.15, DEEP, lean=40)}{palm(1240, 930, 1.5, DEEP, flip=True, lean=70)}
+    <g transform="translate(860,770)" fill="{DEEP}"><path d="M-80 0 Q0 18 80 0 Q0 -8 -80 0 Z"/><circle cx="6" cy="-26" r="9"/><path d="M-6 -2 Q0 -18 6 -18 Q14 -18 16 -2 Z"/><path d="M-50 -48 L60 30" stroke="{DEEP}" stroke-width="5"/></g>
+  </svg>{band}</div>'''
+
+def greetings(id_):
+    return f'''<div class="art" id="{id_}" style="width:1300px;height:600px;text-align:center">
+  <div class="pf" style="font-size:110px;font-style:italic;color:{DRIFT};line-height:1">Greetings from</div>
+  <div style="font-family:Montserrat,sans-serif;font-weight:800;font-size:250px;line-height:1;letter-spacing:.02em;margin-top:10px;
+    background:url(../assets/photos/senja/15-dua-kayak-oranye.jpg) 50% 70%/cover;-webkit-background-clip:text;background-clip:text;color:transparent">SELAYAR</div>
+  <div class="caps" style="font-size:32px;letter-spacing:.42em;color:{DEEP};margin-top:24px;padding-left:.42em">SunaRi Beach Resort · Pantai Sunari</div>
+</div>'''
+
+def chest_mini(id_, k):
+    ink = DRIFT if k == "d" else CREAM
+    return f'''<div class="art" id="{id_}" style="width:700px;height:300px;display:flex;align-items:center;gap:36px;color:{ink}">
+  {mark(ink, 220)}<div><div class="pf" style="font-size:118px;line-height:1">SunaRi</div>
+  <div class="caps" style="font-size:22px;letter-spacing:.4em;margin-top:14px">Selayar</div></div></div>'''
+
+def hangtag(id_, side):
+    if side == "front":
+        inner = f'<img src="{LOGO["c"]}" style="width:250px;margin-top:150px"><div class="caps" style="font-size:13px;letter-spacing:.35em;color:{CREAM};margin-top:30px">Tempat senja pulang</div><div style="position:absolute;left:0;right:0;bottom:40px;display:flex;justify-content:center">{mark(CREAM,64)}</div>'
+        bg = DRIFT
+    else:
+        inner = f'''<div style="margin-top:120px;color:{DEEP}">{mark(DRIFT,90)}<div class="pf" style="font-size:30px;font-style:italic;margin:24px 26px 0;line-height:1.3">Dibawa pulang dari senja di Pantai Sunari.</div>
+          <div style="width:50px;height:2px;background:{DRIFT};margin:26px auto"></div>
+          <div class="caps" style="font-size:12px;letter-spacing:.25em;line-height:2">SunaRi Beach Resort<br>Kepulauan Selayar<br>@sunaribeachresortselayar</div></div>'''
+        bg = CREAM
+    return f'''<div class="art" id="{id_}" style="width:300px;height:540px;background:{bg};border-radius:14px;text-align:center;position:relative">
+  <div style="position:absolute;left:130px;top:28px;width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2px rgba(0,0,0,.08)"></div>{inner}</div>'''
+
+ARTS += [vintage_badge("A8-vintage-badge-light","d"), vintage_badge("A8-vintage-badge-dark","c"),
+         landscape("A9-sunset-landscape", True), landscape("A9-sunset-landscape-notext", False),
+         greetings("A10-greetings-selayar"), chest_mini("A11-chest-mini-light","d"), chest_mini("A11-chest-mini-dark","c"),
+         hangtag("A12-hangtag-front","front"), hangtag("A12-hangtag-back","back")]
 html = f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>
 *{{margin:0;padding:0;box-sizing:border-box}} body{{background:transparent;padding:40px;display:flex;flex-wrap:wrap;gap:60px;align-items:flex-start;font-family:Montserrat,sans-serif;font-variant-numeric:lining-nums}}
 .art{{position:relative;flex:none}} .pf{{font-family:'Playfair Display',serif;font-weight:400}} .caps{{font-weight:600;text-transform:uppercase}}
