@@ -1,6 +1,6 @@
 /**
  * Export the 5 "Location & Rute Akses" slides to PNG.
- * Output: ./output/carousel-slide-1.png … carousel-slide-6.png
+ * Output: ./output/carousel-slide-1.png … carousel-slide-7.png
  * Each slide is 1080x1350 CSS px rendered at deviceScaleFactor 2 (2160x2700 px, retina).
  *
  * Usage:  node export.js
@@ -11,7 +11,7 @@ const { chromium } = require('playwright');
 
 const ROOT = __dirname;
 const OUT = path.join(ROOT, 'output');
-const SLIDES = 6;
+const SLIDES = 7;
 
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
