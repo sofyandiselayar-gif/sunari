@@ -53,6 +53,25 @@ Tambahan 20 Nov 2026:
 | `aktivitas/05-ayunan-raksasa-senja.jpg` | Siluet tamu di ayunan raksasa, matahari di cakrawala (foto baru) | ✅ | Highlight "Ayunan Raksasa", Reels (gratis) |
 | `aktivitas/04-perahu-wisata.jpg` | Perahu wisata "Selayar Traveling" | 👤 ❓ | Perahu milik operator lain; jangan diklaim sebagai layanan SunaRi tanpa konfirmasi kerja sama |
 
+## Tur Pulau Bahuluang: `bahuluang/` (17 foto, ditambahkan 20 Nov 2026)
+| File | Isi | Status | Cocok untuk |
+|---|---|---|---|
+| `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
+| `02-di-kapal-tebing-karang` | Tamu di kapal, tebing karang pulau | 👤 | Story tur |
+| `03-masuk-gua-lipang` | Dua tamu berjalan masuk Gua Lipang (dari belakang) | ✅ | Carousel tur, highlight Bahuluang |
+| `04-istirahat-di-kapal-pasir-timbul` | Tamu berhanduk di kapal, pasir timbul di belakang | 👤 | Story "habis snorkeling" |
+| `05-kapal-menuju-pulau` | Tamu di kapal memandang pulau (dari belakang), 9:16 | ✅ | Story / Reels pembuka tur |
+| `06`–`08-gua-lipang-*` | Stalaktit & ruang dalam Gua Lipang (dari belakang) | ✅ | Feed, e-book, highlight Bahuluang |
+| `09-tamu-memotret-pulau` | Tamu memotret, pulau di seberang | 👤 | Konten testimoni (dengan izin) |
+| `10-air-dangkal-toska` | Dua tamu berdiri di air dangkal toska (dari belakang) | ✅ | Sampul tur, e-book |
+| `11-berjalan-ke-laut-dan-kapal` | Tamu berjalan ke laut di antara dua kapal (dari belakang) | ✅ | Feed tur, OTA (aktivitas) |
+| `12-berjalan-di-pasir-timbul` | Dua tamu berjalan di Pasir Timbul (dari belakang) | ✅ | Feed, carousel "Pasir Timbul" |
+| `13-berdiri-di-air-dangkal` | Tamu berdiri di air dangkal, pulau hijau di belakang, 3:4 | ✅ | Story / feed |
+| `14-snorkeling-makam-karang` | Dua orang snorkeling di air toska | ✅ | Konten snorkeling, e-book |
+| `15-makan-siang-lunchbox-rombongan` | Rombongan makan lunchbox di bawah tebing | 👤 | Bukti "lunchbox termasuk" (dengan izin) |
+| `16-makan-siang-di-pantai` | Tamu makan siang di pantai berpasir putih | 👤 (wajah samping) | Story tur |
+| `17-rombongan-di-gua` | Rombongan berpelampung bersama pemandu di gua | 👤 | Konten "tur dengan pemandu" (dengan izin) |
+
 ## Acara
 | File | Isi | Status | Catatan |
 |---|---|---|---|

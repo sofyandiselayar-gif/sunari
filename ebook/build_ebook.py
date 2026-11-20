@@ -227,18 +227,19 @@ add(f'''{head("05", "Aktivitas", "Aktivitas di <i>Pantai Sunari</i>", "Tidak per
 
 # =============================================================== 6 TUR
 add(f'''{head("06", "Tur pulau", "Jelajah pulau <i>dari SunaRi</i>", "Pulau-pulau eksotis Selayar bisa dijelajahi langsung dari resort. Semua tur privat sudah termasuk kapal, alat snorkeling, lunchbox &amp; tiket masuk.")}
-{img("pantai/03-pulau-di-seberang.jpg", 230, "50% 60%", "margin-top:16px")}
-<p class="t" style="margin-top:8px;font-style:italic">Pulau Gusung terlihat langsung dari Pantai Sunari.</p>
+<div class="grid2" style="margin-top:16px">{img("pantai/03-pulau-di-seberang.jpg", 210, "50% 60%")}{img("bahuluang/10-air-dangkal-toska.jpg", 210, "50% 50%")}</div>
+<p class="t" style="margin-top:8px;font-style:italic">Kiri: Pulau Gusung, terlihat langsung dari Pantai Sunari. Kanan: air toska Pulau Bahuluang.</p>
 {tbl(["Paket", "Jenis", "Durasi", "Mulai dari"], [
   ("Tur Eksotis Pulau Gusung", "Privat · kapal", "1 hari (07.00–15.00)", rp(333750) + " /orang*"),
   ("Tur Eksotis Pulau Bahuluang", "Privat · mobil + kapal", "1 hari (07.00–16.00)", rp(652500) + " /orang*"),
   ("Tur Eksotis Polassi &amp; Tambolongan", "Privat · mobil + kapal", "1 hari (07.00–16.30)", rp(847500) + " /orang*"),
   ("Open Trip Jelajah Pulau Selayar", "Gabungan · min. 8 orang", "2 hari", rp(3000000) + " /orang")], right_from=3, hi_last=True)}
 <p class="t" style="font-size:10.5px">*Harga per orang untuk rombongan 8 orang tanpa pemandu. Harga lengkap per jumlah tamu ada di halaman berikutnya.</p>
-<div class="note"><b>Sebelum berangkat:</b> sarapan di SunaRi tersedia mulai 07.00. Jadwal dapat disesuaikan oleh kapten &amp; pemandu mengikuti cuaca, kondisi laut dan pasang-surut.</div>''',
+<div class="note"><b>Sebelum berangkat:</b> sarapan di SunaRi tersedia mulai 07.00. Jadwal dapat disesuaikan oleh kapten &amp; pemandu mengikuti cuaca, kondisi laut dan pasang-surut.</div>
+<div class="grid3" style="margin-top:16px">{img("bahuluang/11-berjalan-ke-laut-dan-kapal.jpg", 190, "50% 50%")}{img("bahuluang/03-masuk-gua-lipang.jpg", 190, "50% 50%")}{img("bahuluang/05-kapal-menuju-pulau.jpg", 190, "50% 60%")}</div>''',
     toc=("Tur pulau", "Gusung, Bahuluang, Polassi & Tambolongan, Open Trip"))
 
-def tour(title, sub, hl, rows, prices, incl, excl, car=False):
+def tour(title, sub, hl, rows, prices, incl, excl, car=False, photos=None):
     gl = lambda n: f"{n} orang" + (f" ({'1 mobil' if n <= 4 else '2 mobil'})" if car else "")
     add(f'''{head("06", "Tur pulau", title, sub)}
 <div class="chips">{"".join(f'<span class="chip">{k} <b>{v}</b></span>' for k, v in hl)}</div>
@@ -248,7 +249,7 @@ def tour(title, sub, hl, rows, prices, incl, excl, car=False):
   <div><h2 style="font-size:18px;margin-top:10px">Harga <i>per orang</i></h2>
     {tbl(["Jumlah", "Tanpa pemandu", "Dgn pemandu"], [(gl(n), rp(x), rp(y)) for n, x, y in prices], hi_last=True)}</div>
   <div><h2 style="font-size:18px;margin-top:10px">Termasuk</h2>{ul(incl)}<h2 style="font-size:18px;margin-top:10px">Tidak termasuk</h2>{ul(excl, "no")}</div>
-</div>''')
+</div>''' + (f'<div class="grid3" style="margin-top:14px">{"".join(img(a, 150, b) for a, b in photos)}</div>' if photos else ""))
 
 EX = ["Pengeluaran pribadi &amp; belanja", "Dokumentasi foto/video tambahan"]
 tour('Tur Eksotis <i>Pulau Gusung</i>', "Tur privat satu hari: hopping pulau &amp; snorkeling, langsung dengan kapal dari SunaRi.",
@@ -266,7 +267,8 @@ tour('Tur Eksotis <i>Pulau Bahuluang</i>', "Jelajah pulau lewat jalur darat ke D
       ("13.00–14.00", "<b>Jelajah Gua Lipang</b> &amp; lanskap eksotis."), ("15.00–16.00", "Kembali ke SunaRi. Tur selesai.")],
      [(1,2640000,3540000),(2,1440000,1890000),(3,1040000,1340000),(4,840000,1065000),(5,900000,1080000),(6,790000,940000),(7,711429,840000),(8,652500,765000)],
      ["Mobil privat (resort ⇄ Turungan)", "Sewa kapal privat", "Alat snorkeling + pelampung", "Lunchbox + air mineral", "Tiket masuk destinasi", "Sopir &amp; BBM", "Pemandu lokal (paket dgn pemandu)"],
-     EX + ["Aktivitas tambahan opsional", "Tip sopir/kapten/pemandu (sukarela)"], car=True)
+     EX + ["Aktivitas tambahan opsional", "Tip sopir/kapten/pemandu (sukarela)"], car=True,
+     photos=[("bahuluang/07-gua-lipang-dalam.jpg", "50% 50%"), ("bahuluang/12-berjalan-di-pasir-timbul.jpg", "50% 55%"), ("bahuluang/14-snorkeling-makam-karang.jpg", "50% 50%")])
 tour('Tur Eksotis <i>Polassi &amp; Tambolongan</i>', "Trekking Bukit Nane, hopping pulau &amp; snorkeling.",
      [("Trekking", "Bukit Nane ±15 menit"), ("Snorkeling", "Tambolongan"), ("Ikonik", "Pasir Timbul Tambolongan")],
      [("07.00–08.00", "Sarapan di SunaRi &amp; persiapan."), ("08.00–09.00", "Mobil privat ke Desa Turungan."), ("09.00–10.30", "Menyeberang ke Pulau Polassi."),
