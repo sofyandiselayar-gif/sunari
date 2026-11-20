@@ -81,4 +81,45 @@ s2 = story("menu-story-2-minuman", "Menu · Minuman",
            [f'<div style="display:flex;gap:56px"><div style="flex:1">{section("Drinks", MENU["Drinks"])}</div><div style="flex:1">{section("Juice", MENU["Juice"])}{section("Soft Drink", MENU["Soft Drink"])}</div></div>'])
 (H / "menu.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}@page{{size:210mm 297mm;margin:0}}</style></head><body>{a4}{s1}{s2}</body></html>')
 (H / "menu-print.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}body{{padding:0;background:none}}@page{{size:210mm 297mm;margin:0}}</style></head><body>{a4}</body></html>')
+
+# ---- Elegant embossed (letterpress) edition
+EMB = """
+.emb{background:#F3E8D8 !important}
+.emb .paper{position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at 50% 30%,rgba(255,255,255,.55),rgba(255,255,255,0) 60%),radial-gradient(ellipse at 50% 120%,rgba(90,62,49,.10),rgba(90,62,49,0) 60%)}
+.emb .grain{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.55}
+.emb>*:not(.paper):not(.grain){z-index:1}
+.emb .pf,.emb h3,.emb .row .n{color:#5A3E31;text-shadow:0 1px 0 rgba(255,255,255,.95),0 -1px 0 rgba(90,62,49,.16),1px 2px 2.5px rgba(90,62,49,.22)}
+.emb .caps{color:#9A7058;text-shadow:0 1px 0 rgba(255,255,255,.9),0.5px 1px 1.2px rgba(90,62,49,.2)}
+.emb .gold,.emb .row .p,.emb .it{background:linear-gradient(180deg,#F1D08E 0%,#C99643 45%,#8E6224 70%,#E5BD70 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.85)) drop-shadow(.6px 1.2px 1px rgba(90,62,49,.35));text-shadow:none}
+.emb .sec h3::after{background:none;height:2px;border-top:1px solid rgba(154,112,88,.45);border-bottom:1px solid rgba(255,255,255,.9);opacity:1}
+.emb .row .dots{border-bottom:none;height:2px;background-image:radial-gradient(circle,rgba(154,112,88,.55) 1px,transparent 1.3px);background-size:6px 2px;
+  box-shadow:0 1px 0 rgba(255,255,255,.6)}
+.emb .logo-emb{filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.95)) drop-shadow(1px 2px 2px rgba(60,40,30,.32))}
+.emb .box{border:none !important;box-shadow:inset 1px 1px 2px rgba(90,62,49,.22),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8);border-radius:4px;background:rgba(255,255,255,.18)}
+.emb .frame{border:none !important;box-shadow:inset 1px 1px 0 rgba(90,62,49,.22),inset -1px -1px 0 rgba(255,255,255,.95),1px 1px 0 rgba(255,255,255,.9),-1px -1px 0 rgba(90,62,49,.12)}
+.emb .frame2{position:absolute;pointer-events:none;box-shadow:inset 1px 1px 0 rgba(90,62,49,.18),inset -1px -1px 0 rgba(255,255,255,.9)}
+.emb svg.sunacc{filter:drop-shadow(0 1px 0 rgba(255,255,255,.9)) drop-shadow(1px 1.5px 1.5px rgba(90,62,49,.3))}
+"""
+GRAIN = '<svg class="grain" width="100%" height="100%"><filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .09 0"/></filter><rect width="100%" height="100%" filter="url(#gr)"/></svg>'
+def emboss(html, old_id, new_id, frame_inset):
+    h = html.replace(f'class="pg" id="{old_id}"', f'class="pg emb" id="{new_id}"', 1)
+    i = h.index('>', h.index(f'id="{new_id}"')) + 1
+    frames = f'<div class="frame2" style="inset:{frame_inset+10}px"></div>' if frame_inset else ''
+    h = h[:i] + '<div class="paper"></div>' + GRAIN + frames + h[i:]
+    h = h.replace('src="../assets/logo-sunari-color.png" style="display:block', 'class="logo-emb" src="../assets/logo-sunari-color.png" style="display:block')
+    h = h.replace('<svg viewBox="0 0 200 200" width=', '<svg class="sunacc" viewBox="0 0 200 200" width=')
+    h = h.replace('border:1px solid rgba(166,124,100,.45);pointer-events:none"', 'border:1px solid rgba(166,124,100,.45);pointer-events:none" class="frame"')
+    h = h.replace('<div style="flex:1;border:1px solid rgba(166,124,100,.55);', '<div class="box" style="flex:1;border:1px solid rgba(166,124,100,.55);')
+    return h
+e_a4 = emboss(a4, "menu-a4", "menu-elegan-a4", 22)
+e_s1 = emboss(s1, "menu-story-1-makanan", "menu-elegan-story-1-makanan", 0)
+e_s2 = emboss(s2, "menu-story-2-minuman", "menu-elegan-story-2-minuman", 0)
+for st in (e_s1, e_s2):
+    pass
+e_s1 = e_s1.replace('<div class="paper"></div>', '<div class="paper"></div><div class="frame" style="position:absolute;inset:40px;pointer-events:none"></div><div class="frame2" style="inset:52px"></div>', 1)
+e_s2 = e_s2.replace('<div class="paper"></div>', '<div class="paper"></div><div class="frame" style="position:absolute;inset:40px;pointer-events:none"></div><div class="frame2" style="inset:52px"></div>', 1)
+(H / "menu-elegan.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}{EMB}</style></head><body>{e_a4}{e_s1}{e_s2}</body></html>')
+(H / "menu-elegan-print.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}{EMB}body{{padding:0;background:none}}@page{{size:210mm 297mm;margin:0}}</style></head><body>{e_a4}</body></html>')
 print("ok")

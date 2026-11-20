@@ -6,7 +6,11 @@
 | Menginap | 07.00 | 21.00 WITA |
 | Tidak menginap | 07.00 | 19.00 WITA |
 
-File desain: `Menu_Bajoy_A4.pdf` / `.png` (cetak A4), `menu-story-1-makanan.png`, `menu-story-2-minuman.png` (Instagram story).
+File desain:
+- **Edisi elegan (timbul + foil emas):** `Menu_Bajoy_Elegan_A4.pdf` / `.png`, `menu-elegan-story-1-makanan.png`, `menu-elegan-story-2-minuman.png`
+- Edisi polos: `Menu_Bajoy_A4.pdf` / `.png`, `menu-story-1-makanan.png`, `menu-story-2-minuman.png`
+
+**Cetak edisi elegan sungguhan:** minta percetakan memakai kertas tekstur (cotton/fancy paper 300+ gsm) dengan **emboss/letterpress** untuk logo, judul dan nama menu, serta **hot print/foil emas** untuk harga dan kata *Resto*. File PNG/PDF menampilkan simulasi efeknya; untuk produksi, percetakan butuh file terpisah per efek (bisa saya siapkan).
 Ubah menu/harga di `build_menu.py` (bagian `MENU`), lalu jalankan `python3 resto/build_menu.py && node resto/render.js`.
 
 ## Makanan
