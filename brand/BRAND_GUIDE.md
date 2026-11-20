@@ -63,7 +63,9 @@ File di folder `assets/`:
 
 | File | Warna | Pemakaian |
 |---|---|---|
-| `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | **Logo utama.** Latar terang: Shell Cream, putih, langit senja bagian atas yang terang |
+| `logo-sunari-color.png` | **Berwarna:** SunaRi Coral `#FF8A5C`, teks Driftwood Deep `#5A3E31`, daun Driftwood `#A67C64` | **Logo utama (sejak revisi terbaru).** Latar terang |
+| `logo-sunari-color-dark.png` | SunaRi Coral, teks Shell Cream, daun Sandy Shore | Logo utama untuk latar gelap / foto |
+| `logo-sunari-driftwood.png` | **Driftwood** `#A67C64` | Versi 1 warna (cetak/sablon/grafir 1 warna). Latar terang: Shell Cream, putih, langit senja bagian atas yang terang |
 | `logo-sunari-cream.png` | Shell Cream `#FBF4EC` | Cadangan untuk foto yang sangat gelap |
 | `mark-sunari-driftwood.svg` / `mark-sunari-cream.svg` | Driftwood / Shell Cream | **Simbol brand** (matahari di atas horizon dalam lingkaran): avatar Instagram, ikon, kartu kunci, signage, watermark kecil |
 | `logo-v2/logo-sunari-tagline-*.png` | Driftwood / Shell Cream | Logo asli + garis + tagline "TEMPAT SENJA PULANG" (sampul, poster, kartu) |
@@ -73,7 +75,8 @@ File di folder `assets/`:
 | `original/logo-sunari-original.jpg` | Warna lama | **Arsip saja**, tidak dipakai lagi |
 
 **Aturan**
-- Hanya pakai satu warna per logo: Driftwood **atau** Shell Cream. Jangan mewarnai bagian logo dengan warna berbeda.
+- Pakai **logo berwarna** sebagai pilihan pertama; versi 1 warna hanya untuk teknik cetak 1 warna (sablon 1 warna, grafir, emboss).
+- **Tulisan "SunaRi" harus selalu menjadi elemen paling menonjol** di setiap desain. Jangan mengganti warna Coral pada "SunaRi" dengan warna lain, kecuali versi 1 warna.
 - Ruang aman: kosongkan area minimal setinggi huruf "S" di sekeliling logo.
 - Ukuran minimum: lebar 200px di digital. Di bawah itu teks "Beach Resort Selayar" sulit dibaca.
 - Di atas foto atau latar Sandy Shore, letakkan logo Driftwood di atas **kotak Shell Cream** semi-transparan (sudut membulat).

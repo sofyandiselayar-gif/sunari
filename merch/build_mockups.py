@@ -90,9 +90,9 @@ def add(id_, name, cat, bg, html, spec):
 
 # Kaos
 add("K01-kaos-krem-depan", "Kaos Krem · Depan", "Kaos", "#EFE6DA",
-    svg(shirt("k1", "#F4ECE1"), "k1") + img(AS+"logo-sunari-driftwood.png", 880, 450, 250) + overlay(SH_FOLDS, "k1"),
-    dict(artwork="Logo asli (Driftwood)", warna="Krem / off-white", bahan="Katun combed 24s, 180–190 gsm", ukuran="S–XXL",
-         cetak="Sablon plastisol 1 warna / DTF", posisi="Dada kiri, lebar 9 cm, 8 cm di bawah kerah", tinta="Driftwood #A67C64"))
+    svg(shirt("k1", "#F4ECE1"), "k1") + img(AS+"logo-sunari-color.png", 870, 440, 270) + overlay(SH_FOLDS, "k1"),
+    dict(artwork="Logo asli berwarna", warna="Krem / off-white", bahan="Katun combed 24s, 180–190 gsm", ukuran="S–XXL",
+         cetak="Sablon plastisol 3 warna / DTF", posisi="Dada kiri, lebar 10 cm, 8 cm di bawah kerah", tinta="Coral #FF8A5C, Driftwood Deep #5A3E31, Driftwood #A67C64"))
 add("K02-kaos-krem-belakang", "Kaos Krem · Belakang", "Kaos", "#EFE6DA",
     svg(shirt("k2", "#F4ECE1", back=True), "k2") + img(A+"A1-back-print-light.png", 545, 380, 510) + overlay(SH_FOLDS, "k2"),
     dict(artwork="A1 Back print (light)", warna="Krem / off-white", bahan="Katun combed 24s, 180–190 gsm", ukuran="S–XXL",
@@ -124,9 +124,9 @@ add("T01-topi-baseball", "Topi Baseball", "Aksesoris", "#EFE6DA",
         '<path d="M290 980 C430 930 930 930 1060 985 C1140 1060 1080 1160 820 1170 C540 1170 330 1120 290 980 Z" fill="#8C6650"/>'
         '<path d="M290 980 C430 930 930 930 1060 985" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="6"/>'
         '<path d="M320 1010 C470 965 920 965 1040 1015" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3" stroke-dasharray="10 8"/>', "c1")
-    + img(AS+"mark-sunari-cream.svg", 548, 700, 190, "normal", "transform:skewY(-2deg)"),
-    dict(artwork="A6 Simbol (krem)", warna="Driftwood", bahan="Katun twill, 6 panel, strap besi", ukuran="All size (adjustable)",
-         cetak="Bordir 3D / flat 1 warna", posisi="Panel depan tengah, Ø 6 cm", tinta="Benang krem"))
+    + img(AS+"logo-sunari-color-dark.png", 470, 690, 330, "normal", "transform:skewY(-2deg)"),
+    dict(artwork="Logo asli berwarna (versi gelap)", warna="Driftwood", bahan="Katun twill, 6 panel, strap besi", ukuran="All size (adjustable)",
+         cetak="Bordir flat 3 warna", posisi="Panel depan tengah, lebar 10 cm", tinta="Benang coral, krem, pasir"))
 add("T02-bucket-hat", "Bucket Hat", "Aksesoris", "#F1E8DC",
     svg(floor(800, 1220, 520, 40) +
         shaded("c2", "M560 620 C560 500 640 470 800 470 C960 470 1040 500 1040 620 L1080 900 L520 900 Z", "#F4ECE1", grad="cy", folds='') +
@@ -134,8 +134,8 @@ add("T02-bucket-hat", "Bucket Hat", "Aksesoris", "#F1E8DC",
         '<path d="M560 620 C640 600 960 600 1040 620" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="5"/>'
         '<path d="M520 900 C640 880 960 880 1080 900" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="8"/>'
         '<path d="M290 1000 C500 1070 1100 1070 1310 1000" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="3" stroke-dasharray="10 8"/>', "c2")
-    + img(AS+"mark-sunari-driftwood.svg", 735, 650, 130, "multiply"),
-    dict(artwork="A6 Simbol (Driftwood)", warna="Krem", bahan="Kanvas katun", ukuran="56–58 cm", cetak="Bordir 1 warna", posisi="Depan tengah, Ø 5 cm", tinta="Benang Driftwood"))
+    + img(AS+"logo-sunari-color.png", 640, 640, 320, "multiply"),
+    dict(artwork="Logo asli berwarna", warna="Krem", bahan="Kanvas katun", ukuran="56–58 cm", cetak="Bordir flat 3 warna", posisi="Depan tengah, lebar 9 cm", tinta="Benang coral, cokelat tua, Driftwood"))
 
 # Tas
 add("B01-tote-bag", "Tote Bag Kanvas", "Tas", "#EFE6DA",
@@ -222,7 +222,7 @@ add("A03-pin-enamel", "Pin Enamel + Kartu", "Aksesoris", "#EFE6DA",
         '<circle cx="800" cy="720" r="230" fill="url(#mtpn)"/><circle cx="800" cy="720" r="196" fill="#FBF4EC"/>', "pn")
     + img(A+"A6-mark-pin.png", 620, 540, 360, "normal")
     + '<div style="position:absolute;left:640px;top:600px;width:150px;height:240px;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(255,255,255,0));transform:rotate(-35deg)"></div>'
-    + '<div style="position:absolute;left:500px;top:1020px;width:600px;text-align:center"><div style="font-family:Playfair Display,serif;font-size:62px;color:#4A3022">SunaRi</div>'
+    + '<div style="position:absolute;left:500px;top:1020px;width:600px;text-align:center"><img src="../assets/logo-sunari-color.png" style="width:380px;mix-blend-mode:multiply">'
       '<div style="font-family:Montserrat;font-weight:600;font-size:18px;letter-spacing:.4em;color:#5A3E31;margin-top:14px">PANTAI SUNARI · SELAYAR</div></div>',
     dict(artwork="A6 Simbol", warna="Emas, enamel krem & Driftwood", bahan="Soft enamel, kuningan, peniti kupu-kupu", ukuran="Ø 3 cm; kartu 6 × 10 cm", cetak="Soft enamel + kartu kraft cetak 1 warna", posisi="Tengah kartu", tinta="—"))
 add("A04-magnet-kulkas", "Magnet Kulkas", "Aksesoris", "#F1E8DC",
@@ -235,9 +235,9 @@ add("A05-tatakan-gelas", "Tatakan Gelas (set 2)", "Aksesoris", "#EFE6DA",
     svg(floor(620, 1150, 330, 26) + floor(1030, 1060, 330, 26) +
         '<circle cx="620" cy="830" r="320" fill="url(#wda5)"/>' + "".join(f'<circle cx="620" cy="830" r="{r}" fill="none" stroke="#8E6440" stroke-opacity=".18" stroke-width="3"/>' for r in range(40, 320, 34)) +
         '<circle cx="1030" cy="740" r="320" fill="#FBF4EC"/><circle cx="1030" cy="740" r="320" fill="url(#sya5)"/>', "a5")
-    + img(AS+"mark-sunari-driftwood.svg", 450, 660, 340, "multiply", "filter:brightness(.5) contrast(1.4);opacity:.8")
+    + img(AS+"logo-sunari-driftwood.png", 360, 700, 520, "multiply", "filter:brightness(.5) contrast(1.4);opacity:.8")
     + img(A+"A8-vintage-badge-light.png", 760, 470, 540, "multiply"),
-    dict(artwork="A6 Simbol (grafir) & A8 Badge (cetak)", warna="Kayu natural & krem", bahan="Kayu pinus 5 mm / MDF berlapis", ukuran="Ø 10 cm", cetak="Laser grafir / print UV", posisi="Tengah", tinta="Full color / grafir"))
+    dict(artwork="Logo asli (grafir) & A8 Badge (cetak)", warna="Kayu natural & krem", bahan="Kayu pinus 5 mm / MDF berlapis", ukuran="Ø 10 cm", cetak="Laser grafir / print UV", posisi="Tengah", tinta="Full color / grafir"))
 
 # Kertas
 add("S01-buku-catatan", "Buku Catatan A5", "Alat tulis", "#EFE6DA",
@@ -246,8 +246,8 @@ add("S01-buku-catatan", "Buku Catatan A5", "Alat tulis", "#EFE6DA",
         shaded("n1", "M440 210 H1140 Q1158 210 1158 228 V1192 Q1158 1210 1140 1210 H440 Z", "#C8A27A", grad="sy") +
         '<rect x="440" y="210" width="40" height="1000" fill="#000" opacity=".12"/>'
         '<rect x="1060" y="210" width="30" height="1000" fill="#5A3E31"/>', "n1")
-    + img(A+"A2-typography-light.png", 560, 440, 500, "multiply", "filter:brightness(.7)"),
-    dict(artwork="A2 Typography (light)", warna="Sampul kraft", bahan="Kraft 300 gsm, isi 80 lbr HVS 80 gsm bergaris", ukuran="A5 (14,8 × 21 cm)", cetak="Hot print / sablon 1 warna", posisi="Sampul depan tengah", tinta="Driftwood Deep"))
+    + img(A+"A2-typography-light.png", 540, 440, 540, "multiply"),
+    dict(artwork="A2 Typography (light)", warna="Sampul kraft", bahan="Kraft 300 gsm, isi 80 lbr HVS 80 gsm bergaris", ukuran="A5 (14,8 × 21 cm)", cetak="Sablon / print UV 3 warna", posisi="Sampul depan tengah, lebar 11 cm", tinta="Coral, Driftwood Deep, Driftwood"))
 add("S02-kartu-pos", "Set Kartu Pos (3)", "Alat tulis", "#F1E8DC",
     svg(floor(800, 1250, 600, 34), "s2")
     + '<div style="position:absolute;left:180px;top:420px;width:820px;height:550px;box-shadow:0 20px 40px rgba(90,62,49,.22);transform:rotate(-9deg);background:#FBF4EC;padding:0">'
@@ -257,7 +257,7 @@ add("S02-kartu-pos", "Set Kartu Pos (3)", "Alat tulis", "#F1E8DC",
     + '<div style="position:absolute;left:330px;top:720px;width:820px;height:550px;box-shadow:0 26px 50px rgba(90,62,49,.28);transform:rotate(-2deg);overflow:hidden">'
       f'<img src="../assets/photos/senja/17-kayak-berdua.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%">'
       '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,20,.45),rgba(40,26,20,0) 45%)"></div>'
-      f'<img src="{AS}logo-sunari-cream.png" style="position:absolute;left:36px;top:30px;width:300px"></div>',
+      f'<img src="{AS}logo-sunari-color-dark.png" style="position:absolute;left:36px;top:30px;width:330px"></div>',
     dict(artwork="A10, A9, foto senja + logo", warna="Full color", bahan="Art carton 310 gsm, laminasi doff", ukuran="15 × 10 cm (A6)", cetak="Cetak digital/offset 2 sisi", posisi="Depan full; belakang kolom alamat + logo", tinta="Full color"))
 add("S03-stiker", "Lembar Stiker Die-cut", "Alat tulis", "#EFE6DA",
     svg(floor(800, 1440, 470, 30) + '<rect x="330" y="200" width="940" height="1220" rx="10" fill="#FFFFFF"/>', "s3")
@@ -272,9 +272,9 @@ add("P01-paper-bag", "Paper Bag Oleh-oleh", "Kemasan", "#EFE6DA",
         '<path d="M640 470 C640 260 960 260 960 470" fill="none" stroke="#5A3E31" stroke-width="14"/>' +
         shaded("q1", "M400 460 H1200 L1230 1420 H370 Z", "#C8A27A", grad="sx") +
         '<path d="M400 460 L470 520 H1130 L1200 460" fill="#000" fill-opacity=".10"/><circle cx="640" cy="500" r="10" fill="#3E2A20"/><circle cx="960" cy="500" r="10" fill="#3E2A20"/>', "q1")
-    + img(AS+"logo-sunari-driftwood.png", 500, 760, 600, "multiply", "filter:brightness(.55)")
+    + img(AS+"logo-sunari-color.png", 470, 740, 660, "multiply")
     + '<div style="position:absolute;left:400px;top:1150px;width:800px;text-align:center;font-family:Montserrat;font-weight:600;font-size:22px;letter-spacing:.42em;color:#4A3022;opacity:.85">TEMPAT SENJA PULANG</div>',
-    dict(artwork="Logo asli + tagline", warna="Kraft cokelat", bahan="Kraft 150 gsm, tali katun", ukuran="25 × 33 × 10 cm", cetak="Sablon / offset 1 warna", posisi="Depan tengah", tinta="Driftwood Deep #5A3E31"))
+    dict(artwork="Logo asli berwarna + tagline", warna="Kraft cokelat / krem", bahan="Kraft 150 gsm, tali katun", ukuran="25 × 33 × 10 cm", cetak="Sablon / offset 3 warna", posisi="Depan tengah, lebar 20 cm", tinta="Coral, Driftwood Deep, Driftwood"))
 add("P02-hang-tag", "Hang Tag & Label", "Kemasan", "#F1E8DC",
     svg(floor(800, 1300, 520, 30) +
         '<path d="M700 140 C640 300 560 330 580 420" fill="none" stroke="#5A3E31" stroke-width="4"/>'
@@ -310,7 +310,7 @@ pages = []
 pages.append(f'''<div class="pg" style="background:#5A3E31">
   <img src="{A}A9-sunset-landscape-notext.png" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.95">
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,26,20,.55),rgba(40,26,20,0) 55%)"></div>
-  <img src="{AS}logo-sunari-cream.png" style="position:absolute;left:60px;top:56px;width:300px">
+  <img src="{AS}logo-sunari-color-dark.png" style="position:absolute;left:60px;top:56px;width:330px">
   <div style="position:absolute;right:64px;top:70px;color:#FBF4EC;text-align:right;text-shadow:0 2px 18px rgba(40,26,20,.35)"><div class="pf" style="font-size:66px;line-height:1.05">Souvenir<br><span style="font-style:italic">Collection</span></div>
   <div style="font-weight:600;font-size:11px;letter-spacing:.38em;margin-top:22px">KATALOG PRODUK &amp; SPESIFIKASI CETAK</div></div>
   <div style="position:absolute;right:56px;bottom:30px;color:#FBF4EC;font-size:10px;letter-spacing:.3em">SUNARI BEACH RESORT · PANTAI SUNARI · SELAYAR</div></div>''')
@@ -318,12 +318,12 @@ pages.append(f'''<div class="pg"><div style="position:absolute;left:56px;top:50p
   <div class="caps">01 · Fondasi</div><div class="pf" style="font-size:44px;margin-top:10px">Warna, huruf &amp; <span class="it">logo</span></div>
   <div style="display:flex;gap:16px;margin-top:34px">{"".join(f'<div style="flex:1"><div style="height:120px;background:{h};border:1px solid rgba(0,0,0,.06)"></div><div style="font-size:10px;font-weight:600;letter-spacing:.18em;margin-top:10px">{n.upper()}</div><div style="font-size:10px;margin-top:3px;opacity:.7">{h}</div></div>' for n, h in [("Golden Hour",GOLD),("Coral Glow",CORAL),("Driftwood",DRIFT),("Driftwood Deep",DEEP),("Sandy Shore",SAND),("Shell Cream",CREAM)])}</div>
   <div style="display:flex;gap:40px;margin-top:40px;align-items:center">
-    <div style="flex:1.3;background:#fff;height:250px;display:flex;align-items:center;justify-content:center"><img src="{AS}logo-sunari-driftwood.png" style="width:78%"></div>
-    <div style="flex:1;background:{DEEP};height:250px;display:flex;align-items:center;justify-content:center"><img src="{AS}logo-sunari-cream.png" style="width:78%"></div>
+    <div style="flex:1.3;background:#fff;height:250px;display:flex;align-items:center;justify-content:center"><img src="{AS}logo-sunari-color.png" style="width:82%"></div>
+    <div style="flex:1;background:{DEEP};height:250px;display:flex;align-items:center;justify-content:center"><img src="{AS}logo-sunari-color-dark.png" style="width:82%"></div>
     <div style="flex:1;font-size:11.5px;line-height:1.7">
       <div class="pf" style="font-size:30px">Playfair Display</div><div style="opacity:.7">Judul &amp; nama produk</div>
       <div style="font-weight:600;font-size:18px;margin-top:14px;letter-spacing:.2em">MONTSERRAT</div><div style="opacity:.7">Label, keterangan, teks kecil</div>
-      <div style="margin-top:14px">Logo asli untuk ukuran sedang ke atas. Simbol matahari untuk bordir &amp; produk kecil (&lt; 4 cm).</div></div></div></div>{foot(2)}</div>''')
+      <div style="margin-top:14px"><b>Logo asli berwarna adalah elemen utama</b> di setiap produk: SunaRi Coral, teks Driftwood Deep, daun Driftwood. Untuk benda gelap: teks krem, daun pasir. Simbol matahari hanya untuk produk sangat kecil (&lt; 4 cm).</div></div></div></div>{foot(2)}</div>''')
 arts = [("A1","A1-back-print-light","Back print"),("A2","A2-typography-light","Tipografi"),("A3","A3-sticker-round","Stiker bulat"),("A4","A4-kayak-light","Kayak"),
         ("A5","A5-pattern-tile","Pola"),("A6","A6-mark-pin","Simbol"),("A7","A7-sun-stripes","Matahari"),("A8","A8-vintage-badge-light","Vintage badge"),
         ("A9","A9-sunset-landscape","Landscape"),("A10","A10-greetings-selayar","Greetings"),("A11","A11-chest-mini-light","Chest mini"),("A12","A12-hangtag-front","Hang tag")]

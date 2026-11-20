@@ -4,7 +4,7 @@ import pathlib
 H = pathlib.Path(__file__).parent
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">'
 GOLD, CORAL, DRIFT, DEEP, CREAM = "#FDB15D", "#FF8A5C", "#A67C64", "#5A3E31", "#FBF4EC"
-LOGO = {"d": "../assets/logo-sunari-driftwood.png", "c": "../assets/logo-sunari-cream.png"}
+LOGO = {"d": "../assets/logo-sunari-color.png", "c": "../assets/logo-sunari-color-dark.png"}  # full-color logo (palette)
 
 def sun(uid, size, ink=None):
     """Retro sunset: gradient disc with horizontal cut-outs in the lower half (transparent gaps)."""
@@ -35,10 +35,9 @@ def type_print(id_, k):
     ink = DEEP if k == "d" else CREAM
     acc = DRIFT if k == "d" else GOLD
     return f'''<div class="art" id="{id_}" style="width:1000px;height:900px;color:{ink};text-align:center;padding-top:40px">
-  <div style="display:flex;justify-content:center">{sun(id_, 230)}</div>
-  <div class="pf" style="font-size:250px;line-height:1;margin-top:20px">SunaRi</div>
-  <div class="pf" style="font-size:84px;font-style:italic;color:{acc};margin-top:4px">Beach Resort</div>
-  <div style="width:110px;height:3px;background:{acc};margin:38px auto 0"></div>
+  <div style="display:flex;justify-content:center">{sun(id_, 200)}</div>
+  <img src="{LOGO[k]}" style="width:960px;display:block;margin:10px auto 0">
+  <div style="width:110px;height:3px;background:{acc};margin:30px auto 0"></div>
   <div class="caps" style="font-size:28px;letter-spacing:.42em;margin-top:34px;padding-left:.42em">Selayar · Sulawesi Selatan</div>
 </div>'''
 
@@ -52,13 +51,13 @@ def sticker(id_):
     <text font-family="Montserrat" font-weight="600" font-size="40" letter-spacing="16" fill="{DRIFT}" dy="34"><textPath href="#bp{id_}" startOffset="50%" text-anchor="middle">PANTAI SUNARI · SELAYAR</textPath></text>
     <circle cx="160" cy="500" r="9" fill="{CORAL}"/><circle cx="840" cy="500" r="9" fill="{CORAL}"/>
   </svg>
-  <div style="position:absolute;left:250px;top:200px">{sun(id_+'s', 500)}</div>
-  <div class="pf" style="position:absolute;left:0;right:0;top:640px;text-align:center;font-size:96px;color:{DEEP}">SunaRi</div>
+  <div style="position:absolute;left:320px;top:150px">{sun(id_+'s', 360)}</div>
+  <img src="{LOGO["d"]}" style="position:absolute;left:160px;top:400px;width:680px">
 </div>'''
 
 def kayak(id_, k):
     ink = DEEP if k == "d" else CREAM
-    return f'''<div class="art" id="{id_}" style="width:1000px;height:900px;color:{ink};text-align:center">
+    return f'''<div class="art" id="{id_}" style="width:1000px;height:1080px;color:{ink};text-align:center">
   <div style="position:relative;width:640px;height:420px;margin:40px auto 0">
     <div style="position:absolute;left:120px;top:0">{sun(id_, 400)}</div>
     <svg viewBox="0 0 200 120" width="640" height="384" style="position:absolute;left:0;top:150px" fill="none" stroke="{ink}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
@@ -67,14 +66,17 @@ def kayak(id_, k):
       <path d="M20 100 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/></svg>
   </div>
   <div class="pf" style="font-size:96px;font-style:italic;margin-top:60px">Paddle into the sunset</div>
-  <div class="caps" style="font-size:28px;letter-spacing:.42em;margin-top:30px;padding-left:.42em">Pantai Sunari · Selayar</div>
+  <img src="{LOGO[k]}" style="width:560px;display:block;margin:26px auto 0">
 </div>'''
 
 def pattern(id_):
     cells = ""
-    for r in range(5):
-        for c in range(-1, 6):
-            x, y = c * 200 + (100 if r % 2 else 0), r * 200
+    for r in range(4):
+        for c in range(-1, 5):
+            x, y = c * 250 + (125 if r % 2 else 0), r * 250 + 30
+            if (r + c) % 2:
+                cells += f'<text x="{x}" y="{y + 118}" text-anchor="middle" font-family="Playfair Display" font-style="italic" font-size="48" fill="{CORAL}">SunaRi</text>'
+                continue
             cells += f'<g transform="translate({x - 70},{y + 30}) scale(.7)"><path d="M58 112 A42 42 0 0 1 142 112 Z" fill="{CORAL}"/><line x1="36" y1="112" x2="164" y2="112" stroke="{DRIFT}" stroke-width="6" stroke-linecap="round"/><path d="M56 134 q11 -8 22 0 t22 0 t22 0 t22 0" fill="none" stroke="{DRIFT}" stroke-width="6" stroke-linecap="round"/></g>'
     return f'''<div class="art" id="{id_}" style="width:1000px;height:1000px;background:{CREAM}"><svg viewBox="0 0 1000 1000" width="1000" height="1000">{cells}</svg></div>'''
 
@@ -119,15 +121,15 @@ def vintage_badge(id_, k):
       {"".join(f'<rect x="200" y="{720+i*30}" width="600" height="7" rx="3" fill="{ink}" opacity="{0.85-i*0.15}"/>' for i in range(4))}
       {palm(300, 760, 0.95, ink, lean=55)}{palm(700, 760, 0.8, ink, flip=True, lean=45)}
     </g>
-    <text font-family="Montserrat" font-weight="600" font-size="50" letter-spacing="10" fill="{ink}"><textPath href="#t{id_}" startOffset="50%" text-anchor="middle">SUNARI BEACH RESORT</textPath></text>
-    <text font-family="Montserrat" font-weight="600" font-size="40" letter-spacing="12" fill="{ink}" dy="36"><textPath href="#b{id_}" startOffset="50%" text-anchor="middle">KEPULAUAN SELAYAR</textPath></text>
+    <text font-family="Playfair Display" font-size="118" letter-spacing="4" fill="{CORAL}" dy="22"><textPath href="#t{id_}" startOffset="50%" text-anchor="middle">SunaRi</textPath></text>
+    <text font-family="Montserrat" font-weight="600" font-size="36" letter-spacing="11" fill="{ink}" dy="34"><textPath href="#b{id_}" startOffset="50%" text-anchor="middle">BEACH RESORT · SELAYAR</textPath></text>
     <g fill="{CORAL}"><path d="M142 500 l12 -12 l12 12 l-12 12 Z"/><path d="M834 500 l12 -12 l12 12 l-12 12 Z"/></g>
   </svg></div>'''
 
 def landscape(id_, text=True):
     h = 1150 if text else 1000
     band = f'''<div style="position:absolute;left:0;right:0;top:1000px;height:150px;background:{CREAM};display:flex;align-items:center;justify-content:space-between;padding:0 60px">
-      <span class="pf" style="font-size:64px;color:{DEEP}">SunaRi</span><span class="caps" style="font-size:24px;letter-spacing:.38em;color:{DRIFT}">Pantai Sunari · Selayar</span></div>''' if text else ""
+      <img src="{LOGO["d"]}" style="height:128px"><span class="caps" style="font-size:24px;letter-spacing:.38em;color:{DRIFT}">Pantai Sunari · Selayar</span></div>''' if text else ""
     refl = "".join(f'<rect x="{700-w/2}" y="{690+i*34}" width="{w}" height="10" rx="5" fill="{GOLD}" opacity="{0.9-i*0.12}"/>' for i, w in enumerate([300,240,190,140,100,60]))
     return f'''<div class="art" id="{id_}" style="width:1400px;height:{h}px;position:relative">
   <svg viewBox="0 0 1400 1000" width="1400" height="1000">
@@ -145,25 +147,24 @@ def landscape(id_, text=True):
   </svg>{band}</div>'''
 
 def greetings(id_):
-    return f'''<div class="art" id="{id_}" style="width:1300px;height:600px;text-align:center">
+    return f'''<div class="art" id="{id_}" style="width:1300px;height:760px;text-align:center">
   <div class="pf" style="font-size:110px;font-style:italic;color:{DRIFT};line-height:1">Greetings from</div>
   <div style="font-family:Montserrat,sans-serif;font-weight:800;font-size:250px;line-height:1;letter-spacing:.02em;margin-top:10px;
     background:url(../assets/photos/senja/15-dua-kayak-oranye.jpg) 50% 70%/cover;-webkit-background-clip:text;background-clip:text;color:transparent">SELAYAR</div>
-  <div class="caps" style="font-size:32px;letter-spacing:.42em;color:{DEEP};margin-top:24px;padding-left:.42em">SunaRi Beach Resort · Pantai Sunari</div>
+  <img src="{LOGO["d"]}" style="width:640px;display:block;margin:20px auto 0">
 </div>'''
 
 def chest_mini(id_, k):
     ink = DRIFT if k == "d" else CREAM
-    return f'''<div class="art" id="{id_}" style="width:700px;height:300px;display:flex;align-items:center;gap:36px;color:{ink}">
-  {mark(ink, 220)}<div><div class="pf" style="font-size:118px;line-height:1">SunaRi</div>
-  <div class="caps" style="font-size:22px;letter-spacing:.4em;margin-top:14px">Selayar</div></div></div>'''
+    return f'''<div class="art" id="{id_}" style="width:700px;height:360px;display:flex;align-items:center;justify-content:center">
+  <img src="{LOGO[k]}" style="width:680px"></div>'''
 
 def hangtag(id_, side):
     if side == "front":
-        inner = f'<img src="{LOGO["c"]}" style="width:250px;margin-top:150px"><div class="caps" style="font-size:13px;letter-spacing:.35em;color:{CREAM};margin-top:30px">Tempat senja pulang</div><div style="position:absolute;left:0;right:0;bottom:40px;display:flex;justify-content:center">{mark(CREAM,64)}</div>'
-        bg = DRIFT
+        inner = f'<img src="{LOGO["c"]}" style="width:262px;margin-top:150px"><div class="caps" style="font-size:13px;letter-spacing:.35em;color:{CREAM};margin-top:30px">Tempat senja pulang</div><div style="position:absolute;left:0;right:0;bottom:40px;display:flex;justify-content:center">{mark(CREAM,64)}</div>'
+        bg = DEEP
     else:
-        inner = f'''<div style="margin-top:120px;color:{DEEP}">{mark(DRIFT,90)}<div class="pf" style="font-size:30px;font-style:italic;margin:24px 26px 0;line-height:1.3">Dibawa pulang dari senja di Pantai Sunari.</div>
+        inner = f'''<div style="margin-top:96px;color:{DEEP}"><img src="{LOGO["d"]}" style="width:230px"><div class="pf" style="font-size:30px;font-style:italic;margin:24px 26px 0;line-height:1.3">Dibawa pulang dari senja di Pantai Sunari.</div>
           <div style="width:50px;height:2px;background:{DRIFT};margin:26px auto"></div>
           <div class="caps" style="font-size:12px;letter-spacing:.25em;line-height:2">SunaRi Beach Resort<br>Kepulauan Selayar<br>@sunaribeachresortselayar</div></div>'''
         bg = CREAM
