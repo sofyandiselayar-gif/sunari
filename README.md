@@ -16,7 +16,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `location-carousel/` | Proyek HTML/CSS carousel 5 slide "Location & Rute Akses" (1080×1350) + export Playwright retina ke `output/` |
 | `social/STORY_BOOKING.md` | Story "Cara Reservasi": 6 story alur pemesanan 3 langkah + tautan WhatsApp siap pakai untuk stiker (`social/story-booking/`) |
 | `social/STORY_QNA.md` | Story Q&A "Tanya SunaRi": 16 pertanyaan tamu sebelum menginap + sampul, penutup & template stiker (`social/story-qna/`) |
-| `ebook/` | E-book A4 "Panduan Lengkap SunaRi" (22 halaman): kamar, fasilitas, resto & menu, aktivitas, tur pulau, rute, antar-jemput, reservasi & FAQ. PDF `SunaRi_Ebook_Panduan_Lengkap.pdf` + PNG per halaman |
+| `ebook/` | E-book A4 "Panduan Lengkap SunaRi" (22 halaman): kamar, fasilitas, resto & menu, aktivitas, tur pulau, rute, antar-jemput, reservasi & FAQ. PDF `SunaRi_Ebook_Panduan_Lengkap.pdf` + PNG per halaman. Versi English: `SunaRi_Ebook_Guest_Guide_EN.pdf` (`build_ebook_en.py`, `node ebook/render.js en`) |
 | `services/` | Dokumen tarif Transfer & Shuttle + paket tur (Gusung, Bahuluang, Polassi & Tambolongan, Open Trip) — PDF A4 & PNG gaya SunaRi, versi English dan Bahasa Indonesia |
 | `merch/PANDUAN_MERCHANDISE.md` | Desain souvenir: artwork siap cetak (`merch/artwork/`) & mockup produk (`merch/mockup/`) |
 | `social/FEED_12_CAROUSEL.md` | 12 carousel sesuai preview profil (`social/feed-12-carousel/`) |
