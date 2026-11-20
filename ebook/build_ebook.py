@@ -249,7 +249,7 @@ def tour(title, sub, hl, rows, prices, incl, excl, car=False, photos=None):
   <div><h2 style="font-size:18px;margin-top:10px">Harga <i>per orang</i></h2>
     {tbl(["Jumlah", "Tanpa pemandu", "Dgn pemandu"], [(gl(n), rp(x), rp(y)) for n, x, y in prices], hi_last=True)}</div>
   <div><h2 style="font-size:18px;margin-top:10px">Termasuk</h2>{ul(incl)}<h2 style="font-size:18px;margin-top:10px">Tidak termasuk</h2>{ul(excl, "no")}</div>
-</div>''' + (f'<div class="grid3" style="margin-top:14px">{"".join(img(a, 150, b) for a, b in photos)}</div>' if photos else ""))
+</div>''' + ((f'<div class="grid3" style="margin-top:14px">{"".join(img(a, 150, b) for a, b in photos)}</div>' if len(photos) > 1 else f'<div style="margin-top:14px">{img(photos[0][0], 190, photos[0][1])}</div>') if photos else ""))
 
 EX = ["Pengeluaran pribadi &amp; belanja", "Dokumentasi foto/video tambahan"]
 tour('Tur Eksotis <i>Pulau Gusung</i>', "Tur privat satu hari: hopping pulau &amp; snorkeling, langsung dengan kapal dari SunaRi.",
@@ -276,7 +276,8 @@ tour('Tur Eksotis <i>Polassi &amp; Tambolongan</i>', "Trekking Bukit Nane, hoppi
       ("14.00–15.00", "<b>Pasir Timbul Tambolongan</b> &amp; waktu bebas."), ("15.00–16.30", "Kembali ke SunaRi. Tur selesai.")],
      [(1,4147500,5047500),(2,2197500,2647500),(3,1547500,1847500),(4,1222500,1447500),(5,1207500,1387500),(6,1047500,1197500),(7,933214,1061786),(8,847500,960000)],
      ["Mobil privat (resort ⇄ Turungan)", "Sewa kapal privat", "Alat snorkeling + pelampung", "Lunchbox + air mineral", "Tiket Bukit Nane &amp; atraksi", "Sopir &amp; BBM", "Pemandu lokal (paket dgn pemandu)"],
-     EX + ["Aktivitas tambahan opsional", "Tip sopir/kapten/pemandu (sukarela)"], car=True)
+     EX + ["Aktivitas tambahan opsional", "Tip sopir/kapten/pemandu (sukarela)"], car=True,
+     photos=[("polassi-tambolongan/07-punggung-bukit-nane-dan-teluk.jpg", "50% 55%")])
 
 add(f'''{head("06", "Tur pulau", "Open Trip <i>Jelajah Pulau Selayar</i>", "Wisata bahari 2 hari bersama peserta lain: temukan surga tersembunyi Sulawesi Selatan.")}
 <div class="chips"><span class="chip">Harga <b>{rp(3000000)} /orang</b></span><span class="chip">Durasi <b>2 hari</b></span><span class="chip">Kuota min. <b>8 orang</b></span><span class="chip">Titik temu <b>penjemputan area/pelabuhan Selayar</b></span></div>

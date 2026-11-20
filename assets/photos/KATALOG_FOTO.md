@@ -72,6 +72,17 @@ Tambahan 20 Nov 2026:
 | `16-makan-siang-di-pantai` | Tamu makan siang di pantai berpasir putih | 👤 (wajah samping) | Story tur |
 | `17-rombongan-di-gua` | Rombongan berpelampung bersama pemandu di gua | 👤 | Konten "tur dengan pemandu" (dengan izin) |
 
+## Tur Polassi & Tambolongan: `polassi-tambolongan/` (7 foto, ditambahkan 20 Nov 2026)
+| File | Isi | Status | Cocok untuk |
+|---|---|---|---|
+| `01-swafoto-pasangan-bukit-nane` | Pasangan swafoto di Bukit Nane, teluk & pantai putih | 👤 | Testimoni (dengan izin) |
+| `02-tamu-duduk-di-bukit-nane` | Tamu duduk di rumput bukit menghadap teluk | 👤 (wajah samping) | Feed / story tur (dengan izin) |
+| `03-swafoto-pasangan-teluk` | Pasangan swafoto, teluk & pantai di belakang | 👤 | Testimoni (dengan izin) |
+| `04-udara-punggung-bukit-dan-pantai` | Foto udara punggung bukit & pantai toska, 9:16 | ⚠️ resolusi kecil (415 px) ❓ sumber | Hanya story; pastikan foto milik sendiri / izin pemilik |
+| `05-jalur-trekking-punggung-bukit` | Jalur trekking di punggung bukit hijau | ⚠️ resolusi kecil (459 px) ❓ sumber | Hanya story; pastikan sumbernya |
+| `06-puncak-bukit-nane` | Puncak bukit hijau di tengah laut | ⚠️ resolusi kecil (588 px) ❓ sumber | Hanya story; pastikan sumbernya |
+| `07-punggung-bukit-nane-dan-teluk` | Punggung bukit hijau, teluk & pantai, tanpa orang | ✅ | E-book, feed, OTA (aktivitas), sampul tur |
+
 ## Acara
 | File | Isi | Status | Catatan |
 |---|---|---|---|
