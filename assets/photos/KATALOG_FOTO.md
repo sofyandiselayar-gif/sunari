@@ -51,6 +51,9 @@ Tambahan 20 Nov 2026:
 | `aktivitas/02-kayak-snorkeling.jpg` | Kayak kuning + tamu snorkeling | 👤 ❓ | Apakah **sewa alat snorkeling** tersedia? |
 | `aktivitas/03-ayunan-senja.jpg` | Ayunan tinggi di pantai saat senja | ✅ | Sangat kuat untuk Reels. Ayunan raksasa milik resort, **gratis** |
 | `aktivitas/05-ayunan-raksasa-senja.jpg` | Siluet tamu di ayunan raksasa, matahari di cakrawala (foto baru) | ✅ | Highlight "Ayunan Raksasa", Reels (gratis) |
+| `aktivitas/06-ayunan-gaun-merah-senja.jpg` | Siluet tamu bergaun merah di ayunan raksasa, langit afterglow & pohon kelapa, 9:16 | ✅ (dari belakang) | Story, Reels, highlight "Ayunan Raksasa" |
+| `aktivitas/07-ayunan-gaun-merah-tengah.jpg` | Ayunan dari belakang, gaun berkibar, matahari di cakrawala, 9:16 | ✅ | Sampul highlight/Reels, panduan senja (spot ayunan) |
+| `aktivitas/08-ayunan-gaun-merah-kelapa.jpg` | Ayunan, gaun berkibar, pohon kelapa di kanan, 9:16 | ✅ | Story panduan senja, feed |
 | `aktivitas/04-perahu-wisata.jpg` | Perahu wisata "Selayar Traveling" | 👤 ❓ | Perahu milik operator lain; jangan diklaim sebagai layanan SunaRi tanpa konfirmasi kerja sama |
 
 ## Tur Pulau Gusung: `gusung/` (6 foto milik SunaRi, ditambahkan 20 Nov 2026)

@@ -123,7 +123,7 @@ def spot(n, img, pos, no, name, when, desc, tip):
     <div style="font-size:25px;line-height:1.5;margin-top:14px;color:#7A5039"><b>Tips:</b> {tip}</div></div>
   {foot(n)}</div>''')
 spot(8, "senja/29-dua-kursi-menghadap-senja.jpg", "50% 55%", "01", "Bibir <span class='it'>pantai</span>", "17.30–18.00", "Tepat di depan resort, matahari turun lurus di atas laut. Jalur cahaya di air paling cantik dari sini.", "letakkan garis cakrawala di sepertiga bawah layar.")
-spot(9, "aktivitas/05-ayunan-raksasa-senja.jpg", "40% 55%", "02", "Ayunan <span class='it'>raksasa</span>", "17.20–17.50", "Siluet berayun dengan matahari di cakrawala. Gratis untuk tamu.", "pakai mode burst saat ayunan di titik tertinggi.")
+spot(9, "aktivitas/07-ayunan-gaun-merah-tengah.jpg", "50% 52%", "02", "Ayunan <span class='it'>raksasa</span>", "17.20–17.50", "Siluet berayun dengan matahari di cakrawala. Gratis untuk tamu.", "pakai mode burst saat ayunan di titik tertinggi.")
 spot(10, "vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%", "03", "Teras <span class='it'>VIP Standard</span>", "17.00–17.50", "Teras rumah panggung menghadap langsung ke arah matahari terbenam. Senja dari 'rumah sendiri'.", "foto dari dalam teras, jadikan tiang &amp; atap sebagai bingkai.")
 spot(11, "senja/17-kayak-berdua.jpg", "50% 55%", "04", "Di atas <span class='it'>kayak</span>", "17.00–17.40", "Mendayung di air tenang menyongsong senja. Sewa kayak single Rp 50.000, double Rp 100.000.", "minta teman memotret dari bibir pantai agar kayak jadi siluet.")
 spot(12, "senja/23-pohon-meranggas-senja.jpg", "50% 55%", "05", "Pohon <span class='it'>tepi pantai</span>", "17.35–17.55", "Ranting pohon meranggas di tepi pantai membingkai matahari. Favorit untuk foto artistik.", "posisikan matahari di sela ranting, lalu ketuk langit untuk exposure.")
@@ -195,11 +195,11 @@ T.append(f'''<div class="t s" id="story-sunset-2"><div class="top" style="top:12
         ("15.00", "Tiba di resort", "Check-in mulai 14.00"), ("16.00", "Ke pantai", "Pilih spot &amp; sewa kayak"), ("16.50", "Golden hour", "Cahaya paling hangat"),
         ("17.50", "Matahari terbenam", "Tepat di depan pantai"), ("18.10", "Afterglow", "Tetap di tempat!")])}
     </div></div>{sfoot(False)}</div>''')
-T.append(f'''<div class="t s" id="story-sunset-3"><img class="bg" src="{P}aktivitas/05-ayunan-raksasa-senja.jpg" style="object-position:40% 50%" alt="">
+T.append(f'''<div class="t s" id="story-sunset-3"><img class="bg" src="{P}aktivitas/08-ayunan-gaun-merah-kelapa.jpg" style="object-position:50% 30%" alt="">
   <img src="{LOGO_D}" style="position:absolute;left:72px;top:130px;width:240px" alt="">
-  <div style="position:absolute;left:56px;right:56px;bottom:330px;background:rgba(251,244,236,.96);border-radius:40px;padding:44px 48px">
+  <div style="position:absolute;left:56px;right:56px;bottom:250px;background:rgba(251,244,236,.96);border-radius:40px;padding:30px 44px">
     <div class="caps" style="font-size:22px">4 spot foto senja</div>
-    {"".join(f'<div class="row" style="padding:16px 0"><div class="time" style="font-size:46px;width:300px">{t}</div><div class="tx"><b style="font-size:34px">{a}</b></div></div>' for t, a in [("17.30–18.00", "Bibir pantai"), ("17.20–17.50", "Ayunan raksasa"), ("17.00–17.50", "Teras VIP Standard"), ("17.00–17.40", "Di atas kayak")])}
+    {"".join(f'<div class="row" style="padding:10px 0"><div class="time" style="font-size:42px;width:290px">{t}</div><div class="tx"><b style="font-size:32px">{a}</b></div></div>' for t, a in [("17.30–18.00", "Bibir pantai"), ("17.20–17.50", "Ayunan raksasa"), ("17.00–17.50", "Teras VIP Standard"), ("17.00–17.40", "Di atas kayak")])}
   </div></div>''')
 T.append(f'''<div class="t s" id="story-sunset-4"><div class="top" style="top:120px"><img src="{LOGO}" alt=""><span class="caps">Tips foto</span></div>
   <div style="position:absolute;left:72px;right:72px;top:300px">
