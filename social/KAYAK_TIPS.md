@@ -4,11 +4,9 @@ Desain: `social/kayak-tips/kayak-01…20.png`. Untuk membuat ulang: `python3 soc
 Layout tiap slide: foto di bagian atas, panel krem berisi teks di bagian bawah.
 
 **Foto yang dipakai di 2 slide:**
-- **Panorama:** foto persegi beresolusi tinggi (2252 px) dibentangkan di 2 slide berurutan, jadi saat digeser gambarnya menyambung:
+- **Panorama menyambung:** foto persegi beresolusi tinggi dibentangkan di 2 slide berurutan:
   - `senja/09` di slide 2–3;
-  - `aktivitas/01` di slide 6–7;
-  - `senja/11` di slide 10–11.
-- **Potongan atas & bawah:** `senja/45` di slide 13 (bagian matahari) dan slide 14 (bagian dua kayak).
+  - `aktivitas/01` di slide 6–7.
 
 | Slide | Isi |
 |---|---|
@@ -33,4 +31,16 @@ Layout tiap slide: foto di bagian atas, panel krem berisi teks di bagian bawah.
 | 19 | Cuaca & etika |
 | 20 | Ajakan, harga & WhatsApp |
 
-ZIP belum dibuat, menunggu koreksi.
+**Caption**
+```
+Mendayung menyongsong senja di Pantai Sunari 🛶🌅
+Simpan 20 tips ini sebelum turun ke air: jam terbaik, cara mendayung, keamanan, sampai trik foto siluet.
+
+⏰ 17.00 turun ke air · 17.50 matahari terbenam · 18.10 sudah di pantai
+🛶 Kayak single Rp 50.000 · double Rp 100.000
+
+Tag @sunaribeachresortselayar & #SenjaHariIni di foto kayakmu.
+Reservasi: WhatsApp 0821-8903-3044
+
+#SunaRiSelayar #KayakSelayar #SenjaHariIni #PantaiSunari #SunsetKayak #Selayar #KepulauanSelayar
+```
