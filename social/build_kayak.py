@@ -101,7 +101,7 @@ slide(11, "senja/11-kayak-dan-pulau.jpg", "50% 77%", "Arah &amp; jarak", 'Tetap 
       ul(["Mendayung sejajar pantai, di area yang masih terlihat dari bibir pantai.", "Pulau Gusung di seberang terlihat dekat, tapi <b>bukan</b> tujuan kayak sore.", "Tanyakan batas area aman ke staf sebelum berangkat."]), pano=1, num=8)
 
 # 12 surut
-slide(12, "senja/46-dua-kayak-emas-b-1743.jpg", "50% 49%", "Pasang-surut", 'Perhatikan <i>air surut</i>',
+slide(12, "senja/52-pohon-kelapa-bungalow-1747.jpg", "50% 74%", "Pasang-surut", 'Perhatikan <i>air surut</i>',
       ul(["Saat surut, karang &amp; lamun muncul dekat permukaan.", "Jangan menyeret kayak atau berdiri di atas karang: melukai kaki &amp; merusak terumbu.", "Pilih jalur air yang lebih dalam, atau tunggu air pasang."]), num=9)
 
 # 13-14 dua potongan (senja/45)
