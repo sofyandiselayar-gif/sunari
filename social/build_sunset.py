@@ -94,8 +94,8 @@ T.append(f'''<div class="t f" id="sunset-04"><div class="top"><img src="{LOGO}" 
   {foot(4)}</div>''')
 
 # 5 best months
-photo_slide(5, "senja/24-pohon-tepi-pantai-senja.jpg", "50% 55%", "Bulan terbaik", "April <span style='color:#FDB15D'>–</span> Desember",
-  "Langit lebih sering cerah &amp; laut tenang. Januari–Maret adalah musim hujan: senja tetap bisa muncul, tapi lebih sering tertutup awan. Cek prakiraan cuaca sebelum berangkat.")
+# 5 kalender senja (menggantikan slide "bulan terbaik"; KAL/kcell didefinisikan di bawah)
+SLIDE5_AT = len(T); T.append(None)
 
 # 6 light phases
 text_slide(6, "Fase cahaya senja", 'Empat fase, <span class="it">empat warna</span>',
@@ -250,6 +250,7 @@ T.append(f'''<div class="t f" id="kalender-senja-feed"><div class="top"><img src
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px">{"".join(kcell(*x, big=60, pad="28px 10px") for x in KAL)}</div>
     {legend}</div>
   <div class="ft"><span>SunaRi · Selayar</span><span>Simpan &amp; bagikan</span></div></div>''')
+T[SLIDE5_AT] = T[-1].replace('id="kalender-senja-feed"', 'id="sunset-05"').replace('<span>Simpan &amp; bagikan</span>', '<span>05 / 20</span>')
 T.append(f'''<div class="t s" id="kalender-senja-story"><div class="top" style="top:120px"><img src="{LOGO}" alt=""><span class="caps">Kalender senja</span></div>
   <div style="position:absolute;left:64px;right:64px;top:260px;bottom:330px;display:flex;flex-direction:column;justify-content:center">
     <div class="pf" style="font-size:72px;line-height:1.05">Kapan senja <span class="it">di bulanmu?</span></div>

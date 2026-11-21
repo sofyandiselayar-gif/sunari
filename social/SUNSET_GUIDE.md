@@ -26,7 +26,7 @@ Bulan terbaik untuk menikmati senja: **April–Desember**.
 | 02 | Kenapa Pantai Sunari: pesisir barat, matahari turun lurus ke laut |
 | 03 | Jadwal sore ideal 14.00 → 18.30 |
 | 04 | Tiba paling lambat **15.00**: pesawat, feri, KM Dharma Kartika |
-| 05 | Bulan terbaik **April–Desember** (Januari–Maret musim hujan) |
+| 05 | **Kalender Senja**: jam matahari terbenam per bulan, musim terbaik April–Desember |
 | 06 | 4 fase cahaya: golden hour **16.50–17.40** · sunset **17.40–17.55** · afterglow **17.55–18.15** · blue hour **18.15–18.30** |
 | 07 | Pertanda senja cantik: awan tipis, langit bersih, habis hujan, story #SenjaHariIni |
 | 08–13 | 6 spot foto + jam terbaik: bibir pantai, ayunan raksasa, teras VIP Standard, kayak, pohon tepi pantai, kursi & payung |
