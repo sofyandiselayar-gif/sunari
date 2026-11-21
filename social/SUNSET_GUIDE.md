@@ -74,3 +74,41 @@ Simpan semua story ke Highlight **Senja** atau **Find Us**.
 ## Catatan
 - Jam matahari terbenam bergeser sedikit sepanjang tahun, jadi di desain ditulis "sekitar".
 - Untuk jam pastinya, pantau story #SenjaHariIni setiap sore.
+
+## Kalender Senja (`kalender-senja-feed`, `kalender-senja-story`)
+Isinya jam matahari terbenam di Pantai Sunari per bulan (WITA).
+
+**Sumber angka:** dihitung secara astronomis untuk koordinat Pantai Sunari (±6,13° LS, 120,47° BT), lalu dicocokkan dengan foto resort yang mencatat jam pengambilan (Juni–September 2026). Di bulan-bulan itu, foto menunjukkan matahari menyentuh cakrawala sekitar pukul 17.43–17.58.
+
+| Bulan | ± Jam | Rentang awal–akhir bulan |
+|---|---|---|
+| Jan | 18.20 | 18.15–18.22 |
+| Feb | 18.20 | 18.18–18.22 |
+| Mar | 18.12 | 18.06–18.18 |
+| Apr | 17.58 | 17.53–18.04 |
+| Mei | 17.50 | 17.49–17.52 |
+| Jun | 17.51 | 17.49–17.54 |
+| Jul | 17.58 | 17.55–18.00 |
+| Agu | 18.00 | 17.59–18.00 |
+| Sep | 17.55 | 17.53–17.58 |
+| Okt | 17.51 | 17.51–17.52 |
+| Nov | 17.55 | 17.51–18.00 |
+| Des | 18.07 | 18.01–18.13 |
+
+**Cara membaca kalender:**
+- **Warna kotak:** kotak terang berarti musim terbaik (April–Desember). Kotak abu-abu berarti musim hujan, langit lebih sering berawan.
+- **Titik jingga:** jam di bulan itu sudah terbukti dari foto resort.
+
+**Caption**
+```
+Kapan senja di bulanmu? 🌅
+Simpan kalender ini sebelum merencanakan liburan ke Pantai Sunari.
+
+Datanglah ke pantai 30 menit sebelum jam di kalender,
+dan jangan buru-buru pulang: afterglow ±20 menit setelahnya sering jadi yang paling indah.
+
+Musim terbaik: April–Desember.
+Reservasi: WhatsApp 0821-8903-3044
+
+#SunaRiSelayar #SenjaHariIni #KalenderSenja #PantaiSunari #SunsetSelayar #Selayar
+```

@@ -225,5 +225,39 @@ T.append(f'''<div class="t s" id="story-sunset-6"><img class="bg" src="{P}senja/
     <div style="margin-top:28px;height:150px;border-radius:30px;border:3px dashed rgba(224,122,75,.75);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;letter-spacing:.22em;text-transform:uppercase;color:#C0592C">Tempel stiker tautan WhatsApp</div>
     <div class="pf" style="font-size:46px;margin-top:22px">WA {WA}</div></div></div>''')
 
+# ================================================================== KALENDER SENJA
+# Jam terbenam astronomis untuk Pantai Sunari (6.13°LS, 120.47°BT, WITA), dibulatkan; awal–akhir bulan.
+# Dicocokkan dengan foto ber-jam milik resort (Jun–Sep 2026: matahari menyentuh cakrawala 17.43–17.58).
+KAL = [("Jan", "18.20", "18.15–18.22", 0), ("Feb", "18.20", "18.18–18.22", 0), ("Mar", "18.12", "18.06–18.18", 0),
+       ("Apr", "17.58", "17.53–18.04", 1), ("Mei", "17.50", "17.49–17.52", 1), ("Jun", "17.51", "17.49–17.54", 2),
+       ("Jul", "17.58", "17.55–18.00", 2), ("Agu", "18.00", "17.59–18.00", 2), ("Sep", "17.55", "17.53–17.58", 2),
+       ("Okt", "17.51", "17.51–17.52", 1), ("Nov", "17.55", "17.51–18.00", 1), ("Des", "18.07", "18.01–18.13", 1)]
+def kcell(m, t, r, k, big=54, pad="20px 10px"):
+    bg = "#FFFDF9" if k else "rgba(138,95,72,.07)"
+    col = "#E07A4B" if k else "#9A8478"
+    dot = '<div style="position:absolute;top:12px;right:14px;width:12px;height:12px;border-radius:50%;background:linear-gradient(180deg,#FDB15D,#FF8A5C)"></div>' if k == 2 else ''
+    return f'''<div style="position:relative;background:{bg};border-radius:24px;padding:{pad};text-align:center;box-shadow:{"0 8px 22px rgba(90,62,49,.10)" if k else "none"}">{dot}
+      <div class="caps" style="font-size:18px;color:{"#7A5039" if k else "#9A8478"}">{m}</div>
+      <div class="time" style="font-size:{big}px;color:{col};margin-top:8px">{t}</div>
+      <div style="font-size:17px;color:#7A5039;margin-top:6px">{r}</div></div>'''
+legend = '''<div style="display:flex;gap:30px;flex-wrap:wrap;font-size:21px;color:#5A3E31;margin-top:22px">
+  <span><b style="color:#E07A4B">●</b> Musim terbaik (Apr–Des)</span><span><b style="color:#9A8478">●</b> Musim hujan, sering berawan</span>
+  <span><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:linear-gradient(180deg,#FDB15D,#FF8A5C);vertical-align:-1px"></span> Terbukti dari foto kami</span></div>'''
+T.append(f'''<div class="t f" id="kalender-senja-feed"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Kalender senja</span></div>
+  <div class="mid">
+    <div class="pf" style="font-size:64px;line-height:1.05">Jam matahari terbenam <span class="it">sepanjang tahun</span></div>
+    <div style="font-size:24px;color:#5A3E31;margin-top:10px">Pantai Sunari · WITA · datanglah ke pantai <b>30 menit sebelumnya</b></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px">{"".join(kcell(*x, big=60, pad="28px 10px") for x in KAL)}</div>
+    {legend}</div>
+  <div class="ft"><span>SunaRi · Selayar</span><span>Simpan &amp; bagikan</span></div></div>''')
+T.append(f'''<div class="t s" id="kalender-senja-story"><div class="top" style="top:120px"><img src="{LOGO}" alt=""><span class="caps">Kalender senja</span></div>
+  <div style="position:absolute;left:64px;right:64px;top:260px;bottom:330px;display:flex;flex-direction:column;justify-content:center">
+    <div class="pf" style="font-size:72px;line-height:1.05">Kapan senja <span class="it">di bulanmu?</span></div>
+    <div style="font-size:27px;color:#5A3E31;margin-top:12px">Jam matahari terbenam di Pantai Sunari (WITA)</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px">{"".join(kcell(*x, big=70, pad="40px 10px") for x in KAL)}</div>
+    {legend.replace("font-size:21px","font-size:23px")}
+    <div style="font-size:24px;color:#7A5039;margin-top:20px">Datang ke pantai 30 menit sebelumnya · afterglow ±20 menit setelahnya.</div></div>
+  <div class="ft" style="bottom:240px"><span>WA {WA}</span><span>{IG}</span></div></div>''')
+
 (H / "sunset.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T), "desain")
