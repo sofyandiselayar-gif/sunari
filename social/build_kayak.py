@@ -89,7 +89,7 @@ slide(7, "aktivitas/01-kayak-sore.jpg", "50% 84%", "Memegang dayung", 'Tangan <i
       ul(["Genggam gagang dayung dengan jarak kedua tangan sedikit lebih lebar dari bahu.", "Bilah dayung tegak, bagian cekung menghadap ke arahmu.", "Genggam rileks, jangan terlalu kencang supaya tidak cepat pegal."]), pano=1, num=4)
 
 # 08-09
-slide(8, "senja/40-kayak-single-belakang-a-1753.jpg", "50% 62%", "Teknik dasar", 'Dayung kiri, <i>dayung kanan</i>',
+slide(8, "senja/12-kayak-matahari-merah-story.jpg", "50% 57%", "Teknik dasar", 'Dayung kiri, <i>dayung kanan</i>',
       ul(["Celupkan bilah dekat kaki, tarik ke belakang sampai pinggul.", "Bergantian kiri &amp; kanan dengan ritme pelan dan teratur.", "Putar badan sedikit, jangan hanya mengandalkan lengan."]), num=5)
 slide(9, "senja/41-kayak-single-belakang-b-1753.jpg", "50% 62%", "Belok &amp; berhenti", 'Kendalikan arah <i>dengan tenang</i>',
       ul(["<b>Belok kanan:</b> dayung lebih sering atau lebih lebar di sisi kiri, dan sebaliknya.", "<b>Mundur/rem:</b> celupkan dayung di samping pinggul lalu dorong ke depan.", "Latih dulu di dekat pantai sebelum mendayung lebih jauh."]), num=6)
@@ -105,7 +105,7 @@ slide(12, "senja/46-dua-kayak-emas-b-1743.jpg", "50% 49%", "Pasang-surut", 'Perh
       ul(["Saat surut, karang &amp; lamun muncul dekat permukaan.", "Jangan menyeret kayak atau berdiri di atas karang: melukai kaki &amp; merusak terumbu.", "Pilih jalur air yang lebih dalam, atau tunggu air pasang."]), num=9)
 
 # 13-14 dua potongan (senja/45)
-slide(13, "senja/45-dua-kayak-matahari-1751.jpg", "50% 0%", "Lindungi mata &amp; kulit", 'Jangan menatap <i>matahari langsung</i>',
+slide(13, "senja/44-dua-kayak-emas-1743.jpg", "50% 60%", "Lindungi mata &amp; kulit", 'Jangan menatap <i>matahari langsung</i>',
       ul(["Pakai kacamata hitam &amp; topi, pantulan air menambah silau.", "Oleskan tabir surya ramah karang sebelum turun ke air.", "Minum air putih sebelum &amp; sesudah mendayung."]), num=10)
 slide(14, "senja/45-dua-kayak-matahari-1751.jpg", "50% 100%", "Yang perlu dibawa", 'Bekal <i>secukupnya</i>',
       ul(["Ponsel di <b>pouch tahan air</b> dengan tali leher.", "Baju yang boleh basah &amp; sandal air.", "Tinggalkan dompet &amp; barang berharga di kamar."]), num=11)
