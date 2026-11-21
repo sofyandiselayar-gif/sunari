@@ -107,7 +107,7 @@ slide(12, "senja/46-dua-kayak-emas-b-1743.jpg", "50% 49%", "Pasang-surut", 'Perh
 # 13-14 dua potongan (senja/45)
 slide(13, "senja/44-dua-kayak-emas-1743.jpg", "50% 60%", "Lindungi mata &amp; kulit", 'Jangan menatap <i>matahari langsung</i>',
       ul(["Pakai kacamata hitam &amp; topi, pantulan air menambah silau.", "Oleskan tabir surya ramah karang sebelum turun ke air.", "Minum air putih sebelum &amp; sesudah mendayung."]), num=10)
-slide(14, "senja/45-dua-kayak-matahari-1751.jpg", "50% 100%", "Yang perlu dibawa", 'Bekal <i>secukupnya</i>',
+slide(14, "senja/02b-pantai-kayak-di-pasir-balanced.jpg", "50% 52%", "Yang perlu dibawa", 'Bekal <i>secukupnya</i>',
       ul(["Ponsel di <b>pouch tahan air</b> dengan tali leher.", "Baju yang boleh basah &amp; sandal air.", "Tinggalkan dompet &amp; barang berharga di kamar."]), num=11)
 
 # 15-16 foto
