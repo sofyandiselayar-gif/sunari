@@ -26,6 +26,32 @@ Tambahan 20 Nov 2026:
 | `senja/32-payung-lampu-senja-1751.jpg` | Siluet tamu di bawah payung pantai & lampu gantung, matahari di atas laut (3 Sep, **17.51**) | ✅ (siluet) | Panduan senja (spot kursi & payung), feed, Bajoy Beach Resto |
 | `senja/33-payung-kelapa-senja-1749.jpg` | Payung, kursi kayu, pohon kelapa & jalur cahaya (11 Sep, **17.49**) | ✅ (siluet) | Feed, story, OTA (area pantai/resto) |
 
+### Senja dengan jam pengambilan (ditambahkan 21 Nov 2026)
+Jam diambil dari nama file kamera. Menjadi **bukti nyata jam senja** di Pantai Sunari.
+| File | Isi | Tanggal & jam | Status |
+|---|---|---|---|
+| `senja/34-pasangan-selfie-bawah-daun.jpg` | Siluet pasangan memotret senja di bawah daun ketapang, kayak di kejauhan | — | ✅ (siluet) |
+| `senja/35-matahari-cakrawala-1751.jpg` | Matahari merah menyentuh cakrawala, laut tenang | 19 Sep 17.51 | ✅ (siluet) |
+| `senja/36-jalan-setapak-taman-golden.jpg` | Jalan setapak batu di taman, cahaya golden hour di antara pohon kelapa | — | ✅ (siluet) |
+| `senja/37-afterglow-kayak-pelampung-1814.jpg` | Afterglow jingga-ungu, kayak & pelampung berjajar di pasir | 11 Sep 18.14 | ✅ (siluet) |
+| `senja/38-blue-hour-kayak-1815.jpg` | Blue hour: langit biru tua, garis jingga di cakrawala, kayak di pasir | 11 Sep 18.15 | ✅ (siluet) |
+| `senja/39-kayak-single-samping-1753.jpg` | Siluet tamu di kayak kuning, matahari di atas laut | 4 Sep 17.53 | ✅ (siluet) |
+| `senja/40-kayak-single-belakang-a-1753.jpg` | Kayak dari belakang mendayung ke arah matahari | 4 Sep 17.53 | ✅ (siluet) |
+| `senja/41-kayak-single-belakang-b-1753.jpg` | Kayak dari belakang, jalur cahaya di air | 4 Sep 17.53 | ✅ (siluet) |
+| `senja/42-teras-bingkai-daun-1744.jpg` | Senja dari teras bungalow, matahari di sela daun ketapang | 28 Agu 17.44 | ✅ (siluet) |
+| `senja/43-teras-bingkai-daun-b-1743.jpg` | Senja dari teras bungalow (variasi) | 28 Agu 17.43 | ✅ (siluet) |
+| `senja/44-dua-kayak-emas-1743.jpg` | Dua kayak di air keemasan, golden hour | 24 Agu 17.43 | ✅ (siluet) |
+| `senja/45-dua-kayak-matahari-1751.jpg` | Dua kayak & jalur cahaya, matahari di atas cakrawala | 27 Agu 17.51 | ✅ (siluet) |
+| `senja/46-dua-kayak-emas-b-1743.jpg` | Dua kayak di air keemasan (variasi) | 24 Agu 17.43 | ✅ (siluet) |
+| `senja/47-payung-di-antara-kelapa-1755.jpg` | Payung & kursi di antara dua pohon kelapa, matahari di bawah payung | 11 Agu 17.55 | ✅ (siluet) |
+| `senja/48-tamu-dan-drone-1758.jpg` | Siluet tamu menonton drone, matahari menyentuh laut | 10 Agu 17.58 | ✅ (siluet) |
+| `senja/49-tamu-angkat-tangan-1756.jpg` | Siluet tamu mengangkat tangan menyambut senja | 13 Jul 17.56 | ✅ (siluet) |
+| `senja/50-meja-dua-gelas-bawah-daun-1752.jpg` | Meja dengan dua gelas teh, bingkai daun & palem, matahari merah | 7 Jul 17.52 | ✅ (siluet) |
+| `senja/51-kayak-double-jalur-cahaya-1751.jpg` | Kayak double di jalur cahaya, Pulau Gusung di kanan | 7 Jul 17.51 | ✅ (siluet) |
+| `senja/52-pohon-kelapa-bungalow-1747.jpg` | Siluet pohon kelapa & atap bungalow, matahari di atas laut, kayak kecil | 29 Jun 17.47 | ✅ (siluet) |
+
+**Ringkasan jam matahari menyentuh/dekat cakrawala (Jun–Sep 2026):** 29 Jun 17.47 · 7 Jul 17.51–17.52 · 13 Jul 17.56 · 10–11 Agu 17.55–17.58 · 24–28 Agu 17.43–17.51 · 3–4 Sep 17.51–17.53 · 19 Sep 17.51 · afterglow/blue hour 11 Sep 18.14–18.15.
+
 ## Pantai & Taman
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|

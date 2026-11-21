@@ -122,10 +122,10 @@ def spot(n, img, pos, no, name, when, desc, tip):
     <div style="font-size:27px;line-height:1.5;margin-top:14px">{desc}</div>
     <div style="font-size:25px;line-height:1.5;margin-top:14px;color:#7A5039"><b>Tips:</b> {tip}</div></div>
   {foot(n)}</div>''')
-spot(8, "senja/29-dua-kursi-menghadap-senja.jpg", "50% 55%", "01", "Bibir <span class='it'>pantai</span>", "17.30–18.00", "Tepat di depan resort, matahari turun lurus di atas laut. Jalur cahaya di air paling cantik dari sini.", "letakkan garis cakrawala di sepertiga bawah layar.")
+spot(8, "senja/35-matahari-cakrawala-1751.jpg", "50% 52%", "01", "Bibir <span class='it'>pantai</span>", "17.30–18.00", "Tepat di depan resort, matahari turun lurus di atas laut. Jalur cahaya di air paling cantik dari sini.", "letakkan garis cakrawala di sepertiga bawah layar.")
 spot(9, "aktivitas/07-ayunan-gaun-merah-tengah.jpg", "50% 52%", "02", "Ayunan <span class='it'>raksasa</span>", "17.20–17.50", "Siluet berayun dengan matahari di cakrawala. Gratis untuk tamu.", "pakai mode burst saat ayunan di titik tertinggi.")
-spot(10, "vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%", "03", "Teras <span class='it'>VIP Standard</span>", "17.00–17.50", "Teras rumah panggung menghadap langsung ke arah matahari terbenam. Senja dari 'rumah sendiri'.", "foto dari dalam teras, jadikan tiang &amp; atap sebagai bingkai.")
-spot(11, "senja/17-kayak-berdua.jpg", "50% 55%", "04", "Di atas <span class='it'>kayak</span>", "17.00–17.40", "Mendayung di air tenang menyongsong senja. Sewa kayak single Rp 50.000, double Rp 100.000.", "minta teman memotret dari bibir pantai agar kayak jadi siluet.")
+spot(10, "senja/42-teras-bingkai-daun-1744.jpg", "50% 35%", "03", "Teras <span class='it'>VIP Standard</span>", "17.00–17.50", "Teras rumah panggung menghadap langsung ke arah matahari terbenam. Senja dari 'rumah sendiri'.", "foto dari dalam teras, jadikan tiang &amp; atap sebagai bingkai.")
+spot(11, "senja/51-kayak-double-jalur-cahaya-1751.jpg", "50% 55%", "04", "Di atas <span class='it'>kayak</span>", "17.00–17.40", "Mendayung di air tenang menyongsong senja. Sewa kayak single Rp 50.000, double Rp 100.000.", "minta teman memotret dari bibir pantai agar kayak jadi siluet.")
 spot(12, "senja/23-pohon-meranggas-senja.jpg", "50% 55%", "05", "Pohon <span class='it'>tepi pantai</span>", "17.35–17.55", "Ranting pohon meranggas di tepi pantai membingkai matahari. Favorit untuk foto artistik.", "posisikan matahari di sela ranting, lalu ketuk langit untuk exposure.")
 spot(13, "senja/32-payung-lampu-senja-1751.jpg", "50% 55%", "06", "Payung <span class='it'>&amp; lampu gantung</span>", "16.30–18.00", "Kursi kayu, payung &amp; lampu gantung di tepi pantai. Pada 3 September, foto ini diambil pukul <b>17.51</b>, matahari masih di atas laut.", "foto dari belakang kursi agar kursi &amp; laut masuk satu bingkai.")
 
@@ -164,7 +164,7 @@ text_slide(18, "Yang perlu dibawa", 'Bekal <span class="it">menunggu senja</span
   + '<div class="card" style="margin-top:30px;font-size:27px;line-height:1.5">Sewa kayak: single <b>Rp 50.000</b> · double <b>Rp 100.000</b>. Alat snorkeling mulai <b>Rp 40.000</b>/set/hari. Ayunan raksasa <b>gratis</b>.</div>')
 
 # 19 after sunset
-photo_slide(19, "malam/03-resort-malam-a-frame.jpg", "50% 60%", "Setelah matahari terbenam", "Malam <i class='gold'>belum selesai.</i>",
+photo_slide(19, "senja/37-afterglow-kayak-pelampung-1814.jpg", "50% 50%", "Setelah matahari terbenam", "Malam <i class='gold'>belum selesai.</i>",
   "<b>18.10</b> afterglow di bibir pantai · <b>18.30</b> Senja Dinner ikan bakar &amp; seafood (pesan H-1) · <b>sampai 21.00</b> Bajoy Beach Resto buka untuk tamu menginap · lampu-lampu bungalow menyala di antara pohon kelapa.")
 
 # 10 CTA
