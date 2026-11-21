@@ -71,7 +71,7 @@ slide(3, "senja/09-kayak-pasangan.jpg", "50% 52%", "Pilih kayakmu", 'Single atau
         <div style="background:#FFFDF9;border-radius:24px;padding:22px 24px"><div class="eb" style="font-size:16px">Double · 2 orang</div><div class="time" style="font-size:68px;margin-top:10px">Rp 100.000</div><div class="p" style="font-size:25px;margin-top:8px">Cocok untuk pasangan, sahabat, atau orang tua + anak.</div></div></div>''', pano=1)
 
 # 04 jam
-slide(4, "senja/03-kayak-matahari-merah.jpg", "50% 90%", "Jam terbaik", 'Mulai <i>pukul 17.00</i>',
+slide(4, "senja/35-matahari-cakrawala-1751.jpg", "50% 62%", "Jam terbaik", 'Mulai <i>pukul 17.00</i>',
       '''<div style="display:flex;gap:44px;margin-top:22px">
         <div><div class="time" style="font-size:88px">17.00</div><div class="p" style="font-size:24px;margin-top:6px">Turun ke air</div></div>
         <div><div class="time" style="font-size:88px">17.50</div><div class="p" style="font-size:24px;margin-top:6px">Matahari terbenam</div></div>
