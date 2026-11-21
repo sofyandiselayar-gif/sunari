@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Invoice SunaRi</title>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page{size:210mm 297mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:#111;font-family:Montserrat,sans-serif}
+.page{width:210mm;height:297mm;position:relative;padding:20mm 20mm 0;overflow:hidden}
+.frame{position:absolute;inset:8mm;border:.4pt solid #111}
+.frame2{position:absolute;inset:9.4mm;border:.4pt solid #bbb}
+.top{display:flex;justify-content:space-between;align-items:flex-start}
+h1{font-family:'Pinyon Script',cursive;font-weight:400;font-size:98pt;line-height:1;margin:-4mm 0 0 -2mm;letter-spacing:1px}
+.meta{margin-top:5mm;font-size:8.5pt;display:grid;grid-template-columns:auto auto;column-gap:9mm;row-gap:1.6mm;text-align:right}
+.meta dt{font-family:'Playfair Display',serif;font-style:italic;letter-spacing:.12em;color:#555;text-transform:uppercase}
+.meta dd{letter-spacing:.14em;font-weight:500}
+.parties{display:flex;justify-content:space-between;align-items:center;margin-top:4mm;padding-left:10mm}
+.who{width:98mm}
+.blk{display:grid;grid-template-columns:24mm 1fr;font-size:8.5pt;line-height:1.65}
+.blk b{font-weight:600;font-size:7.5pt;letter-spacing:.14em;padding-top:.6mm}
+.blk span{letter-spacing:.03em;color:#222}
+.blk .nm{font-weight:500;letter-spacing:.06em;color:#111}
+.div{height:.4pt;background:#111;width:70mm;margin:5mm 0}
+.logo{width:40mm;height:40mm;border-radius:50%;background:#111;display:flex;align-items:center;justify-content:center;flex-direction:column;margin-right:6mm}
+.logo svg{width:20mm;height:20mm}
+.logo small{color:#fff;font-size:5.5pt;letter-spacing:.32em;margin-top:1.4mm}
+table{width:100%;border-collapse:collapse;margin-top:8mm;font-size:8.5pt}
+thead th{font-weight:600;font-size:7.5pt;letter-spacing:.16em;padding:3.2mm 2mm;border-top:.8pt solid #111;border-bottom:.4pt solid #111}
+tbody td{padding:2.8mm 2mm;letter-spacing:.04em}
+tbody tr:first-child td{padding-top:4.5mm}
+tbody tr:last-child td{padding-bottom:4.5mm}
+td small{display:block;color:#777;font-size:7pt;margin-top:.8mm;letter-spacing:.03em}
+.l{text-align:left}.c{text-align:center}.r{text-align:right}
+tfoot td{padding:3.2mm 2mm;font-weight:600;font-size:7.5pt;letter-spacing:.16em;border-top:.4pt solid #111;border-bottom:.8pt solid #111}
+tfoot td.r{font-size:8.5pt;letter-spacing:.06em}
+.bottom{display:flex;justify-content:space-between;margin-top:5mm}
+.pay{padding-top:9mm}
+.pay h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:15pt;letter-spacing:.04em;text-transform:uppercase;margin-bottom:3mm}
+.pay p{font-size:8pt;line-height:1.75;letter-spacing:.1em;text-transform:uppercase}
+.pay p i{font-style:normal;color:#666}
+.sum{width:66mm;text-align:right}
+.tot{display:grid;grid-template-columns:1fr 30mm;row-gap:1.6mm;font-size:8.5pt;letter-spacing:.06em}
+.tot .k{letter-spacing:.14em;font-size:7.5pt;padding-top:.5mm}
+.tot .grand{font-weight:600;border-top:.4pt solid #111;padding-top:2mm;margin-top:1mm}
+.thanks{white-space:nowrap;margin-right:3mm !important;font-family:'Pinyon Script',cursive;font-size:40pt;line-height:1;margin:6mm 0 3mm;transform:rotate(-4deg);transform-origin:right}
+.soc{display:flex;justify-content:flex-end;gap:2.6mm}
+.soc svg{width:5.4mm;height:5.4mm}
+.handle{font-size:7.5pt;font-weight:600;letter-spacing:.14em;margin-top:3mm}
+.note{position:absolute;left:20mm;right:20mm;bottom:17mm;display:flex;justify-content:space-between;font-size:6.8pt;letter-spacing:.12em;color:#666;text-transform:uppercase;border-top:.4pt solid #ccc;padding-top:3mm}
+</style></head><body>
+<div class="page">
+  <div class="frame"></div><div class="frame2"></div>
+  <div class="top">
+    <h1>Invoice</h1>
+    <dl class="meta">
+      <dt>No. Invoice</dt><dd>INV-2611-001</dd>
+      <dt>Tanggal</dt><dd>21.11.2026</dd>
+      <dt>Jatuh Tempo</dt><dd>28.11.2026</dd>
+    </dl>
+  </div>
+
+  <div class="parties">
+    <div class="who">
+      <div class="blk"><b>KEPADA:</b><div><span class="nm">Nama Tamu</span><br><span>Alamat / Kota Tamu</span><br><span>+62 8xx-xxxx-xxxx</span></div></div>
+      <div class="div"></div>
+      <div class="blk"><b>DARI:</b><div><span class="nm">SunaRi Beach Resort Selayar</span><br><span>Jl. Poros Benteng – Appatana KM 14</span><br><span>Desa Patikarya, Kep. Selayar, Sulsel</span><br><span>+62 821-8903-3044</span></div></div>
+    </div>
+    <div class="logo">
+      <svg viewBox="0 0 200 200" fill="none" stroke="#fff" stroke-linecap="round"><circle cx="100" cy="100" r="92" stroke-width="3"/><path d="M58 112 A42 42 0 0 1 142 112 Z" fill="#fff" stroke="none"/><line x1="36" y1="112" x2="164" y2="112" stroke-width="4"/><path d="M56 132 q11 -8 22 0 t22 0 t22 0 t22 0" stroke-width="4"/><path d="M74 150 q8 -6 17 0 t17 0 t17 0" stroke-width="4"/></svg>
+      <small>SUNARI</small>
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th class="l">DESKRIPSI</th><th class="c">HARGA SATUAN</th><th class="c">QTY</th><th class="r">TOTAL</th></tr></thead>
+    <tbody>
+      <tr><td>Kamar Superior<small>Check-in 24.11 – Check-out 26.11 · per malam</small></td><td class="c">Rp 650.000</td><td class="c">2</td><td class="r">Rp 1.300.000</td></tr>
+      <tr><td>Extra Bed<small>per malam</small></td><td class="c">Rp 150.000</td><td class="c">2</td><td class="r">Rp 300.000</td></tr>
+      <tr><td>Tur Pulau Gusung<small>per orang</small></td><td class="c">Rp 250.000</td><td class="c">2</td><td class="r">Rp 500.000</td></tr>
+      <tr><td>Makan Malam Bajoy Beach Resto<small>paket sunset dinner</small></td><td class="c">Rp 175.000</td><td class="c">2</td><td class="r">Rp 350.000</td></tr>
+      <tr><td>Antar-jemput Pelabuhan</td><td class="c">Rp 200.000</td><td class="c">1</td><td class="r">Rp 200.000</td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="3">SUBTOTAL</td><td class="r">Rp 2.650.000</td></tr></tfoot>
+  </table>
+
+  <div class="bottom">
+    <div class="pay">
+      <h2>Metode Pembayaran</h2>
+      <p>Transfer Bank: [Nama Bank]<br><i>No. Rek:</i> [Nomor Rekening]<br><i>a.n.</i> [Nama Pemilik]<br>QRIS<br>E-Wallet: [GoPay / OVO / DANA]<br>Tunai</p>
+    </div>
+    <div class="sum">
+      <div class="tot">
+        <span class="k">Pajak</span><span>0%</span>
+        <span class="k">DISKON</span><span>– Rp 150.000</span>
+        <span class="k grand">TOTAL</span><span class="grand">Rp 2.500.000</span>
+      </div>
+      <div class="thanks">Terima kasih!</div>
+      <div class="soc">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#111"/><path d="M13.3 19v-6h2l.3-2.3h-2.3V9.3c0-.7.2-1.1 1.1-1.1h1.3v-2a17 17 0 0 0-1.9-.1c-1.9 0-3.1 1.1-3.1 3.2v1.4H8.6V13h2.1v6z" fill="#fff"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="#111"/></svg>
+      </div>
+      <div class="handle">@SUNARIBEACHRESORTSELAYAR</div>
+    </div>
+  </div>
+
+  <div class="note"><span>Pembayaran dianggap lunas setelah dana diterima</span><span>WA +62 821-8903-3044</span></div>
+</div>
+</body></html>
