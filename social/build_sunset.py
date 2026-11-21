@@ -37,10 +37,10 @@ ul.tips li b{font-weight:700}
 .card{background:#FFFDF9;border-radius:32px;padding:40px 44px;box-shadow:0 18px 44px rgba(90,62,49,.12)}
 """
 T = []
-def foot(n, light=False, total=10):
+def foot(n, light=False, total=20):
     return f'<div class="ft{" l" if light else ""}"><span>SunaRi · Selayar</span><span>{n:02d} / {total:02d}</span></div>'
 
-# ================================================================== CAROUSEL (10)
+# ================================================================== CAROUSEL (20)
 # 1 cover
 T.append(f'''<div class="t f" id="sunset-01"><img class="bg" src="{P}senja/31-kayak-siluet-matahari-merah-story.jpg" style="object-position:50% 30%" alt="">
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.15) 40%,rgba(0,0,0,0) 55%,rgba(0,0,0,.35) 100%)"></div>
@@ -49,85 +49,133 @@ T.append(f'''<div class="t f" id="sunset-01"><img class="bg" src="{P}senja/31-ka
     <div style="font-weight:700;font-size:22px;letter-spacing:.28em;text-transform:uppercase;color:#FDB15D">Panduan senja · Pantai Sunari</div>
     <div class="time" style="font-size:210px;margin-top:8px">17.50</div>
     <div class="pf" style="font-size:60px;line-height:1.1;margin-top:4px">Jam paling ditunggu <i class="gold">di Selayar.</i></div></div>
-  <div class="sh" style="position:absolute;left:72px;right:72px;bottom:130px;color:#FBF4EC;font-size:28px">Waktu terbaik, spot foto &amp; tips memotret senja. Simpan postinganSimpan postingan ini ↓nbsp;iniSimpan postingan ini ↓nbsp;↓</div>
+  <div class="sh" style="position:absolute;left:72px;right:72px;bottom:130px;color:#FBF4EC;font-size:28px">Waktu terbaik, spot foto &amp; tips memotret senja. Simpan postingan&nbsp;ini&nbsp;↓</div>
   {foot(1, True)}</div>''')
 
-# 2 timeline
-T.append(f'''<div class="t f" id="sunset-02"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Jadwal sore ideal</span></div>
-  <div class="mid">
-    <div class="pf" style="font-size:66px;line-height:1.05">Satu sore, <span class="it">tanpa&nbsp;terburu&#8209;buru</span></div>
-    <div style="margin-top:20px">
-      {"".join(f'<div class="row"><div class="time">{t}</div><div class="tx"><b>{a}</b><span>{b}</span></div></div>' for t, a, b in [
-        ("14.00", "Check-in", "Simpan koper, istirahat sejenak di teras."),
-        ("16.00", "Turun ke pantai", "Pilih spot, sewa kayak, siapkan kamera."),
-        ("16.50", "Golden hour", "Cahaya hangat &amp; lembut, waktu terbaik foto potret."),
-        ("17.50", "Matahari terbenam", "Matahari menyentuh cakrawala, tepat di depan pantai."),
-        ("18.10", "Afterglow", "Langit berubah jingga-ungu. Jangan buru-buru pulang!"),
-        ("18.30", "Senja Dinner", "Ikan bakar &amp; seafood di tepi pantai (pesan H-1).")])}
-    </div></div>
-  {foot(2)}</div>''')
 
-# 3 arrival
-T.append(f'''<div class="t f" id="sunset-03"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Kapan harus tiba?</span></div>
+def head_slide(n, label, title):
+    return f'<div class="top"><img src="{LOGO}" alt=""><span class="caps">{label}</span></div>'
+def text_slide(n, label, title, body):
+    T.append(f'''<div class="t f" id="sunset-{n:02d}">{head_slide(n, label, title)}
+  <div class="mid"><div class="pf" style="font-size:64px;line-height:1.06">{title}</div>{body}</div>{foot(n)}</div>''')
+def tips(items, size=28):
+    return '<ul class="tips">' + "".join(f'<li><i>{i}</i><span style="font-size:{size}px">{t}</span></li>' for i, t in enumerate(items, 1)) + '</ul>'
+def photo_slide(n, img, pos, kicker, big, text, grad=True, size=112):
+    g = '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 45%,rgba(0,0,0,.65) 100%)"></div>' if grad else ''
+    T.append(f'''<div class="t f" id="sunset-{n:02d}"><img class="bg" src="{P}{img}" style="object-position:{pos}" alt="">{g}
+  <img src="{LOGO_D}" style="position:absolute;left:72px;top:60px;width:230px" alt="">
+  <div class="sh" style="position:absolute;left:72px;right:72px;bottom:150px;color:#FBF4EC">
+    <div style="font-weight:700;font-size:22px;letter-spacing:.28em;text-transform:uppercase;color:#FDB15D">{kicker}</div>
+    <div class="pf" style="font-size:{size}px;line-height:1.04;margin-top:10px">{big}</div>
+    <div style="font-size:29px;line-height:1.5;margin-top:20px">{text}</div></div>{foot(n, True)}</div>''')
+
+# 2 why
+photo_slide(2, "pantai/03-pulau-di-seberang.jpg", "50% 60%", "Kenapa Pantai Sunari?", "Senja tepat <i class='gold'>di depan mata.</i>",
+  "Pantai Sunari ada di pesisir <b>barat</b> Pulau Selayar. Matahari turun lurus ke laut lepas, tanpa terhalang daratan. Laut tenang, pantai landai, dan Pulau Gusung di seberang.")
+
+# 3 timeline
+text_slide(3, "Jadwal sore ideal", 'Satu sore, <span class="it">tanpa&nbsp;terburu&#8209;buru</span>',
+  '<div style="margin-top:20px">' + "".join(f'<div class="row" style="padding:17px 0"><div class="time" style="font-size:58px">{t}</div><div class="tx"><b style="font-size:34px">{a}</b><span style="font-size:23px">{b}</span></div></div>' for t, a, b in [
+    ("14.00", "Check-in", "Simpan koper, istirahat sejenak di teras."),
+    ("15.00", "Paling lambat tiba", "Hari pertama? Ini batas aman agar senja tidak terlewat."),
+    ("16.00", "Turun ke pantai", "Pilih spot, sewa kayak, siapkan kamera."),
+    ("16.50", "Golden hour", "Cahaya hangat &amp; lembut, terbaik untuk foto potret."),
+    ("17.50", "Matahari terbenam", "Menyentuh cakrawala, tepat di depan pantai."),
+    ("18.10", "Afterglow", "Langit jingga-ungu. Jangan buru-buru pulang!"),
+    ("18.30", "Senja Dinner", "Ikan bakar &amp; seafood di tepi pantai (pesan H-1).")]) + '</div>')
+
+# 4 arrival
+T.append(f'''<div class="t f" id="sunset-04"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Kapan harus tiba?</span></div>
   <div class="mid">
     <div class="caps" style="font-size:22px">Tiba di resort paling lambat</div>
     <div class="time" style="font-size:250px;color:#E07A4B;margin-top:10px">15.00</div>
-    <div class="pf" style="font-size:56px;line-height:1.15;margin-top:10px">Supaya senja pertamamu <span class="it">tidak terlewat.</span></div>
-    <div class="card" style="margin-top:46px">
-      <ul class="tips" style="margin-top:0">
-        <li><i>·</i><span>Check-in mulai <b>14.00 WITA</b>.</span></li>
-        <li><i>·</i><span>Dari Bandara H. Aroeppala hanya <b>±10–15 menit</b>. Penerbangan siang = aman.</span></li>
-        <li><i>·</i><span>Lewat feri Bira–Pamatata? Masih <b>±1–1,5 jam</b> ke resort, jadi pilih penyeberangan pagi.</span></li>
-      </ul></div></div>
-  {foot(3)}</div>''')
+    <div class="pf" style="font-size:54px;line-height:1.15;margin-top:10px">Supaya senja pertamamu <span class="it">tidak terlewat.</span></div>
+    <div class="card" style="margin-top:40px">{tips(["Check-in mulai <b>14.00 WITA</b>, check-out <b>12.00 WITA</b>.", "<b>Pesawat:</b> Bandara H. Aroeppala → SunaRi hanya <b>±10–15 menit</b>.", "<b>Feri Bira–Pamatata:</b> masih <b>±1–1,5 jam</b> ke resort, pilih penyeberangan pagi.", "<b>KM Dharma Kartika:</b> tiba pagi di Benteng, punya sepanjang hari sebelum senja."], 26)}</div></div>
+  {foot(4)}</div>''')
 
-# 4 best months
-T.append(f'''<div class="t f" id="sunset-04"><img class="bg" src="{P}senja/24-pohon-tepi-pantai-senja.jpg" style="object-position:50% 55%" alt="">
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 45%,rgba(0,0,0,.65) 100%)"></div>
-  <img src="{LOGO_D}" style="position:absolute;left:72px;top:60px;width:230px" alt="">
-  <div class="sh" style="position:absolute;left:72px;right:72px;bottom:150px;color:#FBF4EC">
-    <div style="font-weight:700;font-size:22px;letter-spacing:.28em;text-transform:uppercase;color:#FDB15D">Bulan terbaik</div>
-    <div class="pf" style="font-size:150px;line-height:1;margin-top:10px">April <span style="color:#FDB15D">–</span> Desember</div>
-    <div style="font-size:30px;line-height:1.5;margin-top:22px">Langit lebih cerah &amp; laut tenang. Matahari terbenam tepat di depan Pantai Sunari, sekitar <b>17.50–18.00 WITA</b>.</div></div>
-  {foot(4, True)}</div>''')
+# 5 best months
+photo_slide(5, "senja/24-pohon-tepi-pantai-senja.jpg", "50% 55%", "Bulan terbaik", "April <span style='color:#FDB15D'>–</span> Desember",
+  "Langit lebih sering cerah &amp; laut tenang. Januari–Maret adalah musim hujan: senja tetap bisa muncul, tapi lebih sering tertutup awan. Cek prakiraan cuaca sebelum berangkat.")
 
-# 5-8 spots
+# 6 light phases
+text_slide(6, "Fase cahaya senja", 'Empat fase, <span class="it">empat warna</span>',
+  '<div style="margin-top:24px">' + "".join(f'<div class="row"><div class="time" style="font-size:50px;width:270px">{t}</div><div class="tx"><b>{a}</b><span>{b}</span></div></div>' for t, a, b in [
+    ("16.50–17.40", "Golden hour", "Cahaya keemasan &amp; bayangan panjang. Ideal untuk foto wajah &amp; pasangan."),
+    ("17.40–17.55", "Sunset", "Matahari bulat merah menyentuh laut. Waktunya siluet &amp; jalur cahaya di air."),
+    ("17.55–18.15", "Afterglow", "Matahari hilang, langit justru menyala jingga, merah muda &amp; ungu."),
+    ("18.15–18.30", "Blue hour", "Langit biru tua, lampu resort mulai menyala. Foto suasana malam yang tenang.")]) + '</div>')
+
+# 7 signs
+text_slide(7, "Pertanda senja cantik", 'Akan <span class="it">secantik apa</span> senja hari ini?',
+  tips(["<b>Awan tipis &amp; tinggi</b> di langit barat = warna paling dramatis, langit memantulkan jingga &amp; merah muda.",
+        "<b>Langit bersih tanpa awan</b> = matahari bulat sempurna, cocok untuk siluet &amp; foto jalur cahaya.",
+        "<b>Awan tebal di cakrawala</b> = matahari bisa hilang lebih awal. Datang lebih cepat, nikmati golden hour.",
+        "<b>Habis hujan sore?</b> Udara bersih sering memberi afterglow terbaik. Tetap keluar!",
+        "Ikuti story <b>#SenjaHariIni</b> kami setiap sore untuk melihat kondisi langit terkini."], 27))
+
+# 8-13 spots
 def spot(n, img, pos, no, name, when, desc, tip):
-    T.append(f'''<div class="t f" id="sunset-{n:02d}"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Spot foto {no} / 04</span></div>
+    T.append(f'''<div class="t f" id="sunset-{n:02d}"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Spot foto {no} / 06</span></div>
   <img class="photo" src="{P}{img}" style="position:absolute;left:72px;right:72px;width:936px;top:170px;height:640px;object-position:{pos}" alt="">
   <div style="position:absolute;left:72px;right:72px;top:850px">
-    <div style="display:flex;align-items:center;justify-content:space-between"><div class="pf" style="font-size:62px">{name}</div><span class="tag">{when}</span></div>
-    <div style="font-size:28px;line-height:1.5;margin-top:14px">{desc}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between"><div class="pf" style="font-size:60px">{name}</div><span class="tag">{when}</span></div>
+    <div style="font-size:27px;line-height:1.5;margin-top:14px">{desc}</div>
     <div style="font-size:25px;line-height:1.5;margin-top:14px;color:#7A5039"><b>Tips:</b> {tip}</div></div>
   {foot(n)}</div>''')
-spot(5, "senja/29-dua-kursi-menghadap-senja.jpg", "50% 55%", "01", "Bibir <span class='it'>pantai</span>", "17.30–18.00", "Tepat di depan resort, matahari turun lurus di atas laut. Jalur cahaya di air paling cantik dari sini.", "letakkan garis cakrawala di sepertiga bawah layar.")
-spot(6, "aktivitas/05-ayunan-raksasa-senja.jpg", "40% 55%", "02", "Ayunan <span class='it'>raksasa</span>", "17.20–17.50", "Siluet berayun dengan matahari di cakrawala. Gratis untuk tamu.", "pakai mode burst saat ayunan di titik tertinggi.")
-spot(7, "vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%", "03", "Teras <span class='it'>VIP Standard</span>", "17.00–17.50", "Teras rumah panggung menghadap langsung ke arah matahari terbenam. Senja dari 'rumah sendiri'.", "foto dari dalam teras, jadikan tiang & atap sebagai bingkai.")
-spot(8, "senja/17-kayak-berdua.jpg", "50% 55%", "04", "Di atas <span class='it'>kayak</span>", "17.00–17.40", "Mendayung di air tenang menyongsong senja. Sewa kayak single Rp 50.000, double Rp 100.000.", "minta teman memotret dari bibir pantai agar kayak jadi siluet.")
+spot(8, "senja/29-dua-kursi-menghadap-senja.jpg", "50% 55%", "01", "Bibir <span class='it'>pantai</span>", "17.30–18.00", "Tepat di depan resort, matahari turun lurus di atas laut. Jalur cahaya di air paling cantik dari sini.", "letakkan garis cakrawala di sepertiga bawah layar.")
+spot(9, "aktivitas/05-ayunan-raksasa-senja.jpg", "40% 55%", "02", "Ayunan <span class='it'>raksasa</span>", "17.20–17.50", "Siluet berayun dengan matahari di cakrawala. Gratis untuk tamu.", "pakai mode burst saat ayunan di titik tertinggi.")
+spot(10, "vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%", "03", "Teras <span class='it'>VIP Standard</span>", "17.00–17.50", "Teras rumah panggung menghadap langsung ke arah matahari terbenam. Senja dari 'rumah sendiri'.", "foto dari dalam teras, jadikan tiang &amp; atap sebagai bingkai.")
+spot(11, "senja/17-kayak-berdua.jpg", "50% 55%", "04", "Di atas <span class='it'>kayak</span>", "17.00–17.40", "Mendayung di air tenang menyongsong senja. Sewa kayak single Rp 50.000, double Rp 100.000.", "minta teman memotret dari bibir pantai agar kayak jadi siluet.")
+spot(12, "senja/23-pohon-meranggas-senja.jpg", "50% 55%", "05", "Pohon <span class='it'>tepi pantai</span>", "17.35–17.55", "Ranting pohon meranggas di tepi pantai membingkai matahari. Favorit untuk foto artistik.", "posisikan matahari di sela ranting, lalu ketuk langit untuk exposure.")
+spot(13, "senja/07-payung-kursi-pantai.jpg", "50% 60%", "06", "Kursi <span class='it'>&amp; payung</span>", "16.30–18.00", "Duduk santai di kursi pantai sambil menunggu matahari turun. Spot paling nyaman untuk keluarga.", "foto dari belakang kursi agar kursi &amp; laut masuk satu bingkai.")
 
-# 9 photo tips
-T.append(f'''<div class="t f" id="sunset-09"><div class="top"><img src="{LOGO}" alt=""><span class="caps">Tips memotret senja</span></div>
-  <div class="mid">
-    <div class="pf" style="font-size:68px;line-height:1.05">Foto senja <span class="it">pakai ponsel</span></div>
-    <ul class="tips">
-      <li><i>1</i><span><b>Ketuk langit, bukan matahari</b>, lalu turunkan exposure (geser ☀ ke bawah). Warna jadi pekat, siluet tajam.</span></li>
-      <li><i>2</i><span><b>Jangan zoom digital.</b> Mendekatlah, atau pakai lensa 2x/3x bawaan.</span></li>
-      <li><i>3</i><span><b>Cari bingkai alami</b>: daun ketapang, ranting, atau tiang teras.</span></li>
-      <li><i>4</i><span><b>Siluet lebih kuat dari wajah.</b> Posisikan orang membelakangi matahari.</span></li>
-      <li><i>5</i><span><b>Bersihkan lensa</b> sebelum memotret, udara pantai membuatnya berkabut.</span></li>
-      <li><i>6</i><span><b>Tunggu 15 menit setelah terbenam.</b> Afterglow sering jadi warna paling indah.</span></li>
-    </ul></div>
-  {foot(9)}</div>''')
+# 14 phone exposure
+text_slide(14, "Tips foto · Pengaturan ponsel", 'Atur ponselmu <span class="it">sebelum 17.30</span>',
+  tips(["<b>Ketuk langit, bukan matahari.</b> Lalu geser ikon ☀ ke bawah. Warna lebih pekat, siluet lebih tajam.",
+        "<b>Kunci fokus &amp; exposure</b> (tekan lama di layar: AE/AF Lock) agar tidak berubah saat memotret.",
+        "<b>Matikan flash.</b> Flash membuat wajah pucat &amp; merusak warna senja.",
+        "<b>Jangan zoom digital.</b> Pakai lensa 2x/3x bawaan atau mendekatlah.",
+        "<b>HDR otomatis</b> boleh menyala untuk pemandangan, matikan jika ingin siluet hitam pekat.",
+        "<b>Bersihkan lensa</b> dengan kain halus, udara pantai mudah membuatnya berkabut."], 26))
+
+# 15 composition
+text_slide(15, "Tips foto · Komposisi", 'Bingkai senja yang <span class="it">bercerita</span>',
+  tips(["<b>Aturan sepertiga:</b> nyalakan grid kamera, letakkan cakrawala di garis bawah agar langit dominan.",
+        "<b>Cakrawala harus lurus.</b> Gunakan grid atau level bawaan ponsel.",
+        "<b>Bingkai alami:</b> daun ketapang, ranting, tiang teras atau pohon kelapa.",
+        "<b>Beri skala:</b> perahu nelayan, kayak atau siluet orang membuat laut terasa luas.",
+        "<b>Jalur cahaya:</b> sejajarkan diri dengan pantulan matahari di air untuk garis emas di tengah foto."], 27))
+
+# 16 people
+photo_slide(16, "senja/27-tamu-dan-pohon-kelapa.jpg", "50% 45%", "Tips foto · Pasangan &amp; keluarga", "Siluet lebih <i class='gold'>bercerita</i> dari wajah.",
+  "Berdiri membelakangi matahari, beri jarak antar orang agar bentuk tubuh terpisah. Coba pose bergandengan, melompat, atau saling menunjuk matahari. Foto wajah? Lakukan saat <b>golden hour 16.50–17.40</b>, menghadap cahaya.", size=78)
+
+# 17 video
+text_slide(17, "Tips video · Reels &amp; TikTok", 'Rekam senja <span class="it">dalam 15 detik</span>',
+  tips(["<b>Timelapse:</b> letakkan ponsel di tripod atau di atas meja mulai <b>17.20</b>, biarkan merekam sampai 18.00.",
+        "<b>Slow motion</b> untuk ayunan, cipratan kayak atau ombak kecil di bibir pantai.",
+        "<b>Rekam vertikal 9:16</b>, 4K jika ada, dan jangan banyak menggeser ponsel.",
+        "<b>Ambil 3 sudut:</b> lebar (laut &amp; langit), sedang (orang), detail (kaki di pasir, gelas minuman).",
+        "Unggah dengan <b>#SenjaHariIni</b> &amp; tag <b>@sunaribeachresortselayar</b>. Kami repost favorit setiap minggu."], 27))
+
+# 18 what to bring
+text_slide(18, "Yang perlu dibawa", 'Bekal <span class="it">menunggu senja</span>',
+  '<div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:10px">' + tips(["Ponsel terisi penuh / power bank", "Tripod kecil atau penyangga ponsel", "Kain lap lensa"], 28) + tips(["Sandal &amp; baju yang boleh basah", "Topi &amp; kacamata hitam untuk sore", "Losion anti-nyamuk setelah gelap"], 28).replace('<i>1</i>', '<i>4</i>').replace('<i>2</i>', '<i>5</i>').replace('<i>3</i>', '<i>6</i>') + '</div>'
+  + '<div class="card" style="margin-top:30px;font-size:27px;line-height:1.5">Sewa kayak: single <b>Rp 50.000</b> · double <b>Rp 100.000</b>. Alat snorkeling mulai <b>Rp 40.000</b>/set/hari. Ayunan raksasa <b>gratis</b>.</div>')
+
+# 19 after sunset
+photo_slide(19, "malam/03-resort-malam-a-frame.jpg", "50% 60%", "Setelah matahari terbenam", "Malam <i class='gold'>belum selesai.</i>",
+  "<b>18.10</b> afterglow di bibir pantai · <b>18.30</b> Senja Dinner ikan bakar &amp; seafood (pesan H-1) · <b>sampai 21.00</b> Bajoy Beach Resto buka untuk tamu menginap · lampu-lampu bungalow menyala di antara pohon kelapa.")
 
 # 10 CTA
-T.append(f'''<div class="t f" id="sunset-10"><img class="bg" src="{P}senja/21-siluet-tamu-tepi-pantai.jpg" style="object-position:50% 60%" alt="">
+T.append(f'''<div class="t f" id="sunset-20"><img class="bg" src="{P}senja/21-siluet-tamu-tepi-pantai.jpg" style="object-position:50% 60%" alt="">
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.05) 50%,rgba(0,0,0,.7) 100%)"></div>
   <img src="{LOGO_D}" style="position:absolute;left:50%;transform:translateX(-50%);top:70px;width:280px" alt="">
   <div class="sh" style="position:absolute;left:72px;right:72px;bottom:150px;text-align:center;color:#FBF4EC">
     <div class="pf" style="font-size:76px;line-height:1.08">Senja berikutnya, <i class="gold">giliranmu.</i></div>
     <div style="font-size:28px;line-height:1.5;margin-top:20px">Tutup hari dengan <b>Senja Dinner</b> di tepi pantai, pesan paling lambat H-1.<br>Tag <b>{IG}</b> &amp; <b>#SenjaHariIni</b> di foto senjamu.</div>
     <div style="display:inline-block;margin-top:34px;padding:20px 40px;border-radius:999px;background:linear-gradient(90deg,#FDB15D,#FF8A5C);font-weight:700;font-size:28px;text-shadow:none">Reservasi · WA {WA}</div></div>
-  {foot(10, True)}</div>''')
+  {foot(20, True)}</div>''')
 
 # ================================================================== STORIES (6)
 def sfoot(light=True):

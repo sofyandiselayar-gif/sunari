@@ -1,7 +1,7 @@
 # Seri "Panduan Senja" (tips sunset & foto sunset di SunaRi)
 
 Desain ada di `social/sunset-guide/`:
-- **10 slide carousel feed** (`sunset-01…10`), ukuran 1080×1350;
+- **20 slide carousel feed** (`sunset-01…20`), ukuran 1080×1350;
 - **6 story** (`story-sunset-1…6`), ukuran 1080×1920.
 
 Untuk membuat ulang: `python3 social/build_sunset.py && node social/render_sunset.js`.
@@ -19,19 +19,24 @@ Untuk membuat ulang: `python3 social/build_sunset.py && node social/render_sunse
 
 Bulan terbaik untuk menikmati senja: **April–Desember**.
 
-## Carousel
+## Carousel (20 slide)
 | Slide | Isi |
 |---|---|
 | 01 | Sampul: **17.50**, "Jam paling ditunggu di Selayar" |
-| 02 | Jadwal sore ideal 14.00 → 18.30 |
-| 03 | Tiba paling lambat **15.00**: bandara ±10–15 menit, feri pilih yang pagi |
-| 04 | Bulan terbaik **April–Desember** |
-| 05 | Spot 1 · Bibir pantai (17.30–18.00) |
-| 06 | Spot 2 · Ayunan raksasa, gratis (17.20–17.50) |
-| 07 | Spot 3 · Teras VIP Standard (17.00–17.50) |
-| 08 | Spot 4 · Di atas kayak, Rp 50.000 / Rp 100.000 (17.00–17.40) |
-| 09 | 6 tips foto senja pakai ponsel |
-| 10 | Ajakan: Senja Dinner H-1, tag #SenjaHariIni, WA |
+| 02 | Kenapa Pantai Sunari: pesisir barat, matahari turun lurus ke laut |
+| 03 | Jadwal sore ideal 14.00 → 18.30 |
+| 04 | Tiba paling lambat **15.00**: pesawat, feri, KM Dharma Kartika |
+| 05 | Bulan terbaik **April–Desember** (Januari–Maret musim hujan) |
+| 06 | 4 fase cahaya: golden hour **16.50–17.40** · sunset **17.40–17.55** · afterglow **17.55–18.15** · blue hour **18.15–18.30** |
+| 07 | Pertanda senja cantik: awan tipis, langit bersih, habis hujan, story #SenjaHariIni |
+| 08–13 | 6 spot foto + jam terbaik: bibir pantai, ayunan raksasa, teras VIP Standard, kayak, pohon tepi pantai, kursi & payung |
+| 14 | Tips pengaturan ponsel (exposure, AE/AF lock, flash, zoom, HDR, lensa) |
+| 15 | Tips komposisi (sepertiga, cakrawala lurus, bingkai, skala, jalur cahaya) |
+| 16 | Tips foto pasangan & keluarga (siluet, pose, golden hour untuk wajah) |
+| 17 | Tips video Reels/TikTok (timelapse mulai 17.20, slow motion, 3 sudut) |
+| 18 | Yang perlu dibawa + harga kayak, snorkeling, ayunan gratis |
+| 19 | Setelah senja: afterglow, Senja Dinner, resto sampai 21.00 |
+| 20 | Ajakan: Senja Dinner H-1, tag, WhatsApp |
 
 **Caption**
 ```
