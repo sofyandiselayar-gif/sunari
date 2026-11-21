@@ -23,6 +23,8 @@ Tambahan 20 Nov 2026:
 | `senja/28-matahari-di-bawah-daun.jpg` | Matahari besar merah, perahu kecil di cakrawala | ✅ | Sampul story/Reels, cover highlight |
 | `senja/29-dua-kursi-menghadap-senja.jpg` | Dua sandaran kursi menghadap senja & jalur cahaya di laut | ✅ | Konten pasangan/honeymoon, Senja Dinner |
 | `senja/30-matahari-merah-dan-daun.jpg` | Matahari merah di balik awan, daun ketapang | ✅ | Feed tenang, akhir carousel |
+| `senja/32-payung-lampu-senja-1751.jpg` | Siluet tamu di bawah payung pantai & lampu gantung, matahari di atas laut (3 Sep, **17.51**) | ✅ (siluet) | Panduan senja (spot kursi & payung), feed, Bajoy Beach Resto |
+| `senja/33-payung-kelapa-senja-1749.jpg` | Payung, kursi kayu, pohon kelapa & jalur cahaya (11 Sep, **17.49**) | ✅ (siluet) | Feed, story, OTA (area pantai/resto) |
 
 ## Pantai & Taman
 | File | Isi | Status | Cocok untuk |

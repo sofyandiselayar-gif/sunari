@@ -127,7 +127,7 @@ spot(9, "aktivitas/07-ayunan-gaun-merah-tengah.jpg", "50% 52%", "02", "Ayunan <s
 spot(10, "vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%", "03", "Teras <span class='it'>VIP Standard</span>", "17.00–17.50", "Teras rumah panggung menghadap langsung ke arah matahari terbenam. Senja dari 'rumah sendiri'.", "foto dari dalam teras, jadikan tiang &amp; atap sebagai bingkai.")
 spot(11, "senja/17-kayak-berdua.jpg", "50% 55%", "04", "Di atas <span class='it'>kayak</span>", "17.00–17.40", "Mendayung di air tenang menyongsong senja. Sewa kayak single Rp 50.000, double Rp 100.000.", "minta teman memotret dari bibir pantai agar kayak jadi siluet.")
 spot(12, "senja/23-pohon-meranggas-senja.jpg", "50% 55%", "05", "Pohon <span class='it'>tepi pantai</span>", "17.35–17.55", "Ranting pohon meranggas di tepi pantai membingkai matahari. Favorit untuk foto artistik.", "posisikan matahari di sela ranting, lalu ketuk langit untuk exposure.")
-spot(13, "senja/07-payung-kursi-pantai.jpg", "50% 60%", "06", "Kursi <span class='it'>&amp; payung</span>", "16.30–18.00", "Duduk santai di kursi pantai sambil menunggu matahari turun. Spot paling nyaman untuk keluarga.", "foto dari belakang kursi agar kursi &amp; laut masuk satu bingkai.")
+spot(13, "senja/32-payung-lampu-senja-1751.jpg", "50% 55%", "06", "Payung <span class='it'>&amp; lampu gantung</span>", "16.30–18.00", "Kursi kayu, payung &amp; lampu gantung di tepi pantai. Pada 3 September, foto ini diambil pukul <b>17.51</b>, matahari masih di atas laut.", "foto dari belakang kursi agar kursi &amp; laut masuk satu bingkai.")
 
 # 14 phone exposure
 text_slide(14, "Tips foto · Pengaturan ponsel", 'Atur ponselmu <span class="it">sebelum 17.30</span>',
