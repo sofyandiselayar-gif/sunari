@@ -41,12 +41,12 @@ def bgimg(img, pos="50% 50%", pano=None):
     if pano is None:
         return f'<img class="bg" src="{P}{img}" style="object-position:{pos}" alt="">'
     return f'<img class="pano" src="{P}{img}" style="left:{-1080 * pano}px;object-position:{pos}" alt="">'
-def slide(n, img, pos, eyebrow, title, body, pano=None, num=None):
+def slide(n, img, pos, eyebrow, title, body, pano=None, num=None, pill=""):
     no = f'<span class="no">{num}</span>' if num else ''
     w, left = (2160, -1080 * pano) if pano is not None else (1080, 0)
     T.append(f'''<div class="t" id="kayak-{n:02d}" style="background:#FBF4EC">
   <div class="ph"><img src="{P}{img}" style="left:{left}px;width:{w}px;object-position:{pos}" alt=""></div>
-  <img class="logo" src="{LOGO_D}" alt=""><div class="pg">{n:02d} / {N}</div>
+  <img class="logo" src="{LOGO_D}" alt=""><div class="pg" style="{pill}">{n:02d} / {N}</div>
   <div class="panel"><div class="eb">{no}{eyebrow}</div><div class="h">{title}</div>{body}
     <div class="ft"><span>SunaRi · Pantai Sunari</span><span>{"Geser →" if n < N else IG}</span></div></div></div>''')
 ul = lambda items: '<ul class="k">' + "".join(f"<li><i>—</i><span>{x}</span></li>" for x in items) + "</ul>"
@@ -95,10 +95,10 @@ slide(9, "senja/41-kayak-single-belakang-b-1753.jpg", "50% 62%", "Belok &amp; be
       ul(["<b>Belok kanan:</b> dayung lebih sering atau lebih lebar di sisi kiri, dan sebaliknya.", "<b>Mundur/rem:</b> celupkan dayung di samping pinggul lalu dorong ke depan.", "Latih dulu di dekat pantai sebelum mendayung lebih jauh."]), num=6)
 
 # 10-11 panorama (senja/11)
-slide(10, "senja/11-kayak-dan-pulau.jpg", "50% 77%", "Mendayung berdua", 'Satu kayak, <i>satu ritme</i>',
-      ul(["Yang di <b>depan</b> menentukan ritme dayungan.", "Yang di <b>belakang</b> mengikuti ritme &amp; mengarahkan kayak.", "Sepakati aba-aba sederhana: \"kiri\", \"kanan\", \"stop\"."]), pano=0, num=7)
-slide(11, "senja/11-kayak-dan-pulau.jpg", "50% 77%", "Arah &amp; jarak", 'Tetap di <i>depan resort</i>',
-      ul(["Mendayung sejajar pantai, di area yang masih terlihat dari bibir pantai.", "Pulau Gusung di seberang terlihat dekat, tapi <b>bukan</b> tujuan kayak sore.", "Tanyakan batas area aman ke staf sebelum berangkat."]), pano=1, num=8)
+slide(10, "senja/11-kayak-dan-pulau.jpg", "50% 100%", "Mendayung berdua", 'Satu kayak, <i>satu ritme</i>',
+      ul(["Yang di <b>depan</b> menentukan ritme dayungan.", "Yang di <b>belakang</b> mengikuti ritme &amp; mengarahkan kayak.", "Sepakati aba-aba sederhana: \"kiri\", \"kanan\", \"stop\"."]), num=7)
+slide(11, "senja/51-kayak-double-jalur-cahaya-1751.jpg", "50% 58%", "Arah &amp; jarak", 'Tetap di <i>depan resort</i>',
+      ul(["Mendayung sejajar pantai, di area yang masih terlihat dari bibir pantai.", "Pulau Gusung di seberang terlihat dekat, tapi <b>bukan</b> tujuan kayak sore.", "Tanyakan batas area aman ke staf sebelum berangkat."]), num=8)
 
 # 12 surut
 slide(12, "senja/52-pohon-kelapa-bungalow-1747.jpg", "50% 56%", "Pasang-surut", 'Perhatikan <i>air surut</i>',
@@ -113,8 +113,8 @@ slide(14, "senja/02b-pantai-kayak-di-pasir-balanced.jpg", "50% 52%", "Yang perlu
 # 15-16 foto
 slide(15, "senja/39-kayak-single-samping-1753.jpg", "50% 58%", "Foto dari kayak", 'Aman dulu, <i>baru foto</i>',
       ul(["Berhenti mendayung &amp; letakkan dayung melintang di pangkuan sebelum memotret.", "Ikat ponsel ke pergelangan atau leher.", "Turunkan exposure di layar supaya langit jingga tidak pucat."]), num=12)
-slide(16, "senja/51-kayak-double-jalur-cahaya-1751.jpg", "50% 55%", "Foto siluet terbaik", 'Diambil <i>dari bibir pantai</i>',
-      ul(["Minta teman memotret dari pantai, sejajar jalur cahaya matahari.", "Pose favorit: dayung terangkat ke atas atau membentuk garis miring.", "Jam emasnya: <b>17.30–17.50</b>, saat matahari masih bulat di atas laut."]), num=13)
+slide(16, "senja/15-dua-kayak-oranye.jpg", "50% 36%", "Foto siluet terbaik", 'Diambil <i>dari bibir pantai</i>',
+      ul(["Minta teman memotret dari pantai, sejajar jalur cahaya matahari.", "Pose favorit: dayung terangkat ke atas atau membentuk garis miring.", "Jam emasnya: <b>17.30–17.50</b>, saat matahari masih bulat di atas laut."]), num=13, pill="top:auto;bottom:600px")
 
 # 17 anak
 slide(17, "senja/17-kayak-berdua.jpg", "50% 69%", "Bersama anak", 'Si kecil ikut <i>mendayung?</i>',
@@ -130,7 +130,7 @@ slide(19, "senja/10-kayak-pantulan.jpg", "50% 100%", "Cuaca &amp; etika", 'Laut 
       ul(["Angin kencang, ombak besar, atau awan gelap? Tunda dulu, senja masih ada besok.", "Beri tahu staf saat berangkat &amp; saat kembali.", "Jangan buang sampah ke laut, bawa kembali semua barangmu."]), num=16)
 
 # 20 CTA
-T.append(f'''<div class="t" id="kayak-20">{bgimg("senja/15-dua-kayak-oranye.jpg", "50% 35%")}
+T.append(f'''<div class="t" id="kayak-20">{bgimg("senja/46-dua-kayak-emas-b-1743.jpg", "50% 95%")}
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 45%,rgba(0,0,0,.35) 100%)"></div>
   <img class="logo" src="{LOGO_D}" alt=""><div class="pg">20 / {N}</div>
   <div class="card" style="text-align:center"><div class="eb" style="justify-content:center">Siap mendayung?</div>
