@@ -28,8 +28,10 @@ body{background:#bbb;font-family:Montserrat,sans-serif}
 .sh{color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.6),0 1px 3px rgba(0,0,0,.55)}
 .top{position:absolute;left:64px;right:64px;top:150px;display:flex;align-items:center;justify-content:space-between}
 .pill{font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;color:#FBF4EC;background:rgba(15,8,4,.45);border:1px solid rgba(251,244,236,.35);padding:12px 20px;border-radius:999px}
+.today{font-family:'Playfair Display',serif;font-weight:600;font-size:112px;line-height:1;letter-spacing:.01em;color:#FBF4EC}
+.today i{font-style:italic;font-weight:500;color:#FDB15D}
 .date{font-weight:800;font-size:26px;letter-spacing:.2em;text-transform:uppercase;color:#FDB15D}
-.big{font-family:'Playfair Display',serif;font-weight:600;font-size:270px;line-height:.95;letter-spacing:-.01em}
+.big{font-family:'Playfair Display',serif;font-weight:600;font-size:240px;line-height:.95;letter-spacing:-.01em}
 .unit{font-weight:700;font-size:28px;letter-spacing:.2em;text-transform:uppercase}
 .badge{display:inline-block;margin-top:18px;font-weight:800;font-size:21px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:linear-gradient(90deg,#FDB15D,#FF8A5C);padding:10px 20px;border-radius:999px;text-shadow:none}
 .card{position:absolute;left:48px;right:48px;bottom:250px;background:rgba(251,244,236,.95);border-radius:36px;padding:26px 40px 22px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
@@ -54,11 +56,12 @@ for i in range((END - START).days + 1):
             (f"{hm(ss + 1)}–{hm(ss + 20)}", "Afterglow", "Langit jingga, merah muda & ungu", False)]
     rows_html = "".join(f'<div class="row"><div class="t{" hi" if h else ""}" style="{"font-size:40px" if "–" in t else ""}">{t}</div><div class="l"><b>{a}</b><span>{b}</span></div></div>' for t, a, b, h in rows)
     T.append(f'''<div class="s" id="senja-{d.isoformat()}"><img class="bg" src="{P}{img}" style="object-position:{pos}" alt=""><div class="veil"></div>
-  <div class="top"><img src="{LOGO}" style="width:250px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))" alt=""><span class="pill">Senja hari ini</span></div>
-  <div class="sh" style="position:absolute;left:64px;right:64px;top:330px">
-    <div class="date">{HARI[d.weekday()]} · {d.day} {BULAN[d.month]} {d.year}</div>
-    <div class="big" style="margin-top:14px">{hm(ss)}</div>
-    <div class="unit" style="margin-top:6px">WITA · Matahari terbenam di Pantai Sunari</div>
+  <div class="top"><img src="{LOGO}" style="width:250px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))" alt=""><span class="pill">Pantai Sunari</span></div>
+  <div class="sh" style="position:absolute;left:64px;right:64px;top:300px">
+    <div class="today">Sunset <i>Today</i></div>
+    <div class="date" style="margin-top:14px">{HARI[d.weekday()]} · {d.day} {BULAN[d.month]} {d.year}</div>
+    <div class="big" style="margin-top:0">{hm(ss)}</div>
+    <div class="unit" style="margin-top:22px">WITA · Matahari terbenam di Pantai Sunari</div>
     {f'<div class="badge">{badge}</div>' if badge else ''}</div>
   <div class="card">{rows_html}<div class="ft"><span>Pantai Sunari · Selayar</span><span>{TAG}</span></div></div></div>''')
 (H / "senja_harian.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')

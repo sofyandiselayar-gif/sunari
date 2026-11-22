@@ -130,7 +130,7 @@ Reservasi: WhatsApp 0821-8903-3044
 ```
 
 ## Story harian "Senja Hari Ini" 22 Nov – 31 Des 2026 (`social/senja-harian/senja-YYYY-MM-DD.png`)
-Ada 40 story ukuran 1080×1920, satu gambar untuk tiap hari. Unggah story sesuai tanggal di nama file, sebaiknya pukul **12.00–15.00 WITA** supaya followers sempat bersiap.
+Ada 40 story ukuran 1080×1920, satu gambar untuk tiap hari, dengan judul besar **"Sunset Today"**. Unggah story sesuai tanggal di nama file, sebaiknya pukul **12.00–15.00 WITA** supaya followers sempat bersiap.
 
 **Isi tiap story:**
 - hari & tanggal;
