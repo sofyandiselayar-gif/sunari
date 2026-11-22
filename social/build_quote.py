@@ -70,14 +70,12 @@ CSS2 = """
 .cs .bt{position:absolute;left:64px;right:64px;bottom:56px;display:flex;justify-content:space-between;font-weight:700;font-size:18px;letter-spacing:.26em;text-transform:uppercase;color:#7A5039;padding-top:18px;border-top:1.5px solid rgba(138,95,72,.3)}
 .cs .bt .h{color:#C0592C;letter-spacing:.12em;text-transform:none}
 """
-SL = [("senja/10-kayak-pantulan.jpg", "50% 55%", 'Matahari yang <em>menari</em>', "SunaRi: <b>sun</b> dan <b>nari</b>. Matahari yang menari turun ke laut Selayar."),
-      ("senja/16-perahu-nelayan.jpg", "50% 60%", 'Perahu pulang <em>ke darat</em>', "Saat langit oranye, nelayan pun pulang."),
-      ("senja/18-kayak-berdua-pelampung.jpg", "50% 60%", 'Tempat senja <em>pulang</em>', "Dan setiap senja, kamu juga pulang ke sini.")]
+SL = [("senja/18-kayak-berdua-pelampung.jpg", "50% 60%", 'Tempat senja <em>pulang</em>', "Dan setiap senja, kamu juga pulang ke sini.")]
 for k, (img, pos, t, sub) in enumerate(SL, 2):
     T.append(f'''<div class="t cs" id="carousel-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
   <div class="kick">Setiap hari berakhir indah</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
-  <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>0{k} / 05</span></div></div>''')
-T.append(f'''<div class="t cs" id="carousel-05"><div class="frame" style="border-color:rgba(138,95,72,.4)"></div>
+  <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>0{k} / 03</span></div></div>''')
+T.append(f'''<div class="t cs" id="carousel-03"><div class="frame" style="border-color:rgba(138,95,72,.4)"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:150px;width:400px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:470px;text-align:center;color:#45301F">
     <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Setiap hari berakhir indah</div>
