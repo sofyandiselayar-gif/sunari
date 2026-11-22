@@ -55,3 +55,39 @@ T.append(f'''<div class="t" id="quote-c-split" style="background:#FBF4EC">
   <div class="tag" style="color:#C0592C;bottom:62px">#sunarisunsetmoment</div></div>''')
 (H / "quote.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T))
+
+# ================================================================== LANJUTAN CAROUSEL (slide 2–5), gaya baru
+WA = "0821-8903-3044"
+CSS2 = """
+.cs{background:#FBF4EC}
+.cs .ph{position:absolute;left:60px;right:60px;top:60px;height:820px;border-radius:24px;overflow:hidden;box-shadow:0 14px 36px rgba(90,62,49,.18)}
+.cs .ph img{width:100%;height:100%;object-fit:cover}
+.cs .ph .lg{position:absolute;left:28px;top:26px;width:200px;height:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.cs .kick{position:absolute;left:64px;top:930px;font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039}
+.cs .ttl{position:absolute;left:64px;right:64px;top:975px;font-family:'Playfair Display',serif;font-size:76px;line-height:1.1;color:#45301F}
+.cs .ttl em{font-style:italic;color:#A0603E}
+.cs .sub{position:absolute;left:64px;right:64px;top:1080px;font-size:31px;line-height:1.5;color:#4A3426}
+.cs .bt{position:absolute;left:64px;right:64px;bottom:56px;display:flex;justify-content:space-between;font-weight:700;font-size:18px;letter-spacing:.26em;text-transform:uppercase;color:#7A5039;padding-top:18px;border-top:1.5px solid rgba(138,95,72,.3)}
+.cs .bt .h{color:#C0592C;letter-spacing:.12em;text-transform:none}
+"""
+SL = [("senja/10-kayak-pantulan.jpg", "50% 55%", 'Matahari yang <em>menari</em>', "SunaRi: <b>sun</b> dan <b>nari</b>. Matahari yang menari turun ke laut Selayar."),
+      ("senja/16-perahu-nelayan.jpg", "50% 60%", 'Perahu pulang <em>ke darat</em>', "Saat langit oranye, nelayan pun pulang."),
+      ("senja/18-kayak-berdua-pelampung.jpg", "50% 60%", 'Tempat senja <em>pulang</em>', "Dan setiap senja, kamu juga pulang ke sini.")]
+for k, (img, pos, t, sub) in enumerate(SL, 2):
+    T.append(f'''<div class="t cs" id="carousel-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
+  <div class="kick">Setiap hari berakhir indah</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
+  <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>0{k} / 05</span></div></div>''')
+T.append(f'''<div class="t cs" id="carousel-05"><div class="frame" style="border-color:rgba(138,95,72,.4)"></div>
+  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:150px;width:400px" alt="">
+  <div style="position:absolute;left:100px;right:100px;top:470px;text-align:center;color:#45301F">
+    <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Setiap hari berakhir indah</div>
+    <div class="q emb" style="font-size:88px;margin-top:16px">Tempat <em style="color:#A0603E">senja pulang</em></div>
+    <div style="margin-top:44px;border-top:1.5px solid rgba(138,95,72,.3)">
+      {"".join(f'<div style="padding:22px 0;border-bottom:1.5px solid rgba(138,95,72,.3);font-size:30px">{x}</div>' for x in ["Resort tepi Pantai Sunari", "Kepulauan Selayar, Sulawesi Selatan", "<i>Where every day ends beautifully</i>"])}</div></div>
+  <div style="position:absolute;left:0;right:0;bottom:150px;text-align:center">
+    <div style="font-weight:700;font-size:20px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Info &amp; reservasi</div>
+    <div style="font-family:'Playfair Display',serif;font-size:58px;color:#45301F;margin-top:8px"><i style="color:#A0603E">WhatsApp</i> {WA}</div></div>
+  <div class="ft" style="color:#7A5039;bottom:96px">Pantai Sunari · Selayar</div>
+  <div class="tag" style="color:#C0592C;bottom:62px">#sunarisunsetmoment</div></div>''')
+(H / "quote.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}{CSS2}</style></head><body>{"".join(T)}</body></html>')
+print(len(T))
