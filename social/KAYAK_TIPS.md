@@ -1,6 +1,6 @@
 # Carousel "Tips Kano/Kayak Saat Senja" (20 slide, 1080×1350)
 
-Desain: `social/kayak-tips/kayak-01…20.png`. Untuk membuat ulang: `python3 social/build_kayak.py && node social/render_kayak.js`.
+Desain feed: `social/kayak-tips/kayak-01…20.png` (1080×1350). Versi story: `social/kayak-tips-story/story-kayak-01…20.png` (1080×1920), isi & foto sama, teks di luar area tombol Instagram. Untuk membuat ulang: `python3 social/build_kayak.py && node social/render_kayak.js`.
 Layout tiap slide: foto di bagian atas, panel krem berisi teks di bagian bawah.
 
 **Foto yang dipakai di 2 slide:**

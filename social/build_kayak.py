@@ -143,3 +143,23 @@ T.append(f'''<div class="t" id="kayak-20">{bgimg("senja/46-dua-kayak-emas-b-1743
 
 (H / "kayak.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T), "slide")
+
+# ================================================================== VERSI STORY (1080x1920)
+# Layout sama, tinggi 1920: foto 1080 px di atas, panel di bawah; isi di luar zona tombol IG (atas & bawah ±250 px).
+SCSS = CSS + """
+.t{height:1920px}
+.ph{height:1080px}.ph img{height:1080px}
+.panel{top:1080px;padding-top:40px}
+.panel .ft{bottom:250px}
+.logo{top:150px;width:250px}.pg{top:168px}
+.h{font-size:62px}
+ul.k li{font-size:31px}
+"""
+sh = "".join(T)
+sh = sh.replace('id="kayak-', 'id="story-kayak-')
+sh = sh.replace('style="top:auto;bottom:600px"', 'style="top:auto;bottom:900px"')          # slide 16 pill
+sh = sh.replace('position:absolute;left:64px;right:64px;top:200px;color:#FBF4EC', 'position:absolute;left:64px;right:64px;top:360px;color:#FBF4EC')   # cover title
+sh = sh.replace('position:absolute;left:64px;right:64px;bottom:70px;color:#FBF4EC', 'position:absolute;left:64px;right:64px;bottom:300px;color:#FBF4EC')  # cover bottom
+sh = sh.replace('<div class="card" style="text-align:center">', '<div class="card" style="text-align:center;top:290px;bottom:auto">')  # CTA
+(H / "kayak_story.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{SCSS}</style></head><body>{sh}</body></html>')
+print(len(T), "story")
