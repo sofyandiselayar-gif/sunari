@@ -16,7 +16,7 @@ for f in sorted(glob.glob(str(S / "*.jpg"))):
     a = np.asarray(im.filter(ImageFilter.GaussianBlur(6)).convert("L"), float)
     y, x = np.unravel_index(a.argmax(), a.shape)
     items.append((n, round(100 * x / a.shape[1]), round(100 * y / a.shape[0]), float(np.asarray(im.convert("L")).mean())))
-COLS, ROWS = 13, 5; CARD = {(r, c) for r in range(1, 3) for c in range(4, 9)}
+COLS, ROWS = 11, 5; CARD = set()
 cells = sorted([(r, c) for r in range(ROWS) for c in range(COLS) if (r, c) not in CARD], key=lambda rc: (rc[0] + rc[1], rc[0]))
 assert len(cells) == len(items), (len(cells), len(items))
 items.sort(key=lambda t: -t[3])  # terang (golden hour) di kiri atas -> gelap (afterglow) di kanan bawah
@@ -26,13 +26,12 @@ LOGO = "../assets/logo-sunari-color.png"
 html = f'''<!doctype html><html lang="id"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 <style>*{{margin:0;padding:0;box-sizing:border-box}}body{{background:#bbb}}
-#wa-cover{{width:1211px;height:681px;margin:20px auto;display:grid;grid-template-columns:repeat({COLS},1fr);grid-template-rows:repeat({ROWS},1fr);gap:2px;background:#FBF4EC;padding:2px}}
+#wa-cover{{position:relative;width:1211px;height:681px;margin:20px auto;display:grid;grid-template-columns:repeat({COLS},1fr);grid-template-rows:repeat({ROWS},1fr);gap:2px;background:#FBF4EC;padding:2px}}
 #wa-cover img{{width:100%;height:100%;object-fit:cover;display:block;min-height:0;min-width:0}}
-.card{{grid-row:2/4;grid-column:5/10;background:radial-gradient(ellipse at 50% 60%,#4A2E1C 0%,#2E1D12 75%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px}}
-.lgm{{width:400px!important;height:auto!important;object-fit:contain!important;filter:drop-shadow(0 0 12px rgba(253,177,93,.35))}}
+.lgm{{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:600px!important;height:auto!important;object-fit:contain!important}}
 .tg{{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:#45301F;margin-top:8px;text-shadow:0 1px 0 #fff}}
 .ln{{width:60px;height:2px;background:linear-gradient(90deg,#FDB15D,#FF8A5C);margin:12px auto}}
 .sm{{font-family:Montserrat,sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:#7A5039}}
 </style></head><body><div id="wa-cover">{tiles}
-<div class="card"><img class="lgm" src="../assets/logo-sunari-sunset.png" alt=""></div></div></body></html>'''
+<img class="lgm" src="../assets/logo-sunari-sunset-halo.png" alt=""></div></body></html>'''
 (H / "wa_cover.html").write_text(html); print(len(items), "foto")
