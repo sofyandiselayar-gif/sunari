@@ -39,8 +39,8 @@ Simpan 20 tips ini sebelum turun ke air: jam terbaik, cara mendayung, keamanan, 
 ⏰ 17.00 turun ke air · 17.50 matahari terbenam · 18.10 sudah di pantai
 🛶 Kayak single Rp 50.000 · double Rp 100.000
 
-Tag @sunaribeachresortselayar & #SenjaHariIni di foto kayakmu.
+Tag @sunaribeachresortselayar & #sunarisunsetmoment di foto kayakmu.
 Reservasi: WhatsApp 0821-8903-3044
 
-#SunaRiSelayar #KayakSelayar #SenjaHariIni #PantaiSunari #SunsetKayak #Selayar #KepulauanSelayar
+#SunaRiSelayar #KayakSelayar #sunarisunsetmoment #PantaiSunari #SunsetKayak #Selayar #KepulauanSelayar
 ```

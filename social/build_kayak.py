@@ -138,7 +138,7 @@ T.append(f'''<div class="t" id="kayak-20">{bgimg("senja/46-dua-kayak-emas-b-1743
     <div style="display:flex;justify-content:center;gap:40px;margin-top:20px">
       <div><div class="eb" style="font-size:16px;justify-content:center">Single</div><div class="time" style="font-size:52px;margin-top:6px">Rp 50.000</div></div>
       <div><div class="eb" style="font-size:16px;justify-content:center">Double</div><div class="time" style="font-size:52px;margin-top:6px">Rp 100.000</div></div></div>
-    <div class="p" style="font-size:24px">Sewa di pantai depan resort · tag <b>{IG}</b> &amp; <b>#SenjaHariIni</b></div>
+    <div class="p" style="font-size:24px">Sewa di pantai depan resort · tag <b>{IG}</b> &amp; <b>#sunarisunsetmoment</b></div>
     <div style="display:inline-block;margin-top:18px;padding:16px 36px;border-radius:999px;background:linear-gradient(90deg,#FDB15D,#FF8A5C);color:#fff;font-weight:700;font-size:25px">Reservasi · WA {WA}</div></div></div>''')
 
 (H / "kayak.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
