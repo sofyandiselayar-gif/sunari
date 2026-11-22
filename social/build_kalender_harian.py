@@ -16,7 +16,7 @@ def sunset(d):
 START, END = dt.date(2026, 11, 22), dt.date(2026, 12, 31)
 DAYS = [START + dt.timedelta(i) for i in range((END - START).days + 1)]
 HARI = ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"]
-SPECIAL = {dt.date(2026, 11, 22): "Hari ini", dt.date(2026, 12, 25): "Natal", dt.date(2026, 12, 31): "Senja terakhir 2026"}
+SPECIAL = {dt.date(2026, 12, 25): "Natal", dt.date(2026, 12, 31): "Senja terakhir 2026"}
 
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">'
 CSS = """

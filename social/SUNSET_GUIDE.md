@@ -116,13 +116,13 @@ Reservasi: WhatsApp 0821-8903-3044
 ## Kalender Senja Harian November – Desember 2026 (1 Nov – 31 Des) (`social/kalender-senja-harian/`)
 - Feed (1080×1350): `kalender-harian-nov`, `kalender-harian-des`. Bisa diposting sebagai carousel 2 slide.
 - Story (1080×1920): `story-kalender-harian-nov`, `story-kalender-harian-des`.
-- Jam dihitung untuk tiap hari, dan tanggal penting disorot: 22 Nov (hari ini), 25 Des (Natal), 31 Des (senja terakhir 2026).
+- Jam dihitung untuk tiap hari, dan tanggal penting disorot: 25 Des (Natal), 31 Des (senja terakhir 2026).
 - Untuk membuat ulang: `python3 social/build_kalender_harian.py && node social/render_kalender_harian.js`.
 
 **Caption**
 ```
 Kalender senja harian Pantai Sunari, November & Desember 2026 🌅
-Senja makin sore menjelang akhir tahun: 17.57 hari ini, 18.15 di senja terakhir 2026.
+Senja makin sore menjelang akhir tahun: 17.51 di awal November, 18.15 di senja terakhir 2026.
 Simpan & tandai tanggalmu. Datang ke pantai 30 menit sebelumnya.
 
 Reservasi: WhatsApp 0821-8903-3044
