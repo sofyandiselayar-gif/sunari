@@ -50,11 +50,11 @@ ICONS.append(("07g-find-us", "Find Us", f'''<g {S}><path d="M100 30 a32 32 0 0 1
    <path d="M50 160 Q74 136 100 150 T146 146" stroke-dasharray="0.1 16"/></g>
    <circle cx="100" cy="62" r="11" fill="{D}"/><circle cx="36" cy="164" r="9" fill="{D}"/>
    <path d="M166 118 a12 12 0 0 1 12 12 c0 10 -12 22 -12 22 s-12 -12 -12 -22 a12 12 0 0 1 12 -12 Z" fill="{D}"/><circle cx="166" cy="130" r="4.5" fill="#FBF4EC"/>'''))
-ICONS.append(("07h-kalender-senja", "Kalender Senja", f'''<g {S}><rect x="42" y="46" width="116" height="104" rx="12"/><line x1="42" y1="72" x2="158" y2="72"/>
-   <line x1="72" y1="34" x2="72" y2="56"/><line x1="128" y1="34" x2="128" y2="56"/><line x1="66" y1="126" x2="134" y2="126"/></g>
-   <path d="M76 126 A24 24 0 0 1 124 126 Z" fill="{D}"/>
-   <g {S}><line x1="100" y1="86" x2="100" y2="92"/><line x1="76" y1="96" x2="80" y2="100"/><line x1="124" y1="96" x2="120" y2="100"/></g>
-   <text x="100" y="186" text-anchor="middle" font-family="Playfair Display" font-size="34" letter-spacing="3" fill="{D}" style="font-variant-numeric:lining-nums">2026</text>'''))
+ICONS.append(("07h-kalender-senja", "Kalender Senja", f'''<g {S}><rect x="56" y="40" width="88" height="82" rx="10"/><line x1="56" y1="60" x2="144" y2="60"/>
+   <line x1="78" y1="30" x2="78" y2="48"/><line x1="122" y1="30" x2="122" y2="48"/><line x1="70" y1="104" x2="130" y2="104"/></g>
+   <path d="M82 104 A18 18 0 0 1 118 104 Z" fill="{D}"/>
+   <g {S}><line x1="100" y1="72" x2="100" y2="78"/><line x1="80" y1="80" x2="84" y2="84"/><line x1="120" y1="80" x2="116" y2="84"/></g>
+   <text x="100" y="166" text-anchor="middle" font-family="Playfair Display" font-size="44" letter-spacing="4" fill="{D}" style="font-variant-numeric:lining-nums">2026</text>'''))
 for i, (m, name) in enumerate([("APR","Sunset April"),("MEI","Sunset Mei"),("JUN","Sunset Juni"),("JUL","Sunset Juli"),
                                 ("AGU","Sunset Agustus"),("SEP","Sunset Sept"),("OKT","Sunset Oktober"),("NOV","Sunset November"),("DES","Sunset Desember")], 9):
     ICONS.append((f"{i:02d}-sunset-{m.lower()}", name, month(m)))
