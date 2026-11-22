@@ -14,3 +14,7 @@ File: `sampul-whatsapp-business.png` · 2424 × 1362 px (16:9; 2× dari ukuran a
 Foto profil (lingkaran) biasanya menutupi bagian bawah tengah sampul, jadi logo diletakkan sedikit di atas tengah. Kalau menu sampul belum muncul, perbarui aplikasi WhatsApp Business (fitur ini dirilis bertahap).
 
 Build ulang: `python3 social/build_wa_cover.py && node social/render_wa_cover.js`
+
+## Foto profil pasangan sampul
+`social/profile/pp-sunset.png` (1080 × 1080): logo warna senja di atas latar cokelat gelap yang sama dengan panel logo di sampul.
+Pratinjau tampilan profil: `social/profile/preview-whatsapp.png`.
