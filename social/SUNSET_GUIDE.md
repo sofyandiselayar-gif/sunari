@@ -142,6 +142,6 @@ Ada 40 story ukuran 1080×1920, satu gambar untuk tiap hari. Unggah story sesuai
   - **terbenam**;
   - afterglow (+1 sampai +20 menit).
 
-**Label khusus:** Akhir pekan (Sabtu–Minggu), "Selamat Hari Natal" (25 Des), "Senja terakhir 2026" (31 Des). Foto latar bergantian dari 14 foto senja milik resort.
+**Label khusus:** Akhir pekan (Sabtu–Minggu), "Selamat Hari Natal" (25 Des), "Senja terakhir 2026" (31 Des). Foto latar: 40 foto senja berbeda milik resort, tidak ada foto yang berulang.
 
 Untuk membuat ulang: `python3 social/build_senja_harian.py && node social/render_senja_harian.js`.
