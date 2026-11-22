@@ -12,7 +12,7 @@ Carousel 7 slide · format 1080 × 1350 (4:5) · SunaRi Beach Resort Selayar
 | 2 | `standard-02.png` | Pagi menghadap laut (teras, crop berbeda) |
 | 3 | `standard-03.png` | Queen bed, atap tinggi |
 | 4 | `standard-04.png` | Nyaman untuk berdua |
-| 5 | `standard-05.png` | Nuansa bambu (kamar mandi) |
+| 5 | `standard-05.png` | Lantai batu alam (kamar mandi) |
 | 6 | `standard-06.png` | Kamar mandi di dalam |
 | 7 | `standard-07.png` | Penutup: fasilitas & WhatsApp |
 
@@ -44,13 +44,13 @@ Carousel 7 slide · format 1080 × 1350 (4:5) · SunaRi Beach Resort Selayar
 ```
 Pagi menghadap laut Selayar. 🌊
 
-Standard Bungalow di SunaRi: bungalow kayu dengan atap tinggi, queen bed yang nyaman, dan teras pribadi yang luas untuk kopi pagi sambil memandang laut dan taman. Kamar mandi dalamnya bernuansa bambu dengan lantai batu alam.
+Standard Bungalow di SunaRi: bungalow kayu dengan atap tinggi, queen bed yang nyaman, dan teras pribadi yang luas untuk kopi pagi sambil memandang laut dan taman. Kamar mandi dalamnya berlantai batu alam.
 
 ✨ Standard Bungalow
 • Queen bed · untuk 2 tamu (maks. 3 dengan extra bed)
 • Termasuk sarapan
 • AC, Wi-Fi, set kopi/teh & pemanas air
-• Kamar mandi dalam bernuansa bambu
+• Kamar mandi dalam berlantai batu alam
 • Teras pribadi luas dengan kursi santai
 
 Geser untuk room tour lengkapnya, lalu simpan untuk liburanmu berikutnya. 🤍
@@ -85,7 +85,7 @@ Geser untuk room tour lengkapnya, lalu simpan untuk liburanmu berikutnya. 🤍
 2. Meja di teras kayu dengan pagar putih, laut dan taman di kejauhan.
 3. Kamar kayu dengan queen bed, atap tinggi dan AC.
 4. Queen bed dengan meja samping dan tirai, dinding kayu.
-5. Kamar mandi berdinding bambu dengan cermin dan lantai batu alam.
+5. Kamar mandi dengan cermin besar dan lantai batu alam.
 6. Kamar mandi dengan wastafel, shower dan toilet duduk.
 7. Daftar fasilitas Standard Bungalow dan nomor WhatsApp 0821-8903-3044.
 
@@ -96,7 +96,7 @@ Geser untuk room tour lengkapnya, lalu simpan untuk liburanmu berikutnya. 🤍
 - **Kapasitas:** 2 tamu, maks. 3 dengan 1 extra bed (berbayar)
 - **Tempat tidur:** queen bed
 - **Termasuk:** sarapan
-- **Fasilitas:** AC, Wi-Fi, set kopi/teh & pemanas air, meja kerja/rias, tirai blackout, setrika atas permintaan, handuk & perlengkapan mandi, bantal & selimut tambahan, kamar mandi dalam bernuansa bambu dengan lantai batu alam, teras pribadi luas dengan kursi santai (pemandangan laut & taman)
+- **Fasilitas:** AC, Wi-Fi, set kopi/teh & pemanas air, meja kerja/rias, tirai blackout, setrika atas permintaan, handuk & perlengkapan mandi, bantal & selimut tambahan, kamar mandi dalam berlantai batu alam, teras pribadi luas dengan kursi santai (pemandangan laut & taman)
 - **Air panas:** **tidak** (air panas hanya di VIP Superior)
 - **Harga:** tidak ditulis di Instagram. Jawab harga **lewat WhatsApp/DM** saja.
 

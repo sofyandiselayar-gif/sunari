@@ -31,14 +31,14 @@ SL = [("01-teras-view-laut.jpg", "50% 55%", 'Standard <em>Bungalow</em>', "Bunga
       ("01-teras-view-laut.jpg", "0% 50%;transform:scale(1.5);transform-origin:0% 62%", 'Pagi menghadap <em>laut</em>', "Teras pribadi yang luas dengan kursi santai, laut dan taman di depan mata.", KICK),
       ("03-kamar-depan.jpg", "50% 60%", 'Queen bed, <em>atap tinggi</em>', "Kamar kayu dengan atap tinggi, AC dan tirai blackout.", KICK),
       ("02-kamar-sudut.jpg", "50% 60%", 'Nyaman untuk <em>berdua</em>', "Untuk 2 tamu, maks. 3 dengan extra bed. Ada meja kerja/rias dan set kopi/teh.", KICK),
-      ("04-kamar-mandi-bambu.jpg", "50% 55%", 'Nuansa <em>bambu</em>', "Kamar mandi dalam berdinding bambu dengan lantai batu alam.", KICK),
+      ("04-kamar-mandi-bambu.jpg", "50% 55%", 'Lantai <em>batu alam</em>', "Kamar mandi dalam dengan cermin besar dan lantai batu alam.", KICK),
       ("05-kamar-mandi-toilet.jpg", "50% 60%", 'Kamar mandi <em>di dalam</em>', "Shower, wastafel dan toilet duduk di dalam kamar.", KICK)]
 T = []
 for k, (img, pos, t, sub, kick) in enumerate(SL, 1):
     T.append(f'''<div class="t{' cv' if k == 1 else ''}" id="standard-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
   <div class="kick">{kick}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>{k:02d} / {N:02d}</span></div></div>''')
-FX = ["Queen bed", "Termasuk sarapan", "AC &amp; Wi-Fi", "Set kopi/teh", "Pemanas air", "Tirai blackout", "Meja kerja/rias", "Kamar mandi bambu", "Shower &amp; toilet duduk", "Teras pribadi luas"]
+FX = ["Queen bed", "Termasuk sarapan", "AC &amp; Wi-Fi", "Set kopi/teh", "Pemanas air", "Tirai blackout", "Meja kerja/rias", "Lantai batu alam", "Shower &amp; toilet duduk", "Teras pribadi luas"]
 T.append(f'''<div class="t" id="standard-07"><div class="frame"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:120px;width:360px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:420px;text-align:center;color:#45301F">

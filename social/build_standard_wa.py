@@ -25,11 +25,11 @@ T.append(f'''<div class="t" id="wa-standard-01">
     <div class="emb" style="font-family:'Playfair Display',serif;font-size:84px;line-height:1.1;color:#45301F;margin-top:10px">Standard <em style="color:#A0603E">Bungalow</em></div>
     <div style="font-size:28px;color:#4A3426;margin-top:12px">Bungalow kayu · Queen bed · Termasuk sarapan</div></div></div>''')
 PH = [("01-teras-view-laut.jpg", "0% 50%;transform:scale(1.5);transform-origin:0% 62%", "Teras menghadap laut"), ("03-kamar-depan.jpg", "50% 60%", "Queen bed"),
-      ("02-kamar-sudut.jpg", "50% 60%", "Kamar"), ("04-kamar-mandi-bambu.jpg", "50% 55%", "Kamar mandi bambu"),
+      ("02-kamar-sudut.jpg", "50% 60%", "Kamar"), ("04-kamar-mandi-bambu.jpg", "50% 55%", "Kamar mandi batu alam"),
       ("05-kamar-mandi-toilet.jpg", "50% 60%", "Kamar mandi dalam")]
 for k, (img, pos, lb) in enumerate(PH, 2):
     T.append(f'''<div class="t" id="wa-standard-{k:02d}"><img class="bg" src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""><div class="lb">{lb}</div></div>''')
-FX = ["Queen bed", "Termasuk sarapan", "AC &amp; Wi-Fi", "Set kopi/teh", "Pemanas air", "Tirai blackout", "Meja kerja/rias", "Kamar mandi bambu", "Shower &amp; toilet duduk", "Teras pribadi luas"]
+FX = ["Queen bed", "Termasuk sarapan", "AC &amp; Wi-Fi", "Set kopi/teh", "Pemanas air", "Tirai blackout", "Meja kerja/rias", "Lantai batu alam", "Shower &amp; toilet duduk", "Teras pribadi luas"]
 T.append(f'''<div class="t" id="wa-standard-07"><div style="position:absolute;inset:32px;border:1.5px solid rgba(138,95,72,.4)"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:80px;width:300px" alt="">
   <div style="position:absolute;left:90px;right:90px;top:330px;text-align:center">
