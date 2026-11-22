@@ -3,7 +3,7 @@ Run: python3 social/build_vipstd.py && node social/render_vipstd.js -> social/vi
 import pathlib
 H = pathlib.Path(__file__).parent
 LOGO = "../assets/logo-sunari-color.png"; LOGO_D = "../assets/logo-sunari-color-dark.png"; P = "../assets/photos/vip-standard-bungalow/"
-WA = "0821-8903-3044"; N = 8
+WA = "0821-8903-3044"; N = 9
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
@@ -33,14 +33,15 @@ SL = [("04-teras-view-laut.jpg", "50% 50%", 'VIP Standard <em>Bungalow</em>', "R
       ("03-teras-samping.jpg", "45% 55%", 'Teras untuk <em>jeda</em>', "Meja dan kursi di teras, untuk kopi pagi atau sekadar membaca.", KICK),
       ("06-kamar-depan.jpg", "50% 55%", 'King bed, <em>atap kayu</em>', "Kamar lebih luas dari Standard, dengan AC, tirai blackout, dan lampu dinding yang hangat.", KICK),
       ("07-kamar-samping.jpg", "50% 55%", 'Nyaman untuk <em>berdua</em>', "Untuk 2 tamu, maksimal 3 dengan extra bed. Ada meja rias dan set kopi/teh.", KICK),
-      ("08-wastafel-gantungan.jpg", "60% 50%", 'Rapi &amp; <em>praktis</em>', "Area wastafel, gantungan baju, dan kamar mandi dalam dengan shower.", KICK)]
+      ("08-wastafel-gantungan.jpg", "60% 50%", 'Rapi &amp; <em>praktis</em>', "Area wastafel dengan cermin dan gantungan baju, praktis untuk bersiap.", KICK),
+      ("10-kamar-mandi-shower.jpg", "50% 60%", 'Kamar mandi <em>di dalam</em>', "Shower dan toilet duduk di dalam kamar, bersih dan terang.", KICK)]
 T = []
 for k, (img, pos, t, sub, kick) in enumerate(SL, 1):
     T.append(f'''<div class="t{' cv' if k == 1 else ''}" id="vip-standard-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
   <div class="kick">{kick}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>{k:02d} / {N:02d}</span></div></div>''')
 FX = ["King bed", "Termasuk sarapan", "AC &amp; Wi-Fi", "Teras kayu pribadi", "Set kopi/teh", "Pemanas air", "Tirai blackout", "Meja rias", "Shower &amp; toilet duduk", "Perlengkapan mandi"]
-T.append(f'''<div class="t" id="vip-standard-08"><div class="frame"></div>
+T.append(f'''<div class="t" id="vip-standard-09"><div class="frame"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:120px;width:360px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:420px;text-align:center;color:#45301F">
     <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Fasilitas kamar</div>
