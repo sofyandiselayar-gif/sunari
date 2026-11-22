@@ -116,7 +116,7 @@ Reservasi: WhatsApp 0821-8903-3044
 ## Kalender Senja Harian November – Desember 2026 (1 Nov – 31 Des) (`social/kalender-senja-harian/`)
 - Feed (1080×1350): `kalender-harian-nov`, `kalender-harian-des`. Bisa diposting sebagai carousel 2 slide.
 - Story (1080×1920): `story-kalender-harian-nov`, `story-kalender-harian-des`.
-- Jam dihitung untuk tiap hari, dan tanggal penting disorot: 25 Des (Natal), 31 Des (senja terakhir 2026).
+- Jam dihitung untuk tiap hari. Tanda: akhir pekan (Sabtu–Minggu) berlatar pasir, hari libur nasional 25 Des (Natal) berwarna jingga, 31 Des (senja terakhir 2026) berbingkai jingga.
 - Untuk membuat ulang: `python3 social/build_kalender_harian.py && node social/render_kalender_harian.js`.
 
 **Caption**
