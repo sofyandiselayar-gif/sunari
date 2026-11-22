@@ -1,24 +1,30 @@
-# Rencana Konten 10 Hari: 23 Nov – 2 Des 2026
+# Rencana Konten 10 Hari (ide baru): 24 Nov – 3 Des 2026
 
-Jam posting feed/Reels: **19.00–21.00 WITA**. Story & Status WhatsApp: **16.30–17.30** (sebelum senja).
-Setiap hari: story **Sunset Today** (`social/senja-harian/senja-2026-MM-DD.png`, sudah siap) + 1 story interaktif.
-Fokus minggu ini: **dorong reservasi libur Natal & Tahun Baru** sambil menjaga suasana tenang/senja.
+Semua ide di sini **belum pernah dibuat** sebelumnya (bukan room tour, quote senja, tips kayak, panduan senja, slow living/jeda, Q&A, reservasi, rute, kalender, atau "Pantai Sepi").
+23 Nov tetap diisi carousel "Pantai Sepi" yang sudah terjadwal.
+Jam posting feed/Reels: 19.00–21.00 WITA. Story & Status WA: 16.30–17.30. Story **Sunset Today** harian tetap jalan.
 
-| Hari | Senja | Feed / Reels | Story tambahan | Status aset |
-|---|---|---|---|---|
-| Sen 23 Nov | 17.57 | **Carousel "Pantai Sepi"** (8 slide) | Polling: "Tim pagi 🌊 atau tim senja 🌅?" | ✅ siap (sudah terjadwal, ganti filenya) |
-| Sel 24 Nov | 17.58 | **Room tour Standard Bungalow** (7 slide) | Stiker pertanyaan: "Tanya apa saja soal SunaRi" | ✅ siap |
-| Rab 25 Nov | 17.58 | **Reels "Satu sore di Pantai Sunari"**: slideshow 8–10 foto baru (kayak, payung, afterglow) + musik tenang | Story **Cara Reservasi** (3 slide) | 🟡 perlu dibuat (foto sudah ada) |
-| Kam 26 Nov | 17.59 | **Room tour Superior Bungalow** (10 slide) | Kalender Senja Desember | ✅ siap |
-| Jum 27 Nov | 17.59 | **Carousel "Setiap hari berakhir indah" v2** (8 slide) | Story sewa kayak (single Rp 50.000 · double Rp 100.000) | ✅ siap |
-| Sab 28 Nov | 18.00 | **Reels "Weekend di Selayar"**: ayunan raksasa → kayak → senja → makan malam | Story *real-time* staf pukul 17.30: "Senja hari ini 18.00, langitnya sudah oranye" | 🟡 perlu dibuat / rekam |
-| Min 29 Nov | 18.00 | **Room tour VIP Standard** (9 slide), tonjolkan: unit paling dekat laut, teras menghadap senja | Polling: "Pilih kamar favoritmu" (Standard / VIP Standard / Superior) | ✅ siap (tambah 1 kalimat soal teras senja) |
-| Sen 30 Nov | 18.00 | **Carousel "Libur Akhir Tahun di SunaRi"**: tanggal ramai, cara pesan, antar-jemput, senja Desember | Countdown sticker: "Libur Natal" | 🔴 baru (desain baru, 5–6 slide) |
-| Sel 1 Des | 18.01 | **Kalender Senja Desember** (feed) + caption "Simpan untuk rencana liburanmu" | Update highlight "Kalender Senja 2026" | ✅ siap |
-| Rab 2 Des | 18.01 | **Carousel Rute ke SunaRi** (Makassar → Selayar, laut & udara) | Jawaban stiker pertanyaan dari 24 Nov | ✅ siap |
+| Hari | Senja | Konten utama | Format | Story pendamping | Bahan |
+|---|---|---|---|---|---|
+| Sel 24 Nov | 17.58 | **"5 Fakta Unik Selayar yang Jarang Orang Tahu"**: Taka Bonerate (atol terbesar ke-3 di dunia), Gong Nekara perunggu, jangkar raksasa kuno, dst. → ditutup "dan senjanya di Pantai Sunari" | Carousel edukasi | Kuis: "Taka Bonerate atol terbesar ke berapa di dunia?" | 🟡 desain baru, foto ada |
+| Rab 25 Nov | 17.58 | **"Wallpaper Senja Gratis"**: 5 wallpaper HP dari foto senja SunaRi, ajakan *simpan & pasang* | Carousel 4:5 + versi 9:16 di story | Stiker: "Pasang yang mana? 1–5" | 🟡 desain baru, foto ada |
+| Kam 26 Nov | 17.59 | **"3 Pulau, 1 Hari dari SunaRi"**: Pulau Gusung, Bahuluang (Gua Lipang), Polassi–Tambolongan (Bukit Nane) | Carousel petualangan | Polling: "Pantai pasir putih atau trekking bukit?" | 🟡 desain baru, foto pulau belum pernah dipakai |
+| Jum 27 Nov | 17.59 | **Reels ASMR "Suara Sore di Pantai Sunari"**: ombak, dayung kayak, daun kelapa, ikan dibakar, tanpa musik | Reels 20–30 dtk | Teaser 5 dtk suara ombak | 🔴 rekam video & suara |
+| Sab 28 Nov | 18.00 | **"Siang vs Senja di Spot yang Sama"**: satu spot difoto 2 kali (siang & senja), geser untuk lihat perubahannya | Carousel before–after / Reels transisi | Slider emoji 🌞→🌅 "Lebih suka yang mana?" | 🔴 foto siang di spot sama perlu diambil |
+| Min 29 Nov | 18.00 | **"Rating Senja Hari Ini"**: tantangan untuk followers & tamu: foto senja, beri nilai 1–10, tag #sunarisunsetmoment; repost terbaik | Feed ajakan + seri story | Stiker slider "Nilai senja hari ini" + repost tamu (dengan izin) | 🟡 desain 1 slide |
+| Sen 30 Nov | 18.00 | **"Packing List ke Selayar"**: checklist barang (sunblock, topi, sandal, pakaian renang, obat anti mabuk laut, power bank, uang tunai secukupnya) | Carousel checklist (bisa disimpan) | Kuis: "Barang apa yang paling sering ketinggalan?" | 🟡 desain baru |
+| Sel 1 Des | 18.01 | **"Di Balik Sepiring Ikan Bakar"**: perahu nelayan pagi → dapur Bajoy Beach Resto → meja saat senja | Carousel cerita / Reels | Polling: "Ikan bakar atau seafood lain?" | 🔴 foto/video dapur & hidangan |
+| Rab 2 Des | 18.01 | **"Kenalan dengan Tim SunaRi"**: 1 orang per slide: nama, tugas, spot senja favorit | Carousel behind the scenes | Stiker pertanyaan: "Tanya apa saja ke tim kami" | 🔴 foto tim (dengan izin) |
+| Kam 3 Des | 18.02 | **"Pilih Liburan Desembermu"**: carousel interaktif: pilih teman liburan → pilih aktivitas → pilih kamar → ajakan pesan via WA | Carousel "choose your own" | Hitung mundur "Libur akhir tahun" | 🟡 desain baru |
+
+## Yang perlu disiapkan dari pihak SunaRi
+- **27 Nov:** rekaman suara & video pendek (ombak, dayung, daun, ikan dibakar), masing-masing 5–10 detik.
+- **28 Nov:** foto siang hari di 2–3 spot yang sudah punya foto senja (payung & lampu gantung, ayunan, pohon meranggas).
+- **1 Des:** foto/video dapur, proses membakar ikan, dan hidangan di meja.
+- **2 Des:** foto 3–5 anggota tim (dengan izin), plus nama & tugas masing-masing.
+- **26 Nov:** konfirmasi tur pulau yang ditawarkan (durasi, titik kumpul). Harga tidak ditulis di feed.
 
 ## Catatan
-- **Harga kamar** tetap tidak ditampilkan; arahkan ke WhatsApp 0821-8903-3044 / katalog WA.
-- **Hashtag utama:** #sunarisunsetmoment di setiap postingan.
-- Setelah setiap room tour, kirim link **item katalog WhatsApp** kamar tersebut di story (stiker Tautan).
-- Foto dengan anak-anak atau wajah jelas: pakai hanya dengan izin.
+- Fakta Selayar dicek ulang sebelum desain final.
+- Harga kamar tidak ditampilkan; arahkan ke WhatsApp 0821-8903-3044.
+- Hashtag utama: #sunarisunsetmoment.
