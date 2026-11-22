@@ -74,13 +74,13 @@ def page(pid, fmt, title, sub, days, size, top, foot_bottom, extra="", g=None):
   <div class="ft" style="bottom:{foot_bottom}px"><span>Pantai Sunari · WITA</span><span>{TAG}</span></div></div>''')
 
 T = []
-nov = [d for d in DAYS if d.month == 11]; des = [d for d in DAYS if d.month == 12]
+nov = [dt.date(2026, 11, i) for i in range(1, 31)]; des = [d for d in DAYS if d.month == 12]
 SUBN = "Jam matahari menyentuh laut di depan Pantai Sunari. Datang ke pantai <b>30 menit sebelumnya</b>."
 SUBD = "Senja makin sore menjelang akhir tahun. Tutup 2026 dengan senja terakhir di Pantai Sunari."
 legend = lambda fs: f'''<div class="note" style="font-size:{fs}px;margin-top:22px">Golden hour ±40 menit sebelumnya · afterglow ±20 menit sesudahnya · jam dapat bergeser ±2 menit karena cuaca.</div>'''
-page("kalender-harian-nov", "f", 'November <span class="it">2026</span>', SUBN, nov, (210, 22, 84, 17), 56, 50, legend(21), g=grid3)
+page("kalender-harian-nov", "f", 'November <span class="it">2026</span>', SUBN, nov, (118, 22, 42, 12), 56, 50, legend(21))
 page("kalender-harian-des", "f", 'Desember <span class="it">2026</span>', SUBD, des, (140, 24, 46, 13), 56, 50, legend(21))
-page("story-kalender-harian-nov", "s", 'Senja <span class="it">November</span>', SUBN, nov, (260, 24, 96, 19), 140, 240, legend(25), g=grid3)
+page("story-kalender-harian-nov", "s", 'Senja <span class="it">November</span>', SUBN, nov, (168, 26, 50, 14), 140, 240, legend(25))
 page("story-kalender-harian-des", "s", 'Senja <span class="it">Desember</span>', SUBD, des, (200, 28, 50, 15), 140, 240, legend(25))
 (H / "kalender_harian.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T), "desain")
