@@ -391,12 +391,12 @@ FEED12 = [
    ("senja/18-kayak-berdua-pelampung.jpg","50% 60%","Tempat senja pulang","Dan setiap senja, kamu juga pulang ke sini.")],
    ("Tempat senja pulang", ["Resort tepi Pantai Sunari","Kepulauan Selayar, Sulawesi Selatan","Where every day ends beautifully"])),
  ("p07", "Pantai Sepi", "camp-3", [
-   ("pantai/05-kursi-santai-dan-kayak.jpg","50% 62%","Pantai yang masih sepi","Kursi santai, kayak di pasir, dan laut yang tenang, tanpa keramaian."),
-   ("pantai/01-nelayan-pagi.jpg","50% 55%","Pagi yang tenang","Hanya perahu nelayan yang lewat di laut yang datar."),
-   ("aktivitas/06-ayunan-gaun-merah-senja.jpg","50% 40%","Ayunan raksasa saat senja","Spot foto favorit di tepi Pantai Sunari, gratis."),
-   ("senja/59-makan-senja-payung-1810.jpg","50% 50%","Pantai landai &amp; aman","Air tenang, cocok untuk anak-anak dan keluarga."),
-   ("senja/25-pohon-senja-dekat.jpg","50% 72%","Senja di depan mata","Matahari turun ke laut, tepat di depan Pantai Sunari."),
-   ("senja/56-drone-kelapa-payung-1749.jpg","50% 68%","Duduk sampai langit gelap","Meja di tepi pantai, sambil menunggu matahari tenggelam.")],
+   ("graded/pantai__05-kursi-santai-dan-kayak.jpg","50% 62%","Pantai yang masih sepi","Kursi santai, kayak di pasir, dan laut yang tenang, tanpa keramaian."),
+   ("graded/pantai__01-nelayan-pagi.jpg","50% 55%","Pagi yang tenang","Hanya perahu nelayan yang lewat di laut yang datar."),
+   ("graded/aktivitas__06-ayunan-gaun-merah-senja.jpg","50% 40%","Ayunan raksasa saat senja","Spot foto favorit di tepi Pantai Sunari, gratis."),
+   ("graded/senja__59-makan-senja-payung-1810.jpg","50% 50%","Pantai landai &amp; aman","Air tenang, cocok untuk anak-anak dan keluarga."),
+   ("graded/senja__25-pohon-senja-dekat.jpg","50% 72%","Senja di depan mata","Matahari turun ke laut, tepat di depan Pantai Sunari."),
+   ("graded/senja__56-drone-kelapa-payung-1749.jpg","50% 68%","Duduk sampai langit gelap","Meja di tepi pantai, sambil menunggu matahari tenggelam.")],
    ("Pantai Sunari", ["Pantai landai &amp; aman untuk anak","Senja tepat di depan pantai","Ayunan raksasa, gratis","Sewa kayak · single Rp 50.000 · double Rp 100.000"])),
  ("p08", "Sewa Kayak", "feed-kayak", [
    ("aktivitas/01-kayak-sore.jpg","50% 55%","Mendayung menjelang senja","Waktu terbaik: 1 jam sebelum matahari terbenam."),
