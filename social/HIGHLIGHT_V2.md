@@ -18,6 +18,7 @@ Pratinjau: `social/highlights-v2/preview-highlights.png`.
 | 1b | Promo | `hl2-07f-promo` | Paket (Staycation Senja), template `feed-promo`, promo musiman. **Tanpa harga kamar & tanpa persen diskon**; harga kayak boleh |
 | 1a | Q&A | `hl2-07e-qna` | `hs-booking-2`, story jawaban dari stiker Pertanyaan, carousel FAQ (`faq-1…6`) dibagikan ke story |
 | 1c | Find Us | `hl2-07g-find-us` | Story `rute-01…07` (Rute ke SunaRi) + carousel feed "Location & Rute Akses" dibagikan ke story + stiker lokasi/Google Maps |
+| 1d | Kalender Senja | `hl2-07h-kalender-senja` | Kalender Senja bulanan & harian (Nov–Des 2026, story) + story #sunarisunsetmoment |
 | 7a | Layangan | `hl2-07d-layangan` | Foto/video layangan di Pantai Sunari |
 | 8a | Ramadhan 1447H | `hl2-07b-ramadhan-1447` | Arsip Ramadhan 1447 H (sekitar Februari–Maret 2026) |
 | 8b | Ramadhan 1448H | `hl2-07c-ramadhan-1448` | Ramadhan 1448 H (sekitar Februari 2027, menunggu penetapan resmi) |
