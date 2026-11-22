@@ -11,7 +11,7 @@ File: `social/feed-12-carousel/NN-nama/01.png …` (1080 × 1350). Slide 01 = ga
 | 04 | `04-malam-di-sunari` | 5 | Bangunan utama · jalan setapak · lilin · info malam |
 | 05 | `05-vip-standard` | 6 | Room tour VIP Standard |
 | 06 | `06-tempat-senja-pulang` | 5 | Kutipan · cerita nama SunaRi · perahu nelayan · tempat senja pulang |
-| 07 | `07-pantai-sepi` | 5 | Pantai sepi · ayunan raksasa · pantai landai & aman · info pantai |
+| 07 | `07-pantai-sepi` | 8 | Pantai sepi · pagi tenang · ayunan raksasa · pantai landai & aman · senja di depan mata · duduk sampai gelap · info pantai |
 | 08 | `08-sewa-kayak` | 5 | Kayak sore · single/double · harga kayak |
 | 09 | `09-family-superior` | 6 | Room tour Family Superior |
 | 10 | `10-menginap-menjelajah` | 6 | Menginap. Menjelajah. Melambat. Pulang. (1 slide per kata) |
