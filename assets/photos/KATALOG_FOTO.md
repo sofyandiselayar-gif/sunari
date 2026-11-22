@@ -7,7 +7,7 @@ Semua foto asli, sudah diputar sesuai orientasi dan diperkecil ke maks. 2400 px 
 ## Kamar (5 tipe)
 `superior-bungalow/` · `vip-superior-bungalow/` · `family-superior-bungalow/` · `standard-bungalow/` · `vip-standard-bungalow/` ✅
 
-## Senja: `senja/` (30 foto)
+## Senja: `senja/` (70 foto)
 ✅ kecuali 01–02 dan 26 ✂️ (cap tanggal). Wajah tidak terlihat (siluet), aman dipakai.
 
 Tambahan 20 Nov 2026:
@@ -50,7 +50,31 @@ Jam diambil dari nama file kamera. Menjadi **bukti nyata jam senja** di Pantai S
 | `senja/51-kayak-double-jalur-cahaya-1751.jpg` | Kayak double di jalur cahaya, Pulau Gusung di kanan | 7 Jul 17.51 | ✅ (siluet) |
 | `senja/52-pohon-kelapa-bungalow-1747.jpg` | Siluet pohon kelapa & atap bungalow, matahari di atas laut, kayak kecil | 29 Jun 17.47 | ✅ (siluet) |
 
-**Ringkasan jam matahari menyentuh/dekat cakrawala (Jun–Sep 2026):** 29 Jun 17.47 · 7 Jul 17.51–17.52 · 13 Jul 17.56 · 10–11 Agu 17.55–17.58 · 24–28 Agu 17.43–17.51 · 3–4 Sep 17.51–17.53 · 19 Sep 17.51 · afterglow/blue hour 11 Sep 18.14–18.15.
+### Senja, kano & pinggir pantai (ditambahkan 22 Nov 2026)
+Jam dari nama file kamera (tahun di nama file: 2025).
+| File | Isi | Tanggal & jam | Status |
+|---|---|---|---|
+| `senja/53-afterglow-lampu-gantung-1807.jpg` | Afterglow jingga menyala, pohon kelapa, lampu gantung, payung & meja tamu | 24 Agu 18.07 | ✅ (siluet, tamu dari belakang) |
+| `senja/54-payung-lampu-matahari-1751.jpg` | Matahari di bawah payung, lampu gantung, siluet tamu di meja | 3 Sep 17.51 | ✅ (siluet) |
+| `senja/55-taman-bougenvil-kelapa-1748.jpg` | Taman: pot bougenvil di depan, deretan kelapa, payung & matahari kuning di ujung | 11 Sep 17.48 | ✅ (siluet kecil) |
+| `senja/56-drone-kelapa-payung-1749.jpg` | Batang kelapa, payung, drone di langit, matahari & jalur cahaya | 11 Sep 17.49 | ✅ (siluet) |
+| `senja/57-matahari-cakrawala-emas-1753.jpg` | Matahari setengah di cakrawala, laut keemasan, **tanpa orang** | 11 Sep 17.53 | ✅ |
+| `senja/58-kayak-double-tamu-1751.jpg` | Dua tamu di kayak double, matahari di atas cakrawala | 12 Sep 17.51 | 👤 (wajah samar terlihat) |
+| `senja/59-makan-senja-payung-1810.jpg` | **Landscape**: tamu makan di bawah payung, afterglow kuning, Pulau Gusung di kanan | 13 Sep 18.10 | ✅ (siluet) |
+| `senja/60-berdua-bawah-payung-kelapa-1753.jpg` | Dua orang di bawah payung di antara dua kelapa, awan dramatis, matahari di bawah payung | 14 Sep 17.53 | ✅ (siluet) |
+| `senja/61-berdua-bawah-payung-dekat-1753.jpg` | Versi dekat no. 60, matahari besar di bawah payung | 14 Sep 17.53 | ✅ (siluet) · mirip no. 60 |
+| `senja/62-dua-kayak-memotret-1748.jpg` | Dua kayak kecil, penumpang memotret senja, jalur cahaya | 15 Sep 17.48 | ✅ (siluet, kemungkinan anak) |
+| `senja/63-kayak-single-jalur-cahaya-1748.jpg` | Satu kayak, penumpang memotret, jalur cahaya panjang | 15 Sep 17.48 | ✅ (siluet, kemungkinan anak) |
+| `senja/64-kayak-double-bawah-matahari-1750.jpg` | Kayak double kecil tepat di bawah matahari, jalur cahaya | 16 Sep 17.50 | ✅ (siluet) |
+| `senja/65-kayak-single-matahari-terbenam-1753.jpg` | Kayak single dekat kamera, matahari setengah tenggelam | 16 Sep 17.53 | ✅ (siluet) |
+| `senja/66-matahari-setengah-kayak-1754.jpg` | Matahari setengah, langit luas, kayak double kecil, burung | 16 Sep 17.54 | ✅ (siluet) |
+| `senja/67-matahari-setengah-kayak-b-1754.jpg` | Variasi no. 66 | 16 Sep 17.54 | ✅ (siluet) · mirip no. 66 |
+| `senja/68-kayak-pelampung-jalur-cahaya-1748.jpg` | Kayak single dengan pelampung, matahari di atas awan tipis, jalur cahaya | 19 Sep 17.48 | ✅ (siluet) |
+| `senja/69-meja-berdua-matahari-merah.jpg` | Dua tamu di meja menghadap matahari merah besar, satu memotret | — | ⚠️ ada botol minuman di meja: cek sebelum dipakai untuk promosi |
+
+Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
+
+**Ringkasan jam matahari menyentuh/dekat cakrawala (Jun–Sep 2026):** 29 Jun 17.47 · 7 Jul 17.51–17.52 · 13 Jul 17.56 · 10–11 Agu 17.55–17.58 · 24–28 Agu 17.43–17.51 · 3–4 Sep 17.51–17.53 · 19 Sep 17.51 · 11–19 Sep 17.48–17.54 (foto baru) · afterglow/blue hour 24 Agu 18.07, 11 Sep 18.14–18.15, 13 Sep 18.10.
 
 ## Pantai & Taman
 | File | Isi | Status | Cocok untuk |
