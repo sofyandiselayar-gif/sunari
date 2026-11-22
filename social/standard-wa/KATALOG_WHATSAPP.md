@@ -12,7 +12,7 @@ Gambar 1080 × 1080 (persegi 1:1) · 7 gambar (batas WhatsApp: 10 per item)
 | 2 | `wa-standard-02.png` | Teras menghadap laut |
 | 3 | `wa-standard-03.png` | Queen bed |
 | 4 | `wa-standard-04.png` | Kamar |
-| 5 | `wa-standard-05.png` | Kamar mandi batu alam |
+| 5 | `wa-standard-05.png` | Area cermin |
 | 6 | `wa-standard-06.png` | Kamar mandi dalam |
 | 7 | `wa-standard-07.png` | Daftar fasilitas |
 
@@ -45,7 +45,7 @@ FASILITAS
 • AC & Wi-Fi
 • Set kopi/teh & pemanas air
 • Meja kerja/rias, tirai blackout
-• Kamar mandi dalam, lantai batu alam
+• Kamar mandi dalam
 • Shower & toilet duduk
 • Handuk & perlengkapan mandi
 • Bantal & selimut tambahan

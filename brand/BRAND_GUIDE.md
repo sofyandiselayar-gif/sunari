@@ -205,7 +205,7 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 - **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi.
   **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **Queen bed**, termasuk **sarapan**, AC, Wi-Fi, set kopi/teh + pemanas air,
   meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout.
-  Kamar mandi dalam berlantai batu alam. Teras pribadi luas dengan kursi santai, pemandangan laut & taman.
+  Kamar mandi dalam dengan shower & toilet duduk. Teras pribadi luas dengan kursi santai, pemandangan laut & taman.
   Kata kunci promosi: *pagi menghadap laut Selayar*.
 - **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: **kelas tertinggi** di antara semua tipe bungalow.
   A-frame beratap rumbia dengan loteng dan jendela segitiga. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).**
