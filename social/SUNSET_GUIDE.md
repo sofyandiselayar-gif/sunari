@@ -128,3 +128,20 @@ Simpan & tandai tanggalmu. Datang ke pantai 30 menit sebelumnya.
 Reservasi: WhatsApp 0821-8903-3044
 #sunarisunsetmoment #SunaRiSelayar #PantaiSunari #KalenderSenja #Selayar
 ```
+
+## Story harian "Senja Hari Ini" 22 Nov – 31 Des 2026 (`social/senja-harian/senja-YYYY-MM-DD.png`)
+Ada 40 story ukuran 1080×1920, satu gambar untuk tiap hari. Unggah story sesuai tanggal di nama file, sebaiknya pukul **12.00–15.00 WITA** supaya followers sempat bersiap.
+
+**Isi tiap story:**
+- hari & tanggal;
+- **jam matahari terbenam** dalam angka besar;
+- rangkaian jam hari itu:
+  - golden hour (−40 menit);
+  - waktunya ke pantai (−30 menit);
+  - matahari menyentuh laut (−4 menit);
+  - **terbenam**;
+  - afterglow (+1 sampai +20 menit).
+
+**Label khusus:** Akhir pekan (Sabtu–Minggu), "Selamat Hari Natal" (25 Des), "Senja terakhir 2026" (31 Des). Foto latar bergantian dari 14 foto senja milik resort.
+
+Untuk membuat ulang: `python3 social/build_senja_harian.py && node social/render_senja_harian.js`.
