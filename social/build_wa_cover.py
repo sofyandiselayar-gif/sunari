@@ -27,11 +27,11 @@ html = f'''<!doctype html><html lang="id"><head><meta charset="utf-8">
 <style>*{{margin:0;padding:0;box-sizing:border-box}}body{{background:#bbb}}
 #wa-cover{{width:1211px;height:681px;margin:20px auto;display:grid;grid-template-columns:repeat({COLS},1fr);grid-template-rows:repeat({ROWS},1fr);gap:2px;background:#FBF4EC;padding:2px}}
 #wa-cover img{{width:100%;height:100%;object-fit:cover;display:block;min-height:0;min-width:0}}
-.card{{grid-row:2/5;grid-column:5/8;background:#FBF4EC;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px}}
-.card img{{width:250px!important;height:auto!important;object-fit:contain!important}}
+.card{{grid-row:2/5;grid-column:5/8;background:radial-gradient(ellipse at 50% 60%,#4A2E1C 0%,#2E1D12 75%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px}}
+.lgm{{width:300px!important;height:auto!important;object-fit:contain!important;filter:drop-shadow(0 0 12px rgba(253,177,93,.35))}}
 .tg{{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:#45301F;margin-top:8px;text-shadow:0 1px 0 #fff}}
 .ln{{width:60px;height:2px;background:linear-gradient(90deg,#FDB15D,#FF8A5C);margin:12px auto}}
 .sm{{font-family:Montserrat,sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:#7A5039}}
 </style></head><body><div id="wa-cover">{tiles}
-<div class="card"><img src="{LOGO}" alt=""><div class="tg">Where every day ends beautifully</div><div class="ln"></div><div class="sm">Pantai Sunari · Selayar</div></div></div></body></html>'''
+<div class="card"><img class="lgm" src="../assets/logo-sunari-sunset.png" alt=""></div></div></body></html>'''
 (H / "wa_cover.html").write_text(html); print(len(items), "foto")
