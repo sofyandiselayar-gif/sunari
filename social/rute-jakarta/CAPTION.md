@@ -4,7 +4,7 @@
 
 Cara ke Sunari Beach Resort dari Jakarta, langkah demi langkah ✈️🚗⛴️ Simpan dulu biar nggak lupa!
 
-Ada 2 cara, pilih yang paling cocok:
+Ada 3 cara, pilih yang paling cocok:
 
 🅰️ OPSI A · UDARA (tercepat, ±3,5 jam di jalan)
 1. Pesawat Jakarta → Makassar ±2 jam 30 menit
@@ -16,6 +16,11 @@ Ada 2 cara, pilih yang paling cocok:
 2. Mobil/bus Makassar → Bira ±4–5 jam
 3. Feri Bira → Pamatata ±2 jam
 4. Mobil ke SunaRi ±1–1,5 jam
+
+🅲 OPSI C · KAPAL LANGSUNG (tanpa feri, ±10–11 jam di laut)
+1. Pesawat Jakarta → Makassar ±2 jam 30 menit
+2. KM Dharma Kartika III Makassar → Pelabuhan Benteng ±10–11 jam (berangkat malam, tidak setiap hari)
+3. Mobil ke SunaRi ±20–30 menit
 
 *Belum termasuk waktu transit & menunggu jadwal.
 🚐 Bisa kami jemput dari bandara atau pelabuhan (berbayar).
