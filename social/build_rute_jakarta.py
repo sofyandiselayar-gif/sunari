@@ -35,15 +35,17 @@ def card(k, img, pos, step, kick, ttl, body):
 big = lambda n, t: f'<div class="big"><b>{n}</b><span>{t}</span></div>'
 sub = lambda t: f'<div class="sub">{t}</div>'
 T = []
-# 1 · hook
-T.append(f'''<div class="t fc" id="rute-01"><img class="bgf" src="{PH}pantai/04-kursi-santai-bawah-pohon.jpg" style="object-position:50% 60%" alt="">
-  <div class="vt"></div><div class="vb"></div>
-  <div style="position:absolute;left:80px;top:96px;font-weight:700;font-size:22px;letter-spacing:.4em;text-transform:uppercase;color:#FBF4EC;text-shadow:0 2px 10px rgba(0,0,0,.5)">Panduan perjalanan</div>
-  <div style="position:absolute;left:76px;right:70px;top:146px;font-family:'Playfair Display',serif;font-size:98px;line-height:1.05;color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.5)">Cara ke <em style="color:#FDB15D">Sunari Beach Resort</em> dari Jakarta ✈️🚗⛴️</div>
-  <div style="position:absolute;left:80px;top:640px;font-family:'Playfair Display',serif;font-style:italic;font-size:44px;color:#FBF4EC;text-shadow:0 2px 12px rgba(0,0,0,.6)">(simpan dulu biar nggak lupa)</div>
-  <div style="position:absolute;right:64px;bottom:64px;width:300px;height:300px;border-radius:50%;overflow:hidden;border:6px solid #FBF4EC;box-shadow:0 10px 30px rgba(0,0,0,.35)"><img src="{M}02_sulawesi.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 62%;transform:scale(1.55);transform-origin:42% 62%" alt=""></div>
-  <div style="position:absolute;left:80px;bottom:76px;font-weight:700;font-size:20px;letter-spacing:.38em;text-transform:uppercase;color:#FBF4EC">Geser &nbsp;→</div>
-  <img src="{LOGO_D}" style="position:absolute;left:76px;bottom:120px;width:260px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))" alt=""></div>''')
+# 1 · hook: 2 foto senja terbaik dalam 1 frame + kalimat soft selling
+T.append(f'''<div class="t" id="rute-01">
+  <div style="position:absolute;left:60px;right:60px;top:60px;height:720px;display:flex;gap:16px">
+    <div style="flex:1;border-radius:24px;overflow:hidden;box-shadow:0 14px 36px rgba(90,62,49,.2)"><img src="../assets/photos/graded/senja__74-matahari-menyentuh-laut-kapal.jpg" style="width:100%;height:100%;object-fit:cover;object-position:58% 50%" alt=""></div>
+    <div style="flex:1;border-radius:24px;overflow:hidden;box-shadow:0 14px 36px rgba(90,62,49,.2)"><img src="../assets/photos/graded/senja__72-ayunan-di-antara-kelapa.jpg" style="width:100%;height:100%;object-fit:cover;object-position:46% 55%" alt=""></div></div>
+  <img src="{LOGO_D}" style="position:absolute;left:86px;top:84px;width:220px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))" alt="">
+  <div style="position:absolute;left:50%;top:712px;transform:translateX(-50%);background:#C0592C;color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;padding:14px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px rgba(192,89,44,.35)">Jakarta ✈️ Makassar ⛴️ Selayar</div>
+  <div class="emb" style="position:absolute;left:64px;right:64px;top:820px;font-family:'Playfair Display',serif;font-size:76px;line-height:1.08;text-align:center;color:#45301F">Senja ini menunggumu<br>di <em style="color:#A0603E">Pantai Sunari.</em></div>
+  <div style="position:absolute;left:90px;right:90px;top:1010px;font-size:30px;line-height:1.5;text-align:center;color:#4A3426">Begini cara ke Sunari Beach Resort dari Jakarta, lebih mudah dari yang kamu kira.</div>
+  <div style="position:absolute;left:0;right:0;top:1130px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:32px;color:#A0603E">Simpan dulu, biar liburanmu tinggal berangkat.</div>
+  <div class="bt"><span>SunaRi · Selayar</span><span class="h">Geser untuk rutenya →</span><span>01 / {N:02d}</span></div></div>''')
 # ---- struktur: Opsi A (udara) & Opsi B (darat + feri), tiap langkah format sama
 A_COL, B_COL, C_COL, ALL_COL = "#C0592C", "#7A5039", "#2F6E7E", "#45301F"
 PATH = {"semua": ["Jakarta", "Makassar", "Selayar", "SunaRi"],

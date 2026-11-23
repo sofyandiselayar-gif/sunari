@@ -2,7 +2,9 @@
 
 **Musik:** pilih lagu perjalanan yang upbeat dan sedang tren (ikon musik saat upload; cari lagu dengan tanda ↗ di Reels).
 
-Cara ke Sunari Beach Resort dari Jakarta, langkah demi langkah ✈️🚗⛴️ Simpan dulu biar nggak lupa!
+Senja ini menunggumu di Pantai Sunari. 🌅
+
+Dari Jakarta, perjalanannya lebih mudah dari yang kamu kira. Kami rangkum langkah demi langkahnya di sini, simpan dulu, biar liburanmu tinggal berangkat. ✈️⛴️
 
 Ada 3 cara, pilih yang paling cocok:
 
