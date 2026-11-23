@@ -7,7 +7,7 @@ Semua foto asli, sudah diputar sesuai orientasi dan diperkecil ke maks. 2400 px 
 ## Kamar (5 tipe)
 `superior-bungalow/` · `vip-superior-bungalow/` · `family-superior-bungalow/` · `standard-bungalow/` · `vip-standard-bungalow/` ✅
 
-## Senja: `senja/` (70 foto)
+## Senja: `senja/` (80 foto)
 ✅ kecuali 01–02 dan 26 ✂️ (cap tanggal). Wajah tidak terlihat (siluet), aman dipakai.
 
 Tambahan 20 Nov 2026:
@@ -71,6 +71,22 @@ Jam dari nama file kamera (tahun di nama file: 2025).
 | `senja/67-matahari-setengah-kayak-b-1754.jpg` | Variasi no. 66 | 16 Sep 17.54 | ✅ (siluet) · mirip no. 66 |
 | `senja/68-kayak-pelampung-jalur-cahaya-1748.jpg` | Kayak single dengan pelampung, matahari di atas awan tipis, jalur cahaya | 19 Sep 17.48 | ✅ (siluet) |
 | `senja/69-meja-berdua-matahari-merah.jpg` | Dua tamu di meja menghadap matahari merah besar, satu memotret | — | ⚠️ ada botol minuman di meja: cek sebelum dipakai untuk promosi |
+
+### Senja di Pantai Sunari (ditambahkan 23 Nov 2026)
+| File | Isi | Status |
+|---|---|---|
+| `senja/70-perahu-nelayan-daun-kelapa.jpg` | Perahu nelayan, matahari & jalur cahaya, daun kelapa | ✅ |
+| `senja/71-siluet-tirai-matahari.jpg` | Siluet tamu di meja, tirai, matahari & jalur cahaya | ✅ (siluet) |
+| `senja/72-ayunan-di-antara-kelapa.jpg` | Ayunan raksasa di antara pohon kelapa, matahari di cakrawala | ✅ (siluet) |
+| `senja/73-kayak-pelampung-perahu.jpg` | Pohon, pelampung, perahu, kayak di pasir, matahari | ✅ |
+| `senja/74-matahari-menyentuh-laut-kapal.jpg` | Matahari menyentuh laut, kapal, awan jingga | ✅ |
+| `senja/75-afterglow-dua-sahabat.jpg` | Afterglow, dua tamu berjalan di tepi pantai | ✅ (siluet) |
+| `senja/76-staf-bantu-ayunan.jpg` | Staf membantu tamu naik ayunan | ✅ (siluet) · cocok untuk konten layanan |
+| `senja/77-ayunan-siluet-dekat.jpg` | Tamu di ayunan, close-up | ✅ (siluet) |
+| `senja/78-dua-tamu-tepi-pantai.jpg` | Dua tamu duduk menghadap laut | ✅ (siluet) |
+| `senja/79-meja-kayak-golden-hour.jpg` | Meja, termos, kayak di pasir, golden hour | ⚠️ ada barang pribadi (speaker, HP) |
+
+Tidak disimpan: foto resto dengan wajah tamu terlihat, foto kaus bergambar wajah, foto dua tamu di meja (wajah terlihat).
 
 Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 

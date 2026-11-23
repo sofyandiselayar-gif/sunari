@@ -376,12 +376,12 @@ FEED12 = [
    ("malam/03-resort-malam-a-frame.jpg","50% 60%","Lalu malam datang","Lampu-lampu bungalow menyala di antara pohon kelapa.")],
    ("Lebih dari menginap", ["5 tipe bungalow dengan teras pribadi","Sarapan, AC &amp; Wi-Fi di semua kamar","Senja tepat di depan Pantai Sunari"])),
  ("p02", "#SenjaHariIni", "feed-senja", [
-   ("senja/13-tamu-bertopi-story.jpg","50% 45%","Langit yang selalu berbeda","Tidak ada senja yang sama dua kali di Pantai Sunari."),
-   ("senja/07-payung-kursi-pantai.jpg","50% 60%","Kursi di tepi pantai","Tempat terbaik menunggu matahari turun."),
-   ("senja/06-di-bawah-daun.jpg","50% 55%","Di bawah daun kelapa","Bingkai alami untuk foto senjamu."),
-   ("senja/43-teras-bingkai-daun-b-1743.jpg","50% 40%","Dari teras bungalow","Senja terlihat di sela daun, tanpa perlu beranjak dari kamar."),
-   ("senja/68-kayak-pelampung-jalur-cahaya-1748.jpg","50% 55%","Mendayung ke arah cahaya","Kayak di jalur cahaya, sesaat sebelum matahari menyentuh laut."),
-   ("senja/55-taman-bougenvil-kelapa-1748.jpg","50% 62%","Dari taman yang berbunga","Di ujung deretan pohon kelapa, matahari turun pelan ke laut.")],
+   ("senja/70-perahu-nelayan-daun-kelapa.jpg","50% 50%","Perahu pulang saat senja","Nelayan melintas pelan, di bawah matahari yang mulai turun."),
+   ("senja/71-siluet-tirai-matahari.jpg","45% 50%","Duduk di balik tirai","Minuman di tangan, jalur cahaya tepat di depan meja."),
+   ("senja/72-ayunan-di-antara-kelapa.jpg","50% 55%","Berayun di antara kelapa","Ayunan raksasa menghadap laut, matahari tepat di cakrawala."),
+   ("senja/73-kayak-pelampung-perahu.jpg","50% 78%","Kayak menunggu di pasir","Dayung sudah selesai, sekarang waktunya menikmati langit."),
+   ("senja/74-matahari-menyentuh-laut-kapal.jpg","50% 60%","Saat matahari menyentuh laut","Hanya beberapa menit, lalu langit berubah warna."),
+   ("senja/75-afterglow-dua-sahabat.jpg","50% 55%","Langit belum selesai","Setelah matahari tenggelam, jingga dan merah muda masih bertahan.")],
    ("Tips menikmati senja", ["Datang 30 menit sebelum matahari terbenam","Akhir Nov–Des: senja sekitar 18.00 WITA","Ikuti jam senja harian di story kami","Simpan postingan ini untuk liburanmu"])),
  ("p04", "Malam di SunaRi", "camp-4", [
    ("senja/38-blue-hour-kayak-1815.jpg","50% 55%","Langit berganti biru","Beberapa menit setelah matahari tenggelam, langit perlahan menjadi biru tua."),
