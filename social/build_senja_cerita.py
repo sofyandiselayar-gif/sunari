@@ -32,7 +32,7 @@ CSS = """
 """
 # (foto, posisi, tahap, judul, keterangan) — urut jalannya sore
 SL = [("79-meja-kayak-golden-hour.jpg", "50% 60%", "Golden hour", 'Meja sudah <em>siap</em>', "Termos kopi di meja, kayak berjajar di pasir, laut masih tenang."),
-      ("80-cahaya-masuk-resto.jpg", "0% 58%;transform:scale(1.55);transform-origin:0% 58%", "Golden hour", 'Cahaya masuk ke <em>resto</em>', "Tirai jingga mulai menyala, kursi pantai menunggu di depan."),
+      ("80-cahaya-masuk-resto.jpg", "50% 50%", "Golden hour", 'Cahaya masuk ke <em>resto</em>', "Tirai jingga mulai menyala, kursi pantai menunggu di depan."),
       ("81-resto-tirai-senja.jpg", "50% 55%", "Menjelang senja", 'Kursi mulai <em>terisi</em>', "Satu per satu tamu datang, minuman dingin, obrolan pelan."),
       ("82-dua-tamu-meja-senja.jpg", "50% 50%", "Menjelang senja", 'Cerita di meja <em>kayu</em>', "Di bawah pohon ketapang, matahari tepat di depan mata."),
       ("71-siluet-tirai-matahari.jpg", "45% 50%", "Menjelang senja", 'Duduk di balik <em>tirai</em>', "Minuman di tangan, jalur cahaya jatuh di depan meja."),
