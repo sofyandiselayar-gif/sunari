@@ -8,8 +8,8 @@ Carousel 10 slide · format 1080 × 1350 (4:5) · SunaRi Beach Resort Selayar
 
 | No | File | Isi slide |
 |---|---|---|
-| 1 | `superior-01.png` | Sampul: Superior Bungalow |
-| 2 | `superior-02.png` | Di antara pohon kelapa (eksterior) |
+| 1 | `superior-01.png` | Sampul foto penuh: "Room Tour · Superior Bungalow · Rumah kayu di antara pohon kelapa" |
+| 2 | `superior-02.png` | Teduh di taman tropis (eksterior) |
 | 3 | `superior-03.png` | Teras untuk jeda |
 | 4 | `superior-04.png` | King bed, atap tinggi |
 | 5 | `superior-05.png` | Ada loteng di atas |
