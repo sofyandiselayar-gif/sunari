@@ -83,7 +83,7 @@ T.append(f'''<div class="t" id="rute-02">
     {optcard(B_COL, "Opsi B · Pemandangan", "Darat &amp; feri", ["Pesawat Jakarta → Makassar", "Mobil Makassar → Bira", "Feri Bira → Pamatata", "Mobil ke SunaRi"], "±10–11 jam")}</div>
   <div style="position:absolute;left:64px;right:64px;top:1160px;font-size:24px;line-height:1.45;color:#7A5039;text-align:center">Belum termasuk waktu transit &amp; menunggu jadwal.<br>Geser untuk detail tiap langkah →</div>
   {foot(2)}</div>''')
-T.append(step(3, M + "02_sulawesi.png", "50% 60%", ALL_COL, "Opsi A &amp; B", "Langkah 1", "Jakarta", "Makassar", "±2 jam 30 menit",
+T.append(step(3, M + "08_jakarta_makassar.png", "50% 50%", ALL_COL, "Opsi A &amp; B", "Langkah 1", "Jakarta", "Makassar", "±2 jam 30 menit",
   "✈️ Pesawat ke Bandara Sultan Hasanuddin (UPG)", "Banyak pilihan jadwal setiap hari", "semua", [0, 1]))
 T.append(step(4, M + "04_rute1_pesawat.png", "50% 46%", A_COL, "Opsi A · Udara", "Langkah 2 dari 3", "Makassar", "Aroeppala", "±45 menit",
   "🛩️ Pesawat kecil ke Bandara H. Aroeppala", "Jadwal terbatas, cek di aplikasi tiket minimal H-7", "A", [1, 2]))
