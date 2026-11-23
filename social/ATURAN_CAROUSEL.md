@@ -1,5 +1,9 @@
 # Aturan Carousel SunaRi (berlaku untuk semua carousel berikutnya)
 
+0. **Gaya bahasa: soft selling (WAJIB, permanen).** Semua teks di slide & caption memakai penyampaian lembut seperti feed sebelumnya
+   ("Senja ini menunggumu di Pantai Sunari", "Simpan dulu, biar liburanmu tinggal berangkat", "Biar kami bantu").
+   Hangat, mengajak, bercerita, tidak memaksa / tidak hard selling. **Jangan pernah mengubah gaya ini kecuali pemilik akun memintanya.**
+
 1. **Slide 1 = hook.** Foto + teks besar yang memancing rasa ingin tahu, bukan hanya foto cantik.
    Contoh: "Liburan 3 hari ke Selayar cuma segini 👇" · "5 kesalahan saat ke Selayar pertama kali" · "Sunset terbaik di Sulawesi? Geser dulu."
 2. **Slide 2 sama kuatnya dengan slide 1** (Instagram bisa menampilkan ulang carousel mulai slide 2 ke orang yang belum menggeser).

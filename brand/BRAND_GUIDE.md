@@ -326,3 +326,7 @@ Penulisan di materi desain: **WA 0821-8903-3044** (Sofyan).
 
 ## 10. Yang Perlu Dikonfirmasi
 - Pengecekan merek "SunaRi" di PDKI (DJKI) dan ketersediaan domain
+
+
+## Gaya bahasa konten (aturan tetap)
+Semua konten media sosial memakai **soft selling**: hangat, bercerita, mengajak, tidak memaksa. Jangan mengubah gaya ini kecuali pemilik akun memintanya. Lihat `social/ATURAN_CAROUSEL.md`.

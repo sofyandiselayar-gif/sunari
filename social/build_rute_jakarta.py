@@ -94,27 +94,27 @@ def optcard(col, lab, name, steps, total):
       <div style="margin-top:30px;font-weight:700;font-size:20px;letter-spacing:.2em;text-transform:uppercase;color:#9C8270">Total di jalan</div>
       <div style="font-family:'Playfair Display',serif;font-size:66px;color:{col};line-height:1.1">{total}</div></div>'''
 T.append(f'''<div class="t" id="rute-02">
-  <div style="position:absolute;left:64px;top:70px;font-weight:800;font-size:21px;letter-spacing:.3em;text-transform:uppercase;color:#C0592C">Ada 3 cara, pilih yang cocok</div>
+  <div style="position:absolute;left:64px;top:70px;font-weight:800;font-size:21px;letter-spacing:.3em;text-transform:uppercase;color:#C0592C">3 jalan menuju senja</div>
   <div class="emb" style="position:absolute;left:64px;right:64px;top:110px;font-family:'Playfair Display',serif;font-size:70px;line-height:1.08;white-space:nowrap">Jakarta → Makassar → <em style="color:#A0603E">Selayar</em></div>
   <div style="position:absolute;left:64px;right:64px;top:250px;display:flex;gap:28px;align-items:stretch">
-    {optcard(A_COL, "Opsi A · Tercepat", "Udara", ["Pesawat Jakarta → Makassar", "Pesawat Makassar → Aroeppala", "Mobil ke SunaRi"], "±3,5 jam")}
-    {optcard(B_COL, "Opsi B · Pemandangan", "Darat &amp; feri", ["Pesawat Jakarta → Makassar", "Mobil Makassar → Bira", "Feri Bira → Pamatata", "Mobil ke SunaRi"], "±10–11 jam")}</div>
+    {optcard(A_COL, "Opsi A · Paling cepat", "Udara", ["Pesawat Jakarta → Makassar", "Pesawat Makassar → Aroeppala", "Mobil ke SunaRi"], "±3,5 jam")}
+    {optcard(B_COL, "Opsi B · Paling berkesan", "Darat &amp; feri", ["Pesawat Jakarta → Makassar", "Mobil Makassar → Bira", "Feri Bira → Pamatata", "Mobil ke SunaRi"], "±10–11 jam")}</div>
   <div style="position:absolute;left:64px;right:64px;top:1030px;background:#fff;border-radius:18px;border-left:8px solid {C_COL};box-shadow:0 8px 22px rgba(90,62,49,.1);padding:20px 26px;display:flex;align-items:center;gap:22px">
-    <div style="flex:1"><div style="font-weight:800;font-size:18px;letter-spacing:.2em;text-transform:uppercase;color:{C_COL}">Opsi C · Kapal langsung</div>
+    <div style="flex:1"><div style="font-weight:800;font-size:18px;letter-spacing:.2em;text-transform:uppercase;color:{C_COL}">Opsi C · Santai di kapal</div>
       <div style="font-size:27px;margin-top:4px">KM Dharma Kartika III Makassar → Benteng</div></div>
     <div style="font-family:'Playfair Display',serif;font-size:50px;color:{C_COL};white-space:nowrap">±10–11 jam</div></div>
-  <div style="position:absolute;left:64px;right:64px;top:1180px;font-size:22px;line-height:1.4;color:#7A5039;text-align:center">Belum termasuk waktu transit &amp; menunggu jadwal · Geser untuk detail →</div>
+  <div style="position:absolute;left:64px;right:64px;top:1180px;font-size:22px;line-height:1.4;color:#7A5039;text-align:center">Pilih yang paling cocok, semuanya berakhir di senja yang sama. Geser →</div>
   {foot(2)}</div>''')
-T.append(step(3, M + "08_jakarta_makassar.png", "50% 50%", ALL_COL, "Opsi A &amp; B", "Langkah 1", "Jakarta", "Makassar", "±2 jam 30 menit",
-  "✈️ Pesawat ke Bandara Sultan Hasanuddin (UPG)", "Banyak pilihan jadwal setiap hari", "semua", [0, 1]))
+T.append(step(3, M + "08_jakarta_makassar.png", "62% 50%", ALL_COL, "Opsi A &amp; B", "Langkah 1", "Jakarta", "Makassar", "±2 jam 30 menit",
+  "✈️ Pesawat ke Bandara Sultan Hasanuddin (UPG)", "Banyak pilihan jadwal setiap hari. Liburanmu dimulai di sini.", "semua", [0, 1]))
 T.append(step(4, M + "04_rute1_pesawat_tanpa-sublabel.png", "50% 45.5%", A_COL, "Opsi A · Udara", "Langkah 2 dari 3", "Makassar", "Aroeppala", "±45 menit",
-  "🛩️ Pesawat ke Bandara H. Aroeppala", "Jadwal terbatas, cek di aplikasi tiket minimal H-7", "A", [1, 2], lgr=True))
+  "🛩️ Pesawat ke Bandara H. Aroeppala", "Jadwal terbatas, cek minimal H-7. Dari jendela, birunya Selayar sudah menyapa.", "A", [1, 2], lgr=True))
 T.append(step(5, M + "05_rute2_darat_feri.png", "50% 30%", B_COL, "Opsi B · Darat", "Langkah 2 dari 4", "Makassar", "Bira", "±4–5 jam",
-  "🚗 Mobil/bus dari Terminal Malengkeri", "Berangkat pagi supaya tidak ketinggalan feri", "B", [1, 2]))
+  "🚗 Mobil/bus dari Terminal Malengkeri", "Berangkat pagi, nikmati jalan pesisir selatan Sulawesi.", "B", [1, 2]))
 T.append(step(6, M + "05_rute2_darat_feri.png", "50% 64%", B_COL, "Opsi B · Feri", "Langkah 3 dari 4", "Bira", "Pamatata", "±2 jam",
-  "⛴️ Feri penyeberangan ke Pulau Selayar", "Cek jadwal feri, pesan lebih awal saat libur panjang", "B", [2, 3]))
+  "⛴️ Feri penyeberangan ke Pulau Selayar", "Cek jadwal lebih dulu. Angin laut jadi penyambut pertama.", "B", [2, 3]))
 T.append(step(7, M + "06_rute3_kapal_laut.png", "50% 46%;transform:scale(.94);transform-origin:50% 62%", C_COL, "Opsi C · Kapal", "Langkah 2 dari 3", "Makassar", "Benteng", "±10–11 jam",
-  "🚢 KM Dharma Kartika III, langsung tanpa feri", "Berangkat malam, tidak setiap hari (cek jadwal)", "C", [1, 2], lgr=True))
+  "🚢 KM Dharma Kartika III, langsung tanpa feri", "Berangkat malam, tidak setiap hari. Tidur di kapal, bangun sudah di Selayar.", "C", [1, 2], lgr=True))
 arr = [("Bandara H. Aroeppala", "dari Opsi A", "±10–15 menit"), ("Pelabuhan Pamatata", "dari Opsi B", "±1–1,5 jam"), ("Pelabuhan Benteng", "dari Opsi C", "±20–30 menit")]
 rows7 = "".join(f'<div style="display:flex;align-items:center;padding:20px 0;border-bottom:1.5px solid rgba(138,95,72,.25)"><div style="flex:1"><div style="font-size:30px;font-weight:600">{a}</div><div style="font-size:19px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9C8270;margin-top:4px">{o}</div></div><div style="font-family:Playfair Display,serif;font-size:46px;color:#C0592C;white-space:nowrap">{d}</div></div>' for a, o, d in arr)
 T.append(f'''<div class="t" id="rute-08">
@@ -122,18 +122,18 @@ T.append(f'''<div class="t" id="rute-08">
     <span style="background:{ALL_COL};color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.2em;text-transform:uppercase;padding:12px 22px;border-radius:999px">Semua opsi</span>
     <span style="font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;color:{ALL_COL}">Langkah terakhir</span></div>
   <div class="ph" style="top:122px;height:440px;background:#094473"><img src="{M}07_pulau_selayar.png" style="position:absolute;left:150px;top:-300px;width:680px;height:1209px;object-fit:fill" alt=""><div style="position:absolute;inset:0;box-shadow:inset 0 0 50px 34px #094473;pointer-events:none"></div><img class="lg" src="{LOGO_D}" alt=""></div>
-  <div class="emb" style="position:absolute;left:64px;right:64px;top:592px;font-family:'Playfair Display',serif;font-size:64px;line-height:1.1">Ke <em style="color:#A0603E">Sunari Beach Resort</em></div>
+  <div class="emb" style="position:absolute;left:64px;right:64px;top:592px;font-family:'Playfair Display',serif;font-size:64px;line-height:1.1">Selangkah lagi ke <em style="color:#A0603E">SunaRi</em></div>
   <div style="position:absolute;left:64px;right:64px;top:690px;font-weight:800;font-size:19px;letter-spacing:.24em;text-transform:uppercase;color:#9C8270">Dari titik kedatangan · naik mobil</div>
   <div style="position:absolute;left:64px;right:64px;top:730px;border-top:1.5px solid rgba(138,95,72,.25)">{rows7}</div>
-  <div style="position:absolute;left:64px;right:64px;top:1110px;background:#F3E3CC;border-radius:18px;padding:20px 26px;font-size:26px;line-height:1.4">🚐 <b>Bisa kami jemput</b> (berbayar). Kabari jadwal tibamu lewat WhatsApp.</div>
+  <div style="position:absolute;left:64px;right:64px;top:1110px;background:#F3E3CC;border-radius:18px;padding:20px 26px;font-size:26px;line-height:1.4">🚐 <b>Biar kami yang menjemput</b> (berbayar). Kabari jadwal tibamu lewat WhatsApp.</div>
   {foot(8)}</div>''')
 # 8 · tips
-tips = [("🎫", "Pesan tiket pesawat &amp; feri lebih awal saat libur panjang"), ("💵", "Bawa uang tunai secukupnya untuk perjalanan"),
-        ("🚐", "Kabari jadwal tiba supaya penjemputan bisa disiapkan"), ("🗺️", "Simpan lokasi SunaRi di Google Maps sebelum berangkat")]
+tips = [("🎫", "Pesan tiket pesawat &amp; feri lebih awal, apalagi saat libur panjang"), ("💵", "Siapkan uang tunai secukupnya untuk di perjalanan"),
+        ("🚐", "Kabari jadwal tibamu, biar kami siapkan penjemputan"), ("🗺️", "Simpan lokasi SunaRi di Google Maps, biar tidak tersesat")]
 T.append(f'''<div class="t" id="rute-09"><div style="position:absolute;inset:36px;border:1.5px solid rgba(138,95,72,.4)"></div>
   <img src="{LOGO}" style="position:absolute;left:84px;top:96px;width:240px" alt="">
-  <div style="position:absolute;left:84px;top:250px;font-weight:800;font-size:21px;letter-spacing:.3em;text-transform:uppercase;color:#C0592C">Sebelum berangkat</div>
-  <div class="emb" style="position:absolute;left:84px;right:84px;top:292px;font-family:'Playfair Display',serif;font-size:82px;line-height:1.08">Tips <em style="color:#A0603E">perjalanan</em></div>
+  <div style="position:absolute;left:84px;top:250px;font-weight:800;font-size:21px;letter-spacing:.3em;text-transform:uppercase;color:#C0592C">Supaya perjalananmu tenang</div>
+  <div class="emb" style="position:absolute;left:84px;right:84px;top:292px;font-family:'Playfair Display',serif;font-size:82px;line-height:1.08">Bekal <em style="color:#A0603E">sebelum berangkat</em></div>
   <div class="list" style="position:absolute;left:84px;right:84px;top:440px;border-top:1.5px solid rgba(138,95,72,.3)">{"".join(f"<div><i>{e}</i>{x}</div>" for e, x in tips)}</div>
   {foot(9)}</div>''')
 # 9 · payoff
@@ -146,11 +146,11 @@ T.append(f'''<div class="t fc" id="rute-10"><img class="bgf" src="{PH}senja/52-p
 T.append(f'''<div class="t" id="rute-11"><div style="position:absolute;inset:36px;border:1.5px solid rgba(138,95,72,.4)"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:120px;width:380px" alt="">
   <div style="position:absolute;left:90px;right:90px;top:470px;text-align:center">
-    <div style="font-weight:800;font-size:21px;letter-spacing:.3em;text-transform:uppercase;color:#C0592C">Butuh bantuan atur perjalanan?</div>
-    <div class="emb" style="font-family:'Playfair Display',serif;font-size:84px;line-height:1.08;margin-top:14px">Chat <em style="color:#A0603E">kami</em> saja</div>
+    <div style="font-weight:800;font-size:21px;letter-spacing:.3em;text-transform:uppercase;color:#C0592C">Bingung atur perjalanannya?</div>
+    <div class="emb" style="font-family:'Playfair Display',serif;font-size:84px;line-height:1.08;margin-top:14px">Biar kami <em style="color:#A0603E">bantu</em></div>
     <div style="font-family:'Playfair Display',serif;font-size:62px;margin-top:30px"><i style="color:#A0603E">WhatsApp</i> {WA}</div>
     <div class="list" style="margin-top:46px;border-top:1.5px solid rgba(138,95,72,.3);text-align:left">
-      <div><i>🔖</i>Simpan untuk liburanmu</div><div><i>📩</i>Share ke teman tripmu</div><div><i>👥</i>Tag orang yang mau kamu ajak</div></div></div>
+      <div><i>🔖</i>Simpan untuk liburanmu berikutnya</div><div><i>📩</i>Kirim ke teman tripmu</div><div><i>👥</i>Tag orang yang ingin kamu ajak menikmati senja</div></div></div>
   <div style="position:absolute;left:0;right:0;bottom:96px;text-align:center;font-weight:600;font-size:19px;letter-spacing:.38em;text-transform:uppercase;color:#7A5039">Pantai Sunari · Selayar</div>
   <div style="position:absolute;left:0;right:0;bottom:62px;text-align:center;font-weight:700;font-size:17px;letter-spacing:.2em;color:#C0592C">#sunarisunsetmoment</div></div>''')
 (H / "rute_jakarta.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
