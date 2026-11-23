@@ -20,6 +20,14 @@ body{background:#bbb;font-family:Montserrat,sans-serif}
 .sub{position:absolute;left:64px;right:64px;top:1080px;font-size:31px;line-height:1.5;color:#4A3426}
 .bt{position:absolute;left:64px;right:64px;bottom:56px;display:flex;justify-content:space-between;font-weight:700;font-size:18px;letter-spacing:.26em;text-transform:uppercase;color:#7A5039;padding-top:18px;border-top:1.5px solid rgba(138,95,72,.3)}
 .bt .h{color:#C0592C;letter-spacing:.12em;text-transform:none}
+.fc .bgf{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fc .vt{position:absolute;left:0;right:0;top:0;height:640px;background:linear-gradient(180deg,rgba(20,12,6,.55),rgba(20,12,6,0))}
+.fc .vb{position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(0deg,rgba(20,12,6,.45),rgba(20,12,6,0))}
+.fc .fk{position:absolute;left:84px;top:110px;font-weight:600;font-size:22px;letter-spacing:.42em;text-transform:uppercase;color:#FBF4EC;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.fc .fh{position:absolute;left:80px;top:160px;font-family:'Playfair Display',serif;font-size:118px;line-height:1.05;color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.45)}
+.fc .fs{position:absolute;left:84px;top:430px;font-family:'Playfair Display',serif;font-style:italic;font-size:46px;color:#FBF4EC;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.fc .fg{position:absolute;left:84px;bottom:70px;font-weight:600;font-size:20px;letter-spacing:.38em;text-transform:uppercase;color:#FBF4EC;opacity:.92}
+.fc .fl{position:absolute;right:70px;bottom:52px;width:300px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))}
 .cv .ttl{top:960px;font-size:92px}
 .cv .sub{top:1080px}
 .fx{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;margin-top:40px;border-top:1.5px solid rgba(138,95,72,.3)}
@@ -27,9 +35,9 @@ body{background:#bbb;font-family:Montserrat,sans-serif}
 .fx div::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:linear-gradient(90deg,#FDB15D,#FF8A5C);margin-right:16px;vertical-align:middle}
 """
 KICK = "VIP Standard Bungalow"
-SL = [("04-teras-view-laut.jpg", "50% 50%", 'VIP Standard <em>Bungalow</em>', "Rumah panggung tepi pantai, dengan laut di depan teras.", "Room tour · SunaRi"),
+SL = [("02-teras-view-pantai.jpg", "50% 50%", 'VIP Standard<br>Bungalow', "Turun tangga, langsung pasir", "Room tour"),
       ("01-eksterior-rumah-panggung.jpg", "50% 55%", 'Rumah <em>beratap rumbia</em>', "Rumah panggung di tepi Pantai Sunari, di antara pohon kelapa.", KICK),
-      ("02-teras-view-pantai.jpg", "50% 60%", 'Buka pintu, <em>laut menyapa</em>', "Teras kayu pribadi menghadap pantai, laut biru tepat di depan mata.", KICK),
+      ("04-teras-view-laut.jpg", "50% 55%", 'Buka pintu, <em>laut menyapa</em>', "Teras kayu pribadi menghadap pantai, laut biru tepat di depan mata.", KICK),
       ("03-teras-samping.jpg", "45% 55%", 'Teras untuk <em>jeda</em>', "Meja dan kursi di teras, untuk kopi pagi atau sekadar membaca.", KICK),
       ("06-kamar-depan.jpg", "50% 55%", 'King bed, <em>atap kayu</em>', "Kamar lebih luas dari Standard, dengan AC, tirai blackout, dan lampu dinding yang hangat.", KICK),
       ("07-kamar-samping.jpg", "50% 55%", 'Nyaman untuk <em>berdua</em>', "Untuk 2 tamu, maksimal 3 dengan extra bed. Ada meja rias dan set kopi/teh.", KICK),
@@ -37,6 +45,12 @@ SL = [("04-teras-view-laut.jpg", "50% 50%", 'VIP Standard <em>Bungalow</em>', "R
       ("10-kamar-mandi-shower.jpg", "50% 60%", 'Kamar mandi <em>di dalam</em>', "Shower dan toilet duduk di dalam kamar, bersih dan terang.", KICK)]
 T = []
 for k, (img, pos, t, sub, kick) in enumerate(SL, 1):
+    if k == 1:
+        T.append(f'''<div class="t fc" id="vip-standard-01"><img class="bgf" src="{P}{img}" style="object-position:{pos}" alt="">
+  <div class="vt"></div><div class="vb"></div>
+  <div class="fk">{kick}</div><div class="fh">{t}</div><div class="fs">{sub}</div>
+  <div class="fg">Geser &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''')
+        continue
     T.append(f'''<div class="t{' cv' if k == 1 else ''}" id="vip-standard-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
   <div class="kick">{kick}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>{k:02d} / {N:02d}</span></div></div>''')

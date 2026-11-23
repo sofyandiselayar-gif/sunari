@@ -8,7 +8,7 @@ Carousel 9 slide · format 1080 × 1350 (4:5) · SunaRi Beach Resort Selayar
 
 | No | File | Isi slide |
 |---|---|---|
-| 1 | `vip-standard-01.png` | Sampul: VIP Standard Bungalow |
+| 1 | `vip-standard-01.png` | Sampul foto penuh: "Room Tour · VIP Standard Bungalow · Turun tangga, langsung pasir" |
 | 2 | `vip-standard-02.png` | Rumah beratap rumbia (eksterior) |
 | 3 | `vip-standard-03.png` | Buka pintu, laut menyapa (teras) |
 | 4 | `vip-standard-04.png` | Teras untuk jeda |
@@ -89,9 +89,9 @@ Geser untuk room tour lengkapnya, lalu simpan untuk liburanmu berikutnya. 🤍
 
 ## 5. Alt text per slide
 
-1. Teras kayu VIP Standard Bungalow dengan pemandangan laut biru dan pantai.
+1. Pintu teras VIP Standard Bungalow terbuka langsung ke pantai dan laut biru.
 2. Rumah panggung beratap rumbia di antara pohon kelapa, tepi Pantai Sunari.
-3. Pintu teras terbuka menghadap pantai dan laut dari dalam bungalow kayu.
+3. Teras kayu dengan pagar putih menghadap laut biru dan pohon kelapa.
 4. Meja dan kursi kayu di teras dengan pemandangan laut.
 5. Kamar dengan king bed di bawah atap kayu, AC dan lampu dinding.
 6. King bed dengan sprei putih, meja samping dan tirai.
