@@ -5,6 +5,7 @@ H = pathlib.Path(__file__).parent
 src = (H / "build_senja_cerita.py").read_text()
 ns = {}; exec(src[src.index("LOGO ="):src.index("N = len(SL)")], ns)   # ambil LOGO, P, WA, FONTS, SL dari versi feed
 LOGO, LOGO_D, P, WA, FONTS, SL = ns["LOGO"], ns["LOGO_D"], ns["P"], ns["WA"], ns["FONTS"], ns["SL"]
+SL = [(i, p, k, t, "Kayak berjajar di pasir, menunggu besok sore." if i.startswith("73") else s) for i, p, k, t, s in SL]
 # posisi crop horizontal khusus 9:16 (foto aslinya persegi)
 XPOS = {"79": "60%", "80": "28%", "81": "55%", "82": "58%", "71": "30%", "83": "74%", "76": "50%", "77": "42%",
         "72": "48%", "70": "48%", "73": "100%", "75": "55%"}
