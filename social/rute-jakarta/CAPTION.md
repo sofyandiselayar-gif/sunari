@@ -5,7 +5,7 @@
 Cara ke Sunari Beach Resort dari Jakarta, langkah demi langkah ✈️🚗⛴️ Simpan dulu biar nggak lupa!
 
 Rutenya: Jakarta → Makassar → Pulau Selayar.
-✈️ Jakarta → Makassar ±2 jam 20 menit
+✈️ Jakarta → Makassar ±2 jam 30 menit
 Lalu pilih:
 🛩️ Opsi cepat: Makassar → Bandara H. Aroeppala ±45 menit (jadwal terbatas, cek H-7)
 🚗⛴️ Opsi darat: Makassar → Bira ±4–5 jam, lalu feri Bira → Pamatata ±2 jam

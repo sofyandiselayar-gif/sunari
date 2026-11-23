@@ -49,7 +49,7 @@ T.append(card(2, M + "03_tiga_rute.png", "50% 42%", "", "Gambaran besarnya", 'Ja
   '<div class="big"><b>±5 jam</b><span>lewat udara<br>(belum termasuk transit)</span><b>±12 jam</b><span>lewat darat<br>&amp; feri</span></div>'))
 # 3 · langkah 1
 T.append(card(3, M + "02_sulawesi.png", "50% 55%", "Langkah 1", "Semua rute mulai dari sini", 'Jakarta → <em>Makassar</em> (UPG)',
-  big("±2 jam 20 mnt", "Terbang ke Bandara Sultan Hasanuddin, Makassar. Banyak pilihan jadwal setiap hari.")))
+  big("±2 jam 30 mnt", "Terbang ke Bandara Sultan Hasanuddin, Makassar. Banyak pilihan jadwal setiap hari.")))
 # 4 · opsi cepat
 T.append(card(4, M + "04_rute1_pesawat.png", "50% 45%", "Opsi cepat", "Langkah 2 · lewat udara", 'Makassar → <em>Aroeppala</em>',
   big("±45 menit", "Pesawat kecil ke Bandara H. Aroeppala, Selayar. Jadwal terbatas, cek di aplikasi tiket minimal H-7.")))
