@@ -2,7 +2,7 @@
 Run: python3 social/build_senja_cerita.py && node social/render_senja_cerita.js -> social/senja-cerita/"""
 import pathlib
 H = pathlib.Path(__file__).parent
-LOGO = "../assets/logo-sunari-color.png"; LOGO_D = "../assets/logo-sunari-color-dark.png"; P = "../assets/photos/senja/"
+LOGO = "../assets/logo-sunari-color.png"; LOGO_D = "../assets/logo-sunari-color-dark.png"; P = "../assets/photos/graded/senja__"
 WA = "0821-8903-3044"
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
 CSS = """
