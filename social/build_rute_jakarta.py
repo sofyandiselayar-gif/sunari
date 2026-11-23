@@ -65,7 +65,7 @@ def step(k, mp, pos, col, opt, lang, frm, to, dur, naik, note, path, active, lgr
   <div style="position:absolute;left:64px;right:64px;top:52px;display:flex;justify-content:space-between;align-items:center">
     <span style="background:{col};color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.2em;text-transform:uppercase;padding:12px 22px;border-radius:999px">{opt}</span>
     <span style="font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;color:{col}">{lang}</span></div>
-  <div class="ph" style="top:122px;height:560px;background:#094473"><img src="{mp}" style="object-position:{pos}" alt="">{'<div style="position:absolute;inset:0;box-shadow:inset 0 0 50px 34px #094473;pointer-events:none"></div>' if lgr else ''}<img class="lg" src="{LOGO_D}" style="{'left:auto;right:28px' if lgr else ''}" alt=""></div>
+  <div class="ph" style="top:122px;height:560px;background:#094473"><img src="{mp}" style="object-position:{pos}" alt="">{'<div style="position:absolute;inset:0;box-shadow:inset 0 0 50px 34px #094473;pointer-events:none"></div>' if path == "C" else ''}<img class="lg" src="{LOGO_D}" style="{'left:auto;right:28px' if lgr else ''}" alt=""></div>
   <div class="emb" style="position:absolute;left:64px;right:64px;top:712px;font-family:'Playfair Display',serif;font-size:64px;line-height:1.1;white-space:nowrap">{frm} <span style="color:{col}">→</span> <em style="color:#A0603E">{to}</em></div>
   <div style="position:absolute;left:64px;right:64px;top:812px;border-top:1.5px solid rgba(138,95,72,.25)">{rows}</div>
   {tracker(path, active, col)}{foot(k)}</div>'''
@@ -90,8 +90,8 @@ T.append(f'''<div class="t" id="rute-02">
   {foot(2)}</div>''')
 T.append(step(3, M + "08_jakarta_makassar.png", "50% 50%", ALL_COL, "Opsi A &amp; B", "Langkah 1", "Jakarta", "Makassar", "±2 jam 30 menit",
   "✈️ Pesawat ke Bandara Sultan Hasanuddin (UPG)", "Banyak pilihan jadwal setiap hari", "semua", [0, 1]))
-T.append(step(4, M + "04_rute1_pesawat.png", "50% 46%", A_COL, "Opsi A · Udara", "Langkah 2 dari 3", "Makassar", "Aroeppala", "±45 menit",
-  "🛩️ Pesawat kecil ke Bandara H. Aroeppala", "Jadwal terbatas, cek di aplikasi tiket minimal H-7", "A", [1, 2]))
+T.append(step(4, M + "04_rute1_pesawat_tanpa-sublabel.png", "50% 45.5%", A_COL, "Opsi A · Udara", "Langkah 2 dari 3", "Makassar", "Aroeppala", "±45 menit",
+  "🛩️ Pesawat kecil ke Bandara H. Aroeppala", "Jadwal terbatas, cek di aplikasi tiket minimal H-7", "A", [1, 2], lgr=True))
 T.append(step(5, M + "05_rute2_darat_feri.png", "50% 30%", B_COL, "Opsi B · Darat", "Langkah 2 dari 4", "Makassar", "Bira", "±4–5 jam",
   "🚗 Mobil/bus dari Terminal Malengkeri", "Berangkat pagi supaya tidak ketinggalan feri", "B", [1, 2]))
 T.append(step(6, M + "05_rute2_darat_feri.png", "50% 64%", B_COL, "Opsi B · Feri", "Langkah 3 dari 4", "Bira", "Pamatata", "±2 jam",
@@ -104,7 +104,7 @@ T.append(f'''<div class="t" id="rute-08">
   <div style="position:absolute;left:64px;right:64px;top:52px;display:flex;justify-content:space-between;align-items:center">
     <span style="background:{ALL_COL};color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.2em;text-transform:uppercase;padding:12px 22px;border-radius:999px">Semua opsi</span>
     <span style="font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;color:{ALL_COL}">Langkah terakhir</span></div>
-  <div class="ph" style="top:122px;height:440px"><img src="{M}07_pulau_selayar.png" style="object-position:50% 50%" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
+  <div class="ph" style="top:122px;height:440px;background:#094473"><img src="{M}07_pulau_selayar.png" style="position:absolute;left:150px;top:-300px;width:680px;height:1209px;object-fit:fill" alt=""><div style="position:absolute;inset:0;box-shadow:inset 0 0 50px 34px #094473;pointer-events:none"></div><img class="lg" src="{LOGO_D}" alt=""></div>
   <div class="emb" style="position:absolute;left:64px;right:64px;top:592px;font-family:'Playfair Display',serif;font-size:64px;line-height:1.1">Ke <em style="color:#A0603E">Sunari Beach Resort</em></div>
   <div style="position:absolute;left:64px;right:64px;top:690px;font-weight:800;font-size:19px;letter-spacing:.24em;text-transform:uppercase;color:#9C8270">Dari titik kedatangan · naik mobil</div>
   <div style="position:absolute;left:64px;right:64px;top:730px;border-top:1.5px solid rgba(138,95,72,.25)">{rows7}</div>
