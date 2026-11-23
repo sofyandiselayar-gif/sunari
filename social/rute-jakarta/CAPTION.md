@@ -1,4 +1,4 @@
-# Caption Instagram: Carousel "Cara ke SunaRi dari Jakarta" (10 slide)
+# Caption Instagram: Carousel "Cara ke SunaRi dari Jakarta" (11 slide)
 
 **Musik:** pilih lagu perjalanan yang upbeat dan sedang tren (ikon musik saat upload; cari lagu dengan tanda ↗ di Reels).
 
