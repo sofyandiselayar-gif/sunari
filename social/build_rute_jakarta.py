@@ -35,16 +35,31 @@ def card(k, img, pos, step, kick, ttl, body):
 big = lambda n, t: f'<div class="big"><b>{n}</b><span>{t}</span></div>'
 sub = lambda t: f'<div class="sub">{t}</div>'
 T = []
-# 1 · hook: 2 foto senja terbaik dalam 1 frame + kalimat soft selling
+# 1 · hook: 20 foto senja terbaik dalam 1 frame (grid 5×4, terang → gelap) + kalimat soft selling
+import numpy as _np
+from PIL import Image as _Im
+_G = ["74-matahari-menyentuh-laut-kapal", "72-ayunan-di-antara-kelapa", "70-perahu-nelayan-daun-kelapa", "71-siluet-tirai-matahari", "77-ayunan-siluet-dekat", "75-afterglow-dua-sahabat"]
+_O = ["45-dua-kayak-matahari-1751", "35-matahari-cakrawala-1751", "64-kayak-double-bawah-matahari-1750", "65-kayak-single-matahari-terbenam-1753",
+      "44-dua-kayak-emas-1743", "51-kayak-double-jalur-cahaya-1751", "52-pohon-kelapa-bungalow-1747", "29-dua-kursi-menghadap-senja",
+      "28-matahari-di-bawah-daun", "47-payung-di-antara-kelapa-1755", "53-afterglow-lampu-gantung-1807", "60-berdua-bawah-payung-kelapa-1753",
+      "10-kayak-pantulan", "37-afterglow-kayak-pelampung-1814"]
+_R = H.parent / "assets/photos"
+_tiles = []
+for f in [("graded/senja__" + x + ".jpg") for x in _G] + [("senja/" + x + ".jpg") for x in _O]:
+    _im = _Im.open(_R / f).convert("RGB"); _im.thumbnail((160, 160)); _a = _np.asarray(_im.convert("L"), float)
+    _b = _np.asarray(_im.filter(__import__("PIL.ImageFilter", fromlist=["x"]).GaussianBlur(5)).convert("L"), float)
+    _y, _x = _np.unravel_index(_b.argmax(), _b.shape)
+    _tiles.append((_a.mean(), f, f"{round(100*_x/_b.shape[1])}% {round(100*_y/_b.shape[0])}%"))
+_tiles = [(m, f, '50% 58%' if '57-matahari' in f else pos) for m, f, pos in _tiles]
+_tiles.sort(key=lambda z: -z[0])
+assert len(_tiles) == 20
+_grid = "".join(f'<img src="../assets/photos/{f}" style="width:100%;height:100%;object-fit:cover;object-position:{pos};border-radius:10px;display:block;min-width:0;min-height:0" alt="">' for _, f, pos in _tiles)
 T.append(f'''<div class="t" id="rute-01">
-  <div style="position:absolute;left:60px;right:60px;top:60px;height:720px;display:flex;gap:16px">
-    <div style="flex:1;border-radius:24px;overflow:hidden;box-shadow:0 14px 36px rgba(90,62,49,.2)"><img src="../assets/photos/graded/senja__74-matahari-menyentuh-laut-kapal.jpg" style="width:100%;height:100%;object-fit:cover;object-position:58% 50%" alt=""></div>
-    <div style="flex:1;border-radius:24px;overflow:hidden;box-shadow:0 14px 36px rgba(90,62,49,.2)"><img src="../assets/photos/graded/senja__72-ayunan-di-antara-kelapa.jpg" style="width:100%;height:100%;object-fit:cover;object-position:46% 55%" alt=""></div></div>
-  <img src="{LOGO_D}" style="position:absolute;left:86px;top:84px;width:220px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))" alt="">
-  <div style="position:absolute;left:50%;top:712px;transform:translateX(-50%);background:#C0592C;color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;padding:14px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px rgba(192,89,44,.35)">Jakarta ✈️ Makassar ⛴️ Selayar</div>
-  <div class="emb" style="position:absolute;left:64px;right:64px;top:820px;font-family:'Playfair Display',serif;font-size:76px;line-height:1.08;text-align:center;color:#45301F">Senja ini menunggumu<br>di <em style="color:#A0603E">Pantai Sunari.</em></div>
-  <div style="position:absolute;left:90px;right:90px;top:1010px;font-size:30px;line-height:1.5;text-align:center;color:#4A3426">Begini cara ke Sunari Beach Resort dari Jakarta, lebih mudah dari yang kamu kira.</div>
-  <div style="position:absolute;left:0;right:0;top:1130px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:32px;color:#A0603E">Simpan dulu, biar liburanmu tinggal berangkat.</div>
+  <div style="position:absolute;left:60px;right:60px;top:60px;height:740px;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(4,1fr);gap:8px;padding:8px;background:#fff;border-radius:22px;box-shadow:0 14px 36px rgba(90,62,49,.18)">{_grid}</div>
+  <div style="position:absolute;left:50%;top:772px;transform:translateX(-50%);background:#C0592C;color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;padding:14px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px rgba(192,89,44,.35)">Jakarta ✈️ Makassar ⛴️ Selayar</div>
+  <div class="emb" style="position:absolute;left:64px;right:64px;top:868px;font-family:'Playfair Display',serif;font-size:72px;line-height:1.08;text-align:center;color:#45301F">Senja ini menunggumu<br>di <em style="color:#A0603E">Pantai Sunari.</em></div>
+  <div style="position:absolute;left:90px;right:90px;top:1046px;font-size:29px;line-height:1.5;text-align:center;color:#4A3426">Begini cara ke Sunari Beach Resort dari Jakarta, lebih mudah dari yang kamu kira.</div>
+  <div style="position:absolute;left:0;right:0;top:1160px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:31px;color:#A0603E">Simpan dulu, biar liburanmu tinggal berangkat.</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">Geser untuk rutenya →</span><span>01 / {N:02d}</span></div></div>''')
 # ---- struktur: Opsi A (udara) & Opsi B (darat + feri), tiap langkah format sama
 A_COL, B_COL, C_COL, ALL_COL = "#C0592C", "#7A5039", "#2F6E7E", "#45301F"
