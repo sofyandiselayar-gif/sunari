@@ -381,10 +381,13 @@ FEED12 = [
    ("senja/06-di-bawah-daun.jpg","50% 55%","Di bawah daun kelapa","Bingkai alami untuk foto senjamu.")],
    ("Tips menikmati senja", ["Datang 30 menit sebelum matahari terbenam","Ikuti jam senja harian di story kami","Simpan postingan ini untuk liburanmu"])),
  ("p04", "Malam di SunaRi", "camp-4", [
+   ("senja/38-blue-hour-kayak-1815.jpg","50% 55%","Langit berganti biru","Beberapa menit setelah matahari tenggelam, langit perlahan menjadi biru tua."),
    ("malam/02-bangunan-utama-malam.jpg","50% 60%","Hangat di antara pohon kelapa","Bangunan kayu dan jembatan kecil yang menyala setiap malam."),
+   ("malam/06-taman-malam-bougainvillea.jpg","50% 45%","Taman ikut menyala","Lampu-lampu kecil di antara bunga dan pohon kelapa."),
    ("malam/07-jalan-setapak-gazebo.jpg","50% 60%","Jalan setapak berlampu","Dari bungalow ke gazebo, ditemani suara ombak."),
+   ("resto/03-resto-malam.jpg","50% 58%","Makan malam di Bajoy","Ikan bakar &amp; seafood di bawah lampu gantung, buka sampai 21.00 WITA."),
    ("malam/09-lilin-di-meja.jpg","50% 70%","Malam yang pelan","Tidak ada yang terburu-buru di Selayar.")],
-   ("Malam di SunaRi", ["Bajoy Beach Resto buka sampai 21.00 WITA","Senja Dinner, pesan H-1","Bungalow kayu dengan teras pribadi"])),
+   ("Malam di SunaRi", ["Bajoy Beach Resto buka sampai 21.00 WITA","Senja Dinner, pesan H-1","Taman berlampu di antara pohon kelapa","Bungalow kayu dengan teras pribadi"])),
  ("p06", "Setiap hari berakhir indah", "feed-quote", [
    ("senja/10-kayak-pantulan.jpg","50% 60%","Matahari yang menari","SunaRi: sun dan nari. Matahari yang menari turun ke laut Selayar."),
    ("senja/16-perahu-nelayan.jpg","50% 60%","Perahu pulang ke darat","Saat langit oranye, nelayan pun pulang."),

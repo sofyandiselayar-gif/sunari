@@ -8,7 +8,7 @@ File: `social/feed-12-carousel/NN-nama/01.png …` (1080 × 1350). Slide 01 = ga
 | 01 | `01-lebih-dari-menginap` | 5 | Duduk & menikmati · makan malam di resto · malam di resort · CTA |
 | 02 | `02-senja-hari-ini` | 5 | Jam senja · 3 foto senja · tips menikmati senja |
 | 03 | `03-vip-superior` | 6 | Room tour VIP Superior (bathtub & air panas) |
-| 04 | `04-malam-di-sunari` | 5 | Bangunan utama · jalan setapak · lilin · info malam |
+| 04 | `04-malam-di-sunari` | 8 | Langit biru · bangunan utama · taman berlampu · jalan setapak · resto malam · lilin · info malam |
 | 05 | `05-vip-standard` | 6 | Room tour VIP Standard |
 | 06 | `06-tempat-senja-pulang` | 5 | Kutipan · cerita nama SunaRi · perahu nelayan · tempat senja pulang |
 | 07 | `07-pantai-sepi` | 8 | Pantai sepi · pagi tenang · ayunan raksasa · pantai landai & aman · senja di depan mata · duduk sampai gelap · info pantai |
