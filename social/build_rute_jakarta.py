@@ -50,7 +50,7 @@ for f in [("graded/senja__" + x + ".jpg") for x in _G] + [("senja/" + x + ".jpg"
     _b = _np.asarray(_im.filter(__import__("PIL.ImageFilter", fromlist=["x"]).GaussianBlur(5)).convert("L"), float)
     _y, _x = _np.unravel_index(_b.argmax(), _b.shape)
     _tiles.append((_a.mean(), f, f"{round(100*_x/_b.shape[1])}% {round(100*_y/_b.shape[0])}%"))
-_tiles = [(m, f, '50% 58%' if '57-matahari' in f else pos) for m, f, pos in _tiles]
+_tiles = [(m, f, '50% 62%' if '44-dua-kayak' in f else pos) for m, f, pos in _tiles]
 _tiles.sort(key=lambda z: -z[0])
 assert len(_tiles) == 20
 _grid = "".join(f'<img src="../assets/photos/{f}" style="width:100%;height:100%;object-fit:cover;object-position:{pos};border-radius:10px;display:block;min-width:0;min-height:0" alt="">' for _, f, pos in _tiles)
