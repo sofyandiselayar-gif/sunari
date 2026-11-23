@@ -36,7 +36,7 @@ SL = [("79-meja-kayak-golden-hour.jpg", "50% 60%", "Golden hour", 'Meja sudah <e
       ("81-resto-tirai-senja.jpg", "50% 55%", "Menjelang senja", 'Kursi mulai <em>terisi</em>', "Satu per satu tamu datang, minuman dingin, obrolan pelan."),
       ("82-dua-tamu-meja-senja.jpg", "50% 50%", "Menjelang senja", 'Cerita di meja <em>kayu</em>', "Di bawah pohon ketapang, matahari tepat di depan mata."),
       ("71-siluet-tirai-matahari.jpg", "45% 50%", "Menjelang senja", 'Duduk di balik <em>tirai</em>', "Minuman di tangan, jalur cahaya jatuh di depan meja."),
-      ("78-dua-tamu-tepi-pantai.jpg", "50% 50%", "Menjelang senja", 'Satu <em>cakrawala</em>', "Ada yang memotret, ada yang cukup memandang."),
+      ("83-fotografer-di-tepi-pantai.jpg", "50% 62%", "Menjelang senja", 'Lensa <em>siap</em>', "Kamera diarahkan ke laut, menunggu cahaya terbaik."),
       ("76-staf-bantu-ayunan.jpg", "50% 55%", "Matahari turun", 'Dibantu naik <em>ayunan</em>', "Tim SunaRi siap membantu, ayunan raksasa gratis untuk dicoba."),
       ("77-ayunan-siluet-dekat.jpg", "50% 45%", "Matahari turun", 'Lalu, <em>melayang</em>', "Sejenak di udara, langit jingga di sekeliling."),
       ("72-ayunan-di-antara-kelapa.jpg", "50% 60%", "Matahari turun", 'Berayun ke arah <em>matahari</em>', "Di antara pohon kelapa, matahari tepat di cakrawala."),
