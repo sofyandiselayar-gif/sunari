@@ -20,22 +20,42 @@ W, Hh = 3200, 1600
 m = m.resize((W, Hh), Image.LANCZOS).filter(ImageFilter.GaussianBlur(1.2))
 mk = np.asarray(m, float) / 255; mk = np.clip((mk - 0.5) * 6 + 0.5, 0, 1)
 rng = np.random.default_rng(7)
-def noise(sigma, scale):
-    n = Image.fromarray((rng.random((Hh // scale, W // scale)) * 255).astype(np.uint8)).resize((W, Hh), Image.BICUBIC).filter(ImageFilter.GaussianBlur(sigma))
-    return np.asarray(n, float) / 255
-y = np.linspace(0, 1, Hh)[:, None, None]
-seaC = (np.array([0x0E, 0x3A, 0x63]) * (1 - y) + np.array([0x0B, 0x33, 0x5A]) * y) / 255
-seaC = seaC + (noise(6, 8)[..., None] - .5) * 0.05
-halo = np.asarray(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(22)), float) / 255
-halo2 = np.asarray(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(6)), float) / 255
-shallow = np.array([0x22, 0x9C, 0xB0]) / 255
-seaC = seaC * (1 - .55 * halo[..., None]) + shallow * .55 * halo[..., None]
-seaC = seaC * (1 - .35 * halo2[..., None]) + np.array([0x5F, 0xD0, 0xD2]) / 255 * .35 * halo2[..., None]
-t = noise(10, 6)[..., None]; t2 = noise(3, 2)[..., None]
-landC = np.array([0x2F, 0x5E, 0x2E]) / 255 * (1 - t) + np.array([0x5C, 0x86, 0x45]) / 255 * t
-landC = landC * (0.9 + 0.2 * t2)
-inner = np.asarray(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.MinFilter(9)).filter(ImageFilter.GaussianBlur(8)), float)[..., None] / 255
-landC = landC * (0.85 + 0.15 * inner) + np.array([0xB9, 0xB0, 0x7A]) / 255 * 0.18 * (1 - inner)   # tepi pantai berpasir
+def blur(x, r): return np.asarray(Image.fromarray(np.clip(x * 255, 0, 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(r)), float) / 255
+def fbm():
+    out = np.zeros((Hh, W)); amp = 1.0; tot = 0
+    for sc in (256, 128, 64, 32, 16, 8, 4):
+        n = Image.fromarray((rng.random((Hh // sc + 2, W // sc + 2)) * 255).astype(np.uint8)).resize((W + 2 * sc, Hh + 2 * sc), Image.BICUBIC)
+        out += amp * np.asarray(n, float)[sc:sc + Hh, sc:sc + W] / 255; tot += amp; amp *= 0.55
+    return out / tot
+# ---- relief 3D: tinggi dari jarak ke pantai + noise fraktal, lalu hillshade (cahaya dari barat laut)
+d = (blur(mk, 6) + blur(mk, 18) + blur(mk, 45) + blur(mk, 90)) / 4
+nz = fbm()
+h = mk * (0.55 * d + 0.45 * (nz - 0.3) * np.sqrt(np.clip(d, 0, 1)) * 1.6)
+hs = blur(np.clip(h, 0, 1), 1.5)
+gy, gx = np.gradient(hs * 260)
+nx, ny, nzv = -gx, -gy, np.ones_like(gx); ln = np.sqrt(nx**2 + ny**2 + nzv**2)
+L = np.array([-0.6, -0.6, 0.55]); L = L / np.linalg.norm(L)
+shade = np.clip((nx * L[0] + ny * L[1] + nzv * L[2]) / ln, 0, 1)
+shade = 0.55 + 0.75 * shade
+lo, mid, hi = np.array([0x2C, 0x5E, 0x22]), np.array([0x3E, 0x73, 0x2C]), np.array([0x76, 0x6A, 0x3A])
+hn = np.clip(h * 1.6, 0, 1)[..., None]
+landC = (lo * (1 - hn) + mid * hn) / 255
+ridge = np.clip((h - 0.55) * 4, 0, 1)[..., None] * (nz[..., None] > 0.5)
+landC = landC * (1 - 0.35 * ridge) + hi / 255 * 0.35 * ridge
+landC = landC * shade[..., None]
+edge = np.clip(mk - blur(np.asarray(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.MinFilter(3)), float) / 255, 1.0), 0, 1)
+landC = landC * (1 - 0.45 * edge[..., None]) + np.array([0xE9, 0xDC, 0x9A]) / 255 * 0.45 * edge[..., None]   # garis pasir
+# ---- laut: biru dalam + gradasi toska di perairan dangkal + awan tipis
+sn = fbm()
+seaC = (np.array([0x10, 0x46, 0x80]) / 255) * (0.88 + 0.22 * sn[..., None])
+shallow1 = blur(np.asarray(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(15)), float) / 255, 26)
+shallow2 = blur(np.asarray(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(5)), float) / 255, 7)
+seaC = seaC * (1 - 0.6 * shallow1[..., None]) + np.array([0x1E, 0x8F, 0xB8]) / 255 * 0.6 * shallow1[..., None]
+seaC = seaC * (1 - 0.9 * shallow2[..., None]) + np.array([0x5A, 0xE0, 0xDC]) / 255 * 0.9 * shallow2[..., None]
 out = seaC * (1 - mk[..., None]) + landC * mk[..., None]
+cl = np.clip((fbm() - 0.58) * 3.2, 0, 1); cl = blur(cl, 10) * 0.32
+out = out * (1 - cl[..., None]) + cl[..., None]
+vig = 1 - 0.18 * ((np.linspace(-1, 1, W)[None, :] ** 2 + np.linspace(-1, 1, Hh)[:, None] ** 2) / 2)
+out = out * vig[..., None]
 Image.fromarray((np.clip(out, 0, 1) * 255).astype(np.uint8)).save(H / "src/peta-dasar-indonesia.png")
 print("ok")
