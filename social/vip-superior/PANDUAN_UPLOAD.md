@@ -8,12 +8,12 @@ Carousel 10 slide · format 1080 × 1350 (4:5) · SunaRi Beach Resort Selayar
 
 | No | File | Isi slide |
 |---|---|---|
-| 1 | `vip-superior-01.png` | Sampul: VIP Superior Bungalow (eksterior A-frame) |
+| 1 | `vip-superior-01.png` | Sampul foto penuh: "Room Tour · VIP Superior Bungalow · Berendam di bawah langit terbuka" |
 | 2 | `vip-superior-02.png` | Teras untuk jeda |
 | 3 | `vip-superior-03.png` | Jendela segitiga (king bed) |
 | 4 | `vip-superior-04.png` | Ada loteng di atas |
 | 5 | `vip-superior-05.png` | Pagi dari atas (kamar dari loteng) |
-| 6 | `vip-superior-06.png` | Berendam di bawah langit (bathtub) |
+| 6 | `vip-superior-06.png` | Bathtub beratap kaca |
 | 7 | `vip-superior-07.png` | Air panas & dingin (rain shower) |
 | 8 | `vip-superior-08.png` | Detail yang rapi (wastafel) |
 | 9 | `vip-superior-09.png` | Lapang & terang (toilet & wastafel) |
