@@ -58,14 +58,14 @@ def tracker(path, active, col):
         out.append(f'<div style="text-align:center;flex:none;width:150px;position:relative">{dot}<div style="font-size:21px;font-weight:{800 if on else 600};color:{col if on else "#9C8270"};margin-top:8px">{n}</div></div>')
     return ('<div style="position:absolute;left:64px;right:64px;top:1150px;display:flex;justify-content:space-between;align-items:flex-start">'
             '<div style="position:absolute;left:75px;right:75px;top:11px;height:3px;background:#E8D8C6"></div>' + "".join(out) + '</div>')
-def step(k, mp, pos, col, opt, lang, frm, to, dur, naik, note, path, active):
+def step(k, mp, pos, col, opt, lang, frm, to, dur, naik, note, path, active, lgr=False):
     rows = "".join(f'<div style="display:flex;padding:16px 0;border-bottom:1.5px solid rgba(138,95,72,.25)"><div style="width:190px;flex:none;font-weight:800;font-size:20px;letter-spacing:.22em;text-transform:uppercase;color:#9C8270;padding-top:8px">{l}</div><div style="font-size:{s}px;line-height:1.35;{st}">{v}</div></div>'
                    for l, v, s, st in [("Durasi", dur, 46, f"font-family:'Playfair Display',serif;color:{col}"), ("Naik", naik, 30, ""), ("Catatan", note, 28, "color:#4A3426")])
     return f'''<div class="t" id="rute-{k:02d}">
   <div style="position:absolute;left:64px;right:64px;top:52px;display:flex;justify-content:space-between;align-items:center">
     <span style="background:{col};color:#FBF4EC;font-weight:800;font-size:20px;letter-spacing:.2em;text-transform:uppercase;padding:12px 22px;border-radius:999px">{opt}</span>
     <span style="font-weight:800;font-size:20px;letter-spacing:.24em;text-transform:uppercase;color:{col}">{lang}</span></div>
-  <div class="ph" style="top:122px;height:560px"><img src="{mp}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
+  <div class="ph" style="top:122px;height:560px;background:#094473"><img src="{mp}" style="object-position:{pos}" alt="">{'<div style="position:absolute;inset:0;box-shadow:inset 0 0 50px 34px #094473;pointer-events:none"></div>' if lgr else ''}<img class="lg" src="{LOGO_D}" style="{'left:auto;right:28px' if lgr else ''}" alt=""></div>
   <div class="emb" style="position:absolute;left:64px;right:64px;top:712px;font-family:'Playfair Display',serif;font-size:64px;line-height:1.1;white-space:nowrap">{frm} <span style="color:{col}">→</span> <em style="color:#A0603E">{to}</em></div>
   <div style="position:absolute;left:64px;right:64px;top:812px;border-top:1.5px solid rgba(138,95,72,.25)">{rows}</div>
   {tracker(path, active, col)}{foot(k)}</div>'''
@@ -96,8 +96,8 @@ T.append(step(5, M + "05_rute2_darat_feri.png", "50% 30%", B_COL, "Opsi B · Dar
   "🚗 Mobil/bus dari Terminal Malengkeri", "Berangkat pagi supaya tidak ketinggalan feri", "B", [1, 2]))
 T.append(step(6, M + "05_rute2_darat_feri.png", "50% 64%", B_COL, "Opsi B · Feri", "Langkah 3 dari 4", "Bira", "Pamatata", "±2 jam",
   "⛴️ Feri penyeberangan ke Pulau Selayar", "Cek jadwal feri, pesan lebih awal saat libur panjang", "B", [2, 3]))
-T.append(step(7, M + "06_rute3_kapal_laut.png", "50% 39%", C_COL, "Opsi C · Kapal", "Langkah 2 dari 3", "Makassar", "Benteng", "±10–11 jam",
-  "🚢 KM Dharma Kartika III, langsung tanpa feri", "Berangkat malam, tidak setiap hari (cek jadwal)", "C", [1, 2]))
+T.append(step(7, M + "06_rute3_kapal_laut.png", "50% 46%;transform:scale(.94);transform-origin:50% 62%", C_COL, "Opsi C · Kapal", "Langkah 2 dari 3", "Makassar", "Benteng", "±10–11 jam",
+  "🚢 KM Dharma Kartika III, langsung tanpa feri", "Berangkat malam, tidak setiap hari (cek jadwal)", "C", [1, 2], lgr=True))
 arr = [("Bandara H. Aroeppala", "dari Opsi A", "±10–15 menit"), ("Pelabuhan Pamatata", "dari Opsi B", "±1–1,5 jam"), ("Pelabuhan Benteng", "dari Opsi C", "±20–30 menit")]
 rows7 = "".join(f'<div style="display:flex;align-items:center;padding:20px 0;border-bottom:1.5px solid rgba(138,95,72,.25)"><div style="flex:1"><div style="font-size:30px;font-weight:600">{a}</div><div style="font-size:19px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9C8270;margin-top:4px">{o}</div></div><div style="font-family:Playfair Display,serif;font-size:46px;color:#C0592C;white-space:nowrap">{d}</div></div>' for a, o, d in arr)
 T.append(f'''<div class="t" id="rute-08">
