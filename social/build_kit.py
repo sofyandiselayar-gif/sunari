@@ -378,8 +378,11 @@ FEED12 = [
  ("p02", "#SenjaHariIni", "feed-senja", [
    ("senja/13-tamu-bertopi-story.jpg","50% 45%","Langit yang selalu berbeda","Tidak ada senja yang sama dua kali di Pantai Sunari."),
    ("senja/07-payung-kursi-pantai.jpg","50% 60%","Kursi di tepi pantai","Tempat terbaik menunggu matahari turun."),
-   ("senja/06-di-bawah-daun.jpg","50% 55%","Di bawah daun kelapa","Bingkai alami untuk foto senjamu.")],
-   ("Tips menikmati senja", ["Datang 30 menit sebelum matahari terbenam","Ikuti jam senja harian di story kami","Simpan postingan ini untuk liburanmu"])),
+   ("senja/06-di-bawah-daun.jpg","50% 55%","Di bawah daun kelapa","Bingkai alami untuk foto senjamu."),
+   ("senja/43-teras-bingkai-daun-b-1743.jpg","50% 40%","Dari teras bungalow","Senja terlihat di sela daun, tanpa perlu beranjak dari kamar."),
+   ("senja/68-kayak-pelampung-jalur-cahaya-1748.jpg","50% 55%","Mendayung ke arah cahaya","Kayak di jalur cahaya, sesaat sebelum matahari menyentuh laut."),
+   ("senja/55-taman-bougenvil-kelapa-1748.jpg","50% 62%","Dari taman yang berbunga","Di ujung deretan pohon kelapa, matahari turun pelan ke laut.")],
+   ("Tips menikmati senja", ["Datang 30 menit sebelum matahari terbenam","Akhir Nov–Des: senja sekitar 18.00 WITA","Ikuti jam senja harian di story kami","Simpan postingan ini untuk liburanmu"])),
  ("p04", "Malam di SunaRi", "camp-4", [
    ("senja/38-blue-hour-kayak-1815.jpg","50% 55%","Langit berganti biru","Beberapa menit setelah matahari tenggelam, langit perlahan menjadi biru tua."),
    ("malam/02-bangunan-utama-malam.jpg","50% 60%","Hangat di antara pohon kelapa","Bangunan kayu dan jembatan kecil yang menyala setiap malam."),

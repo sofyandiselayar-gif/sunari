@@ -6,7 +6,7 @@ File: `social/feed-12-carousel/NN-nama/01.png …` (1080 × 1350). Slide 01 = ga
 | No | Folder | Slide | Isi |
 |---|---|---|---|
 | 01 | `01-lebih-dari-menginap` | 5 | Duduk & menikmati · makan malam di resto · malam di resort · CTA |
-| 02 | `02-senja-hari-ini` | 5 | Jam senja · 3 foto senja · tips menikmati senja |
+| 02 | `02-senja-hari-ini` | 8 | Jam senja · 6 foto senja (teras, kayak, taman) · tips menikmati senja |
 | 03 | `03-vip-superior` | 6 | Room tour VIP Superior (bathtub & air panas) |
 | 04 | `04-malam-di-sunari` | 8 | Langit biru · bangunan utama · taman berlampu · jalan setapak · resto malam · lilin · info malam |
 | 05 | `05-vip-standard` | 6 | Room tour VIP Standard |
