@@ -214,7 +214,7 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
   dan **air panas & dingin** (*satu-satunya tipe dengan air panas*: jangan sebut air panas untuk tipe lain). Tulis "bathtub", bukan "jacuzzi".
   Teras kayu pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *berendam di bawah langit terbuka*.
 - **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: **tipe bungalow terbesar**, kayu dua lantai di tengah taman.
-  **Kapasitas 6 orang, maksimal 8 dengan 2 extra bed (berbayar).** Lantai 1 untuk 2–3 orang (tempat tidur besar), lantai 2 untuk 4–5 orang (empat kasur).
+  **Kapasitas normal 6 orang, maksimal 8 dengan 2 extra bed (berbayar).** Lantai 1: 2 orang, +1 extra bed = 3 (tempat tidur besar). Lantai 2: 4 orang, +1 extra bed = 5 (empat kasur).
   **Toilet & kamar mandi di kedua lantai.** Termasuk **sarapan**. AC, Wi-Fi di kamar, set kopi/teh dengan pemanas air, meja kerja/rias,
   setrika atas permintaan, perlengkapan mandi lengkap, handuk untuk setiap tamu, bantal & selimut tambahan, tirai blackout.
   Teras/balkon pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.

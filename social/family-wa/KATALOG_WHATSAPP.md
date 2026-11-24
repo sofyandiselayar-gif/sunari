@@ -8,7 +8,7 @@ Gambar 1080 × 1080 (persegi 1:1) · 10 gambar (batas maksimal WhatsApp per item
 
 | No | File | Isi |
 |---|---|---|
-| 1 | `wa-family-01.png` | **Sampul**: rumah kayu di tengah taman (foto utama/thumbnail) |
+| 1 | `wa-family-01.png` | **Sampul**: rumah kayu di tengah taman · 6 orang (maks. 8) (foto utama/thumbnail) |
 | 2 | `wa-family-02.png` | Teras pribadi |
 | 3 | `wa-family-03.png` | Bersantai di teras |
 | 4 | `wa-family-04.png` | Lantai 1 · tempat tidur besar |
@@ -17,7 +17,7 @@ Gambar 1080 × 1080 (persegi 1:1) · 10 gambar (batas maksimal WhatsApp per item
 | 7 | `wa-family-07.png` | Lantai 2 · set kopi/teh |
 | 8 | `wa-family-08.png` | Kamar mandi di kedua lantai |
 | 9 | `wa-family-09.png` | Wastafel & cermin |
-| 10 | `wa-family-10.png` | Denah lantai & fasilitas lengkap |
+| 10 | `wa-family-10.png` | Kapasitas per lantai (normal & dengan extra bed) + fasilitas lengkap |
 
 ---
 
@@ -38,15 +38,16 @@ Mata uang: **IDR**. Harga per malam untuk satu bungalow, termasuk sarapan.
 ```
 Satu rumah, dua lantai, semua bersama. 🌿
 
-Family Superior adalah bungalow terbesar di SunaRi: rumah kayu dua lantai di tengah taman tropis, tempat keluarga atau rombongan bisa berkumpul tanpa harus terpisah kamar. Pagi dimulai di teras, siang di pantai, dan sore kalian menikmati senja bersama di Pantai Sunari.
+Family Superior adalah bungalow terbesar di SunaRi: rumah kayu dua lantai di tengah taman tropis, tempat keluarga atau rombongan berkumpul tanpa harus terpisah kamar. Masing-masing lantai punya toilet dan kamar mandi sendiri, jadi pagi hari kalian bisa bersiap dengan nyaman. Siang di pantai, sore menikmati senja bersama di Pantai Sunari.
 
 Harga per bungalow per malam, termasuk sarapan.
 
 KAPASITAS
-• 6 tamu, maks. 8 dengan 2 extra bed (berbayar)
-• Lantai 1: untuk 2–3 tamu, tempat tidur besar
-• Lantai 2: untuk 4–5 tamu, empat kasur
-• Toilet & kamar mandi di kedua lantai, jadi tidak perlu antre
+• Kapasitas normal: 6 orang
+• Kapasitas maksimal: 8 orang, dengan tambahan 2 extra bed (berbayar)
+• Lantai 1: 2 orang · dengan 1 extra bed menjadi 3 orang (tempat tidur besar)
+• Lantai 2: 4 orang · dengan 1 extra bed menjadi 5 orang (empat kasur)
+• Toilet & kamar mandi ada di lantai 1 dan lantai 2, jadi tidak perlu antre
 
 FASILITAS
 • AC & Wi-Fi
@@ -99,7 +100,7 @@ SUNARI-FAMILY
 ```
 Halo Kak, terima kasih sudah menghubungi SunaRi 🌅
 
-Untuk liburan keluarga atau rombongan, Family Superior Bungalow paling pas: satu rumah kayu dua lantai untuk 6 tamu (maks. 8 dengan extra bed), toilet & kamar mandi di kedua lantai, dan sudah termasuk sarapan.
+Untuk liburan keluarga atau rombongan, Family Superior Bungalow paling pas: satu rumah dua lantai untuk 6 orang (maksimal 8 orang dengan 2 extra bed), dengan toilet dan kamar mandi di kedua lantai, dan sudah termasuk sarapan.
 
 Boleh kami tahu tanggal check-in, check-out, dan jumlah tamunya? Kami bantu cek ketersediaannya ya, Kak.
 ```

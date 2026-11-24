@@ -23,15 +23,15 @@ T.append(f'''<div class="t" id="wa-family-01">
   <div style="position:absolute;left:60px;right:60px;top:800px">
     <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">SunaRi Beach Resort · Selayar</div>
     <div class="emb" style="font-family:'Playfair Display',serif;font-size:76px;line-height:1.1;color:#45301F;margin-top:10px">Family Superior <em style="color:#A0603E">Bungalow</em></div>
-    <div style="font-size:28px;color:#4A3426;margin-top:12px">Satu rumah, dua lantai, semua bersama · 6–8 tamu</div></div></div>''')
+    <div style="font-size:28px;color:#4A3426;margin-top:12px">Satu rumah, dua lantai, semua bersama · 6 orang (maks. 8)</div></div></div>''')
 PH = [("02-teras-samping.jpg", "50% 55%", "Teras pribadi"), ("03-teras-sofa.jpg", "40% 55%", "Bersantai di teras"),
       ("05-kamar-bawah-depan.jpg", "50% 55%", "Lantai 1 · tempat tidur besar"), ("06-kamar-bawah-sudut.jpg", "50% 55%", "Lantai 1 · untuk 2–3 tamu"),
       ("09-lantai-atas-4-kasur.jpg", "50% 55%", "Lantai 2 · empat kasur"), ("10-lantai-atas-kasur-kettle.jpg", "45% 55%", "Lantai 2 · set kopi/teh"),
       ("12-kamar-mandi-shower.jpg", "50% 55%", "Kamar mandi di kedua lantai"), ("11-wastafel.jpg", "45% 55%", "Wastafel &amp; cermin")]
 for k, (img, pos, lb) in enumerate(PH, 2):
     T.append(f'''<div class="t" id="wa-family-{k:02d}"><img class="bg" src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""><div class="lb">{lb}</div></div>''')
-FL = [("Lantai 1", "2–3 tamu", ["Tempat tidur besar", "Toilet &amp; kamar mandi"]),
-      ("Lantai 2", "4–5 tamu", ["Empat kasur", "Toilet &amp; kamar mandi"])]
+FL = [("Lantai 1", "2 orang", ["+1 extra bed = 3 orang", "Tempat tidur besar", "Toilet &amp; kamar mandi"]),
+      ("Lantai 2", "4 orang", ["+1 extra bed = 5 orang", "Empat kasur", "Toilet &amp; kamar mandi"])]
 FX = ["Termasuk sarapan", "AC &amp; Wi-Fi", "Teras/balkon pribadi", "Set kopi/teh &amp; pemanas air", "Tirai blackout", "Meja kerja/rias", "Handuk untuk setiap tamu", "Perlengkapan mandi lengkap", "Bantal &amp; selimut tambahan", "Setrika atas permintaan"]
 fl = "".join(f'''<div style="flex:1;background:#fff;border-radius:18px;padding:22px 24px;box-shadow:0 8px 22px rgba(90,62,49,.1);text-align:left;border-top:6px solid #C0592C">
   <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Playfair Display',serif;font-size:40px;color:#45301F">{n}</span><span style="font-weight:700;font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:#C0592C">{c}</span></div>
@@ -43,6 +43,6 @@ T.append(f'''<div class="t" id="wa-family-10"><div style="position:absolute;inse
     <div class="emb" style="font-family:'Playfair Display',serif;font-size:56px;color:#45301F;margin:6px 0 22px">Family Superior <em style="color:#A0603E">Bungalow</em></div>
     <div style="display:flex;gap:22px">{fl}</div>
     <div class="fx" style="text-align:left;margin-top:22px">{"".join(f"<div>{x}</div>" for x in FX)}</div>
-    <div style="margin-top:18px;font-size:24px;color:#4A3426">Untuk 6 tamu · maks. 8 dengan 2 extra bed</div></div></div>''')
+    <div style="margin-top:18px;font-size:24px;color:#4A3426">Kapasitas normal 6 orang · maksimal 8 orang dengan 2 extra bed</div></div></div>''')
 (H / "family_wa.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T))
