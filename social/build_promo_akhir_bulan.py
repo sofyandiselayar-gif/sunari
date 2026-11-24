@@ -39,3 +39,17 @@ html = f'''<div class="s" id="promo-story"><img class="bg" src="{P}" alt="">
     <div class="cap" style="margin-top:28px;font-size:18px;letter-spacing:.4em">Reservasi via WhatsApp</div>
     <div style="font-family:'Cormorant Garamond',serif;font-size:56px;margin-top:4px">0821-8903-3044</div></div></div>'''
 (H / "promo_akhir_bulan.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{html}</body></html>')
+
+# ---- versi feed 3:4 (1080x1440)
+CSSF = CSS.replace("height:1920px", "height:1440px").replace("object-position:50% 50%", "object-position:50% 44%") \
+          .replace("height:640px;background:linear-gradient(180deg", "height:520px;background:linear-gradient(180deg") \
+          .replace("height:960px;background:linear-gradient(0deg", "height:760px;background:linear-gradient(0deg") \
+          .replace("inset:46px", "inset:34px").replace("inset:58px", "inset:46px") \
+          .replace("top:250px;width:220px;", "top:88px;width:200px;")
+feed = html.replace('id="promo-story"', 'id="promo-feed"') \
+           .replace('top:370px">', 'top:196px">').replace("font-size:116px;line-height:.98", "font-size:104px;line-height:.98") \
+           .replace('top:985px">', 'top:742px">').replace("font-size:166px;line-height:.9", "font-size:150px;line-height:.9") \
+           .replace("font-size:42px;line-height:1.28;margin:24px 30px 0", "font-size:38px;line-height:1.25;margin:18px 40px 0") \
+           .replace("margin-top:26px;border-top:1px", "margin-top:22px;border-top:1px").replace("flex:1;padding:16px 0", "flex:1;padding:12px 0") \
+           .replace("margin-top:28px;font-size:18px;letter-spacing:.4em", "margin-top:20px;font-size:18px;letter-spacing:.4em")
+(H / "promo_akhir_bulan_feed.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSSF}</style></head><body>{feed}</body></html>')
