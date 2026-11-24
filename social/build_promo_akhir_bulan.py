@@ -1,32 +1,41 @@
-"""Story Instagram "Promo Akhir Bulan" (1080x1920), 1 frame. Soft selling, diskon 15%.
+"""Story Instagram "Promo Akhir Bulan" (1080x1920), 1 frame, versi elegan. Soft selling, diskon 15%.
 Run: python3 social/build_promo_akhir_bulan.py && node social/render_promo_akhir_bulan.js -> social/promo-akhir-bulan/promo-story.png"""
 import pathlib
 H = pathlib.Path(__file__).parent
-LOGO_D = "../assets/logo-sunari-color-dark.png"; P = "../assets/photos/graded/senja__74-matahari-menyentuh-laut-kapal.jpg"
-FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">'
-CSS = """
-*{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif}
-.s{position:relative;overflow:hidden;width:1080px;height:1920px;margin:30px auto;background:#1d140e;color:#FBF4EC}
-.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
-.vt{position:absolute;left:0;right:0;top:0;height:900px;background:linear-gradient(180deg,rgba(20,12,6,.72),rgba(20,12,6,.35) 60%,rgba(20,12,6,0))}
-.vb{position:absolute;left:0;right:0;bottom:0;height:900px;background:linear-gradient(0deg,rgba(20,12,6,.85),rgba(20,12,6,.5) 55%,rgba(20,12,6,0))}
-.lg{position:absolute;left:76px;top:250px;width:240px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
-.tx{position:absolute;left:76px;right:76px;text-shadow:0 2px 14px rgba(0,0,0,.55)}
-.kick{font-weight:700;font-size:24px;letter-spacing:.34em;text-transform:uppercase}
+LOGO_D = "../assets/logo-sunari-color-dark.png"; P = "../assets/photos/senja/42-teras-bingkai-daun-1744.jpg"
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
+GOLD = "#E9C48A"
+CSS = f"""
+*{{margin:0;padding:0;box-sizing:border-box}}body{{background:#bbb;font-family:Montserrat,sans-serif}}
+.s{{position:relative;overflow:hidden;width:1080px;height:1920px;margin:30px auto;background:#120b06;color:#FBF4EC;text-align:center}}
+.bg{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:saturate(1.05) contrast(1.04)}}
+.vt{{position:absolute;left:0;right:0;top:0;height:640px;background:linear-gradient(180deg,rgba(14,8,4,.7),rgba(14,8,4,.3) 75%,rgba(14,8,4,0))}}
+.vb{{position:absolute;left:0;right:0;bottom:0;height:960px;background:linear-gradient(0deg,rgba(14,8,4,.9),rgba(14,8,4,.72) 62%,rgba(14,8,4,0))}}
+.fr{{position:absolute;inset:46px;border:1px solid rgba(233,196,138,.55)}}
+.fr2{{position:absolute;inset:58px;border:1px solid rgba(233,196,138,.22)}}
+.lg{{position:absolute;left:50%;transform:translateX(-50%);top:250px;width:220px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}}
+.cap{{font-weight:600;font-size:20px;letter-spacing:.5em;text-transform:uppercase;color:{GOLD}}}
+.orn{{display:flex;align-items:center;justify-content:center;gap:22px;color:{GOLD}}}
+.orn i{{display:block;width:120px;height:1px;background:linear-gradient(90deg,rgba(233,196,138,0),{GOLD})}}
+.orn i:last-child{{transform:scaleX(-1)}}
+.orn b{{width:9px;height:9px;transform:rotate(45deg);border:1px solid {GOLD}}}
+.sh{{text-shadow:0 2px 16px rgba(0,0,0,.55)}}
 """
 html = f'''<div class="s" id="promo-story"><img class="bg" src="{P}" alt="">
-  <div class="vt"></div><div class="vb"></div><img class="lg" src="{LOGO_D}" alt="">
-  <div class="tx" style="top:430px">
-    <div class="kick" style="color:#FDB15D">Sunari Beach Resort · Selayar</div>
-    <div style="font-family:'Playfair Display',serif;font-size:118px;line-height:1.04;margin-top:20px">Promo<br>Akhir <em style="color:#FDB15D">Bulan</em></div>
-    <div style="margin-top:36px;display:flex;align-items:baseline;gap:22px">
-      <span style="font-family:'Playfair Display',serif;font-size:150px;line-height:1;color:#FDB15D">15%</span>
-      <span style="font-weight:700;font-size:30px;letter-spacing:.2em;text-transform:uppercase;line-height:1.35">Diskon<br>semua tipe kamar</span></div></div>
-  <div class="tx" style="bottom:262px">
-    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:48px;line-height:1.28">Sebelum bulan ini berakhir, ada senja yang ingin menyambutmu lebih hangat.</div>
-    <div style="margin-top:30px;border-top:1.5px solid rgba(251,244,236,.4)">
-      <div style="padding:13px 0;border-bottom:1.5px solid rgba(251,244,236,.3);font-size:30px">🗓️ &nbsp;<b>Pesan</b> &nbsp;15 – 28 November 2026</div>
-      <div style="padding:13px 0;border-bottom:1.5px solid rgba(251,244,236,.3);font-size:30px">🏝️ &nbsp;<b>Menginap</b> &nbsp;20 – 30 November 2026</div></div>
-    <div style="margin-top:24px;font-weight:700;font-size:25px;letter-spacing:.2em;text-transform:uppercase;color:#FDB15D">Ketuk untuk pesan lewat WhatsApp</div>
-    <div style="font-family:'Playfair Display',serif;font-size:48px;margin-top:6px">0821-8903-3044</div></div></div>'''
+  <div class="vt"></div><div class="vb"></div><div class="fr"></div><div class="fr2"></div>
+  <img class="lg" src="{LOGO_D}" alt="">
+  <div class="sh" style="position:absolute;left:90px;right:90px;top:370px">
+    <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:116px;line-height:.98">Promo<br><i style="color:{GOLD};font-weight:400">Akhir Bulan</i></div></div>
+  <div class="sh" style="position:absolute;left:90px;right:90px;top:985px">
+    <div class="orn"><i></i><b></b><i></i></div>
+    <div class="cap" style="margin-top:26px;color:#FBF4EC">Diskon</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:166px;line-height:.9;color:{GOLD};margin-top:6px">15%</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:44px;margin-top:6px">untuk semua tipe kamar</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:42px;line-height:1.28;margin:24px 30px 0;color:#F3E3CC">“Sebelum bulan ini berakhir, ada senja yang ingin menyambutmu lebih hangat.”</div>
+    <div style="display:flex;justify-content:center;margin-top:26px;border-top:1px solid rgba(233,196,138,.45);border-bottom:1px solid rgba(233,196,138,.45)">
+      <div style="flex:1;padding:16px 0"><div class="cap" style="font-size:17px">Pesan</div><div style="font-family:'Cormorant Garamond',serif;font-size:40px;margin-top:6px">15 – 28 Nov 2026</div></div>
+      <div style="width:1px;background:rgba(233,196,138,.45)"></div>
+      <div style="flex:1;padding:16px 0"><div class="cap" style="font-size:17px">Menginap</div><div style="font-family:'Cormorant Garamond',serif;font-size:40px;margin-top:6px">20 – 30 Nov 2026</div></div></div>
+    <div class="cap" style="margin-top:28px;font-size:18px;letter-spacing:.4em">Reservasi via WhatsApp</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:56px;margin-top:4px">0821-8903-3044</div></div></div>'''
 (H / "promo_akhir_bulan.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{html}</body></html>')
