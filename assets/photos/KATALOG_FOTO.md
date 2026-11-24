@@ -103,6 +103,17 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `taman/01-meja-di-taman.jpg` | Meja kayu di bawah palem, bunga bougainvillea | ✂️ | Konten taman / tempat santai |
 | `taman/02-bungalow-bougainvillea.jpg` | Atap A-frame & taman bunga | ✂️ | Cover highlight "SunaRi", OTA (eksterior) |
 
+### Taman tambahan (ditambahkan 24 Nov 2026), semua tanpa orang ✅
+| File | Isi | Cocok untuk |
+|---|---|---|
+| `taman/03-taman-dari-teras-bungalow.jpg` | Pandangan dari tangga teras ke taman, jalan batu, bougenvil, laut di kejauhan | Story "pagi dari teras", room tour |
+| `taman/04-teras-a-frame-pintu-kaca.jpg` | Teras kayu A-frame, pintu kaca ganda, daun palem di depan | Room tour Superior/VIP Superior, OTA |
+| `taman/05-meja-taman-view-laut-gazebo.jpg` | Meja & dua kursi kayu, kamboja, gazebo bambu & ayunan, laut biru | Feed "taman ke pantai", OTA, ebook |
+| `taman/06-jalan-setapak-kamboja.jpg` | Jalan setapak batu di bawah pohon kamboja | Slow living, story pagi |
+| `taman/07-meja-taman-bougenvil-a.jpg` | Meja bundar & kursi kayu, bougenvil ungu di depan | Feed, katalog |
+| `taman/08`–`11-meja-taman-*.jpg` | Variasi meja taman dengan kamboja & bungalow A-frame (08/09 mirip, 10/11 persegi) | Pakai salah satu per seri |
+| `taman/12-meja-taman-portrait.jpg` | Versi potret 9:16, dibingkai batang palem & kamboja | Story, Reels |
+
 ## Resto: Bajoy Beach Resto
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
