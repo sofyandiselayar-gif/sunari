@@ -209,3 +209,22 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `06-taman-malam-bougainvillea.jpg` | Taman malam, bunga di depan | ✅ | Story |
 | `07-jalan-setapak-gazebo.jpg` / `08-…-2.jpg` | Jalan batu menuju gazebo berlampu | ✅ | Reels POV "jalan ke makan malam" |
 | `09-lilin-di-meja.jpg` | Lilin di meja kayu, resort di latar | ✅ | **Dipakai: tile `camp-5`** |
+
+### Malam tambahan (ditambahkan 24 Nov 2026)
+| File | Isi | Status | Cocok untuk |
+|---|---|---|---|
+| `malam/10-taman-dari-tangga-kayu.jpg` | Taman malam dilihat dari tangga kayu | ⚠️ ada selang air di lantai | Sebaiknya tidak untuk promosi |
+| `malam/11-teras-samping-bungalow-lampu.jpg` | Teras samping bungalow, lampu menyala, gazebo berlampu di kejauhan | ✅ | Feed "Malam di SunaRi", room tour |
+| `malam/12-taman-kelapa-menuju-pantai.jpg` | Taman & kelapa, lampu gantung di tepi pantai | ✅ (orang kecil) | Feed, story |
+| `malam/13-teras-kayu-pintu-kaca.jpg` | Teras kayu dengan pintu kaca & kursi, lampu teras | ✅ | Room tour (malam) |
+| `malam/14-teras-kayu-sofa.jpg` | Teras kayu dengan sofa & kursi, taman di luar | ✅ | Room tour (malam), slow living |
+| `malam/15-teras-view-gazebo-berlampu.jpg` | Dari teras, terlihat gazebo berlampu di tepi pantai | ✅ | Feed malam |
+| `malam/16-tangga-kayu-lantai-2.jpg` | Tangga kayu menuju lantai 2 | ✅ | Family Superior (akses lantai 2) |
+| `malam/17-tepi-pantai-lampu-gantung.jpg` | Meja di tepi pantai, lampu gantung, dua tamu (siluet) | ✅ | Bajoy / Senja Dinner |
+| `malam/18-kelapa-dan-bintang.jpg` | Pohon kelapa & langit berbintang | ✅ | Penutup feed, quote malam |
+| `malam/19-taman-bulan-jembatan.jpg` | Bulan purnama, taman bougenvil, jembatan kayu | ✅ | Sampul feed malam |
+| `malam/20-gazebo-berlampu-kelapa.jpg` | Gazebo bambu berlampu di bawah deretan kelapa, bougenvil | ✅ | Sampul feed malam, OTA |
+| `malam/21-bajoy-beach-resto-malam.jpg` | Papan nama & area Bajoy Beach Resto malam | ✅ | Konten resto |
+| `malam/22-jalan-setapak-ke-pantai.jpg` | Jalan batu berkelok menuju pantai, resto di kiri | ✅ (orang kecil) | Reels POV |
+| `malam/23-jalan-setapak-taman-senja.jpg` | Jalan setapak taman saat blue hour | ✅ | Story transisi senja → malam |
+| `malam/24-family-superior-bulan.jpg` | Family Superior Bungalow menyala di bawah bulan purnama | ✅ | Room tour Family Superior, sampul |
