@@ -7,7 +7,7 @@ Semua foto asli, sudah diputar sesuai orientasi dan diperkecil ke maks. 2400 px 
 ## Kamar (5 tipe)
 `superior-bungalow/` · `vip-superior-bungalow/` · `family-superior-bungalow/` · `standard-bungalow/` · `vip-standard-bungalow/` ✅
 
-## Senja: `senja/` (80 foto)
+## Senja: `senja/` (85 foto)
 ✅ kecuali 01–02 dan 26 ✂️ (cap tanggal). Wajah tidak terlihat (siluet), aman dipakai.
 
 Tambahan 20 Nov 2026:
@@ -87,6 +87,11 @@ Jam dari nama file kamera (tahun di nama file: 2025).
 | `senja/79-meja-kayak-golden-hour.jpg` | Meja, termos, kayak di pasir, golden hour | ⚠️ ada barang pribadi (speaker, HP) |
 
 Tidak disimpan: foto resto dengan wajah tamu terlihat, foto kaus bergambar wajah, foto dua tamu di meja (wajah terlihat).
+
+### Afterglow (ditambahkan 24 Nov 2026)
+| File | Isi | Status |
+|---|---|---|
+| `senja/84-afterglow-gazebo-lampu-tamu.jpg` | Afterglow biru-jingga-merah muda, gazebo bambu berlampu & ayunan, lampu gantung, tamu bersantai di tepi pantai | 👤 ada anak kecil & beberapa wajah samar: pakai ukuran kecil/crop, atau dengan izin |
 
 Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 
