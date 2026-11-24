@@ -1,1 +1,8 @@
 export/
+# Invoice tamu (data pribadi) disimpan lokal saja; repo hanya berisi template
+invoice/*
+!invoice/invoice_kosong.html
+!invoice/SunaRi_Invoice_Kosong.pdf
+!invoice/SunaRi_Invoice_Kosong.png
+!invoice/logo-sunari-black.png
+!invoice/render.js
