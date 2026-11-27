@@ -197,33 +197,35 @@ Acuan gaya: `brand/style-reference.jpg` (hanya gaya visual, bukan isi/merek). Pe
 ## 6. Produk & Pengalaman Signature (usulan)
 
 **Tipe kamar**
+*Semua tipe bungalow berada dekat pantai dan menghadap pantai dengan view sunset. Jangan menjadikan jarak ke laut atau arah hadap sebagai pembeda antartipe; pembedanya gaya dan fasilitas kamar.*
+
 - **Superior Bungalow** *(foto asli: `assets/photos/superior-bungalow/`)*: bungalow kayu beratap A-frame dengan loteng,
   **lebih luas dari Standard & VIP Standard**. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **King bed**, **TV**, termasuk **sarapan**,
   AC, Wi-Fi, set kopi/teh + pemanas air, meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan,
-  tirai blackout. Kamar mandi semi-outdoor dengan taman & rain shower. Teras kayu pribadi dengan kursi santai, pemandangan laut atau taman.
+  tirai blackout. Kamar mandi semi-outdoor dengan taman & rain shower. Teras kayu pribadi dengan kursi santai, menghadap pantai dengan view sunset.
   Kata kunci promosi: *rumah kayu di antara pohon kelapa*.
 - **Standard Bungalow** *(foto asli: `assets/photos/standard-bungalow/`)*: bungalow kayu dengan atap tinggi.
   **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **Queen bed**, termasuk **sarapan**, AC, Wi-Fi, set kopi/teh + pemanas air,
   meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout.
-  Kamar mandi dalam dengan shower & toilet duduk. Teras pribadi luas dengan kursi santai, pemandangan laut & taman.
+  Kamar mandi dalam dengan shower & toilet duduk. Teras pribadi luas dengan kursi santai, menghadap pantai dengan view sunset.
   Kata kunci promosi: *pagi menghadap laut Selayar*.
 - **VIP Superior Bungalow** *(foto asli: `assets/photos/vip-superior-bungalow/`)*: **kelas tertinggi** di antara semua tipe bungalow.
   A-frame beratap rumbia dengan loteng dan jendela segitiga. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).**
   **King bed**, **TV**, **mini bar/kulkas**, termasuk **sarapan**, AC, Wi-Fi, set kopi/teh + pemanas air, meja kerja/rias, setrika atas permintaan,
   perlengkapan mandi, handuk, bantal & selimut tambahan, tirai blackout. Kamar mandi semi-outdoor beratap kaca dengan **bathtub**, rain shower,
   dan **air panas & dingin** (*satu-satunya tipe dengan air panas*: jangan sebut air panas untuk tipe lain). Tulis "bathtub", bukan "jacuzzi".
-  Teras kayu pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *berendam di bawah langit terbuka*.
-- **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: **tipe bungalow terbesar**, kayu dua lantai di tengah taman.
+  Teras kayu pribadi dengan kursi santai, menghadap pantai dengan view sunset. Kata kunci promosi: *berendam di bawah langit terbuka*.
+- **Family Superior Bungalow** *(foto asli: `assets/photos/family-superior-bungalow/`)*: **tipe bungalow terbesar**, kayu dua lantai.
   **Kapasitas normal 6 orang, maksimal 8 dengan 2 extra bed (berbayar).** Lantai 1: 2 orang, +1 extra bed = 3 (tempat tidur besar). Lantai 2: 4 orang, +1 extra bed = 5 (empat kasur).
   **Toilet & kamar mandi di kedua lantai.** Termasuk **sarapan**. AC, Wi-Fi di kamar, set kopi/teh dengan pemanas air, meja kerja/rias,
   setrika atas permintaan, perlengkapan mandi lengkap, handuk untuk setiap tamu, bantal & selimut tambahan, tirai blackout.
-  Teras/balkon pribadi dengan kursi santai, pemandangan laut atau taman. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.
+  Teras/balkon pribadi dengan kursi santai, menghadap pantai dengan view sunset. Kata kunci promosi: *satu rumah, dua lantai, semua bersama*.
 - **VIP Standard Bungalow** *(foto asli: `assets/photos/vip-standard-bungalow/`)*: rumah panggung beratap rumbia
   di tepi pantai, **lebih luas dari Standard**. **Kapasitas 2 orang, maks. 3 dengan 1 extra bed (berbayar).** **King bed**, termasuk **sarapan**,
   AC, Wi-Fi, set kopi/teh + pemanas air, meja kerja/rias, setrika atas permintaan, perlengkapan mandi, handuk, bantal & selimut tambahan,
   tirai blackout, lampu dinding, area wastafel & gantungan baju, kamar mandi dalam dengan shower & toilet duduk.
-  Teras pribadi dengan kursi santai, pilihan pemandangan laut atau taman.
-  Kata kunci promosi: *turun tangga, langsung pasir*. Unit terdekat dengan laut; terasnya menghadap langsung ke arah matahari terbenam, jadi paling cocok untuk konten senja.
+  Teras pribadi dengan kursi santai, menghadap pantai dengan view sunset.
+  Kata kunci promosi: *turun tangga, langsung pasir* (slogan gaya rumah panggung, bukan klaim paling dekat dengan laut).
 
 **Pengalaman**
 *Hanya layanan yang benar-benar tersedia. Jangan promosikan layanan di luar daftar ini.*
