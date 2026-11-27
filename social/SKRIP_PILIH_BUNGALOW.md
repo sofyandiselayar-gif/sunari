@@ -3,6 +3,8 @@
 Format: carousel 8 slide, 1080×1350. Pilar: Kamar & Fasilitas. Gaya: soft selling, sapaan "kamu".
 Mengikuti `ATURAN_CAROUSEL.md`: slide 1 hook, slide 2 sama kuatnya, slide terakhir CTA. Tanpa harga kamar. Foto tidak berulang.
 
+Fakta lokasi: semua tipe dekat pantai dan menghadap view senja. Jangan menjadikan jarak atau arah hadap sebagai pembeda antartipe; pembedanya gaya dan fasilitas kamar.
+
 Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas (Playfair, krem, bayangan tipis). Slide 2 memakai latar Shell Cream dengan garis rambut 1px Driftwood. Footer "SUNARI · SELAYAR" di kiri, nomor slide atau "GESER →" di kanan. Satu aksen matahari Coral Glow → Golden Hour.
 
 ---
@@ -10,15 +12,16 @@ Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas
 ## Slide 1: Hook
 - **Foto:** `vip-standard-bungalow/02-teras-view-pantai.jpg`
 - **Judul:** *Bungalow mana yang cocok buat kamu?*
-- **Sub:** Jawab satu pertanyaan, lalu geser 👉
+- **Sub:** Semuanya dekat pantai & menghadap senja. Tinggal pilih gayamu 👉
 - **Tujuan:** memancing rasa ingin tahu, bukan hanya foto cantik.
 
 ## Slide 2: Kenali gayamu dulu (kunci simpan & bagikan)
 - **Latar:** Shell Cream, 5 baris dipisah garis rambut, tanpa foto.
 - **Judul:** *Kamu yang mana?*
+- **Sub:** Semua tipe dekat pantai & menghadap senja. Bedanya di gaya kamarnya.
 - **Isi:**
-  - Pagi menghadap laut → **Standard**
-  - Turun tangga, langsung pasir → **VIP Standard**
+  - Sederhana, hangat, teras luas → **Standard**
+  - Rumah panggung beratap rumbia → **VIP Standard**
   - Rumah kayu di antara pohon kelapa → **Superior**
   - Berendam di bawah langit terbuka → **VIP Superior**
   - Satu rumah, dua lantai, semua bersama → **Family Superior**
@@ -28,6 +31,7 @@ Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas
 - **Foto:** `standard-bungalow/01-teras-view-laut.jpg`
 - **Judul:** *Pagi menghadap laut Selayar*
 - **Teks:**
+  - Dekat pantai, menghadap view senja
   - Queen bed, atap tinggi, teras pribadi luas
   - Sarapan sudah termasuk
   - 2 orang, maks. 3 dengan 1 extra bed (berbayar)
@@ -35,17 +39,18 @@ Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas
 
 ## Slide 4: VIP Standard Bungalow
 - **Foto:** `vip-standard-bungalow/04-teras-view-laut.jpg`
-- **Judul:** *Turun tangga, langsung pasir*
+- **Judul:** *Rumah panggung di tepi pantai*
 - **Teks:**
-  - Rumah panggung beratap rumbia, unit terdekat dengan laut
-  - King bed, lebih luas dari Standard
-  - Teras menghadap arah matahari terbenam
-- **Cocok untuk:** pemburu senja yang ingin langit oranye dari teras sendiri.
+  - Dekat pantai, menghadap view senja
+  - Rumah panggung beratap rumbia, lebih luas dari Standard
+  - King bed, teras pribadi dengan kursi santai
+- **Cocok untuk:** pencinta suasana rumah panggung yang ingin ruang lebih lega.
 
 ## Slide 5: Superior Bungalow
 - **Foto:** `superior-bungalow/04-kamar-loteng.jpg`
 - **Judul:** *Rumah kayu di antara pohon kelapa*
 - **Teks:**
+  - Dekat pantai, menghadap view senja
   - A-frame dengan loteng, king bed, TV
   - Kamar mandi semi-outdoor dengan taman dan rain shower
   - Teras kayu dengan kursi santai
@@ -55,6 +60,7 @@ Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas
 - **Foto:** `vip-superior-bungalow/06-bathtub-semi-outdoor.jpg`
 - **Judul:** *Berendam di bawah langit terbuka*
 - **Teks:**
+  - Dekat pantai, menghadap view senja
   - Kamar mandi semi-outdoor beratap kaca dengan **bathtub**
   - Air panas & dingin (hanya di tipe ini)
   - King bed, mini bar, loteng
@@ -65,7 +71,8 @@ Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas
 - **Foto:** `family-superior-bungalow/01-eksterior-taman.jpg`
 - **Judul:** *Satu rumah, dua lantai, semua bersama*
 - **Teks:**
-  - Bungalow terbesar di tengah taman
+  - Dekat pantai, menghadap view senja
+  - Bungalow terbesar, dua lantai
   - Normal 6 orang, maks. 8 dengan 2 extra bed (berbayar)
   - Kamar mandi di kedua lantai, teras atau balkon pribadi
 - **Cocok untuk:** keluarga besar atau rombongan teman.
@@ -84,7 +91,7 @@ Layout: slide 1 dan isi kamar memakai foto penuh dengan judul serif di kiri atas
 ## Caption
 Bingung memilih bungalow? Tenang, kami bantu. 🌴
 
-Lima tipe, lima suasana, dan semuanya hanya beberapa langkah dari laut. Geser untuk menemukan yang paling cocok dengan gaya liburanmu.
+Lima tipe, lima suasana. Semuanya dekat pantai dan menghadap senja, jadi tinggal pilih gaya kamar yang paling cocok denganmu. Geser ya.
 
 Simpan dulu, biar liburanmu tinggal berangkat. Tag orang yang mau kamu ajak, dan kalau masih ragu, kirim pesan saja, kami senang membantu. 🌅
 
