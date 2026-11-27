@@ -135,7 +135,7 @@ add(f'''{head("02", "Info penting", "Informasi <i>sekilas</i>", "Simpan halaman 
 # =============================================================== 3 KAMAR OVERVIEW
 ROOMS = [
  ("Standard Bungalow", "2 orang (maks. 3)", "Queen", "Teras luas menghadap laut, kamar mandi bambu", 900000),
- ("VIP Standard Bungalow", "2 orang (maks. 3)", "King", "Rumah panggung di tepi pantai, teras ke arah senja", 1000000),
+ ("VIP Standard Bungalow", "2 orang (maks. 3)", "King", "Rumah panggung beratap rumbia, lebih luas dari Standard", 1000000),
  ("Superior Bungalow", "2 orang (maks. 3)", "King", "A-frame berloteng, TV, kamar mandi semi-outdoor", 1500000),
  ("VIP Superior Bungalow", "2 orang (maks. 3)", "King", "Kelas tertinggi: bathtub, air panas, TV, mini bar", 2500000),
  ("Family Superior Bungalow", "6 orang (maks. 8)", "Besar + 4 kasur", "2 lantai, kamar mandi di kedua lantai", 2500000),
@@ -161,18 +161,18 @@ def room(no, name, sub, spec, desc, fac, photos, price=0):
 {ul(fac, "cols3")}''', toc=None)
 
 room("03 · a", "Standard <i>Bungalow</i>", "Pagi menghadap laut Selayar.",
-     [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "Queen"), ("Pemandangan", "Laut &amp; taman")],
+     [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "Queen"), ("Pemandangan", "Pantai &amp; sunset")],
      "Bungalow kayu yang sejuk dan bersih dengan atap tinggi dan teras pribadi yang luas menghadap laut. Nikmati kopi pagi sambil melihat ombak dari kursi santai, lalu berjalan ke pantai untuk menunggu senja. Kamar mandi dalam bernuansa bambu dengan lantai batu alam.",
      ["Sarapan", "Queen bed", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Shower", "Toilet duduk", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
      [("standard-bungalow/01-teras-view-laut.jpg", "50% 60%"), ("standard-bungalow/03-kamar-depan.jpg", "50% 50%"), ("standard-bungalow/04-kamar-mandi-bambu.jpg", "50% 50%")], price=900000)
 room("03 · b", "VIP Standard <i>Bungalow</i>", "Rumah panggung di bibir Pantai Sunari.",
-     [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "King"), ("Pemandangan", "Laut atau taman")],
-     "Rumah panggung beratap rumbia di tepi Pantai Sunari, dengan kamar yang lebih luas dibanding Standard Bungalow. Teras pribadi menghadap ke arah matahari terbenam. Pada unit tepi pantai, senja tepat di depan mata. Kamar bernuansa kayu dengan lampu dinding temaram dan area wastafel dengan gantungan baju.",
+     [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "King"), ("Pemandangan", "Pantai &amp; sunset")],
+     "Rumah panggung beratap rumbia di tepi Pantai Sunari, dengan kamar yang lebih luas dibanding Standard Bungalow. Teras pribadi menghadap pantai dengan view sunset, senja tepat di depan mata. Kamar bernuansa kayu dengan lampu dinding temaram dan area wastafel dengan gantungan baju.",
      ["Sarapan", "King bed", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Shower", "Toilet duduk", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
      [("vip-standard-bungalow/02-teras-view-pantai.jpg", "50% 60%"), ("vip-standard-bungalow/01-eksterior-rumah-panggung.jpg", "50% 50%"), ("vip-standard-bungalow/06-kamar-depan.jpg", "50% 50%")], price=1000000)
 room("03 · c", "Superior <i>Bungalow</i>", "Rumah kayu A-frame di antara pohon kelapa.",
      [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "King"), ("Ekstra", "TV · loteng")],
-     "Bungalow kayu beratap A-frame dengan loteng di bawah langit-langit kayu yang menjulang, lebih luas dibanding Standard dan VIP Standard. Keistimewaannya adalah kamar mandi semi-outdoor dengan rain shower, dikelilingi taman hijau dan langit terbuka. Teras kayu pribadi menghadap laut atau taman.",
+     "Bungalow kayu beratap A-frame dengan loteng di bawah langit-langit kayu yang menjulang, lebih luas dibanding Standard dan VIP Standard. Keistimewaannya adalah kamar mandi semi-outdoor dengan rain shower, dikelilingi taman hijau dan langit terbuka. Teras kayu pribadi menghadap pantai dengan view sunset.",
      ["Sarapan", "King bed", "TV", "Loteng", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Kamar mandi semi-outdoor", "Rain shower", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
      [("superior-bungalow/02-eksterior-depan.jpg", "50% 35%"), ("superior-bungalow/05-kamar-tempat-tidur.jpg", "50% 50%"), ("superior-bungalow/10-kamar-mandi-taman.jpg", "50% 50%")], price=1500000)
 room("03 · d", "VIP Superior <i>Bungalow</i>", "Kelas tertinggi di SunaRi.",
