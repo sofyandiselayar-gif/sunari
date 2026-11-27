@@ -137,5 +137,9 @@ T.append(f'''<div class="t" id="pilih-10"><img class="bg" src="{P}graded/pilih__
     <div class="pf it" style="font-size:30px;margin-top:30px;color:#FDB15D">Where every day ends beautifully.</div></div>
   {foot(10, True)}</div>''')
 
-(H / "pilih_bungalow.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>', encoding="utf-8")
+# GRADED=False: pakai warna foto asli (pilihan pemilik akun). True: foto hasil grade_pilih_bungalow.py
+GRADED = False
+import re
+BODY = "".join(T) if GRADED else re.sub(r"graded/pilih__([a-z0-9-]+)__", r"\1/", "".join(T))
+(H / "pilih_bungalow.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{BODY}</body></html>', encoding="utf-8")
 print(len(T), "slide")
