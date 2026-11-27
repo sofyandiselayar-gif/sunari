@@ -371,9 +371,14 @@ parts.append(f'''<div class="tpl facts" id="faq-{NF}">
 # ---- 12 carousels following the feed preview (covers reuse feed tiles; slides 2..n here)
 FEED12 = [
  ("p01", "Lebih dari Menginap", "camp-1", [
-   ("senja/05-tamu-di-meja.jpg","50% 55%","Duduk, diam, menikmati","Tidak perlu rencana. Cukup meja kayu, angin laut, dan langit yang pelan-pelan berubah warna."),
-   ("resto/04-resto-malam-pohon-kelapa.jpg","50% 70%","Makan malam di bawah pohon kelapa","Ikan bakar &amp; seafood di Bajoy Beach Resto. Senja Dinner bisa dipesan H-1."),
-   ("malam/03-resort-malam-a-frame.jpg","50% 60%","Lalu malam datang","Lampu-lampu bungalow menyala di antara pohon kelapa.")],
+   ("pantai/01-nelayan-pagi.jpg","50% 58%","Pagi yang pelan","Perahu nelayan mulai pulang dari laut, membawa hasil tangkapan dan senyum yang tulus."),
+   ("taman/08-meja-taman-kamboja-a.jpg","50% 60%","Taman untuk jeda","Saya datang untuk pantainya, tapi taman Sunari diam-diam mencuri hati saya lebih dulu."),
+   ("pantai/04-kursi-santai-bawah-pohon.jpg","50% 55%","Siang di bawah ketapang","Di bawah pohon yang teduh, waktu terasa berjalan lebih lambat dan lebih bersahabat."),
+   ("aktivitas/01-kayak-sore.jpg","50% 55%","Mendayung saat sore","Bayangan pohon kelapa semakin panjang, tanda pertunjukan sore akan segera dimulai."),
+   ("aktivitas/07-ayunan-gaun-merah-tengah.jpg","50% 60%","Ayunan menghadap senja","Menunggu senja di Sunari mengajarkan saya bahwa hal indah memang layak ditunggu."),
+   ("senja/05-tamu-di-meja.jpg","50% 55%","Duduk, diam, menikmati","Saya tidak butuh motivasi panjang, saya hanya butuh satu sore di tepi pantai Sunari."),
+   ("resto/04-resto-malam-pohon-kelapa.jpg","50% 70%","Makan malam di bawah pohon kelapa","Aroma ikan bakar segar memenuhi udara malam, membuat perut kami langsung keroncongan."),
+   ("malam/19-taman-bulan-jembatan.jpg","50% 55%","Lalu malam datang","Lampu-lampu taman mulai menyala, menciptakan suasana hangat dan romantis di malam hari.")],
    ("Lebih dari menginap", ["5 tipe bungalow dengan teras pribadi","Sarapan, AC &amp; Wi-Fi di semua kamar","Senja tepat di depan Pantai Sunari"])),
  ("p02", "#SenjaHariIni", "feed-senja", [
    ("senja/70-perahu-nelayan-daun-kelapa.jpg","50% 50%","Perahu pulang saat senja","Nelayan melintas pelan, di bawah matahari yang mulai turun."),
