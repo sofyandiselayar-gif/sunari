@@ -57,7 +57,7 @@ FASILITAS
 • Perlengkapan mandi lengkap
 • Bantal & selimut tambahan
 • Setrika atas permintaan
-• Teras/balkon pribadi dengan kursi santai, pemandangan laut atau taman
+• Teras/balkon pribadi dengan kursi santai, menghadap pantai dengan view sunset
 
 CARA PESAN
 Ketuk "Kirim pesan", lalu tulis tanggal check-in, check-out, dan jumlah tamu. Kami bantu cek ketersediaan dan siapkan liburan keluargamu.

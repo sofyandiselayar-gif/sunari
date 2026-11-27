@@ -96,7 +96,7 @@ Geser untuk room tour lengkapnya, lalu simpan untuk liburanmu berikutnya. 🤍
 - **Kapasitas:** 2 tamu, maks. 3 dengan 1 extra bed (berbayar)
 - **Tempat tidur:** queen bed
 - **Termasuk:** sarapan
-- **Fasilitas:** AC, Wi-Fi, set kopi/teh & pemanas air, meja kerja/rias, tirai blackout, setrika atas permintaan, handuk & perlengkapan mandi, bantal & selimut tambahan, kamar mandi dalam dengan shower & toilet duduk, teras pribadi luas dengan kursi santai (pemandangan laut & taman)
+- **Fasilitas:** AC, Wi-Fi, set kopi/teh & pemanas air, meja kerja/rias, tirai blackout, setrika atas permintaan, handuk & perlengkapan mandi, bantal & selimut tambahan, kamar mandi dalam dengan shower & toilet duduk, teras pribadi luas dengan kursi santai (menghadap pantai dengan view sunset)
 - **Air panas:** **tidak** (air panas hanya di VIP Superior)
 - **Harga:** tidak ditulis di Instagram. Jawab harga **lewat WhatsApp/DM** saja.
 
