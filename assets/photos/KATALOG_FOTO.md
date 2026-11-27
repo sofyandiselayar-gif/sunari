@@ -92,6 +92,8 @@ Tidak disimpan: foto resto dengan wajah tamu terlihat, foto kaus bergambar wajah
 | File | Isi | Status |
 |---|---|---|
 | `senja/84-afterglow-gazebo-lampu-tamu.jpg` | Afterglow biru-jingga-merah muda, gazebo bambu berlampu & ayunan, lampu gantung, tamu bersantai di tepi pantai | 👤 ada anak kecil & beberapa wajah samar: pakai ukuran kecil/crop, atau dengan izin |
+| `senja/85-siluet-tirai-senja-persegi.jpg` | Siluet tamu dengan minuman di meja, tirai & daun ketapang, matahari & jalur cahaya di laut (1:1) | ✅ (siluet) | Story ucapan Hari Jadi Selayar ke-421, feed senja |
+| `senja/85-siluet-tirai-senja-persegi-lurus.jpg` | Versi no. 85 dengan cakrawala diluruskan (±1,5°), sedikit di-crop | ✅ (siluet) | **Dipakai: story Hari Jadi Selayar ke-421** |
 
 Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 
@@ -150,7 +152,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (17 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (54 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -168,6 +170,52 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `15-makan-siang-lunchbox-rombongan` | Rombongan makan lunchbox di bawah tebing | 👤 | Bukti "lunchbox termasuk" (dengan izin) |
 | `16-makan-siang-di-pantai` | Tamu makan siang di pantai berpasir putih | 👤 (wajah samping) | Story tur |
 | `17-rombongan-di-gua` | Rombongan berpelampung bersama pemandu di gua | 👤 | Konten "tur dengan pemandu" (dengan izin) |
+| `18-di-kapal-batu-berlubang` | Rombongan tamu di kapal beratap terpal biru, batu karang berlubang di belakang | 👤 (wajah jelas) | Story/feed perjalanan kapal (dengan izin) |
+| `19-batu-berlubang` | Batu karang berlubang (lengkungan) dengan pepohonan, laut tenang & awan, 3:4 | ✅ | Feed/story perjalanan, sampul tur, Reels |
+| `20-di-kapal-menyeberang` | Tamu di dalam kapal kayu biru saat menyeberang, laut toska & pulau di kejauhan | 👤 (wajah jelas) | Story "di atas kapal" (dengan izin) |
+| `21-laut-toska-dari-kapal` | Laut toska jernih & karang dari sisi kapal, langit biru berawan, pulau di cakrawala (tanpa orang) | ✅ | Feed/story perjalanan, latar teks, Reels |
+| `22-kapal-menuju-batu-berlubang` | Tamu di kapal memotret batu karang berlubang (dari belakang/samping) | ✅ (wajah tidak jelas) | Feed/story "di atas kapal" |
+| `23-ngobrol-di-kapal` | Tamu mengobrol di haluan kapal, laut lepas | 👤 (wajah jelas) | Story suasana perjalanan (dengan izin) |
+| `24-kapal-menuju-pasir-timbul` | Dua tamu dari belakang di kapal, pasir timbul & pulau hijau di depan | ✅ | Feed/story "menuju Pasir Timbul", sampul tur |
+| `25-makam-karang-snorkeling-dan-kapal` | Snorkeler di tepi gosong karang Makam Karang, kapal bersandar, pulau di belakang | ✅ | Sampul Makam Karang, feed/story snorkeling |
+| `26-makam-karang-dua-tamu-awan` | Dua tamu kecil di atas gundukan karang, awan besar | ✅ | Feed/story suasana, latar teks |
+| `27-makam-karang-tamu-dan-pemandu` | Dua tamu & pemandu melihat kerang di atas hamparan karang | 👤 (wajah jelas) | Konten "ditemani pemandu" (dengan izin) |
+| `28-makam-karang-kru-membawa-jangkar` | Kru kapal membawa jangkar di tepi karang, air toska, pulau di cakrawala | ✅ (profil samping) | Feed/story perjalanan, konten kru |
+| `29-snorkeling-masker-penuh` | Tamu snorkeling dengan masker penuh di air toska jernih (wajah tertutup masker) | ✅ | Feed/story snorkeling, Reels |
+| `30-makam-karang-bersiap-snorkeling` | Rombongan bersiap snorkeling di tepi karang, kapal bersandar | 👤 (wajah terlihat) | Story suasana (dengan izin) |
+| `31-snorkeling-dekat-pondok-apung` | Dua tamu snorkeling di air biru, pondok apung di gosong karang | ✅ | Sampul spot snorkeling, feed/story |
+| `32-snorkeling-laut-lepas` | Dua tamu snorkeling di laut biru, pulau di kejauhan | ✅ | Feed/story snorkeling, latar teks |
+| `33-makam-karang-naik-kapal` | Tamu naik kapal di tepi karang, pondok apung di belakang | ✅ (dari belakang) | Feed/story "lanjut ke spot berikutnya" |
+| `34-pondok-apung-dua-tamu` | Pondok apung & dua tamu berjalan di punggung karang, langit mendung | ✅ | Feed/story tenang, latar teks |
+| `35-berjalan-di-hamparan-karang` | Tamu berransel berjalan di hamparan karang putih (dari belakang) | ✅ | Feed/story jelajah Makam Karang |
+| `36-kru-membantu-tamu-turun-kapal` | Kru membantu tamu turun dari haluan kapal ke gosong karang (dari belakang) | ✅ | Konten pelayanan kru, story |
+| `37-depan-gua-lipang` | Air toska sangat jernih di depan Gua Lipang, tebing karang, kapal bersandar & tamu snorkeling (kecil, dari jauh) | ✅ | Sampul Gua Lipang, feed/story, Reels pembuka |
+| `38-pantai-barat-tamu-menatap-laut` | Tamu berdiri di air dangkal menatap laut lepas (dari belakang), langit luas | ✅ | Feed/story tenang, latar teks, slow living |
+| `39-pantai-barat-tamu-di-air-dangkal` | Tamu berjalan di air dangkal toska, tanjung karang hijau & pasir putih | 👤 (wajah terlihat, depan kanan) | Feed/story makan siang di pantai (dengan izin) |
+| `40-pantai-barat-air-toska-awan` | Air toska sangat jernih, tanjung & pasir putih, tamu kecil di kejauhan, awan besar | ✅ | Sampul Pantai Bone Kidi/Bone Bakka, feed/story, Reels |
+| `41-pantai-barat-tamu-dan-pemandu` | Pemandu & tamu berdiri di air dangkal dekat tanjung (dari belakang/samping) | ✅ (wajah tidak jelas) | Feed/story suasana, konten pemandu |
+| `42-pantai-barat-rombongan-di-air` | Rombongan kecil di air dangkal biru, tanjung karang & awan putih | ✅ | Feed/story, latar teks |
+| `43-pintu-masuk-gua-lipang` | Pintu masuk Gua Lipang: tamu bersiap di bawah tebing batu kapur, kolam karang & laut di belakang | ✅ (wajah tidak jelas) | Feed/story Gua Lipang, Reels POV masuk gua |
+| `44-dalam-gua-lipang-memotret-stalaktit` | Tamu memotret stalaktit & stalagmit di dalam Gua Lipang (siluet dari belakang) | ✅ | Feed/story Gua Lipang, Reels |
+| `45-dalam-gua-lipang-pasangan` | Pasangan tamu bersiap di lantai pasir dalam gua | 👤 (wajah jelas) | Story suasana (dengan izin) |
+| `46-dalam-gua-lipang-rombongan-berjalan` | Rombongan berjalan di pasir putih di bawah langit-langit gua keemasan (dari belakang) | ✅ | Sampul Gua Lipang, feed/story |
+| `47-dalam-gua-lipang-stalaktit-rombongan` | Rombongan (siluet) di bawah deretan stalaktit, cahaya dari mulut gua | ✅ | Feed/story Gua Lipang, latar teks |
+| `48-pasir-timbul-langit-biru` | Hamparan Pasir Timbul putih, langit biru pekat & awan, empat tamu kecil (wajah tidak jelas) | ✅ | Sampul Pasir Timbul, feed/story, latar teks |
+| `49-pantai-barat-duduk-di-pasir` | Pria bertopi duduk di pasir putih menatap teluk toska & tebing karang hijau (wajah samping, 4:3 lanskap) | ✅ (wajah tidak jelas) | Feed/story slow living, latar teks |
+| `50-pantai-barat-dari-bukit` | Pemandangan dari bukit: pantai pasir putih panjang, laut toska, kapal bersandar, orang dari belakang | ⚠️ resolusi kecil (720 px) | Story ukuran kecil, referensi |
+| `51-pantai-barat-teluk-pasir-putih` | Teluk pasir putih & air toska dari atas tebing, kapal & orang kecil, panorama lebar | ✅ (lanskap lebar) | Feed (crop), sampul pantai barat, header e-book |
+| `52-pantai-barat-rebahan-di-air` | Pria bertopi rebahan di air toska, pulau kecil & tebing karang di belakang (wajah tertutup) | ✅ | Feed/story slow living, Reels |
+
+> Foto 49–52: pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Bone Bakka).
+
+| File | Isi | Status | Cocok untuk |
+|---|---|---|---|
+| `53-kampung-bahuluang-tamu-dan-anak` | Tamu bersama anak-anak kampung di jalan berpasir, pohon kelapa & laut | 👤👶 (wajah anak jelas) | Hanya dengan izin orang tua & tamu; story "kampung Bahuluang" |
+| `54-kampung-bahuluang-swafoto-warga` | Swafoto tamu, warga & anak-anak kampung, tersenyum | 👤👶 (wajah anak jelas) | Hanya dengan izin orang tua, tamu & warga |
+
+> Foto 53–54: **perkampungan Pulau Bahuluang**, kunjungan opsional jika tamu ingin eksplor. Ada wajah anak-anak: jangan dipublikasikan tanpa izin orang tua.
+
+> Foto 38–42: **pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Pantai Bone Bakka)**, tempat makan siang (lunchbox) saat tur.
 
 ## Tur Polassi & Tambolongan: `polassi-tambolongan/` (7 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
