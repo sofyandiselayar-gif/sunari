@@ -1,5 +1,5 @@
 """Carousel 10 slide "Bungalow Mana yang Cocok Buat Kamu?" (feed 1080x1350, export retina 2160x2700).
-Run: python3 social/build_pilih_bungalow.py && node social/render_pilih_bungalow.js  -> social/pilih-bungalow/*.png
+Run: python3 social/grade_pilih_bungalow.py && python3 social/build_pilih_bungalow.py && node social/render_pilih_bungalow.js  -> social/pilih-bungalow/*.png
 Skrip & teks: social/SKRIP_PILIH_BUNGALOW.md"""
 import pathlib
 H = pathlib.Path(__file__).parent
@@ -54,7 +54,7 @@ def tipe(n, img, pos, kicker, title, facts, cocok, **kw):
     photo(n, img, pos, kicker, title, body, **kw)
 
 # 1 hook ---------------------------------------------------------------
-T.append(f'''<div class="t" id="pilih-01"><img class="bg" src="{P}vip-standard-bungalow/02-teras-view-pantai.jpg" style="object-position:50% 55%" alt="">
+T.append(f'''<div class="t" id="pilih-01"><img class="bg" src="{P}graded/pilih__vip-standard-bungalow__02-teras-view-pantai.jpg" style="object-position:50% 55%" alt="">
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,24,14,.78) 0%,rgba(40,24,14,.5) 40%,rgba(40,24,14,0) 58%,rgba(40,24,14,.55) 100%)"></div>
   <img class="logo" src="{LOGO_L}" alt="">
   <div class="sh" style="position:absolute;left:72px;right:72px;top:205px;color:#FBF4EC">
@@ -79,19 +79,19 @@ T.append(f'''<div class="t" id="pilih-02">
   {foot(2)}</div>''')
 
 # 3-7 tipe -----------------------------------------------------------------
-tipe(3, "standard-bungalow/01-teras-view-laut.jpg", "50% 60%", "01 · Standard Bungalow", "Pagi menghadap<br><i class='gold'>laut Selayar</i>",
+tipe(3, "graded/pilih__standard-bungalow__01-teras-view-laut.jpg", "50% 60%", "01 · Standard Bungalow", "Pagi menghadap<br><i class='gold'>laut Selayar</i>",
      ["Dekat pantai, menghadap view senja", "Queen bed, atap tinggi, teras pribadi luas", "Kamar mandi bambu berlantai batu alam", "2 orang, maks. 3 dengan 1 extra bed (berbayar)"],
      "pasangan yang ingin bangun pelan dengan kopi di teras.")
-tipe(4, "vip-standard-bungalow/04-teras-view-laut.jpg", "50% 60%", "02 · VIP Standard Bungalow", "Rumah panggung<br><i class='gold'>di tepi pantai</i>",
+tipe(4, "graded/pilih__vip-standard-bungalow__04-teras-view-laut.jpg", "50% 60%", "02 · VIP Standard Bungalow", "Rumah panggung<br><i class='gold'>di tepi pantai</i>",
      ["Dekat pantai, menghadap view senja", "Beratap rumbia, lebih luas dari Standard", "King bed, area wastafel &amp; gantungan baju", "2 orang, maks. 3 dengan 1 extra bed (berbayar)"],
      "pencinta suasana rumah panggung yang ingin ruang lebih lega.")
-tipe(5, "superior-bungalow/04-kamar-loteng.jpg", "50% 50%", "03 · Superior Bungalow", "Rumah kayu di antara<br><i class='gold'>pohon kelapa</i>",
+tipe(5, "graded/pilih__superior-bungalow__04-kamar-loteng.jpg", "50% 50%", "03 · Superior Bungalow", "Rumah kayu di antara<br><i class='gold'>pohon kelapa</i>",
      ["Dekat pantai, menghadap view senja", "A-frame berloteng, king bed, TV", "Kamar mandi semi-outdoor dengan rain shower", "2 orang, maks. 3 dengan 1 extra bed (berbayar)"],
      "kamu yang suka suasana rumah kayu yang hangat &amp; lega.")
-tipe(6, "vip-superior-bungalow/06-bathtub-semi-outdoor.jpg", "50% 55%", "04 · VIP Superior Bungalow", "Berendam di bawah<br><i class='gold'>langit terbuka</i>",
+tipe(6, "graded/pilih__vip-superior-bungalow__06-bathtub-semi-outdoor.jpg", "50% 55%", "04 · VIP Superior Bungalow", "Berendam di bawah<br><i class='gold'>langit terbuka</i>",
      ["Dekat pantai, menghadap view senja", "Bathtub di kamar mandi semi-outdoor beratap kaca", "Air panas &amp; dingin (hanya di tipe ini)", "King bed, TV, mini bar, loteng"],
      "perayaan kecil atau liburan yang terasa istimewa.")
-tipe(7, "family-superior-bungalow/01-eksterior-taman.jpg", "55% 50%", "05 · Family Superior Bungalow", "Satu rumah,<br>dua lantai,<br><i class='gold'>semua bersama</i>",
+tipe(7, "graded/pilih__family-superior-bungalow__01-eksterior-taman.jpg", "55% 50%", "05 · Family Superior Bungalow", "Satu rumah,<br>dua lantai,<br><i class='gold'>semua bersama</i>",
      ["Dekat pantai, menghadap view senja", "Bungalow terbesar: normal 6 orang, maks. 8", "Kamar mandi di kedua lantai", "Teras atau balkon pribadi"],
      "keluarga besar atau rombongan teman.")
 
@@ -104,7 +104,7 @@ T.append(f'''<div class="t" id="pilih-08">
   <div style="position:absolute;left:72px;right:72px;top:205px">
     <div class="caps" style="font-size:20px;color:#E07A4B">Yang sama di semua tipe</div>
     <div class="pf" style="font-size:66px;line-height:1.05;margin-top:12px;color:#5A3E31">Apa pun pilihanmu,<br><i style="color:#A67C64">ini sudah termasuk</i></div>
-    <img src="{P}family-superior-bungalow/10-lantai-atas-kasur-kettle.jpg" style="display:block;width:936px;height:420px;object-fit:cover;object-position:50% 55%;margin-top:30px" alt="">
+    <img src="{P}graded/pilih__family-superior-bungalow__10-lantai-atas-kasur-kettle.jpg" style="display:block;width:936px;height:420px;object-fit:cover;object-position:50% 55%;margin-top:30px" alt="">
     <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:44px;margin-top:10px;border-top:1px solid rgba(166,124,100,.45)">
       <div>{inc_li(inc[:4])}</div><div>{inc_li(inc[4:] + ["Teras pribadi &amp; kursi santai"])}</div></div></div>
   {foot(8)}</div>''')
@@ -124,7 +124,7 @@ T.append(f'''<div class="t" id="pilih-09">
   {foot(9)}</div>''')
 
 # 10 CTA ----------------------------------------------------------------------
-T.append(f'''<div class="t" id="pilih-10"><img class="bg" src="{P}senja/11-kayak-dan-pulau.jpg" style="object-position:55% 50%" alt="">
+T.append(f'''<div class="t" id="pilih-10"><img class="bg" src="{P}graded/pilih__senja__11-kayak-dan-pulau.jpg" style="object-position:55% 50%" alt="">
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,24,14,.6) 0%,rgba(40,24,14,.25) 34%,rgba(40,24,14,.3) 60%,rgba(40,24,14,.8) 100%)"></div>
   <img class="logo" src="{LOGO_L}" alt="">
   <div class="sh" style="position:absolute;left:72px;right:72px;top:205px;color:#FBF4EC">
