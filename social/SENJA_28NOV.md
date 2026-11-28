@@ -39,3 +39,31 @@ Simpan dulu, biar liburanmu tinggal berangkat, dan tag orang yang ingin kamu aja
 Info & reservasi: WhatsApp 0821-8903-3044, biar kami bantu.
 
 #sunarisunsetmoment #senjahariini #pantaisunari #selayar #sunsetselayar #senjaselayar #wisataselayar #sulawesiselatan
+
+### Caption alternatif (lebih singkat)
+Sabtu sore di Pantai Sunari, dari 17.31 sampai 18.02. 🌅
+
+Cahaya di balik tirai, kayak yang mendayung pelan, dan teh hangat yang tiba tepat saat matahari tinggal segaris. Satu sore, satu cerita, dan besok sore giliranmu.
+
+Simpan untuk liburanmu, tag yang ingin kamu ajak.
+WhatsApp 0821-8903-3044, biar kami bantu.
+
+#sunarisunsetmoment #senjahariini #pantaisunari #selayar #sunsetselayar
+
+## Teks & stiker story (per frame)
+Story tidak punya caption, jadi tempel teks pendek / stiker ini di tiap frame (letakkan di area kosong, jangan menutupi judul).
+
+| Frame | Teks / stiker |
+|---|---|
+| 01 | Stiker lagu · teks: "Sore ini di Pantai Sunari 🌅" |
+| 02 | "Masih 26 menit lagi…" |
+| 03 | Stiker polling: "Kamu tim… 🛶 Kayak / 🪑 Duduk santai" |
+| 04 | "Cahayanya sampai ke kaki 🌼" |
+| 05 | Stiker kuis/emoji slider: "Seberapa suka senja seperti ini? 🧡" |
+| 06 | "17.57. Diam sebentar ya." |
+| 07 | Stiker pertanyaan: "Mau menunggu senja bareng siapa?" |
+| 08 | "Teh atau kopi untuk sore seperti ini? ☕" (polling) |
+| 09 | "Langitnya belum selesai 🌇" |
+| 10 | Stiker tautan WhatsApp "Tanya & reservasi" + stiker hashtag #sunarisunsetmoment · lokasi: Pantai Sunari, Selayar |
+
+Setelah diunggah, simpan ke highlight senja (mis. "Senja" / "Kalender Senja").
