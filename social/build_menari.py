@@ -1,9 +1,10 @@
-"""Carousel cerita "Menari di SunaRi" (10 slide, 1080x1350): satu hari seorang tamu, dari bungalow sampai ayunan.
+"""Carousel cerita "Menari di SunaRi" (10 slide, 1080x1350, render HD 2x = 2160x2700): satu hari seorang tamu,
+dari bungalow sampai ayunan. Versi untuk tamu: tanpa logo SunaRi & nomor WhatsApp.
 Run: python3 social/grade_menari.py && python3 social/build_menari.py && node social/render_menari.js -> social/menari/"""
 import pathlib
 H = pathlib.Path(__file__).parent
-LOGO = "../assets/logo-sunari-color.png"; LOGO_D = "../assets/logo-sunari-color-dark.png"; P = "../assets/photos/graded/menari__"
-WA = "0821-8903-3044"; N = 10
+P = "../assets/photos/graded/menari__"
+N = 10
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif}
@@ -40,7 +41,7 @@ T.append(f'''<div class="t" id="menari-01"><img class="bgf" src="{P}12-ayunan-le
     <div class="kick" style="color:#FDB15D">Sebuah cerita · Pantai Sunari</div>
     <div style="font-family:'Playfair Display',serif;font-size:92px;line-height:1.06;margin-top:22px">Hari ketika aku belajar <em>menari</em> bersama waktu.</div></div>
   <div class="lt-t" style="position:absolute;left:84px;bottom:84px;font-weight:600;font-size:20px;letter-spacing:.36em;text-transform:uppercase">Geser pelan-pelan &nbsp;→</div>
-  <img src="{LOGO_D}" style="position:absolute;right:70px;bottom:52px;width:260px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))" alt=""></div>''')
+</div>''')
 # 2. Bungalow, bingkai lengkung
 T.append(f'''<div class="t" id="menari-02"><div class="fr arch" style="left:90px;right:90px;top:70px;height:840px">{img("04-depan-bungalow-tersenyum", "50% 50%")}</div>
   <div style="position:absolute;left:90px;right:90px;top:960px"><div class="kick">Pagi · Bungalow kayu</div>
@@ -83,19 +84,13 @@ T.append(f'''<div class="t" id="menari-09">
   <div class="pol" style="left:500px;top:330px;width:500px;height:600px;transform:rotate(4deg)">{img("02-duduk-meja-dekat", "30% 50%")}<span>teh dingin, laut surut</span></div>
   <div style="position:absolute;left:80px;right:80px;top:1010px;text-align:center"><div class="ttl" style="font-size:56px">Beberapa tempat hanya dikunjungi.</div>
     <div class="ttl" style="font-size:56px;margin-top:6px"><em>Sebagian lagi, dikenang.</em></div></div>{bt(9)}</div>''')
-# 10. Penutup CTA
+# 10. Penutup kenangan (versi tamu: tanpa logo & WhatsApp)
 T.append(f'''<div class="t" id="menari-10"><div style="position:absolute;inset:36px;border:1.5px solid rgba(138,95,72,.4)"></div>
-  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:140px;width:360px" alt="">
-  <div style="position:absolute;left:100px;right:100px;top:440px;text-align:center">
-    <div class="kick" style="color:#7A5039">SunaRi · matahari yang menari</div>
-    <div class="ttl" style="font-size:76px;margin-top:18px">Kini <em>giliranmu</em><br>menari di sini.</div>
-    <div style="margin-top:44px;border-top:1.5px solid rgba(138,95,72,.3)">
-      <div style="padding:22px 0;border-bottom:1.5px solid rgba(138,95,72,.3);font-size:29px">🔖 Simpan untuk liburanmu nanti</div>
-      <div style="padding:22px 0;border-bottom:1.5px solid rgba(138,95,72,.3);font-size:29px">💌 Tag orang yang ingin kamu ajak menari</div></div></div>
-  <div style="position:absolute;left:0;right:0;bottom:170px;text-align:center">
-    <div style="font-weight:700;font-size:20px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Info &amp; reservasi</div>
-    <div style="font-family:'Playfair Display',serif;font-size:58px;margin-top:8px"><em>WhatsApp</em> {WA}</div></div>
-  <div style="position:absolute;left:0;right:0;bottom:104px;text-align:center;font-weight:600;font-size:19px;letter-spacing:.38em;text-transform:uppercase;color:#7A5039">Pantai Sunari · Selayar</div>
-  <div style="position:absolute;left:0;right:0;bottom:68px;text-align:center;font-weight:700;font-size:17px;letter-spacing:.2em;color:#C0592C">#sunarisunsetmoment</div></div>''')
+  <div style="position:absolute;left:110px;right:110px;top:380px;text-align:center">
+    <div class="orn" style="justify-content:center"><i></i><b></b><i style="transform:scaleX(-1)"></i></div>
+    <div class="kick" style="color:#7A5039">Catatan kecil dari Selayar</div>
+    <div class="ttl" style="font-size:62px;margin-top:22px">Terima kasih, <em>laut,</em><br>sudah mengajakku menari.</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:38px;line-height:1.4;color:#7A5039;margin-top:44px">Hari ini kusimpan baik-baik,<br>untuk kuputar ulang saat rindu.</div></div>
+  <div style="position:absolute;left:0;right:0;bottom:104px;text-align:center;font-weight:600;font-size:19px;letter-spacing:.38em;text-transform:uppercase;color:#7A5039">Pantai Sunari · Selayar</div></div>''')
 (H / "menari.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T))

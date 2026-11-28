@@ -1,35 +1,33 @@
-# Carousel "Menari di SunaRi" (10 slide, 1080×1350)
+# Carousel "Menari di SunaRi" (versi untuk tamu)
 
-File: `menari-01.png` … `menari-10.png` (urutan unggah sesuai nomor).
-Sumber: `assets/photos/menari/` (asli) → `social/grade_menari.py` (grading film hangat) → `social/build_menari.py` + `social/render_menari.js`.
+10 slide PNG HD **2160 × 2700** (rasio 4:5, feed Instagram). Instagram menampilkannya di 1080 × 1350, jadi file 2x ini tetap tajam setelah dikompres.
+**Tanpa logo SunaRi & tanpa nomor WhatsApp**, karena ini hadiah konten untuk tamu yang menginap.
+Unggah berurutan: `menari-01.png` … `menari-10.png`.
+
+Sumber: `assets/photos/menari/` (asli) → `social/grade_menari.py` → `social/build_menari.py` + `social/render_menari.js`.
 
 ## Alur cerita
-1. Hook: Hari ketika aku belajar *menari* bersama waktu. (ayunan, laut)
-2. Pagi itu aku melangkah keluar, *tanpa rencana apa pun.* (bungalow kayu)
+1. Hari ketika aku belajar *menari* bersama waktu.
+2. Pagi itu aku melangkah keluar, *tanpa rencana apa pun.*
 3. Angin laut menyentuh kerudungku, *pelan, seperti mengajak berdansa.*
-4. Aku menengadah lebih lama, *lalu tersenyum tanpa alasan.* (taman bougenvil)
-5. Karang-karang muncul, seperti *lantai dansa* yang disiapkan alam. (laut surut)
+4. Aku menengadah lebih lama, *lalu tersenyum tanpa alasan.*
+5. Karang-karang muncul, seperti *lantai dansa* yang disiapkan alam.
 6. Aku duduk, memesan teh dingin, *dan membiarkan laut bercerita.*
 7. Sempat kupotret sekali, *lalu ponselnya kusimpan.*
-8. Dan di sini, aku akhirnya *ikut menari* bersama angin. (ayunan)
-9. Beberapa tempat hanya dikunjungi. *Sebagian lagi, dikenang.* (polaroid)
-10. Kini *giliranmu* menari di sini. Simpan · Tag · WhatsApp 0821-8903-3044
+8. Dan di sini, aku akhirnya *ikut menari* bersama angin.
+9. Beberapa tempat hanya dikunjungi. *Sebagian lagi, dikenang.*
+10. Terima kasih, *laut,* sudah mengajakku menari. Hari ini kusimpan baik-baik, untuk kuputar ulang saat rindu.
 
-## Caption
+## Saran caption untuk tamu (boleh diubah sesukanya)
 Ada hari yang tidak perlu direncanakan.
-Cukup keluar dari bungalow, ikuti angin, dan biarkan Pantai Sunari yang menuntun langkah. 🌿
+Cukup keluar dari bungalow, ikuti angin, dan biarkan laut yang menuntun langkah. 🌿
 
-Bougenvil yang mekar, laut yang sedang surut, teh dingin di bawah pohon ketapang, lalu ayunan yang membawa kita sedikit lebih dekat ke langit.
+Bougenvil yang mekar, laut yang sedang surut, teh dingin di bawah pohon ketapang, lalu ayunan yang membawaku sedikit lebih dekat ke langit.
 
-SunaRi artinya *matahari yang menari*.
-Ternyata, bukan hanya matahari yang ikut menari di sini. ✨
+Terima kasih, Selayar. Hari ini kusimpan baik-baik. ✨
 
-Simpan dulu untuk liburanmu nanti, dan tag orang yang ingin kamu ajak menari di Selayar 💌
-Info & reservasi: WhatsApp 0821-8903-3044
-
-#sunarisunsetmoment #SunaRiSelayar #PantaiSunari #Selayar #KepulauanSelayar #WisataSelayar #SlowLiving #HijabTravel #ExploreSulsel #PantaiIndonesia
+📍 Pantai Sunari, Selayar
 
 ## Catatan
-- **Lagu:** pilih lagu akustik/instrumental yang lembut dan sedang tren saat unggah.
-- **Izin:** wajah tamu/model terlihat jelas. Pastikan sudah ada izin untuk dipakai promosi, lalu tag akunnya kalau dia berkenan.
-- Slide 6 & 9: batang kelapa punya coretan cat merah muda. Tidak terlalu mengganggu, tapi bisa dihapus di aplikasi edit foto kalau mau lebih bersih.
+- Kalau tamu berkenan, ia bisa menandai lokasi atau akun SunaRi saat unggah. Ini pilihan tamu, tidak ada di desainnya.
+- Slide 6 & 9: ada coretan cat merah muda di batang kelapa. Bisa dihapus di aplikasi edit foto kalau mau lebih bersih.
