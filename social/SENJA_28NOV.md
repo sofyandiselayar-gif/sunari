@@ -8,26 +8,29 @@ Jam di tiap slide = jam pemotretan asli (EXIF), urut dari golden hour sampai aft
 
 | Slide | Jam | Foto | Cerita |
 |---|---|---|---|
-| 01 | 17.58 | `85` | Hook: "Cerita senja hari ini." |
-| 02 | 17.31 | `97` | Tirai mulai menyala |
-| 03 | 17.44 | `96` | Dua kayak berangkat |
-| 04 | 17.44 | `92` | Dibingkai kamboja |
-| 05 | 17.56 | `91` | Ponsel terangkat |
-| 06 | 17.57 | `88` | Menyentuh laut |
-| 07 | 17.58 | `87` | Berkumpul di tepi air |
-| 08 | 17.59 | `99` | Teh hangat datang (staf, dari belakang: pastikan staf setuju) |
-| 09 | 18.02 | `98` | Langit belum selesai |
-| 10 | – | – | Sampai jumpa besok sore: simpan & tag, tips, WhatsApp 0821-8903-3044 |
+| 01 | 17.58 | `85` | Sampul: "Satu sore, satu cerita." · Geser, kita mulai dari 17.31 |
+| 02 | 17.31 | `97` | Sore baru dimulai |
+| 03 | 17.44 | `96` | Laut memanggil |
+| 04 | 17.44 | `92` | Matahari turun pelan |
+| 05 | 17.56 | `91` | Detik yang dinanti |
+| 06 | 17.57 | `88` | Laut menyambutnya |
+| 07 | 17.58 | `87` | Semua menghadap barat |
+| 08 | 17.59 | `99` | Teh hangat tiba (staf, dari belakang: pastikan staf setuju) |
+| 09 | 18.02 | `98` | Cerita belum usai |
+| 10 | – | – | Besok sore, giliranmu: Senja berikutnya, tips, WhatsApp 0821-8903-3044 |
 
 Tidak dipakai: `86` (mirip sampul), `93` (mirip `96`), `89/90/94/95` (profil wajah/anak).
 
 ## Caption
-Cerita senja hari ini, Sabtu 28 November. 🌅
+Satu sore, satu cerita. 🌅
 
-17.31 tirai di resto mulai menyala. 17.44 dua kayak berangkat pelan. 17.57 matahari menyentuh laut, dan dua menit kemudian teh hangat datang ke meja. Pukul 18.02, langit masih belum mau selesai.
+Sabtu, 28 November di Pantai Sunari. Pukul 17.31 sore baru dimulai: cahaya menyelinap lewat tirai resto. Tak lama, dua sahabat mendayung kayak ke tengah laut yang setenang kaca.
 
-Senja seperti ini menunggumu di Pantai Sunari, setiap sore. Simpan dulu, biar liburanmu tinggal berangkat, dan tag orang yang ingin kamu ajak duduk di sini.
+17.57, matahari menyentuh cakrawala. Yang tadi mengobrol pun terdiam, semua menghadap barat. Semenit kemudian teh hangat tiba di meja, pas sekali untuk menutup sore.
 
+Matahari sudah pulang, tapi jingganya masih tinggal. Besok sore, giliranmu yang duduk di sini.
+
+Simpan dulu, biar liburanmu tinggal berangkat, dan tag orang yang ingin kamu ajak menunggu senja bersama.
 Info & reservasi: WhatsApp 0821-8903-3044, biar kami bantu.
 
 #sunarisunsetmoment #senjahariini #pantaisunari #selayar #sunsetselayar #senjaselayar #wisataselayar #sulawesiselatan

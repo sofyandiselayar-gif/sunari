@@ -31,21 +31,21 @@ CSS = """
 .fc .fl{position:absolute;right:70px;bottom:56px;width:300px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))}
 """
 # (foto, posisi, jam · tahap, judul, keterangan): urut jam pemotretan asli, Sabtu 28 Nov 2026
-SL = [("97-gazebo-tirai-pantulan-matahari.jpg", "50% 50%", "17.31 · Golden hour", 'Tirai mulai <em>menyala</em>', "Matahari masih tinggi, pantulannya jatuh di antara kursi kayu."),
-      ("96-kayak-pulau-awan.jpg", "50% 70%", "17.44 · Golden hour", 'Dua kayak <em>berangkat</em>', "Laut tenang, awan merah muda menggantung di atas pulau seberang."),
-      ("92-kamboja-bingkai-matahari-tamu.jpg", "50% 45%", "17.44 · Golden hour", 'Dibingkai <em>kamboja</em>', "Matahari bulat keemasan turun pelan, jalur cahayanya sampai ke pasir."),
-      ("91-tamu-memotret-matahari.jpg", "50% 55%", "17.56 · Menjelang senja", 'Ponsel <em>terangkat</em>', "Semua ingin menyimpan sore ini, satu bingkai saja cukup."),
-      ("88-matahari-terbenam-langit-merah.jpg", "50% 55%", "17.57 · Matahari terbenam", 'Menyentuh <em>laut</em>', "Separuh matahari bersembunyi di balik awan, langit merah pekat."),
-      ("87-tamu-berhijab-tepi-pantai.jpg", "50% 60%", "17.58 · Matahari terbenam", 'Berkumpul di tepi <em>air</em>', "Ada yang mengobrol, ada yang bermain air, semua menghadap ke barat."),
-      ("99-pelayan-nampan-senja.jpg", "50% 50%", "17.59 · Matahari terbenam", 'Teh hangat <em>datang</em>', "Diantar tepat saat matahari tinggal segaris di cakrawala."),
-      ("98-kayak-langit-merah.jpg", "50% 65%", "18.02 · Afterglow", 'Langit belum <em>selesai</em>', "Matahari sudah tenggelam, kayak terakhir pelan-pelan pulang.")]
+SL = [("97-gazebo-tirai-pantulan-matahari.jpg", "50% 50%", "17.31 · Golden hour", 'Sore baru <em>dimulai</em>', "Matahari masih tinggi. Cahayanya menyelinap lewat tirai, menghangatkan kursi yang masih kosong."),
+      ("96-kayak-pulau-awan.jpg", "50% 70%", "17.44 · Golden hour", 'Laut <em>memanggil</em>', "Dua sahabat mendayung ke tengah. Air setenang kaca, awan merona di atas pulau seberang."),
+      ("92-kamboja-bingkai-matahari-tamu.jpg", "50% 45%", "17.44 · Golden hour", 'Matahari turun <em>pelan</em>', "Dari balik bunga kamboja, bulatnya keemasan. Jalur cahayanya sampai ke kaki para tamu."),
+      ("91-tamu-memotret-matahari.jpg", "50% 55%", "17.56 · Menjelang senja", 'Detik yang <em>dinanti</em>', "Ponsel terangkat. Ada yang memotret, ada yang memilih menyimpannya di ingatan."),
+      ("88-matahari-terbenam-langit-merah.jpg", "50% 55%", "17.57 · Matahari terbenam", 'Laut <em>menyambutnya</em>', "Matahari menyentuh cakrawala, sembunyi sebentar di balik awan. Langit memerah, laut ikut hening."),
+      ("87-tamu-berhijab-tepi-pantai.jpg", "50% 60%", "17.58 · Matahari terbenam", 'Semua menghadap <em>barat</em>', "Yang tadi mengobrol pun terdiam. Kaki basah di tepi air, mata tak lepas dari cakrawala."),
+      ("99-pelayan-nampan-senja.jpg", "50% 50%", "17.59 · Matahari terbenam", 'Teh hangat <em>tiba</em>', "Diantar tepat saat matahari tinggal segaris. Pas sekali untuk menutup sore."),
+      ("98-kayak-langit-merah.jpg", "50% 65%", "18.02 · Afterglow", 'Cerita belum <em>usai</em>', "Matahari sudah pulang, tapi jingganya masih tinggal. Kayak terakhir pelan-pelan kembali ke pantai.")]
 N = len(SL) + 2
 T = [f'''<div class="t fc" id="s28-01"><img class="bgf" src="{P}85-dua-tamu-bingkai-pohon-tirai.jpg" style="object-position:50% 50%" alt="">
   <div class="vt"></div><div class="vb"></div>
   <div class="fk">Sabtu, 28 Nov · Pantai Sunari</div>
-  <div class="fh">Cerita <em>senja</em><br>hari ini.</div>
+  <div class="fh">Satu sore,<br>satu <em>cerita</em>.</div>
   <div class="tm"><b>17.58</b><span>WITA</span></div>
-  <div class="fg">Geser untuk ceritanya &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''']
+  <div class="fg">Geser, kita mulai dari 17.31 &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''']
 for k, (img, pos, kick, t, sub) in enumerate(SL, 2):
     T.append(f'''<div class="t" id="s28-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
   <div class="kick">{kick}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
@@ -54,7 +54,7 @@ TIPS = ["Simpan untuk liburanmu, tag yang ingin kamu ajak", "Datang 30 menit seb
 T.append(f'''<div class="t" id="s28-{N:02d}"><div style="position:absolute;inset:36px;border:1.5px solid rgba(138,95,72,.4)"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:130px;width:360px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:430px;text-align:center;color:#45301F">
-    <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Sampai jumpa besok sore</div>
+    <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">Besok sore, giliranmu</div>
     <div class="emb" style="font-family:'Playfair Display',serif;font-size:80px;line-height:1.1;margin-top:14px">Senja <em style="color:#A0603E">berikutnya</em></div>
     <div style="margin-top:40px;border-top:1.5px solid rgba(138,95,72,.3)">{"".join(f'<div style="padding:20px 0;border-bottom:1.5px solid rgba(138,95,72,.3);font-size:28px">{x}</div>' for x in TIPS)}</div></div>
   <div style="position:absolute;left:0;right:0;bottom:150px;text-align:center">
