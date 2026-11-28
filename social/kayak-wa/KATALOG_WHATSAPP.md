@@ -36,6 +36,9 @@ Untuk membuat ulang: `python3 social/build_kayak_wa.py && node social/render_kay
 | 9 | `wa-kayak-double-09.png` | Kartu info & harga |
 | 10 | `wa-kayak-double-10.png` | Cara pesan + nomor WhatsApp |
 
+### Frame lengkap HD (untuk pesan WhatsApp)
+`wa-kayak-lengkap.png`: **2160 × 2700 (4:5, HD)**. Satu gambar berisi harga Single & Double, yang sudah termasuk, waktu terbaik, dan nomor WhatsApp. Kirim langsung di chat saat tamu bertanya, atau di Status. Agar tidak dikompres WhatsApp, kirim sebagai **Dokumen** atau aktifkan **Kualitas foto HD** (ikon HD saat mengirim).
+
 ### Daftar harga (bukan item katalog)
 `wa-kayak-harga.png`: Single & Double dalam satu gambar. Kirim di chat saat tamu bertanya, pasang di Status, atau sertakan bersama balasan cepat `/kayak`.
 

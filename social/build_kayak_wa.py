@@ -123,5 +123,38 @@ T.append(f'''<div class="t" id="wa-kayak-harga"><div class="frame"></div>
     Harga per kayak · Termasuk pelampung &amp; dayung<br>Waktu terbaik 17.00 · Senja ±17.50 · Kembali 18.10 WITA</div>
   <div class="ft" style="bottom:52px;font-size:17px">WhatsApp 0821-8903-3044 · Pantai Sunari, Selayar</div></div>''')
 
+# Satu frame lengkap (4:5) untuk dikirim di chat WhatsApp, dirender 2x (HD 2160x2700)
+def card2(em, who, price, img, pos):
+    return f'''<div style="flex:1;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 28px rgba(90,62,49,.16)">
+  <div style="height:250px;overflow:hidden"><img src="{P}{img}" style="width:100%;height:100%;object-fit:cover;object-position:{pos}" alt=""></div>
+  <div style="padding:20px 20px 26px;text-align:center">
+    <div class="pf" style="font-size:44px">Kayak <em style="color:#A0603E">{em}</em></div>
+    <div style="font-size:19px;color:#7A5039;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-top:2px">{who}</div>
+    <div style="margin-top:14px;display:inline-block;background:linear-gradient(135deg,#FDB15D,#FF8A5C);color:#fff;border-radius:999px;padding:10px 30px;font-weight:700;font-size:38px">{price}</div>
+    <div style="font-size:17px;color:#7A5039;margin-top:8px;font-weight:600;letter-spacing:.14em;text-transform:uppercase">per kayak</div></div></div>'''
+INC = ["Pelampung (life jacket)", "Dayung", "Air tenang &amp; landai", "Spot senja terbaik"]
+T.append(f'''<div class="t hd" id="wa-kayak-lengkap" style="height:1350px">
+  <div style="position:absolute;left:0;right:0;top:0;height:330px;overflow:hidden"><img class="bg" src="{P}senja/57-matahari-cakrawala-emas-1753.jpg" style="object-position:50% 52.5%" alt="">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(251,244,236,1) 100%)"></div></div>
+  <img class="lg" src="{LOGO_D}" alt="">
+  <div style="position:absolute;left:60px;right:60px;top:210px;text-align:center">
+    <div class="k">Pantai Sunari · Selayar</div>
+    <div class="pf emb" style="font-size:78px;line-height:1.05;margin-top:6px">Sewa <em style="color:#A0603E">Kayak</em></div>
+    <div style="font-size:24px;color:#4A3426;margin-top:8px">Mendayung menyongsong senja</div></div>
+  <div style="position:absolute;left:60px;right:60px;top:410px;display:flex;gap:30px">
+    {card2("Single", "1 orang", "Rp 50.000", "senja/65-kayak-single-matahari-terbenam-1753.jpg", "50% 64%")}
+    {card2("Double", "2 orang", "Rp 100.000", "senja/09-kayak-pasangan.jpg", "50% 60%")}</div>
+  <div style="position:absolute;left:60px;right:60px;top:950px">
+    <div class="k" style="text-align:center;font-size:18px;margin-bottom:12px">Sudah termasuk</div>
+    <div class="fx" style="column-gap:30px">{"".join(f"<div style='font-size:24px;padding:12px 0'>{x}</div>" for x in INC)}</div>
+    <div class="k" style="text-align:center;font-size:18px;margin:26px 0 14px">Waktu terbaik</div>
+    <div style="display:flex;justify-content:center;gap:16px;font-size:23px;color:#45301F;font-weight:600">
+      <span><b style="color:#C8613A">17.00</b> turun ke air</span><span style="color:#E6C89B">●</span>
+      <span><b style="color:#C8613A">±17.50</b> senja</span><span style="color:#E6C89B">●</span>
+      <span><b style="color:#C8613A">18.10</b> kembali</span></div></div>
+  <div style="position:absolute;left:0;right:0;bottom:44px;text-align:center">
+    <div style="display:inline-block;background:linear-gradient(135deg,#FDB15D,#FF8A5C);color:#fff;border-radius:999px;padding:14px 40px;font-weight:700;font-size:29px">Pesan via WhatsApp 0821-8903-3044</div>
+    <div style="font-size:17px;color:#7A5039;margin-top:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase">Pelampung wajib · Anak didampingi orang dewasa</div></div></div>''')
+
 (H / "kayak_wa.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
 print(len(T))
