@@ -31,3 +31,6 @@ Terima kasih, Selayar. Hari ini kusimpan baik-baik. ✨
 ## Catatan
 - Kalau tamu berkenan, ia bisa menandai lokasi atau akun SunaRi saat unggah. Ini pilihan tamu, tidak ada di desainnya.
 - Slide 6 & 9: ada coretan cat merah muda di batang kelapa. Bisa dihapus di aplikasi edit foto kalau mau lebih bersih.
+
+## JPG HD
+Folder `jpg/`: 10 slide, 2160 × 2700 (4:5 feed), kualitas 95, subsampling 4:4:4.
