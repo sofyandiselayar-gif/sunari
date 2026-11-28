@@ -7,7 +7,7 @@ Semua foto asli, sudah diputar sesuai orientasi dan diperkecil ke maks. 2400 px 
 ## Kamar (5 tipe)
 `superior-bungalow/` · `vip-superior-bungalow/` · `family-superior-bungalow/` · `standard-bungalow/` · `vip-standard-bungalow/` ✅
 
-## Senja: `senja/` (85 foto)
+## Senja: `senja/` (100 foto)
 ✅ kecuali 01–02 dan 26 ✂️ (cap tanggal). Wajah tidak terlihat (siluet), aman dipakai.
 
 Tambahan 20 Nov 2026:
@@ -92,6 +92,25 @@ Tidak disimpan: foto resto dengan wajah tamu terlihat, foto kaus bergambar wajah
 | File | Isi | Status |
 |---|---|---|
 | `senja/84-afterglow-gazebo-lampu-tamu.jpg` | Afterglow biru-jingga-merah muda, gazebo bambu berlampu & ayunan, lampu gantung, tamu bersantai di tepi pantai | 👤 ada anak kecil & beberapa wajah samar: pakai ukuran kecil/crop, atau dengan izin |
+
+### Sesi senja resto & pantai (ditambahkan 28 Nov 2026)
+| File | Isi | Status |
+|---|---|---|
+| `senja/85-dua-tamu-bingkai-pohon-tirai.jpg` | Dua tamu di kursi kayu resto, matahari menyentuh laut dibingkai pohon ketapang & tirai | ✅ (siluet, dari belakang) |
+| `senja/86-dua-tamu-dekat-matahari-terbenam.jpg` | Close-up dua tamu dari belakang, matahari hampir tenggelam, batang pohon di tengah | ✅ (siluet) |
+| `senja/87-tamu-berhijab-tepi-pantai.jpg` | Kelompok tamu berdiri & bermain air di tepi pantai, kayak di kiri, matahari di cakrawala | ✅ (siluet) |
+| `senja/88-matahari-terbenam-langit-merah.jpg` | Matahari separuh tenggelam di balik awan, langit jingga-merah pekat, laut tenang | ✅ tanpa orang · cocok untuk sampul/Reels |
+| `senja/89-siluet-tamu-meja-pantai.jpg` | Tamu di meja (kanan, siluet profil) dan seorang tamu di tepi air, matahari menyentuh laut | 👤 profil terlihat (siluet): aman, izin bila di-zoom |
+| `senja/90-tamu-meja-bulat-senja.jpg` | Tamu duduk di meja bulat kayu menghadap laut, keluarga di tepi pantai | 👤 siluet profil & anak kecil: pakai ukuran kecil/crop |
+| `senja/91-tamu-memotret-matahari.jpg` | Dua tamu di air: satu memotret matahari dengan HP, satu memegang HP, jalur cahaya di laut | ✅ (siluet) |
+| `senja/92-kamboja-bingkai-matahari-tamu.jpg` | Bunga kamboja & pohon membingkai matahari bulat, tamu bersantai di pantai, jalur cahaya emas | 👤 ada beberapa siluet tamu (kecil) |
+| `senja/93-kayak-dua-orang-pastel.jpg` | Dua orang berkayak di laut tenang, pulau & awan kumulus pastel | ✅ (siluet, dari belakang) · cocok untuk konten kayak |
+| `senja/94-tamu-resto-snorkel-senja.jpg` | Tamu melihat HP di kursi resto, masker snorkel di rak kanan, laut tenang | 👤 siluet profil: pakai dengan izin |
+| `senja/95-anak-bermain-air-golden-hour.jpg` | Keluarga & anak-anak bermain air, jalur cahaya emas, siluet | 👤 ada anak kecil: crop/ukuran kecil atau dengan izin |
+| `senja/96-kayak-pulau-awan.jpg` | Dua orang berkayak menjauh, pulau berhutan & awan kumulus pink | ✅ (siluet) |
+| `senja/97-gazebo-tirai-pantulan-matahari.jpg` | Gazebo kayu, tirai oranye, kursi resto, pantulan matahari di laut | ✅ tanpa wajah |
+| `senja/98-kayak-langit-merah.jpg` | Kayak dua orang meluncur, langit jingga-merah, daun ketapang di kiri | ✅ (siluet) |
+| `senja/99-pelayan-nampan-senja.jpg` | Staf membawa dua teko teh di nampan, matahari terbenam dibingkai pohon & tirai | 👤 staf resto (siluet): minta izin staf |
 
 Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 
