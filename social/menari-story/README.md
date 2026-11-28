@@ -15,3 +15,6 @@ Sumber: `social/build_menari_satu.py` + `social/render_menari_satu.js`.
 - `Menari_di_SunaRi_Story.pdf`: 10 halaman story.
 - `Menari_di_SunaRi_1_Frame.pdf`: 1 halaman kolase.
 Ukuran halaman 1080 × 1920 px (9:16), teks vektor (tajam di zoom berapa pun) + foto resolusi penuh. Dibuat dengan `node social/render_menari_pdf.js`.
+
+## JPG HD
+Folder `jpg/`: 10 frame story + `menari-satu-frame.jpg`, 2160 × 3840, kualitas 95, subsampling 4:4:4 (teks tetap tajam), ±0,4–2,3 MB per file.
