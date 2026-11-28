@@ -68,12 +68,14 @@ Story tidak punya caption, jadi tempel teks pendek / stiker ini di tiap frame (l
 
 Setelah diunggah, simpan ke highlight senja (mis. "Senja" / "Kalender Senja").
 
-## Foto siap upload (8 terbaik)
-`social/upload-28nov/instagram/` (1080×1350, 4:5 feed) dan `social/upload-28nov/tiktok/` (1080×1920, 9:16: TikTok photo mode, Story, Reels).
-Dipilih dari 15 foto berdasarkan ketajaman, komposisi, dan aman dipakai (tanpa wajah/anak). Diekspor dari file asli kamera 4000×3000
-(tidak ada yang diperbesar), color grading SunaRi, JPEG kualitas 95 tanpa EXIF/lokasi.
-Buat ulang: `python3 social/export_upload_28nov.py <folder foto asli>`.
+## File siap upload (kualitas terbaik)
+Folder `social/upload-28nov/`, JPEG kualitas 95 (4:4:4, tanpa metadata), dirender 2× lalu diperkecil supaya teks & foto tajam.
+Foto di desain di-grade ulang dari file asli kamera pada 2560 px, jadi story layar penuh tidak lagi memakai foto yang diperbesar.
 
-Urutan prioritas: 01 matahari terbenam (88) · 02 dua tamu di bawah pohon (85) · 03 kamboja & matahari (92) · 04 gazebo & tirai (97) ·
-05 kayak & pulau (96) · 06 kayak pastel (93) · 07 kayak langit merah (98) · 08 tamu memotret matahari (91).
-05 dan 06 mirip: jangan dipakai bersebelahan.
+| Folder | Ukuran | Untuk |
+|---|---|---|
+| `instagram-feed/` | 1080×1350 | Carousel feed Instagram (10 slide) |
+| `instagram-story/` | 1080×1920 | Story Instagram (10 frame) |
+| `tiktok/` | 1080×1920 | TikTok mode Foto (10 frame, sama dengan story) |
+
+Buat ulang: `python3 social/grade_senja_28nov.py <folder foto asli> && python3 social/build_senja_28nov.py && python3 social/build_senja_28nov_story.py && node social/export_senja_28nov_upload.js && python3 social/export_senja_28nov_upload.py`.
