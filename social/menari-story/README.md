@@ -6,3 +6,7 @@ Sumber: `social/build_menari_story.py` + `social/render_menari_story.js`.
 
 Saran untuk tamu: tambahkan stiker lokasi "Pantai Sunari" dan lagu yang lembut di frame 1.
 Area kosong di bagian bawah frame 10 bisa dipakai untuk stiker, tag teman, atau tanggal menginap.
+
+## Versi 1 frame
+`menari-satu-frame.png` (2160 × 3840): seluruh cerita dalam satu kolase 9 foto berurutan + judul & penutup.
+Sumber: `social/build_menari_satu.py` + `social/render_menari_satu.js`.
