@@ -10,3 +10,8 @@ Area kosong di bagian bawah frame 10 bisa dipakai untuk stiker, tag teman, atau 
 ## Versi 1 frame
 `menari-satu-frame.png` (2160 × 3840): seluruh cerita dalam satu kolase 9 foto berurutan + judul & penutup.
 Sumber: `social/build_menari_satu.py` + `social/render_menari_satu.js`.
+
+## PDF HD
+- `Menari_di_SunaRi_Story.pdf`: 10 halaman story.
+- `Menari_di_SunaRi_1_Frame.pdf`: 1 halaman kolase.
+Ukuran halaman 1080 × 1920 px (9:16), teks vektor (tajam di zoom berapa pun) + foto resolusi penuh. Dibuat dengan `node social/render_menari_pdf.js`.
