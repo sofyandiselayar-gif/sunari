@@ -68,14 +68,18 @@ def earthy(a, im):
     a = .5 + (a-.5)*.9; a = .05 + np.clip(a, 0, 1)*.93
     a = glow(np.clip(a, 0, 1), .1, [1, .95, .88], im)
     return a
-def run(name):
+def run(name, styles=None):
     im = ImageOps.exif_transpose(Image.open(R/"menari"/f"{name}.jpg")).convert("RGB")
     a0 = np.asarray(im, float)/255
     out = R/"graded"/"variasi"; out.mkdir(exist_ok=True)
     for tag, fn in (("cerah", cerah), ("dark", dark), ("film", film), ("tealorange", tealorange), ("earthy", earthy)):
+        if styles and tag not in styles: continue
         a = fn(a0.copy(), im)
         a = np.clip(a + rng.normal(0, .009, a.shape[:2])[..., None], 0, 1)    # grain halus
         Image.fromarray((a*255).astype(np.uint8)).save(out/f"{name}__{tag}.jpg", quality=95, subsampling=0)
         print(out/f"{name}__{tag}.jpg")
 if __name__ == "__main__":
-    run(sys.argv[1] if len(sys.argv) > 1 else "01-duduk-meja-pantai-surut")
+    # python3 social/grade_variasi.py [nama|semua] [gaya,gaya]
+    names = sys.argv[1] if len(sys.argv) > 1 else "01-duduk-meja-pantai-surut"
+    styles = sys.argv[2].split(",") if len(sys.argv) > 2 else None
+    for n in ([p.stem for p in sorted((R/"menari").glob("*.jpg"))] if names == "semua" else [names]): run(n, styles)
