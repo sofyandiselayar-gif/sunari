@@ -1,6 +1,6 @@
 # Katalog WhatsApp Business: Sewa Kayak
 
-Gambar 1080 × 1080 (persegi 1:1). **2 item katalog** (Kayak Single & Kayak Double, masing-masing 6 gambar) + **1 gambar daftar harga** untuk dikirim langsung di chat atau Status.
+Gambar 1080 × 1080 (persegi 1:1). **2 item katalog** (Kayak Single & Kayak Double, masing-masing **10 gambar**, batas maksimal WhatsApp) + **1 gambar daftar harga** untuk dikirim langsung di chat atau Status.
 Harga kayak **boleh** dicantumkan (lihat `brand/BRAND_GUIDE.md`).
 Untuk membuat ulang: `python3 social/build_kayak_wa.py && node social/render_kayak_wa.js`
 
@@ -16,7 +16,11 @@ Untuk membuat ulang: `python3 social/build_kayak_wa.py && node social/render_kay
 | 3 | `wa-kayak-single-03.png` | Menuju matahari |
 | 4 | `wa-kayak-single-04.png` | Matahari tenggelam |
 | 5 | `wa-kayak-single-05.png` | Jalur cahaya |
-| 6 | `wa-kayak-single-06.png` | Kartu info & harga |
+| 6 | `wa-kayak-single-06.png` | Golden hour |
+| 7 | `wa-kayak-single-07.png` | Waktu terbaik: 17.00 · ±17.50 · 18.10 |
+| 8 | `wa-kayak-single-08.png` | Aman & nyaman (6 tips keamanan) |
+| 9 | `wa-kayak-single-09.png` | Kartu info & harga |
+| 10 | `wa-kayak-single-10.png` | Cara pesan + nomor WhatsApp |
 
 ### Item 2: Kayak Double
 | No | File | Isi |
@@ -26,7 +30,11 @@ Untuk membuat ulang: `python3 social/build_kayak_wa.py && node social/render_kay
 | 3 | `wa-kayak-double-03.png` | Golden hour |
 | 4 | `wa-kayak-double-04.png` | Pulau di cakrawala |
 | 5 | `wa-kayak-double-05.png` | Jalur cahaya |
-| 6 | `wa-kayak-double-06.png` | Kartu info & harga |
+| 6 | `wa-kayak-double-06.png` | Tepat di bawah matahari |
+| 7 | `wa-kayak-double-07.png` | Waktu terbaik: 17.00 · ±17.50 · 18.10 |
+| 8 | `wa-kayak-double-08.png` | Aman & nyaman (6 tips keamanan) |
+| 9 | `wa-kayak-double-09.png` | Kartu info & harga |
+| 10 | `wa-kayak-double-10.png` | Cara pesan + nomor WhatsApp |
 
 ### Daftar harga (bukan item katalog)
 `wa-kayak-harga.png`: Single & Double dalam satu gambar. Kirim di chat saat tamu bertanya, pasang di Status, atau sertakan bersama balasan cepat `/kayak`.
@@ -134,7 +142,7 @@ https://maps.app.goo.gl/iUWWHNCT7Vyu4i537
 1. Buka **WhatsApp Business**.
 2. Android: **⋮ → Alat bisnis → Katalog**. iPhone: **Pengaturan → Alat bisnis → Katalog**.
 3. Ketuk **Tambah item baru** (➕).
-4. **Tambah gambar**: pilih 6 gambar item **berurutan 01 → 06**. Gambar pertama menjadi foto utama.
+4. **Tambah gambar**: pilih 10 gambar item **berurutan 01 → 10**. Gambar pertama menjadi foto utama.
 5. Isi **Nama**, **Harga**, **Deskripsi**, **Kode barang** dari bagian 2 → **Simpan**.
 6. Ulangi untuk item kedua.
 7. *(Opsional)* Kelompokkan dalam **Koleksi** bernama `Sewa Kayak`: Katalog → **Koleksi → Buat koleksi** → pilih kedua item.

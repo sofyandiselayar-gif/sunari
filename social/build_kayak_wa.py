@@ -21,6 +21,15 @@ CSS = """
 .fx div::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:linear-gradient(90deg,#FDB15D,#FF8A5C);margin-right:14px;vertical-align:middle}
 .frame{position:absolute;inset:32px;border:1.5px solid rgba(138,95,72,.4)}
 .ft{position:absolute;left:0;right:0;bottom:62px;text-align:center;font-weight:700;font-size:19px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039}
+.tl{display:flex;justify-content:space-between;position:relative}
+.tl::before{content:"";position:absolute;left:14%;right:14%;top:44px;height:3px;background:linear-gradient(90deg,#FDB15D,#FF8A5C)}
+.tl div{position:relative;flex:1}
+.tl b{display:inline-block;background:#FBF4EC;border:3px solid #FF8A5C;border-radius:999px;padding:16px 26px;font-size:34px;color:#45301F}
+.tl span{display:block;margin-top:16px;font-size:25px;font-weight:600;color:#4A3426}
+.ls{text-align:left;border-top:1.5px solid rgba(138,95,72,.3)}
+.ls div{display:flex;align-items:center;gap:22px;padding:18px 0;border-bottom:1.5px solid rgba(138,95,72,.3);font-size:28px;color:#45301F}
+.ls i{flex:none;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#FDB15D,#FF8A5C);color:#fff;font-style:normal;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
+.st div{padding:22px 0}
 """
 FX = ["Pelampung (life jacket)", "Dayung", "Air tenang &amp; landai", "Spot senja terbaik", "Foto siluet senja", "Bisa untuk anak*"]
 
@@ -45,6 +54,35 @@ def item(code, name, em, price, sub, cover, cover_pos, photos, people):
     <div class="fx" style="text-align:left">{"".join(f"<div>{x}</div>" for x in FX)}</div>
     <div style="margin-top:26px;font-size:25px;color:#4A3426">{people} · Terbaik 17.00–18.10 WITA</div></div>
   <div class="ft">*Anak wajib didampingi orang dewasa</div></div>''')
+    # 07 waktu terbaik, 08 keamanan, 10 cara pesan (09 = kartu harga di atas, dipindah ke urutan 09 di bawah)
+    price_card = T.pop()
+    T.append(f'''<div class="t" id="wa-kayak-{code}-07">
+  <div style="position:absolute;left:0;right:0;top:0;height:540px;overflow:hidden"><img class="bg" src="{P}senja/57-matahari-cakrawala-emas-1753.jpg" style="object-position:50% 45%" alt=""></div>
+  <img class="lg" src="{LOGO_D}" alt="">
+  <div style="position:absolute;left:70px;right:70px;top:580px;text-align:center">
+    <div class="k">Jadwal senja</div>
+    <div class="pf emb" style="font-size:62px;margin:6px 0 34px">Waktu <em style="color:#A0603E">terbaik</em></div>
+    <div class="tl">{"".join(f'<div><b>{a}</b><span>{b}</span></div>' for a, b in [("17.00", "Turun ke air"), ("±17.50", "Matahari terbenam"), ("18.10", "Kembali di pantai")])}</div>
+    <div style="margin-top:34px;font-size:23px;color:#4A3426">Jam senja bergeser beberapa menit sepanjang tahun · WITA</div></div></div>''')
+    SAFE = ["Pelampung wajib dipakai selama di air", "Mendayung dekat pantai, dalam jarak pandang", "Hindari area karang saat air surut",
+            "Pakai topi, kacamata &amp; tabir surya", "Simpan HP di pouch kedap air", "Anak wajib didampingi orang dewasa"]
+    T.append(f'''<div class="t" id="wa-kayak-{code}-08"><div class="frame"></div>
+  <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:80px;width:280px" alt="">
+  <div style="position:absolute;left:110px;right:110px;top:310px;text-align:center">
+    <div class="k">Sebelum turun ke air</div>
+    <div class="pf emb" style="font-size:66px;margin:8px 0 34px">Aman &amp; <em style="color:#A0603E">nyaman</em></div>
+    <div class="ls">{"".join(f'<div><i>{i}</i>{x}</div>' for i, x in enumerate(SAFE, 1))}</div></div>
+  <div class="ft">Tim SunaRi siap membantu di pantai</div></div>''')
+    T.append(price_card.replace(f'wa-kayak-{code}-{n:02d}', f'wa-kayak-{code}-09'))
+    STEP = ["Ketuk <b>Kirim pesan</b> di katalog ini", "Tulis tanggal, jam &amp; jumlah kayak", "Datang ke pantai sebelum 17.00, kayak &amp; pelampung kami siapkan"]
+    T.append(f'''<div class="t" id="wa-kayak-{code}-10">
+  <div style="position:absolute;left:0;right:0;top:0;height:430px;overflow:hidden"><img class="bg" src="{P}senja/37-afterglow-kayak-pelampung-1814.jpg" style="object-position:50% 70%" alt=""></div>
+  <img class="lg" src="{LOGO_D}" alt="">
+  <div style="position:absolute;left:90px;right:90px;top:470px;text-align:center">
+    <div class="k">{name} {em} · {price}</div>
+    <div class="pf emb" style="font-size:66px;margin:6px 0 30px">Cara <em style="color:#A0603E">pesan</em></div>
+    <div class="ls st">{"".join(f'<div><i>{i}</i><span>{x}</span></div>' for i, x in enumerate(STEP, 1))}</div>
+    <div style="margin-top:34px;display:inline-block;background:linear-gradient(135deg,#FDB15D,#FF8A5C);color:#fff;border-radius:999px;padding:14px 36px;font-weight:700;font-size:30px;letter-spacing:.04em">WhatsApp 0821-8903-3044</div></div></div>''')
     return T
 
 T = []
@@ -53,14 +91,16 @@ T += item("single", "Kayak", "Single", "Rp 50.000", "1 orang · Mendayung menyon
           [("senja/03-kayak-matahari-merah.jpg", "50% 0%", "Matahari merah"),
            ("senja/40-kayak-single-belakang-a-1753.jpg", "50% 55%", "Menuju matahari"),
            ("senja/65-kayak-single-matahari-terbenam-1753.jpg", "50% 52%", "Matahari tenggelam"),
-           ("senja/68-kayak-pelampung-jalur-cahaya-1748.jpg", "50% 55%", "Jalur cahaya")],
+           ("senja/68-kayak-pelampung-jalur-cahaya-1748.jpg", "50% 55%", "Jalur cahaya"),
+           ("aktivitas/01-kayak-sore.jpg", "50% 50%", "Golden hour")],
           "Untuk 1 orang")
 T += item("double", "Kayak", "Double", "Rp 100.000", "2 orang · Senja untuk berdua",
           "senja/09-kayak-pasangan.jpg", "50% 60%",
           [("senja/17-kayak-berdua.jpg", "50% 60%", "Berdua di atas air"),
            ("senja/18-kayak-berdua-pelampung.jpg", "50% 65%", "Golden hour"),
            ("senja/11-kayak-dan-pulau.jpg", "50% 60%", "Pulau di cakrawala"),
-           ("senja/51-kayak-double-jalur-cahaya-1751.jpg", "50% 50%", "Jalur cahaya")],
+           ("senja/51-kayak-double-jalur-cahaya-1751.jpg", "50% 50%", "Jalur cahaya"),
+           ("senja/64-kayak-double-bawah-matahari-1750.jpg", "50% 90%", "Tepat di bawah matahari")],
           "Untuk 2 orang")
 
 # Daftar harga (dikirim di chat / status, bukan item katalog)
