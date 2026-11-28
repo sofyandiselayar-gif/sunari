@@ -21,6 +21,11 @@ Jam di tiap slide = jam pemotretan asli (EXIF), urut dari golden hour sampai aft
 
 Tidak dipakai: `86` (mirip sampul), `93` (mirip `96`), `89/90/94/95` (profil wajah/anak).
 
+## Versi Story (10 frame, 1080×1920)
+Desain di `social/senja-28nov-story/` (`s28s-01…10.png`): cerita & urutan sama dengan feed, foto penuh, zona aman atas/bawah ±250 px.
+Buat ulang: `python3 social/build_senja_28nov_story.py && node social/render_senja_28nov_story.js`.
+Tips upload: tambahkan stiker lagu, dan di frame 10 tambahkan stiker tautan WhatsApp (lihat `social/STORY_BOOKING.md`).
+
 ## Caption
 Satu sore, satu cerita. 🌅
 
