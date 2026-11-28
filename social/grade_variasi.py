@@ -1,6 +1,6 @@
-"""Dua variasi color grading untuk satu foto: "cerah" (bright & airy) dan "dark" (moody).
+"""Variasi color grading untuk satu foto: cerah, dark, film (warm film), tealorange, earthy (earthy beige).
 Run: python3 social/grade_variasi.py [nama-foto-di-assets/photos/menari tanpa .jpg]
--> assets/photos/graded/variasi/<nama>__cerah.jpg & __dark.jpg (resolusi asli)"""
+-> assets/photos/graded/variasi/<nama>__<gaya>.jpg (resolusi asli). Sinematik soft ada di social/grade_menari.py."""
 from PIL import Image, ImageOps, ImageFilter
 import numpy as np, pathlib, sys
 R = pathlib.Path(__file__).resolve().parent.parent / "assets/photos"
@@ -41,11 +41,38 @@ def dark(a, im):
     a = a * (1 - .3*np.clip(d-.45, 0, 1)**1.6)[..., None]            # vignette
     a = glow(np.clip(a, 0, 1), .12, [1, .85, .65], im)
     return a
+def film(a, im):
+    L = lum(a); a = L + (a-L)*.88
+    gr = np.clip((a[..., 1:2]-np.maximum(a[..., 0:1], a[..., 2:3]))*4, 0, 1)
+    a = a*(1-.3*gr) + (L*np.array([.98, 1.0, .72]))*.3*gr             # hijau -> zaitun
+    bl = np.clip((a[..., 2:3]-a[..., 0:1])*3, 0, 1)
+    a = a*(1-.25*bl) + (L*np.array([.92, .97, 1.08]))*.25*bl
+    a = a*np.array([1.07, 1.01, .9])                                  # hangat keemasan
+    a = .045 + np.clip(a, 0, 1)*.93                                   # matte
+    return a
+def tealorange(a, im):
+    sk = skin_mask(a); L = lum(a)
+    a = .5 + (a-.5)*1.1
+    sh = np.clip((.5-L)/.5, 0, 1); hi = np.clip((L-.4)/.6, 0, 1)
+    a = a + sh*np.array([-.05, .02, .06]) + hi*np.array([.06, .015, -.06])
+    bl = np.clip((a[..., 2:3]-a[..., 0:1])*3, 0, 1)
+    a = a*(1-.35*bl) + (L*np.array([.7, 1.02, 1.12]))*.35*bl          # biru -> teal
+    a = np.clip(a, 0, 1); L = lum(a); a = L + (a-L)*(1.05+.05*sk)
+    return a
+def earthy(a, im):
+    sk = skin_mask(a); L = lum(a)
+    a = L + (a-L)*(.55+.25*sk)                                        # sangat redup, kulit dijaga
+    a = a*.82 + (L*np.array([1.08, .99, .86]))*.18                    # semua warna ke krem/beige
+    bl = np.clip((a[..., 2:3]-a[..., 0:1])*3, 0, 1)
+    a = a*(1-.4*bl) + (L*np.array([.98, .98, .98]))*.4*bl             # biru jadi abu lembut
+    a = .5 + (a-.5)*.9; a = .05 + np.clip(a, 0, 1)*.93
+    a = glow(np.clip(a, 0, 1), .1, [1, .95, .88], im)
+    return a
 def run(name):
     im = ImageOps.exif_transpose(Image.open(R/"menari"/f"{name}.jpg")).convert("RGB")
     a0 = np.asarray(im, float)/255
     out = R/"graded"/"variasi"; out.mkdir(exist_ok=True)
-    for tag, fn in (("cerah", cerah), ("dark", dark)):
+    for tag, fn in (("cerah", cerah), ("dark", dark), ("film", film), ("tealorange", tealorange), ("earthy", earthy)):
         a = fn(a0.copy(), im)
         a = np.clip(a + rng.normal(0, .009, a.shape[:2])[..., None], 0, 1)    # grain halus
         Image.fromarray((a*255).astype(np.uint8)).save(out/f"{name}__{tag}.jpg", quality=95, subsampling=0)
