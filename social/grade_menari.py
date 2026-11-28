@@ -8,7 +8,8 @@ R = pathlib.Path(__file__).resolve().parent.parent / "assets/photos"
 rng = np.random.default_rng(7)
 def lum(a): return (0.299*a[..., 0] + 0.587*a[..., 1] + 0.114*a[..., 2])[..., None]
 def grade(p):
-    im = ImageOps.exif_transpose(Image.open(p)).convert("RGB")
+    grade_image(ImageOps.exif_transpose(Image.open(p)).convert("RGB")).save(R / "graded" / ("menari__" + p.name), quality=94)
+def grade_image(im):
     a = np.asarray(im, float) / 255
     mx = a.max(-1, keepdims=True); mn = a.min(-1, keepdims=True); L = lum(a)
     # perlindungan kulit (merah > hijau > biru, cukup terang)
@@ -41,6 +42,6 @@ def grade(p):
     # grain film tipis
     n = rng.normal(0, .011, a.shape[:2])[..., None]
     a = np.clip(a + n * (1 - .5*lum(a)), 0, 1)
-    Image.fromarray((a*255).astype(np.uint8)).save(R / "graded" / ("menari__" + p.name), quality=94)
+    return Image.fromarray((a*255).astype(np.uint8))
 if __name__ == "__main__":
     for p in sorted((R / "menari").glob("*.jpg")): grade(p); print(p.name)
