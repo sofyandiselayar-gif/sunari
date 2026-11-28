@@ -1,0 +1,70 @@
+"""Story Instagram "Menari di SunaRi" versi tamu (10 frame, 1080x1920, render HD 2x = 2160x3840).
+Tanpa logo SunaRi & nomor WhatsApp. Cerita sama dengan carousel social/build_menari.py.
+Run: python3 social/grade_menari.py && python3 social/build_menari_story.py && node social/render_menari_story.js -> social/menari-story/"""
+import pathlib
+H = pathlib.Path(__file__).parent
+P = "../assets/photos/graded/menari__"
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
+CSS = """
+*{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif}
+.s{position:relative;overflow:hidden;width:1080px;height:1920px;margin:30px auto;background:#FBF4EC;color:#45301F}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vt{position:absolute;left:0;right:0;top:0;height:700px;background:linear-gradient(180deg,rgba(30,20,14,.62),rgba(30,20,14,0))}
+.vb{position:absolute;left:0;right:0;bottom:0;height:1000px;background:linear-gradient(0deg,rgba(30,20,14,.85),rgba(30,20,14,.5) 55%,rgba(30,20,14,0))}
+.tx{position:absolute;left:66px;right:66px;bottom:400px;text-align:center}
+.dk .tx,.dk .top{color:#FBF4EC;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+.l1{font-family:'Playfair Display',serif;font-size:58px;line-height:1.18}
+.l2{font-family:'Playfair Display',serif;font-style:italic;font-size:54px;line-height:1.25;color:#A0603E;margin-top:14px}
+.dk .l2{color:#FDB15D}
+.kick{font-weight:700;font-size:21px;letter-spacing:.34em;text-transform:uppercase;color:#C0592C;margin-bottom:22px}
+.dk .kick{color:#FDB15D}
+.orn{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:30px}
+.orn i{display:block;width:90px;height:1px;background:linear-gradient(90deg,rgba(192,89,44,0),#C0592C)}
+.dk .orn i{background:linear-gradient(90deg,rgba(253,177,93,0),#FDB15D)}
+.orn i:last-child{transform:scaleX(-1)}
+.orn b{width:7px;height:7px;transform:rotate(45deg);border:1px solid #C0592C}
+.dk .orn b{border-color:#FDB15D}
+.fr{position:absolute;overflow:hidden;border-radius:24px;box-shadow:0 16px 40px rgba(90,62,49,.22)}
+.fr img{width:100%;height:100%;object-fit:cover;display:block}
+.pol{position:absolute;background:#fff;padding:22px 22px 90px;box-shadow:0 18px 40px rgba(90,62,49,.25)}
+.pol img{width:100%;height:100%;object-fit:cover;display:block}
+.pol span{position:absolute;left:0;right:0;bottom:26px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:32px;color:#7A5039}
+"""
+def orn(): return '<div class="orn"><i></i><b></b><i></i></div>'
+def full(k, name, pos, a, b, kick=""):
+    kk = f'<div class="kick">{kick}</div>' if kick else ""
+    return f'''<div class="s dk" id="story-{k:02d}"><img class="bg" src="{P}{name}.jpg" style="object-position:{pos}" alt="">
+  <div class="vt"></div><div class="vb"></div><div class="tx">{orn()}{kk}<div class="l1">{a}</div><div class="l2">{b}</div></div></div>'''
+def im(name, pos): return f'<img src="{P}{name}.jpg" style="object-position:{pos}" alt="">'
+T = []
+# 1. Pembuka
+T.append(f'''<div class="s dk" id="story-01"><img class="bg" src="{P}12-ayunan-lebar-laut.jpg" style="object-position:46% 50%" alt="">
+  <div class="vt" style="height:900px;background:linear-gradient(180deg,rgba(30,20,14,.7),rgba(30,20,14,.35) 60%,rgba(30,20,14,0))"></div>
+  <div class="top" style="position:absolute;left:90px;right:90px;top:300px;text-align:center">{orn()}<div class="kick">Sebuah cerita · Pantai Sunari</div>
+    <div style="font-family:'Playfair Display',serif;font-size:92px;line-height:1.08">Hari ketika aku belajar <em style="color:#FDB15D">menari</em> bersama waktu.</div></div></div>''')
+T.append(full(2, "04-depan-bungalow-tersenyum", "50% 50%", "Pagi itu aku melangkah keluar,", "tanpa rencana apa pun.", "Pagi · Bungalow kayu"))
+T.append(full(3, "09-profil-kerudung-palem", "40% 50%", "Angin laut menyentuh kerudungku,", "pelan, seperti mengajak berdansa."))
+# 4. Bougenvil bertingkat
+T.append(f'''<div class="s" id="story-04"><div class="fr" style="left:70px;right:250px;top:230px;height:720px">{im("07-bougenvil-menengadah", "30% 50%")}</div>
+  <div class="fr" style="left:250px;right:70px;top:880px;height:720px;border:10px solid #FBF4EC">{im("08-bougenvil-tersenyum", "66% 50%")}</div>
+  <div class="tx" style="bottom:190px"><div class="kick">Taman bougenvil</div><div class="l1" style="font-size:54px">Aku menengadah lebih lama, <em style="color:#A0603E">lalu tersenyum tanpa alasan.</em></div></div></div>''')
+T.append(full(5, "10-berjalan-pantai-surut", "66% 50%", "Karang-karang muncul, seperti lantai dansa", "yang disiapkan alam.", "Laut sedang surut"))
+T.append(full(6, "01-duduk-meja-pantai-surut", "32% 50%", "Aku duduk, memesan teh dingin,", "dan membiarkan laut bercerita.", "Siang · Di bawah ketapang"))
+# 7. Makanan + ponsel bertingkat
+T.append(f'''<div class="s" id="story-07"><div class="fr" style="left:70px;right:70px;top:230px;height:700px">{im("03-nasi-goreng-teh-dingin", "60% 50%")}</div>
+  <div class="fr" style="left:70px;right:70px;top:970px;height:560px">{im("06-ponsel-di-meja", "40% 55%")}</div>
+  <div class="tx" style="bottom:190px"><div class="l1" style="font-size:54px">Sempat kupotret sekali,</div><div class="l2" style="font-size:50px">lalu ponselnya kusimpan.</div></div></div>''')
+T.append(full(8, "11-ayunan-dekat-langit", "30% 50%", "Dan di sini, aku akhirnya", "ikut menari bersama angin.", "Ayunan tepi pantai"))
+# 9. Polaroid kenangan
+T.append(f'''<div class="s" id="story-09">
+  <div class="pol" style="left:80px;top:220px;width:540px;height:600px;transform:rotate(-5deg)">{im("05-depan-bungalow-tangga", "52% 50%")}<span>pagi yang pelan</span></div>
+  <div class="pol" style="left:460px;top:880px;width:540px;height:600px;transform:rotate(4deg)">{im("02-duduk-meja-dekat", "30% 50%")}<span>teh dingin, laut surut</span></div>
+  <div class="tx" style="bottom:200px"><div class="l1" style="font-size:58px">Beberapa tempat hanya dikunjungi.</div><div class="l2">Sebagian lagi, dikenang.</div></div></div>''')
+# 10. Penutup
+T.append(f'''<div class="s" id="story-10"><div style="position:absolute;inset:40px;border:1.5px solid rgba(138,95,72,.4)"></div>
+  <div style="position:absolute;left:110px;right:110px;top:640px;text-align:center">{orn()}<div class="kick" style="color:#7A5039">Catatan kecil dari Selayar</div>
+    <div class="l1" style="font-size:68px">Terima kasih, <em style="color:#A0603E">laut,</em><br>sudah mengajakku menari.</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:42px;line-height:1.4;color:#7A5039;margin-top:50px">Hari ini kusimpan baik-baik,<br>untuk kuputar ulang saat rindu.</div></div>
+  <div style="position:absolute;left:0;right:0;bottom:380px;text-align:center;font-weight:600;font-size:21px;letter-spacing:.38em;text-transform:uppercase;color:#7A5039">Pantai Sunari · Selayar</div></div>''')
+(H / "menari_story.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{"".join(T)}</body></html>')
+print(len(T))
