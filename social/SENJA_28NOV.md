@@ -67,3 +67,13 @@ Story tidak punya caption, jadi tempel teks pendek / stiker ini di tiap frame (l
 | 10 | Stiker tautan WhatsApp "Tanya & reservasi" + stiker hashtag #sunarisunsetmoment · lokasi: Pantai Sunari, Selayar |
 
 Setelah diunggah, simpan ke highlight senja (mis. "Senja" / "Kalender Senja").
+
+## Foto siap upload (8 terbaik)
+`social/upload-28nov/instagram/` (1080×1350, 4:5 feed) dan `social/upload-28nov/tiktok/` (1080×1920, 9:16: TikTok photo mode, Story, Reels).
+Dipilih dari 15 foto berdasarkan ketajaman, komposisi, dan aman dipakai (tanpa wajah/anak). Diekspor dari file asli kamera 4000×3000
+(tidak ada yang diperbesar), color grading SunaRi, JPEG kualitas 95 tanpa EXIF/lokasi.
+Buat ulang: `python3 social/export_upload_28nov.py <folder foto asli>`.
+
+Urutan prioritas: 01 matahari terbenam (88) · 02 dua tamu di bawah pohon (85) · 03 kamboja & matahari (92) · 04 gazebo & tirai (97) ·
+05 kayak & pulau (96) · 06 kayak pastel (93) · 07 kayak langit merah (98) · 08 tamu memotret matahari (91).
+05 dan 06 mirip: jangan dipakai bersebelahan.
