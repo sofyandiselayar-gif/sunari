@@ -15,6 +15,7 @@ Aset brand untuk resort tepi pantai di Kepulauan Selayar dengan pemandangan mata
 | `social/STORY_RUTE.md` | Story "Rute ke SunaRi": 7 story di atas peta (Indonesia → Sulawesi → 3 rute → Pulau Selayar) (`social/story-rute/`) |
 | `location-carousel/` | Proyek HTML/CSS carousel 5 slide "Location & Rute Akses" (1080×1350) + export Playwright retina ke `output/` |
 | `social/STORY_BOOKING.md` | Story "Cara Reservasi": 6 story alur pemesanan 3 langkah + tautan WhatsApp siap pakai untuk stiker (`social/story-booking/`) |
+| `social/kayak-wa/KATALOG_WHATSAPP.md` | Katalog WhatsApp Business **Sewa Kayak**: 2 item (Single Rp 50.000, Double Rp 100.000) × 6 gambar 1080×1080 + gambar daftar harga, isian siap salin (`build_kayak_wa.py`) |
 | `social/KAYAK_TIPS.md` | Carousel 20 slide "Tips Kano/Kayak Saat Senja" (`social/kayak-tips/`) |
 | `social/SUNSET_GUIDE.md` | Seri "Panduan Senja": carousel 10 slide + 6 story, waktu terbaik, jam tiba, spot & tips foto sunset (`social/sunset-guide/`) |
 | `social/STORY_QNA.md` | Story Q&A "Tanya SunaRi": 16 pertanyaan tamu sebelum menginap + sampul, penutup & template stiker (`social/story-qna/`) |
